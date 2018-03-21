@@ -11,3 +11,7 @@ repository               : "evannetwork/wiki"
 breadcrumbs              : true
 breadcrumb_home_label    : "Home"
 breadcrumb_separator     : "/"
+
+include:
+  - .htaccess
+  - _pages
