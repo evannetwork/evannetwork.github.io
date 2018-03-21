@@ -1,12 +1,14 @@
-remote_theme: "mmistakes/minimal-mistakes"
-minimal_mistakes_skin: "air"
+remote_theme             : "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "contrast"
 
 # Site Settings
 locale                   : "en-US"
 title                    : "evan.network"
 title_separator          : "-"
 name                     : "Your Name"
-description              : "An amazing website."
+description              : "Developer Docs."
 url                      : "https://evannetwork.github.io"
-baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "evannetwork/wiki"
+breadcrumbs              : true
+breadcrumb_home_label    : "Home"
+breadcrumb_separator     : "/"
