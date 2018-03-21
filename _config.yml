@@ -1,2 +1,6 @@
 remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin: "air"
+
+# Site Settings
+locale                   : "en-US"
+title                    : "evan.network"
