@@ -1,5 +1,5 @@
 remote_theme             : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "contrast"
+minimal_mistakes_skin    : "neon"
 
 # Site Settings
 locale                   : "en-US"

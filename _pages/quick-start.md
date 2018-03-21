@@ -4,4 +4,4 @@ title: "Quick Start Guide"
 toc: true
 ---
 
-## Privacy Policy
+## Quick Start Guide
