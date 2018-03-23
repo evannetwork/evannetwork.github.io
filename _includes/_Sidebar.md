@@ -6,3 +6,6 @@
 ### Using evan.network
 - [RPC](RPC)
 - [Getting Synced](Getting-Synced)
+
+### Contribute
+- [Wiki](Wiki)
