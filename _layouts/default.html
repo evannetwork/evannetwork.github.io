@@ -1,42 +1,42 @@
----
----
+<!DOCTYPE html>
+<html lang="en-us">
 
-<!doctype html>
-<!--
-  Minimal Mistakes Jekyll Theme 4.11.1 by Michael Rose
-  Copyright 2013-2018 Michael Rose - mademistakes.com | @mmistakes
-  Free for personal and commercial use under the MIT license
-  https://github.com/mmistakes/minimal-mistakes/blob/master/LICENSE.txt
--->
-<html lang="{{ site.locale | slice: 0,2 | default: "en" }}" class="no-js">
-  <head>
-    {% include head.html %}
-    {% include head/custom.html %}
-  </head>
+{% include head.html %}
 
-  <body class="layout--{{ page.layout | default: layout.layout }}{% if page.classes or layout.classes %}{{ page.classes | default: layout.classes | join: ' ' | prepend: ' ' }}{% endif %}">
+<body class="sidebar-overlay">
 
-    {% include browser-upgrade.html %}
-    {% include masthead.html %}
+  {% include sidebar.html %}
 
-    <div class="initial-content">
-      {{ content }}
-    </div>
-
-    {% if site.search == true %}
-      <div class="search-content">
-        {% include search/search_form.html %}
+  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
+         content to avoid any CSS collisions with our real content. -->
+  <div class="wrap">
+    <div class="masthead">
+      <div class="container">
+        <h3 class="masthead-title">
+          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
+          <small>{{ site.description }}</small>
+        </h3>
       </div>
-    {% endif %}
-
-    <div class="page__footer">
-      <footer>
-        {% include footer/custom.html %}
-        {% include footer.html %}
-      </footer>
     </div>
 
-    {% include scripts.html %}
+    <div class="container content">
+      <div id="tipue_search_content"></div>
+      {{ content }} {% if page.hide_footer %} {% else %} {% include footer.html %} {% endif %}
+    </div>
+  </div>
 
-  </body>
+  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
+
+  <script>
+    $(document).ready(function () {
+      // Open the sidebar on load on bigger screens
+      if ($(window).width() > 1540) {
+        $('#sidebar-checkbox').prop('checked', true)
+      }
+      // Hook up search
+      $('#tipue_search_input').tipuesearch({ 'show': 99 });
+    });
+  </script>
+</body>
+
 </html>
