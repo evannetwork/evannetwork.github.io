@@ -1,5 +1,9 @@
-## [evan.network](/)
+## [Quick Start](/)
 - [Setup](Setup)
-- [Getting Synced](Getting-Synced)
+- [Playground](Getting-Synced)
 - [Basic Usage](Basic-Usage)
 - [FAQ](FAQ)
+
+### Using evan.network
+- [RPC](Parity-Wallet)
+- [Getting Synced](Getting-Synced)
