@@ -552,7 +552,7 @@ a.pagination-item:hover {
   }
 }
 
-@media (min-width: 48em) {
+@media (min-width: 49em) {
   .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
     -webkit-transform: translateX(10rem);
         -ms-transform: translateX(10rem);
@@ -560,7 +560,7 @@ a.pagination-item:hover {
   }
 }
 
-@media (min-width: 48em) and (max-width: 50em) {
+@media (min-width: 49em) and (max-width: 50em) {
   .sidebar-overlay #sidebar-checkbox:checked ~ .wrap .masthead{
     transform: translateX(4rem);
   }
