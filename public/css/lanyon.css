@@ -544,12 +544,28 @@ a.pagination-item:hover {
  * Make the sidebar content overlay the viewport content instead of pushing it
  * aside when toggled.
  */
-
-.sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
-  -webkit-transform: translateX(10rem);
-      -ms-transform: translateX(10rem);
-          transform: translateX(10rem);
+ @media (max-width: 48em) {
+  .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
 }
+
+@media (min-width: 48em) {
+  .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
+    -webkit-transform: translateX(10rem);
+        -ms-transform: translateX(10rem);
+            transform: translateX(10rem);
+  }
+}
+
+@media (min-width: 48em) and (max-width: 42em) {
+  .sidebar-overlay #sidebar-checkbox:checked ~ .wrap .masthead{
+    transform: translateX(4rem);
+  }
+}
+
 .sidebar-overlay #sidebar-checkbox:checked ~ .sidebar-toggle {
   box-shadow: 0 0 0 .25rem #fff;
 }
