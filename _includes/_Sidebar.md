@@ -1,11 +1,15 @@
 ## [Quick Start](/)
-- [Setup](Setup)
-- [Basic Usage](Basic-Usage)
-- [FAQ](FAQ)
+- [Overview](/docs/overview)
+- [MasterNode](/docs/overview)
+- [Services](/docs/services)
+- [FAQ](/docs/faq)
 
-### Using evan.network
-- [RPC](RPC)
-- [Getting Synced](Getting-Synced)
+### Developing
+- [Setup](/dev/setup)
+  - [RPC](/dev/rpc)
+  - [Sync the Chain](/dev/chain)
+- [Web3](/dev/web3)
+- [IPFS](/dev/ipfs)
 
 ### Contribute
-- [Wiki](Wiki)
+- [Wiki](/docs/wiki)

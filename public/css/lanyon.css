@@ -150,7 +150,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow-y: auto;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
   font-size: .875rem; /* 15px */
-  color: rgba(238,84,238,.6);
+  color: rgba(107,200,197,.6);
   background-color: #3d363d;
   -webkit-transition: all .3s ease-in-out;
           transition: all .3s ease-in-out;

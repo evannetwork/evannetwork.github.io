@@ -1,9 +1,12 @@
 title: evan.network
 
 defaults:
-  -
-    scope:
-      path: ""
+  - scope:
+      type: "docs"
+    values:
+      layout: "default"
+  - scope:
+      type: "tutorials"
     values:
       layout: "default"
 markdown: kramdown
