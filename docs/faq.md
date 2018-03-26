@@ -1,4 +1,5 @@
 ---
 title: "FAQ"
 ---
-# FAQ Area
+# FAQ
+coming soon
