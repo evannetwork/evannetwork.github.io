@@ -531,7 +531,7 @@ a.pagination-item:hover {
 .theme-base-0f #sidebar-checkbox:checked ~ .sidebar-toggle {
   background-color: #8f5536;
 }
-.theme-base-0f .container a,
+.theme-base-0f .container a,z
 .theme-base-0f .sidebar-toggle,
 .theme-base-0f .related-posts li a:hover {
   color: #8f5536;
@@ -544,7 +544,7 @@ a.pagination-item:hover {
  * Make the sidebar content overlay the viewport content instead of pushing it
  * aside when toggled.
  */
-@media (min-width: 49em) {
+@media (min-width: 48em) {
   .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
     -webkit-transform: translateX(10rem);
         -ms-transform: translateX(10rem);
@@ -552,9 +552,9 @@ a.pagination-item:hover {
   }
 }
 
-@media (min-width: 49em) and (max-width: 50em) {
+@media (min-width: 47em) and (max-width: 63em) {
   .sidebar-overlay #sidebar-checkbox:checked ~ .wrap .masthead{
-    transform: translateX(4rem);
+    transform: translateX(6rem);
   }
 }
 
