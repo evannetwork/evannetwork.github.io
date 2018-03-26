@@ -6,6 +6,7 @@ img.center {
 
 .sidebar {
   width: 17rem;
+  z-index: 10;
 }
 
 .sidebar-toggle {
