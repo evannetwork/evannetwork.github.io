@@ -560,7 +560,7 @@ a.pagination-item:hover {
   }
 }
 
-@media (min-width: 48em) and (max-width: 42em) {
+@media (min-width: 48em) and (max-width: 50em) {
   .sidebar-overlay #sidebar-checkbox:checked ~ .wrap .masthead{
     transform: translateX(4rem);
   }
