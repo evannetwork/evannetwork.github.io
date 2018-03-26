@@ -1,3 +1,9 @@
+img.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .sidebar {
   width: 17rem;
   z-index: 10;

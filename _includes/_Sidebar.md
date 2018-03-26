@@ -6,10 +6,10 @@
 - [FAQ](/docs/faq)
 
 ### Hacking on evan.network
+- [Getting Started](/dev/getting-started)
 - [Setup](/dev/setup)
   - [RPC](/dev/rpc)
   - [Sync](/dev/chain)
-- [First Steps](/dev/first-steps)
 - [Smart Contract](/dev/smart-contracts)
   - [Business Center](/dev/business-center)
   - [Contract Factories](/dev/contract-factories)

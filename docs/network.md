@@ -3,7 +3,7 @@ title: "The Network"
 ---
 
 ## How the evan.network works
-![evan.network](/public/evannetwork_overview.jpg){:height="75%" width="75%"}
+![evan.network](/public/evannetwork_overview.jpg){:height="75%" width="75%" class="center"}
 
 ### 1. Specific sub networks
 Based on the ecosystem of the evan.network almost everyone can build their own specific sub networks in all industries where cooperation with partners is important.
