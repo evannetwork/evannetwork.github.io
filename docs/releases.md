@@ -3,18 +3,14 @@ title: "Releases"
 ---
 # Releases
 
-The Wiki is written in [Markdown](https://guides.github.com/features/mastering-markdown/). To contribute to the documentation you can checkout the Wiki project from our [GitHub Repo](https://github.com/evannetwork/evannetwork.github.io).
-
 ## Latest Versions
 
-Module | Link | Version
+Module | URL | Version
 --- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
+dashboard | [https://ipfs.evan.network/ipfs/QmYAfaoBeBB3o4dRXjZ6kcaBDutjfqr5cjanKQsXVBpTBe/index.html](https://ipfs.evan.network/ipfs/QmYAfaoBeBB3o4dRXjZ6kcaBDutjfqr5cjanKQsXVBpTBe/index.html) | 23.03.2018
 
 ## History
 
-Markdown | Linke | Versino
+Markdown | URL | Versino
 --- | --- | ---
-*Still* | `renders` | **nicely**
-1 | 2 | 3
+dashboard| [https://ipfs.evan.network/ipfs/QmP9HjZwQw25Q6v1ceufaYxFbDsKx5Y6gBa3y8zUaKQD4R/index.html](https://ipfs.evan.network/ipfs/QmP9HjZwQw25Q6v1ceufaYxFbDsKx5Y6gBa3y8zUaKQD4R/index.html) | 21.03.2018
