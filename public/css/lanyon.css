@@ -546,9 +546,9 @@ a.pagination-item:hover {
  */
 
 .sidebar-overlay #sidebar-checkbox:checked ~ .wrap {
-  -webkit-transform: translateX(10);
-      -ms-transform: translateX(10);
-          transform: translateX(10);
+  -webkit-transform: translateX(10rem);
+      -ms-transform: translateX(10rem);
+          transform: translateX(10rem);
 }
 .sidebar-overlay #sidebar-checkbox:checked ~ .sidebar-toggle {
   box-shadow: 0 0 0 .25rem #fff;
