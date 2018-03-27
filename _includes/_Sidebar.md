@@ -25,9 +25,9 @@
 - [Smart Agents](/dev/smart-agents)
 - [DBCP](/dev/dbcp)
 - [Writing DApps](/dev/dapps)
-- [Services](/dev/dapps)
+- [Services](/dev/services)
   - [ENS](/dev/ens)
-  - [ENS to DNS](/dev/ens2dns)
+  - [ENS2DNS](/dev/ens2dns)
   - [Identity Claim](/dev/identity-claims)
 
 ### Miscellaneous
