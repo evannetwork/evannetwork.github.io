@@ -3,13 +3,13 @@ title: "Blockchain"
 ---
 # Blockchain
 
-The evan.network Blockchain is build on [Parity](https://parity.io/)<sup>[+]</sup> nodes, that are hosted and operated by evan.network [MasterNodes](/docs/masternode). These nodes building the fundamental consensus to sign new blocks in the evan.network.
+The evan.network Blockchain is build on [Parity](https://parity.io/)<sup>[+]</sup> nodes, that are hosted and operated by evan.network [MasterNodes](/doc/masternode). These nodes building the fundamental consensus to sign new blocks in the evan.network.
 
 User and developers can access the evan.network Blockchain via RPC Endpoints or can sync the chain with an own node.
 
 ## core - Production Chain
 
-The production chain is named [core](/docs/urls) and is the main blockchain offered by the [MasterNodes](/docs/masternode).
+The production chain is named [core](/doc/urls) and is the main blockchain offered by the [MasterNodes](/doc/masternode).
 
 ### RPC Endpoint
 You can access the endpoint via HTTPS and WebSocket.
@@ -23,7 +23,7 @@ parity --chain "/path/to/core.json"
 
 ## testcore - Development Chain
 
-To start hacking on evan.network it is the best to use the [testcore](/docs/urls) network to make the first steps. The [testcore](/docs/urls) network is similar to the [core](/docs/urls) main network but without the need to buy [EVE](/docs/eve) tokens. To get EVE tokens for the [testcore](/docs/urls) network you can join the [Gitter faucet](https://gitter.im/evannetwork/faucet)<sup>[+]</sup> channel and post you account id.
+To start hacking on evan.network it is the best to use the [testcore](/doc/urls) network to make the first steps. The [testcore](/doc/urls) network is similar to the [core](/doc/urls) main network but without the need to buy [EVE](/doc/eve) tokens. To get EVE tokens for the [testcore](/doc/urls) network you can join the [Gitter faucet](https://gitter.im/evannetwork/faucet)<sup>[+]</sup> channel and post you account id.
 
 ### RPC Endpoint
 You can access the endpoint via HTTPS and WebSocket.

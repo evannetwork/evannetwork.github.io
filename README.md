@@ -5,8 +5,8 @@ The evan.network is a Ethereum Blockchain with a authority consensus that is pub
 
 ## Some Help:
 
-* If you want to get in touch of a real evan.network DAPP and like to know how a DAPP works, see our [First Steps](/docs/first-steps) guide.
-* You like to know more about the concepts and structure behind the evan.network you should read [The Network](/docs/network) and the [DAO](/docs/dao) guide.
+* If you want to get in touch of a real evan.network DAPP and like to know how a DAPP works, see our [First Steps](/doc/first-steps) guide.
+* You like to know more about the concepts and structure behind the evan.network you should read [The Network](/doc/network) and the [DAO](/doc/dao) guide.
 * If you want to get to start hacking, see the [Getting Started](/dev/getting-started) guide.
 * Frequently asked questions are answered on the [FAQ](/doc/faq).
 * If you’re interested in joining evan.network as MasterNode, you can contact us via our [WebSite](https:///evan.network)<sup>[+]</sup>

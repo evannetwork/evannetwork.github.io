@@ -1,16 +1,16 @@
 ### [Overview](/)
-- [The Network](/docs/network)
-- [Starting](/docs/starting)
-- [DAO](/docs/dao)
-- [MasterNode](/docs/masternode)
-- [FAQ](/docs/faq)
+- [The Network](/doc/network)
+- [Starting](/doc/starting)
+- [DAO](/doc/dao)
+- [MasterNode](/doc/masternode)
+- [FAQ](/doc/faq)
 
-### [First Steps](/docs/first-steps)
-- [Create Identity](/docs/create-identity)
-- [Dashboard](/docs/dashboard)
-- [Contacts](/docs/contacts)
-- [Mailbox](/docs/mailbox)
-- [Taskboard](/docs/taskboard)
+### [First Steps](/tutorial/first-steps)
+- [Create Identity](/tutorial/create-identity)
+- [Dashboard](/tutorial/dashboard)
+- [Contacts](/tutorial/contacts)
+- [Mailbox](/tutorial/mailbox)
+- [Taskboard](/tutorial/taskboard)
 
 ### [Hacking on evan.network](/dev/getting-started)
 - [Blockchain](/dev/blockchain)
@@ -30,9 +30,10 @@
   - [Identity Claim](/dev/identity-claims)
 
 ### Miscellaneous
-- [Resources](/docs/urls)
-- [Wiki](/docs/wiki)
+- [Resources](/doc/urls)
+- [Wiki](/doc/wiki)
 - [Release Notes](/docs/releases)
-- [Gitter](https://gitter.im/evannetwork) <sup>[+]</sup>
-- [GitHub](https://github.com/evannetwork) <sup>[+]</sup>
-- [Website](https://evan.network) <sup>[+]</sup>
+- [Gitter](https://gitter.im/evannetwork)<sup>[+]</sup>
+- [GitHub](https://github.com/evannetwork)<sup>[+]</sup>
+- [Website](https://evan.network)<sup>[+]</sup>
+- [Imprint](https://evan.network/imprint/)<sup>[+]</sup>
