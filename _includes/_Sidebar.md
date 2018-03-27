@@ -24,7 +24,8 @@
 - [Web3](/dev/web3)
 - [IPFS](/dev/ipfs)
 
-### Hacking
+### Resources
+- [Components](/docs/urls)
 - [Wiki](/docs/wiki)
 - [Release Notes](/docs/releases)
 - [Gitter](https://gitter.im/evannetwork) <sup>[+]</sup>
