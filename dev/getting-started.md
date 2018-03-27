@@ -9,13 +9,9 @@ The evan.network is a [Ethereum](https://ethereum.org/) based blockchain and you
 
 The Blockchain itself isn't made for storing complex or unstructured data like documents, data and applications. For that reason we are offer an integrated IPFS storage that is used to store non Blockchain data and to deliver DAPPs. You can read more about our [IPFS](/dev/ipfs) to get an better understanding why it is so important and how you can use it in your applications.
 
-On top of the Blockchain- and the Storage Engine we build services and APIs to build more secure, fast and robust applications.
+On top of the Blockchain- and the Storage Engine we build services and APIs to build secure, fast and robust applications.
 + content and contract encryption
 + contact management with integrated key management and key exchange
 + mailbox system to offer offline invite and contact possibilities
 + Data Contracts with security and role management
 + DBCP description language to build unstoppable DAPPs and Smart Agents
-
-## Development Chain
-
-To start hacking on evan.network it is the best to use the [testcore](/docs/urls) network to make the first steps. The [testcore](/docs/urls) network is similar to the [core](/docs/urls) main network but without the need to buy [EVE](/docs/eve) tokens. To get EVE tokens for the [testcore](/docs/urls) network you can join the [Gitter faucet](https://gitter.im/evannetwork/faucet) channel and post you account id.

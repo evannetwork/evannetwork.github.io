@@ -14,7 +14,7 @@
 
 ### Hacking on evan.network
 - [Getting Started](/dev/getting-started)
-- [The Chain](/dev/chain)
+- [Blockchain](/dev/blockchain)
 - [Web3](/dev/web3)
 - [IPFS](/dev/ipfs)
 - [Security](/dev/security)
