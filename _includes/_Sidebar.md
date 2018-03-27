@@ -23,7 +23,7 @@
   - [Data Contract](/dev/data-contract)
 - [Smart Agents](/dev/smart-agents)
 - [DBCP](/dev/dbcp)
-- [Writing DApps](/dev/dapps)
+- [Writing ÐApps](/dev/dapps)
 - [Services](/dev/services)
   - [ENS](/dev/ens)
   - [ENS2DNS](/dev/ens2dns)
