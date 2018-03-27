@@ -14,8 +14,7 @@
 
 ### Hacking on evan.network
 - [Getting Started](/dev/getting-started)
-- [RPC](/dev/rpc)
-- [Sync](/dev/chain)
+- [The Chain](/dev/chain)
 - [Web3](/dev/web3)
 - [IPFS](/dev/ipfs)
 - [Security](/dev/security)
@@ -30,7 +29,7 @@
   - [ENS](/dev/ens)
   - [DNS](/dev/ens)
   - [Identity Claim](/dev/identity-claims)
-  
+
 ### Miscellaneous
 - [Resources](/docs/urls)
 - [Wiki](/docs/wiki)
