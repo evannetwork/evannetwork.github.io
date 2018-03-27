@@ -23,7 +23,7 @@ parity --chain "/path/to/core.json"
 
 ## testcore - Development Chain
 
-To start hacking on evan.network it is the best to use the [testcore](/docs/urls) network to make the first steps. The [testcore](/docs/urls) network is similar to the [core](/docs/urls) main network but without the need to buy [EVE](/docs/eve) tokens. To get EVE tokens for the [testcore](/docs/urls) network you can join the [Gitter faucet](https://gitter.im/evannetwork/faucet) channel and post you account ID.
+To start hacking on evan.network it is the best to use the [testcore](/docs/urls) network to make the first steps. The [testcore](/docs/urls) network is similar to the [core](/docs/urls) main network but without the need to buy [EVE](/docs/eve) tokens. To get EVE tokens for the [testcore](/docs/urls) network you can join the [Gitter faucet](https://gitter.im/evannetwork/faucet) channel and post you account id.
 
 ### RPC Endpoint
 You can access the endpoint via HTTPS and WebSocket.
