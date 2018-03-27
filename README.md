@@ -10,8 +10,8 @@ The evan.network is a Ethereum Blockchain with a authority consensus that is pub
 * If you want to get to start hacking, see the [Getting Started](/dev/getting-started) guide.
 * Frequently asked questions are answered on the [FAQ](/doc/faq).
 * If you’re interested in joining evan.network as MasterNode, you can contact us via our [WebSite](https:///evan.network)<sup>[+]</sup>
+*  [![Gitter](https://img.shields.io/gitter/room/evannetwork/evannetwork.svg?style=flat-square)](https://gitter.im/evannetwork/Lobby)
 
-[![Gitter](https://img.shields.io/gitter/room/evannetwork/evannetwork.svg?style=flat-square)](https://gitter.im/evannetwork/Lobby)
 
 ## Our Tenets
 
