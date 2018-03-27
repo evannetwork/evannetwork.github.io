@@ -5,11 +5,20 @@
 - [MasterNode](/docs/masternode)
 - [FAQ](/docs/faq)
 
+### [First Steps](/docs/first-steps)
+- [Create Identity](/docs/create-identity)
+- [Dashboard](/docs/dashboard)
+- [Contacts](/docs/contacts)
+- [Mailbox](/docs/mailbox)
+- [Taskboard](/docs/taskboard)
+
 ### Hacking on evan.network
 - [Getting Started](/dev/getting-started)
-- [Setup](/dev/setup)
-  - [RPC](/dev/rpc)
-  - [Sync](/dev/chain)
+- [RPC](/dev/rpc)
+- [Sync](/dev/chain)
+- [Web3](/dev/web3)
+- [IPFS](/dev/ipfs)
+- [Security](/dev/security)
 - [Smart Contract](/dev/smart-contracts)
   - [Business Center](/dev/business-center)
   - [Contract Factories](/dev/contract-factories)
@@ -21,8 +30,7 @@
   - [ENS](/dev/ens)
   - [DNS](/dev/ens)
   - [Identity Claim](/dev/identity-claims)
-- [Web3](/dev/web3)
-- [IPFS](/dev/ipfs)
+
 
 ### Hacking
 - [Wiki](/docs/wiki)
