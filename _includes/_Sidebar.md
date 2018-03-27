@@ -12,8 +12,7 @@
 - [Mailbox](/docs/mailbox)
 - [Taskboard](/docs/taskboard)
 
-### Hacking on evan.network
-- [Getting Started](/dev/getting-started)
+### [Hacking on evan.network](/dev/getting-started)
 - [Blockchain](/dev/blockchain)
 - [Web3](/dev/web3)
 - [IPFS](/dev/ipfs)

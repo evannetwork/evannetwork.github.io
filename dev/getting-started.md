@@ -1,7 +1,7 @@
 ---
 title: "Getting Started"
 ---
-# Getting started
+# Getting started to hack on the evan.network
 
 evan.network offers developers a wide range of features, services, blueprints and best practices to create incredible decentralized applications.
 
@@ -9,9 +9,12 @@ The evan.network is a [Ethereum](https://ethereum.org/)<sup>[+]</sup> based bloc
 
 The Blockchain itself isn't made for storing complex or unstructured data like documents, data and applications. For that reason we are offer an integrated IPFS storage that is used to store non Blockchain data and to deliver DAPPs. You can read more about our [IPFS](/dev/ipfs) to get an better understanding why it is so important and how you can use it in your applications.
 
+## Tons of Cool Features
+
 On top of the Blockchain- and the Storage Engine we build services and APIs to build secure, fast and robust applications.
 + content and contract encryption
 + contact management with integrated key management and key exchange
 + mailbox system to offer offline invite and contact possibilities
 + Data Contracts with security and role management
 + DBCP description language to build unstoppable DAPPs and Smart Agents
++ [ENS](/dev/ens) and [ENS2DNS](/dev/ens2dns) to make users live easier
