@@ -30,9 +30,9 @@
   - [ENS](/dev/ens)
   - [DNS](/dev/ens)
   - [Identity Claim](/dev/identity-claims)
-
-
-### Hacking
+  
+### Miscellaneous
+- [Resources](/docs/urls)
 - [Wiki](/docs/wiki)
 - [Release Notes](/docs/releases)
 - [Gitter](https://gitter.im/evannetwork) <sup>[+]</sup>
