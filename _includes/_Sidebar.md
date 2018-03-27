@@ -27,7 +27,7 @@
 - [Writing DApps](/dev/dapps)
 - [Services](/dev/dapps)
   - [ENS](/dev/ens)
-  - [DNS](/dev/ens)
+  - [ENS to DNS](/dev/ens2dns)
   - [Identity Claim](/dev/identity-claims)
 
 ### Miscellaneous
