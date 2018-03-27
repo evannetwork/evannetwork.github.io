@@ -10,6 +10,9 @@
 - [Setup](/dev/setup)
   - [RPC](/dev/rpc)
   - [Sync](/dev/chain)
+- [Security](/dev/security)
+- [Web3](/dev/web3)
+- [IPFS](/dev/ipfs)
 - [Smart Contract](/dev/smart-contracts)
   - [Business Center](/dev/business-center)
   - [Contract Factories](/dev/contract-factories)
@@ -19,13 +22,11 @@
 - [Writing DApps](/dev/dapps)
 - [Services](/dev/dapps)
   - [ENS](/dev/ens)
-  - [DNS](/dev/ens)
-  - [Identity Claim](/dev/identity-claims)
-- [Web3](/dev/web3)
-- [IPFS](/dev/ipfs)
+  - [DNS](/dev/dns)
+  - [Identity Claim](/dev/identity-claim)
 
-### Resources
-- [Components](/docs/urls)
+### Miscellaneous
+- [Resources](/docs/urls)
 - [Wiki](/docs/wiki)
 - [Release Notes](/docs/releases)
 - [Gitter](https://gitter.im/evannetwork) <sup>[+]</sup>
