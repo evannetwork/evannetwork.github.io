@@ -16,10 +16,7 @@ The evan.network is a Ethereum Blockchain with a authority consensus that is pub
 ## Our Tenets
 
 1. Decentralized
-  * comming
 
 2. Comprehensible
-  * comming
 
 3. Adaptable
-  * comming
