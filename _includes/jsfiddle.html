@@ -1,1 +1,6 @@
+
+{% if include.tabs == "" %}
 <script async src="//jsfiddle.net/{{ include.fiddle }}/embed/js,html,css,result/dark/?accentColor=6bc8c5"></script>
+{% else %}
+<script async src="//jsfiddle.net/{{ include.fiddle }}/embed/{{ include.tabs }}/dark/?accentColor=6bc8c5"></script>
+{% endif %}

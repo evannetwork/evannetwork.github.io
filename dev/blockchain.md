@@ -10,7 +10,7 @@ The **benefits** of evan.network toward the Ethereum public chains are:
 * optimized for enterprise business >> high transactions throughput and 3sec BlockTime  
 * new blocks can only signed by known [MasterNodes](/doc/masternode) >> [51%](https://learncryptography.com/cryptocurrency/51-attack) attacks are not possible
 
-User and developers can access the evan.network Blockchain via our RPC Endpoints or can sync the chain with an own Parity. The own Parity node is the best option for developers to connect onpremise applications like e.g. DB, ERP, CRM, PPS system with evan.network. The RPC Endpoint is the best option for ÐAPPs and interactive applications. The RPC Endpoint is also provided decentralized through all MasterNode providers.
+User and developers can access the evan.network blockchain via our RPC Endpoints or can sync the chain with an own Parity. The own Parity node is the best option for developers to connect onpremise applications like e.g. DB, ERP, CRM, PPS system with evan.network. The RPC Endpoint is the best option for ÐAPPs and interactive applications. The RPC Endpoint is also provided decentralized through all MasterNode providers.
 
 Like in the public Ethrereum chain, all read applications against the chain are free. If you will submit transactions to the chain you need [EVE Tokens](/doc/eve) to pay the GAS costs. The amount of the needed GAS is dependent on the complexity of the transactions that is submitted and can be calculatet in front with the API.
 
