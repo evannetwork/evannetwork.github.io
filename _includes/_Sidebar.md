@@ -14,6 +14,7 @@
 
 ### [Hacking on evan.network](/dev/getting-started)
 - [Blockchain](/dev/blockchain)
+  - [EVE Tokens](/doc/eve)
 - [Web3](/dev/web3)
 - [IPFS](/dev/ipfs)
 - [Security](/dev/security)
