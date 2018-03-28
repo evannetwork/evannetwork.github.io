@@ -3,13 +3,18 @@ title: "Blockchain"
 ---
 # Blockchain
 
-The evan.network Blockchain is build on [Parity](https://parity.io/)<sup>[+]</sup> nodes, that are hosted and operated by evan.network [MasterNodes](/doc/masternode). These nodes building the fundamental consensus to sign new blocks in the evan.network.
+evan.network is a [Proof of Authority (PoA)](https://en.wikipedia.org/wiki/Proof-of-authority)<sup>[+]</sup> publicly accessible blockchain for Ethereum. The evan.network Blockchain is build on [Parity](https://parity.io/)<sup>[+]</sup> nodes, that are hosted and operated by evan.network [MasterNodes](/doc/masternode). Every user can send transactions to the evan.network, but only MasterNodes are authorized to sign new blocks. To send transactions the user or application needs [EVE](/doc/eve) Tokens to pay the transaction fees.
+
+The **benefits** of evan.network toward the Ethereum public chains are:
+* no competitive mining >> so no energy wasting
+* optimized for enterprise business >> high transactions throughput and 3sec BlockTime  
+* new blocks can only signed by known [MasterNodes](/doc/masternode) >> [51%](https://learncryptography.com/cryptocurrency/51-attack) attacks are not possible
 
 User and developers can access the evan.network Blockchain via RPC Endpoints or can sync the chain with an own node.
 
 ## core - Production Chain
 
-The production chain is named [core](/doc/urls) and is the main blockchain offered by the [MasterNodes](/doc/masternode).
+The production chain is named [core](/doc/resources) and is the main blockchain from evan.network an provided by the [MasterNodes](/doc/masternode).
 
 ### RPC Endpoint
 You can access the endpoint via HTTPS and WebSocket.
@@ -23,7 +28,7 @@ parity --chain "/path/to/core.json"
 
 ## testcore - Development Chain
 
-To start hacking on evan.network it is the best to use the [testcore](/doc/urls) network to make the first steps. The [testcore](/doc/urls) network is similar to the [core](/doc/urls) main network but without the need to buy [EVE](/doc/eve) tokens. To get EVE tokens for the [testcore](/doc/urls) network you can join the [Gitter faucet](https://gitter.im/evannetwork/faucet)<sup>[+]</sup> channel and post you account id.
+To start hacking on evan.network it is the best to use the [testcore](/doc/resources) network to make the first steps. The [testcore](/doc/resources) network is similar to the [core](/doc/resources) main network but without the need to buy [EVE](/doc/eve) tokens. To get EVE tokens for the [testcore](/doc/resources) network you can join the [Gitter faucet](https://gitter.im/evannetwork/faucet)<sup>[+]</sup> channel and post you account id.
 
 ### RPC Endpoint
 You can access the endpoint via HTTPS and WebSocket.

@@ -30,7 +30,7 @@
   - [Identity Claim](/dev/identity-claims)
 
 ### Miscellaneous
-- [Resources](/doc/urls)
+- [Resources](/doc/resources)
 - [Wiki](/doc/wiki)
 - [Release Notes](/docs/releases)
 - [Gitter](https://gitter.im/evannetwork)<sup>[+]</sup>
