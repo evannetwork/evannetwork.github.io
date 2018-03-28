@@ -4,6 +4,6 @@ title: "MasterNode"
 # MasterNode
 
 
-The evan.network MasterNode is a node that can legitimize new transactions in the network. This node retrieves sent transactions to the network and signs them into new blocks. Thus, the MasterNode contributes to the decentralization of the network. To guarantee security, this node has no opened ports to any RPC or Websocket API. It only signs transactions and seal blocks. The evan.network MasterNode operator provides several servers. The servers need to be hosted in a European data center. 
-
-
+The core technology of evan.network is based on Ethereum. Transaction in evan.network are secured by cryptographic algorithms and the decentralization of the network guarantees immuatbility to these transactions.
+Independent MasterNodes, operated by credible European organizations, ensure a secure, reliable and sustainable high-performance Blockchain. The MasterNode is a node that can legitimize new transactions in the network. This node retrieves sent transactions to the network and signs them into new blocks (Proof of Authority). Thus, the MasterNode contributes to the decentralization of the network. To guarantee security, this node has no opened ports to any RPC or Websocket API. It only signs transactions and seal blocks.
+A MasterNode consists of the blockchain software and a storage engine. The server of the evan.network MasterNode need to be hosted in a European data center.
