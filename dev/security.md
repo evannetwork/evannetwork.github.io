@@ -138,6 +138,42 @@ Again, passing ```false``` as the last argument revokes permissions.
 See section "DataContract" for more example for configurable operations.
 
 
+## Distributed Filesystem Encryption
+### Envelopes
+As basically all data that can be described as "content" are stored via the hybrid storage approach, the main part of data is stored in the distributed filesystem. This data is encrypted and stored in so called "Envelopes", which are a container for the data itself and contain enough information for the API to determine which key to use for decryption and where to retrieve the key from.
+
+This is an example envelope:
+```json
+{
+  "public": {
+    "name": "envelope example"
+  },
+  "private": "...",
+  "cryptoInfo": {
+    "algorithm": "aes-256-cbc",
+    "keyLength": 256,
+    "originator": "0x0000000000000000000000000000000000000001,0x0000000000000000000000000000000000000002",
+    "block": 123
+  }
+}
+```
+
+The "public" section contains data, that is visible without being invited or related to the contract. The "private" section can only be decrypted if the user that tries to read the data ha been added to the sharings of the contract. The ```cryptoInfo``` part is used to determine which decryption algorithm to use and where to look for it.
+
+When decrypted, the ```private``` section takes precedence over the ```public``` section. This can lead to the private section overwriting sections of the ```public``` part. For example a public title may be replace with a "true" title (only visible for members) from the private section.
+
+### Crypto Algorithms
+#### aes-256-cbc
+The default encryption is AES with cypher block chaining and a key length of 256 bit. This is commonly used for encrypting data in the API.
+
+#### aes-blob
+The actual encrytion in this mode utilizes aes as well, but the ```private``` part only holds a reference to the encrypted file or files in the distributed filesystem and the envelope is basically a listing with references to the encrypted files.
+
+#### unencrypted
+Like the name suggests, this is not an actual encryption but the envelope is just used as a wrapper for unencrypted data, that follows the same guidelines. This is useful, when the data schema requires an envelope but the data should be public.
+
+
+
 ## Sharings
 ### About
 As the main part of data related to contracts is stored in the distributed filesystem, only references to the DFS are stored in the contract. Contents in the DFS are encrypted with one or more keys specific to the contract instance they belong to.
@@ -146,6 +182,12 @@ Contract participants that should be enabled to read and/or write contract conte
 - **participant** - the contract participant, the key is intended for
 - **section** - the section in the contract, which holds encrypted data
 - **block** - this annotes the _starting_ point from which on the key is valid
+
+The "sharings" of a contract is basically a structured list of encrypted keys.
+In simple contract the creator of the contract creates a single data key for this contract and wants to share it with other contract members to enable them to read the data in the contract and puts the data key into the sharings info. To prevent third parties from accessing this data key, this key is encrypted with the communication key between the contract owner and the contract participant.
+
+![sharings - schema](/public/dev/sharings_schema.png)
+
 
 ### Key Criteria
 #### Data Keys
