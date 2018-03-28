@@ -17,7 +17,7 @@ User and developers can access the evan.network Blockchain via RPC Endpoints or 
 The production chain is named [core](/doc/resources) and is the main blockchain from evan.network an provided by the [MasterNodes](/doc/masternode).
 
 ### RPC Endpoint
-You can access the endpoint via HTTPS and WebSocket.
+You can access the endpoint via HTTPS and WebSocket e.g via [Web3](/dev/web3).
 `https://core.evan.network`
 
 ### Blockchain Node
@@ -31,7 +31,7 @@ parity --chain "/path/to/core.json"
 To start hacking on evan.network it is the best to use the [testcore](/doc/resources) network to make the first steps. The [testcore](/doc/resources) network is similar to the [core](/doc/resources) main network but without the need to buy [EVE](/doc/eve) tokens. To get EVE tokens for the [testcore](/doc/resources) network you can join the [Gitter faucet](https://gitter.im/evannetwork/faucet)<sup>[+]</sup> channel and post you account id.
 
 ### RPC Endpoint
-You can access the endpoint via HTTPS and WebSocket.
+You can access the endpoint via HTTPS and WebSocket e.g via [Web3](/dev/web3).
 `https://testcore.evan.network`
 
 ### Blockchain Node
