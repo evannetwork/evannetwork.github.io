@@ -29,5 +29,5 @@ This contract defintion is like a class or prototype and be instantiated as ofte
 ## Getting started with creating Smart Contracts
 You can find good examples about getting started with smart contracts and Solidity on the [Ethereum](https://ethereum.org/)<sup>[+]</sup> homepage.
 
-The recommendation in these samples is to use the Ethereum wallet for deploying the sample contracts, but if you want get started right away without synchronizing a the blockchain, you can use [Remix](https://remix.ethereum.org/)<sup>[+]</sup>. There you can run your code in the JavaScript VM or if you want to try interacting with contracts from the evan.network, install [MetaMask](https://metamask.io/)<sup>[+]</sup> and connect it to evan.network as described in [web3](/dev/web3#with-an-own-web3-instance).
+The recommendation in these samples is to use the Ethereum wallet for deploying the sample contracts, but if you want get started right away without synchronizing a the blockchain, you can use [Remix](https://remix.ethereum.org/)<sup>[+]</sup>. There you can run your code in the JavaScript VM or if you want to try interacting with contracts from the evan.network, install [MetaMask](https://metamask.io/)<sup>[+]</sup> and connect it to evan.network as described in [web3](/dev/web3#with-metamask).
 
