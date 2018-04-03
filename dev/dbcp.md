@@ -116,3 +116,7 @@ Contracts that use a ÐApp for interacting with it, need the "dapp" property, th
 | primaryColor | | string | color code for primary color |
 | secondaryColor | | string | color code for secondary color |
 | standalone | | bool | indicates whether this ÐApp runs in "fullscreen" without a run container |
+
+
+## Community Webpage
+You can find more information about DBCP on the [DBCP Community Webpage](https://dbcp.online/)<sup>[+]</sup> (German).
