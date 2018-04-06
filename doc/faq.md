@@ -5,18 +5,18 @@ title: "FAQ"
 
 **Development Plan related questions of evan.network**
 
-**Q.**
+#### Q.
 ***What’s the vision of evan.network?***
 
-**A.**
+#### A.
 evan.network is the B2B cooperation network with European trust.
 
 In an increasingly networked world, the pressure of competition is becoming harder and globalized. To be competitive, every company needs to focus on it’s own core- competency and to work in a dynamic network of partner organizations for offering exciting services to their customer all over the world. Rigid supply chains must become flexible value networks. The evan.network is a global, decentralized enterprise network based on Blockchain technology. It is organized and operated by trustful European companies. Based on the evan.network, all companies or organizations can realize their decentralized use cases.
 
-**Q.**
+#### Q.
 ***What are the benefits of evan.network?***
 
-**A.**
+#### A.
 The benefits are:
 * **Public.** The evan.network can be used for collaboration by any user. It is publicly available and usable.
 
@@ -33,22 +33,22 @@ The benefits are:
 * **Expandability.** Ethereum-based smart contracts can be created and used by users.
 
 
-**Q.**
+#### Q.
 ***What is the token used in evan.network?***
 
-**A.**
+#### A.
 The evan.network token used in the platform is called [EVE](https://evannetwork.github.io/doc/eve).
 
-**Q.**
+#### Q.
 ***Is evan.network developed based on Ethereum?***
 
-**A.**
+#### A.
 Yes, it is.
 
-**Q.**
+#### Q.
 ***What’s the path of evan.network technology development and future plans?***
 
-**A.**
+#### A.
 The evan.network Roadmap
 * 2016: Idea
 * 2017: Development
