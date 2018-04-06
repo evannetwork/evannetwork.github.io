@@ -20,7 +20,7 @@ In an increasingly networked world, the pressure of competition is becoming hard
 The benefits are:
 * **Public.** The evan.network can be used for collaboration by any user. It is publicly available and usable.
 
-* **Performance.** Fast block times about four seconds and more than a hundred transactions per second can be implemented within the network.
+* **Performance.** Fast block times with about four seconds and more than a hundred transactions per second can be executed within the network.
 
 * **Independence.** [MasterNodes](https://evannetwork.github.io/doc/masternode) come from different industries and do not affect the collaboration of users within the Business Center. The sovereignty over data and applications lies always with the users or the Business Center Ownern.
 
@@ -40,7 +40,7 @@ The benefits are:
 The evan.network token used in the platform is called [EVE](https://evannetwork.github.io/doc/eve).
 
 #### Q.
-***Is evan.network developed based on Ethereum?***
+***Is evan.network based on Ethereum?***
 
 #### A.
 Yes, it is.
