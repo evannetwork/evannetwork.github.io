@@ -26,9 +26,9 @@ The benefits are:
 
 * **Security and trust.** The network is operated decentralized. Only the [MasterNodes](https://evannetwork.github.io/doc/masternode) are allowed to sign blocks in the network. In case of violations [MasterNodes](https://evannetwork.github.io/doc/masternode) can be excluded.
 
-* **Energy efficient operation.** There is no energy wasting while mining (only the known [MasterNode](https://evannetwork.github.io/doc/masternode) operators sign blocks with proof of authority, no proof of work).
+* **Energy efficient operation.** There is no energy wasting while mining (only the known [MasterNodes](https://evannetwork.github.io/doc/masternode) sign blocks with proof of authority, no proof of work).
 
-* **Transparency.** Changes to the blockchain such as Hardforks can only be performed by the [MasterNode](https://evannetwork.github.io/doc/masternode) operator, so trust is not tied to a single organization.
+* **Transparency.** Changes to the blockchain such as Hardforks can only be performed by the [MasterNodes](https://evannetwork.github.io/doc/masternode), so trust is not tied to a single organization.
 
 * **Expandability.** Ethereum-based smart contracts can be created and used by users.
 
