@@ -1,12 +1,15 @@
 ---
 title: "The Network"
 ---
-
 ## How the evan.network works
+The evan.network is an Ethereum-based enterprise blockchain operated by evan.network partners. Organizations can take advantage of decentralized collaboration without having to understand the complexity of blockchain technology. Thus, blockchain solutions can be used in daily business.
+
+The evan.network consists of different components, which are short presented below.
+
 ![evan.network](/public/evannetwork_overview.jpg){:height="75%" width="75%" class="center"}
 
 ### 1. Specific Sub Networks
-Based on the ecosystem of the evan.network almost everyone can build their own specific sub networks in all industries where cooperation with partners is important.
+Based on the ecosystem of the evan.network almost everyone can build their own specific sub networks in all industries where cooperation with partners is important. The organizations or associations bekome the role of a business center owner. But nobody in the business center has access to the transaction data. Data from a business relationship is exchanged directly between the partner via smart contracts and written to the blockchain by the decentralized [MasterNodes](/doc/masternode). The business center owner therefore only provides the functional basis for the cooperation. The cooperation takes place without his intervention.
 ### 2. [Services](/doc/services)
 With ready to use enterprise services, such as digital twin contracts or secure data exchange, the evan.network makes blockchain ready for every business.
 ### 3. Decentralized Autonomous Organization ([DAO](/doc/dao))
