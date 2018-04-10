@@ -8,7 +8,7 @@ The contacts ÐAPP is your address book, where you can manage contacts from the 
 
 
 ## Adding new Contacts
-Adding new contacts initiates a key exchange process with the person you want to add, which will, if completed, allow you to exchange blockchain mails (or "bmails") with this person.
+Adding new contacts initiates a key exchange process with the person you want to add, which will, if completed, allow you to exchange blockchain mails or "bmails" (see [Mailbox](/tutorial/mailbox)) with this person. 
 
 [![contact add type select](/public/tutorial/contacts_add_type_select.png)](/public/tutorial/contacts_add_type_select.png)
 
@@ -31,3 +31,5 @@ You can rename or delete contacts from your address book by clicking on them.
 [![contact details](/public/tutorial/contacts_detail.png)](/public/tutorial/contacts_detail.png)
 
 The second tab, "contact status" lets you review your contact request status, which allows you to check if an invitee already has replied to your contact request.
+
+Please note, that deleting accounts also removes keys exchanged with them. Without these keys, you won't be able to read contracts created by them and bmails sent by them.
