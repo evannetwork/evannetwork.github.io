@@ -1,6 +1,5 @@
 ### [Overview](/)
 - [The Network](/doc/network)
-- [Starting](/doc/starting)
 - [DAO](/doc/dao)
 - [MasterNode](/doc/masternode)
 - [FAQ](/doc/faq)
