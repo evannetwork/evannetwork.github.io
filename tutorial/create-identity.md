@@ -25,7 +25,6 @@ With these 12 words you will be able to import your account on another device or
 If you want to copy the words to a password manager, you can do this on the advanced page, which can be reached via the toggle option below the recovery phrase words.
 
 [![onboarding recovery phrase advanced](/public/tutorial/onboarding_advanced.png)](/public/tutorial/onboarding_advanced.png)
-fine intact disagree body helmet room undo wide guard slogan can token
 
 When continuing you will be prompted to verify the recovery phrase by showing the same phrase with some words missing. You have fill the sections with the missing words to continue.
 
