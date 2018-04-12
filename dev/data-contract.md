@@ -9,7 +9,7 @@ It relies on the [Hybrid Storage](/dev/ipfs#hybrid-storage) concept for data sto
 
 The DataContract allows to:
 - set/update properties
-- add/remov list entries
+- add/remove list entries
 - move entries between lists
 - update the contract state (set it to Draft, Active, etc.) that follows a preconfigured workflow
 - update consumer states (set it to Draft, Active, etc.) that follows a preconfigured workflow
