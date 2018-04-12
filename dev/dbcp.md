@@ -39,9 +39,13 @@ References in the description can be stored in two ways:
 
 DBCP descriptions can be stored at ENS names as well. ENS can be used to address smart contracts (which can by default only be addressed with their technical address) via a human readable DNS domain like syntax. Therefore it is possible to setup smart contracts and their ÐApps like websites.
 
-DBCP based applications can be described as a bundle of the ENS address, where the DBCP description can be retrieved from, the smart contract that handles the logic and the ÐApps for interacting with it.
 
-![DBCP bundle](/public/dev/dbcp_bundle.png)
+## Information Flow
+When having an ENS entry or a contract address, the DBCP description for that can be loaded. This provides enough information to interact with the contract:
+- a ÐAPP for end-users
+- contract address and ABI for developers to write applications / ÐAPPs on their own
+
+[![DBCP information flow](/public/dev/dbcp_information_flow.png){:max-width="50%"}](/public/dev/dbcp_information_flow.png)
 
 
 ## Properties in Description

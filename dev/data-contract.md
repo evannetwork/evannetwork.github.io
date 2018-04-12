@@ -7,6 +7,8 @@ The DataContract is secured data storage contract for single properties and list
 
 It relies on the [Hybrid Storage](/dev/ipfs#hybrid-storage) concept for data storage and secures its data via contract permissions, sharings and key management described in [Security](/dev/security).
 
+[![data contract](/public/dev/data_contract.png){:max-width="50%"}](/public/dev/data_contract.png)
+
 The DataContract allows to:
 - set/update properties
 - add/remove list entries

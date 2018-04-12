@@ -54,7 +54,7 @@ The [Dappsys collection](https://dapp.tools/dappsys/) from [DappHub](https://dap
 
 If a contract has a function that only a specific scope of users are allowed to use, the contract has to inherit from ```DSAuth```. This adds the ```authority``` property to the contract and allows to use the ```auth``` modifier.
 
-An ```authority``` is basically just a contract that inherits from ```DSAuth```. To use roles for contract permissions, this can be an instance of ```DSRoles```. Using this in the previous example contract looks like this:
+An ```authority``` is a contract that inherits from ```DSAuth```. To use roles for contract permissions, the authority can be an instance of ```DSRoles```. Using this in the previous example contract looks like this:
 
 ```solidity
 contract OwnedStorage is DSAuth {
@@ -65,6 +65,10 @@ contract OwnedStorage is DSAuth {
     }
 }
 ```
+
+The `auth` modifier is used on functions, that should be restricted to specific roles and forbids access to them, if the calling account does not meet the permission requirements.
+
+[![smart contract authority](/public/dev/smart_contract_authority.png){:max-width="50%"}](/public/dev/smart_contract_authority.png)
 
 This basically forbids almost everyone from using the ```setData``` function except:
 - the contract itself
@@ -138,9 +142,11 @@ Again, passing ```false``` as the last argument revokes permissions.
 See section "DataContract" for more example for configurable operations.
 
 
-## Distributed Filesystem Encryption
+## Distributed File System Encryption
 ### Envelopes
-As basically all data that can be described as "content" are stored via the hybrid storage approach, the main part of data is stored in the distributed filesystem. This data is encrypted and stored in so called "Envelopes", which are a container for the data itself and contain enough information for the API to determine which key to use for decryption and where to retrieve the key from.
+As basically all data that can be described as "content" are stored via the hybrid storage approach, the main part of data is stored in the distributed file system. This data is encrypted and stored in so called "Envelopes", which are a container for the data itself and contain enough information for the API to determine which key to use for decryption and where to retrieve the key from.
+
+[![envelope](/public/dev/envelope.png){:max-width="50%"}](/public/dev/envelope.png)
 
 This is an example envelope:
 ```json
