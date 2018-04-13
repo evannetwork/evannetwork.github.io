@@ -3,11 +3,11 @@ title: "Web3"
 ---
 
 # Web3
-Web3 is a Ethereum collection of API modules to interact with a remote Ethereum node and so directly with the evan.network. You can create your own web3 instance or use a browser plugin like [MetaMask](https://metamask.io/)<sup>[+]</sup> to manage your connection.
+Web3 is a collection of Ethereum API modules to interact with a remote Ethereum node and so directly with the evan.network. You can create your own web3 instance or use a browser plugin like [MetaMask](https://metamask.io/)<sup>[+]</sup> to manage your connection.
 
 
 ## With an own web3 instance
-You can create a web3 instance and perform your calls against evan.network via HTTPS and WebSocket provider. Throughout the API web3 1.x is used, you can find detailed API documentation its [official documentation](https://web3js.readthedocs.io/en/1.0/index.html)<sup>[+]</sup>.
+You can create a web3 instance and perform your calls against evan.network via HTTPS and WebSocket providers. Throughout the web3 1.x API is used, you can find the detailed [official API documentation here](https://web3js.readthedocs.io/en/1.0/index.html)<sup>[+]</sup>.
 
 {% include jsfiddle.html fiddle="wulfraem/L26tzuhq" tabs="js,result" %}
 
@@ -15,7 +15,7 @@ Contract calls can of course be executed in the same way.
 
 {% include jsfiddle.html fiddle="wulfraem/7qqvkffg" tabs="js,result" %}
 
-Though this possible way to interact with the network, it is recommended to rely on the API framework, as it acts as an abstraction layer for interacting with the evan network and makes complex operations more easier.
+Although this is a possible way to interact with the network, it is recommended to rely on the API framework, as it acts as an abstraction layer for interacting with the evan network and makes complex operations far easier.
 
 
 ## With MetaMask

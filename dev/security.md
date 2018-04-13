@@ -9,7 +9,7 @@ To ensure that contents stored can be read by all related parties and cannot be 
 These approaches have the following responsibilities:
 - prevent undesired contract manipulation
 - prevent contract content from being leaded to third parties
-- make access to contract content possible without exchanging keys for every different peace of data stored in contracts
+- make access to contract content possible without exchanging keys for every piece of data stored in contracts
 
 
 ## Permissions in Smart Contracts
@@ -34,7 +34,7 @@ contract Owned {
     }
 }
 ```
-Contract transactions that should only used by the contract owner use the ```only_owner``` modifier, for example:
+Contract transactions that should only be used by the contract owner use the ```only_owner``` modifier, for example:
 ```
 contract OwnedStorage is Owned {
     string public data;
@@ -78,7 +78,7 @@ Permissions can be granted by:
 3. granting this role permission (capabilitiy) to a function
 
 ```solidity
-// sampe contract
+// sample contract
 DSAuth storage = new OwnedStorage();
 
 // create a roles contract for the contract and assign it as the authority
