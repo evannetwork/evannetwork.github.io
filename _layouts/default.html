@@ -30,8 +30,14 @@
   <script>
     $(document).ready(function () {
       // Open the sidebar on load on bigger screens
-      if ($(window).width() > 1540) {
-        $('#sidebar-checkbox').prop('checked', true)
+      if ($(window).width() < 1540) {
+        $('body').addClass('animation-disabled');
+        
+        $('#sidebar-checkbox').prop('checked', false)
+
+        setTimeout(function() {
+          $('body').removeClass('animation-disabled');
+        });
       }
       // Hook up search
       $('#tipue_search_input').tipuesearch({ 'show': 99 });
