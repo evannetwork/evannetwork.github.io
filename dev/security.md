@@ -168,12 +168,18 @@ The "public" section contains data, that is visible without being invited or rel
 
 When decrypted, the ```private``` section takes precedence over the ```public``` section. This can lead to the private section overwriting sections of the ```public``` part. For example a public title may be replace with a "true" title (only visible for members) from the private section.
 
+### Hash Encryption
+When envelopes are stored in the distributed filesystem, they can be retrieved via a hash, that is similar to an address of that data. This hash is then stored in the smart contract and contract participants can get the hash from the contract, retrieve the data from the DFS and decrypt it. To prevent data hoarders from pulling hashes from smart contracts, storing the DFS files for them and brute forcing them later on, hashes are encrypted before storing them in the smart contract as well.
+
 ### Crypto Algorithms
 #### aes-256-cbc
 The default encryption is AES with cypher block chaining and a key length of 256 bit. This is commonly used for encrypting data in the API.
 
 #### aes-blob
-The actual encrytion in this mode utilizes aes as well, but the ```private``` part only holds a reference to the encrypted file or files in the distributed filesystem and the envelope is basically a listing with references to the encrypted files.
+The actual encryption in this mode utilizes aes as well, but the ```private``` part only holds a reference to the encrypted file or files in the distributed filesystem and the envelope is basically a listing with references to the encrypted files.
+
+#### aes-ecb
+This algorithm is used for encrypting file hashes, which are 32 byte values. ECB ensures that encrypted hashes can be saved in the smart contract. Keys for hashes are created per contract and all hases for a contract are encrypted with the same hash.
 
 #### unencrypted
 Like the name suggests, this is not an actual encryption but the envelope is just used as a wrapper for unencrypted data, that follows the same guidelines. This is useful, when the data schema requires an envelope but the data should be public.
