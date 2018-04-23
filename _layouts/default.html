@@ -31,7 +31,14 @@
     $(document).ready(function () {
       // Open the sidebar on load on bigger screens
       if ($(window).width() > 1540) {
-        $('#sidebar-checkbox').prop('checked', true)
+        // add animation disabled class to show sidebar initially immediately
+        $('body').addClass('animation-disabled');
+
+        $('#sidebar-checkbox').prop('checked', true);
+
+        setTimeout(function() {
+          $('body').removeClass('animation-disabled');
+        });
       }
       // Hook up search
       $('#tipue_search_input').tipuesearch({ 'show': 99 });

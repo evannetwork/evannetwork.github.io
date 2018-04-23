@@ -9,7 +9,7 @@ To ensure that contents stored can be read by all related parties and cannot be 
 These approaches have the following responsibilities:
 - prevent undesired contract manipulation
 - prevent contract content from being leaded to third parties
-- make access to contract content possible without exchanging keys for every different peace of data stored in contracts
+- make access to contract content possible without exchanging keys for every piece of data stored in contracts
 
 
 ## Permissions in Smart Contracts
@@ -34,7 +34,7 @@ contract Owned {
     }
 }
 ```
-Contract transactions that should only used by the contract owner use the ```only_owner``` modifier, for example:
+Contract transactions that should only be used by the contract owner use the ```only_owner``` modifier, for example:
 ```
 contract OwnedStorage is Owned {
     string public data;
@@ -54,7 +54,7 @@ The [Dappsys collection](https://dapp.tools/dappsys/) from [DappHub](https://dap
 
 If a contract has a function that only a specific scope of users are allowed to use, the contract has to inherit from ```DSAuth```. This adds the ```authority``` property to the contract and allows to use the ```auth``` modifier.
 
-An ```authority``` is basically just a contract that inherits from ```DSAuth```. To use roles for contract permissions, this can be an instance of ```DSRoles```. Using this in the previous example contract looks like this:
+An ```authority``` is a contract that inherits from ```DSAuth```. To use roles for contract permissions, the authority can be an instance of ```DSRoles```. Using this in the previous example contract looks like this:
 
 ```solidity
 contract OwnedStorage is DSAuth {
@@ -65,6 +65,10 @@ contract OwnedStorage is DSAuth {
     }
 }
 ```
+
+The `auth` modifier is used on functions, that should be restricted to specific roles and forbids access to them, if the calling account does not meet the permission requirements.
+
+[![smart contract authority](/public/dev/smart_contract_authority.png){:max-width="50%"}](/public/dev/smart_contract_authority.png)
 
 This basically forbids almost everyone from using the ```setData``` function except:
 - the contract itself
@@ -78,7 +82,7 @@ Permissions can be granted by:
 3. granting this role permission (capabilitiy) to a function
 
 ```solidity
-// sampe contract
+// sample contract
 DSAuth storage = new OwnedStorage();
 
 // create a roles contract for the contract and assign it as the authority
@@ -138,9 +142,11 @@ Again, passing ```false``` as the last argument revokes permissions.
 See section "DataContract" for more example for configurable operations.
 
 
-## Distributed Filesystem Encryption
+## Distributed File System Encryption
 ### Envelopes
-As basically all data that can be described as "content" are stored via the hybrid storage approach, the main part of data is stored in the distributed filesystem. This data is encrypted and stored in so called "Envelopes", which are a container for the data itself and contain enough information for the API to determine which key to use for decryption and where to retrieve the key from.
+As basically all data that can be described as "content" are stored via the hybrid storage approach, the main part of data is stored in the distributed file system. This data is encrypted and stored in so called "Envelopes", which are a container for the data itself and contain enough information for the API to determine which key to use for decryption and where to retrieve the key from.
+
+[![envelope](/public/dev/envelope.png){:max-width="50%"}](/public/dev/envelope.png)
 
 This is an example envelope:
 ```json
@@ -162,12 +168,18 @@ The "public" section contains data, that is visible without being invited or rel
 
 When decrypted, the ```private``` section takes precedence over the ```public``` section. This can lead to the private section overwriting sections of the ```public``` part. For example a public title may be replace with a "true" title (only visible for members) from the private section.
 
+### Hash Encryption
+When envelopes are stored in the distributed filesystem, they can be retrieved via a hash, that is similar to an address of that data. This hash is then stored in the smart contract and contract participants can get the hash from the contract, retrieve the data from the DFS and decrypt it. To prevent data hoarders from pulling hashes from smart contracts, storing the DFS files for them and brute forcing them later on, hashes are encrypted before storing them in the smart contract as well.
+
 ### Crypto Algorithms
 #### aes-256-cbc
 The default encryption is AES with cypher block chaining and a key length of 256 bit. This is commonly used for encrypting data in the API.
 
 #### aes-blob
-The actual encrytion in this mode utilizes aes as well, but the ```private``` part only holds a reference to the encrypted file or files in the distributed filesystem and the envelope is basically a listing with references to the encrypted files.
+The actual encryption in this mode utilizes aes as well, but the ```private``` part only holds a reference to the encrypted file or files in the distributed filesystem and the envelope is basically a listing with references to the encrypted files.
+
+#### aes-ecb
+This algorithm is used for encrypting file hashes, which are 32 byte values. ECB ensures that encrypted hashes can be saved in the smart contract. Keys for hashes are created per contract and all hases for a contract are encrypted with the same hash.
 
 #### unencrypted
 Like the name suggests, this is not an actual encryption but the envelope is just used as a wrapper for unencrypted data, that follows the same guidelines. This is useful, when the data schema requires an envelope but the data should be public.
