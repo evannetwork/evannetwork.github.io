@@ -15,6 +15,7 @@ The **core** is the main blockchain network. To connect to the **core** you must
 
 ## testcore - Development Blockchain Network
 The **testcore** is the development blockchain network. To connect to the **testcore** you must access `https://testcore.evan.network` via the RPC or WS protocol.
+We also offer some additional **testcore** specific resources:
 * network status [https://teststatus.evan.network](https://teststatus.evan.network)<sup>[+]</sup>
 * chain explorer [https://testexplorer.evan.network](https://testexplorer.evan.network)<sup>[+]</sup>
 
