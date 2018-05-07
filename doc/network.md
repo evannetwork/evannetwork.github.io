@@ -1,8 +1,8 @@
 ---
 title: "The Network"
 ---
-## How the evan.network works
-The evan.network is an open ecosystem, providing companies in almost every industry the ability to build individual digital business models based on blockchain technology. It paves the way for future-orientated business models in which the sovereignty over data and the flexible cooperation between partners are crucial to success. At its core, evan.network is a counterweight to the currently dominating central marketplaces.
+## How the [evan.network](https://evan.network/) works
+The [evan.network](https://evan.network/) is an open ecosystem, providing companies in almost every industry the ability to build individual digital business models based on blockchain technology. It paves the way for future-orientated business models in which the sovereignty over data and the flexible cooperation between partners are crucial to success. At its core, evan.network is a counterweight to the currently dominating central marketplaces.
 
 The evan.network is an Ethereum-based enterprise blockchain operated by evan.network partners. Organizations can take advantage of decentralized collaboration without having to understand the complexity of blockchain technology. Thus, blockchain solutions can be used in daily business.
 
@@ -13,7 +13,7 @@ solution. Building your own business model on the evan.network can help you enco
 * new cooperative business models
 * efficient cooperation among partners
 
-The evan.network consists of different components, which are short presented below.
+The [evan.network](https://evan.network/) consists of different components, which are short presented below.
 
 ![evan.network](/public/evannetwork_overview.jpg){:height="75%" width="75%" class="center"}
 

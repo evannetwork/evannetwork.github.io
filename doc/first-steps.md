@@ -13,7 +13,7 @@ To start developing in the evan network, you primarily need need 3 things:
 
 Assuming you already know what the blockchain is and some basics about how it works and ecosystem.
 
-The evan.network uses [parity](https://www.parity.io/) as its blockchain client.
+The [evan.network](https://evan.network/) uses [parity](https://www.parity.io/) as its blockchain client.
 The reason to use it over [geth](https://geth.ethereum.org/) is the more extensive toolchain and functionality. Geth and others most likely can be used, too, for most purposes, but are not supported.
 
 This is only really relevant if you want to install the blockchain client on your own machine. Most of the time it is sufficient to configure your applications to connect to one of the [MasterNodes](/doc/masternodes).
@@ -38,7 +38,7 @@ There are two main options to install solidity, via native package on debian/ubu
 Or via nodejs:
 
     $ npm install -g solc
-    
+
 There are more options and more details available [here](https://solidity.readthedocs.io/en/v0.4.23/installing-solidity.html)
 
 ## Setting up nodejs
@@ -50,7 +50,7 @@ All the basic prerequisites for this, like `git`, need to be installed too, but 
 
 ## Install the Support Libraries
 
-So far this seems easy enough. Installing the primary 
+So far this seems easy enough. Installing the primary
 The primary thing to install is the [blockchain-core libs](https://github.com/evannetwork/blockchain-core). They are written in typescript and implemented as an npm package, so the installation should be pretty straightforward.
 
 Since the node ecosystem, and especially the ethereum apis are pretty fast moving environments it is not unlikely to encounter dependency and version problems though.
