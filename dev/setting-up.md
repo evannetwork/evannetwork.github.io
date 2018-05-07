@@ -1,5 +1,5 @@
 ---
-title: "First Steps"
+title: "Setting Up"
 ---
 
 # Setting up a Development Environment
@@ -26,6 +26,10 @@ The development blockchain is the only that exists at the moment for the evan.ne
 
 There will be at least one more, the production chain, which will be called "core" and not "testcore".
 
+
+## Create an Identity
+To do anything on the blockchain, you need an account, an identity. This is not just relevant for developers, and is described [here](/tutorial/create-identity).
+
 ## Installing Solidity
 
 There are two main options to install solidity, via native package on debian/ubuntu based distributions:
@@ -39,7 +43,7 @@ Or via nodejs:
 
     $ npm install -g solc
 
-There are more options and more details available [here](https://solidity.readthedocs.io/en/v0.4.23/installing-solidity.html)
+There are more options and more details available [here](https://solidity.readthedocs.io/en/v0.4.23/installing-solidity.html).
 
 ## Setting up nodejs
 
@@ -73,6 +77,8 @@ The agent you will be writing will use the [blockchain-core](https://github.com/
 # Your first Ðapp
 
 A [Ðapp](/dev/dapps) is just an application that utilizes the blockchain, and has distributed logic as a result. This is most often just a web application accessible via browser. But it is very possible to write Ðapps in any runtime environment, even native applications, as long as there is access to a blockchain, which usually means access to the network, at least some of the time.
+
+Evan.network Ðapps of utilize the evan.network framework. This makes a lot of things easier.
 
 Your first Ðapp will be a simple web application, that connects to the previous SmartAgent and directly to the blockchain itself.
 
