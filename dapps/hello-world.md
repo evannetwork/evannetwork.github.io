@@ -4,7 +4,7 @@ title: "Hello World ÐApp"
 # Hello World ÐApp
 
 ## 1. Get Tutorial Application
-- [Download Tutorial Application](git@github.com:evannetwork/contractus-dapps-tutorial.git)
+- [Download Tutorial Application](https://github.com/evannetwork/contractus-dapps-tutorial)
 
 ## 2. ÐApp Wrapper application
 The downloaded folder "contractus-dapps-tutorial" looks like this on the top level.
