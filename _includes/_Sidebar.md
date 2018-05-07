@@ -3,6 +3,7 @@
 - [DAO](/doc/dao)
 - [MasterNode](/doc/masternode)
 - [FAQ](/doc/faq)
+- [Glossary](/doc/glossary)
 
 ### [First Steps](/tutorial/first-steps)
 - [Create Identity](/tutorial/create-identity)
@@ -12,6 +13,10 @@
 - [Taskboard](/tutorial/taskboard)
 
 ### [Hacking on evan.network](/dev/getting-started)
+- [Setting Up](/dev/setting-up)
+  - [Hello World](/dev/hello-world)
+  - [Hello Agent](/dev/hello-agent)
+  - [Hello Ðapp](/dev/hello-dapp)
 - [Blockchain](/dev/blockchain)
   - [EVE Tokens](/doc/eve)
 - [Web3](/dev/web3)
