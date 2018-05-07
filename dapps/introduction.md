@@ -10,13 +10,13 @@ By creating an simple application to create, view and share tasks, you will lear
   - SystemJS, Angular 5 & Ionic 3, SASS, Browserify
 
 You will be guided through the following steps:
-  - [ÐApp basics](/dapps/basics.md)
-  - [build an "Hello World" ÐApp](/dapps/hello-world.md)
-  - [create and read a new task (using the generalized contractus Data-Contract)](/dapps/task.md)
-  - [finalize using an Taskboard](/dapps/taskboard.md)
+  - [ÐApp basics](/dapps/basics)
+  - [build an "Hello World" ÐApp](/dapps/hello-world)
+  - [create and read a new task (using the generalized contractus Data-Contract)](/dapps/task)
+  - [finalize using an Taskboard](/dapps/taskboard)
 
 When you start to build your own application: 
-  - [planning the ÐApp structure](/dapps/planning.md)
-  - [best practices](/dapps/advanced.md)
+  - [planning the ÐApp structure](/dapps/planning)
+  - [best practices](/dapps/advanced)
 
-Well, good luck and get started [here](/dapps/basics.md).
+Well, good luck and get started [here](/dapps/basics).
