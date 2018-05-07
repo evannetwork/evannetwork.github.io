@@ -9,7 +9,7 @@ title: "Hello World ÐApp"
 ## 2. ÐApp Wrapper application
 The downloaded folder "contractus-dapps-tutorial" looks like this on the top level.
 
-[![contractus-dapps-tutorial - directory](/public/dapps/hello-world/contractus-dapps-tutorial-dir-structure.png){:width="50%"}](/public/dapps/hello-world/contractus-dapps-tutorial-dir-structure.png)
+[![contractus-dapps-tutorial - directory](/public/dapps/hello-world/contractus-dapps-tutorial-dir-structure.png){:width="150px"}](/public/dapps/hello-world/contractus-dapps-tutorial-dir-structure.png)
 
 In order to be able to work in ordered and staked projects, it is necessary to split the project into several projects (e.g. dashboard-dapp, list-dapp, contract1-dapp, contract2-dapp) after a short time. To anticipate this problem and different building jobs, each project uses a [lerna](https://github.com/lerna/lerna) project structure to handle multiple repositories as easily as possible. The lerna project only includes the basic requirements and build jobs for the sub projects. The build jobs are definied within the [contractus dapp-gulp project](/angular/dapp-gulp).
 
@@ -25,24 +25,24 @@ npm link contractus-core-link
 ```
 
 ### 3.2 Basic Development
-- build and serve the local dapp serve
-- starts an local server at http://localhost:3000
+- build all included dapps
 ```bash
-npm run serve-standalone
-```
-
-- build all dapps
-```bash
-npm run bc-build
-npm run dapps-core-build
 npm run dapps-build
 ```
 
-- serve for change tracking
+- watch for changes and rebuild dapps
 ```bash
-npm run bc-serve
-npm run dapps-core-serve
 npm run dapps-serve
+```
+
+- build and watch
+ ```bash
+npm run serve
+```
+
+- build and serve the local dapp serve, starts an local server at http://localhost:3000
+```bash
+npm run serve-standalone
 ```
 
 ## 4. The ÐApp structure
@@ -121,7 +121,7 @@ It looks like the following.
 }
 ```
 
-Within the src folder, the frontend source code is located. In this case, we are using Angular 5 to create and dynamic frontend application. Starting by the index.ts file, the build job will include every file into two output files, ts files into an comined js file, that includes logic and html templates and the scss files into an combined css, to declare stylings.
+Within the src folder, the frontend source code is located. In this case, we are using Angular 5 to create a dynamic frontend application. Starting by the index.ts file, the build job will include every file into two output files, ts files into a comined js file, that includes logic and html templates and the scss files into a combined css, to declare stylings.
 
 ## 5. Angular
 ### 5.1 index.ts
