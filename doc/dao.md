@@ -3,7 +3,7 @@ title: "DAO"
 ---
 # DAO - Decentralized Autonomous Organization
 
-In evan.network, trusting business relationships are made possible. The interacting network partners nevertheless retain their data sovereignty. This trust is based on the decentralization of the network. No central intermediary has control over the data and processes. But decentralization does not mean that the network is without control.
+In [evan.network](https://evan.network/), trusting business relationships are made possible. The interacting network partners nevertheless retain their data sovereignty. This trust is based on the decentralization of the network. No central intermediary has control over the data and processes. But decentralization does not mean that the network is without control.
 
 *A decentralized network of trust must be operated decentrally.*
 
