@@ -29,7 +29,17 @@
   - [Data Contract](/dev/data-contract)
 - [Smart Agents](/dev/smart-agents)
 - [DBCP](/dev/dbcp)
-- [Writing ÐApps](/dev/dapps)
+- [Writing ÐApps](/dapps/introduction)
+  - [Hello World and Task ÐApp](/dapps/basics)
+    - [ÐApp basics](/dapps/basics)
+    - [build an "Hello World" ÐApp](/dapps/hello-world)
+    - [create and read a new task (using the generalized contractus Data-Contract)](/dapps/task)
+    - [finalize using an Taskboard](/dapps/taskboard)
+  
+  - [Start your your own ÐApp](/dapps/planning)
+    - [planning the ÐApp structure](/dapps/planning)
+    - [best practices](/dapps/advanced)
+  
 - [Services](/dev/services)
   - [ENS](/dev/ens)
   - [ENS2DNS](/dev/ens2dns)
