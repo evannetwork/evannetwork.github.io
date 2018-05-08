@@ -11,7 +11,7 @@ Frontend DApps are implemented using Typescript, Angular 5 and Ionic 3. The gene
 For more information, about how projects and libraries define their definition, visit the [dbcp documentation](/dev/dbcp).
 
 ## Frontend in deep
-For more information, about how the contractus DApp framework organizes the loading of applications and their dependencies from the IPFS and how to develop full blown angular applications using the contractus stack, visit the documentation about [contractus frontend applications](/angular/basic).
+For more information, about how the contractus DApp framework organizes the loading of applications and their dependencies from the IPFS and how to develop full blown angular applications using the contractus stack, visit the documentation about [contractus frontend applications](/frontend/basic).
 
 ## Blockchain-core and its bundle for UI in deep
 For more information, about how the contractus DApp framework interacts with contracts, visit the ["backend" documentation](https://github.com/evannetwork/blockchain-core).

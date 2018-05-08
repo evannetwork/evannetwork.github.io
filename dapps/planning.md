@@ -30,7 +30,7 @@ Work through the following checklist, to be sure, that you wont miss anything.
 - Divide the frontend into components that are as reusable and separate as possible.
 
 ## 5. Setup Frontend Application
-- read about angular ÐApps ([frontend documentation](/angular/basic))
+- read about angular ÐApps ([frontend documentation](/frontend/basic))
 - Use seed project to setup your basic project ([Seed Project](git@github.com:evannetwork/contractus-dapps-tutorial.git))
 - Develop your frontend application.
 
