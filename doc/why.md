@@ -6,7 +6,7 @@ title: "Why evan.network"
 Good Question.  
 Why not use any other well-established and well-proven technology to implement the applications and software you need?  
 Why use a blockchain at all?  
-Why use ethereum?__
+Why use ethereum?  
 And why not use any other ethereum framework?
 
 Well, those are three questions, and they need three separate answers.
@@ -22,7 +22,7 @@ All of computing is based on the fact, that copies are cheap and changes are che
 Blockchain technology changes this. It gets rid of mutable copies, because there is only one consensus record, and any change to it can only happen by consensus. Maintaining competing copies and versions within a blockchain becomes prohibitively expensive, via cryptographic means, and as a result there is an authoritative consensus on the data in the blockchain.
 
 ### Trust without the Blockchain
-To establish trust in data in any traditional environment is ultimately always done via real world social side channels. You exchange access points and credentials in person, or via digital channels that have trust from real world context. Still, every new access of data over any such traditional digital channels is a leap of faith that the chain of trust that led you to accessing this data at that specific access point with those specific credentials is still valid, that nothing has been compromised on either end or any link on the chain.
+Establishing trust in data in any traditional environment is ultimately always done via real world social side channels. You exchange access points and credentials in person, or via digital channels that have trust from real world context. Still, every new access of data over any such traditional digital channels is a leap of faith that the chain of trust that led you to accessing this data at that specific access point with those specific credentials is still valid, that nothing has been compromised on either end or any link on the chain.
 
 ### Trust with the Blockchain
 With the blockchain, there is only one real leap of faith: the leap to join the blockchain.
@@ -45,6 +45,6 @@ What makes the evan.network unique among them, and especially useful for distrib
 
 **Second**, there is a standardized dedicated protocol for business transactions. Anyone can do anything within an ethereum blockchain, but if everyone does their own thing and implement their own protocols, interactions between different mutually unknown parties still become problematic, if they don't understand each other, even if there is a basic mutual trust. Because everyone in the evan-network uses [DBCP](/dev/dbcp) to describe their contracts and messages, you can know what they do before actually running them or examining the byte code. You have a common human-readable language.
 
-**Most importantly**, evan.network provides libraries and APIs that seamlessly integrate all the different components to allow developers to write their services and applications quickly and safely.
+**Most importantly**, evan.network provides libraries and APIs and services that seamlessly integrate all the different components to allow developers to write their services and applications quickly and safely.  
 As an example, not all data can be stored directly in the blockchain for space reasons. But we provide an easy to use API to securely reference large data objects in a distributed storage with multiple levels of encryption. No need to reinvent the wheel every time this requirement inevitably comes up again.
 
