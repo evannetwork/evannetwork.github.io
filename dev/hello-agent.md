@@ -93,7 +93,7 @@ You can copy it of course ,too. The config that is used is the one in the edge-s
 You still have to tell edge-server that there is a plugin.
 
 ```sh
-$ edit ../edge-server/config/
+$ edit ../edge-server/config/plugins.js
 
 ```
 
@@ -147,7 +147,7 @@ module.exports = class SmartAgentHello extends Initializer {
       const account = api.config.smartAgentHello.account
       
       // but also the blockchain core library
-      const result = api.bcc.executor.executeSend({
+      const result = api.bcc.executor.executeContractCall({
         'from': account,
         'msg': msg,
       }, (error,receipt) => {

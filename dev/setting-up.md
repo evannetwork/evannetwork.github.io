@@ -26,6 +26,8 @@ The development blockchain is the only that exists at the moment for the evan.ne
 
 There will be at least one more, the production chain, which will be called "core" and not "testcore".
 
+It is very useful to start parity with the `--force-ui` parameter, which allows you to access a web-admin on http://localhost:8180 which provides a lot of functionality where the command line is just a little more complicated.
+
 
 ## Create an Identity
 To do anything on the blockchain, you need an account, an identity. This is not just relevant for developers, and is described [here](/tutorial/create-identity).
