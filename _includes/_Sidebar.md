@@ -12,7 +12,7 @@
 - [Mailbox](/tutorial/mailbox)
 - [Taskboard](/tutorial/taskboard)
 
-### [Technical Details]
+### Technical Details
 - [Blockchain](/dev/blockchain)
   - [EVE Tokens](/doc/eve)
 - [Web3](/dev/web3)
