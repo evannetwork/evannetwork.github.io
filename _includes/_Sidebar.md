@@ -8,9 +8,10 @@
 ### [First Steps](/tutorial/first-steps)
 - [Create Identity](/tutorial/create-identity)
 - [Dashboard](/tutorial/dashboard)
+- [Taskboard](/tutorial/taskboard)
 - [Contacts](/tutorial/contacts)
 - [Mailbox](/tutorial/mailbox)
-- [Taskboard](/tutorial/taskboard)
+
 
 ### Technical Details
 - [Blockchain](/dev/blockchain)
