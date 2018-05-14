@@ -270,7 +270,7 @@ Now the `prompt` has been set, and the `hello` call has something to append, and
 
 ## Finalizing
 
-You can access the source code for the project on https://github.com/evannetwork/hello-world.
+You can access the source code for the project on https://github.com/evannetwork/hello-world-contract.
 
 Before moving on to the [hello-agent](/dev/hello-agent) tutorial, make sure you have deployed the
 hello-world smart contract on the `dev` network (i.e. evan.network testcore).

@@ -6,6 +6,9 @@ title: "Hello Agent"
 
 Lets write a smart agent, so we can interact with the blockchain via a normal web service without installing all the blockchain services and libraries on every computer.
 
+If you wanna cheat, just pull it from https://github.com/evannetwork/smart-agent-hello .
+You will still have to do some setup though.
+
 ## Prerequisites
 
 In the evan.network the established way to write web services is to use the [`edge-server`](https://github.com/evannetwork/edge-server), which is just an [ActionHero](https://www.actionherojs.com/) with some added infrastructure. It also uses the version "^18.0", so asynchronous programming with callbacks is discouraged now.
@@ -27,6 +30,30 @@ $ npm start
 ```
 
 You should now be able to see the action-hero admin interface on `https://localhost:8080`.
+
+## Getting the API
+Contracts are just bytecode blobs with no real meta-information attached to them. So without
+a defined protocol things can get really messy real fast when people don't know what
+methods are in a contract, and what parameters they need.
+
+In evan.network the encouraged way to take care of this is [DBCP](/dev/dbcp).
+But this is not always available, and a little too complex for a quick tutorial.
+So we just deployed our `HelloWorld` contract via truffle, and to use those contracts
+in an evan.network application, we need to import the API of the contract separately.
+
+Which means we first have to export it:
+
+```sh
+$ cd hello-world/contracts
+$ solc --abi hello.sol
+```
+
+Depending on what version of the solidity compiler you have, you get either a file or stdout output.
+
+Either way, you will find an array with the interface definition in the output.
+
+Copy it somewhere for safekeeping.
+
 
 ## Setting up the Project
 
@@ -75,12 +102,15 @@ exports['default'] = {
       // disabled: process.env.SMART_AGENT_HELLO_DISABLED ?  JSON.parse(process.env.SMART_AGENT_DISABLED_DISABLED) : true,
       name: 'HelloAgent',
       account: "the account/identity you have created and created the hello-world contract with",
+      helloAPI: '[{"constant": ..... "constructor"}]'
     }
   }
 }
 ```
 
 You need the account id, because you want to be able to change the contract data, and by default only the owner/creator can do writes on contracts.
+
+Here is also the place where we store the generated API object from earlier, in the `helloAPI` property.
 
 A thing to remember: ActionHero, and thus edge-server, doesn't read the plugin configs from the plugin directories, it needs the config to be in its own config directory. The simplest way to do this is this:
 
@@ -132,38 +162,40 @@ module.exports = class SmartAgentHello extends Initializer {
     this.stopPriority = 7000
   }
 
-
   // put anything you need outside of this file, in here
   // this happens if you need to share functionality
   // between initializer and action (or commands) for example
   // common external dependencies are resolved 
   // through the api object as well
 
+  const account = api.config.smartAgentHello.account
+
+  api.bcc.contractLoader.contracts['HelloWorld'] = {
+    "interface": api.config.smartAgentHello.helloAPI
+  };
+
+  const hello = runtime.contractLoader.loadContract('HelloWorld', '0x9c0Aaa728Daa085Dfe85D3C72eE1c1AdF425be49');
+  
   api.smartAgentHello = {
     setMessage: (msg) => {
-
+      
       // you not only "export" through the api object
       // you also import through it, the configuration for example
-      const account = api.config.smartAgentHello.account
       
       // but also the blockchain core library
-      const result = api.bcc.executor.executeContractCall({
-        'from': account,
-        'msg': msg,
-      }, (error,receipt) => {
-        if(error) return reject(error)
-        else return resolve(receipt)
-      })
-      
-      // as you can see, the bcc functions generally implement the usual
-      // asynchronous callback interface
-      // its easy to turn them into promises
-      
+      // here a writing contract method call
+      return await api.bcc.executor.executeContractTransaction(
+        hello, 'setPrompt', { from: account }, msg);
+    }
+
+    // here a non-writing call, no need for accountIDs here, because everyone can read everything
+    hello: (salut) => {
+      return await api.bcc.executor.executeContractCall(hello, 'hello',  salut );
     }
   }
-
-  async initialize() {
   
+  async initialize() {
+    
     if (config.disabled) return
     
   }
@@ -172,4 +204,58 @@ module.exports = class SmartAgentHello extends Initializer {
 
 }
 
+```
+
+
+## An Action
+
+Writing actions is easy too. See how the action uses the `smartAgentHello` object that was created in
+the initializer to import objects it needs.
+
+```sh
+$ edit actions/hello.js
+```
+
+```javascript
+'use strict'
+const { Action, api } = require('actionhero')
+
+class SmartAgentHelloHello extends Action {
+  constructor() {
+    super()
+    this.name = 'smart-agents/hello/hello'
+    this.description = 'Returns a greeting.'
+    this.inputs = {
+      salut: {
+        required: true,
+      },
+    }
+    this.outputExample = { greeting: "greeting" }
+  }
+
+  async run({ params, response }) {
+    try {
+      response.greeting = await api.smartAgentHello.hello(params.salut)
+      response.status = 'success'
+    } catch (ex) {
+      api.log(ex)
+      response.status = 'error'
+      response.error = ex
+    }
+  }
+}
+
+module.exports = {
+  SmartAgentHelloHello
+}
+```
+
+## Testing
+
+The easiest way to test is just to go to http://localhost:8080, and see if the new `hello` action is to be found.
+
+The easiest way to test an actual request is with `curl`
+
+```sh
+$ curl -X POST -d "salut=Ciao!" "http://localhost:8080/api/smart-agents/hello/hello?apiVersion=1"
 ```
