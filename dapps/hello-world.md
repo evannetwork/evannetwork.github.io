@@ -49,7 +49,7 @@ When you are opening http://localhost:3000 initially you will be navigated to th
 
 http://localhost:3000/#/dashboard.evan/favorites.evan
 
-Replace "dashboard.evan/favorites.evan" with "helloworld.evan" to open your test application. You will see an simple application with two pages. At the end of this tutorial we explain how you can deploy your application and add it to your dashboard via the Favorites or also access it via https://dashboard.evan.network.com.
+Replace "dashboard.evan/favorites.evan" with "dashboard.evan/helloworld.evan" or "helloworld.evan" to open your test application. You will see an simple application with two pages. At the end of this tutorial we explain how you can deploy your application and add it to your dashboard via the Favorites or also access it via https://dashboard.evan.network.com.
 
 ## 4. The ÐApp structure
 In the DApp folder of each lerna project are the individual DApps. You will find different projects for the different stages of the tutorial. In the first step we will focus on the hello-word project to explain the basics.
@@ -101,7 +101,7 @@ It looks like the following.
       "module": "HelloWorldModule",
       "primaryColor": "#004f7d",
       "secondaryColor": "#f9f9ff",
-      "standalone": true,
+      "standalone": false,
       "type": "dapp"
     },
     "description": "Hello World.",
@@ -177,7 +177,7 @@ const dbcpOrigin = 'helloworld';
  * Returns the route definitions
  */
 function getRoutes(): Routes {
-  // Defines the root route, fallback routes and applies the evan.network default routes to handle
+  // Defines the root route, fallback routes and applies the contractus default routes to handle
   // queue, mailbox and anything else within this application
   return RoutesBuilder.buildModuleRoutes(
     `${ dbcpOrigin }.${ getDomainName() }`,
@@ -185,19 +185,24 @@ function getRoutes(): Routes {
     [
       {
         path: '',
-        redirectTo: `hello-world`,
+        redirectTo: `hello-world-1`,
         pathMatch: 'full'
       },
       {
-        path: `hello-world`,
-        data: { state: 'hello-world' },
+        path: `hello-world-1`,
+        data: {
+          // used for router transition tracking
+          state: 'hello-world-1',
+          navigateBack: true,
+        },
         component: HelloWorldComponent,
       },
       {
         path: `hello-world-2`,
         data: {
+          // used for router transition tracking
           state: 'hello-world-2',
-          goBack: true
+          navigateBack: true
         },
         component: HelloWorld2Component,
       },
@@ -432,7 +437,7 @@ export class RootComponent implements OnInit {
 
 The html file includes an dapp-wrapper that is capsuled around your application router. The [dapp-wrapper](/frontend/angular-core/dapp-wrapper) provides a bunch of functions:
   - Header bar including the current routes part translated (route https://evan.network#/hello-word will show {{ 'hello-world' | translate}})
-  - Back Navigation Button, when the goBack Parameter is enable within the current routes data
+  - Back Navigation Button, when the navigateBack Parameter is enable within the current routes data
   - Back Navigation Button, when the reload Parameter is enable within the current routes data
   - If we are in an [ionic split-pane](/frontend/ionic-split-pane) and the screen is smaller than 769px, a menu toggle button is inserted.
   - evan.network Mailbox indicator for new mails
