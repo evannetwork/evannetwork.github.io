@@ -4,7 +4,7 @@
 - [MasterNode](/doc/masternode)
 - [FAQ](/doc/faq)
 - [Glossary](/doc/glossary)
-
+  
 ### [First Steps](/tutorial/first-steps)
 - [Create Identity](/tutorial/create-identity)
 - [Dashboard](/tutorial/dashboard)
@@ -12,15 +12,16 @@
 - [Mailbox](/tutorial/mailbox)
 - [Taskboard](/tutorial/taskboard)
 
-### [Hacking on evan.network](/dev/getting-started)
-- [Setting Up](/dev/setting-up)
-  - [Hello World](/dev/hello-world)
-  - [Hello Agent](/dev/hello-agent)
-  - [Hello Ðapp](/dev/hello-dapp)
+### [Technical Details]
 - [Blockchain](/dev/blockchain)
   - [EVE Tokens](/doc/eve)
 - [Web3](/dev/web3)
 - [IPFS](/dev/ipfs)
+- [DBCP](/dev/dbcp)
+- [Services](/dev/services)
+  - [ENS](/dev/ens)
+  - [ENS2DNS](/dev/ens2dns)
+  - [Identity Claim](/dev/identity-claims)
 - [Security](/dev/security)
 - [Smart Contracts](/dev/smart-contracts)
   - [Business Center](/dev/business-center)
@@ -28,22 +29,21 @@
   - [Contract Factories](/dev/contract-factories)
   - [Data Contract](/dev/data-contract)
 - [Smart Agents](/dev/smart-agents)
-- [DBCP](/dev/dbcp)
+
+### [Hacking on evan.network](/dev/getting-started)
+- [Setting Up](/dev/setting-up)
+- [Hello World Contract](/dev/hello-world)
+- [Hello World Smart-Agent](/dev/hello-agent)
 - [Writing ÐApps](/dapps/introduction)
-  - [Hello World and Task ÐApp](/dapps/basics)
-    - [ÐApp basics](/dapps/basics)
-    - [build an "Hello World" ÐApp](/dapps/hello-world)
-    - [create and read a new task (using the generalized contractus Data-Contract)](/dapps/task)
-    - [finalize using an Taskboard](/dapps/taskboard)
+  - [ÐApp basics](/dapps/basics)
+  - [Build an "Hello World" ÐApp](/dapps/hello-world)
+  - [Create a new task](/dapps/task)
+  - [Finalize using a Taskboard](/dapps/taskboard)
   
-  - [Start your your own ÐApp](/dapps/planning)
-    - [planning the ÐApp structure](/dapps/planning)
-    - [best practices](/dapps/advanced)
-  
-- [Services](/dev/services)
-  - [ENS](/dev/ens)
-  - [ENS2DNS](/dev/ens2dns)
-  - [Identity Claim](/dev/identity-claims)
+  - [Design your your own ÐApp](/dapps/planning)
+    - [Planning the ÐApp structure](/dapps/planning)
+    - [Best practices](/dapps/advanced)
+
 
 ### Miscellaneous
 - [Resources](/doc/resources)
