@@ -4,14 +4,14 @@ title: "Hello World ÐApp"
 # Hello World ÐApp
 
 ## 1. Get Tutorial Application
-- [Download Tutorial Application](https://github.com/evannetwork/contractus-dapps-tutorial)
+- [Download Tutorial Application](https://github.com/evannetwork/dapps-tutorial)
 
 ## 2. ÐApp Wrapper application
-The downloaded folder "contractus-dapps-tutorial" looks like this on the top level.
+The downloaded folder "dapps-tutorial" looks like this on the top level.
 
-[![contractus-dapps-tutorial - directory](/public/dapps/hello-world/contractus-dapps-tutorial-dir-structure.png){:width="150px"}](/public/dapps/hello-world/contractus-dapps-tutorial-dir-structure.png)
+[![dapps-tutorial - directory](/public/dapps/hello-world/dapps-tutorial-dir-structure.png){:width="150px"}](/public/dapps/hello-world/dapps-tutorial-dir-structure.png)
 
-In order to be able to work in ordered and staked projects, it is necessary to split the project into several projects (e.g. dashboard-dapp, list-dapp, contract1-dapp, contract2-dapp) after a short time. To anticipate this problem and different building jobs, each project uses a [lerna](https://github.com/lerna/lerna) project structure to handle multiple repositories as easily as possible. The lerna project only includes the basic requirements and build jobs for the sub projects. The build jobs are definied within the [contractus dapp-gulp project](/frontend/dapp-gulp).
+In order to be able to work in ordered and staked projects, it is necessary to split the project into several projects (e.g. dashboard-dapp, list-dapp, contract1-dapp, contract2-dapp) after a short time. To anticipate this problem and different building jobs, each project uses a [lerna](https://github.com/lerna/lerna) project structure to handle multiple repositories as easily as possible. The lerna project only includes the basic requirements and build jobs for the sub projects. The build jobs are definied within the [evan.network dapp-gulp project](/frontend/dapp-gulp).
 
 ## 3. Build, serve and start the application
 Navigate into the lerna project and run the following commands. The same documentation is also included into the lerna projects readme itself.
@@ -45,11 +45,11 @@ npm run serve
 ```
 
 ### 3.3 Open the DApp
-When you are opening http://localhost:3000 initially you will be navigated to the [onboarding page](). After you have imported or created an identity and logged in, you will find yourself on the Favorites page.
+When you are opening http://localhost:3000 initially you will be navigated to the [onboarding page](/tutorial/create-identity). After you have imported or created an identity and logged in, you will find yourself on the Favorites page.
 
 http://localhost:3000/#/dashboard.evan/favorites.evan
 
-Replace "dashboard.evan/favorites.evan" with "hello-world" to open your test application. You will see an simple application with two pages. At the end of this tutorial we explain how you can deploy your application and add it to your dashboard via the Favorites or also access it via https://dashboard.evan.network.com.
+Replace "dashboard.evan/favorites.evan" with "helloworld.evan" to open your test application. You will see an simple application with two pages. At the end of this tutorial we explain how you can deploy your application and add it to your dashboard via the Favorites or also access it via https://dashboard.evan.network.com.
 
 ## 4. The ÐApp structure
 In the DApp folder of each lerna project are the individual DApps. You will find different projects for the different stages of the tutorial. In the first step we will focus on the hello-word project to explain the basics.
@@ -79,7 +79,7 @@ By watching into this repository you will find a project structure like the foll
 - tslint.json
 - VERSIONS.md
 
-At the root directory you will find the usal nodejs files, like the readme.md, versions.md or package.json. One file, the dbcp.json, is used to handle the dbcp definition of the application. With this file, you can specify general metadata about the application and "documentation", how the application works. The contractus dapp application loader will look into this file first, to specify wich files and dependencies should be loaded. With the same logic, using the module property, the angular-core library will know, which module should be loaded during angular setup. 
+At the root directory you will find the usal nodejs files, like the readme.md, versions.md or package.json. One file, the dbcp.json, is used to handle the dbcp definition of the application. With this file, you can specify general metadata about the application and "documentation", how the application works. The evan.network dapp application loader will look into this file first, to specify wich files and dependencies should be loaded. With the same logic, using the module property, the angular-core library will know, which module should be loaded during angular setup. 
 
 Against usal metadata that can be declared within this file, contract abi definitions or a data schema can be defined too. So the application can define its contract and data usage by itself.
 It looks like the following.
@@ -134,7 +134,7 @@ In the next sections it is advantageous to have a certain basic knowledge of Ang
 - [Angular 5](https://angular.io/guide/quickstart)
 - [Ionic 3](https://ionicframework.com/docs)
 
-If you have questions about our fancy Angular interpretation and you want to know more, about the contractus angular libraries, have a look [here](angular/basics).
+If you have questions about our fancy Angular interpretation and you want to know more, about the evan.network angular libraries, have a look [here](angular/basics).
 
 ### 5.1 index.ts
 The index file, as you would have expected, describes the entry point into the application. In this case, the routes and module definitions, including the services and components created, are defined and referenced here. At the end of the file you will find the "startDApp" function which is used to start the application from outside. Since this is a simple function, only one container is given by rendering the application, it is also possible to start applications completely without Angular. For more information on how DApps can be developed with other frameworks, see [here](/dapps/use-other-frameworks).
@@ -143,7 +143,7 @@ The head of the index file, starts with the library includes of functions, servi
 
 The [dapp](/frontend/dapp-wrapper) represents the stable entry point of the evan.network application. In short, it loads DBCP definitions and load applications from their.
 
-The [angular-core](/frontend/angular-core) includes core functionalities that are developed by contractus, to handle blockchain interactions easily using angular services. Also it provides translation-, routing-, animation- and utility functionalities.
+The [angular-core](/frontend/angular-core) includes core functionalities that are developed by the evan.network, to handle blockchain interactions easily using angular services. Also it provides translation-, routing-, animation- and utility functionalities.
 
 ```ts
 import {
@@ -167,7 +167,7 @@ import {
 } from 'angular-core';
 ```
 
-The next part of the index file defines routing behavior of the application. Using the RoutesBuilder of the angular-core, its possible to create a large routing tree. By default, fallback routes and contractus routes will be attached, to be able to open applications like the contractus mailbox or data synchronisation DApp within each application, easily [routes-builder](/frontend/angular-core/routes-builder). The RootComponent is needed within every DApp to handle [transitions between views](/fronend/animations) easily.
+The next part of the index file defines routing behavior of the application. Using the RoutesBuilder of the angular-core, its possible to create a large routing tree. By default, fallback routes and evan.network default routes will be attached, to be able to open applications like the evan.network mailbox or data synchronisation DApp within each application, easily [routes-builder](/frontend/angular-core/routes-builder). The RootComponent is needed within every DApp to handle [transitions between views](/fronend/animations) easily.
 
 <b>Keep in mind: Were using Ionic 3, but not the Routing service of it. The routing of Ionic has some restrictions by dynamic loading of modules. For more informations about the Angular 5 default routing, have a look in [here](https://angular.io/guide/router).</b>
 
@@ -177,7 +177,7 @@ const dbcpOrigin = 'helloworld';
  * Returns the route definitions
  */
 function getRoutes(): Routes {
-  // Defines the root route, fallback routes and applies the contractus default routes to handle
+  // Defines the root route, fallback routes and applies the evan.network default routes to handle
   // queue, mailbox and anything else within this application
   return RoutesBuilder.buildModuleRoutes(
     `${ dbcpOrigin }.${ getDomainName() }`,
@@ -430,13 +430,13 @@ export class RootComponent implements OnInit {
 
 ```
 
-The html file includes an dapp-wrapper that is capsuled around your application router. The [dapp-wrapper](/frontend/angular-core/dapp-wrapper) provides a bunch of functions. It provides the following functions:
+The html file includes an dapp-wrapper that is capsuled around your application router. The [dapp-wrapper](/frontend/angular-core/dapp-wrapper) provides a bunch of functions:
   - Header bar including the current routes part translated (route https://evan.network#/hello-word will show {{ 'hello-world' | translate}})
   - Back Navigation Button, when the goBack Parameter is enable within the current routes data
   - Back Navigation Button, when the reload Parameter is enable within the current routes data
   - If we are in an [ionic split-pane](/frontend/ionic-split-pane) and the screen is smaller than 769px, a menu toggle button is inserted.
-  - Contractus Mailbox indicator for new mails
-  - Contractus Synchronisation identicator (loading / error case)
+  - evan.network Mailbox indicator for new mails
+  - evan.network Synchronisation identicator (loading / error case)
 
 ```html
 <contractus-loading *ngIf="loading" delayLoading="500"></contractus-loading>

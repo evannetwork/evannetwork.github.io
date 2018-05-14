@@ -31,7 +31,7 @@ Work through the following checklist, to be sure, that you wont miss anything.
 
 ## 5. Setup Frontend Application
 - read about angular ÐApps ([frontend documentation](/frontend/basic))
-- Use seed project to setup your basic project ([Seed Project](git@github.com:evannetwork/contractus-dapps-tutorial.git))
+- Use seed project to setup your basic project ([Seed Project](git@github.com:evannetwork/dapps-tutorial.git))
 - Develop your frontend application.
 
 ## 6. Deployment
