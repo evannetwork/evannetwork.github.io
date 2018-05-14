@@ -379,9 +379,9 @@ export class Translations {
 
 ### 5.4 components
 Components are normal components from Angular 5. For more informations, have a look into [Angular 5 components](https://angular.io/guide/displaying-data) and [Performance optimizations](performance-optimizations).
-Look in to the "components/hello-world" or "components/hello-world-2" directory to inspect an very small component sample. Within the hello-world component, the angular-core core service is used, to access the current logged in user, its balance and so on.
+Look in to the "components/hello-world" or "components/hello-world-2" directory to inspect an very small component sample. Within the hello-world-1 component, the angular-core core service is used, to access the current logged in user, its balance and so on. The hello-world-2 sample uses functions to load data from contracts. You can only view this page, by deploying your hello-word application to an contract. Watch at point "6.2 Deploy DApp within an contract", how to do that.
 
-<b>The component logs the core service in to the console. Drill down the log and try yourself by testing some functions.</b>
+<b>The component uses several evan.network core angular service. Drill down some logs and try yourself by testing some functions.</b>
 
 What we need to explain is the "components/root" folder. This represents the root component, that handles transitions and routings of your application. Using the animation definition, you will create an swipe animation between two views. The views are declared using the "state" parameter, mentioned below, within the routes definition. So you can define, when you want to swipe to the left, right, top or bottom. The rest of the file registers route change watchers, the [password dialog component](/frontend/password-dialog) and runs the "finishDAppLoading" function. During the application load, the DApp or the parent application will included an loading symbol for your application. To handle the success and hiding of the loading symbol, this function is called. 
 
@@ -466,9 +466,13 @@ Now, you can open the ens address to your application on https://dashboard.evan.
 Each application can be deployed together with a contract. This allows the contract to contain the information as it should be displayed. A little sample, how to create and sample contract with your hello world app can be found within the dapps-tutorial/scripts/create-contract.js file. Run the following command to start the script for your specific application.
 
 ```sh
+npm run ipfs deamon hello-world
+```
+
+```sh
 npm run deploy-to-contract hello-world
 ```
 
 After the contract id of the created contract was logged to your console, you can open this contract like the ens path before. Just replace your DApp ens path, with the id of your contract (#/dashboard/helloworld.evan => #/dashboard/0x65dCf129E612d4e40bEA8866029e0595BC1Ba5EC). Within the network tab you will see, that the sources for your contract are now loaded from the contract address. 
 
-[![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="150px"}]
+[![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="200px"}]
