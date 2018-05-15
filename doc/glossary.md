@@ -41,6 +41,7 @@ title: "Glossary"
 </dl>
 <a id="b"></a>
 <dl>
+<dt><a href="/tutorial/Mailbox/">BMail</a></dt><dd>a message enxchanged via the blockchain</dd>
 <dt><a href="https://en.wikipedia.org/wiki/Blockchain/">Blockchain</a><sup>[+]</sup></dt><dd>a cryptographically verified distributed global single consensus data record store</dd>
 <dt></dt><dd></dd>
 </dl>

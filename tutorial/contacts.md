@@ -6,6 +6,10 @@ The contacts ÐAPP is your address book, where you can manage contacts from the 
 
 [![contacts overview](/public/tutorial/contacts_overview.png){:width="50%"}](/public/tutorial/contacts_overview.png)
 
+Contacts are just other evan.network accounts with a profile, just like yours. But to prevent unsolicited messaging, both contact partners need to exchange keys to be able to send and read each others encrypted messages.
+
+And you have guessed it, this key exchange is a contract on the blockchain again, the protocol of accomplishing it and the storage of the keys. And adding contacts executes and changes those contracts in your profile on the blochain.
+
 
 ## Adding new Contacts
 Adding new contacts initiates a key exchange process with the person you want to add, which will, if completed, allow you to exchange blockchain mails or "bmails" (see [Mailbox](/tutorial/mailbox)) with this person.
