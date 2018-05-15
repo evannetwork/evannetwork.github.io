@@ -17,6 +17,20 @@ Because DBCP descriptions can be stored directly at the contract itself, contrac
 This description includes technical details to enable developers to write applications that interact with this contract and/or a distributed app (ÐApp), that can be used with a web browser.
 
 
+## Description and Contract Updates
+As contracts may change over time, descriptions aren't set in stone as well. Updates in smart contracts can be reflected the description as well, this includes but is not limited to:
+- updates in the contracts metadata, like name, description, i18n, icon, etc.
+- updates in the contracts data schema (e.g. new/deleted/changed entries, lists, properties, ...)
+- updates to the contracts abi, e.g.
+  - make existing properties in contract public
+  - update a related contracts abi
+
+If a contract has a ÐApp for interacting with it, this ÐApp can be updated without touching the contract description at all. This behavior can be controlled by specifying the desired version range in the `dependencies` property in `dapp`, allowing to use or ignore latest features and/or bugfixes, basically allowing to use a "snapshotted" version of a ÐApp for all time.
+This decision can be changed later on by updating the contract description as well.
+
+If a description has been set to an ENS address, the same properties can be updated as well and even the contract can be updated, as this is stored at the ENS address. This allows full data and usage flexibility and provides a generic interaction schema the same time as well.
+
+
 ## Structure
 The DBCP description is saved as a JSON file, which is stored is a distributed file system (IPFS). Files stored in the distributed file system can be retrieved via their hashes and this hash is stored at the smart contract. Further dependencies are resolved in the same manner. Description files for subcomponents are pulled from distributed file system as well and so on.
 
@@ -49,42 +63,43 @@ When having an ENS entry or a contract address, the DBCP description for that ca
 
 
 ## Properties in Description
-example DBCP file:
+The following snippet shows a shortened sample description, the full sample description can be found [here](/public/dev/dbcp_example.json).
+
 ```json
 {
   "public": {
-    "autor": "contractus",
+    "name": "Cool Task with Abis",
     "dapp": {
-      "entrypoint": "dapp-taskboard.js",
+      "dependencies": {
+        "angular-bc": "^0.9.0",
+        "angular-core": "^0.9.0",
+        "angular-libs": "^0.9.0"
+      },
+      "entrypoint": "task.js",
       "files": [
-        "dapp-taskboard.js",
-        "dapp-taskboard.css"
+        "task.js",
+        "task.css"
       ],
-      "type": "dapp",
-      "module": "TaskBoardModule",
+      "module": "TaskModule",
       "origin": "Qm...",
       "primaryColor": "#e87e23",
       "secondaryColor": "#fffaf5",
-      "standalone": true
-    },
-    "i18n": {
-      "description": {
-        "en": "Create todos and manage updates",
-        "de": "Erstelle Aufgaben und überwache Änderungen"
-      },
-      "name": {
-        "en": "Task Board",
-        "de": "Task Board"
-      }
+      "standalone": true,
+      "type": "dapp",
+      "definitionHash": "Qm..."
     },
     "description": "Create todos and manage updates.",
-    "name": "taskboard",
-    "tags": [
-      "dapp",
-      "contractus"
-    ],
+    "i18n": {
+      "description": {
+        "de": "Erstelle Aufgaben oder zeige sie an",
+        "en": "Create tasks or show them"
+      },
+      "name": {
+        "de": "Task",
+        "en": "Task"
+      }
+    },
     "imgSquare": "data:image/png;base64,...",
-    "version": "0.1.0",
     "dataSchema": {
       "list_settable_by_member": {
         "$id": "list_settable_by_member_schema",
@@ -99,10 +114,15 @@ example DBCP file:
         "$id": "entry_settable_by_member_schema",
         "type": "integer",
       }
+    },
+    "abis": {
+      "own": [...]
     }
   }
 }
 ```
+
+
 Depending on the visibility of the properties, these are placed under a different scope. These scopes are "public" (unencrypted, visible for everyone) and "private" (encrypted, visible for a limited scope of people).
 
 | Property | Required? | Type | Description |
@@ -111,7 +131,9 @@ Depending on the visibility of the properties, these are placed under a differen
 | description | x | string | short description of the contract |
 | author | x | string | author of the ÐAPP |
 | version | x | string | version information about the contract |
-| abi | | object[] | if this DBCP description describes a contract, the ABI for this contract, see "ABI example" section below for an example  |
+| abis | | object | abis related to the contract or ÐApp |
+| abis.own | | object[] | if this DBCP description describes a contract, the abi of this contract |
+| abis.related | | object | abis of smart contracts related to this contract or ÐApp |
 | dataSchema | | string | json schema definition for data in the contract, written as [ajv](https://github.com/epoberezkin/ajv) schemas |
 | tags | | string[] | tags for categorizing the contract |
 | i18n | | object | labels for displaying contract information (multilingual) |
@@ -183,69 +205,6 @@ If omitted, the default DFS is used
 | ens | DFS reference is stored in an own ENS entry | default.dfsregistry.eth |
 | url | a link to an DFS endpoint, like a IPFS server endpoint | ws://localhost:8546 |
 
-
-## ABI Example
-This section shows an example for an ABI, which allows to setting/getting the description and setting/getting the owner of the contract. Contracts, that use DBCP for their own descriptions or to extend descriptions of an ENS address, they are registered at, should at least implement the `contractDefinition` function, which returns a DFS hash, that points to the description.
-```json
-[
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "contractDefinition",
-    "outputs": [
-      {
-        "name": "",
-        "type": "bytes32"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "owner_",
-        "type": "address"
-      }
-    ],
-    "name": "setOwner",
-    "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": false,
-    "inputs": [
-      {
-        "name": "_contractDefinition",
-        "type": "bytes32"
-      }
-    ],
-    "name": "setDescription",
-    "outputs": [],
-    "payable": false,
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "constant": true,
-    "inputs": [],
-    "name": "owner",
-    "outputs": [
-      {
-        "name": "",
-        "type": "address"
-      }
-    ],
-    "payable": false,
-    "stateMutability": "view",
-    "type": "function"
-  }
-]
-```
 
 ## Community Webpage
 You can find more information about DBCP on the [DBCP Community Webpage](https://dbcp.online/)<sup>[+]</sup> (German).
