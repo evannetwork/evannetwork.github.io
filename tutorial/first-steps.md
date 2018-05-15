@@ -31,7 +31,22 @@ Unlike the bookmark links you store in the browser, this isn't stored just on yo
 
 ## [Finally the Taskboard](/tutorial/taskboard)
 
-## [Who do I work with? The contacts](/tutorial/contacts)
+While working with tasks you will come accross the requirement of coordinating with others.
+And for that you need contacts:
+
+## [Who do I work with? The Contacts](/tutorial/contacts)
+
+You can add anyone in evan.network to your contacts.  
+And you can invite anyone with an email address into evan.network to become your contact.
+
+They all have or will get a profile smart contract, just like you.
 
 ## [Talking to Each Other: The Mailbox](/tutorial/mailbox)
+
+We call the messages sent and stored in evan.network Bmails, equivalent to Emails. And the communication
+style is similar to Emails, in that it doesn't really lend itself to instant messaging and chatting due to the blochain transaction delays.
+
+There is one major difference to Emails though: you always have a sender, and the sender can't be forged, and every BMail costs EVEs. So spam cannot really exist. Whenever anyone sends spam, it will cost him a lot, and he is instantly identfied and can be permanently blocked.
+
+
 
