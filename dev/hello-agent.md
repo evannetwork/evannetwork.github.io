@@ -21,7 +21,22 @@ $ cd edge-server
 $ nvm i
 ```
 
-This should also automativally install the blockchain-core libraries and all other dependencies in `node_modules/`, which can take a while. 
+This should also automativally install the blockchain-core libraries and all other dependencies in `node_modules/`, which can take a while.
+
+Sadly, since we are still in early development and don't have real releases yet, so it often is necessary to install dependencies by hand. So if you get errors:
+
+```sh
+$ cd node_modules
+$ git clone  git@github.com:evannetwork/blockchain-core.git
+$ git clone  git@github.com:evannetwork/dbcp.git
+$ git clone  git@github.com:evannetwork/smart-contracts.git
+$ cd smart-contracts; npm i
+$ cd ../dbco; npm i
+$ cd ../blockchain-core; npm i
+$ cd ../..; npm i
+```
+
+If there are still errors, wait for a proper release that installs without problems, which will come soon.
 
 If all is done test it and start it with 
 
@@ -102,6 +117,7 @@ exports['default'] = {
       // disabled: process.env.SMART_AGENT_HELLO_DISABLED ?  JSON.parse(process.env.SMART_AGENT_DISABLED_DISABLED) : true,
       name: 'HelloAgent',
       account: "the account/identity you have created and created the hello-world contract with",
+      contract: 'the contract hash returned in the deploy operation earlier',
       helloAPI: '[{"constant": ..... "constructor"}]'
     }
   }
@@ -153,6 +169,9 @@ $ edit initializers/hello.js
 ```javascript
 'use strict'
 
+const { Initializer, api } = require('actionhero')
+
+
 module.exports = class SmartAgentHello extends Initializer {
   constructor() {
     super()
@@ -162,41 +181,45 @@ module.exports = class SmartAgentHello extends Initializer {
     this.stopPriority = 7000
   }
 
+
   // put anything you need outside of this file, in here
   // this happens if you need to share functionality
   // between initializer and action (or commands) for example
   // common external dependencies are resolved 
   // through the api object as well
 
-  const account = api.config.smartAgentHello.account
-
-  api.bcc.contractLoader.contracts['HelloWorld'] = {
-    "interface": api.config.smartAgentHello.helloAPI
-  };
-
-  const hello = runtime.contractLoader.loadContract('HelloWorld', '0x9c0Aaa728Daa085Dfe85D3C72eE1c1AdF425be49');
-  
-  api.smartAgentHello = {
-    setMessage: (msg) => {
-      
-      // you not only "export" through the api object
-      // you also import through it, the configuration for example
-      
-      // but also the blockchain core library
-      // here a writing contract method call
-      return await api.bcc.executor.executeContractTransaction(
-        hello, 'setPrompt', { from: account }, msg);
-    }
-
-    // here a non-writing call, no need for accountIDs here, because everyone can read everything
-    hello: (salut) => {
-      return await api.bcc.executor.executeContractCall(hello, 'hello',  salut );
-    }
-  }
   
   async initialize() {
     
-    if (config.disabled) return
+    if (api.config.smartAgentHello.disabled) return
+
+    api.bcc.contractLoader.contracts['HelloWorld'] = {
+      "interface": api.config.smartAgentHello.helloAPI
+    };
+
+    const account = api.config.smartAgentHello.account
+    const hello = api.bcc.contractLoader.loadContract('HelloWorld', api.config.smartAgentHello.contract)
+    
+    api.smartAgentHello = {
+      setMessage: async function (msg){
+        
+        // you not only "export" through the api object
+        // you also import through it, the configuration for example
+        
+        // but also the blockchain core library
+        // here a writing contract method call
+        return await api.bcc.executor.executeContractTransaction(
+          hello, 'setPrompt', { from: account }, msg);
+      },
+
+      // here a non-writing call, no need for accountIDs here, because everyone can read everything
+      hello: async function (salut) {
+        var r = api.bcc.signer.web3.utils.toAscii(
+          await api.bcc.executor.executeContractCall(hello, 'hello',  salut ))
+        console.log(r)
+        return r
+      }
+    }
     
   }
   
@@ -205,7 +228,6 @@ module.exports = class SmartAgentHello extends Initializer {
 }
 
 ```
-
 
 ## An Action
 
@@ -258,4 +280,25 @@ The easiest way to test an actual request is with `curl`
 
 ```sh
 $ curl -X POST -d "salut=Ciao!" "http://localhost:8080/api/smart-agents/hello/hello?apiVersion=1"
+
+{
+  "greeting": "Grüetzi, Ciao!",
+  "status": "success",
+  "serverInformation": {
+    "serverName": "edge-server",
+    "apiVersion": "0.9.0",
+    "requestDuration": 33,
+    "currentTime": 1526396750067
+  },
+  "requesterInformation": {
+    "id": "ce8131e53aa7e38cd6feb54a83d8afb995876738-28650a51-f53f-4484-a015-ca89fa592166",
+    "fingerprint": "ce8131e53aa7e38cd6feb54a83d8afb995876738",
+    "remoteIP": "127.0.0.1",
+    "receivedParams": {
+      "apiVersion": "1",
+      "salut": "Ciao!",
+      "action": "smart-agents/hello/hello"
+    }
+  }
+
 ```

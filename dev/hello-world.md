@@ -116,15 +116,15 @@ contract HelloWorld {
   // this function concatenates strings, which can be rather expensive
   // so whenever possible such utility functionality should be done outside the chain
   // the view modifier indicates that state is read, but not changed
-  function hello(string salut) external view returns (string greeting) {
+  function hello(string salut) external view returns (bytes) {
     bytes memory tmp0 = bytes(prompt);
     bytes memory tmp1 = bytes(salut);
-    greeting =  new string(tmp0.length + tmp1.length);
+    string memory greeting =  new string(tmp0.length + tmp1.length);
     bytes memory buffer = bytes(greeting);
     uint k = 0;
     for(uint i = 0; i < tmp0.length;) buffer[k++] = tmp0[i++];
     for(i = 0; i < tmp1.length;) buffer[k++] = tmp1[i++];
-    return greeting;
+    return buffer;
   }
 }
 ```
@@ -193,7 +193,7 @@ module.exports = function(deployer) {
 truffle(dev)> migrate
 ```
 
-When you are still in the development process and use the local developing network, the simplest way to always deploy all changes in your local files is to always run this command
+When you are still in the development process and use the local developing network, the simplest way to always deploy all changes in your local files is to always run this command:
 
 ```
 truffle(develop)> deploy --reset --compile-all
@@ -227,9 +227,15 @@ Here we have called the automatically created getter of the public `creator` pro
 Let's call the `hello` method we have written ourselves:
 
 ```
-truffle(dev)> hello.then(async (hi) => { return hi.hello.call("Hallihallo") }).then(async (result) => { console.log(result)} )
+truffle(dev)> hello.then(async (hi) => { return hi.hello.call("Hallihallo") }).then(async (result) => { console.log(web3._extend.utils.toAscii(result))} )
 Hallihallo
 ```
+
+The contract returns a byte-array that has to be converted to ascii to be a readable string.
+The reason is, that some web3 versions can't deal with solidity string return values,
+and unfortunately the one used in the blockchain-core library can't.
+
+Fortunetely it is rare to actually have strings in contracts.
 
 It just prints the string we have passed into it. That's because the private `prompt` property hasn't been set yet. So let's do that.
 
@@ -259,7 +265,7 @@ Once processing is finished you get the transaction `receipt` and the data is en
 
 
 ```
-truffle(dev)> hello.then(async (hi) => { return hi.hello.call("Hallihallo") }).then(async (result) => { console.log(result)} )
+truffle(dev)> hello.then(async (hi) => { return hi.hello.call("Hallihallo") }).then(async (result) => { console.log(web3._extend.utils.toAscii(result))} )
 Grüetzi, Hallihallo
 undefined
 
