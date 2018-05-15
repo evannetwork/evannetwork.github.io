@@ -13,12 +13,12 @@
         "task.css"
       ],
       "module": "TaskModule",
-      "origin": "Qm...",
+      "origin": "QmfV238C7gDehVuwmoXT2soRRPhCE3tU6pwgWnFMorVcMV",
       "primaryColor": "#e87e23",
       "secondaryColor": "#fffaf5",
       "standalone": true,
       "type": "dapp",
-      "definitionHash": "Qm..."
+      "definitionHash": "QmacUNeLbVb9RkLvFA8gMdTFLEhL99QXEqtoDwbPu3jWiF"
     },
     "description": "Create todos and manage updates.",
     "i18n": {

@@ -63,7 +63,64 @@ When having an ENS entry or a contract address, the DBCP description for that ca
 
 
 ## Properties in Description
-An example DBCP file can be found [here](/public/dev/dbcp_example.json).
+The following snippet shows a shortened sample description, the full sample description can be found [here](/public/dev/dbcp_example.json).
+
+```json
+{
+  "public": {
+    "name": "Cool Task with Abis",
+    "dapp": {
+      "dependencies": {
+        "angular-bc": "^0.9.0",
+        "angular-core": "^0.9.0",
+        "angular-libs": "^0.9.0"
+      },
+      "entrypoint": "task.js",
+      "files": [
+        "task.js",
+        "task.css"
+      ],
+      "module": "TaskModule",
+      "origin": "Qm...",
+      "primaryColor": "#e87e23",
+      "secondaryColor": "#fffaf5",
+      "standalone": true,
+      "type": "dapp",
+      "definitionHash": "Qm..."
+    },
+    "description": "Create todos and manage updates.",
+    "i18n": {
+      "description": {
+        "de": "Erstelle Aufgaben oder zeige sie an",
+        "en": "Create tasks or show them"
+      },
+      "name": {
+        "de": "Task",
+        "en": "Task"
+      }
+    },
+    "imgSquare": "data:image/png;base64,...",
+    "dataSchema": {
+      "list_settable_by_member": {
+        "$id": "list_settable_by_member_schema",
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "foo": { "type": "string" },
+          "bar": { "type": "integer" }
+        }
+      },
+      "entry_settable_by_member": {
+        "$id": "entry_settable_by_member_schema",
+        "type": "integer",
+      }
+    },
+    "abis": {
+      "own": [...]
+    }
+  }
+}
+```
 
 
 Depending on the visibility of the properties, these are placed under a different scope. These scopes are "public" (unencrypted, visible for everyone) and "private" (encrypted, visible for a limited scope of people).
