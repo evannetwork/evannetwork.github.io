@@ -85,8 +85,7 @@ The following snippet shows a shortened sample description, the full sample desc
       "primaryColor": "#e87e23",
       "secondaryColor": "#fffaf5",
       "standalone": true,
-      "type": "dapp",
-      "definitionHash": "Qm..."
+      "type": "dapp"
     },
     "description": "Create todos and manage updates.",
     "dbcpVersion": 1,
@@ -138,7 +137,7 @@ Depending on the visibility of the properties, these are placed under a differen
 | abis.own | | object[] | if this DBCP description describes a contract, the abi of this contract |
 | abis.related | | object | abis of smart contracts related to this contract or ÐApp |
 | source | | string | reference to the source files of the smart contract(s) |
-| dataSchema | | string | json schema definition for data in the contract, written as [ajv](https://github.com/epoberezkin/ajv) schemas |
+| dataSchema | | object | json schema definition for data in the contract, written as [ajv](https://github.com/epoberezkin/ajv) schemas |
 | tags | | string[] | tags for categorizing the contract |
 | i18n | | object | labels for displaying contract information (multilingual) |
 | imgSquare | | string | contract logo (square) e.g. for icons - can be Data URL or regular URL   |
