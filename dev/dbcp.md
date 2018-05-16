@@ -89,6 +89,7 @@ The following snippet shows a shortened sample description, the full sample desc
       "definitionHash": "Qm..."
     },
     "description": "Create todos and manage updates.",
+    "dbcpVersion": 1,
     "i18n": {
       "description": {
         "de": "Erstelle Aufgaben oder zeige sie an",
@@ -117,7 +118,8 @@ The following snippet shows a shortened sample description, the full sample desc
     },
     "abis": {
       "own": [...]
-    }
+    },
+    "source": "Qm..."
   }
 }
 ```
@@ -131,9 +133,11 @@ Depending on the visibility of the properties, these are placed under a differen
 | description | x | string | short description of the contract |
 | author | x | string | author of the ÐAPP |
 | version | x | string | version information about the contract |
+| dbcpVersion | x | number | used DBCP protocol definition version |
 | abis | | object | abis related to the contract or ÐApp |
 | abis.own | | object[] | if this DBCP description describes a contract, the abi of this contract |
 | abis.related | | object | abis of smart contracts related to this contract or ÐApp |
+| source | | string | reference to the source files of the smart contract(s) |
 | dataSchema | | string | json schema definition for data in the contract, written as [ajv](https://github.com/epoberezkin/ajv) schemas |
 | tags | | string[] | tags for categorizing the contract |
 | i18n | | object | labels for displaying contract information (multilingual) |

@@ -21,6 +21,7 @@
       "definitionHash": "QmacUNeLbVb9RkLvFA8gMdTFLEhL99QXEqtoDwbPu3jWiF"
     },
     "description": "Create todos and manage updates.",
+    "dbcpVersion": 1,
     "i18n": {
       "description": {
         "de": "Erstelle Aufgaben oder zeige sie an",
