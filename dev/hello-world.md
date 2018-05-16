@@ -10,7 +10,7 @@ Write your first blockchain contract and access it.
 
 We work on a unix command line.
 
-You have installed parity, solidity and nodejs as described [here](/doc/first-steps).
+You have installed parity, solidity and nodejs as described [here](/dev/setting-up).
 
 You have installed truffle, as described [here](http://truffleframework.com/docs/getting_started/installation)<sup>[+]</sup>.
 
@@ -26,8 +26,7 @@ $ truffle compile
 This has created your inial truffle project.
 
 ## Configuring the Network
-You have already started `parity` locally, as linked in the prerequisites, but for the application to know
-to know to connect to the local ethereum node, you need to configure it to do so.
+You have already started `parity` locally, as linked in the prerequisites, but for the application to know to connect to the local ethereum node, you need to configure it to do so.
 
 ```sh
 $ edit truffle.js
@@ -55,23 +54,24 @@ The gas and gas prices are a minimum. Make sure your account/profile has enough 
 the case after normal onboarding. If not, visit http://gitter.im/evannetwork/faucet .
 
 ### Unlocking the Account for Migration
-You have created an identity earlier.
-To be able to deploy contracts with it, you need to be able to confirm transaction in the parity user interface.
+You have created an identity earlier, and started parity earlier.
+Usually this would be all you need to do, but for our example there is one more thing you need to do.
 
-To do this login with your account and go into your profile.
+Parity only accepts signed transactions for the testcore blockchain. When using out blockchain-core library, this is taken care of for you by it. But this is not the time yet for the deep dive into the blockchain-core, this is just a simple first dip of your toe into the water, using the simplest tool available in truffle.
 
-![Profile](/public/dev/profile.png)
+And truffle doesn't sign transactions on deployment. It usually doesn't need to. So we need to tell parity to do the signings itself for our test-account, that we have just created. 
 
-There you copy the private key.
+You need to save your account password in plain text in a file for this, but since this is only temporarily and for testing, this is acceptable for the time being.
 
-Then open http://localhost:8180 (make sure you have started parity with `--force-ui`) and go into the wallet, from there into "Accounts" and from there to "+ Account".
+```sh
+$ edit pw.txt
+```
 
-![Profile](/public/dev/parity_private_key_import.png)
+In a different terminal, stop the parity process, and restart it with two additional parameters:
 
-Click on this and do the import, you need to enter your password.
-
-That's it for now, but leave the browser tab open.
-
+```sh
+$ parity --chain "/path/to/testcore.json" --config "path/to/contractus_test_chain.toml" --unlock "accountID" --password "pw.txt"
+```
 
 ## Test Connection
 The easiest way is to just attempt a migration, even if nothing new is to deploy.
@@ -200,15 +200,6 @@ truffle(develop)> deploy --reset --compile-all
 ```
 
 `deploy` is just an alias for `migrate`.
-
-### Confirming the Deploy Transaction
-
-The migration should start and you get some output but then becomes stuck. This is because parity requires confirmation for the transaction. Go into the parity web-admin browser tab, and there should be a popup asking for confirmation. 
-
-![Profile](/public/dev/confirm_request.png)
-
-Click confirm request to finish deployment.
-
 
 ## Using the Contract
 
