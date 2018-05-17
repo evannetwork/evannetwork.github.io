@@ -164,7 +164,7 @@ This is an example envelope:
 }
 ```
 
-The "public" section contains data, that is visible without being invited or related to the contract. The "private" section can only be decrypted if the user that tries to read the data ha been added to the sharings of the contract. The ```cryptoInfo``` part is used to determine which decryption algorithm to use and where to look for it.
+The "public" section contains data, that is visible without being invited or related to the contract. The "private" section can only be decrypted if the user that tries to read the data has been added to the sharings of the contract. The ```cryptoInfo``` part is used to determine which decryption algorithm to use and where to look for it.
 
 When decrypted, the ```private``` section takes precedence over the ```public``` section. This can lead to the private section overwriting sections of the ```public``` part. For example a public title may be replace with a "true" title (only visible for members) from the private section.
 
