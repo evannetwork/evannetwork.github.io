@@ -40,17 +40,17 @@
 - [ÐApp basics](/dapps/basics)
 
 - pure JS
-  - [standalone Hello World](/dapps/standalone-hello-world-js)
-  - [evan.network framework Hello World](/dapps/evannetwork-hello-world-js)
+  - [standalone Hello World](/dapps/standalone/hello-world)
+  - [evan.network framework Hello World](/dapps/js/hello-world)
 
 - Angular 5 + evan.network framework
-  - [Basics: Hello World](/dapps/angular-hello-world)
-  - [Advanced: Task DApp](/dapps/angular-task)
-  - [Round up: Taskboard](/dapps/angular-taskboard)
+  - [Basics: Hello World](/dapps/angular/hello-world)
+  - [Advanced: Task DApp](/dapps/angular/task)
+  - [Round up: Taskboard](/dapps/angular/taskboard)
 
 - Ticks and Tricks
-  - [Planning the ÐApp structure](/dapps/planning)
-  - [Best practices](/dapps/advanced)
+  - [Planning the ÐApp structure](/dapps/tips/planning)
+  - [Best practices](/dapps/tips/advanced)
 
 ### Miscellaneous
 - [Resources](/doc/resources)
