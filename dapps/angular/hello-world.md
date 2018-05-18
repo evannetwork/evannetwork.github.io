@@ -4,12 +4,12 @@ title: "Hello World ÐApp"
 # Hello World ÐApp
 
 ## 1. Get Tutorial Application
-- [Download Tutorial Application](https://github.com/evannetwork/dapps-tutorial)
+- [Download Tutorial Application](https://github.com/evannetwork/dapps-tutorial-angular)
 
 ## 2. ÐApp Wrapper application
-The downloaded folder "dapps-tutorial" looks like this on the top level.
+The downloaded folder "dapps-tutorial-angular" looks like this on the top level.
 
-[![dapps-tutorial - directory](/public/dapps/hello-world/dapps-tutorial-dir-structure.png){:width="150px"}](/public/dapps/hello-world/dapps-tutorial-dir-structure.png)
+[![dapps-tutorial - directory](/public/dapps/angular/hello-world/dapps-tutorial-dir-structure.png){:width="150px"}](/public/dapps/angular/hello-world/dapps-tutorial-dir-structure.png)
 
 In order to be able to work in ordered and staked projects, it is necessary to split the project into several projects (e.g. dashboard-dapp, list-dapp, contract1-dapp, contract2-dapp) after a short time. To anticipate this problem and different building jobs, each project uses a [lerna](https://github.com/lerna/lerna) project structure to handle multiple repositories as easily as possible. The lerna project only includes the basic requirements and build jobs for the sub projects. The build jobs are definied within the [evan.network dapp-gulp project](/frontend/dapp-gulp).
 
@@ -463,7 +463,7 @@ npm run deploy
 Now, you can open the ens address to your application on https://dashboard.evan.network#/my-ens-address.evan. (my-ens-address = dbcp.name)
 
 ### 6.2 Deploy DApp within an contract
-Each application can be deployed together with a contract. This allows the contract to contain the information as it should be displayed. A little sample, how to create and sample contract with your hello world app can be found within the dapps-tutorial/scripts/create-contract.js file. Run the following command to start the script for your specific application.
+Each application can be deployed together with a contract. This allows the contract to contain the information as it should be displayed. A little sample, how to create and sample contract with your hello world app can be found within the dapps-tutorial-angular/scripts/create-contract.js file. Run the following command to start the script for your specific application.
 
 ```sh
 npm run ipfs deamon hello-world
@@ -475,4 +475,4 @@ npm run deploy-to-contract hello-world
 
 After the contract id of the created contract was logged to your console, you can open this contract like the ens path before. Just replace your DApp ens path, with the id of your contract (#/dashboard/helloworld.evan => #/dashboard/0x65dCf129E612d4e40bEA8866029e0595BC1Ba5EC). Within the network tab you will see, that the sources for your contract are now loaded from the contract address. 
 
-[![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="200px"}]
+[![dapps-tutorial - directory](/public/dapps/angular/hello-world/dapp-from-contract.png){:width="200px"}]
