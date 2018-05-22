@@ -10,13 +10,19 @@ By creating an simple application to create, view and share tasks, you will lear
   - SystemJS, Angular 5 & Ionic 3, SASS, Browserify
 
 You will be guided through the following steps:
-  - [ÐApp basics](/dapps/basics)
-  - [build an "Hello World" ÐApp](/dapps/hello-world)
-  - [create and read a new task (using the generalized evan.network Data-Contract)](/dapps/task)
-  - [finalize using an Taskboard](/dapps/taskboard)
+- [ÐApp basics](/dapps/basics)
 
-When you start to build your own application: 
-  - [planning the ÐApp structure](/dapps/planning)
-  - [best practices](/dapps/advanced)
+- pure JS
+  - [standalone Hello World](/dapps/standalone/hello-world)
+  - [evan.network framework Hello World](/dapps/js/hello-world)
+
+- Angular 5 + evan.network framework
+  - [Basics: Hello World](/dapps/angular/hello-world)
+  - [Advanced: Task DApp](/dapps/angular/task)
+  - [Round up: Taskboard](/dapps/angular/taskboard)
+
+- Ticks and Tricks
+  - [Planning the ÐApp structure](/dapps/tips/planning)
+  - [Best practices](/dapps/tips/advanced)
 
 Well, good luck and get started [here](/dapps/basics).

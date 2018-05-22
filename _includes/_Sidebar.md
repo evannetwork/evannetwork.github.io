@@ -35,16 +35,22 @@
 - [Setting Up](/dev/setting-up)
 - [Hello World Contract](/dev/hello-world)
 - [Hello World Smart-Agent](/dev/hello-agent)
-- [Writing ÐApps](/dapps/introduction)
-  - [ÐApp basics](/dapps/basics)
-  - [Build an "Hello World" ÐApp](/dapps/hello-world)
-  - [Create a new task](/dapps/task)
-  - [Finalize using a Taskboard](/dapps/taskboard)
-  
-  - [Design your your own ÐApp](/dapps/planning)
-    - [Planning the ÐApp structure](/dapps/planning)
-    - [Best practices](/dapps/advanced)
 
+### [DApps on evan.network](/dapps/introduction)
+- [ÐApp basics](/dapps/basics)
+
+- pure JS
+  - [standalone Hello World](/dapps/standalone/hello-world)
+  - [evan.network framework Hello World](/dapps/js/hello-world)
+
+- Angular 5 + evan.network framework
+  - [Basics: Hello World](/dapps/angular/hello-world)
+  - [Advanced: Task DApp](/dapps/angular/task)
+  - [Round up: Taskboard](/dapps/angular/taskboard)
+
+- Ticks and Tricks
+  - [Planning the ÐApp structure](/dapps/tips/planning)
+  - [Best practices](/dapps/tips/advanced)
 
 ### Miscellaneous
 - [Resources](/doc/resources)

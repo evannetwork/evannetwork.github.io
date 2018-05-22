@@ -9,7 +9,9 @@ To work with ÐAPPs in the evan.network you need a profile. The identity (or "pr
 - bookmarked ÐAPPs
 - created contracts
 
-To get started, you have 3 options:
+Go to [https://dashboard.evan.network](https://dashboard.evan.network) and get started.
+
+You have 3 options:
 [![onboarding start screen](/public/tutorial/onboarding_start.png){:width="50%"}](/public/tutorial/onboarding_start.png)
 
 

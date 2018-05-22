@@ -3,14 +3,16 @@ title: "First Steps"
 ---
 # First Steps
 
-In this chapter we would like to show you how easy it is to go the first steps in the evan.network.
+It's not hard to walk the first steps in evan.network.
 
 Lets consider our Taskboard Ðapp, a simple ToDo List Manager for teams.
+
+[![Taskboard](/public/tutorial/taskboard_example.png){:width="50%"}](/public/tutorial/taskboard_example.png)
 
 The first thing you need is of course user accounts, so you have someone you can assign tasks to.
 Someone's gotta do the work.
 
-So let's do that:  
+So let's do that and start on [https://dashboard.evan.network](https://dashboard.evan.network) :  
 
 ## [Create an Identity](/tutorial/create-identity)
 
