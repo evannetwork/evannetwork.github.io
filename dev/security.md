@@ -72,7 +72,7 @@ The `auth` modifier is used on functions, that should be restricted to specific 
 
 This basically forbids almost everyone from using the ```setData``` function except:
 - the contract itself
-- the owner of the autority contract
+- the owner of the authority contract
 - (if registered) root users
 - (if registered) public capabilities (functions can be made public accessible for everyone if required)
 

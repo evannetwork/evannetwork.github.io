@@ -39,16 +39,19 @@
 ### [DApps on evan.network](/dapps/introduction)
 - [ÐApp basics](/dapps/basics)
 
-- pure JS
-  - [standalone Hello World](/dapps/standalone/hello-world)
-  - [evan.network framework Hello World](/dapps/js/hello-world)
+- [standalone](/dapps/standalone/hello-world-dbcp)
+  - [DBCP Hello World](/dapps/standalone/hello-world-dbcp)
+  - [blockchain-core Hello World](/dapps/standalone/hello-world-bcc)
 
-- Angular 5 + evan.network framework
+- [pure JS](/dapps/js/hello-world)
+  - [standalone Hello World](/dapps/js/hello-world)
+
+- [Angular 5 + evan.network framework](/dapps/angular/hello-world)
   - [Basics: Hello World](/dapps/angular/hello-world)
   - [Advanced: Task DApp](/dapps/angular/task)
   - [Round up: Taskboard](/dapps/angular/taskboard)
 
-- Ticks and Tricks
+- [Ticks and Tricks](/dapps/tips/planning)
   - [Planning the ÐApp structure](/dapps/tips/planning)
   - [Best practices](/dapps/tips/advanced)
 

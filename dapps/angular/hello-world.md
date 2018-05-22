@@ -9,7 +9,7 @@ title: "Hello World ÐApp"
 ## 2. ÐApp Wrapper application
 The downloaded folder "dapps-tutorial-angular" looks like this on the top level.
 
-[![dapps-tutorial - directory](/public/dapps/angular/hello-world/dapps-tutorial-dir-structure.png){:width="150px"}](/public/dapps/angular/hello-world/dapps-tutorial-dir-structure.png)
+[![dapps-tutorial - directory](/public/dapps/hello-world/dapps-tutorial-dir-structure.png){:width="150px"}](/public/dapps/hello-world/dapps-tutorial-dir-structure.png)
 
 In order to be able to work in ordered and staked projects, it is necessary to split the project into several projects (e.g. dashboard-dapp, list-dapp, contract1-dapp, contract2-dapp) after a short time. To anticipate this problem and different building jobs, each project uses a [lerna](https://github.com/lerna/lerna) project structure to handle multiple repositories as easily as possible. The lerna project only includes the basic requirements and build jobs for the sub projects. The build jobs are definied within the [evan.network dapp-gulp project](/frontend/dapp-gulp).
 
@@ -87,7 +87,7 @@ It looks like the following.
 ```json
 {
   "public": {
-    "autor": "contractus",
+    "author": "contractus",
     "dapp": {
       "dependencies": {
         "angular-core": "0.9.0",
@@ -475,4 +475,4 @@ npm run deploy-to-contract hello-world
 
 After the contract id of the created contract was logged to your console, you can open this contract like the ens path before. Just replace your DApp ens path, with the id of your contract (#/dashboard/helloworld.evan => #/dashboard/0x65dCf129E612d4e40bEA8866029e0595BC1Ba5EC). Within the network tab you will see, that the sources for your contract are now loaded from the contract address. 
 
-[![dapps-tutorial - directory](/public/dapps/angular/hello-world/dapp-from-contract.png){:width="200px"}]
+[![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="200px"}]
