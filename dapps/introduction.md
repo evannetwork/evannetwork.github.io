@@ -16,7 +16,7 @@ You will be guided through the following steps:
   - [blockchain-core Hello World](/dapps/standalone/standalone)
 
 - [pure JS](/dapps/js/hello-world)
-  - [standalone Hello World](/dapps/js/hello-world)
+  - [pure JS Hello World](/dapps/js/hello-world)
 
 - [Angular 5 + evan.network framework](/dapps/angular/hello-world)
   - [Basics: Hello World](/dapps/angular/hello-world)

@@ -39,12 +39,11 @@
 ### [DApps on evan.network](/dapps/introduction)
 - [ÐApp basics](/dapps/basics)
 
-- [standalone](/dapps/standalone/hello-world-dbcp)
-  - [DBCP Hello World](/dapps/standalone/hello-world-dbcp)
-  - [blockchain-core Hello World](/dapps/standalone/hello-world-bcc)
+- [standalone](/dapps/standalone/standalone)
+  - [blockchain-core Hello World](/dapps/standalone/standalone)
 
 - [pure JS](/dapps/js/hello-world)
-  - [standalone Hello World](/dapps/js/hello-world)
+  - [pure JS Hello World](/dapps/js/hello-world)
 
 - [Angular 5 + evan.network framework](/dapps/angular/hello-world)
   - [Basics: Hello World](/dapps/angular/hello-world)
