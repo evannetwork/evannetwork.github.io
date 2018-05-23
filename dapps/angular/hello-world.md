@@ -6,24 +6,17 @@ title: "Hello World ÐApp"
 ## 1. Get Tutorial Application
 - [Download Tutorial Application](https://github.com/evannetwork/dapps-tutorial-angular)
 
-## 2. ÐApp Wrapper application
-The downloaded folder "dapps-tutorial-angular" looks like this on the top level.
-
-[![dapps-tutorial - directory](/public/dapps/hello-world/dapps-tutorial-dir-structure.png){:width="150px"}](/public/dapps/hello-world/dapps-tutorial-dir-structure.png)
-
-In order to be able to work in ordered and staked projects, it is necessary to split the project into several projects (e.g. dashboard-dapp, list-dapp, contract1-dapp, contract2-dapp) after a short time. To anticipate this problem and different building jobs, each project uses a [lerna](https://github.com/lerna/lerna) project structure to handle multiple repositories as easily as possible. The lerna project only includes the basic requirements and build jobs for the sub projects. The build jobs are definied within the [evan.network dapp-gulp project](/frontend/dapp-gulp).
-
-## 3. Build, serve and start the application
+## 2. Build, serve and start the application
 Navigate into the lerna project and run the following commands. The same documentation is also included into the lerna projects readme itself.
 
-### 3.1 Install
+### 2.1 Install
 ```bash
 npm install -g lerna
 npm install
 lerna bootstrap --hoist
 ```
 
-### 3.2 Basic Development
+### 2.2 Basic Development
 - build and serve the local dapp serve, starts an local server at http://localhost:3000
 ```bash
 npm run serve-standalone
@@ -44,14 +37,14 @@ npm run dapps-serve
 npm run serve
 ```
 
-### 3.3 Open the DApp
+### 2.3 Open the DApp
 When you are opening http://localhost:3000 initially you will be navigated to the [onboarding page](/tutorial/create-identity). After you have imported or created an identity and logged in, you will find yourself on the Favorites page.
 
 http://localhost:3000/#/dashboard.evan/favorites.evan
 
 Replace "dashboard.evan/favorites.evan" with "dashboard.evan/helloworld.evan" or "helloworld.evan" to open your test application. You will see an simple application with two pages. At the end of this tutorial we explain how you can deploy your application and add it to your dashboard via the Favorites or also access it via https://dashboard.evan.network.com.
 
-## 4. The ÐApp structure
+## 3. The ÐApp structure
 In the DApp folder of each lerna project are the individual DApps. You will find different projects for the different stages of the tutorial. In the first step we will focus on the hello-word project to explain the basics.
 
 By watching into this repository you will find a project structure like the following:
@@ -129,14 +122,14 @@ It looks like the following.
 
 Within the src folder, the frontend source code is located. In this case, we are using Angular 5 to create a dynamic frontend application. Starting by the index.ts file, the build job will include every file into two output files, ts files into a comined js file, that includes logic and html templates and the scss files into a combined css, to declare stylings.
 
-## 5. Angular 5 & Ionic 3
+## 4. Angular 5 & Ionic 3
 In the next sections it is advantageous to have a certain basic knowledge of Angular 5 and to be familiar with the various possibilities that Ionic offers. Here you will find various instructions and introductions to the frameworks:
 - [Angular 5](https://angular.io/guide/quickstart)
 - [Ionic 3](https://ionicframework.com/docs)
 
 If you have questions about our fancy Angular interpretation and you want to know more, about the evan.network angular libraries, have a look [here](angular/basics).
 
-### 5.1 index.ts
+### 4.1 index.ts
 The index file, as you would have expected, describes the entry point into the application. In this case, the routes and module definitions, including the services and components created, are defined and referenced here. At the end of the file you will find the "startDApp" function which is used to start the application from outside. Since this is a simple function, only one container is given by rendering the application, it is also possible to start applications completely without Angular. For more information on how DApps can be developed with other frameworks, see [here](/dapps/use-other-frameworks).
 
 The head of the index file, starts with the library includes of functions, services, components and more. The normale angular application require its dependencies from @angular/core or @angular/common and so on. To reduce and optimize loaded files during the application runtime, the libraries are already bundled within the [angular-libs](/frontend/angular-libs) for you. If you want to include libraries that are not included yet, you can load it like a normal application.
@@ -289,7 +282,7 @@ export async function startDApp(container, dbcpName) {
 
 ``` 
 
-### 5.2 services
+### 4.2 services
 Services are declared within the service folder and are loaded and referenced within the index.ts. The services are the standard angular implementation, with a great feature that can be used. Instances of services will be created initially and only availbable from the highest module or component reference. As a result, a service that is to be initialized only once may be initialized more often. Using the singleton service from the angular-core, you will be able to instantiate your service only one time over the whole application.
 
 ```ts
@@ -324,7 +317,7 @@ export class HelloWorldService {
 
 ```
 
-### 5.3 translations
+### 4.3 translations
 The translation service uses [ngx-translate](https://github.com/ngx-translate/core). Using the plugin, you can use the "| translate" pipe within html templates and you can use the ContractusTranslationService for instant translations within the code.
 
 ```ts
@@ -377,7 +370,7 @@ export class Translations {
 
 ```
 
-### 5.4 components
+### 4.4 components
 Components are normal components from Angular 5. For more informations, have a look into [Angular 5 components](https://angular.io/guide/displaying-data) and [Performance optimizations](performance-optimizations).
 Look in to the "components/hello-world" or "components/hello-world-2" directory to inspect an very small component sample. Within the hello-world-1 component, the angular-core core service is used, to access the current logged in user, its balance and so on. The hello-world-2 sample uses functions to load data from contracts. You can only view this page, by deploying your hello-word application to an contract. Watch at point "6.2 Deploy DApp within an contract", how to do that.
 
@@ -452,8 +445,8 @@ The html file includes an dapp-wrapper that is capsuled around your application 
 </dapp-wrapper>
 ```
 
-## 6 Deploy it to the real world
-### 6.1 Deploy DApp to ENS
+## 5 Deploy it to the real world
+### 5.1 Deploy DApp to ENS
 Each DApp can be deployed to the evan.network, so it can be accessed from anywhere, not only from a localhost server. This is handle by an wrapped library, to handle the deployment as simple as possible. To deploy your application run the following command.
 
 ```ts
@@ -462,7 +455,7 @@ npm run deploy
 
 Now, you can open the ens address to your application on https://dashboard.evan.network#/my-ens-address.evan. (my-ens-address = dbcp.name)
 
-### 6.2 Deploy DApp within an contract
+### 5.2 Deploy DApp within an contract
 Each application can be deployed together with a contract. This allows the contract to contain the information as it should be displayed. A little sample, how to create and sample contract with your hello world app can be found within the dapps-tutorial-angular/scripts/create-contract.js file. Run the following command to start the script for your specific application.
 
 ```sh

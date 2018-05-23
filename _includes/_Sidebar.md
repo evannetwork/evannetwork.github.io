@@ -38,6 +38,7 @@
 
 ### [DApps on evan.network](/dapps/introduction)
 - [ÐApp basics](/dapps/basics)
+- [ÐApp structure](/dapps/structure)
 
 - [standalone](/dapps/standalone/standalone)
   - [blockchain-core Hello World](/dapps/standalone/standalone)

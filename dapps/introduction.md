@@ -11,6 +11,7 @@ By creating an simple application to create, view and share tasks, you will lear
 
 You will be guided through the following steps:
 - [ÐApp basics](/dapps/basics)
+- [ÐApp structure](/dapps/structure)
 
 - [standalone](/dapps/standalone/standalone)
   - [blockchain-core Hello World](/dapps/standalone/standalone)
