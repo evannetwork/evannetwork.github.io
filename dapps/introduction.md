@@ -12,18 +12,12 @@ By creating an simple application to create, view and share tasks, you will lear
 You will be guided through the following steps:
 - [ÐApp basics](/dapps/basics)
 - [ÐApp structure](/dapps/structure)
-
-- [standalone](/dapps/standalone/standalone)
-  - [blockchain-core Hello World](/dapps/standalone/standalone)
-
-- [pure JS](/dapps/js/hello-world)
-  - [pure JS Hello World](/dapps/js/hello-world)
-
+- [Hello World - standalone](/dapps/standalone/standalone)
+- [Hello World - JS](/dapps/js/hello-world)
 - [Angular 5 + evan.network framework](/dapps/angular/hello-world)
   - [Basics: Hello World](/dapps/angular/hello-world)
   - [Advanced: Task DApp](/dapps/angular/task)
   - [Round up: Taskboard](/dapps/angular/taskboard)
-
 - [Ticks and Tricks](/dapps/tips/planning)
   - [Planning the ÐApp structure](/dapps/tips/planning)
   - [Best practices](/dapps/tips/advanced)
