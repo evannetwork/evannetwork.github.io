@@ -83,8 +83,8 @@ It looks like the following.
     "author": "contractus",
     "dapp": {
       "dependencies": {
-        "angular-core": "0.9.0",
-        "angular-libs": "0.9.0"
+        "angular-core": "^1.0.0",
+        "angular-libs": "^1.0.0"
       },
       "entrypoint": "helloword.js",
       "files": [
@@ -445,68 +445,11 @@ The html file includes an dapp-wrapper that is capsuled around your application 
 ```
 
 ## 5 Deploy it to the real world
-### 5.1 Deploy DApp to ENS
-Each DApp can be deployed to the evan.network, so it can be accessed from anywhere, not only from a localhost server. This is handle by an wrapped library, to handle the deployment as simple as possible. To deploy your application run the following command. To deploy DApps to ens paths, you need one configuration file, that specifies which accounts and which configurations should be used for the deployment.
-This file must be js / json files that exports specific values:
-
-- accounts.js
-```js
-const bcConfig = {
-  nameResolver: {
-    ensAddress: process.env.ENS_ADDRESS || '0x937...',
-    ensResolver: process.env.ENS_RESOLVER || '0xDC18...',
-    labels: {
-      businessCenterRoot: process.env.BC_ROOT || 'testbc.test',
-      ensRoot: process.env.ENS_ROOT || 'test',
-      factory: 'factory',
-      admin: 'admin',
-      eventhub: 'eventhub',
-      profile: 'profile',
-      mailbox: 'mailbox'
-    },
-    domains: {
-      root: ['ensRoot'],
-      factory: ['factory', 'businessCenterRoot'],
-      adminFactory: ['admin', 'factory', 'ensRoot'],
-      businessCenter: ['businessCenterRoot'],
-      eventhub: process.env.ENS_EVENTS || ['eventhub', 'ensRoot'],
-      profile: process.env.ENS_PROFILES || ['profile', 'ensRoot'],
-      profileFactory: ['profile', 'factory', 'ensRoot'],
-      mailbox: process.env.ENS_MAILBOX || ['mailbox', 'ensRoot'],
-    },
-  },
-  smartAgents: {
-    onboarding: {
-      accountId: '0x063fB42cCe4CA5448D69b4418cb89E663E71A139',
-    },
-  },
-  alwaysAutoGasLimit: 1.1
-}
-
-const runtimeConfig = {
-  accountMap: {
-    '0x001...': '01734...', // deploymentAccount: 'privateKey'
-  },
-  ipfs: { host: 'ipfs.evan.network', port: '443', protocol: 'https' },
-  web3Provider: 'wss://testcore.evan.network/ws'
-}
-
-module.exports = { bcConfig, runtimeConfig }
-```
-
-```bash
-npm run deploy --config pathToConfig
-```
-
-** Be sure that "pathToConfig" is the absolute path to your deployment configuration! **
-
-Now, you can open the ens address to your application on https://dashboard.evan.network#/my-ens-address.evan. (my-ens-address = dbcp.name)
-
-### 5.2 Deploy DApp within an contract
+### 5.1 Deploy DApp within an contract
 Each application can be deployed together with a contract. This allows the contract to contain the information as it should be displayed. A little sample, how to create and sample contract with your hello world app can be found within the dapps-tutorial-angular/scripts/create-contract.js file. Run the following command to start the script for your specific application.
 
 ```sh
-npm run ipfs deamon hello-world
+./scripts/go-ipfs
 ```
 
 ```sh
@@ -516,3 +459,7 @@ npm run deploy-to-contract hello-world
 After the contract id of the created contract was logged to your console, you can open this contract like the ens path before. Just replace your DApp ens path, with the id of your contract (#/dashboard/helloworld.evan => #/dashboard/0x65dCf129E612d4e40bEA8866029e0595BC1Ba5EC). Within the network tab you will see, that the sources for your contract are now loaded from the contract address. 
 
 [![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="200px"}]
+
+
+### 5.2 Deploy DApp to ENS
+Have a look [dapp-browser deployment](https://github.com/evannetwork/dapp-browser#ens-deployment).
