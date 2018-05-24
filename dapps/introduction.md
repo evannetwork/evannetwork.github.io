@@ -17,7 +17,6 @@ You will be guided through the following steps:
 - [Angular 5 + evan.network framework](/dapps/angular/hello-world)
   - [Basics: Hello World](/dapps/angular/hello-world)
   - [Advanced: Task DApp](/dapps/angular/task)
-  - [Round up: Taskboard](/dapps/angular/taskboard)
 - [Ticks and Tricks](/dapps/tips/planning)
   - [Planning the ÐApp structure](/dapps/tips/planning)
   - [Best practices](/dapps/tips/advanced)
