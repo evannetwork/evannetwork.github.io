@@ -201,7 +201,7 @@ npm run deploy-to-contract hello-world-bcc
 
 After the contract id of the created contract was logged to your console, you can open this contract like the ens path before. Just replace your DApp ens path, with the id of your contract (#/dashboard/helloworld.evan => #/dashboard/0x65dCf129E612d4e40bEA8866029e0595BC1Ba5EC). Within the network tab you will see, that the sources for your contract are now loaded from the contract address. 
 
-[![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="200px"}]
+[![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="200px"}](/public/dapps/hello-world/dapp-from-contract.png)
 
 
 ### 4.2 Deploy DApp to ENS
