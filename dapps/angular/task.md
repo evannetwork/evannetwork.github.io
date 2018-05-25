@@ -83,6 +83,7 @@ The angular-libs are existing within the node_modules of the task or rather with
   }
   ...
 }
+```
 
 To update the service for Angular 5 with more usage comfort, we will add the "@Injectable()" decorator to the service, change the "export default class TodoApp" of the TodoApp to "export class TodoApp" and also add the correct templateUrl. The headers of the two files will look like the following:
 
@@ -185,7 +186,7 @@ function getConfig(isDispatcher?: boolean) {
 ## 1.5 Fix styling
 After you applied this changes, the TodoMVC should run. Have a look at [tutorialtask](http://localhost:3000/dev.html#/dashboard.evan/tutorialtask).
 
-[![TodoMVC first](/public/dapps/angular/todo_mvc_first.png){:width="200px"}](/public/dapps/angular/todo_mvc_first.png)
+[![TodoMVC first](/public/dapps/angular/task/todo_mvc_first.png){:width="200px"}](/public/dapps/angular/task/todo_mvc_first.png)
 
 But wait, it looks like shit and its not working? Correct! We forgot to add the TodoMVC styling. Within the node_modules folder of the original TodoMVC folder, you will find a file "todomvc-app-css/index.css". Copy this file into the "task/src/scss" folder and rename it to "index.scss", so the build job will recognize it and will build it into the combined css file.
 
@@ -288,7 +289,6 @@ todo-app {
     color: $text-color;
   }
 }
-
 
 ...
 }
@@ -401,4 +401,4 @@ export class TodoApp {
 Now the application is finally integrated and you can watch the result on the following URL: 
 (http://localhost:3000/dev.html#/dashboard.evan/tutorialtask)
 
-[![TodoMVC integrated](/public/dapps/angular/todo_mvc_integrated.png){:width="200px"}](/public/dapps/angular/todo_mvc_integrated.png)
+[![TodoMVC integrated](/public/dapps/angular/task/todo_mvc_integrated.png){:width="200px"}](/public/dapps/angular/task/todo_mvc_integrated.png)
