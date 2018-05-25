@@ -15,7 +15,7 @@ If you dont want to code by yourself, you can simply read the docs and copy the 
 ## 1. Project Setup
 So, where do we start?
 
-In the [Angular - Hello World](/dapps/angular/hello-world) it was already shown how evan.network apps are structured and how they are built and deployed. We will now integrate the TodoMVC example into this project structure. If you don't want to play the complete example yourself, you can find the finished application in the folder "dapps/task-complete".
+In the [Angular - Hello World](/dapps/angular/hello-world) it was already shown how evan.network apps are structured and how they are built and deployed. We will now integrate the TodoMVC example into this project structure.
 
 ## 1.1 Seed project
 To handle a smarter startup for you, a seed project already exists within the dapps folder. By having a look into the "dapps/task" folder, you will find a clear project with all configurations you will need. Its nearly the same as the Hello World sample, but without any components or services. This application is ready to use and you can already start it. Open two command lines and start the development environment:
@@ -183,7 +183,7 @@ function getConfig(isDispatcher?: boolean) {
 ```
 
 ## 1.5 Fix styling
-After you applied this changes, the TodoMVC should run. Have a look at [tutorialtaskcomplete](http://localhost:3000/dev.html#/dashboard.evan/tutorialtaskcomplete).
+After you applied this changes, the TodoMVC should run. Have a look at [tutorialtask](http://localhost:3000/dev.html#/dashboard.evan/tutorialtask).
 
 [![TodoMVC first](/public/dapps/angular/todo_mvc_first.png){:width="200px"}](/public/dapps/angular/todo_mvc_first.png)
 
@@ -398,6 +398,7 @@ export class TodoApp {
 ```
 
 ## 1.7 Test it
-Now the application is finally integrated
+Now the application is finally integrated and you can watch the result on the following URL: 
+(http://localhost:3000/dev.html#/dashboard.evan/tutorialtask)
 
 [![TodoMVC integrated](/public/dapps/angular/todo_mvc_integrated.png){:width="200px"}](/public/dapps/angular/todo_mvc_integrated.png)
