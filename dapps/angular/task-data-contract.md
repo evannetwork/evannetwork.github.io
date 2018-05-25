@@ -2,6 +2,8 @@
 title: "Angular - Task DApp Data-Contract"
 ---
 # Angular - Task DApp Data-Contract
+**Before performing this example, please go through the [Task DApp setup](/dapps/angular/task) tutorial, as this tutorial is based on this example.**
+
 In this section you will create contracts, read from them and handle several data interactions with the contract by using the evan.network DataContract and the blockchain-core. So each data that is currently cached within the local storage will be moved into an contract.
 
 For how to write the task dapp using your own contract implementation have a look at this: [Angular - Task DApp Custom Contract](/dapps/angular/task-custom).
@@ -40,5 +42,52 @@ So insert the abi definition into your dbcp.json file from the following [dbcp.j
 }
 ```
 
-## 2. Data Scheme
+# 2. Data Schema
+The data schema is also a property of the dbcp.json, that describes the data structure of our contract in deep. In our case, the data schema will describe the data that is saved within our data contract's todo list.
 
+```json
+{
+  ...
+  "dataSchema": {
+    "todo_list": {
+      "$id": "todo_list_schema",
+      "type": "array",
+      "additionalProperties": false,
+      "items": {
+        "type": "object",
+        "properties": {
+          "completed": {
+            "type": "boolean"
+          },
+          "_title": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+  ...
+}
+```
+
+# 3. Create and Read the Data Contract
+The DApp will be designed to handle both side, the contract creation and the data consuming. The evan.network dashboard includes a dynamic parameter routing to open unregistered ens and contract addresses. So the DApp can check the current opened url, if a contract id or the normal ens address is opened. When the ens address is opened, we will redirect to an contract creation page. When a contract id is opened, the user gets redirected to the TodoMVC component.
+
+## 3.1 Contract creation component
+At first, we need to add a contract creation component. Navigate to the "task/src/components" folder and create the "create-task" folder, with the following structure:
+- create-task
+  - create-task.ts
+  - create-task.html
+  - create-task.scss
+
+create-task.ts
+```ts
+```
+
+create-task.html
+```ts
+```
+
+create-task.scss
+```ts
+```

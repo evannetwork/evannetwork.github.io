@@ -50,7 +50,6 @@
   - [Planning the ÐApp structure](/dapps/tips/planning)
   - [Best practices](/dapps/tips/advanced)
 
-
 ### Miscellaneous
 - [Resources](/doc/resources)
 - [Wiki](/doc/wiki)

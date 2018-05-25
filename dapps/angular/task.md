@@ -189,7 +189,7 @@ After you applied this changes, the TodoMVC should run. Have a look at [tutorial
 
 But wait, it looks like shit and its not working? Correct! We forgot to add the TodoMVC styling. Within the node_modules folder of the original TodoMVC folder, you will find a file "todomvc-app-css/index.css". Copy this file into the "task/src/scss" folder and rename it to "index.scss", so the build job will recognize it and will build it into the combined css file.
 
-**Please keep in mind: This application runs integrated within the evan.network dashboard without any iframe. So global styles, will be realy global! So remove html, body styles and wrap the whole index.scss file within an selector that only select the TodoApp component. Its selector is "todo-app", so wrap the whole scss into this selector, so its only effective within your component.**
+**Please keep in mind: This application runs integrated within the evan.network dashboard without any iframe. So global styles, will be realy global! So remove html, body styles and wrap the whole index.scss file within an selector that only select the TodoApp component. Its selector is ".todoapp", so wrap the whole scss into this selector, so its only effective within your component. Don't forget to replace all ".todoapp" selectors within the ".todoapp" wrapper class with "&"**
 
 remove:
 ```scss
@@ -217,7 +217,7 @@ body {
 
 add:
 ```scss
-todo-app {
+.todoapp {
   button {
     font-family: inherit;
     font-size: 100%;
@@ -231,20 +231,22 @@ Add the following style at the start of the scss file for more evan.network comp
 ```scss
 @import '@evan.network/angular-sass/src/variables/colors';
 
-todo-app {
+.todoapp {
   & {
     display: block;
 
     padding: 16px;
 
+    background: $background-color !important;
+
     @media (min-width: 1200px) {
-      width: 70%;
-      margin-left: 15%;
+      width: 70% !important;
+      margin-left: 15% !important;
     }
 
     @media (min-width: 1500px) {
-      width: 50%;
-      margin-left: 25%;
+      width: 50% !important;
+      margin-left: 25% !important;
     }
   }
 
