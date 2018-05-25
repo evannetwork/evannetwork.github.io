@@ -13,3 +13,7 @@ By using the evan.network framework to create featured DApps, the initialization
 
 To do this, however, all DApps must be started via the Root evan.network application, since this provides the complete function stack and the various UIs. **As long as the provided functions are used, the application can only be started in environments that have the corresponding structures.** Alternatively, the blockchain-core can be initialized, configured and used, as in the [standalone example](/dapps/standalone/standalone).
 
+# Prerequesits
+Before start developing, be sure to setup the following programs on your system:
+  - [node.js (8+) + npm (5+)](https://nodejs.org/en)
+  - [gulp](https://github.com/gulpjs/gulp)
