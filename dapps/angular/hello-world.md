@@ -83,15 +83,14 @@ It looks like the following.
     "author": "contractus",
     "dapp": {
       "dependencies": {
-        "angular-core": "0.9.0",
-        "angular-libs": "0.9.0"
+        "angular-core": "^1.0.0",
+        "angular-libs": "^1.0.0"
       },
       "entrypoint": "helloword.js",
       "files": [
         "helloword.js",
         "helloword.css"
       ],
-      "module": "HelloWorldModule",
       "primaryColor": "#004f7d",
       "secondaryColor": "#f9f9ff",
       "standalone": false,
@@ -141,7 +140,7 @@ The [angular-core](/frontend/angular-core) includes core functionalities that ar
 ```ts
 import {
   getDomainName,
-} from 'dapp';
+} from 'dapp-browser';
 
 import {
   NgModule,                    // @angular/core
@@ -446,20 +445,11 @@ The html file includes an dapp-wrapper that is capsuled around your application 
 ```
 
 ## 5 Deploy it to the real world
-### 5.1 Deploy DApp to ENS
-Each DApp can be deployed to the evan.network, so it can be accessed from anywhere, not only from a localhost server. This is handle by an wrapped library, to handle the deployment as simple as possible. To deploy your application run the following command.
-
-```ts
-npm run deploy
-```
-
-Now, you can open the ens address to your application on https://dashboard.evan.network#/my-ens-address.evan. (my-ens-address = dbcp.name)
-
-### 5.2 Deploy DApp within an contract
+### 5.1 Deploy DApp within an contract
 Each application can be deployed together with a contract. This allows the contract to contain the information as it should be displayed. A little sample, how to create and sample contract with your hello world app can be found within the dapps-tutorial-angular/scripts/create-contract.js file. Run the following command to start the script for your specific application.
 
 ```sh
-npm run ipfs deamon hello-world
+./scripts/go-ipfs
 ```
 
 ```sh
@@ -468,4 +458,9 @@ npm run deploy-to-contract hello-world
 
 After the contract id of the created contract was logged to your console, you can open this contract like the ens path before. Just replace your DApp ens path, with the id of your contract (#/dashboard/helloworld.evan => #/dashboard/0x65dCf129E612d4e40bEA8866029e0595BC1Ba5EC). Within the network tab you will see, that the sources for your contract are now loaded from the contract address. 
 
-[![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="200px"}]
+[![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="200px"}](/public/dapps/hello-world/dapp-from-contract.png)
+
+
+### 5.2 Deploy DApp to ENS
+Have a look [dapp-browser deployment](https://github.com/evannetwork/dapp-browser#ens-deployment).
+

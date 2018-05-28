@@ -125,19 +125,22 @@ To build and watch the dapps and copy them into the development runtime:
 npm run dapps-serve
 ```
 
-## 4. Deploy DApp within an contract
-Each application can be deployed together with a contract. This allows the contract to contain the information as it should be displayed. A little sample, how to create and sample contract with your hello world app can be found within the [dapps-tutorial-js/scripts/create-contract.js](https://github.com/evannetwork/dapps-tutorial-js/blob/master/scripts/create-contract.js) file. Run the following command to start the script for your specific application.
+## 4 Deploy it to the real world
+### 4.1 Deploy DApp within an contract
+Each application can be deployed together with a contract. This allows the contract to contain the information as it should be displayed. A little sample, how to create and sample contract with your hello world app can be found within the dapps-tutorial-angular/scripts/create-contract.js file. Run the following command to start the script for your specific application.
 
 ```sh
-npm run ipfs deamon
+./scripts/go-ipfs
 ```
 
 ```sh
-npm run deploy-to-contract hello-world-dbcp
+npm run deploy-to-contract hello-world
 ```
 
-After the contract id of the created contract was logged to your console, you can open this contract using the evan.network.
+After the contract id of the created contract was logged to your console, you can open this contract like the ens path before. Just replace your DApp ens path, with the id of your contract (#/dashboard/helloworld.evan => #/dashboard/0x65dCf129E612d4e40bEA8866029e0595BC1Ba5EC). Within the network tab you will see, that the sources for your contract are now loaded from the contract address. 
 
-Use the following url: "https://dashboard.evan.network/#/0x000...".
+[![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="200px"}](/public/dapps/hello-world/dapp-from-contract.png)
 
-[![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="200px"}]
+
+### 4.2 Deploy DApp to ENS
+Have a look [dapp-browser deployment](https://github.com/evannetwork/dapp-browser#ens-deployment).
