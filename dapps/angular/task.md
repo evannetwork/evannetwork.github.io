@@ -218,7 +218,7 @@ body {
 add:
 ```scss
 .todoapp {
-  button {
+  button.clear-completed, button.destroy {
     font-family: inherit;
     font-size: 100%;
     font-weight: inherit;
@@ -251,6 +251,10 @@ Add the following style at the start of the scss file for more evan.network comp
   }
 
   h1 {
+    font-size: 50px !important;
+
+    top: -110px !important;
+
     color: $text-color !important;
   }
 
