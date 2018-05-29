@@ -1,6 +1,6 @@
 ---
-title: "dapp-gulp"
+title: "angular-gulp"
 ---
-# dapp-gulp
+# angular-gulp
 
 tbd...

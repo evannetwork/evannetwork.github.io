@@ -38,17 +38,15 @@
 
 ### [DApps on evan.network](/dapps/introduction)
 - [ÐApp basics](/dapps/basics)
-
-- pure JS
-  - [standalone Hello World](/dapps/standalone/hello-world)
-  - [evan.network framework Hello World](/dapps/js/hello-world)
-
-- Angular 5 + evan.network framework
+- [ÐApp structure](/dapps/structure)
+- [Hello World - standalone](/dapps/standalone/standalone)
+- [Hello World - JS](/dapps/js/hello-world)
+- [Angular 5 + evan.network framework](/dapps/angular/hello-world)
   - [Basics: Hello World](/dapps/angular/hello-world)
-  - [Advanced: Task DApp](/dapps/angular/task)
-  - [Round up: Taskboard](/dapps/angular/taskboard)
-
-- Ticks and Tricks
+  - [Task DApp setup](/dapps/angular/task)
+  - [Task DApp Data-Contract](/dapps/angular/task-data-contract)
+  - [Task Task Custom Contract](/dapps/angular/task-custom-contract)
+- [Ticks and Tricks](/dapps/tips/planning)
   - [Planning the ÐApp structure](/dapps/tips/planning)
   - [Best practices](/dapps/tips/advanced)
 
