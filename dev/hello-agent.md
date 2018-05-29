@@ -11,7 +11,7 @@ You will still have to do some setup though.
 
 ## Prerequisites
 
-In the evan.network the established way to write web services is to use the [`edge-server`](https://github.com/evannetwork/edge-server), which is just an [ActionHero](https://www.actionherojs.com/) with some added infrastructure. It also uses the version "^18.0", so asynchronous programming with callbacks is discouraged now.
+In the evan.network the established way to write web services is to use the [`edge-server`](https://github.com/evannetwork/edge-server-seed), which is just an [ActionHero](https://www.actionherojs.com/) with some added infrastructure, in particular [REDIS](https://redis.io/), [blockchain-core](https://github.com/evannetwork/blockchain-core) and [ipfs](/dev/ipfs). It also uses the version "^18.0", so asynchronous programming with callbacks is discouraged now.
 
 Installation is rather straightforward.
 

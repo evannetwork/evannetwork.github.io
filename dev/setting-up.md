@@ -14,7 +14,8 @@ To start developing in the evan network, you primarily need need 3 things:
 Assuming you already know what the blockchain is and some basics about how it works and the ecosystem.
 
 The [evan.network](https://evan.network/) uses [parity](https://www.parity.io/) as its blockchain client.
-The reason to use it over [geth](https://geth.ethereum.org/) is the more extensive toolchain and functionality. Geth and others most likely can be used, too, for most purposes, but are not supported.
+The reason to use it over [geth](https://geth.ethereum.org/) is the more extensive toolchain and functionality. Geth and others can't even be used in evan.network, because there are required configurations
+that are not supported by geth.
 
 This is only really relevant if you want to install the blockchain client on your own machine. Most of the time it is sufficient to configure your applications to connect to one of the [MasterNodes](/doc/masternodes).
 
