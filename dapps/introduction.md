@@ -11,7 +11,6 @@ By creating an simple application to create, view and share tasks, you will lear
 
 You will be guided through the following steps:
 - [ÐApp basics](/dapps/basics)
-- [ÐApp structure](/dapps/structure)
 - [Hello World - standalone](/dapps/standalone/standalone)
 - [Hello World - JS](/dapps/js/hello-world)
 - [Angular 5 + evan.network framework](/dapps/angular/hello-world)

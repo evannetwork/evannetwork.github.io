@@ -1,6 +1,0 @@
----
-title: "Animations"
----
-# Animations
-
-tbd...
