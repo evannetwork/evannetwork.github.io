@@ -4,7 +4,7 @@ title: "Angular - Task DApp Data-Contract"
 # Angular - Task DApp Data-Contract
 **Before performing this example, please go through the [Task DApp setup](/dapps/angular/task) tutorial, as this tutorial is based on this example.**
 
-In this section you will create contracts, read from them and handle several data interactions with the contract by using the evan.network DataContract and the blockchain-core. So each data that is currently cached within the local storage will be moved into an contract.
+In this section you will create contracts, read from them and handle several data interactions with the contract by using the evan.network DataContract and the blockchain-core. So each data that is currently cached within the local storage will be moved into an contract. All needed I18N values and keys are predefined within the i18n folder and not noticed during the example.
 
 For how to write the task dapp using your own contract implementation have a look at this: [Angular - Task DApp Custom Contract](/dapps/angular/task-custom).
 
@@ -49,19 +49,29 @@ The data schema is also a property of the dbcp.json, that describes the data str
 {
   ...
   "dataSchema": {
-    "todo_list": {
-      "$id": "todo_list_schema",
-      "type": "array",
+    "todos": {
+      "$id": "todos_schema",
       "additionalProperties": false,
-      "items": {
-        "type": "object",
-        "properties": {
-          "completed": {
-            "type": "boolean"
-          },
-          "_title": {
-            "type": "string"
-          }
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "title": {
+          "type": "string"
+        }
+      }
+    },
+    "todologs": {
+      "$id": "todologs_schema",
+      "additionalProperties": false,
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "solved": {
+          "type": "boolean"
         }
       }
     }
@@ -85,14 +95,12 @@ Create a new file within the services folder and name it "task.ts". Within this 
 
 ```ts
   /**
-   * Create a new task data contract instance.
-   * @param name name of the task data contract
+   * Create a new DataContract instance.
    */
-  async createNewTask(name: string) {
-    // create new data contract instance
-    const dataContract = new DataContract({
+  getDataContract() {
+    return new DataContract({
       cryptoProvider: this.bccService.description.cryptoProvider,
-      dfs: this.bccService.dfs,
+      dfs: this.bccService.CoreBundle.BCCCore.dfs,
       executor: this.bccService.executor,
       loader: this.bccService.contractLoader,
       nameResolver: this.bccService.nameResolver,
@@ -100,19 +108,32 @@ Create a new file within the services folder and name it "task.ts". Within this 
       web3: this.bccService.web3,
       description: this.bccService.description,
     });
+  }
+
+  /**
+   * Create a new task data contract instance.
+   * @param name name of the task data contract
+   */
+  async createNewTask(name: string) {
+    // create new data contract instance
+    const dataContract = this.getDataContract();
 
     // load dapp description to add contract metadata
     const dappDescription = await this.descriptionService.getDescription(this.ensAddress, true);
     dappDescription.name = name;
+    dappDescription.i18n.name.en = name;
+    dappDescription.i18n.name.de = name;
 
     return await dataContract.create(
       'tasks',
       this.coreService.activeAccount(),
-      this.descriptionService.getContractusENSAddress('taskboard'),
+      null,
       { public: dappDescription }
     );
   }
 ```
+
+The first parameter in "dataContract.create('tasks', ... " is used to handle which contract factory should be loaded. At this path the evan.network TaskDataContractFactory is deployed. This factory is derived from the DataContract factory and can handle two data lists (todos, todologs). View point 4 for more details about the DataContract list handling.
 
 After the contract was created, we want to write the reference into our favorites. The favorites DApp can not only handle DApps from ens addresses, it's also possible to load contracts with an underlying dbcp definition. To do this, require the angular-core "bookmark-service" and run the following functions. 
 
@@ -150,8 +171,8 @@ import {
 export const TaskCreateDispatcher = new QueueDispatcher(
   [
     new QueueSequence(
-      '_dapptaskboard.dispatcher.create-task',
-      '_dapptaskboard.dispatcher.create-task-description',
+      '_tutorialtask.dispatcher.create-task',
+      '_tutorialtask.dispatcher.create-task-description',
       async (service: TaskService, queueEntry: any) => {
         const tasks = queueEntry.data;
         const results = [ ];
@@ -161,9 +182,9 @@ export const TaskCreateDispatcher = new QueueDispatcher(
           const newTask = await service.createNewTask(task.name);
 
           // reference to my favorites
-          await service.addToFavorites(newTask);
+          await service.addToFavorites(newTask._address);
 
-          results.push(results);
+          results.push(newTask._address);
         }
 
         return results;
@@ -173,6 +194,7 @@ export const TaskCreateDispatcher = new QueueDispatcher(
   translations,
   'TaskService'
 );
+
 ```
 
 Some "angular-core" classes for the queue are imported to create a new dispatcher with several sequences. Each dispatcher can have n* sequences, that will be runned after another. If one sequence is solved, the return values are saved for the next sequence. So when the user reloads the browser during the sequence 3/5, the queue will continue when page is loaded with the stept 3/5.
@@ -244,7 +266,6 @@ So, navigate to the "task/src/components" folder and create the "create-task" fo
 - create-task
   - create-task.ts
   - create-task.html
-  - create-task.scss
 
 create-task.ts
 ```ts
@@ -279,16 +300,43 @@ export class TaskCreateComponent implements OnInit, OnDestroy {
   ) { }
 
   async ngOnInit() {
-    this.onCreation = await this.queue
-      .onQueueFinish(this.taskService.createQueueID, (reload) => {
-        this.contractId = reload;
-      });
+    this.onCreation = await this.queue.onQueueFinish(this.taskService.createQueueID, async (reload, data) => {
+      if (reload) {
+        try {
+          if (!(data[0] instanceof Error)) {
+            await this.alertService.showSubmitAlert(
+              '_tutorialtask.task-created',
+              '_tutorialtask.task-created-description',
+              '_tutorialtask.cancel',
+              '_tutorialtask.ok',
+            );
+
+            this.routinService.navigate(`./${ data[0] }`);
+          }
+
+          this.loading = false;
+          this.ref.detectChanges();
+        } catch (ex) { }
+      }
+    });
   }
 
+  /**
+   * Unbind onCreation listener
+   */
   ngOnDestroy() {
     this.onCreation && this.onCreation();
   }
-}
+
+  /**
+   * Create a new contract instance.
+   */
+  createNewContract() {
+    this.loading = true;
+    this.taskService.triggerTaskQueue(this.taskName);
+    this.taskName = '';
+    this.ref.detectChanges();
+  }
 ```
 
 create-task.html
@@ -302,10 +350,12 @@ create-task.html
         autofocus=""
         [placeholder]="'_tutorialtask.task-name' | translate"
         [(ngModel)]="taskName"
+        (keyup.enter)="createNewContract()"
         (ngModelChange)="ref.detectChanges()">
       <button ion-button outline round
-        (click)="taskService.triggerTaskQueue(taskName)"
-        [disabled]="!taskName">
+        (click)="createNewContract()"
+        [disabled]="!taskName || loading">
+        <ion-spinner *ngIf="loading" color="light"></ion-spinner>
         {{ '_tutorialtask.task-create' | translate }}
       </button>
     </div>
@@ -313,7 +363,7 @@ create-task.html
 </section>
 ```
 
-We just reference the TaskCreate service in our component, so the code of the componet is very small. Also, we can use the queue.onQueueFinish and the createQueueID to listen for task creation finish.
+We just reference the TaskCreate service in our component, so the code of the componet is very small. Also, we can use the queue.onQueueFinish and the createQueueID to listen for task creation finish. When the task was created successfully, we will show an alert with i18n values, to ask the user, to open the contract.
 
 ## 3.4 Routing
 To handle the routing correctly for the creation and task detail, we need to add some new routing. In the case, that we are opening the ens address of the DApp directly, the create component should be displayed. When the DApp is opened using a contract address, we should directly open the task detail component. Adjust the routing to the following:
@@ -389,6 +439,408 @@ Copy the latest ipfs path for the dist folder ("QmXCnDwasWd9JQ3rz7Rjc3uQt7SDiury
 
 **Now you can create a new contract instance. Reload your browser and try it.**
 
+## 3.6 Developing
+For development purposes its very annoying to publish your sources to the ipfs and to create a new contract, any time you changed something. To handle this, the "RoutesBuilder.buildModuleRoutes" function will do some magic. Using the evan.network frame multiple Angular application within antoher Angular application. So its important to build dynamic routes corresponding to the specific parent Angular application. As a side effect, your defined Routes are nested in any case within it self. A routing tree like is following is build:
+
+```json
+
+[
+  {
+    "path": "dashboard.test/tutorialtask.test",
+    "children": [
+      {
+        "path": "tutorialtask.test",
+        "children": [
+          ...
+          {
+            "path": "favorites.test",
+            "data": {
+              "state": "favorites",
+              "navigateBack": true
+            },
+            "children": [
+              {
+                "path": "**",
+                "data": {
+                  "state": "favorites",
+                  "navigateBack": true
+                }
+              }
+            ]
+          },
+          {
+            "path": "",
+            "data": {
+              "state": "task-create",
+              "navigateBack": true
+            }
+          },
+          {
+            "path": ":address",
+            "data": {
+              "state": "task-detail",
+              "navigateBack": true
+            }
+          }
+        ]
+      },
+      {
+        "path": "favorites.test",
+        "data": {
+          "state": "favorites",
+          "navigateBack": true
+        },
+        "children": [
+          {
+            "path": "**",
+            "data": {
+              "state": "favorites",
+              "navigateBack": true
+            }
+          }
+        ]
+      },
+      ...
+      {
+        "path": "",
+        "data": {
+          "state": "task-create",
+          "navigateBack": true
+        }
+      },
+      {
+        "path": ":address",
+        "data": {
+          "state": "task-detail",
+          "navigateBack": true
+        }
+      }
+    ],
+    "runGuardsAndResolvers": "always",
+    "data": {
+      "contractusDynamicRoutes": true,
+      "dynamicRoutesConfig": {
+        "dappEns": "tutorialtask.test",
+        "routes": [
+          {
+            "path": "",
+            "data": {
+              "state": "task-create",
+              "navigateBack": true
+            }
+          },
+          {
+            "path": ":address",
+            "data": {
+              "state": "task-detail",
+              "navigateBack": true
+            }
+          }
+        ]
+      }
+    }
+  },
+]
+```
+
+Do the following things to develop the details page using your local changes:
+1. If you created an contract id, and navigated to it by submitting the alert, the contract id will appear within the url (e.g. "http://localhost:3000/dev.html#/dashboard.evan/0x08a76987Ac24750287Fcbf51378525aA62499228").
+
+2. Copy the contract id and open you task creation DApp again on the following url : [http://localhost:3000/dev.html#/dashboard.test/tutorialtask.test](http://localhost:3000/dev.html#/dashboard.test/tutorialtask.test).
+
+3. Append the contract id to your creation url and the contract will be loaded with your local changes. [http://localhost:3000/dev.html#/dashboard.test/tutorialtask.test](http://localhost:3000/dev.html#/dashboard.test/tutorialtask.test) =>  [http://localhost:3000/dev.html#/dashboard.test/tutorialtask.test/0x08a76987Ac24750287Fcbf51378525aA62499228](http://localhost:3000/dev.html#/dashboard.test/tutorialtask.test/0x08a76987Ac24750287Fcbf51378525aA62499228)
+
 
 # 4. Task detail
+After the task contract was created, the task instance can be openend, but it will save its todos and resolvles into the browser localStorage. We will need the following things to handle our data within the blockchain:
 
+1. What should the detail component do?
+2. Handling of data contract list entries for todos and todo resolvles
+2. Adjust detail component to handle new list entry features
+
+## 4.1 What should the detail component do?
+Using the data contract API we can add list entries to two, within the TaskDataContractFactory defined lists (todos, todologs), that includes list entries that are defined within the dbcp.json dataschema. In our case we specified, that we can add todos with the properties "title" and "id" to the todos and objects with the properties "solved" and "id" to the todologs. If we specify todoData that not respects the dbcp description, the blockchain-core will check the description and return error codes by using wrong values.
+
+By why splitting up into two lists? Technically its possible to change and delete list entries. But if we want to handle the correct mind of blockchain logic, we should not change or delete any todo, so we can take our history, unchanged and comprehensible. This is, where the todolog list takes its role. New todos will be saved within the todos list. When we want to solve a todo, we will simply create a new todolog, with the same id as the todo. In future we can load both lists, so we can check, which todo is solved.
+
+## 4.2 List Entry Dispatcher & Service
+Open the "services/task.ts" service and add the following function.
+
+```ts
+  /**
+   * Adds a list entry to an specific list
+   * @param listEntry list entry to add, includes data of the todo and the corresponding task contract id and the list name
+   */
+  async addListEntry(taskId: string, listName: string, todoData: any) {
+    const dataContract = this.getDataContract();
+
+    await dataContract.addListEntries(
+      taskId,
+      [ listName ],
+      [ todoData ],
+      this.coreService.activeAccount()
+    );
+  }
+```
+
+Add a new dispatcher to the "dispatchers/task-dispatcher.ts" file that uses this function to create new list entries: 
+
+```ts
+export const ListEntryDispatcher = new QueueDispatcher(
+  [
+    new QueueSequence(
+      '_tutorialtask.dispatcher.list-entry',
+      '_tutorialtask.dispatcher.list-entry-description',
+      async (service: TaskService, queueEntry: any) => {
+        const listEntries = queueEntry.data;
+        
+        for (let entry of listEntries) {
+          await service.addListEntry(entry.taskId, entry.listName, entry.data);
+        }
+      }
+    )
+  ],
+  translations,
+  'TaskService'
+);
+```
+
+Don't forget to export the Dispatcher within the "index.ts" file: 
+```ts
+...
+import { TaskService } from './services/task';
+
+import { TaskCreateDispatcher } from './dispatcher/task-dispatcher';
+import { ListEntryDispatcher } from './dispatcher/task-dispatcher';
+
+// export TaskService and TaskCreateDispatcher for dispatcher module runtime
+export { TaskService, TaskCreateDispatcher, ListEntryDispatcher }
+...
+```
+
+## 4.3 Detail component
+The most functions that were defined within the TodoService will be obsolete, because we dont want to delete or change any todo value. As a result of this, you can simply delete it. The Detail component will need some special welfare. Its getting a bit tricky, so we will start at the top of the new Detail component.
+
+At first, we will need a lot of evan.network services and a some component class parameters. Each service will be used and explain within the component.
+
+```ts
+import {
+	ContractusRoutingService,
+	ContractusDescriptionService,
+	ContractusCoreService,
+	ContractusQueue,
+	ContractusTranslationService
+} from 'angular-core';
+
+import {
+	TaskService
+} from '../../services/task';
+
+/**************************************************************************************************/
+
+@Component({
+	selector: 'todo-app',
+	templateUrl: './app.html'
+})
+export class TodoApp implements OnInit {
+	newTodoText = '';
+	
+	public contractId: string;
+	public description: any;
+	public invalid: boolean;
+	public loading: boolean;
+	public todos: Array<any>;
+	public todoLogs: Array<any>;
+	public queueWatchTodos: Function;
+	private queueId: any;
+
+	constructor(
+		public ref: ChangeDetectorRef,
+		private routingService: ContractusRoutingService,
+		private descriptionService: ContractusDescriptionService,
+		private coreService: ContractusCoreService,
+		private queue: ContractusQueue,
+		private taskService: TaskService,
+		private translationService: ContractusTranslationService
+	) { }
+```
+
+The component initialzation steps need asynchroniously operations. As a result of the this and because of Angular best practices, all initalization steps are included within the ngOnInit function. So have a look on the ngOnInit function.
+
+```ts
+async ngOnInit() {
+  this.contractId = this.routingService.getHashParam('address');
+
+  if (this.contractId.indexOf('0x') !== 0) {
+    this.invalid = true;
+  } else {
+    this.loading = true;
+    this.ref.detectChanges();
+
+    // load contract description and todos
+    this.description = await this.descriptionService.getDescription(this.contractId);
+    this.queueId = this.taskService.getListEntryQueueID(this.contractId);
+
+    // set translation for dapp-wrapper title (contract-id => contract title)
+    this.translationService.addSingleTranslation(this.contractId, this.description.name);
+
+    // add a queue watcher for the current contract and the creation of new list entries
+    this.queueWatchTodos = await this.queue.onQueueFinish(this.queueId, async () => {
+      this.todos = await this.getListEntries('todos');
+      this.todoLogs = (await this.getListEntries('todologs')).map(todoLog => todoLog.id);
+      
+      this.checkTodosFinished();
+      this.ref.detectChanges();
+    });
+
+    this.loading = false;
+  }
+
+  this.ref.detectChanges();
+}
+```
+
+We will check if a valid contract address is applied to the url, if not, we can show an error within the frontend. After this, the contract description will be loaded and an translation string for the dapp-wrapper title will be added. If we not running the addSingleTranslation function, the frontend will print out the full contract id within header. When the contract details were loaded, a "onQueueFinish" handler can be binded. So we can load todos and todologs initially and when something is saved.
+
+The getListEntries function uses the DataContract API to load all existing list values. After the todologs were loaded, a completed flag will be written to the local todo instances, to check it more easier within the html template.
+
+```ts
+	/**
+	 * Load the todos for the current selected contract
+	 */
+	async getListEntries(listName: string) {
+		return await this.taskService.getDataContract().getListEntries(
+			this.contractId,
+			listName,
+			this.coreService.activeAccount()
+		);
+	}
+	
+	/**
+	 * Set completed flag on todos.
+	 */
+	checkTodosFinished() {
+		this.todoLogs.forEach(todoLog => {
+			for (let todo of this.todos) {
+				if (todo.id === todoLog) {
+					todo.completed = true;;
+				}
+			}
+		});
+	}
+```
+
+The addTodo and addTodoLog functions represents the core blockchain logic of the component. The addTodo generates a new todo data object, push it into the AddListEntry queue and adds a todo copy, including a loading flag, into the local todos. When the Queue has finished saving, the todos will be reloaded and the correct todo, without the loading flag, is loaded. By solving a todo by adding a new todolog, the local todo completed and loading flag will be set to true and a new todolog will be added to the queue.
+```ts
+/**
+ * Creates a new Todo with the current newTodoText
+ */
+addTodo() {
+  if (this.newTodoText.trim().length) {
+    // create todo data including a id, so we can identify it later
+    const todoData: any = {
+      id: this.coreService.utils.generateID(),
+      title: this.newTodoText,
+    };
+
+    // save the todo using the queue
+    this.queue.addQueueData(this.queueId, {
+      taskId: this.contractId,
+      data: todoData,
+      listName: 'todos',
+    });
+
+    // add it already to the list and display it loading
+    const todoCopy = JSON.parse(JSON.stringify(todoData));
+    todoCopy.loading = true;
+    this.todos.push(todoCopy);
+
+    this.newTodoText = '';
+  }
+
+  this.ref.detectChanges();
+}
+
+/**
+ * Adds an todo log and save the todo as solved.
+ * @param todo todo to solve
+ */
+async solveTodo(todo: any) {
+  if (!todo.completed) {
+    todo.loading = true;
+    todo.completed = true;
+
+    // save the todo using the queue
+    this.queue.addQueueData(this.queueId, {
+      taskId: this.contractId,
+      listName: 'todologs',
+      data: {
+        id: todo.id,
+        solved: true,
+      },
+    });
+  }
+
+  this.ref.detectChanges();
+}
+```
+
+At the bottom of the app.ts we included two functions of the old TodoService:
+
+```ts
+	/**
+	 * Get all remaining todos.
+	 */
+	public getRemaining() {
+		return this.todos.filter((todo) => !todo.completed);
+	}
+
+	/**
+	 * Get all completed todos.
+	 */
+	public getCompleted() {
+		return this.todos.filter((todo) => todo.completed);
+	}
+```
+
+The html file doesn't changed significantly. Some change and delete functions were removed and some loading and error checks were added:
+
+```html
+<contractus-loading *ngIf="loading"></contractus-loading>
+<section class="todoapp" *ngIf="!loading">
+	<ng-container *ngIf="invalid">
+		<header class="header">
+			<h1>{{ '_tutorialtask.invalid-contract-address' | translate }}</h1>
+		</header>
+	</ng-container>
+	<ng-container *ngIf="!invalid">
+		<header class="header">
+			<h1>{{ description.name }}</h1>
+			<input class="new-todo" placeholder="What needs to be done?" autofocus="" [(ngModel)]="newTodoText" (keyup.enter)="addTodo()">
+		</header>
+		<section class="main" *ngIf="todos.length > 0">
+			<ul class="todo-list">
+				<li *ngFor="let todo of todos"
+					[class.completed]="todo.completed">
+					<div class="view" flex>
+						<input class="toggle" type="checkbox"
+							(click)="solveTodo(todo)"
+							[readonly]="todo.completed"
+							[checked]="todo.completed">
+						<label>{{todo.title}}</label>
+						<ion-spinner class="todo-loading" color="light" *ngIf="todo.loading"></ion-spinner>
+					</div>
+				</li>
+			</ul>
+		</section>
+		<footer class="footer" *ngIf="todos.length > 0">
+			<span class="todo-count"><strong>{{ getRemaining().length }}</strong> {{ getRemaining().length == 1 ? 'item' : 'items' }} left</span>
+		</footer>
+	</ng-container>
+</section>
+```
+
+# 5. Finished
+Now you can enjoy your task application :)
+
+[![Finished](/public/dapps/angular/task/todo_finished.png){:width="100%"}](/public/dapps/angular/task/todo_finished.png)
