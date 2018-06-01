@@ -30,4 +30,4 @@ Functions are secured in the following manner:
   + a role that updates the state
   + the current state
   + the target state
-- this means that for example a contract member may set the state from the current state "Active" to the state "PendingApproval"c, and only the owner may set it from "PendingApproval" to "Terminated"
+- this means that for example a contract member may set the state from the current state "Active" to the state "PendingApproval", and only the owner may set it from "PendingApproval" to "Terminated"
