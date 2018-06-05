@@ -70,7 +70,7 @@ $ edit pw.txt
 In a different terminal, stop the parity process, and restart it with two additional parameters:
 
 ```sh
-$ parity --chain "/path/to/testcore.json" --config "path/to/contractus_test_chain.toml" --unlock "accountID" --password "pw.txt"
+$ parity --chain "/path/to/testcore.json" --config "path/to/evan_test_chain.toml" --unlock "accountID" --password "pw.txt"
 ```
 
 ## Test Connection

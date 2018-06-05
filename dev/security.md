@@ -4,7 +4,7 @@ title: "Security"
 # Security
 
 ## About
-To ensure that contents stored can be read by all related parties and cannot be read or even manipulated by unrelated parties, the contractus contracts for evan.network utilize multiple security approaches.
+To ensure that contents stored can be read by all related parties and cannot be read or even manipulated by unrelated parties, the evan contracts for evan.network utilize multiple security approaches.
 
 These approaches have the following responsibilities:
 - prevent undesired contract manipulation

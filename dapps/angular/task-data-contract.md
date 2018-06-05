@@ -100,7 +100,7 @@ Create a new file within the services folder and name it "task.ts". Within this 
   getDataContract() {
     return new DataContract({
       cryptoProvider: this.bccService.description.cryptoProvider,
-      dfs: this.bccService.CoreBundle.BCCCore.dfs,
+      dfs: this.bccService.CoreBundle.CoreRuntime.dfs,
       executor: this.bccService.executor,
       loader: this.bccService.contractLoader,
       nameResolver: this.bccService.nameResolver,
@@ -233,13 +233,13 @@ export class TaskService implements OnInit {
   public ensAddress: string;
 
   constructor(
-    public descriptionService: ContractusDescriptionService,
-    public queue: ContractusQueue,
-    public bccService: ContractusBCCService,
-    public coreService: ContractusCoreService,
-    public bookmarkService: ContractusBookmarkService
+    public descriptionService: EvanDescriptionService,
+    public queue: EvanQueue,
+    public bccService: EvanBCCService,
+    public coreService: EvanCoreService,
+    public bookmarkService: EvanBookmarkService
   ) {
-    this.ensAddress = this.descriptionService.getContractusENSAddress('tutorialtask');
+    this.ensAddress = this.descriptionService.getEvanENSAddress('tutorialtask');
 
     this.createQueueID = new QueueId(
       this.ensAddress,
@@ -274,7 +274,7 @@ import {
 } from 'angular-libs';
 
 import {
-  ContractusQueue
+  EvanQueue
 } from 'angular-core';
 
 import {
@@ -296,7 +296,7 @@ export class TaskCreateComponent implements OnInit, OnDestroy {
   constructor(
     public ref: ChangeDetectorRef,
     public taskService: TaskService,
-    public queue: ContractusQueue
+    public queue: EvanQueue
   ) { }
 
   async ngOnInit() {
@@ -370,9 +370,9 @@ To handle the routing correctly for the creation and task detail, we need to add
 
 ```ts
 function getRoutes(): Routes {
-  // Defines the root route, fallback routes and applies the contractus default routes to handle
+  // Defines the root route, fallback routes and applies the evan default routes to handle
   // queue, mailbox and anything else within this application
-  return RoutesBuilder.buildModuleRoutes(
+  return buildModuleRoutes(
     `${ dbcpOrigin }.${ getDomainName() }`,
     RootComponent,
     [
@@ -440,7 +440,7 @@ Copy the latest ipfs path for the dist folder ("QmXCnDwasWd9JQ3rz7Rjc3uQt7SDiury
 **Now you can create a new contract instance. Reload your browser and try it.**
 
 ## 3.6 Developing
-For development purposes its very annoying to publish your sources to the ipfs and to create a new contract, any time you changed something. To handle this, the "RoutesBuilder.buildModuleRoutes" function will do some magic. Using the evan.network frame multiple Angular application within antoher Angular application. So its important to build dynamic routes corresponding to the specific parent Angular application. As a side effect, your defined Routes are nested in any case within it self. A routing tree like is following is build:
+For development purposes its very annoying to publish your sources to the ipfs and to create a new contract, any time you changed something. To handle this, the "buildModuleRoutes" function will do some magic. Using the evan.network frame multiple Angular application within antoher Angular application. So its important to build dynamic routes corresponding to the specific parent Angular application. As a side effect, your defined Routes are nested in any case within it self. A routing tree like is following is build:
 
 ```json
 
@@ -518,7 +518,7 @@ For development purposes its very annoying to publish your sources to the ipfs a
     ],
     "runGuardsAndResolvers": "always",
     "data": {
-      "contractusDynamicRoutes": true,
+      "evanDynamicRoutes": true,
       "dynamicRoutesConfig": {
         "dappEns": "tutorialtask.test",
         "routes": [
@@ -625,11 +625,11 @@ At first, we will need a lot of evan.network services and a some component class
 
 ```ts
 import {
-	ContractusRoutingService,
-	ContractusDescriptionService,
-	ContractusCoreService,
-	ContractusQueue,
-	ContractusTranslationService
+	EvanRoutingService,
+	EvanDescriptionService,
+	EvanCoreService,
+	EvanQueue,
+	EvanTranslationService
 } from 'angular-core';
 
 import {
@@ -656,12 +656,12 @@ export class TodoApp implements OnInit {
 
 	constructor(
 		public ref: ChangeDetectorRef,
-		private routingService: ContractusRoutingService,
-		private descriptionService: ContractusDescriptionService,
-		private coreService: ContractusCoreService,
-		private queue: ContractusQueue,
+		private routingService: EvanRoutingService,
+		private descriptionService: EvanDescriptionService,
+		private coreService: EvanCoreService,
+		private queue: EvanQueue,
 		private taskService: TaskService,
-		private translationService: ContractusTranslationService
+		private translationService: EvanTranslationService
 	) { }
 ```
 
@@ -806,7 +806,7 @@ At the bottom of the app.ts we included two functions of the old TodoService:
 The html file doesn't changed significantly. Some change and delete functions were removed and some loading and error checks were added:
 
 ```html
-<contractus-loading *ngIf="loading"></contractus-loading>
+<evan-loading *ngIf="loading"></evan-loading>
 <section class="todoapp" *ngIf="!loading">
 	<ng-container *ngIf="invalid">
 		<header class="header">
