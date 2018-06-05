@@ -158,7 +158,7 @@ This is an example envelope:
   "cryptoInfo": {
     "algorithm": "aes-256-cbc",
     "keyLength": 256,
-    "originator": "0x0000000000000000000000000000000000000001,0x0000000000000000000000000000000000000002",
+    "originator": "0xf95c14e6953c95195639e8266ab1a6850864d59a829da9f9b13602ee522f672b",
     "block": 123
   }
 }

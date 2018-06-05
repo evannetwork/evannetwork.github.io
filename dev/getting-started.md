@@ -3,7 +3,7 @@ title: "Getting Started"
 ---
 # Getting started to hack on the evan.network
 
-evan.network offers developers a wide range of features, services, blueprints and best practices to create incredible decentralized applications.
+[evan.network](https://evan.network/) offers developers a wide range of features, services, blueprints and best practices to create incredible decentralized applications.
 
 The evan.network is an [Ethereum](https://ethereum.org/)<sup>[+]</sup> based blockchain and you can use any Ethereum/EVM compatible toolset. There are many good Wikis and Howtos available to learn more about Ethereum technology. A good starting point is the official [Ethereum Wiki](https://github.com/ethereum/wiki/wiki)<sup>[+]</sup>. The evan.network can be used for plain Ethereum Smart Contract development with the [Web3](/dev/web3) API, but we offer much more to create real decentralized applications. Ethereum itself is the blockchain to work with SmartContracts and to create decentralized trust between different parties.
 
@@ -15,8 +15,8 @@ A blockchain by itself isn't made for storing complex or unstructured data like 
 
 On top of the Blockchain- and the Storage Engine we build services and APIs to build secure, fast and robust applications.
 + content and contract encryption
-+ contact management with integrated on-chain key management and key exchange through..
-+ on-chain mailbox (bmail) system to easy invite participants into contracts with automated key exchange
++ contact management with integrated on-chain key management and key exchange thourgh the
++ mailbox system to offer offline invite and contact possibilities
 + Data Contracts with security-, role management and the ability to add encrypted content an a highly flexible way
 + [DBCP](/dev/dbcp) description language to build unstoppable ÐAPPs and Smart Agents
 + [ENS](/dev/ens) and [ENS2DNS](/dev/ens2dns) to make the user's life easier
