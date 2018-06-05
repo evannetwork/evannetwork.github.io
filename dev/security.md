@@ -72,7 +72,7 @@ The `auth` modifier is used on functions, that should be restricted to specific 
 
 This basically forbids almost everyone from using the ```setData``` function except:
 - the contract itself
-- the owner of the autority contract
+- the owner of the authority contract
 - (if registered) root users
 - (if registered) public capabilities (functions can be made public accessible for everyone if required)
 
@@ -158,13 +158,13 @@ This is an example envelope:
   "cryptoInfo": {
     "algorithm": "aes-256-cbc",
     "keyLength": 256,
-    "originator": "0x0000000000000000000000000000000000000001,0x0000000000000000000000000000000000000002",
+    "originator": "0xf95c14e6953c95195639e8266ab1a6850864d59a829da9f9b13602ee522f672b",
     "block": 123
   }
 }
 ```
 
-The "public" section contains data, that is visible without being invited or related to the contract. The "private" section can only be decrypted if the user that tries to read the data ha been added to the sharings of the contract. The ```cryptoInfo``` part is used to determine which decryption algorithm to use and where to look for it.
+The "public" section contains data, that is visible without being invited or related to the contract. The "private" section can only be decrypted if the user that tries to read the data has been added to the sharings of the contract. The ```cryptoInfo``` part is used to determine which decryption algorithm to use and where to look for it.
 
 When decrypted, the ```private``` section takes precedence over the ```public``` section. This can lead to the private section overwriting sections of the ```public``` part. For example a public title may be replace with a "true" title (only visible for members) from the private section.
 

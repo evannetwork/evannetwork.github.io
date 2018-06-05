@@ -1,5 +1,5 @@
 ---
-title: "First Steps"
+title: "Setting Up"
 ---
 
 # Setting up a Development Environment
@@ -11,7 +11,7 @@ To start developing in the evan network, you primarily need need 3 things:
 
 ## Connecting to the blockchain
 
-Assuming you already know what the blockchain is and some basics about how it works and ecosystem.
+Assuming you already know what the blockchain is and some basics about how it works and the ecosystem.
 
 The [evan.network](https://evan.network/) uses [parity](https://www.parity.io/) as its blockchain client.
 The reason to use it over [geth](https://geth.ethereum.org/) is the more extensive toolchain and functionality. Geth and others most likely can be used, too, for most purposes, but are not supported.
@@ -20,26 +20,35 @@ This is only really relevant if you want to install the blockchain client on you
 
 But if you do install your own parity, you need to use the testcore blockchain for development. The configuration for this is available [here](https://github.com/evannetwork/testcore-config).
 
-The exact configuration of which blockchain client to connect to depends on the application you use, but if you don't set up your own, you can always use "wss://testcore.evan.network/ws" for the development blockchain.
+The exact configuration of which blockchain client to connect to depends on the application you use, but if you don't set up your own, you can always use `wss://testcore.evan.network/ws` for the development blockchain.
 
 The development blockchain is the only that exists at the moment for the evan.network.
 
 There will be at least one more, the production chain, which will be called "core" and not "testcore".
 
+It is very useful to start parity with the `--force-ui` parameter, which allows you to access a web-admin on http://localhost:8180 which provides a lot of functionality where the command line is just a little more complicated.
+
+
+## Create an Identity
+To do anything on the blockchain, you need an account, an identity. This is not just relevant for developers, and is described [here](/tutorial/create-identity).
+
 ## Installing Solidity
 
 There are two main options to install solidity, via native package on debian/ubuntu based distributions:
 
-    $ sudo add-apt-repository ppa:ethereum/ethereum
-    $ sudo apt-get update
-    $ sudo apt-get install solc
-
+```sh
+$ sudo add-apt-repository ppa:ethereum/ethereum
+$ sudo apt-get update
+$ sudo apt-get install solc
+```
 
 Or via nodejs:
 
-    $ npm install -g solc
+```sh
+$ npm install -g solc
+```
 
-There are more options and more details available [here](https://solidity.readthedocs.io/en/v0.4.23/installing-solidity.html)
+There are more options and more details available [here](https://solidity.readthedocs.io/en/v0.4.23/installing-solidity.html).
 
 ## Setting up nodejs
 
@@ -50,10 +59,9 @@ All the basic prerequisites for this, like `git`, need to be installed too, but 
 
 ## Install the Support Libraries
 
-So far this seems easy enough. Installing the primary
-The primary thing to install is the [blockchain-core libs](https://github.com/evannetwork/blockchain-core). They are written in typescript and implemented as an npm package, so the installation should be pretty straightforward.
+So far this seems easy enough. The primary thing to install is the [blockchain-core libs](https://github.com/evannetwork/blockchain-core). They are written in typescript and implemented as an npm package, so the installation should be pretty straightforward.
 
-Since the node ecosystem, and especially the ethereum apis are pretty fast moving environments it is not unlikely to encounter dependency and version problems though.
+Since the node ecosystem, and especially the ethereum apis are pretty fast moving environments it is not unlikely to encounter dependency and version problems though, at least for the time being.
 
 # Your first evan.network application
 
@@ -73,6 +81,8 @@ The agent you will be writing will use the [blockchain-core](https://github.com/
 # Your first Ðapp
 
 A [Ðapp](/dev/dapps) is just an application that utilizes the blockchain, and has distributed logic as a result. This is most often just a web application accessible via browser. But it is very possible to write Ðapps in any runtime environment, even native applications, as long as there is access to a blockchain, which usually means access to the network, at least some of the time.
+
+Evan.network Ðapps utilize the evan.network framework. This makes a lot of things easier.
 
 Your first Ðapp will be a simple web application, that connects to the previous SmartAgent and directly to the blockchain itself.
 
