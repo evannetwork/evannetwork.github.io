@@ -6,7 +6,7 @@ The goal of this tutorial is to interact with different functionalities of the e
 
 After creating the DApp functionallities, you can use a "greater contract" sample to create a contract instance. Thats DBCP description will use your DApp as display possiblity.
 
-[![standalone tutorial preview](/public/dapps/hello-world/dapps-tutorial-standalone.png){:width="50%"}](/public/dapps/hello-world/dapps-tutorial-standalone.png)
+[![standalone tutorial preview](/public/dapps/hello-world/standalone_preview.png){:width="50%"}](/public/dapps/hello-world/standalone_preview.png)
 
 ## 1. Get Tutorial Application
 - [Download Tutorial Application](https://github.com/evannetwork/dapps-tutorial-standalone)
