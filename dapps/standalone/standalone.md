@@ -260,8 +260,9 @@ Have a look [dapp deployment](https://github.com/evannetwork/dapp-browser#ens-de
 ### 3.3 View it in the real world
 After you deployed the application within a contract or using a ens address, the DApp is available from everywhere, **globally**. To test this, you can use the evan.network dashboard. Open the following URL [https://dashboard.evan.network/index.html](https://dashboard.evan.network/index.html) and navigate to the "favorites DApp". Before you can access your Favorites, its nessecary to create a evan.network identity. If you didn't created a identity before, have a look [here](/tutorial/first-steps).
 
+Add the favorite using the following steps:
 1. Open Dashboard:
-[![dapps-tutorial - directory](/public/dapps/favorites-1.png){:width="100%"}](/public/dapps/favorites-1.png)
+[![dapps-tutorial - directory](/public/dapps/favorites-1.png){:width="50%"}](/public/dapps/favorites-1.png)
 
 2. Add the favorite:
 [![dapps-tutorial - directory](/public/dapps/favorites-2.png){:width="50%"}](/public/dapps/favorites-2.png)
@@ -274,4 +275,4 @@ After you deployed the application within a contract or using a ens address, the
 
 By having a look into the browser network tab you will see, that you data is loaded from the ipfs serve:
 
-[![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="200px"}](/public/dapps/hello-world/dapp-from-contract.png)
+[![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="400px"}](/public/dapps/hello-world/dapp-from-contract.png)
