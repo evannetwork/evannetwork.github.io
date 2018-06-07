@@ -2,7 +2,6 @@
 title: "Hello World ÐApp"
 ---
 # Hello World ÐApp
-
 ## 1. Get Tutorial Application
 - [Download Tutorial Application](https://github.com/evannetwork/dapps-tutorial-angular)
 
@@ -80,7 +79,7 @@ It looks like the following.
 ```json
 {
   "public": {
-    "author": "contractus",
+    "author": "evan",
     "dapp": {
       "dependencies": {
         "angular-core": "^1.0.0",
@@ -111,7 +110,7 @@ It looks like the following.
     "name": "helloworld",
     "tags": [
       "dapp",
-      "contractus"
+      "evan"
     ],
     "version": "0.1.0",
     "versions": { }
@@ -153,13 +152,13 @@ import {
 import {
   AngularCore,
   DAppLoaderComponent,
-  RoutesBuilder,
+  buildModuleRoutes,
   BootstrapComponent,
   startAngularApplication, createIonicAppElement,
 } from 'angular-core';
 ```
 
-The next part of the index file defines routing behavior of the application. Using the RoutesBuilder of the angular-core, its possible to create a large routing tree. By default, fallback routes and evan.network default routes will be attached, to be able to open applications like the evan.network mailbox or data synchronisation DApp within each application, easily [routes-builder](/frontend/angular-core/routes-builder). The RootComponent is needed within every DApp to handle [transitions between views](/fronend/animations) easily.
+The next part of the index file defines routing behavior of the application. Using the buildModuleRoutes of the angular-core, its possible to create a large routing tree. By default, fallback routes and evan.network default routes will be attached, to be able to open applications like the evan.network mailbox or data synchronisation DApp within each application, easily [routes-builder](/frontend/angular-core/routes-builder). The RootComponent is needed within every DApp to handle [transitions between views](/fronend/animations) easily.
 
 <b>Keep in mind: Were using Ionic 3, but not the Routing service of it. The routing of Ionic has some restrictions by dynamic loading of modules. For more informations about the Angular 5 default routing, have a look in [here](https://angular.io/guide/router).</b>
 
@@ -169,9 +168,9 @@ const dbcpOrigin = 'helloworld';
  * Returns the route definitions
  */
 function getRoutes(): Routes {
-  // Defines the root route, fallback routes and applies the contractus default routes to handle
+  // Defines the root route, fallback routes and applies the evan default routes to handle
   // queue, mailbox and anything else within this application
-  return RoutesBuilder.buildModuleRoutes(
+  return buildModuleRoutes(
     `${ dbcpOrigin }.${ getDomainName() }`,
     RootComponent,
     [
@@ -290,9 +289,9 @@ import {
 } from 'angular-libs';
 
 import {
-  ContractusCoreService,
+  EvanCoreService,
   SingletonService,
-  ContractusTranslationService
+  EvanTranslationService
 } from 'angular-core';
 
 /**************************************************************************************************/
@@ -301,8 +300,8 @@ import {
 export class HelloWorldService {
   constructor(
     private singleton: SingletonService,
-    private core: ContractusCoreService,
-    private translations: ContractusTranslationService
+    private core: EvanCoreService,
+    private translations: EvanTranslationService
   ) {
     return singleton.create(HelloWorldService, this, () => {
       // do something on first time when task was initialized
@@ -317,7 +316,7 @@ export class HelloWorldService {
 ```
 
 ### 4.3 translations
-The translation service uses [ngx-translate](https://github.com/ngx-translate/core). Using the plugin, you can use the "| translate" pipe within html templates and you can use the ContractusTranslationService for instant translations within the code.
+The translation service uses [ngx-translate](https://github.com/ngx-translate/core). Using the plugin, you can use the "| translate" pipe within html templates and you can use the EvanTranslationService for instant translations within the code.
 
 ```ts
 this.translations.instant('hello-world')
@@ -349,7 +348,7 @@ import {
 } from 'angular-libs';
 
 import {
-  ContractusTranslationService
+  EvanTranslationService
 } from 'angular-core';
 
 import { en } from './en';
@@ -361,7 +360,7 @@ export const translations = {
 
 @Injectable()
 export class Translations {
-  constructor(translate: ContractusTranslationService) {
+  constructor(translate: EvanTranslationService) {
     translate.setTranslation('en', en);
     translate.setTranslation('de', de);
   }
@@ -400,10 +399,10 @@ export class RootComponent implements OnInit {
   private watchRouteChange: Function;
 
   constructor(
-    private core: ContractusCoreService,
-    private bcc: ContractusBCCService,
+    private core: EvanCoreService,
+    private bcc: EvanBCCService,
     private ref: ChangeDetectorRef,
-    private routingService: ContractusRoutingService
+    private routingService: EvanRoutingService
   ) { }
 
   async ngOnInit() {
@@ -436,9 +435,9 @@ The html file includes an dapp-wrapper that is capsuled around your application 
   - evan.network Synchronisation identicator (loading / error case)
 
 ```html
-<contractus-loading *ngIf="loading" delayLoading="500"></contractus-loading>
+<evan-loading *ngIf="loading" delayLoading="500"></evan-loading>
 <dapp-wrapper *ngIf="!loading" #dappWrapper>
-  <div contractus-content [@routerTransition]="o?.activatedRouteData?.state">
+  <div evan-content [@routerTransition]="o?.activatedRouteData?.state">
     <router-outlet #o="outlet"></router-outlet>
   </div>
 </dapp-wrapper>

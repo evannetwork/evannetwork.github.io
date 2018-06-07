@@ -38,7 +38,6 @@
 
 ### [DApps on evan.network](/dapps/introduction)
 - [ÐApp basics](/dapps/basics)
-- [ÐApp structure](/dapps/structure)
 - [Hello World - standalone](/dapps/standalone/standalone)
 - [Hello World - JS](/dapps/js/hello-world)
 - [Angular 5 + evan.network framework](/dapps/angular/hello-world)

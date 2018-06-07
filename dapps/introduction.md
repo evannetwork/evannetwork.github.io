@@ -8,10 +8,13 @@ By creating an simple application to create, view and share tasks, you will lear
   - Ethereum Blockchain, Solidity
   - DBCP
   - SystemJS, Angular 5 & Ionic 3, SASS, Browserify
+  - JS, Typescript
+  - evan.network framework
+    - blockchain-core
+    - angular-core, anbular-bc, angular-libs, angular-sass
 
 You will be guided through the following steps:
 - [ÐApp basics](/dapps/basics)
-- [ÐApp structure](/dapps/structure)
 - [Hello World - standalone](/dapps/standalone/standalone)
 - [Hello World - JS](/dapps/js/hello-world)
 - [Angular 5 + evan.network framework](/dapps/angular/hello-world)
