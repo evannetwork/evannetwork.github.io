@@ -251,7 +251,7 @@ ipfs add -r dapps/hello-world-dbcp/src
 [![dapps-tutorial - directory](/public/dapps/deploy-to-ipfs.png){:width="50%"}](/public/dapps/deploy-to-ipfs.png)
 
 3. Insert the deployed folder hash (e.g. "QmfZLwBPUT1n3DoJqpqnLCTcUKABLgUsgfE4KetkXdq8XK") to the correct origin to dbcp.json file.
-[![dapps-tutorial - directory](/public/dapps/add-to-dbcp.png){:width="100%"}](/public/dapps/add-to-dbcp.png)
+[![dapps-tutorial - directory](/public/dapps/add-to-dbcp.png){:width="50%"}](/public/dapps/add-to-dbcp.png)
 
 4. Deploy it to the contract
 ```sh
@@ -260,7 +260,7 @@ npm run deploy-to-contract hello-world-dbcp
 
 You will get a console output like the following. Behind the log parameter "created contract" you will find the newly created contract id.
 
-[![dapps-tutorial - directory](/public/dapps/deploy-to-contract.png){:width="100%"}](/public/dapps/deploy-to-contract.png)
+[![dapps-tutorial - directory](/public/dapps/deploy-to-contract.png){:width="50%"}](/public/dapps/deploy-to-contract.png)
 
 ### 3.2 Deploy DApp to ENS
 Have a look [dapp deployment](https://github.com/evannetwork/dapp-browser#ens-deployment).
