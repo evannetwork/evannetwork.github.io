@@ -251,7 +251,7 @@ ipfs add -r dapps/hello-world-dbcp/src
 [![dapps-tutorial - directory](/public/dapps/deploy-to-ipfs.png){:width="50%"}](/public/dapps/deploy-to-ipfs.png)
 
 3. Insert the deployed folder hash (e.g. "QmfZLwBPUT1n3DoJqpqnLCTcUKABLgUsgfE4KetkXdq8XK") to the correct origin to dbcp.json file.
-[![dapps-tutorial - directory](/public/dapps/add-to-dbcp.png.png){:width="100%"}](/public/dapps/add-to-dbcp.png.png)
+[![dapps-tutorial - directory](/public/dapps/add-to-dbcp.png){:width="100%"}](/public/dapps/add-to-dbcp.png)
 
 4. Deploy it to the contract
 ```sh
@@ -279,7 +279,7 @@ Add the favorite using the following steps:
 [![dapps-tutorial - directory](/public/dapps/favorites-3.png){:width="50%"}](/public/dapps/favorites-3.png)
 
 4. Result:
-<iframe width="100%" height="300px" src="https://ipfs.evan.network/ipfs/QmfZLwBPUT1n3DoJqpqnLCTcUKABLgUsgfE4KetkXdq8XK/index.html?contractid=0xcf38aA22Dd231b1E1e4661a1EcD5f6E1D2732A70">
+<iframe width="100%" height="500px" src="https://ipfs.evan.network/ipfs/QmfZLwBPUT1n3DoJqpqnLCTcUKABLgUsgfE4KetkXdq8XK/index.html?contractid=0xcf38aA22Dd231b1E1e4661a1EcD5f6E1D2732A70">
 </iframe>
 
 By having a look into the browser network tab you will see, that you data is loaded from the ipfs server:
