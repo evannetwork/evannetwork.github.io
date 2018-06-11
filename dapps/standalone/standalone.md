@@ -237,22 +237,30 @@ async function createRuntime() {
 
 ## 3 Deploy it to the real world
 ### 3.1 Deploy DApp within an contract
-Each application can be deployed together with a contract. This allows the contract to contain the information as it should be displayed. A little sample, how to create and sample contract with your hello world app can be found within the dapps-tutorial-angular/scripts/create-contract.js file. Run the following command to start the script for your specific application.
+Each application can be deployed together with a contract. This allows the contract to contain the information as it should be displayed. A little sample, how to create and sample contract with your hello world app can be found within the dapps-tutorial-angular/scripts/create-contract.js file. Run the following commands (each hello-world-dbcp can be replaced with hello-world-bcc):
 
+1. Start ipfs client
 ```sh
 ./scripts/go-ipfs
 ```
 
+2. Publish your files to the ipfs
+```sh
+ipfs add -r dapps/hello-world-dbcp/src
+```
+[![dapps-tutorial - directory](/public/dapps/deploy-to-ipfs.png){:width="50%"}](/public/dapps/deploy-to-ipfs.png)
+
+3. Insert the deployed folder hash (e.g. "QmfZLwBPUT1n3DoJqpqnLCTcUKABLgUsgfE4KetkXdq8XK") to the correct origin to dbcp.json file.
+[![dapps-tutorial - directory](/public/dapps/add-to-dbcp.png){:width="50%"}](/public/dapps/add-to-dbcp.png)
+
+4. Deploy it to the contract
 ```sh
 npm run deploy-to-contract hello-world-dbcp
-```
-```sh
-npm run deploy-to-contract hello-world-bcc
 ```
 
 You will get a console output like the following. Behind the log parameter "created contract" you will find the newly created contract id.
 
-[![dapps-tutorial - directory](/public/dapps/deploy-to-contract.png){:width="100%"}](/public/dapps/deploy-to-contract.png)
+[![dapps-tutorial - directory](/public/dapps/deploy-to-contract.png){:width="50%"}](/public/dapps/deploy-to-contract.png)
 
 ### 3.2 Deploy DApp to ENS
 Have a look [dapp deployment](https://github.com/evannetwork/dapp-browser#ens-deployment).
@@ -271,8 +279,9 @@ Add the favorite using the following steps:
 [![dapps-tutorial - directory](/public/dapps/favorites-3.png){:width="50%"}](/public/dapps/favorites-3.png)
 
 4. Result:
-[![standalone tutorial preview](/public/dapps/hello-world/standalone_preview.png){:width="50%"}](/public/dapps/hello-world/standalone_preview.png)
+<iframe width="100%" height="500px" src="https://ipfs.evan.network/ipfs/QmfZLwBPUT1n3DoJqpqnLCTcUKABLgUsgfE4KetkXdq8XK/index.html?contractid=0xcf38aA22Dd231b1E1e4661a1EcD5f6E1D2732A70">
+</iframe>
 
-By having a look into the browser network tab you will see, that you data is loaded from the ipfs serve:
+By having a look into the browser network tab you will see, that you data is loaded from the ipfs server:
 
 [![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="400px"}](/public/dapps/hello-world/dapp-from-contract.png)

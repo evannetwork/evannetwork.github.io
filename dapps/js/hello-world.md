@@ -137,22 +137,50 @@ export async function startDApp(container, dbcpName) {
 
 ## 3 Deploy it to the real world
 ### 3.1 Deploy DApp within an contract
-Each application can be deployed together with a contract. This allows the contract to contain the information as it should be displayed. A little sample, how to create and sample contract with your hello world app can be found within the dapps-tutorial-angular/scripts/create-contract.js file. Run the following command to start the script for your specific application.
+Each application can be deployed together with a contract. This allows the contract to contain the information as it should be displayed. A little sample, how to create and sample contract with your hello world app can be found within the dapps-tutorial-angular/scripts/create-contract.js file. Run the following commands:
 
+1. Start ipfs client
 ```sh
 ./scripts/go-ipfs
 ```
 
+2. Publish your files to the ipfs
+```sh
+ipfs add -r dapps/hello-world/src
+```
+[![dapps-tutorial - directory](/public/dapps/deploy-to-ipfs.png){:width="50%"}](/public/dapps/deploy-to-ipfs.png)
+
+3. Insert the deployed folder hash (e.g. "QmfZLwBPUT1n3DoJqpqnLCTcUKABLgUsgfE4KetkXdq8XK") to the correct origin to dbcp.json file.
+[![dapps-tutorial - directory](/public/dapps/add-to-dbcp.png){:width="50%"}](/public/dapps/add-to-dbcp.png)
+
+4. Deploy it to the contract
 ```sh
 npm run deploy-to-contract hello-world
 ```
 
-After the contract id of the created contract was logged to your console, you can open this contract like the ens path before. Just replace your DApp ens path, with the id of your contract (#/dashboard/helloworld.evan => #/dashboard/0x65dCf129E612d4e40bEA8866029e0595BC1Ba5EC). Within the network tab you will see, that the sources for your contract are now loaded from the contract address. 
+You will get a console output like the following. Behind the log parameter "created contract" you will find the newly created contract id.
 
-[![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="200px"}](/public/dapps/hello-world/dapp-from-contract.png)
+[![dapps-tutorial - directory](/public/dapps/deploy-to-contract.png){:width="50%"}](/public/dapps/deploy-to-contract.png)
 
 ### 3.2 Deploy DApp to ENS
-Have a look [dapp-browser deployment](https://github.com/evannetwork/dapp-browser#ens-deployment).
+Have a look [dapp deployment](https://github.com/evannetwork/dapp-browser#ens-deployment).
 
-### 3.3 DApp browser
-After you deployed your application using as a ENS entry or within a contract, you will be able to load your DApp's DBCP description via the DBCP / blockchain-core. You can also your DApp using the evan.network dapp-browser. Open [dashboard.evan.network](https://dashboard.evan.network/index.html) and add your DApp to your [favorites](/tutorial/dashboard).
+### 3.3 View it in the real world
+After you deployed the application within a contract or using a ens address, the DApp is available from everywhere, **globally**. To test this, you can use the evan.network dashboard. Open the following URL [https://dashboard.evan.network/index.html](https://dashboard.evan.network/index.html) and navigate to the "favorites DApp". Before you can access your Favorites, its nessecary to create a evan.network identity. If you didn't created a identity before, have a look [here](/tutorial/first-steps).
+
+Add the favorite using the following steps:
+1. Open Dashboard:
+[![dapps-tutorial - directory](/public/dapps/favorites-1.png){:width="50%"}](/public/dapps/favorites-1.png)
+
+2. Add the favorite:
+[![dapps-tutorial - directory](/public/dapps/favorites-2.png){:width="50%"}](/public/dapps/favorites-2.png)
+
+3. Open the DApp:
+[![dapps-tutorial - directory](/public/dapps/favorites-3.png){:width="50%"}](/public/dapps/favorites-3.png)
+
+4. Result:
+[![js tutorial preview](/public/dapps/js/hello-world-preview.png){:width="50%"}](/public/dapps/js/hello-world-preview.png)
+
+By having a look into the browser network tab you will see, that you data is loaded from the ipfs server:
+
+[![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="400px"}](/public/dapps/hello-world/dapp-from-contract.png)
