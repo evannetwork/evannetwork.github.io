@@ -22,6 +22,7 @@ Before start developing, be sure to setup the following programs on your system:
   - [node.js (8+) + npm (5+)](https://nodejs.org/en)
   - [gulp](https://github.com/gulpjs/gulp)
   - [lerna](https://github.com/lerna/lerna)
+  - [ipfs](https://ipfs.io/docs/install)
 
 # DApp structure
 Each DApp looks like this on the top level.
