@@ -62,33 +62,33 @@ title: "evan.network Technical Overview"
     <rect class="bw dotted" width="410" height="240"/>
     <rect class="bw dotted" width="410" height="240"/>
     <a xlink:href="/doc/masternode">
-      <text class="grey" x="160" y="20">Master Node</text>
+      <text x="160" y="20">Master Node</text>
     </a>
-    <text class="grey small" x="76" y="230">every DAO member runs a MasterNode</text>
+    <text class="grey small" x="70" y="230">every DAO member runs a MasterNode</text>
     <a xlink:href="/doc/parity" transform="translate(20,30)">
       <rect class="server" width="160" height="80" rx="3"/>
       <text class="big" x="48" y="38">
-        <tspan>Master</tspan>
-        <tspan x="48" dx="-0.75em" dy="1em">Ethereum</tspan>
+        <tspan>Signing</tspan>
+        <tspan x="68" dx="-0.75em" dy="1em">Parity</tspan>
       </text>
-      <title>Redundant MasterNode Parity</title>
+      <title>MasterNode Ethereum Client</title>
     </a>
     <a xlink:href="/doc/parity" transform="translate(220,130)">
       <rect class="server" width="160" height="80" rx="3"/>
       <text class="big" x="48" y="38">
-        <tspan>Master</tspan>
-        <tspan x="48" dx="-0.75em" dy="1em">Ethereum</tspan>
+        <tspan x="30">Transaction</tspan>
+        <tspan x="68" dx="-0.75em" dy="1em">Parity</tspan>
       </text>
-      <title>Redundant MasterNode Parity</title>
+      <title>MasterNode Ethereum Client</title>
     </a>
     <a xlink:href="/dev/ipfs" transform="translate(20,130)">
       <rect class="server" width="160" height="80" rx="3"/>
-      <text class="big" x="64" y="45">IPFS</text>
+      <text class="big" x="62" y="45">IPFS</text>
       <title>Redundant Interplanetary File System MasterNode</title>
     </a>
     <a xlink:href="/dev/ipfs" transform="translate(220,30)">
       <rect class="server" width="160" height="80" rx="3"/>
-      <text class="big" x="64" y="45">IPFS</text>
+      <text class="big" x="62" y="45">IPFS</text>
       <title>Redundant Interplanetary File System MasterNode</title>
     </a>
     <path class="bidirectional-lookup" d="M 190 110 l 20 20"/>
@@ -99,7 +99,7 @@ title: "evan.network Technical Overview"
     <rect class="bw dotted" width="410" height="240"/>
       <title>evan.network Distributed Application</title>    
     <a  xlink:href="/dapps/introduction">
-      <text class="grey" x="140" y="20">Ðapp (in Browser)</text>
+      <text x="140" y="20">Ðapp (in Browser)</text>
     </a>
 
     <a xlink:href="/dev/blockchain-core" transform="translate(20,30)">
@@ -120,7 +120,7 @@ title: "evan.network Technical Overview"
     <rect class="bw dotted" width="410" height="240"/>
     <title>evan.network Web Service</title>
     <a xlink:href="/dev/smart-agents">
-      <text class="grey" x="160" y="20">Edge Server</text>
+      <text x="160" y="20">Edge Server</text>
     </a>
     <text class="grey small" x="45" y="230">primarily used for services with special access rights</text>
 
@@ -141,7 +141,7 @@ title: "evan.network Technical Overview"
     <rect class="bw dotted" width="410" height="240"/>
       <title>Any Normal Webservice</title>    
     <a xlink:href="/dev/smart-agents">
-      <text class="grey" x="160" y="20">Web Services</text>
+      <text x="160" y="20">Web Services</text>
     </a>
 
     <g transform="translate(78,50)">
@@ -224,3 +224,162 @@ unless encrypted, and all application code would run in the browser and is fully
 exists a need for a third class of code, that isn't as cryptographically secured as blockchain code, but also not as
 exposed as Javascript in your browser. Maybe something with exclusive access rights to certain contracts in the blockchain and other limited resources. For this reason [Smart Agents](/dev/smart-agents) exist.
 They are just small webservices, that run on controlled servers, that provide controlled access to resources and contracts that others might need access too, but can't be given full rights.
+
+<svg id="blockchain-core" version="1.1" width="100%" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <marker id="start-data" style="stroke: #003946; fill: #003946;" viewBox="0 0 10 10" refX="10" refY="5" markerUnits="strokeWidth" markerWidth="4" markerHeight="3" orient="auto">
+      <path d="M 0 5 L 10 10 L 10 0 z"/>
+    </marker>
+    <marker id="end-data" style="stroke: #003946; fill: #003946;" viewBox="0 0 10 10" refX="0" refY="5" markerUnits="strokeWidth" markerWidth="4" markerHeight="3" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z"/>
+    </marker>
+    <marker id="start-lookup" style="stroke: #63ceca; fill: #63ceca;" viewBox="0 0 10 10" refX="10" refY="5" markerUnits="strokeWidth" markerWidth="4" markerHeight="3" orient="auto">
+      <path d="M 0 5 L 10 10 L 10 0 z"/>
+    </marker>
+    <marker id="end-lookup" style="stroke: #63ceca; fill: #63ceca;" viewBox="0 0 10 10" refX="0" refY="5" markerUnits="strokeWidth" markerWidth="4" markerHeight="3" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z"/>
+    </marker>
+  </defs>
+  <style type="text/css">
+    a#belt rect { fill: url(#slot-fill); stroke: #003946; }
+    text        { font: 10pt "Verdana", sans-serif; stroke: #003946; fill: #003946; }
+    text.big    { font-size: 12pt; font-weight: bold; }
+    text.small  { font-size: 9pt; }
+    text.bold   { font-weight: bold; }
+    text.white  { stroke: #fff; stroke-width: 1; fill: #fff; }
+    text.code,
+    tspan.code  { font: 9pt "Courier", monospace; stroke: #003946; fill: #003946; }
+    text.ns,
+    tspan.ns    { font: 10pt "Courier", monospace; stroke: #ef7fb9; fill: #ef7fb9; }
+
+    .grey       { stroke: #023845; stroke-width: 1; fill: #023845; fill-opacity: 0.5; opacity: 0.5; }
+    .black      { stroke: #003946; stroke-width: 3; fill: #003946; fill-opacity: 1; }
+    .bw         { stroke: #003946; fill-opacity: 1; fill: #fff; }
+    .slot       { fill: url(#slot-fill); stroke: #003946; }
+    .region     { stroke: #aaa; stroke-dasharray: 2 1; fill-opacity: 0; }
+
+    .dram       { fill: #bdd; stroke: none; }
+    .dotted     { stroke-dasharray: 1 1; }
+    .data-flow  { stroke: #003946; stroke-width: 3; fill-opacity: 0; marker-end: url(#end-data); }
+    .bidirectional-data
+    {
+      stroke: #003946; stroke-width: 3; fill-opacity: 0;
+      marker-start: url(#start-data); marker-end: url(#end-data);
+    }
+    .lookup     { stroke: #63ceca; stroke-width: 3; fill-opacity: 0; marker-end: url(#end-lookup); }
+    .bidirectional-lookup
+    {
+      stroke: #63ceca; stroke-width: 3; fill-opacity: 0;
+      marker-start: url(#start-lookup); marker-end: url(#end-lookup);
+    }
+    .library    { fill: #2a4d57; stroke: #63ceca; }
+    .module     { fill: #8a9ea4; stroke: #63ceca; }
+    .server     { fill: #a6dddc; stroke: #003946; stroke-width: 2; }
+    .service    { fill: #f7aacf; stroke: #003946; stroke-width: 2; }
+
+  </style>
+
+  <a xlink:href="https://github.com/evannetwork/blockchain-core">
+   <text x="240" y="20" style="font-size: 20pt;">Blockchain Core Library</text>
+  </a>
+  <g transform="translate(0,80)">
+    <title>Blockchain Core Library</title>
+    <rect class="bw dotted" width="800" height="320"/>
+    <a xlink:href="https://github.com/evannetwork/blockchain-core">
+      <text x="350" y="20">blockchain-core</text>
+    </a>
+    <text class="grey small" x="76" y="230"></text>
+    
+    <a xlink:href="/dev/dbcp" transform="translate(20,30)">
+      <rect class="module" width="160" height="80" rx="3"/>
+      <text class="big" x="56" y="45">DBCP</text>
+      <title>Distributed Blockchain Contract Protocol</title>
+      <text y="100">
+        <tspan x="3">links Ðapps with contracts</tspan>
+        <tspan x="3" dy="1.3em">versioning</tspan>
+        <tspan x="3" dy="1.3em">contract API reflection</tspan>
+        <tspan class="ns" x="3" dy="1.5em">nameResolver</tspan>
+        <tspan class="ns" x="3" dy="1.5em">cryptor</tspan>
+        <tspan class="ns" x="3" dy="1.5em">contractLoader</tspan>
+        <tspan class="ns" x="3" dy="1.5em">onboarding</tspan>
+        <tspan class="ns" x="3" dy="1.5em">keyExchange</tspan>
+      </text>
+
+    </a>
+    
+    <a xlink:href="/dev/web3" transform="translate(220,30)">
+      <rect class="module" width="160" height="80" rx="3"/>
+      <text class="big" x="60" y="45">web3</text>
+      <title>Blockchain Interactions</title>
+      <text y="100">
+        <tspan x="3">read contracts</tspan>
+        <tspan x="3" dy="1.3em">transactions</tspan>
+        <tspan x="3" dy="1.3em">encryption</tspan>
+        <tspan x="3" dy="1.3em">signing</tspan>
+        <tspan x="3" dy="1.3em">events</tspan>
+        <tspan class="ns" x="0" dy="1.5em">web3</tspan>
+        <tspan class="ns" x="0" dy="1.5em">executor</tspan>
+        <tspan class="ns" x="0" dy="1.5em">signer</tspan>
+      </text>
+    </a>
+
+    <a xlink:href="/dev/IPFS" transform="translate(420,30)">
+      <rect class="module" width="160" height="80" rx="3"/>
+      <text class="big" x="64" y="45">dfs</text>
+      <title>Distributed File System (IPFS)</title>
+      <text y="100">
+        <tspan x="3">own dfs namespace</tspan>
+        <tspan x="3" dy="1.3em">provides access to IPFS:</tspan>
+        <tspan x="12" dy="1.3em" class="code">get</tspan>
+        <tspan x="12" dy="1.3em" class="code">add</tspan>
+        <tspan x="12" dy="1.3em" class="code">pin add</tspan>
+        <tspan x="3" dy="2em">also Provides</tspan>
+        <tspan x="12" dy="1.3em" >a local memcache</tspan>
+        <tspan x="12" dy="1.3em" >an IPLD interface</tspan>
+        <tspan class="ns" x="0" dy="1.5em">dfs</tspan>
+        <tspan class="ns" x="0" dy="1.5em">ipld</tspan>
+        <tspan class="ns" x="0" dy="1.5em">keyProvider</tspan>
+      </text>
+    </a>
+
+    <a xlink:href="/dev/IPFS" transform="translate(620,30)">
+      <rect class="module" width="160" height="80" rx="3"/>
+      <text class="big" x="7" y="45">Smart Contracts</text>
+      <title>Basic Functionality Contracts</title>
+      <text y="100">
+        <tspan x="3">solidity compilation</tspan>
+        <tspan x="3" dy="1.3em">profiles</tspan>
+        <tspan x="3" dy="1.3em">access rights</tspan>
+        <tspan x="3" dy="1.3em">data contracts</tspan>
+        <tspan x="3" dy="1.3em">mail box</tspan>
+        <tspan x="3" dy="1.3em">...</tspan>
+        <tspan class="ns" x="0" dy="1.5em">profile</tspan>
+        <tspan class="ns" x="0" dy="1.5em">dataContract</tspan>
+        <tspan class="ns" x="0" dy="1.5em">serviceContract</tspan>
+        <tspan class="ns" x="0" dy="1.5em">mailbox</tspan>
+      </text>
+    </a>
+  </g>
+
+  <g id="legend" transform="translate(20, 40)">
+    <rect class="module" width="20" height="20"/>
+    <text class="small" x="30" y="15">module</text>
+    <text class="ns" x="140" y="15">namespace</text>
+    <!--
+    <circle class="service" cy="10" cx="120" r="10"/>
+    <text class="small" x="140" y="15">service</text>
+    <rect class="library" x="230" width="20" height="20"/>
+    <text class="small" x="260" y="15">library</text>
+
+    <path class="data-flow" d="M 340 10 h 20"/>
+    <text class="small" x="380" y="15">network requests</text>
+    <path class="lookup" d="M 510 10 h 20"/>
+    <text class="small" x="550" y="15">synchronizes</text>
+    -->    
+  </g>
+  
+</svg>
+
+The Blockchain Core Library is the central tool used in all development with evan.network. It is actually a collection of own functionality, and wrappers around 3rd party core functionality like blockchain transactions and distributed file system operations.
+
+[The full API documentation](https://github.com/evannetwork/blockchain-core) shows the actual exposed sub-namespaces in the blockchain core module are a little more fine-grained.

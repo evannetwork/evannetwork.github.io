@@ -70,7 +70,8 @@ $ edit pw.txt
 In a different terminal, stop the parity process, and restart it with two additional parameters:
 
 ```sh
-$ parity --chain "/path/to/testcore.json" --config "path/to/evan_test_chain.toml" --unlock "accountID" --password "pw.txt"
+$ parity --chain "/path/to/testcore.json" --config "path/to/evan_test_chain.toml"
+         --unlock "accountID" --password "pw.txt"
 ```
 
 ## Test Connection
@@ -89,7 +90,7 @@ Network up to date.
 It's just a simple echo application.
 
 ```sh
-$ edit contracts/hello_world.sol
+$ edit contracts/hello.sol
 ```
 
 ```solidity
@@ -101,7 +102,7 @@ contract HelloWorld {
   address public creator;
   string prompt;
 
-  constructor() public {
+  function HelloWorld() public {
     creator = tx.origin;
   }
   
@@ -177,7 +178,7 @@ truffle(dev)> create migration HelloWorld
 ```
 
 ```sh
-$ edit migrations *_hello_world.js
+$ edit migrations *_hello.js
 ```
 
 ```javascript
