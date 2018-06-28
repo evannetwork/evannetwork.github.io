@@ -14,7 +14,8 @@ To start developing in the evan network, you primarily need need 3 things:
 Assuming you already know what the blockchain is and some basics about how it works and the ecosystem.
 
 The [evan.network](https://evan.network/) uses [parity](https://www.parity.io/) as its blockchain client.
-The reason to use it over [geth](https://geth.ethereum.org/) is the more extensive toolchain and functionality. Geth and others most likely can be used, too, for most purposes, but are not supported.
+The reason to use it over [geth](https://geth.ethereum.org/) is the more extensive toolchain and functionality. Geth and others can't even be used in evan.network, because there are required configurations
+that are not supported by geth.
 
 This is only really relevant if you want to install the blockchain client on your own machine. Most of the time it is sufficient to configure your applications to connect to one of the [MasterNodes](/doc/masternodes).
 
@@ -63,12 +64,16 @@ So far this seems easy enough. The primary thing to install is the [blockchain-c
 
 Since the node ecosystem, and especially the ethereum apis are pretty fast moving environments it is not unlikely to encounter dependency and version problems though, at least for the time being.
 
-# Your first evan.network application
+# Your first evan.network Contract
+
+Don't let yourself be intimidated by the word "contract". A contract in the ethereum context is not too different from a class like in Java in the way it is written and used: It contains data fields, methods/functions that work with those data fields and some permission facilities to access those.  
+The big difference is of course, each contract is a global singleton and all data changes are cryptographically verfied and agreed upon by the blockchain users.
 
 It will be a simple Hello World, where the string comes from the blockchain.
 We will be using the defacto-standard blockchain development framework, [truffle](http://truffleframework.com), simply because it is so easy to set up and use and a lot of resources exist online.
 
 [Hello World](/dev/hello-world)
+
 
 # Your first SmartAgent
 

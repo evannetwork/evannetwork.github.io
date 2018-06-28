@@ -14,6 +14,7 @@
 
 
 ### Technical Details
+- [Overview](/dev/overview)
 - [Blockchain](/dev/blockchain)
   - [EVE Tokens](/doc/eve)
 - [Web3](/dev/web3)
@@ -35,6 +36,8 @@
 - [Setting Up](/dev/setting-up)
 - [Hello World Contract](/dev/hello-world)
 - [Hello World Smart-Agent](/dev/hello-agent)
+- [BlockchainCore Console](/dev/bccc)
+- [HowTos](/dev/howtos)
 
 ### [DApps on evan.network](/dapps/introduction)
 - [ÐApp basics](/dapps/basics)

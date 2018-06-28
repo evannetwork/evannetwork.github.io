@@ -12,7 +12,7 @@ Users, that want to use such a ÐAPP for interacting with the smart contract on 
 
 The DBCP protocol faces those needs and provides a comprehensive description of contracts, their ÐAPPs or even contractless ÐAPPs. Developers can write own applications for interacting with the smart contract or can show details about contracts in their own ÐAPP and offer links to the contracts own ÐAPP.
 
-Because DBCP descriptions can be stored directly at the contract itself, contracts can become standalone applications, that be used on their own or easily included in existing applications.
+Because DBCP descriptions can be stored directly at the contract itself, contracts can become standalone applications, that can be used on their own or easily included in existing applications.
 
 This description includes technical details to enable developers to write applications that interact with this contract and/or a distributed app (ÐApp), that can be used with a web browser.
 
