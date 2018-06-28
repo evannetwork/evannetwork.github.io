@@ -274,7 +274,8 @@ import {
 } from 'angular-libs';
 
 import {
-  EvanQueue
+  EvanQueue,
+  AsyncComponent
 } from 'angular-core';
 
 import {
@@ -287,7 +288,7 @@ import {
   selector: 'task-create',
   templateUrl: './task-create.html'
 })
-export class TaskCreateComponent implements OnInit, OnDestroy {
+export class TaskCreateComponent extends AsyncComponent {
   public taskName = '';
   public contractId: string;
   
@@ -299,7 +300,7 @@ export class TaskCreateComponent implements OnInit, OnDestroy {
     public queue: EvanQueue
   ) { }
 
-  async ngOnInit() {
+  async _ngOnInit() {
     this.onCreation = await this.queue.onQueueFinish(this.taskService.createQueueID, async (reload, data) => {
       if (reload) {
         try {
@@ -324,7 +325,7 @@ export class TaskCreateComponent implements OnInit, OnDestroy {
   /**
    * Unbind onCreation listener
    */
-  ngOnDestroy() {
+  async _ngOnDestroy() {
     this.onCreation && this.onCreation();
   }
 
@@ -629,7 +630,8 @@ import {
 	EvanDescriptionService,
 	EvanCoreService,
 	EvanQueue,
-	EvanTranslationService
+	EvanTranslationService,
+  AsyncComponent
 } from 'angular-core';
 
 import {
@@ -642,7 +644,7 @@ import {
 	selector: 'todo-app',
 	templateUrl: './app.html'
 })
-export class TodoApp implements OnInit {
+export class TodoApp extends AsyncComponent {
 	newTodoText = '';
 	
 	public contractId: string;
@@ -668,7 +670,7 @@ export class TodoApp implements OnInit {
 The component initialzation steps need asynchroniously operations. As a result of the this and because of Angular best practices, all initalization steps are included within the ngOnInit function. So have a look on the ngOnInit function.
 
 ```ts
-async ngOnInit() {
+async _ngOnInit() {
   this.contractId = this.routingService.getHashParam('address');
 
   if (this.contractId.indexOf('0x') !== 0) {
@@ -692,11 +694,7 @@ async ngOnInit() {
       this.checkTodosFinished();
       this.ref.detectChanges();
     });
-
-    this.loading = false;
   }
-
-  this.ref.detectChanges();
 }
 ```
 

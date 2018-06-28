@@ -376,6 +376,8 @@ Look in to the "components/hello-world" or "components/hello-world-2" directory 
 
 What we need to explain is the "components/root" folder. This represents the root component, that handles transitions and routings of your application. Using the animation definition, you will create an swipe animation between two views. The views are declared using the "state" parameter, mentioned below, within the routes definition. So you can define, when you want to swipe to the left, right, top or bottom. The rest of the file registers route change watchers, the [password dialog component](/frontend/password-dialog) and runs the "finishDAppLoading" function. During the application load, the DApp or the parent application will included an loading symbol for your application. To handle the success and hiding of the loading symbol, this function is called. 
 
+By using the evan.network dapps you need to capture some special cases. In normal Angular applications you would use the OnInit, OnDestroy, AfterViewInit interfaces to define, which life cycle your app is going throug. In our case we need to use some asynchronious ngOnInit functions. If the App is switched very fast, the ngOnDestroy is called before the ngOnInit was resolved. As a result of this, watcher can be bound after ngOnDestroy and will never be detached again. Also, the this.core.finishDAppLoading(); this.ref.detectChanges(); functions are called after the ngOnInit was resolved. If the view is already detached, this will trigger more errors. We can solve this issue by extending our Component with the "AsyncComponent" class. Extend your component with this class and change your ngOnInit and ngOnDestroy functions into \_ngOnInit and \_ngOnDestroy. The ref is automatically detached, and the loading attribute is set, until the ngOnInit was resolved. At the end, if the view wasnt destroyed before, the loading will be removed and the functions will be called "this.ref.detectChanges();"
+
 ```ts
 {
   path: `hello-world`,
@@ -394,7 +396,7 @@ What we need to explain is the "components/root" folder. This represents the roo
   ]
 })
 
-export class RootComponent implements OnInit {
+export class RootComponent extends AsyncComponent {
   private loading: boolean;
   private watchRouteChange: Function;
 
@@ -403,23 +405,17 @@ export class RootComponent implements OnInit {
     private bcc: EvanBCCService,
     private ref: ChangeDetectorRef,
     private routingService: EvanRoutingService
-  ) { }
-
-  async ngOnInit() {
-    this.ref.detach();
-    this.loading = true;
-
-    this.ref.detectChanges();
-    await this.bcc.initialize((accountId) => this.bcc.globalPasswordDialog(accountId));
-
-    this.watchRouteChange = this.routingService.subscribeRouteChange(() => this.ref.detectChanges());
-
-    this.loading = false;
-    this.core.finishDAppLoading();
-    this.ref.detectChanges();
+  ) {
+    super(ref);
   }
 
-  ngOnDestroy() {
+  async _ngOnInit() {
+    await this.bcc.initialize((accountId) => this.bcc.globalPasswordDialog(accountId));
+    this.watchRouteChange = this.routingService.subscribeRouteChange(() => this.ref.detectChanges());
+    this.core.finishDAppLoading();
+  }
+
+  async _ngOnDestroy() {
     this.watchRouteChange();
   }
 }
