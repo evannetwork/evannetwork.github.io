@@ -15,7 +15,7 @@ To do this, however, all ÐApps must be started via the evan.network ÐApp-brows
 # Featured ÐApp loading
 The evan.network ÐApp-browser is the entry point for featured ÐApps. It will handle a dynamic URL routing, so ÐApp ENS addresses or contract addresses that uses an underlying DBCP description. If the URL changes, the ÐApp-browser will check for the new ÐApp that should be loaded.
 
-[![Finished](/public/dapps/dapp-browser.png){:width="50%"}](/public/ÐApps/ÐApp-browser.png)
+[![Finished](/public/dapps/dapp-browser.png){:width="50%"}](/public/dapps/dapp-browser.png)
 
 # Prerequesits
 Before start developing, be sure to setup the following programs on your system:
