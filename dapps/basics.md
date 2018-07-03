@@ -10,12 +10,12 @@ Frontend ÐApps are mostly implemented using Typescript, Angular 5 and Ionic 3. 
 # Featured ÐApps VS. standalone ÐApps
 By using the evan.network framework to create featured ÐApps, the initialization of DBCP or the blockchain core is completely replaced and existing, initialized and configured instances can be loaded. This has the advantage that accounts, encryptions and similar complex configurations are executed dynamically by the user when the application is started.
 
-To do this, however, all ÐApps must be started via the evan.network ÐApp-browser application, since this provides the complete function stack and the various UIs. **As long as the provided functions are used, the application can only be started in environments that have the corresponding structures.** Alternatively, the blockchain-core can be initialized, configured and used, as in the [standalone example](/ÐApps/standalone/standalone).
+To do this, however, all ÐApps must be started via the evan.network ÐApp-browser application, since this provides the complete function stack and the various UIs. **As long as the provided functions are used, the application can only be started in environments that have the corresponding structures.** Alternatively, the blockchain-core can be initialized, configured and used, as in the [standalone example](/dapps/standalone/standalone).
 
 # Featured ÐApp loading
 The evan.network ÐApp-browser is the entry point for featured ÐApps. It will handle a dynamic URL routing, so ÐApp ENS addresses or contract addresses that uses an underlying DBCP description. If the URL changes, the ÐApp-browser will check for the new ÐApp that should be loaded.
 
-[![Finished](/public/ÐApps/ÐApp-browser.png){:width="50%"}](/public/ÐApps/ÐApp-browser.png)
+[![Finished](/public/dapps/dapp-browser.png){:width="50%"}](/public/ÐApps/ÐApp-browser.png)
 
 # Prerequesits
 Before start developing, be sure to setup the following programs on your system:
