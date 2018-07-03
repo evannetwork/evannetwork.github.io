@@ -27,6 +27,6 @@ Before start developing, be sure to setup the following programs on your system:
 # ÐApp structure
 Each ÐApp looks like this on the top level.
 
-[![ÐApps-tutorial - directory](/public/ÐApps/hello-world/ÐApps-tutorial-dir-structure.png){:width="150px"}](/public/dapps/hello-world/dapps-tutorial-dir-structure.png)
+[![ÐApps-tutorial - directory](/public/ÐApps/hello-world/dapps-tutorial-dir-structure.png){:width="150px"}](/public/dapps/hello-world/dapps-tutorial-dir-structure.png)
 
 In order to be able to work in ordered and staked projects, it is necessary to split the project into several projects (e.g. dashboard-ÐApp, list-ÐApp, contract1-ÐApp, contract2-ÐApp) after a short time. To anticipate this problem and different building jobs, each project uses a [lerna](https://github.com/lerna/lerna) project structure to handle multiple repositories as easily as possible. The lerna project only includes the basic requirements and build jobs for the sub projects. In case of large projects that using Angular or similar, build jobs are definied within seperated projects like the [evan.network angular-gulp project](https://github.com/evannetwork/angular-gulp).
