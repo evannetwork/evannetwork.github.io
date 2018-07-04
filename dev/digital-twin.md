@@ -4,7 +4,7 @@ title: "Digital Twin"
 
 In this How To we want to show you how you can create a new Digital Twin contract on the evan.network. First you will see how the Twin contract is created via our blockchain api. Afterwards you will see how you can interact with it, like adding specific data and lists of data to it and read the data out of the twin.
 
-You can get the full code of the example >>>HERE<<<
+You can get the full code of the example [>>HERE<<](https://gist.github.com/S3bb1/70d5fad1afb44f45d79bbb6f70515eff)
 
 
 # Digital Twin
