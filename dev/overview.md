@@ -141,7 +141,7 @@ title: "evan.network Technical Overview"
     <rect class="bw dotted" width="410" height="240"/>
       <title>Any Normal Webservice</title>    
     <a xlink:href="/dev/smart-agents">
-      <text x="160" y="20">Web Services</text>
+      <text x="180" y="20">Services</text>
     </a>
 
     <g transform="translate(78,50)">
