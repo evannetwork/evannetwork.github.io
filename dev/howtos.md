@@ -1,3 +1,7 @@
+---
+title: "HowTos"
+---
+
 If you just want to do quick tests, it is best to just use the [blockchain core console](/dev/bccc). You will also find a small example of how to compile and deploy contracts to evan.network there.
 
 
@@ -48,11 +52,6 @@ bcc.dfs.
 # Publish Documents with ENS
 
 # Exchange Communication Keys with other User
-
-# Working with the Addressbook
-
-# Working with the Mailbox
-
 
 # Creating and using DBCP API Files
 A main feature of evan.network is to be able to streamline the interaction between applications that run outside the blockchain but use the blockchain and the contracts on the blockchain with a specification file.

@@ -147,12 +147,12 @@ title: "evan.network Technical Overview"
     <g transform="translate(78,50)">
       <g transform="translate(20,30)">
         <ellipse class="service" rx="80" ry="40" />
-        <text class="big" x="-50" y="0.25em">google.com</text>
+        <text class="big" x="-20" y="0.25em">SAP</text>
       </g>
     
       <g transform="translate(50,130)">
         <ellipse class="service" rx="80" ry="40" />
-        <text class="big" x="-55" y="0.25em">amazon.com</text>
+        <text class="big" x="-20" y="0.25em">SQL</text>
       </g>
       
       <g transform="translate(220,70)">
@@ -172,10 +172,6 @@ title: "evan.network Technical Overview"
     <text class="grey" x="10" y="-45">websocket</text>
   </g>
 
-  <g transform="translate(410, 530)">
-    <path class="data-flow" d="M 0 0 h 120"/>
-    <text class="grey" x="42" y="-15">https</text>
-  </g>
 
   <g transform="translate(560, 130)">
     <path class="data-flow" d="M 0 0 h -170"/>
@@ -184,7 +180,7 @@ title: "evan.network Technical Overview"
   
   <g transform="translate(760, 318)">
     <path class="data-flow" d="M 0 0 v 35"/>
-    <text class="grey" x="10" y="28">https</text>
+    <text class="grey" x="10" y="28">https, RPC, SMTP ...</text>
   </g>
 
   <g transform="translate(410, 430)">

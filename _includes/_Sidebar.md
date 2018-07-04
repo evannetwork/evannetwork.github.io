@@ -38,6 +38,7 @@
 - [Hello World Smart-Agent](/dev/hello-agent)
 - [BlockchainCore Console](/dev/bccc)
 - [HowTos](/dev/howtos)
+- [Digital Twin](/dev/digital-twin)
 
 ### [DApps on evan.network](/dapps/introduction)
 - [ÐApp basics](/dapps/basics)

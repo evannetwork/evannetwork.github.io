@@ -3,19 +3,18 @@ title: "Setting Up"
 ---
 
 # Setting up a Development Environment
-To start developing in the evan network, you primarily need need 3 things:
+To start developing in evan.network, you primarily need need 3 things:
 
-1. You need to connect to the right blockchain
+1. You need to connect to the public evan.network blockchain
 2. You need to set up nodejs
 3. You need to install the support libraries
 
-## Connecting to the blockchain
+## Connecting to evan.network
 
-Assuming you already know what the blockchain is and some basics about how it works and the ecosystem.
+Assuming you already know what a blockchain is and some basics about how it works and the ecosystem.
 
-The [evan.network](https://evan.network/) uses [parity](https://www.parity.io/) as its blockchain client.
-The reason to use it over [geth](https://geth.ethereum.org/) is the more extensive toolchain and functionality. Geth and others can't even be used in evan.network, because there are required configurations
-that are not supported by geth.
+[Evan.network](https://evan.network/) uses [parity](https://www.parity.io/) as its blockchain client.
+The reason to use it over [geth](https://geth.ethereum.org/) is the more extensive toolchain and functionality. Geth and others can't even be used in evan.network, because there are required configurations that are not supported by geth.
 
 This is only really relevant if you want to install the blockchain client on your own machine. Most of the time it is sufficient to configure your applications to connect to one of the [MasterNodes](/doc/masternodes).
 
