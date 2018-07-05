@@ -272,7 +272,7 @@ When you want to share the key to decrpyt the data, you have to extend the "Shar
 const accountId = '0xb00fbeef5a926fa150baeaf04bfd673b056ba83d';
 const targetAccount = '0xb00fbeef5a926fa150baeaf04bfd673b056ba83d';
 // get the content sharing key
-const contentKey = await runtime.dataContract.options.sharing.getKey(reloadedDigitalTwin.options.address, inviter, '*');
+const contentKey = await runtime.dataContract.options.sharing.getKey(reloadedDigitalTwin.options.address, accountId, '*');
 
 // share the contract with the user
 await runtime.dataContract.options.sharing.addSharing(
@@ -284,7 +284,7 @@ await runtime.dataContract.options.sharing.addSharing(
   contentKey,
 );
 
-const hashKey = await runtime.dataContract.options.sharing.getHashKey(reloadedDigitalTwin.options.address, inviter);
+const hashKey = await runtime.dataContract.options.sharing.getHashKey(reloadedDigitalTwin.options.address, accountId);
 await runtime.dataContract.options.sharing.ensureHashKey(reloadedDigitalTwin.options.address, accountId, targetAccount, hashKey);
 ```
 
