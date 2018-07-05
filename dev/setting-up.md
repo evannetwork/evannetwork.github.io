@@ -13,12 +13,12 @@ To start developing in evan.network, you primarily need need 3 things:
 
 Assuming you already know what a blockchain is and some basics about how it works and the ecosystem.
 
-[Evan.network](https://evan.network/) uses [parity](https://www.parity.io/) as its blockchain client.
+[Evan.network](https://evan.network/) needs a blockchain client and uses [parity](https://www.parity.io/) for this.
 The reason to use it over [geth](https://geth.ethereum.org/) is the more extensive toolchain and functionality. Geth and others can't even be used in evan.network, because there are required configurations that are not supported by geth.
 
-This is only really relevant if you want to install the blockchain client on your own machine. Most of the time it is sufficient to configure your applications to connect to one of the [MasterNodes](/doc/masternodes).
+This is only really relevant if you want to install the blockchain client on your own machine. Most of the time it is sufficient to configure your applications to connect to one of the evan.network [MasterNodes](/doc/masternodes).
 
-But if you do install your own parity, you need to use the testcore blockchain for development. The configuration for this is available [here](https://github.com/evannetwork/testcore-config).
+But if you do install your own MasterNode, you need to use the evan.network testcore blockchain for development. The parity configuration for this is available [here](https://github.com/evannetwork/testcore-config).
 
 The exact configuration of which blockchain client to connect to depends on the application you use, but if you don't set up your own, you can always use `wss://testcore.evan.network/ws` for the development blockchain.
 
@@ -26,7 +26,7 @@ The development blockchain is the only that exists at the moment for the evan.ne
 
 There will be at least one more, the production chain, which will be called "core" and not "testcore".
 
-It is very useful to start parity with the `--force-ui` parameter, which allows you to access a web-admin on http://localhost:8180 which provides a lot of functionality where the command line is just a little more complicated.
+You might find it useful for admininistration puroses to start parity with the `--force-ui` parameter, which allows you to access a web-gui on http://localhost:8180 which provides a more convenient way than the command line for some functionality.
 
 
 ## Create an Identity

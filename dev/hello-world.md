@@ -10,7 +10,7 @@ Write your first blockchain contract and access it.
 
 We work on a unix command line.
 
-You have installed parity, solidity and nodejs as described [here](/dev/setting-up).
+You have installed all the blockchain utilities needed to connect to and develop with evan.network, like parity, solidity and nodejs as described [here](/dev/setting-up).
 
 You have installed truffle, as described [here](http://truffleframework.com/docs/getting_started/installation)<sup>[+]</sup>.
 
@@ -26,7 +26,7 @@ $ truffle compile
 This has created your inial truffle project.
 
 ## Configuring the Network
-You have already started `parity` locally, as linked in the prerequisites, but for the application to know to connect to the local ethereum node, you need to configure it to do so.
+You have already started `connected to evan.network by starting parity`locally, as linked in the prerequisites, but for the application to know to connect to the local ethereum node, you need to configure it to do so.
 
 ```sh
 $ edit truffle.js
@@ -54,10 +54,10 @@ The gas and gas prices are a minimum. Make sure your account/profile has enough 
 the case after normal onboarding. If not, visit http://gitter.im/evannetwork/faucet .
 
 ### Unlocking the Account for Migration
-You have created an identity earlier, and started parity earlier.
+You have created an identity earlier, and started the blockchain client parity earlier.
 Usually this would be all you need to do, but for our example there is one more thing you need to do.
 
-Parity only accepts signed transactions for the testcore blockchain. When using out blockchain-core library, this is taken care of for you by it. But this is not the time yet for the deep dive into the blockchain-core, this is just a simple first dip of your toe into the water, using the simplest tool available in truffle.
+By default only signed transactions are accepted for the testcore blockchain. When using our blockchain-core library, this is taken care of for you by it. But this is not the time yet for the deep dive into the blockchain-core, this is just a simple first dip of your toe into the water, using the simplest tool available in truffle.
 
 And truffle doesn't sign transactions on deployment. It usually doesn't need to. So we need to tell parity to do the signings itself for our test-account, that we have just created. 
 
@@ -278,4 +278,4 @@ If unsure run the command
 $ truffle deploy  --reset --compile-all --network dev
 ```
 
-And make sure to confirm the transactions in the parity web-admin.
+
