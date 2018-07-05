@@ -21,7 +21,6 @@ Examples for smart agents  are:
 A detailed description how to create a Smart Agent is coming soon.
 
 ## Edge Server
-Smart Agents are implemented as plugins for the Edge Server, a `node.js` web application platform that includes
-the [blockchain-core](blockchain-core-link) library to connect to `evan.network`.
+Smart Agents are implemented as plugins for the Edge Server, a `node.js` web application platform based on [ActionHero](http://actionherojs.com) that includes the [blockchain-core](blockchain-core-link) library to connect to `evan.network.
 
 A [public repository exists for edge-server](https://github.com/evannetwork/edge-server-seed), as a seed for developers to implement their own smart agents on top of.

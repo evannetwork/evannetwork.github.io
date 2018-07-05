@@ -11,40 +11,29 @@ You will still have to do some setup though.
 
 ## Prerequisites
 
+- you have started the [evan.network parity node](/dev/setting-up)
+- you have installed and started a redis server on your system
+
+### [Edge Server)(/dev/smart-agents#edge-server)
 In the evan.network the established way to write web services is to use the [`edge-server`](https://github.com/evannetwork/edge-server-seed), which is just an [ActionHero](https://www.actionherojs.com/) with some added infrastructure, in particular [REDIS](https://redis.io/), [blockchain-core](https://github.com/evannetwork/blockchain-core) and [ipfs](/dev/ipfs). It also uses the version "^18.0", so asynchronous programming with callbacks is discouraged now.
 
 Installation is rather straightforward.
 
 ```sh
-$ git clone git@github.com:evannetwork/edge-server.git
-$ cd edge-server
-$ nvm i
+$ git clone git@github.com:evannetwork/edge-server-seed.git
+$ cd edge-server-seed
+$ npm i
 ```
 
-This should also automativally install the blockchain-core libraries and all other dependencies in `node_modules/`, which can take a while.
+This also automatically installs the blockchain-core libraries and all other dependencies in `node_modules/`, which can take a while.
 
-Sadly, since we are still in early development and don't have real releases yet, so it often is necessary to install dependencies by hand. So if you get errors:
-
-```sh
-$ cd node_modules
-$ git clone  git@github.com:evannetwork/blockchain-core.git
-$ git clone  git@github.com:evannetwork/dbcp.git
-$ git clone  git@github.com:evannetwork/smart-contracts.git
-$ cd smart-contracts; npm i
-$ cd ../dbco; npm i
-$ cd ../blockchain-core; npm i
-$ cd ../..; npm i
-```
-
-If there are still errors, wait for a proper release that installs without problems, which will come soon.
-
-If all is done test it and start it with 
+If all is done test Edge Server and start it with 
 
 ```sh
 $ npm start
 ```
 
-You should now be able to see the action-hero admin interface on `https://localhost:8080`.
+You should now be able to see the edge server greeting page  on `https://localhost:8080`.
 
 ## Getting the API
 Contracts are just bytecode blobs with no real meta-information attached to them. So without
@@ -72,7 +61,7 @@ Copy it somewhere for safekeeping.
 
 ## Setting up the Project
 
-It is possible to create a project directory and develop a SmartAgent, which is an ActionHero-Plugin, directly in the `node_modules/` of the EdgeServer. But better is, to have a separate directory, that can be source controlled separately, and just link it into the edge-server with a symbolic link.
+It is possible to create a project directory and develop a Smart Agent, which is an ActionHero-Plugin, directly in the `node_modules/` of the EdgeServer. But better is, to have a separate directory, that can be source controlled separately, and just link it into the Edge Server with a symbolic link.
 
 ```sh
 $ mkdir ../smart-agent-hello
@@ -88,7 +77,7 @@ $ mkdir actions              # we also need this
 $ edit package.json
 ```
 
-This can be very small for simple agents. Since we access the blockchain-core libraries via the edge-server, most of the things we need are already available.
+This can be very small for simple agents. Since we access the blockchain-core libraries via Edge Server, most of the things we need are already available.
 
 ```json
 {
@@ -273,8 +262,6 @@ module.exports = {
 ```
 
 ## Testing
-
-The easiest way to test is just to go to http://localhost:8080, and see if the new `hello` action is to be found.
 
 The easiest way to test an actual request is with `curl`
 
