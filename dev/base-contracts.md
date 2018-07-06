@@ -42,7 +42,7 @@ const new_contract = dataContractAPI.create(
     )
 ```
 
-There are more paramters, but this is the simples case, and for more look into the [blockchain core](/blockchain_core) documentation.
+There are more paramters, but this is the simples case, and for more look into the [blockchain core](https://github.com/evannetwork/blockchain-core) documentation.
 
 3\. **Load a Contract**
 Loading happens also just like a normal data contract, that have their own dbcp desciption, all you need is the accountID of your deployed contract:

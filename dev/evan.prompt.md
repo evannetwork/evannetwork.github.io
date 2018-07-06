@@ -1,20 +1,22 @@
 ---
-title: "Blockchain Core Console"
+title: "evan.prompt"
 ---
-# Blockchain Core Console
+# evan.prompt
 
-The simplest way to just start playing with evan network is to install the blockchain-core-console, bccc.js.
+The simplest way to just start playing with evan network is to install the `evan.prompt`.
+
+It connects you to evan.network and allows you to interact with the [programmers API](https://github.com/evannetwork/blockchain-core)
 
 Don't let the name fool you, this is not just for working with blockchain contracts, the `bccc` can be used to interact with all components of the evan.network, i.e. also the [IPFS](/dev/ipfs) file stores, the [ENS](/dev/ens).
 
 # Installing
 
-Installing the bccc is as simple as 
+Installing the `evan.prompt` is as simple as 
 
 ```sh
-$ npm i blockchain-core-console
-$ cd blockchain-core-console
-$ chmod a+x bccc.js
+$ npm i evan.prompt
+$ cd evan.prompt
+$ chmod a+x evan
 ```
 
 # Configuration
@@ -51,7 +53,7 @@ Just start the console:
 ```sh
 $ ./bccc.js
 ```
-you then have a `nodejs` REPL with a configured [blockchain-core](/blockchain-core) library under `bcc`, also an `Ipfs` and `Web3` object and some more, which can be explored with tab completion.
+you then have a `nodejs` REPL with a configured [blockchain-core](https://github.com/evannetwork/blockchain-core) library under `bcc`, also an `Ipfs` and `Web3` object and some more, which can be explored with tab completion.
 
 You can also directly pass code on the command line to eval, although with a slightly less defined environement.
 
