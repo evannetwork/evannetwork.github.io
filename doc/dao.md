@@ -1,18 +1,19 @@
 ---
 title: "DAO"
 ---
-# DAO - Decentralized Autonomous Organization
+# DAO
+[evan.network](https://evan.network/) enables trustful business relationships while maintaining the data sovereignty of the interacting network partners. This trust is based on the decentralized nature of the network, in which no central intermediary has control over the data and processes. Decentralization does not mean, however, that the network is without control and supervision.
 
-In [evan.network](https://evan.network/), trusting business relationships are made possible. The interacting network partners nevertheless retain their data sovereignty. This trust is based on the decentralization of the network. No central intermediary has control over the data and processes. But decentralization does not mean that the network is without control.
+Therefore it is important to establish an organisational structure through which the network is managed efficiently and in partnership. For this reason, it is planned to take control over technological decisions that affect the core of the network in a **Decentralized Autonomous Organization (DAO)**. Such decisions include, for example, the implementation of a hard-fork, the inclusion of new master nodes, the use of new technologies or new updates to existing components, or decisions to invest in the expansion of the network. 
 
-*A decentralized network of trust must be operated decentrally.*
+## The Implementation of the DAO
+At the start of the evan.network productive network it is planned to bind the [MasterNodes](/doc/masternode) to the network via MastnerNode Operations Aggreement (MNOA). The MNOA defines the Service Level Agreements (SLA) that a MasterNode must comply with in order to count as an active MasterNode and thus exercise its voting rights in the DAO. Any organization that provides services according to the MNOA definitions can become MasterNode and thus DAO member. The goal is that only companies and universities or institutes become DAO members, i.e. not natural persons. In the medium term it is planned to transfer the DAO into an own organization (e.g. cooperative or association), so that commercial decisions can also be made from the DAO (e.g. the investments in new services provided on evan.network).  
+In the first phase, the DAO is a loose link to all MasterNodes that can make changes to the network via [Smart Contracts](/dev/smart-contracts).
 
-Therefore, it is important to establish an organizational structure which leads the network democratically and efficiently. So the evan.network will be operated as a **Decentralized Autonomous Organization (DAO)** that is run through rules, encoded as smart contracts, determined by the operators of the [MasterNodes](https://evannetwork.github.io/doc/masternode).
-The DAO makes democratic decisions about the network. For example such decisions are the inclusion of new MasterNodes or decisions to invest in the expansion of the network.
-By establishing a DAO, it is possible that decisions in the evan.network are not performed by a single organization or user. The network gains stability and trust through the democratic approach.
-
+## Advantages
 With the DAO the evan.network has two big benefits:
 1. To ensure the most possible trust, the responsibility for extending and managing the network shall be with the network stakeholders.
 2. To ensure the highest possible growth, the network shall be open for all businesses and developers to realize their own decentralized business model.
 
-To make this possible, the legal, technical and organizational evan.network DAO structure will be established step by step by evan GmbH, using the [token](https://evannetwork.github.io/doc/eve) sale funding.
+To make this possible, the legal, technical and organizational evan.network DAO structure will be established step by step by evan GmbH, using the [token](/dev/blockchain#eve---token) sale funding.
+

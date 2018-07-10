@@ -62,7 +62,7 @@ title: "evan.network Technical Overview"
       <text x="160" y="20">Master Node</text>
     </a>
     <text class="grey small" x="70" y="230">every DAO member runs a MasterNode</text>
-    <a xlink:href="/doc/parity" transform="translate(20,30)">
+    <a xlink:href="/dev/blockchain" transform="translate(20,30)">
       <rect class="server" width="160" height="80" rx="3"/>
       <text class="big" x="48" y="38">
         <tspan>Signing</tspan>
@@ -70,7 +70,7 @@ title: "evan.network Technical Overview"
       </text>
       <title>MasterNode Ethereum Client</title>
     </a>
-    <a xlink:href="/doc/parity" transform="translate(220,130)">
+    <a xlink:href="/dev/blockchain" transform="translate(220,130)">
       <rect class="server" width="160" height="80" rx="3"/>
       <text class="big" x="48" y="38">
         <tspan x="30">Transaction</tspan>
@@ -335,7 +335,7 @@ They are just small webservices, that run on controlled servers, that provide co
       </text>
     </a>
 
-    <a xlink:href="/dev/IPFS" transform="translate(620,30)">
+    <a xlink:href="/dev/smart-contracts#smart-contracts-in-evannetwork" transform="translate(620,30)">
       <rect class="module" width="160" height="80" rx="3"/>
       <text class="big" x="7" y="45">Smart Contracts</text>
       <title>Basic Functionality Contracts</title>
@@ -376,3 +376,4 @@ They are just small webservices, that run on controlled servers, that provide co
 The Blockchain Core Library is the central tool used in all development with evan.network. It is actually a collection of own functionality, and wrappers around 3rd party core functionality like blockchain transactions and distributed file system operations.
 
 [The full API documentation](https://github.com/evannetwork/blockchain-core) shows the actual exposed sub-namespaces in the blockchain core module are a little more fine-grained.
+
