@@ -18,7 +18,6 @@ title: "evan.network Technical Overview"
     </marker>
   </defs>
   <style type="text/css">
-    a#belt rect { fill: url(#slot-fill); stroke: #003946; }
     text        { font: 10pt "Verdana", sans-serif; stroke: #003946; fill: #003946; }
     text.big    { font-size: 12pt; font-weight: bold; }
     text.small  { font-size: 9pt; }
@@ -29,10 +28,8 @@ title: "evan.network Technical Overview"
     .grey       { stroke: #023845; stroke-width: 1; fill: #023845; fill-opacity: 0.5; opacity: 0.5; }
     .black      { stroke: #003946; stroke-width: 3; fill: #003946; fill-opacity: 1; }
     .bw         { stroke: #003946; fill-opacity: 1; fill: #fff; }
-    .slot       { fill: url(#slot-fill); stroke: #003946; }
     .region     { stroke: #aaa; stroke-dasharray: 2 1; fill-opacity: 0; }
 
-    .dram       { fill: #bdd; stroke: none; }
     .dotted     { stroke-dasharray: 1 1; }
     .data-flow  { stroke: #003946; stroke-width: 3; fill-opacity: 0; marker-end: url(#end-data); }
     .bidirectional-data
