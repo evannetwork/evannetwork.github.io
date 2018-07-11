@@ -18,11 +18,12 @@ title: "evan.network Technical Overview"
     </marker>
   </defs>
   <style type="text/css">
-    text        { font: 10pt "Verdana", sans-serif; stroke: #003946; fill: #003946; }
-    text.big    { font-size: 12pt; font-weight: bold; }
+    text        { font: 10pt "PT Sans", Helvetica, Arial, sans-serif; stroke: #003946; fill: #003946; }
+    text.big    { font-size: 12pt; font-weight: bold; stroke-width: 0;}
     text.small  { font-size: 9pt; }
     text.bold   { font-weight: bold; }
     text.white  { stroke: #fff; stroke-width: 1; fill: #fff; }
+    a           { cursor: pointer; }
 
     
     .grey       { stroke: #023845; stroke-width: 1; fill: #023845; fill-opacity: 0.5; opacity: 0.5; }
@@ -64,17 +65,17 @@ title: "evan.network Technical Overview"
     <text class="grey small" x="70" y="230">every DAO member runs a MasterNode</text>
     <a xlink:href="/dev/blockchain" transform="translate(20,30)">
       <rect class="server" width="160" height="80" rx="3"/>
-      <text class="big" x="48" y="38">
+      <text class="big" x="50" y="38">
         <tspan>Signing</tspan>
-        <tspan x="68" dx="-0.75em" dy="1em">Parity</tspan>
+        <tspan x="70" dx="-0.75em" dy="1em">Parity</tspan>
       </text>
       <title>MasterNode Ethereum Client</title>
     </a>
     <a xlink:href="/dev/blockchain" transform="translate(220,130)">
       <rect class="server" width="160" height="80" rx="3"/>
-      <text class="big" x="48" y="38">
-        <tspan x="30">Transaction</tspan>
-        <tspan x="68" dx="-0.75em" dy="1em">Parity</tspan>
+      <text class="big" x="52" y="38">
+        <tspan x="35">Transaction</tspan>
+        <tspan x="70" dx="-0.75em" dy="1em">Parity</tspan>
       </text>
       <title>MasterNode Ethereum Client</title>
     </a>
@@ -101,14 +102,14 @@ title: "evan.network Technical Overview"
 
     <a xlink:href="/dev/blockchain-core" transform="translate(20,30)">
       <rect class="library" width="360" height="80" rx="3"/>
-      <text class="big white" x="110" y="45">Blockchain Core</text>
+      <text class="big white" x="115" y="45">Blockchain Core</text>
       <title>Blockchain Core Library</title>
     </a>
 
     <a xlink:href="/dapps/angular/hello-world" transform="translate(20,130)">
       <rect class="library" width="360" height="80" rx="3"/>
-      <text class="big white" x="110" y="40">Web Framework</text>
-      <text class="white" x="106" y="60">(angular, vue, jquery ...)</text>
+      <text class="big white" x="115" y="40">Web Framework</text>
+      <text class="white" x="110" y="60">(angular, vue, jquery ...)</text>
       <title>Any Web Framework or Library is Usable</title>
     </a>
   </g>
@@ -123,13 +124,13 @@ title: "evan.network Technical Overview"
 
     <a xlink:href="/dev/blockchain-core" transform="translate(20,30)">
       <rect class="library" width="360" height="80" rx="3"/>
-      <text class="big white" x="110" y="45">Blockchain Core</text>
+      <text class="big white" x="115" y="45">Blockchain Core</text>
       <title>Blockchain Core Library</title>
     </a>
 
     <a xlink:href="/dev/smart-agents" transform="translate(20,130)">
       <rect class="library" width="360" height="80" rx="3"/>
-      <text class="big white" x="125" y="45">Smart Agent</text>
+      <text class="big white" x="127" y="45">Smart Agent</text>
       <title>an ActionHero</title>
     </a>
   </g>
@@ -144,17 +145,17 @@ title: "evan.network Technical Overview"
     <g transform="translate(78,50)">
       <g transform="translate(20,30)">
         <ellipse class="service" rx="80" ry="40" />
-        <text class="big" x="-20" y="0.25em">SAP</text>
+        <text class="big" x="-17" y="0.3em">SAP</text>
       </g>
     
       <g transform="translate(50,130)">
         <ellipse class="service" rx="80" ry="40" />
-        <text class="big" x="-20" y="0.25em">SQL</text>
+        <text class="big" x="-17" y="0.3em">SQL</text>
       </g>
       
       <g transform="translate(220,70)">
         <ellipse class="service" rx="80" ry="40" />
-        <text class="big" x="-45" y="0.25em">wetter.de</text>
+        <text class="big" x="-35" y="0.3em">wetter.de</text>
       </g>
     </g>
   </g>
@@ -235,7 +236,7 @@ They are just small webservices, that run on controlled servers, that provide co
   </defs>
   <style type="text/css">
     a#belt rect { fill: url(#slot-fill); stroke: #003946; }
-    text        { font: 10pt "Verdana", sans-serif; stroke: #003946; fill: #003946; }
+    text        { font: 10pt "PT Sans", Helvetica, Arial, sans-serif; stroke: #003946; fill: #003946; }
     text.big    { font-size: 12pt; font-weight: bold; }
     text.small  { font-size: 9pt; }
     text.bold   { font-weight: bold; }
@@ -285,7 +286,7 @@ They are just small webservices, that run on controlled servers, that provide co
     
     <a xlink:href="/dev/dbcp" transform="translate(20,30)">
       <rect class="module" width="160" height="80" rx="3"/>
-      <text class="big" x="56" y="45">DBCP</text>
+      <text class="big" x="60" y="45">DBCP</text>
       <title>Distributed Blockchain Contract Protocol</title>
       <text y="100">
         <tspan x="3">links Ðapps with contracts</tspan>
@@ -318,7 +319,7 @@ They are just small webservices, that run on controlled servers, that provide co
 
     <a xlink:href="/dev/IPFS" transform="translate(420,30)">
       <rect class="module" width="160" height="80" rx="3"/>
-      <text class="big" x="64" y="45">dfs</text>
+      <text class="big" x="68" y="45">dfs</text>
       <title>Distributed File System (IPFS)</title>
       <text y="100">
         <tspan x="3">own dfs namespace</tspan>
@@ -337,7 +338,7 @@ They are just small webservices, that run on controlled servers, that provide co
 
     <a xlink:href="/dev/smart-contracts#smart-contracts-in-evannetwork" transform="translate(620,30)">
       <rect class="module" width="160" height="80" rx="3"/>
-      <text class="big" x="7" y="45">Smart Contracts</text>
+      <text class="big" x="22" y="45">Smart Contracts</text>
       <title>Basic Functionality Contracts</title>
       <text y="100">
         <tspan x="3">solidity compilation</tspan>

@@ -11,6 +11,15 @@ These approaches have the following responsibilities:
 - prevent contract content from being leaded to third parties
 - make access to contract content possible without exchanging keys for every piece of data stored in contracts
 
+## Key Exchange
+By default any data stored in [contracts](/dev/smart-contracts) is encrypted. This is true for [profiles](/tutorial/create-identity), [Digital Twins](/dev/dgitial-twin) or any other. This means it is impossible for others to read data in other contracts. Profiles can't read each others contacts etc. People can't even send each other [BMail](/tutorial/mailbox) messages.
+
+To establish communication, accounts/contracts need to exchange keys. This is one of the most basic operations in `evan.network`, because without exchanging keys, little else can be done. If you are an end user it is done for you in most cases, and you won't even notice, or you can use the [contacts](/tutorial/contacts) ÐApp to initiate key exchanges.
+
+As a developer you have to keep track of this yourself usually, unless you use one of the Helper functions from [Factories](/dev/smart-contract#contract-factories) or [Business Centers](/dev/smart-contract#business-cener).
+
+The key exchange module is made available through the [blockchain core](https://github.com/evannetwork/blockchain-core) library.
+
 
 ## Permissions in Smart Contracts
 ### Basic Permissions

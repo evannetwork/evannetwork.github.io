@@ -46,13 +46,14 @@ This is all already done with distributed web applications.
     <path id="triangle" style="stroke: f7aacf; fill: #f7aacf;" d="M 0 0 h 200 l -100 10 l -100 -10"  />
   </defs>
   <style type="text/css">
-    text        { font: 10pt "Verdana", sans-serif; stroke: #003946; fill: #003946; }
-    text.big    { font-size: 12pt; font-weight: bold; }
+    text        { font: 10pt "PT Sans", Helvetica, Arial, sans-serif; stroke: #003946; fill: #003946; }
+    text.big    { font-size: 12pt; font-weight: bold; stroke-width: 0; }
     text.small  { font-size: 8pt; }
     text.bold   { font-weight: bold; }
     text.white  { stroke: #fff; stroke-width: 1; fill: #fff; }
     text.prot   { stroke: #f7aacf; fill: #f7aacf;}
-    text.code   { font: 9pt "Courier", monospace; stroke: #003946; fill: #003946; }
+    text.code   { font: 9pt monospace; stroke: #003946; stroke-width: 0.5; fill: #003946; }
+    a           { cursor: pointer; }
     
     .grey       { stroke: #023845; stroke-width: 1; fill: #023845; fill-opacity: 0.5; opacity: 0.5; }
     .black      { stroke: #003946; stroke-width: 3; fill: #003946; fill-opacity: 1; }
@@ -104,7 +105,7 @@ This is all already done with distributed web applications.
       </a>
       <g transform="translate(80, 150)">
         <use xlink:href="#protocol" />
-        <text class="prot small" x="-13" y="14">https</text>
+        <text class="prot small" x="-12" y="14">https</text>
         <title>Application Requests</title>
       </g>
       <g transform="translate(140, 150)">
@@ -124,7 +125,7 @@ This is all already done with distributed web applications.
           <rect class="module" x="45" y="45" width="130" height="60" />
           <rect class="module" x="50" y="60" width="130" height="60" />
           <text class="small" x="45" y="41">Tasks</text>
-          <text class="small" x="50" y="56">Obboarding</text>
+          <text class="small" x="50" y="56">Onboarding</text>
           <text class="small" x="55" y="71">Dashboard</text>
           <text class="small thin" x="75" y="89">Login</text>
           <text class="small thin" x="75" y="99">Session</text>
@@ -135,7 +136,7 @@ This is all already done with distributed web applications.
       </a>
       <g transform="translate(80, 150)">
         <use xlink:href="#protocol" />
-        <text class="prot small" x="-13" y="14">https</text>
+        <text class="prot small" x="-12" y="14">https</text>
         <title>Application Requests</title>
       </g>
       <g transform="translate(140, 150)">
@@ -152,22 +153,22 @@ This is all already done with distributed web applications.
         <text x="70" y="15">Applications</text>
         <g transform="translate(70,45)">
           <ellipse class="bubble" rx="35" ry="15" />
-          <text class="small" x="-24" y="0.25em">WebApps</text>
+          <text class="small" x="-21" y="0.25em">WebApps</text>
         </g>
         
         <g transform="translate(140,65)">
           <ellipse class="bubble" rx="45" ry="15" />
-          <text class="small" x="-32" y="0.25em">Native Apps</text>
+          <text class="small" x="-27" y="0.25em">Native Apps</text>
         </g>
         
         <g transform="translate(90,105)">
           <ellipse class="bubble" rx="45" ry="15" />
-          <text class="small" x="-32" y="0.25em">Mobile Apps</text>
+          <text class="small" x="-28" y="0.25em">Mobile Apps</text>
         </g>
       </a>
       <g transform="translate(80, 150)">
         <use xlink:href="#protocol" />
-        <text class="prot small" x="-13" y="14">https</text>
+        <text class="prot small" x="-12" y="14">https</text>
         <title>Application Requests</title>
       </g>
       <g transform="translate(140, 150)">
@@ -184,13 +185,13 @@ This is all already done with distributed web applications.
     
     <a xlink:href="/dev/blockchain-core" transform="translate(100,20)">
       <rect class="library" width="160" height="80" rx="2"/>
-      <text class="white" x="24" y="42">Blockchain Core</text>
+      <text class="white" x="32" y="42">Blockchain Core</text>
       <title>ECMAScript Library to work with Ethereum Contracts and IPFS</title>
     </a>
 
     <a xlink:href="/dev/dbcp" transform="translate(300,20)">
       <rect class="library" width="160" height="80" rx="2"/>
-      <text class="white" x="58" y="42">DBCP</text>
+      <text class="white" x="64" y="42">DBCP</text>
       <title>A Description Language for Decentralized Business Applications</title>
     </a>
 
@@ -215,17 +216,17 @@ This is all already done with distributed web applications.
         <text class="small grey" x="50" y="12">user management</text>
         <a xlink:href="/dev/smart-contracts#rights-and-roles" transform="translate(50,20)">
           <rect class="contract" width="130" height="60" rx="2"/>
-          <text class="code" x="4" y="12">RightsAndRoles</text>
+          <text class="code" x="2" y="12">RightsAndRoles</text>
           <title>Ethereum Contract</title>
         </a>
         <a xlink:href="/dev/smart-contracts#mailbox" transform="translate(60,36)">
           <rect class="contract" width="130" height="60" rx="2"/>
-          <text class="code" x="4" y="12">Mailbox</text>
+          <text class="code" x="2" y="12">Mailbox</text>
           <title>Ethereum Contract</title>
         </a>
         <a xlink:href="/dev/smart-contracts#profile" transform="translate(70,52)">
           <rect class="contract" width="130" height="60" rx="2"/>
-          <text class="code" x="4" y="12">Profile</text>
+          <text class="code" x="2" y="12">Profile</text>
           <text class="small grey" x="24" y="30">Roles</text>
           <text class="small grey" x="24" y="46">Crypt Keys</text>
           <title>Ethereum Contract</title>
@@ -234,17 +235,17 @@ This is all already done with distributed web applications.
         <text class="small grey" x="220" y="12">factories</text>
         <a xlink:href="/dev/smart-contracts#contract-factories" transform="translate(220,20)">
           <rect class="contract" width="130" height="60" rx="2"/>
-          <text class="code" x="4" y="12">ProfileFactory</text>
+          <text class="code" x="2" y="12">ProfileFactory</text>
           <title>Ethereum Contract</title>
         </a>
         <a xlink:href="/dev/smart-contracts#contract-factories" transform="translate(230,36)">
           <rect class="contract" width="130" height="60" rx="2"/>
-          <text class="code" x="4" y="12">DigitalTwinFactory</text>
+          <text class="code" x="2" y="12">DigitalTwinFactory</text>
           <title>Ethereum Contract</title>
         </a>
         <a xlink:href="/dev/smart-contracts#contract-factories" transform="translate(240,52)">
           <rect class="contract" width="130" height="60" rx="2"/>
-          <text class="code" x="4" y="12">TaskFactory</text>
+          <text class="code" x="2" y="12">TaskFactory</text>
           <text class="small grey" x="24" y="30">DataContracts</text>
           <text class="small grey" x="24" y="46">from template</text>
           <title>Ethereum Contract</title>
@@ -258,12 +259,12 @@ This is all already done with distributed web applications.
         </a>
         <a xlink:href="/dev/smart-contracts#business-center" transform="translate(230,166)">
           <rect class="contract" width="130" height="60" rx="2"/>
-          <text class="code" x="4" y="12">Business Center</text>
+          <text class="code" x="2" y="12">Business Center</text>
           <title>Ethereum Contract</title>
         </a>
         <a xlink:href="/dev/smart-contracts#data-contract" transform="translate(240,182)">
           <rect class="contract" width="130" height="60" rx="2"/>
-          <text class="code" x="4" y="12">DataContract</text>
+          <text class="code" x="2" y="12">DataContract</text>
           <text class="small grey" x="24" y="30">Entries</text>
           <text class="small grey" x="24" y="46">Access Rights</text>
           <title>Ethereum Contract</title>
@@ -272,32 +273,33 @@ This is all already done with distributed web applications.
         <text class="small grey" x="50" y="142">infrastructure</text>
         <a xlink:href="/dev/smart-contracts#ens" transform="translate(50,150)">
           <rect class="contract" width="130" height="60" rx="2"/>
-          <text class="code" x="4" y="12">ENS</text>
+          <text class="code" x="2" y="12">ENS</text>
           <title>Ethereum Contract</title>
         </a>
         <a xlink:href="/dev/smart-contracts#event-hub" transform="translate(60,166)">
           <rect class="contract" width="130" height="60" rx="2"/>
-          <text class="code" x="4" y="12">EventHub</text>
+          <text class="code" x="2" y="12">EventHub</text>
           <title>Ethereum Contract</title>
         </a>
         <a xlink:href="/dev/smart-contracts#base-contract" transform="translate(70,182)">
           <rect class="contract" width="130" height="60" rx="2"/>
-          <text class="code" x="4" y="12">BaseContract</text>
+          <text class="code" x="2" y="12">BaseContract</text>
           <text class="small grey" x="24" y="30">DBCP Reference</text>
           <text class="small grey" x="24" y="46">Sharing</text>
           <title>Ethereum Contract</title>
         </a>
       </g>
       <g transform="translate(50,0)">
-        <a xlink:href="/dev/key-exchange" transform="translate(0,20)">
+        <a xlink:href="/dev/security#key-exchange" transform="translate(0,20)">
           <rect class="library" width="120" height="80" rx="2"/>
-          <text class="white" x="14" y="42">Key Exchange</text>
+          <text class="white" x="20" y="42">Key Exchange</text>
+          <title>Establishes Account Communication Channels</title>
         </a>
 
         <a xlink:href="/dev/blockchain#rpc-endpoint" transform="translate(0,150)">
           <rect class="server" width="120" height="80" rx="2"/>
-          <text class="big" x="16" y="40">RPC Node</text>
-          <text  x="21" y="55">(ethereum)</text>
+          <text class="big" x="24" y="40">RPC Node</text>
+          <text  x="30" y="55">(ethereum)</text>
           <title>Blockchain Client Parity</title>
         </a>
       </g>
@@ -323,26 +325,26 @@ This is all already done with distributed web applications.
 
     <a xlink:href="/dev/blockchain" transform="translate(60,60)">
       <rect class="server" width="210" height="80" rx="3"/>
-      <text class="big" x="58" y="40">Blockchain</text>
-      <text  x="68" y="55">(ethereum)</text>
+      <text class="big" x="64" y="40">Blockchain</text>
+      <text  x="72" y="55">(ethereum)</text>
       <title>Blockchain Client Parity</title>
     </a>
 
     <a xlink:href="/dev/ipfs" transform="translate(300,60)">
       <rect class="server" width="210" height="80" rx="3"/>
-      <text class="big" x="15" y="40">Distributed Storage</text>
-      <text  x="81" y="55">(ipfs)</text>
+      <text class="big" x="32" y="40">Distributed Storage</text>
+      <text  x="87" y="55">(ipfs)</text>
       <title>IPFS Nodes</title>
     </a>
 
     <g transform="translate(85, 160)">
       <use xlink:href="#protocol" />
-      <text class="prot small" x="-13" y="14">https</text>
+      <text class="prot small" x="-12" y="14">https</text>
       <title>Application Requests</title>
     </g>
     <g transform="translate(375, 160)">
       <use xlink:href="#protocol" />
-      <text class="prot small" x="-13" y="14">https</text>
+      <text class="prot small" x="-12" y="14">https</text>
       <title>Application Requests</title>
     </g>
     <g transform="translate(140, 160)">
@@ -358,7 +360,7 @@ This is all already done with distributed web applications.
     <g transform="translate(250, 160)">
       <use xlink:href="#protocol" />
       <text class="prot small" x="-6" y="14">IN³</text>
-      <title></title>
+      <title>Transaction Security</title>
     </g>
     
     <g transform="translate(430, 160)">
