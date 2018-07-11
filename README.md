@@ -42,8 +42,12 @@ This is all already done with distributed web applications.
       <path d="M 0 0 L 10 5 L 0 10 z"/>
     </marker>
     <path id="protocol" style="stroke: #f7aacf; fill: #feeaf3;"
-          d="M 0 0 l 25 5 h -5 v 10 h 5 l -25 5 l -25 -5 h 5 v -10 h -5 l 25 -5"  />
+          d="M 0 0 l 20 5 h -5 v 10 h 5 l -20 5 l -20 -5 h 5 v -10 h -5 l 20 -5"  />
     <path id="triangle" style="stroke: f7aacf; fill: #f7aacf;" d="M 0 0 h 200 l -100 10 l -100 -10"  />
+    <g id="master-node">
+      <rect class="bw dotted" x="0" width="68" height="22" />
+      <text class="small thin" x="7" y="14">MasterNode</text>
+    </g>
   </defs>
   <style type="text/css">
     text        { font: 10pt "PT Sans", Helvetica, Arial, sans-serif; stroke: #003946; fill: #003946; }
@@ -58,6 +62,7 @@ This is all already done with distributed web applications.
     .grey       { stroke: #023845; stroke-width: 1; fill: #023845; fill-opacity: 0.5; opacity: 0.5; }
     .black      { stroke: #003946; stroke-width: 3; fill: #003946; fill-opacity: 1; }
     .thin       { stroke: #2a4d57; stroke-width: 0.5; fill: #2a4d572; fill-opacity: 1; }
+    .pink       { stroke: #d9028d;  stroke-width: #d9028d; fill: #d9028d; }
     .bw         { stroke: #003946; fill-opacity: 1; fill: #fff; }
     .region     { stroke: #aaa; stroke-dasharray: 2 1; fill-opacity: 0; }
 
@@ -103,16 +108,6 @@ This is all already done with distributed web applications.
           <text class="small thin" x="75" y="109">Invitations</text>
         </g>
       </a>
-      <g transform="translate(80, 150)">
-        <use xlink:href="#protocol" />
-        <text class="prot small" x="-12" y="14">https</text>
-        <title>Application Requests</title>
-      </g>
-      <g transform="translate(140, 150)">
-        <use xlink:href="#protocol" />
-        <text class="prot small" x="-10" y="14">wss</text>
-        <title>Application Workflow</title>
-      </g>
     </g>
     <g id="core-dapps" transform="translate(200, 50)">
       <title>ÐApps</title>
@@ -134,16 +129,6 @@ This is all already done with distributed web applications.
         </g>
 
       </a>
-      <g transform="translate(80, 150)">
-        <use xlink:href="#protocol" />
-        <text class="prot small" x="-12" y="14">https</text>
-        <title>Application Requests</title>
-      </g>
-      <g transform="translate(140, 150)">
-        <use xlink:href="#protocol" />
-        <text class="prot small" x="-10" y="14">wss</text>
-        <title>Application Workflow</title>
-      </g>
     </g>
 
     <g id="applications" transform="translate(380, 50)">
@@ -166,19 +151,9 @@ This is all already done with distributed web applications.
           <text class="small" x="-28" y="0.25em">Mobile Apps</text>
         </g>
       </a>
-      <g transform="translate(80, 150)">
-        <use xlink:href="#protocol" />
-        <text class="prot small" x="-12" y="14">https</text>
-        <title>Application Requests</title>
-      </g>
-      <g transform="translate(140, 150)">
-        <use xlink:href="#protocol" />
-        <text class="prot small" x="-10" y="14">wss</text>
-        <title>Application Workflow</title>
-      </g>
     </g>
   </g>
-  <g id="core-api" transform="translate(10, 210)">
+  <g id="core-api" transform="translate(10, 180)">
     <path class="dotted grey" d="M 0 0 h 580" />
     <text class="big grey" transform="rotate(90)" x="20">Core API</text>
     <use xlink:href="#triangle" x="180" y="-15" />
@@ -197,7 +172,7 @@ This is all already done with distributed web applications.
 
   </g>
   
-  <g id="core-services" transform="translate(10, 340)">
+  <g id="core-services" transform="translate(10, 310)">
     <path class="dotted grey" d="M 0 0 h 580" />
     <text class="big grey" transform="rotate(90)" x="20">Core Services</text>
     <use xlink:href="#triangle" x="180" y="-15" />
@@ -259,7 +234,7 @@ This is all already done with distributed web applications.
         </a>
         <a xlink:href="/dev/smart-contracts#business-center" transform="translate(230,166)">
           <rect class="contract" width="130" height="60" rx="2"/>
-          <text class="code" x="2" y="12">Business Center</text>
+          <text class="code" x="2" y="12">BusinessCenter</text>
           <title>Ethereum Contract</title>
         </a>
         <a xlink:href="/dev/smart-contracts#data-contract" transform="translate(240,182)">
@@ -289,85 +264,105 @@ This is all already done with distributed web applications.
           <title>Ethereum Contract</title>
         </a>
       </g>
-      <g transform="translate(50,0)">
+      <g transform="translate(50,70)">
         <a xlink:href="/dev/security#key-exchange" transform="translate(0,20)">
           <rect class="library" width="120" height="80" rx="2"/>
           <text class="white" x="20" y="42">Key Exchange</text>
           <title>Establishes Account Communication Channels</title>
         </a>
-
-        <a xlink:href="/dev/blockchain#rpc-endpoint" transform="translate(0,150)">
-          <rect class="server" width="120" height="80" rx="2"/>
-          <text class="big" x="24" y="40">RPC Node</text>
-          <text  x="30" y="55">(ethereum)</text>
-          <title>Blockchain Client Parity</title>
-        </a>
       </g>
     </g>
   </g>
 
-  <g id="core-network" transform="translate(10, 630)">
+  <g id="core-network" transform="translate(10, 600)">
     <path class="dotted grey" d="M 0 0 h 580" />
     <text class="big grey" transform="rotate(90)" x="20">Core Network</text>
     <use xlink:href="#triangle" x="180" y="-15" />
-
-    <rect class="bw dotted" x="30" width="480" height="200" transform="translate(35, 40)"/>
-    <rect class="bw dotted" x="30" width="480" height="200" transform="translate(30, 35)"/>
-    <rect class="bw dotted" x="30" width="480" height="200" transform="translate(25, 30)"/>
-    <rect class="bw dotted" x="30" width="480" height="200" transform="translate(20, 25)"/>
-    <rect class="bw dotted" x="30" width="480" height="200" transform="translate(15, 20)"/>
     
-    <title>Many MasterNodes provided by DAO members</title>
-    <a xlink:href="/doc/masternode">
-      <text x="240" y="45">Master Node</text>
-    </a>
-
-
-    <a xlink:href="/dev/blockchain" transform="translate(60,60)">
-      <rect class="server" width="210" height="80" rx="3"/>
-      <text class="big" x="64" y="40">Blockchain</text>
-      <text  x="72" y="55">(ethereum)</text>
-      <title>Blockchain Client Parity</title>
-    </a>
-
-    <a xlink:href="/dev/ipfs" transform="translate(300,60)">
-      <rect class="server" width="210" height="80" rx="3"/>
-      <text class="big" x="32" y="40">Distributed Storage</text>
-      <text  x="87" y="55">(ipfs)</text>
-      <title>IPFS Nodes</title>
-    </a>
-
-    <g transform="translate(85, 160)">
-      <use xlink:href="#protocol" />
-      <text class="prot small" x="-12" y="14">https</text>
-      <title>Application Requests</title>
-    </g>
-    <g transform="translate(375, 160)">
-      <use xlink:href="#protocol" />
-      <text class="prot small" x="-12" y="14">https</text>
-      <title>Application Requests</title>
-    </g>
-    <g transform="translate(140, 160)">
-      <use xlink:href="#protocol" />
-      <text class="prot small" x="-10" y="14">wss</text>
-      <title>Application Workflow</title>
-    </g>
-    <g transform="translate(195, 160)">
-      <use xlink:href="#protocol" />
-      <text class="prot small" x="-10" y="14">ÐΞV</text>
-      <title>Synchronization</title>
-    </g>
-    <g transform="translate(250, 160)">
-      <use xlink:href="#protocol" />
-      <text class="prot small" x="-6" y="14">IN³</text>
-      <title>Transaction Security</title>
-    </g>
+    <g transform="translate(40, 0)">
     
-    <g transform="translate(430, 160)">
-      <use xlink:href="#protocol" />
-      <text class="prot small" x="-9" y="14">p2p</text>
-      <title>Synchronization</title>
-    </g>
+      <path class="pink" d="M 34,40 L -2,151" />
+      <path class="pink" d="M 34,40 L 242,90" />
+      <path class="pink" d="M 242,90 L 86,211" />
+      <path class="pink" d="M -2,151 L 86,211" />
+      <path class="pink" d="M -2,151 L 242,90" />
+      <path class="pink" d="M 34,40 L 86,211"/>
+      <path class="pink" d="M -2,151 L 242,90" />"
+      <path class="pink" d="M 186,201 L 86,211"/>
+      <path class="pink" d="M 186,201 L 242,90"/>
+      <path class="pink" d="M 186,201 L 206,241"/>
+      <path class="pink" d="M 186,201 L 308,211"/>
+      <path class="pink" d="M 206,241 L 308,211"/>
+      <path class="pink" d="M 308,211 L 242,90"/>
+      <path class="pink" d="M 308,211 L 434,185"/>
+      <path class="pink" d="M 308,211 L 414,233"/>
+      <path class="pink" d="M 434,185 L 414,233"/>
+      <path class="pink" d="M 434,185 L 486,85"/>
+      <path class="pink" d="M 242,90 L 486,85"/>
+      <path class="pink" d="M 308,211 L 486,85"/>
+    
+      <use x="0" y="29" xlink:href="#master-node" />
+      <use x="-32" y="140" xlink:href="#master-node" />
+      <use x="52" y="200" xlink:href="#master-node" />
+      <use x="152" y="190" xlink:href="#master-node" />
+      <use x="182" y="230" xlink:href="#master-node" />
+      <use x="272" y="200" xlink:href="#master-node" />
+      <use x="400" y="174" xlink:href="#master-node" />
+      <use x="455" y="74" xlink:href="#master-node" />
+      <use x="380" y="222" xlink:href="#master-node" />
+      
+      <rect class="bw dotted" x="30" width="395" height="130" transform="translate(15, 40)"/>
+      <title>MasterNodes provided by DAO members</title>
+      <a xlink:href="/doc/masternode">
+        <text x="210" y="60">Master Node</text>
+      </a>
+
+      <a xlink:href="/dev/blockchain" transform="translate(60,70)">
+        <rect class="server" width="175" height="80" rx="3"/>
+        <text class="big" x="48" y="40">Blockchain</text>
+        <text  x="58" y="55">(ethereum)</text>
+        <title>Blockchain Client Parity</title>
+      </a>
+      
+      <a xlink:href="/dev/ipfs" transform="translate(250,70)">
+        <rect class="server" width="175" height="80" rx="3"/>
+        <text class="big" x="17" y="40">Distributed Storage</text>
+        <text  x="70" y="55">(ipfs)</text>
+        <title>IPFS Nodes</title>
+      </a>
+      
+      <g transform="translate(80,10)">
+        <use xlink:href="#protocol" />
+        <text class="prot small" x="-12" y="14">https</text>
+        <title>Application Requests</title>
+      </g>
+      <g transform="translate(315,10)">
+        <use xlink:href="#protocol" />
+        <text class="prot small" x="-12" y="14">https</text>
+        <title>Application Requests</title>
+      </g>
+      <g transform="translate(125,10)">
+        <use xlink:href="#protocol" />
+        <text class="prot small" x="-8" y="14">wss</text>
+        <title>Application Workflow</title>
+      </g>
+      <g transform="translate(170,10)">
+        <use xlink:href="#protocol" />
+        <text class="prot small" x="-10" y="14">ÐΞV</text>
+        <title>Synchronization</title>
+      </g>
+      <g transform="translate(215,10)">
+        <use xlink:href="#protocol" />
+        <text class="prot small" x="-6" y="14">IN³</text>
+        <title>Transaction Security</title>
+      </g>
+      
+      <g transform="translate(360,10)">
+        <use xlink:href="#protocol" />
+        <text class="prot small" x="-8" y="14">p2p</text>
+        <title>Synchronization</title>
+      </g>
+      </g>
     </g>
 </svg>
 
