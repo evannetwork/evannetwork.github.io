@@ -1,40 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<svg
-   xmlns:dc="http://purl.org/dc/elements/1.1/"
-   xmlns:cc="http://creativecommons.org/ns#"
-   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   xmlns:xlink="http://www.w3.org/1999/xlink"
-   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
-   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   id="evan.network"
-   version="1.1"
-   width="100%"
-   viewBox="0 0 330 700"
-   sodipodi:docname="business_view.svg"
-   inkscape:version="0.92.3 (2405546, 2018-03-11)">
+<svg version="1.1" id="evan.network" width="100%" viewBox="0 0 330 700"
+   xmlns:svg="http://www.w3.org/2000/svg"  xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs
      id="defs4305">
-    <marker
-       id="start-data"
-       style="stroke: #88d2d0; fill: #88d2d0;"
-       viewBox="0 0 10 10"
-       refX="10"
-       refY="5"
-       markerUnits="strokeWidth"
-       markerWidth="4"
-       markerHeight="3"
-       orient="auto">
-      <path
-         d="M 0 5 L 10 10 L 10 0 z"
-         id="path4286" />
+    <marker id="start-data" style="stroke: #88d2d0; fill: #88d2d0;"
+       viewBox="0 0 10 10" refX="10" refY="5"
+       markerUnits="strokeWidth" markerWidth="4" markerHeight="3" orient="auto">
+      <path d="M 0 5 L 10 10 L 10 0 z" id="path4286" />
     </marker>
-    <marker
-       id="end-data"
-       style="stroke: #88d2d0; fill: #88d2d0;"
-       viewBox="0 0 10 10"
-       refX="0"
+    <marker id="end-data" style="stroke: #88d2d0; fill: #88d2d0;"
+       viewBox="0 0 10 10" refX="0"
        refY="5"
        markerUnits="strokeWidth"
        markerWidth="4"
