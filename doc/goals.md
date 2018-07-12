@@ -18,7 +18,7 @@ The network is operated and developed by its partners, European companies, which
 
 Goals of evan.network are: 
 
-- To enable all companies, organisations and business associations (hereinafter referred to as the'organisation') to offer and use their own decentralised services and business models.
+- To enable all companies, organisations and business associations (hereinafter referred to as the 'organisation') to offer and use their own decentralised services and business models.
 - To enable communication between machines and other physical goods as well.
 - Provide an integrated, stable valuation system for payment to use the network.
 - Enable employees of companies and persons acting on their own behalf or on behalf of a company (hereinafter referred to as'users') to interact digitally with other users, machines or organisations.

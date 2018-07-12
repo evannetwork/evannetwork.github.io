@@ -11,7 +11,7 @@ At the start of the evan.network productive network it is planned to bind the [M
 In the first phase, the DAO is a loose link to all MasterNodes that can make changes to the network via [Smart Contracts](/dev/smart-contracts).
 
 ## Advantages
-With the DAO the evan.network has two big benefits:
+With the DAO evan.network has two big benefits:
 1. To ensure the most possible trust, the responsibility for extending and managing the network shall be with the network stakeholders.
 2. To ensure the highest possible growth, the network shall be open for all businesses and developers to realize their own decentralized business model.
 

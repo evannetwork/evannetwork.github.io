@@ -79,4 +79,4 @@ Across all target groups there are significant advantages for the evan.network:
 - **High security and trust.** The network is operated decentrally, whereby it is known who is allowed to sign blocks in the network. In case of violations MasterNode operators can be excluded.
 - **Energy-efficient operation.** No energy-wasting mining is used (only the known MasterNode operators sign blocks by proof of authority, no proof of work).
 - **Transparency.** Changes to the block chain, e.g. Hardforks, can only be made by coordination between the MasterNode operators, so that the trust is not tied to a single organization. 
-- Extensibility. Ethereum-based smart contracts can be created and used by users
+- **Extensibility.** Ethereum-based smart contracts can be created and used by users

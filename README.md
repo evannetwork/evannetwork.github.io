@@ -8,7 +8,7 @@ The `evan.network` is an Ethereum Blockchain with an authority consensus that is
 This is all already done with distributed web applications.
 </dd>
 <dt><a href="/doc/goals">General Overview</a></dt>
-<dd>And deeper look into the concepts of the <a href="/doc/network">network</a> and the <a href="/doc/dao">DAO</a>.</dd>
+<dd>A deeper look into the concepts of the <a href="/doc/network">network</a> and the <a href="/doc/dao">DAO</a>.</dd>
 <dt><a href="/dev/overview">Technical Details</a></dt>
 <dd>If you wanna know how it works and fits together.</dd>
 <dt><a href="/dev/getting-started">Start Programming</a></dt>
