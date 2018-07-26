@@ -4,8 +4,8 @@ The `evan.network` is an Ethereum Blockchain with an authority consensus that is
 
 <dl>
 <dt><a href="/doc/first-steps">First Steps</a><dt>
-<dd>The easiest way to get started is to just register and create a profile.<br />
-This is all already done with distributed web applications.
+<dd>The easiest way to get started is to register and to create a profile.<br />
+This is already done with distributed web applications.
 </dd>
 <dt><a href="/doc/goals">General Overview</a></dt>
 <dd>A deeper look into the concepts of the <a href="/doc/network">network</a> and the <a href="/doc/dao">DAO</a>.</dd>
