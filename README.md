@@ -1,6 +1,6 @@
 # Welcome to evan.network
 
-The `evan.network` is an Ethereum Blockchain with an authority consensus that is publicly available. Our goal ist to offer a 100% Ethereum compliant blockchain that is fast, robust and cost efficient to offer application developers and companies a plattform to build their own decentralized applications.
+The `evan.network` is an Ethereum Blockchain with an authority consensus that is publicly available. Our goal is to offer a 100% Ethereum compliant blockchain that is fast, robust and cost efficient to provide a platform for application developers and companies for building their own decentralized applications.
 
 <dl>
 <dt><a href="/doc/first-steps">First Steps</a><dt>
