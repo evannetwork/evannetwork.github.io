@@ -8,7 +8,7 @@ Write your first blockchain contract and access it.
 
 ## Prerequisites
 
-We work on a unix command line.
+We work on an unix command line.
 
 You have installed all the blockchain utilities needed to connect to and develop with evan.network, like parity, solidity and nodejs as described [here](/dev/setting-up).
 
@@ -23,10 +23,10 @@ $ truffle init
 $ truffle compile
 ```
 
-This has created your inial truffle project.
+This has created your initial truffle project.
 
 ## Configuring the Network
-You have already started `connected to evan.network by starting parity`locally, as linked in the prerequisites, but for the application to know to connect to the local ethereum node, you need to configure it to do so.
+You have already started `connected to evan.network by starting parity` locally, as linked in the prerequisites, but for letting the application know to connect to the local Ethereum node, you need to configure it to do so.
 
 ```sh
 $ edit truffle.js
@@ -50,16 +50,16 @@ module.exports = {
 };
 
 ```
-The gas and gas prices are a minimum. Make sure your account/profile has enough funds. This should be
+The gas and gas prices are a minimum. Make sure your account/ profile has enough funds. This should be
 the case after normal onboarding. If not, visit http://gitter.im/evannetwork/faucet .
 
 ### Unlocking the Account for Migration
-You have created an identity earlier, and started the blockchain client parity earlier.
-Usually this would be all you need to do, but for our example there is one more thing you need to do.
+You have created an identity and started the blockchain client parity earlier.
+Usually this would be all you need to do, but for our example there is one more thing that needs to be done.
 
-By default only signed transactions are accepted for the testcore blockchain. When using our blockchain-core library, this is taken care of for you by it. But this is not the time yet for the deep dive into the blockchain-core, this is just a simple first dip of your toe into the water, using the simplest tool available in truffle.
+By default only signed transactions are accepted for the testcore blockchain. When using our blockchain-core library, this is taken care of for you. But this is not the time yet for the deep dive into the blockchain-core, this is just a simple first dip of your toe into the water, using the simplest tool available in truffle.
 
-And truffle doesn't sign transactions on deployment. It usually doesn't need to. So we need to tell parity to do the signings itself for our test-account, that we have just created. 
+And truffle doesn't sign transactions on deployment. It usually doesn't need to. So we need to tell parity to do the signings itself for our test-account that we have just created. 
 
 You need to save your account password in plain text in a file for this, but since this is only temporarily and for testing, this is acceptable for the time being.
 
@@ -75,7 +75,7 @@ $ parity --chain "/path/to/testcore.json" --config "path/to/evan_test_chain.toml
 ```
 
 ## Test Connection
-The easiest way is to just attempt a migration, even if nothing new is to deploy.
+The easiest way is to attempt a migration, even if nothing new is to deploy.
 
 ```sh
 $ truffle migrate --network dev
@@ -129,7 +129,7 @@ contract HelloWorld {
   }
 }
 ```
-Anything that is done in the blockchain costs gas (i.e. currency). The `hello()` function concatenates strings, which can be rather expensive, so whenever possible such utility functionality should be done outside the chain.
+Everything that is done in the blockchain costs gas (i.e. currency). The `hello()` function concatenates strings, which can be rather expensive, so whenever possible such utility functionality should be done outside the chain.
 
 ## Compiling the Contract
 
@@ -144,13 +144,13 @@ $ truffle compile
 
 to compile all changed contracts.
 
-This creates the file build/contracts/HelloWorld.json, which contains administrative data structures used by the truffle framework, but most importantly also contains a byte array containing the byte code that can be executed in the blockchain, once it is deployed there.
+This creates the file build/contracts/HelloWorld.json, which contains administrative data structures used by the truffle framework. In addition, and most importantly, it also contains a byte array with the byte code that can be executed in the blockchain once it is deployed there.
 
 
 ## A Local Development Network
-Above we have configured the "dev" network. While this is a development network, and uses a local ethereum client, it is still a shared network and blockchain, so everything you do there is visible to everyone and will be in there forever. This isn't too much of a problem normally, but still should be avoided when it is easily possible.
+Above we have configured the "dev" network. While this is a development network and uses a local Ethereum client, it is still a shared network and blockchain, so everything you do there is visible to everyone and will be in there forever. This isn't too much of a problem normally, but still should be avoided when it is possible to do so.
 
-With this simple hello-world contract that doesn't depend on any existing contract infrastructure in the blockchain this is possible.
+With this simple 'Hello World' contract that doesn't depend on any existing contract infrastructure in the blockchain this is possible.
 
 So just start
 
@@ -158,20 +158,19 @@ So just start
 $ truffle develop
 ```
 
-And it will start an isolated development blockchain with the  [ truffle development console](http://truffleframework.com/docs/advanced/commands)<sup>[+]</sup> for you.
-You can compile, deploy, test and debug your contracts there, and only when you are satisfied with that,
-you deploy it on the shared blockchain.
+And it will initiate an isolated development blockchain with the [ truffle development console](http://truffleframework.com/docs/advanced/commands)<sup>[+]</sup> for you.
+You can compile, deploy, test and debug your contracts there, and only when you are satisfied you deploy them on the shared blockchain.
 
-Something to keep in mind is, that every time you start `truffle develop` a fresh and new network is created, so you need to clear the `build/` directory and recompile and redeploy (migrate) the contracts whenever you restart it, or the accounts won't match.
+Something to keep in mind is that every time you start `truffle develop` a fresh and new network is created, so you need to clear the `build/` directory and recompile and redeploy (migrate) the contracts whenever you restart it, or the accounts won't match.
 
 ## Deploying the Contract
-If you are ready to test your contract in a wider context and share it start the console,
+If you are ready to test your contract in a wider context and to share it, start the console,
 
 ```sh
 $ truffle console --network dev
 ```
 
-or still used the local development network with `truffle develop`
+or alternatively proceed using the local development network with `truffle develop`
 
 ```
 truffle(dev)> create migration HelloWorld
@@ -194,7 +193,7 @@ module.exports = function(deployer) {
 truffle(dev)> migrate
 ```
 
-When you are still in the development process and use the local developing network, the simplest way to always deploy all changes in your local files is to always run this command:
+When you are still in the development process and use the local developing network, the simplest way to permanently deploy all changes in your local files is to always run this command:
 
 ```
 truffle(develop)> deploy --reset --compile-all
@@ -213,7 +212,7 @@ truffle(dev)> hello.then(async (hi) => { return hi.creator.call() }).then(async 
 undefined
 ```
 
-Yes, it's usually all asynchronous code, which means either callbacks or promises. In this short example it is ok to use callbacks, but once it gets more complicated, it's usually better to use promises for clarity.
+Yes, it's usually all asynchronous code, which means either callbacks or promises. In this short example it is ok to use callbacks, but once it gets more complicated it's usually better to use promises for clarity.
 
 Here we have called the automatically created getter of the public `creator` property.
 Let's call the `hello` method we have written ourselves:
@@ -224,10 +223,9 @@ Hallihallo
 ```
 
 The contract returns a byte-array that has to be converted to ascii to be a readable string.
-The reason is, that some web3 versions can't deal with solidity string return values,
-and unfortunately the one used in the blockchain-core library can't.
+The reason is that some web3 versions can't deal with solidity string return values and unfortunately the one used in the blockchain-core library belongs to this class.
 
-Fortunetely it is rare to actually have strings in contracts.
+Fortunately it is rare to actually have strings in contracts.
 
 It just prints the string we have passed into it. That's because the private `prompt` property hasn't been set yet. So let's do that.
 
@@ -250,10 +248,10 @@ undefined
 
 ```
 
-This was a changeing action, no `call` necessary.
-First you get the transaction hash under `tx` as the immediate confirmation that the message was received and is in processing.
+This was a changing action, no `call` necessary.
+First you get the transaction hash under `tx`, as the immediate confirmation that the message was received and is in processing.
 
-Once processing is finished you get the transaction `receipt` and the data is entered into the blockchain. Since we work with a private developer blockchain, and the transaction is really simple, the processing is really fast here.
+Once processing is finished, you get the transaction `receipt` and the data is entered into the blockchain. Since we work with a private developer blockchain and the transaction is really simple, the processing is comparably fast here.
 
 
 ```
@@ -263,15 +261,15 @@ undefined
 
 ```
 
-Now the `prompt` has been set, and the `hello` call has something to append, and we get the full message.
+Now the `prompt` has been set and the `hello` call has something to append: so we get the full message.
 
 
 ## Finalizing
 
 You can access the source code for the project on https://github.com/evannetwork/hello-world-contract.
 
-Before moving on to the [hello-agent](/dev/hello-agent) tutorial, make sure you have deployed the
-hello-world smart contract on the `dev` network (i.e. evan.network testcore).
+Before moving on to the [Hello Agent](/dev/hello-agent) tutorial, make sure you have deployed the
+'Hello World' Smart Contract on the `dev` network (i.e. evan.network testcore).
 If unsure run the command
 
 ```sh
