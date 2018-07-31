@@ -484,6 +484,6 @@ Add the favorite using the following steps:
 4. Result:
 [![js tutorial preview](/public/dapps/js/hello-world-preview.png){:width="50%"}](/public/dapps/js/hello-world-preview.png)
 
-By having a look into the browser network tab, you will see that you data is loaded from the IPFS server:
+By having a look into the browser network tab, you will see that your data is loaded from the IPFS server:
 
 [![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="400px"}](/public/dapps/hello-world/dapp-from-contract.png)
