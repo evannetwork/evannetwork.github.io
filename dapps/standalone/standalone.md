@@ -248,10 +248,10 @@ Each application can be deployed together with a contract. This allows the contr
 ```sh
 ipfs add -r dapps/hello-world-dbcp/src
 ```
-[![ƉApps-tutorial-directory](/public/dapps/deploy-to-ipfs.png){:width="50%"}](/public/dapps/deploy-to-ipfs.png)
+[![dapps-tutorial - directory](/public/dapps/deploy-to-ipfs.png){:width="50%"}](/public/dapps/deploy-to-ipfs.png)
 
 3. Insert the deployed folder hash (e.g. "QmfZLwBPUT1n3DoJqpqnLCTcUKABLgUsgfE4KetkXdq8XK") to the correct origin to dbcp.json file.
-[![ƉApps-tutorial-directory](/public/dapps/add-to-dbcp.png){:width="50%"}](/public/dapps/add-to-dbcp.png)
+[![dapps-tutorial - directory](/public/dapps/add-to-dbcp.png){:width="50%"}](/public/dapps/add-to-dbcp.png)
 
 4. Deploy it to the contract
 ```sh
@@ -260,7 +260,7 @@ npm run deploy-to-contract hello-world-dbcp
 
 You will get a console output similar to the following. Behind the log parameter "created contract", you will find the newly created contract ID.
 
-[![ƉApps-tutorial-directory](/public/dapps/deploy-to-contract.png){:width="50%"}](/public/dapps/deploy-to-contract.png)
+[![dapps-tutorial - directory](/public/dapps/deploy-to-contract.png){:width="50%"}](/public/dapps/deploy-to-contract.png)
 
 ### 3.2 Deploy ƉApp to ENS
 Have a look [dapp deployment](https://github.com/evannetwork/dapp-browser#ens-deployment).
