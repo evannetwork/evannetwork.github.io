@@ -4,7 +4,7 @@ title: "evan.network framework Hello World"
 # evan.network framework Hello World
 The goal of this tutorial is to interact with different functionalities of the evan.network blockchain with the help of DBCP or the evan.network blockchain-core (bcc). Only simple javascript is used to create an evan.network ƉApp-browser embedded application.
 
-After creating the ƉApp functionalities, you can use a "greater contract" sample to create a contract instance. That's DBCP description will use your ƉApp as display possiblity.
+After creating the ÐApp functionalities, you can use a "greeter contract" sample to create a contract instance. The DBCP description attached to the "greeter contract" will use your ƉApp as display possiblity.
 
 [![js tutorial preview](/public/dapps/js/hello-world-preview.png){:width="50%"}](/public/dapps/js/hello-world-preview.png)
 
