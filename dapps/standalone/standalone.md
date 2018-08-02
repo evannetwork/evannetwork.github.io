@@ -21,7 +21,7 @@ In the bcc example, the runtime is less encapsulated and can therefore be better
 ### 2.1 local development
 For testing, you need to open the "dapps/hello-world-bcc/src/index.html" / "dapps/hello-world-dbcp/src/index.html" file within you local browser.
 
-If you want to test the application using a small web server, you can run the following command within your root lerne project:
+If you want to test the application using a small web server, you can run the following command within your root lerna project:
 ```sh
 npm run serve
 ```
