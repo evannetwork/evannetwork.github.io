@@ -40,7 +40,7 @@ When you are opening http://localhost:3000 for the first time, you will be navig
 
 http://localhost:3000/#/dashboard.evan/favorites.evan
 
-Replace "dashboard.evan/favorites.evan" with "dashboard.evan/helloworld.evan" or "helloworld.evan" to open your test application. You will see a simple application with two pages. At the end of this tutorial, we explain how you can deploy your application and add it to your dashboard via the favorites or also access it via https://dashboard.evan.network.com.
+Replace "dashboard.evan/favorites.evan" with "dashboard.evan/helloworld.evan" or "helloworld.evan" to open your test application. You will see a simple application with two pages. At the end of this tutorial, we explain how you can deploy your application and add it to your dashboard via the favorites or also access it via https://dashboard.evan.network.
 
 ## 3. The ÐApp structure
 In the ƉApp folder of each lerna project are the individual ƉApps. You will find different projects for the different stages of the tutorial. In the first step, we will focus on the 'Hello World' project to explain the basics.
@@ -127,7 +127,7 @@ In the next sections, it is advantageous to have a certain basic knowledge of An
 If you have questions regarding our fancy Angular interpretation and you want to know more about the evan.network angular libraries, have a look [here](angular/basics).
 
 ### 4.1 index.ts
-The index file, as you might have expected, describes the point of entry into the application. In this case, the routes and module definitions, including the services and components created, are defined and referenced here. At the end of the file you will find the "startƉApp" function, which is used to start the application from outside. Since this is a simple function, only one container is given by rendering the application. It is also possible to start applications completely without Angular. For more information on how ƉApps can be developed with other frameworks, see [here](/dapps/use-other-frameworks).
+The index file, as you might have expected, describes the point of entry into the application. In this case, the routes and module definitions, including the services and components created, are defined and referenced here. At the end of the file you will find the `startDApp` function, which is used to start the application from outside. Since this is a simple function, only one container is given by rendering the application. It is also possible to start applications completely without Angular. For more information on how ƉApps can be developed with other frameworks, see [here](/dapps/use-other-frameworks).
 
 The head of the index file, starting with the library, includes functions, services, components and more. The normal Angular application requires its dependencies from @angular/core or @angular/common, and so on. To reduce and optimize loaded files during the application runtime, the libraries are already bundled within the [angular-libs](/frontend/angular-libs) for you. If you want to include libraries that are not included yet, you can load them like a normal application.
 
