@@ -34,7 +34,7 @@ npm run dapps-serve
 When you started both scripts, your ƉApp files were copied into your local runtime and you can open the following URL: "http://localhost:3000/dev.html#/dashboard.evan/helloworldjs.evan". There, you will find the current representation of your ƉApp. You can also add your ƉApp to your [favorites](/tutorial/dashboard).
 
 ## 2.2 index.js
-The index.js file is the main point of entry for the application, which is configured by the dbcp.json in the "dapps/hello-world" folder. This file needs a 'startDApp'-function, so the evan.network wrapper application can run the 'point of entry'-function for the ƉApp.
+The index.js file is the main point of entry for the application, which is configured by the dbcp.json in the "dapps/hello-world" folder. This file needs a `startDApp`-function, so the evan.network wrapper application can run the 'point of entry'-function for the ƉApp.
 
 The 'loadData'-function shows how to access the current bcc instance to access blockchain data.
 
