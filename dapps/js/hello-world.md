@@ -78,7 +78,7 @@ async function loadData() {
 ```
 
 ## 2.3 index.html / templates
-In this case, we need the 'startDApp'-function as poiint of entry. As a result of this, we cannot work with an index.html file. This has the disadvantage that no HTML files can be loaded directly (due to [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)). HTML files must be compiled into strings via building jobs or anchored directly as strings in the application. In this simple example, an extra construction job was not needed and the template was anchored directly in the index.js file.
+In this case, we need the `startDApp`-function as point of entry. As a result of this, we cannot work with an index.html file. This has the disadvantage that no HTML files can be loaded directly (due to [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)). HTML files must be compiled into strings via building jobs or anchored directly as strings in the application. In this simple example, an extra construction job was not needed and the template was anchored directly in the index.js file.
 
 Initially, the data is loaded and then written to the container using a simple innerHTML call.
 
