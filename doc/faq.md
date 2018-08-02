@@ -52,7 +52,7 @@ The evan.network is an Ethereum based enterprise blockchain, operated as a conso
 
 #### A.
 From an organizational point of view, evan.network provides a blockchain network platform, which combines the benefits of public blockchains, with regard to decentralization, with the benefits of private chains, especially considering performance, data privacy and energy consumption. The evan.network consortium model allows a decentralized blockchain network, operated on an European legal basis.
-From a technology point of view, evan.network is based on Ethereum, the most widespread blockchain technology. evan.network enhances the technology by many features, required to build successful decentralized business applications. Such enhancements are
+From a technological point of view, evan.network is based on Ethereum, the most widespread blockchain technology. evan.network enhances the technology by many features, required to build successful decentralized business applications. Such enhancements are
 
 * An advanced identity management
 * Various ready-to-use Smart Contract templates
@@ -72,15 +72,15 @@ contractus GmbH acts as legal body of a [Decentralized Autonomous Organization (
 
 #### A.
 Everybody has the possibility to sync the chain or access the chain via RPC calls.
-To execute transactions on the chain, users needs to create an account first. Accounts can be created from everyone that accepts the blockchain framework usage- and data privacy rights and has [EVE](https://evannetwork.github.io/doc/eve) Tokens to pay for the transactions.
+To execute transactions on the chain, users needs to create an account first. Accounts can be created from everyone that accepts the blockchain framework usage- and data privacy rights and has [EVE](https://evannetwork.github.io/doc/eve) tokens to pay for the transactions.
 
 
-This account is secured with an account specific mnemonic string, from which the private key is built. A regular account can be either a company or a user. Users can also interact on behalf of a company account.
+This account is secured with an account specific Mnemonic string, from which the private key is built. A regular account can be either a company or an user. Users can also interact on behalf of a company account.
 In the Smart [Contract templates](https://evannetwork.github.io/dev/data-contract) the network has a complete role based permission system implemented. So it is really easy for developers to write contracts that support solutions where different accounts can be invited into a contract to share data and functionalities.
 
-The solution also offers Smart Contract hardforks, to remove users from the Smart Contract or from a specific role. So a removed user can read the past where he was a permissioned member but can’t read the future data where he isn’t a member anymore.
+The solution also offers Smart Contract hardforks, to remove users from the Smart Contract or from a specific role. So a removed user can read the past where he or she was a permissioned member but can’t read the future data where he or she isn’t a member anymore.
 
-To join the network as a [MasterNode](https://evannetwork.github.io/doc/masternode), you have to become an Affiliate (platform affiliate) which comes along with an active participation in the evan.network organization, and you have to sign a MasterNode Operations Agreement.
+To join the network as a [MasterNode](https://evannetwork.github.io/doc/masternode), you have to become an Affiliate (platform affiliate), which comes along with an active participation in the evan.network organization, and you have to sign a MasterNode Operations Agreement.
 
 ______________________________________________________
 
@@ -92,14 +92,14 @@ ______________________________________________________
 
 #### A.
 The offered blockchain framework is based on Ethereum private blockchain, operated as a consortial blockchain.
-Every [MasterNode](https://evannetwork.github.io/doc/masternode) is hosting a Parity V1.10.x node to build the core network. The nodes are managed by a [Smart Contract](https://evannetwork.github.io/dev/smart-contracts), that signals all MasterNode whether a software upgrade is needed or a hardfork must be done. So extensive software management on MasterNode site is not needed. The Smart Contract itself is controlled by the DAO Smart Contract, operated by the evan.network, where the partners vote for needed upgrades or potential chain-forks.
+Every [MasterNode](https://evannetwork.github.io/doc/masternode) hosts a Parity V1.10.x node to build the core network. The nodes are managed by a [Smart Contract](https://evannetwork.github.io/dev/smart-contracts), that signals all MasterNodes whether a software upgrade is needed or a hardfork must be done. So extensive software management on the MasterNode site is not needed. The Smart Contract itself is controlled by the DAO Smart Contract, operated by the evan.network, where the partners vote for needed upgrades or potential chain-forks.
 
 
 #### Q.
 ***What kind of consensus protocol is used in the evan.network?***
 
 #### A.
-A Smart Contract based [Proof-Of-Authority](https://evannetwork.github.io/dev/blockchain.html) consensus is used. [MasterNode](https://evannetwork.github.io/doc/masternode) operators (Affiliates) are added to the group of authorities ([DAO](https://evannetwork.github.io/doc/dao)). Only these are able to sign new blocks.
+A Smart Contract based [Proof Of Authority](https://evannetwork.github.io/dev/blockchain.html) consensus is used. [MasterNode](https://evannetwork.github.io/doc/masternode) operators (Affiliates) are added to the group of authorities ([DAO](https://evannetwork.github.io/doc/dao)). Only these are able to sign new blocks.
 The network doesn’t use competitive mining on the chain and also the transactions fees are not distributed to the MasterNode that signed a new block (gas is burned). All MasterNodes are working for the same goal - a save, fast and cost-efficient chain.
 
 #### Q.
