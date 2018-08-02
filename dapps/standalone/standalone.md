@@ -4,7 +4,7 @@ title: "standalone Hello World"
 # standalone Hello World
 The goal of this tutorial is to interact with different functionalities of the evan.network blockchain, by the help of DBCP or the evan.network blockchain-core. A simple HTML file is being produced, which is able to use all functionalities without any runtime environment. With the help of this small example, you can develop applications on the evan.network blockchain that run completely independently.
 
-After creating the ÐApp functionalities, you can use a "greeter contract" sample to create a contract instance. That's DBCP description will use your ƉApp as display possiblity.
+After creating the ÐApp functionalities, you can use a "greeter contract" sample to create a contract instance. The DBCP description attached to the "greeter contract" will use your ƉApp as display possiblity.
 
 [![standalone tutorial preview](/public/dapps/hello-world/standalone_preview.png){:width="50%"}](/public/dapps/hello-world/standalone_preview.png)
 
