@@ -441,7 +441,7 @@ Copy the latest IPFS path for the dist folder ("QmXCnDwasWd9JQ3rz7Rjc3uQt7SDiury
 **Now you can create a new contract instance. Reload your browser and try it.**
 
 ## 3.6 Developing
-For development purposes it is time consuming to publish your sources to the IPFS and to create a new contract every time you changed something. To handle this, the 'buildModuleRoutes' function will do some magic. Using the evan.network frame multiple Angular application within antoher Angular application. So it is important to build dynamic routes corresponding to the specific parent Angular application. As a side effect, your defined routes are nested in any case within themselves. A routing tree is built as follows:
+For development purposes it is time consuming to publish your sources to the IPFS and to create a new contract every time you changed something. To handle this, the 'buildModuleRoutes' function will do some magic. Using the evan.network frame multiple Angular application within another Angular application. So it is important to build dynamic routes corresponding to the specific parent Angular application. As a side effect, your defined routes are nested in any case within themselves. A routing tree is built as follows:
 
 ```json
 
