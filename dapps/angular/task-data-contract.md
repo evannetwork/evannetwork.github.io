@@ -1,10 +1,10 @@
 ---
-title: "Angular - Task ƉApp Data-Contract"
+title: "Angular - Task ƉApp DataContract"
 ---
 # Angular - Task ƉApp Data-Contract
 **Before performing this example, please go through the [Task ƉApp setup](/dapps/angular/task) tutorial, as this tutorial is based on this example.**
 
-In this section you will create contracts, read from them and handle several data interactions with the contracts by using the evan.network data contract and the blockchain-core. So each data that is currently cached within the local storage will be moved into a contract. All needed I18N values and keys are predefined within the I18N folder and not noticed during the example.
+In this section you will create contracts, read from them and handle several data interactions with the contracts by using the evan.network DataContract and the blockchain-core. So each data that is currently cached within the local storage will be moved into a contract. All needed I18N values and keys are predefined within the I18N folder and not noticed during the example.
 
 For how to write the task ƉApp using your own contract implementation, have a look at this: [Angular - Task ƉApp Custom Contract](/dapps/angular/task-custom).
 
@@ -15,7 +15,7 @@ Before your start your implementation, it is important to decide what functional
 
 For this example, we need a contract that handles some contract metadata and a list of todos. This is the perfect case for the [evan.network DataContract](https://evannetwork.github.io/dev/data-contract) / [DataContract wiki](https://github.com/evannetwork/blockchain-core/blob/feature/readthedocs-test/docs/data-contract.rst).
 
-When you use a self-implemented contract, it is important to add the contract implementation ABI to our `dbcp.json` definition file. In this case, we can simply use the blockchain-core data contract wrapper implementation to handle our contract calls. For documentation reasons, you should still put the ABI definition of the data contract into the DBCP definition. So other people that read the DBCP definition of the created contract automaticaly receive your contract definition and functions. So you can program the contract from anywhere, also outside of your application.
+When you use a self-implemented contract, it is important to add the contract implementation ABI to our `dbcp.json` definition file. In this case, we can simply use the blockchain-core DataContract wrapper implementation to handle our contract calls. For documentation reasons, you should still put the ABI definition of the DataContract into the DBCP definition. So other people that read the DBCP definition of the created contract automaticaly receive your contract definition and functions. So you can program the contract from anywhere, also outside of your application.
 
 Insert the ABI definition into your `dbcp.json` file from the following [dbcp.json](https://github.com/evannetwork/dapps-tutorial-angular/blob/master/dapps/task-complete/dbcp.json) (it is a bit large to insert the full ABI here in the documentation).
 
@@ -43,7 +43,7 @@ Insert the ABI definition into your `dbcp.json` file from the following [dbcp.js
 ```
 
 # 2. Data Scheme
-The data scheme is also a property of the `dbcp.json` that describes the data structure of our contract deeply. In our case, the data scheme will describe the data that are saved within our data contract's todo list.
+The data scheme is also a property of the `dbcp.json` that describes the data structure of our contract deeply. In our case, the data scheme will describe the data that are saved within our DataContract's todo list.
 
 ```json
 {
@@ -91,7 +91,7 @@ To do this, you will need some new structures within your code:
   5. Create a new task
 
 ## 3.1 Contract Service
-Create a new file within the services folder and name it `task.ts`. Within this file, we will declare all the functions that are needed to interact with task contracts. To create a new data contract using the DBCP definition of our tutorial task, only view lines of code are needed. We will create a new data contract instance and apply the loaded description to the data contract creation function.
+Create a new file within the services folder and name it `task.ts`. Within this file, we will declare all the functions that are needed to interact with task contracts. To create a new DataContract using the DBCP definition of our tutorial task, only view lines of code are needed. We will create a new DataContract instance and apply the loaded description to the DataContract creation function.
 
 ```ts
   /**
@@ -133,7 +133,7 @@ Create a new file within the services folder and name it `task.ts`. Within this 
   }
 ```
 
-The first parameter in `dataContract.create('tasks', ...)` is used to handle, which contract factory shall be loaded. At this path the evan.network `TaskDataContractFactory` is deployed. This factory is derived from the data contract factory and can handle two data lists (todos, todologs). View point four for more details on the data contract list handling.
+The first parameter in `dataContract.create('tasks', ...)` is used to handle, which contract factory shall be loaded. At this path the evan.network `TaskDataContractFactory` is deployed. This factory is derived from the DataContract factory and can handle two data lists (todos, todologs). View point four for more details on the DataContract list handling.
 
 After the contract was created, we want to write the reference into our favorites. The favorites ƉApp cannot only handle ƉApps from ENS addresses, it is also possible to load contracts with an underlying DBCP definition. To do this, require the Angular-core bookmark service and run the following functions. 
 
@@ -556,7 +556,7 @@ Do the following things to develop the details page using your local changes:
 After the task contract was created, the task instance can be openend, but it will save its todos and resolves into the browser's local storage. We need to answer the following changes to handle our data within the blockchain:
 
 1. What should the detail component do?
-2. Handling of data contract list entries for todos and todo resolves
+2. Handling of DataContract list entries for todos and todo resolves
 2. Adjust detail components to handle new list entry features
 
 ## 4.1 What should the detail component do?
@@ -700,7 +700,7 @@ async _ngOnInit() {
 
 We will check if a valid contract address is applied to the URL. If not, we can show an error within the frontend. After this, the contract description will be loaded and a translation string for the ƉApp-wrapper title will be added. If we don't run the `addSingleTranslation` function, the frontend will print out the full contract ID within the header. When the contract details were loaded, an `onQueueFinish` handler can be binded. So we can load todos and todologs initially and in case something is saved.
 
-The `getListEntries` function uses the data contract API to load all existing list values. After the todo logs were loaded, a completed flag will be written to the local todo instances, to check it more easier within the HTML template.
+The `getListEntries` function uses the DataContract API to load all existing list values. After the todo logs were loaded, a completed flag will be written to the local todo instances, to check it more easier within the HTML template.
 
 ```ts
 	/**
