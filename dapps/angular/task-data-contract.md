@@ -8,16 +8,16 @@ In this section you will create contracts, read from them and handle several dat
 
 For how to write the task ƉApp using your own contract implementation, have a look at this: [Angular - Task ƉApp Custom Contract](/dapps/angular/task-custom).
 
-If you don't want to code by yourself, you can simply read the docs and copy the final resulting SRC folder from [dapps/task-data-contract/src](https://github.com/evannetwork/dapps-tutorial-angular/tree/master/dapps/task-data-contract) to the [dapps/task/src](https://github.com/evannetwork/dapps-tutorial-angular/tree/master/dapps/task) folder.
+If you don't want to code by yourself, you can simply read the docs and copy the final resulting src folder from [dapps/task-data-contract/src](https://github.com/evannetwork/dapps-tutorial-angular/tree/master/dapps/task-data-contract) to the [dapps/task/src](https://github.com/evannetwork/dapps-tutorial-angular/tree/master/dapps/task) folder.
 
 # 1. Contract Implementation
 Before your start your implementation, it is important to decide what functionalities you will need. You need to think about data parameters, user roles including security restrictions and so on...
 
-For this example, we need a contract that handles some contract metadata and a list of todos. This is the perfect case for the [evan.network data contract](https://evannetwork.github.io/dev/data-contract) / [data contract wiki](https://github.com/evannetwork/blockchain-core/blob/feature/readthedocs-test/docs/data-contract.rst).
+For this example, we need a contract that handles some contract metadata and a list of todos. This is the perfect case for the [evan.network DataContract](https://evannetwork.github.io/dev/data-contract) / [DataContract wiki](https://github.com/evannetwork/blockchain-core/blob/feature/readthedocs-test/docs/data-contract.rst).
 
-When you use a self-implemented contract, it is important to add the contract implementation ABI to our dbcp.json definition file. In this case, we can simply use the blockchain-core data contract wrapper implementation to handle our contract calls. For documentation reasons, you should still put the ABI definition of the data contract into the DBCP definition. So other people that read the DBCP definition of the created contract automaticaly receive your contract definition and functions. So you can program the contract from anywhere, also outside of your application.
+When you use a self-implemented contract, it is important to add the contract implementation ABI to our `dbcp.json` definition file. In this case, we can simply use the blockchain-core data contract wrapper implementation to handle our contract calls. For documentation reasons, you should still put the ABI definition of the data contract into the DBCP definition. So other people that read the DBCP definition of the created contract automaticaly receive your contract definition and functions. So you can program the contract from anywhere, also outside of your application.
 
-Insert the ABI definition into your dbcp.json file from the following [dbcp.json](https://github.com/evannetwork/dapps-tutorial-angular/blob/master/dapps/task-complete/dbcp.json) (it is a bit large to insert the full ABI here in the documentation).
+Insert the ABI definition into your `dbcp.json` file from the following [dbcp.json](https://github.com/evannetwork/dapps-tutorial-angular/blob/master/dapps/task-complete/dbcp.json) (it is a bit large to insert the full ABI here in the documentation).
 
 ```json
 {
@@ -43,7 +43,7 @@ Insert the ABI definition into your dbcp.json file from the following [dbcp.json
 ```
 
 # 2. Data Scheme
-The data scheme is also a property of the dbcp.json that describes the data structure of our contract deeply. In our case, the data scheme will describe the data that are saved within our data contract's todo list.
+The data scheme is also a property of the `dbcp.json` that describes the data structure of our contract deeply. In our case, the data scheme will describe the data that are saved within our data contract's todo list.
 
 ```json
 {
@@ -80,8 +80,8 @@ The data scheme is also a property of the dbcp.json that describes the data stru
 }
 ```
 
-# 3. Create and read the Data Contract
-The ƉApp will be designed to handle both sides, the contract creation and the data consumption. The evan.network dashboard includes a dynamic parameter routing to open unregistered ENS and contract addresses. So the ƉApp can check the current opened URL, if a contract ID or the normal ENS address is opened. When the ENS address is opened, we will redirect to a contract creation page. When a contract ID is opened, the user gets redirected to the TodoMVC component.
+# 3. Create and read the DataContract
+The ƉApp will be designed to handle both sides, the contract creation and the data consumption. The evan.network dashboard includes a dynamic parameter routing to open unregistered ENS and contract addresses. So the ƉApp can check the current opened URL, if a contract ID or the normal ENS address is opened. When the ENS address is opened, we will redirect to a contract creation page. When a contract ID is opened, the user gets redirected to the `TodoMVC` component.
 
 To do this, you will need some new structures within your code:
   1. Contract service that handles contract creation
@@ -91,7 +91,7 @@ To do this, you will need some new structures within your code:
   5. Create a new task
 
 ## 3.1 Contract Service
-Create a new file within the services folder and name it "task.ts". Within this file, we will declare all the functions that are needed to interact with task contracts. To create a new data contract using the DBCP definition of our tutorial task, only view lines of code are needed. We will create a new data contract instance and apply the loaded description to the data contract creation function.
+Create a new file within the services folder and name it `task.ts`. Within this file, we will declare all the functions that are needed to interact with task contracts. To create a new data contract using the DBCP definition of our tutorial task, only view lines of code are needed. We will create a new data contract instance and apply the loaded description to the data contract creation function.
 
 ```ts
   /**
@@ -133,7 +133,7 @@ Create a new file within the services folder and name it "task.ts". Within this 
   }
 ```
 
-The first parameter in 'dataContract.create('tasks', ...)' is used to handle, which contract factory shall be loaded. At this path the evan.network 'TaskDataContractFactory' is deployed. This factory is derived from the data contract factory and can handle two data lists (todos, todologs). View point four for more details on the data contract list handling.
+The first parameter in `dataContract.create('tasks', ...)` is used to handle, which contract factory shall be loaded. At this path the evan.network `TaskDataContractFactory` is deployed. This factory is derived from the data contract factory and can handle two data lists (todos, todologs). View point four for more details on the data contract list handling.
 
 After the contract was created, we want to write the reference into our favorites. The favorites ƉApp cannot only handle ƉApps from ENS addresses, it is also possible to load contracts with an underlying DBCP definition. To do this, require the Angular-core bookmark service and run the following functions. 
 
@@ -150,7 +150,7 @@ Depending on the block time and network connection, contract creation and intera
 
 If a dispatcher fails, the error is caught by the framework and an error is displayed in the top right corner of the UI. With this button, the task can be repeated or deleted via the synchronization details.
 
-Create a new folder within your ƉApp and call it "dispatcher". Create a new file called 'task-dispatcher.ts' and insert the following code:
+Create a new folder within your ƉApp and call it 'dispatcher'. Create a new file called `task-dispatcher.ts` and insert the following code:
 
 ```ts
 import {
@@ -201,9 +201,9 @@ Some Angular-core classes for the queue are imported to create a new dispatcher 
 
 Only one service can be injected to a queue dispatcher. In this case, the task service will contain all the functions that our dispatcher needs.
 
-After you created the new dispatcher, you need to export the service and dispatcher within the index-ts and you will need to create a new module with the name 'DispatcherModule'. Now the meaning of the function 'module(getConfig(true))' can also be explained. Components and some modules may only be added in an Angular module in a 'zone.js' scope. If we took the standard module for the dispatcher and the queue would try to analyze this module again, we would run into various errors. To avoid this, we add another module here, the 'DispatcherModul'. Only special modules and services are registered in it. Thus, not a single component can be displayed with this module. However, services for our dispatcher can be exported there and inserted into the dispatcher. We get Angular runtime data in our dispatcher, regardless of which ƉApp has just started. So while the queue is running, the user can change ƉApps and reload the page. However, our data will be synchronized.
+After you created the new dispatcher, you need to export the service and dispatcher within the index-ts and you will need to create a new module with the name `DispatcherModule`. Now the meaning of the function `module(getConfig(true))` can also be explained. Components and some modules may only be added in an Angular module in a `zone.js` scope. If we took the standard module for the dispatcher and the queue would try to analyze this module again, we would run into various errors. To avoid this, we add another module here, the `DispatcherModul`. Only special modules and services are registered in it. Thus, not a single component can be displayed with this module. However, services for our dispatcher can be exported there and inserted into the dispatcher. We get Angular runtime data in our dispatcher, regardless of which ƉApp has just started. So while the queue is running, the user can change ƉApps and reload the page. However, our data will be synchronized.
 
-Add the following code to your index.ts:
+Add the following code to your `index.ts:
 ```ts
 import { TaskService } from './services/task';
 
@@ -262,7 +262,7 @@ export class TaskService implements OnInit {
 
 This is necessary so that the Angular queue recognizes, from which ƉApp the dispatcher must be loaded. This queue ID can be listened on immediately to see the end of processing.
 
-So, navigate to the 'task/src/components' folder and create the 'create-task' folder, with the following structure:
+So, navigate to the `task/src/components` folder and create the `create-task` folder, with the following structure:
 - create-task
   - create-task.ts
   - create-task.html
@@ -364,7 +364,7 @@ create-task.html
 </section>
 ```
 
-We simply reference the task create service in our component, such that the code of the component is comparably lean. Also, we can use the 'queue.onQueueFinish' and the 'createQueueID' to listen for task creation finishing. When the task was created successfully, we will show an alert with I18N values, to ask the user to open the contract.
+We simply reference the task create service in our component, such that the code of the component is comparably lean. Also, we can use the `queue.onQueueFinish` and the `createQueueID` to listen for task creation finishing. When the task was created successfully, we will show an alert with I18N values, to ask the user to open the contract.
 
 ## 3.4 Routing
 To handle the routing correctly for the creation and task details, we need to add some new routing. In the case that we are opening the ENS address of the ƉApp directly, the created component should be displayed. When the ƉApp is opened using a contract address, we should directly open the task detail component. Adjust the routing to the following:
@@ -401,12 +401,12 @@ function getRoutes(): Routes {
 ## 3.5 Create Task
 After setting up the new components and the structures for the dispatcher, it is possible to create a new contract via our ƉApp.
 
-If we would do that now, however, we would have a problem. The ƉApp is currently not deployed to any ENS path, so the 'public.dapp.origin' IPFS path of 'dbcp.json' does not point to the correct value. To fix this, we need a valid IPFS path. This can be based on the 'deploy to contract' manual of the lerna project. Navigate to the root level of the lerna project and execute the following command to start an IPFS deamon:
+If we would do that now, however, we would have a problem. The ƉApp is currently not deployed to any ENS path, so the `public.dapp.origin` IPFS path of `dbcp.json` does not point to the correct value. To fix this, we need a valid IPFS path. This can be based on the 'deploy to contract' manual of the Lerna project. Navigate to the root level of the Lerna project and execute the following command to start an IPFS daemon:
 ```sh
 "./scripts/go-ipfs.sh".
 ```
 
-After starting the IPFS, navigate to the 'dapps/task' folder and execute the following command:
+After starting the IPFS, navigate to the `dapps/task` folder and execute the following command:
 ```sh
 "ipfs add -r dist"
 ```
@@ -436,12 +436,12 @@ added Qmc76vZsXE7rMukEtsyMxGucNxqcbFNMbVWGMUrQAkEsmD dist/services
 added QmXCnDwasWd9JQ3rz7Rjc3uQt7SDiuryzWAXerPdL4KHTs dist
 ```
 
-Copy the latest IPFS path for the dist folder ("QmXCnDwasWd9JQ3rz7Rjc3uQt7SDiuryzWAXerPdL4KHTs") and replace the origin within your dbcp.json file.
+Copy the latest IPFS path for the dist folder ('QmXCnDwasWd9JQ3rz7Rjc3uQt7SDiuryzWAXerPdL4KHTs') and replace the origin within your `dbcp.json` file.
 
 **Now you can create a new contract instance. Reload your browser and try it.**
 
 ## 3.6 Developing
-For development purposes it is time consuming to publish your sources to the IPFS and to create a new contract every time you changed something. To handle this, the 'buildModuleRoutes' function will do some magic. Using the evan.network frame multiple Angular application within another Angular application. So it is important to build dynamic routes corresponding to the specific parent Angular application. As a side effect, your defined routes are nested in any case within themselves. A routing tree is built as follows:
+For development purposes it is time consuming to publish your sources to the IPFS and to create a new contract every time you changed something. To handle this, the `buildModuleRoutes` function will do some magic. Using the evan.network frame multiple Angular application within another Angular application. So it is important to build dynamic routes corresponding to the specific parent Angular application. As a side effect, your defined routes are nested in any case within themselves. A routing tree is built as follows:
 
 ```json
 
@@ -560,12 +560,12 @@ After the task contract was created, the task instance can be openend, but it wi
 2. Adjust detail components to handle new list entry features
 
 ## 4.1 What should the detail component do?
-Using the data contract API, we can add list entries to two, within the 'TaskDataContractFactory' defined lists (todos, todologs) that include list entries, which are defined within the dbcp.json data scheme. In our case, we specified that we can add todos with the properties 'title' and 'ID' to the todos and objects with the properties 'solved' and 'ID' to the todo logs. If we specify 'todoData' that not respect the DBCP description, the blockchain-core will check the description and return error codes by using wrong values.
+Using the data contract API, we can add list entries to two, within the `TaskDataContractFactory` defined lists (todos, todo logs) that include list entries, which are defined within the `dbcp.json` data scheme. In our case, we specified that we can add todos with the properties 'title' and 'ID' to the todos and objects with the properties 'solved' and 'ID' to the todo logs. If we specify 'todoData' that not respect the DBCP description, the blockchain-core will check the description and return error codes by using wrong values.
 
 But why splitting up into two lists? Technically it is possible to change and delete list entries. But if we want to handle the correct mind of blockchain logic, we should not change or delete any todo. On this way, we can save our history, unchanged and comprehensible. This is where the todo log list takes its role. New todos will be saved within the todos list. When we want to solve a todo, we will simply create a new todo log, with the same ID as the todo. In future, we can load both lists, so we can check which todo was solved.
 
 ## 4.2 List Entry Dispatcher & Service
-Open the 'services/task.ts' service and add the following function.
+Open the `services/task.ts` service and add the following function.
 
 ```ts
   /**
@@ -584,7 +584,7 @@ Open the 'services/task.ts' service and add the following function.
   }
 ```
 
-Add a new dispatcher to the 'dispatchers/task-dispatcher.ts' file that uses this function to create new list entries: 
+Add a new dispatcher to the `dispatchers/task-dispatcher.ts` file that uses this function to create new list entries: 
 
 ```ts
 export const ListEntryDispatcher = new QueueDispatcher(
@@ -606,7 +606,7 @@ export const ListEntryDispatcher = new QueueDispatcher(
 );
 ```
 
-Don't forget to export the dispatcher within the 'index.ts' file: 
+Don't forget to export the dispatcher within the `index.ts` file: 
 ```ts
 ...
 import { TaskService } from './services/task';
@@ -667,7 +667,7 @@ export class TodoApp extends AsyncComponent {
 	) { }
 ```
 
-The component initialzation steps need asynchronious operations. As a result of the this and because of Angular best practices, all initalization steps are included within the 'ngOnInit' function. So have a look on the 'ngOnInit' function.
+The component initialzation steps need asynchronious operations. As a result of this and because of Angular best practices, all initalization steps are included within the `ngOnInit` function. So have a look on the `ngOnInit` function.
 
 ```ts
 async _ngOnInit() {
@@ -698,9 +698,9 @@ async _ngOnInit() {
 }
 ```
 
-We will check if a valid contract address is applied to the URL. If not, we can show an error within the frontend. After this, the contract description will be loaded and a translation string for the ƉApp-wrapper title will be added. If we don't run the 'addSingleTranslation' function, the frontend will print out the full contract ID within the header. When the contract details were loaded, an 'onQueueFinish' handler can be binded. So we can load todos and todologs initially and in case something is saved.
+We will check if a valid contract address is applied to the URL. If not, we can show an error within the frontend. After this, the contract description will be loaded and a translation string for the ƉApp-wrapper title will be added. If we don't run the `addSingleTranslation` function, the frontend will print out the full contract ID within the header. When the contract details were loaded, an `onQueueFinish` handler can be binded. So we can load todos and todologs initially and in case something is saved.
 
-The 'getListEntries' function uses the data contract API to load all existing list values. After the todo logs were loaded, a completed flag will be written to the local todo instances, to check it more easier within the HTML template.
+The `getListEntries` function uses the data contract API to load all existing list values. After the todo logs were loaded, a completed flag will be written to the local todo instances, to check it more easier within the HTML template.
 
 ```ts
 	/**
@@ -728,7 +728,7 @@ The 'getListEntries' function uses the data contract API to load all existing li
 	}
 ```
 
-The 'addTodo' and 'addTodoLog' functions represents the core blockchain logic of the component. The 'addTodo' generates a new todo data object, pushes it into the 'AddListEntry' queue and adds a todo copy, including a loading flag, into the local todos. When the queue has finished saving, the todos will be reloaded and the correct todo, without the loading flag, is loaded. By solving a todo by adding a new todo log, the local todo is completed and loading the flag will be set to true and a new todo log will be added to the queue.
+The `addTodo` and `addTodoLog` functions represents the core blockchain logic of the component. The `addTodo` generates a new todo data object, pushes it into the `AddListEntry` queue and adds a todo copy, including a loading flag, into the local todos. When the queue has finished saving, the todos will be reloaded and the correct todo, without the loading flag, is loaded. By solving a todo by adding a new todo log, the local todo is completed and loading the flag will be set to true and a new todo log will be added to the queue.
 ```ts
 /**
  * Creates a new Todo with the current newTodoText
@@ -783,7 +783,7 @@ async solveTodo(todo: any) {
 }
 ```
 
-At the bottom of the app.ts, we included two functions of the old todo service:
+At the bottom of the `app.ts`, we included two functions of the old todo service:
 
 ```ts
 	/**
