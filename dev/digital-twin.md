@@ -2,20 +2,20 @@
 title: "Digital Twin"
 ---
 
-In this how-to we want to show you on which way you can create a new Digital Twin contract on the evan.network. First, you will see how the Digital Twin contract is created via our blockchain API. Afterwards, you will see how you can interact with it, like adding specific data and lists of data to it and read the data out of the twin.
+In this how-to we want to show you, on which way you can create a new Digital Twin contract on the evan.network. First, you will see how the Digital Twin contract is created via our blockchain API. Afterwards, you will see how you can interact with it, like adding specific data and lists of data to it and read the data out of the twin.
 
 You can get the full code of the example [here](https://gist.github.com/S3bb1/70d5fad1afb44f45d79bbb6f70515eff)
 
 
 # Digital Twin
 
-A Digital Twin is a unique representation of a real world object in the evan network.
+A Digital Twin is a unique representation of a real world object in the evan.network.
 It can hold attributes and any other data about the real world object, and implement operations and tasks concerning
 the real world object, all cryptographically secured on the blockchain.
 
 
 ## 1. Setup
-At First you must have a configured runtime in your javascript code available to create a new Digital Twin.
+At first you must have a configured Runtime in your Javascript code available to create a new Digital Twin.
 
 To create a runtime, you must fulfil the following steps:
 ```js
@@ -48,21 +48,21 @@ const dfs = new Ipfs({ remoteNode: new IpfsApi(runtimeConfig.ipfs), });
 const runtime = await createDefaultRuntime(web3, dfs, { accountMap: runtimeConfig.accountMap, });
 ```
 
-Please set your "ACCOUNTID" and your "PRIVATEKEY" from your evan.network profile to the config object above.
+Please set your `ACCOUNTID` and your `PRIVATEKEY` from your evan.network profile to the config object above.
 
-Now you have a configured runtime and all the following code examples are based on the "runtime" variable in the code above.
+Now you have a configured Runtime and all the following code examples are based on the Runtime variable in the code above.
 
 
 ## 1. Creating a new Digital Twin
 
-Digital Twins are created via factories deployed on the evan.network. Factories are useful to generate pre-configured contracts like Digital Twins. They create pre-configured rights and roles on the twin and they set also the rights for specific roles to add or remove parameters on the twin.
+Digital Twins are created via Factories deployed on the evan.network. Factories are useful to generate pre-configured contracts like Digital Twins. They create pre-configured rights and roles on the twin and they set also the rights for specific roles to add or remove parameters on the twin.
 
-Currently, there is a factory deployed on the evan.network to create an "empty" Digital Twin contract. This factory creates a Digital Twin contract with no settable properties and two roles, owner and member. The account, which creates this contract, will automatically be added to the "owner" role.
+Currently, there is a Factory deployed on the evan.network to create an 'empty' Digital Twin contract. This factory creates a Digital Twin contract with no settable properties and two roles, owner and member. The account, which creates this contract, will automatically be added to the 'owner' role.
 
 
 [![Digital Twin factory](/public/dev/twin_factory.png){:max-width="50%"}](/public/dev/twin1.png)
 
-Now we create a new Digital Twin contract via the runtime API from the blockchain core. We use the data contract API from our runtime module to create a new Digital Twin contract from the general deployed Digital Twin factory:
+Now we create a new Digital Twin contract via the Runtime API from the blockchain-core. We use the DataContract API from our runtime module to create a new Digital Twin contract from the general deployed Digital Twin Factory:
 
 ```js
 
@@ -77,7 +77,7 @@ const digitalTwin = await runtime.dataContract.create(
 console.log(digitalTwin.options.address) // print the newly created address of the digital twin
 ```
 
-Simply change the second parameter of the "create" function to your configured account ID in step one. Now you have an empty Digital Twin with your account ID as "owner" of this Digital Twin.
+Simply change the second parameter of the `create` function to your configured account ID in step one. Now you have an empty Digital Twin with your account ID as 'owner' of this Digital Twin.
 
 ## 2. Set and Get your Digital Twin DBCP description
 
@@ -133,9 +133,9 @@ console.log(reloadedDigitalTwin.options.address == digitalTwin.options.address)
 
 
 ## 4. Create your first property within your Digital Twin
-As mentioned in part one, your created twin has no settable properties at the moment. This is because of the rights and roles architecture. You can enable properties on the Digital Twin by setting the new property as "writeable" by specific roles to the contract. 
+As mentioned in part one, your created twin has no settable properties at the moment. This is because of the rights-and-roles architecture. You can enable properties on the Digital Twin by setting the new property as 'writeable' by specific roles to the contract. 
 
-Now we're using the "rightsAndRoles" module from our runtime to allow the "owner" role to set a new property called "testEntry" in the digital twin:
+Now we're using the `rightsAndRoles` module from our runtime to allow the 'owner' role to set a new property called `testEntry` in the Digital Twin:
 
 ```js
 // make sure, you have required the enums from rights-and-roles.ts
@@ -153,7 +153,7 @@ await rightsAndRoles.setOperationPermission(
 );
 ```
 
-With this function we grant the owner role to set the entry called "testEntry". By default read-operations are always possible.
+With this function, we grant the owner role to set the entry called `testEntry`. By default read operations are always possible.
 
 
 ## 5. Set and Get the Property back from your Digital Twin
@@ -168,7 +168,7 @@ const sampleData = {
 await runtime.dataContract.setEntry(reloadedDigitalTwin, 'testEntry', sampleData, accountId)
 ```
 
-Now the JSON will be stored on the IPFS servers of the evan network and the reference from this IPFS file will be stored in the Digital Twin Smart Contract
+Now the JSON will be stored on the IPFS servers of the evan.network and the reference from this IPFS file will be stored in the Digital Twin Smart Contract
 
 [![Digital Twin add IPFS property](/public/dev/twin_ipfs.png){:max-width="50%"}](/public/dev/twin_ipfs.png)
 
@@ -205,12 +205,12 @@ await rightsAndRoles.setOperationPermission(
 );
 ```
 
-Replace also the "accountId"-fields with your account ID. Now you can also add new entries to the list on the Digital Twin called "testList"
+Replace also the `accountId`-fields with your account ID. Now you can also add new entries to the list on the Digital Twin called `testList`.
 
 [![Digital Twin add IPFS property](/public/dev/twin_ipfs_list.png){:max-width="50%"}](/public/dev/twin_ipfs_list.png)
 
 ## 7. Add and Get entries from a list
-List-entries are also stored on the IPFS servers of the evan.network and will be added to an array of elements on the Digital Twin property
+List entries are also stored on the IPFS servers of the evan.network and will be added to an array of elements on the Digital Twin property
 
 ```js
 const accountId = '0xb00fbeef5a926fa150baeaf04bfd673b056ba83d';
@@ -227,7 +227,7 @@ await runtime.dataContract.addListEntries(reloadedDigitalTwin, 'testList', [samp
 
 You can also add multiple values to the list by extending the array in the third parameter. When this operation is done, the entries are finally stored on the IPFS and the Digital Twin contract.
 
-When you want to get your list and its entries back, you can simply call the "getListEntries" from the data contract module:
+When you want to get your list and its entries back, you can simply call the `getListEntries` from the data contract module:
 
 ```js
 const accountId = '0xb00fbeef5a926fa150baeaf04bfd673b056ba83d';
@@ -244,7 +244,7 @@ console.dir(listEntries);
 ```
 
 ## 8. Invite other Users to the Digital Twin
-Now we have a Digital Twin with values. Nevertheless, no other user can access it because all the data is encrypted. So now we want to share the data with other accounts. Please note that when you want to share data to another account, you must have already exchanged a secret key via the addressbook Dapp of the evan.network.
+Now we have a Digital Twin with values. Nevertheless, no other user can access it because all the data is encrypted. So now we want to share the data with other accounts. Please note that when you want to share data to another account, you must have already exchanged a secret key via the `addressbook` ƉApp of the evan.network.
 
 First, we have to invite the target user to the Digital Twin contract:
 
@@ -264,9 +264,9 @@ await runtime.dataContract.inviteToContract(
 
 In the first parameter, we're using null when working without Business Centers. When working in a Business Center scope, you must use the ENS domain name of the Business Center the contract was created in.
 
-With this code line you add the "targetAccount" to your Digital Twin contract. This is required when the account should also be able to add new entries or to set entries in the future. At the moment, it can read all the data of the Digital Twin, but it can't decrpyt the data because it has no key to decrypt it.
+With this code line you add the `targetAccount` to your Digital Twin contract. This is required when the account should also be able to add new entries or to set entries in the future. At the moment, it can read all the data of the Digital Twin, but it can't decrpyt the data because it has no key to decrypt it.
 
-When you want to share the key to decrpyt the data, you have to extend the "sharing" of the Digital Twin contract.
+When you want to share the key to decrpyt the data, you have to extend the Sharing of the Digital Twin contract.
 
 ```js
 const accountId = '0xb00fbeef5a926fa150baeaf04bfd673b056ba83d';
@@ -290,11 +290,11 @@ await runtime.dataContract.options.sharing.ensureHashKey(reloadedDigitalTwin.opt
 
 [![Digital Twin add IPFS property](/public/dev/twin_sharing.png){:max-width="50%"}](/public/dev/twin_sharing.png)
 
-This code snippet first gets the "contentKey" of the Digital Twin. The contentKey is the key which is used to encrypt all the data stored in the Digital Twin. This key is normally encrypted with the contract creator's private key.
+This code snippet first gets the `contentKey` of the Digital Twin. The `contentKey` is the key which is used to encrypt all the data stored in the Digital Twin. This key is normally encrypted with the contract creator's private key.
 
-The "addSharing" function adds the sharing for the "targetAccount". When a sharing is added, the "communcationKey" between the two parties is used to encrypt the "contentKey" and to store it on the "sharing" of the contract. 
+The `addSharing` function adds the sharing for the `targetAccount`. When a sharing is added, the `communcationKey` between the two parties is used to encrypt the `contentKey` and to store it on the Sharing of the contract. 
 
-Because all stored IPFS hashes in the blockchain are also encrypted, you must ensure that the "hashKey" of the contract is also "shared" wit the new account.
+Because all stored IPFS hashes in the blockchain are also encrypted, you must ensure that the `hashKey` of the contract is also shared with the new account.
 
-Now the added "targetAccount" can also read the "listEntries" or "Entries" in the data contract too. Not too difficult, right?
+Now the added `targetAccount` can also read the `listEntries` or entries in the DataContract too. Not too difficult, right?
 
