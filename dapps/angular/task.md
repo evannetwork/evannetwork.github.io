@@ -6,7 +6,7 @@ title: "Angular - Task ƉApp setup"
 
 This example shows how an evan.network featured ƉApp behaves and how it can interact with contracts. With the help of a task ƉApp it is easy to show how a contract can be created, read out, adapted and how different data sets can be saved.
 
-This case is explained using [TodoMVC Angular](http://todomvc.com/examples/angular2).
+This case is explained using [`TodoMVC` Angular](http://todomvc.com/examples/angular2).
 
 The project setup will explain how to integrate an existing Angular application into the existing evan.network structure.
 
@@ -15,9 +15,9 @@ If you focus on functional implementations of blockchain interactions and less o
 # 1. Seed project
 So, where do we start?
 
-In the [Angular - Hello World](/dapps/angular/hello-world), it was already shown how evan.network apps are structured and how they are built and deployed. We will now integrate the `TodoMVC` example into this project structure.
+In the [Angular - 'Hello World'](/dapps/angular/hello-world), it was already shown how evan.network apps are structured and how they are built and deployed. We will now integrate the `TodoMVC` example into this project structure.
 
-To provide a smarter inital point for you, a seed project already exists within the ƉApps folder. By having a look into the "
+To provide a smarter inital point for you, a seed project already exists within the ƉApps folder. By having a look into the 
 `dapps/task` folder, you will find a clear project with all configurations you will need. It is nearly the same as the 'Hello World' sample, but without any components or services. This application is ready to use and you can already start it. Open two command lines and start the development environment:
 
 ```sh
@@ -35,7 +35,7 @@ Now you can navigate to [http://localhost:3000/dev.html#/dashboard.evan/favorite
 
 
 # 2. Insert TodoMVC
-Download the [TodoMVC app](https://github.com/tastejs/todomvc/tree/master/examples/angular2) and have a look into the `examples/angular2` folder.
+Download the [`TodoMVC` app](https://github.com/tastejs/todomvc/tree/master/examples/angular2) and have a look into the `examples/angular2` folder.
 - services
   - store.js
   - store.ts
