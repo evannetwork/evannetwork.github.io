@@ -118,7 +118,7 @@ Function permissions are granted to function signatures and are ```bytes4``` bas
 bytes4(keccak256("setData(string)"))
 ```
 
-Operations are bytes32 hashes that are generated in functions and checked against the authority. As many hashes generated throughout the contract code are ```bytes32``` hashes, operation hashes are combinations of those hashes. For example, the permission hash for adding list entries to the list `sampleList` in a Data Contract is build this way:
+Operations are `bytes32` hashes that are generated in functions and checked against the authority. As many hashes generated throughout the contract code are ```bytes32``` hashes, operation hashes are combinations of those hashes. For example, the permission hash for adding list entries to the list `sampleList` in a Data Contract is build this way:
 ```solidity
 keccak256(keccak256(keccak256("listentry"), keccak256("sampleList")), keccak256("set"))
 ```
