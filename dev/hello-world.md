@@ -10,9 +10,9 @@ Write your first blockchain contract and access it.
 
 We work on an unix command line.
 
-You have installed all the blockchain utilities needed to connect to and develop with evan.network, like parity, solidity and nodejs as described [here](/dev/setting-up).
+You have installed all the blockchain utilities needed to connect to and develop with evan.network, like Parity, Solidity and `nodejs` as described [here](/dev/setting-up).
 
-You have installed truffle, as described [here](http://truffleframework.com/docs/getting_started/installation)<sup>[+]</sup>.
+You have installed `truffle`, as described [here](http://truffleframework.com/docs/getting_started/installation)<sup>[+]</sup>.
 
 ## Setting up the Project
 
@@ -23,7 +23,7 @@ $ truffle init
 $ truffle compile
 ```
 
-This has created your initial truffle project.
+This has created your initial `truffle` project.
 
 ## Configuring the Network
 You have already started `connected to evan.network by starting parity` locally, as linked in the prerequisites, but for letting the application know to connect to the local Ethereum node, you need to configure it to do so.
@@ -54,12 +54,12 @@ The gas and gas prices are a minimum. Make sure your account/ profile has enough
 the case after normal onboarding. If not, visit http://gitter.im/evannetwork/faucet .
 
 ### Unlocking the Account for Migration
-You have created an identity and started the blockchain client parity earlier.
-Usually this would be all you need to do, but for our example there is one more thing that needs to be done.
+You have created an identity and started the blockchain client Parity earlier.
+Usually this would be all you need to do, but for our example there is one more thing that has to be done.
 
-By default only signed transactions are accepted for the testcore blockchain. When using our blockchain-core library, this is taken care of for you. But this is not the time yet for the deep dive into the blockchain-core, this is just a simple first dip of your toe into the water, using the simplest tool available in truffle.
+By default only signed transactions are accepted for the testcore blockchain. When using our blockchain-core library, this is taken care of for you. But this is not the time yet for the deep dive into the blockchain-core, this is just a simple first dip of your toe into the water, using the simplest tool available in `truffle`.
 
-And truffle doesn't sign transactions on deployment. It usually doesn't need to. So we need to tell parity to do the signings itself for our test-account that we have just created. 
+And `truffle` doesn't sign transactions on deployment. It usually doesn't need to. So we need to tell Parity to do the signings itself for our test-account that we have just created. 
 
 You need to save your account password in plain text in a file for this, but since this is only temporarily and for testing, this is acceptable for the time being.
 
@@ -67,7 +67,7 @@ You need to save your account password in plain text in a file for this, but sin
 $ edit pw.txt
 ```
 
-In a different terminal, stop the parity process, and restart it with two additional parameters:
+In a different terminal, stop the Parity process, and restart it with two additional parameters:
 
 ```sh
 $ parity --chain "/path/to/testcore.json" --config "path/to/evan_test_chain.toml"
@@ -144,11 +144,11 @@ $ truffle compile
 
 to compile all changed contracts.
 
-This creates the file build/contracts/HelloWorld.json, which contains administrative data structures used by the truffle framework. In addition, and most importantly, it also contains a byte array with the byte code that can be executed in the blockchain once it is deployed there.
+This creates the file `build/contracts/HelloWorld.json`, which contains administrative data structures used by the `truffle` framework. In addition, and most importantly, it also contains a byte array with the byte code that can be executed in the blockchain once it is deployed there.
 
 
 ## A Local Development Network
-Above we have configured the "dev" network. While this is a development network and uses a local Ethereum client, it is still a shared network and blockchain, so everything you do there is visible to everyone and will be in there forever. This isn't too much of a problem normally, but still should be avoided when it is possible to do so.
+Above we have configured the 'dev' network. While this is a development network and uses a local Ethereum client, it is still a shared network and blockchain, so everything you do there is visible to everyone and will be in there forever. This isn't too much of a problem normally, but still should be avoided when it is possible to do so.
 
 With this simple 'Hello World' contract that doesn't depend on any existing contract infrastructure in the blockchain this is possible.
 
@@ -158,7 +158,7 @@ So just start
 $ truffle develop
 ```
 
-And it will initiate an isolated development blockchain with the [ truffle development console](http://truffleframework.com/docs/advanced/commands)<sup>[+]</sup> for you.
+And it will initiate an isolated development blockchain with the [`truffle` development console](http://truffleframework.com/docs/advanced/commands)<sup>[+]</sup> for you.
 You can compile, deploy, test and debug your contracts there, and only when you are satisfied you deploy them on the shared blockchain.
 
 Something to keep in mind is that every time you start `truffle develop` a fresh and new network is created, so you need to clear the `build/` directory and recompile and redeploy (migrate) the contracts whenever you restart it, or the accounts won't match.
@@ -203,7 +203,7 @@ truffle(develop)> deploy --reset --compile-all
 
 ## Using the Contract
 
-You will be either using your identity account you have created earlier, or one of the accounts listed from the truffle developer console.
+You will be either using your identity account you have created earlier, or one of the accounts listed from the `truffle` developer console.
 ```
 truffle(dev)> var hello = HelloWorld.deployed()
 undefined
@@ -222,8 +222,8 @@ truffle(dev)> hello.then(async (hi) => { return hi.hello.call("Hallihallo") }).t
 Hallihallo
 ```
 
-The contract returns a byte-array that has to be converted to ascii to be a readable string.
-The reason is that some web3 versions can't deal with solidity string return values and unfortunately the one used in the blockchain-core library belongs to this class.
+The contract returns a byte-array that has to be converted to ASCII to be a readable string.
+The reason is that some Web3 versions can't deal with Solidity string return values and unfortunately the one used in the blockchain-core library belongs to this class.
 
 Fortunately it is rare to actually have strings in contracts.
 
