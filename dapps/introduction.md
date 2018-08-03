@@ -4,14 +4,14 @@ title: "Writing ÐApps"
 # Writing ÐApps
 This tutorial will show how to setup an application using the evan.network blockchain and ÐApp framework.
 By creating a simple application to create, view and share tasks, you will learn to handle full blown
-ÐApps including the "decentralized backend and frontend". You will use the following technologies.
-  - Ethereum blockchain, solidity
+ÐApps including the decentralized backend and frontend. You will use the following technologies.
+  - Ethereum blockchain, Solidity
   - DBCP
   - SystemJS, Angular 5 & Ionic 3, SASS, Browserify
   - JS, Typescript
   - evan.network framework
     - blockchain-core
-    - angular-core, anbular-bc, angular-libs, angular-sass
+    - Angular-core, Angular-bc, Angular-libs, Angular-sass
 
 You will be guided through the following steps:
 - [ÐApp basics](/dapps/basics)
