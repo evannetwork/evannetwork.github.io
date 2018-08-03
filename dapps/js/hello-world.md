@@ -2,9 +2,9 @@
 title: "evan.network framework Hello World"
 ---
 # evan.network framework Hello World
-The goal of this tutorial is to interact with different functionalities of the evan.network blockchain with the help of DBCP or the evan.network blockchain-core (bcc). Only simple javascript is used to create an evan.network ƉApp-browser embedded application.
+The goal of this tutorial is to interact with different functionalities of the evan.network blockchain with the help of DBCP or the evan.network blockchain-core (bcc). Only simple Javascript is used to create an evan.network ƉApp-browser embedded application.
 
-After creating the ÐApp functionalities, you can use a "greeter contract" sample to create a contract instance. The DBCP description attached to the "greeter contract" will use your ƉApp as display possiblity.
+After creating the ÐApp functionalities, you can use a 'greeter contract' sample to create a contract instance. The DBCP description attached to the 'greeter contract' will use your ƉApp as display possiblity.
 
 [![js tutorial preview](/public/dapps/js/hello-world-preview.png){:width="50%"}](/public/dapps/js/hello-world-preview.png)
 
@@ -15,7 +15,7 @@ After creating the ÐApp functionalities, you can use a "greeter contract" sampl
 Within the ƉApps folder, you will find the 'Hello World' application. Compared to the standalone example, you will realize quickly that the initialization of a runtime environment is omitted and the existing bcc instance can be used. This instance is enriched with all necessary configurations and information about the logged-in user. This makes it possible to load and write data in the user's context.
 
 ## 2.1 Build Jobs
-Due to the development for the evan.network framework, it becomes necessary to use an existing development runtime, which brings with it all different prerequisites. It is installed via lerna. To be able to open this application in the framework, the index.js file is made AMD-enabled via a rollup.js construction job and copied into the development runtime. This means that the applications can also be tested locally on your own computer.
+Due to the development for the evan.network framework, it becomes necessary to use an existing development runtime, which brings with it all different prerequisites. It is installed via Lerna. To be able to open this application in the framework, the `index.js` file is made AMD-enabled via a `rollup.js` construction job and copied into the development runtime. This means that the applications can also be tested locally on your own computer.
 
 The build job is defined here: [daps-tutorial-js/scripts/dapps-serve.js](https://github.com/evannetwork/dapps-tutorial-js/blob/master/scripts/dapps-serve.js).
 
@@ -34,9 +34,9 @@ npm run dapps-serve
 When you started both scripts, your ƉApp files were copied into your local runtime and you can open the following URL: "http://localhost:3000/dev.html#/dashboard.evan/helloworldjs.evan". There, you will find the current representation of your ƉApp. You can also add your ƉApp to your [favorites](/tutorial/dashboard).
 
 ## 2.2 index.js
-The index.js file is the main point of entry for the application, which is configured by the dbcp.json in the "dapps/hello-world" folder. This file needs a `startDApp`-function, so the evan.network wrapper application can run the 'point of entry'-function for the ƉApp.
+The `index.js` file is the main point of entry for the application, which is configured by the `dbcp.json` in the `dapps/hello-world` folder. This file needs a `startDApp`-function, so the evan.network wrapper application can run the `point of entry`-function for the ƉApp.
 
-The 'loadData'-function shows how to access the current bcc instance to access blockchain data.
+The `loadData`-function shows how to access the current bcc instance to access blockchain data.
 
 ```js
 async function loadData() {
@@ -78,9 +78,9 @@ async function loadData() {
 ```
 
 ## 2.3 index.html / templates
-In this case, we need the `startDApp`-function as point of entry. As a result of this, we cannot work with an index.html file. This has the disadvantage that no HTML files can be loaded directly (due to [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)). HTML files must be compiled into strings via building jobs or anchored directly as strings in the application. In this simple example, an extra construction job was not needed and the template was anchored directly in the index.js file.
+In this case, we need the `startDApp`-function as point of entry. As a result of this, we cannot work with an `index.html` file. This has the disadvantage that no HTML files can be loaded directly (due to [CORS](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)). HTML files must be compiled into strings via building jobs or anchored directly as strings in the application. In this simple example, an extra construction job was not needed and the template was anchored directly in the `index.js` file.
 
-Initially, the data is loaded and then written to the container using a simple innerHTML call.
+Initially, the data is loaded and then written to the container using a simple `innerHTML` call.
 
 ```js
 
@@ -137,7 +137,7 @@ export async function startDApp(container, dbcpName) {
 
 ## 3 Deploy it to the Real World
 ### 3.1 Deploy ƉApp within a Contract
-Each application can be deployed together with a contract. This allows the contract to contain the information as it should be displayed. A little sample how to create and sample contract with your 'Hello World' ƉApp can be found within the dapps-tutorial-angular/scripts/create-contract.js file. Run the following commands:
+Each application can be deployed together with a contract. This allows the contract to contain the information as it should be displayed. A little sample how to create and sample contract with your 'Hello World' ƉApp can be found within the `dapps-tutorial-angular/scripts/create-contract.js` file. Run the following commands:
 
 1. Start IPFS client
 ```sh
@@ -150,7 +150,7 @@ ipfs add -r dapps/hello-world/src
 ```
 [![dapps-tutorial - directory](/public/dapps/deploy-to-ipfs.png){:width="50%"}](/public/dapps/deploy-to-ipfs.png)
 
-3. Insert the deployed folder hash (e.g. "QmfZLwBPUT1n3DoJqpqnLCTcUKABLgUsgfE4KetkXdq8XK") to the correct origin to dbcp.json file.
+3. Insert the deployed folder hash (e.g. "QmfZLwBPUT1n3DoJqpqnLCTcUKABLgUsgfE4KetkXdq8XK") to the correct origin to `dbcp.json` file.
 [![dapps-tutorial - directory](/public/dapps/add-to-dbcp.png){:width="50%"}](/public/dapps/add-to-dbcp.png)
 
 4. Deploy it to the contract
@@ -158,7 +158,7 @@ ipfs add -r dapps/hello-world/src
 npm run deploy-to-contract hello-world
 ```
 
-You will get a console output similar to the following. Behind the log parameter "created contract", you will find the newly created contract ID.
+You will get a console output similar to the following. Behind the log parameter `created contract`, you will find the newly created contract ID.
 
 [![dapps-tutorial - directory](/public/dapps/deploy-to-contract.png){:width="50%"}](/public/dapps/deploy-to-contract.png)
 
@@ -166,7 +166,7 @@ You will get a console output similar to the following. Behind the log parameter
 Have a look [dapp deployment](https://github.com/evannetwork/dapp-browser#ens-deployment).
 
 ### 3.3 View it in the Real World
-After you deployed the application within a contract or by using a ENS address, the ƉApp is available from everywhere, **globally**. To test this, you can use the evan.network dashboard. Open the following URL [https://dashboard.evan.network/index.html](https://dashboard.evan.network/index.html) and navigate to the 'favorites ƉApp'. Before you can access your favorites, it is nessecary to create an evan.network identity. If you haven't created an identity before, have a look [here](/tutorial/first-steps).
+After you deployed the application within a contract or by using a ENS address, the ƉApp is available from everywhere, **globally**. To test this, you can use the evan.network dashboard. Open the following URL [https://dashboard.evan.network/index.html](https://dashboard.evan.network/index.html) and navigate to the `favorites ƉApp`. Before you can access your favorites, it is nessecary to create an evan.network identity. If you haven't created an identity before, have a look [here](/tutorial/first-steps).
 
 Add the favorite using the following steps:
 1. Open Dashboard:
