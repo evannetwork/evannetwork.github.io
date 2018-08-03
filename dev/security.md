@@ -148,7 +148,7 @@ As seen in the example above, permissions are granted to address `0`. An address
 
 Again, passing ```false``` as the last argument revokes permissions.
 
-See section 'Data Contract' for more example of configurable operations.
+See section 'DataContract' for more example of configurable operations.
 
 
 ## Distributed File System Encryption
@@ -222,7 +222,7 @@ When sharing keys with contract participants, the data key is encrypted with the
 To expose encrypted content to a broader scope without performing a key exchange beforehand, keys can be shared via a scope. This scope has to be known by all participating parties and the key that belongs to the scope has to be accessable by all participating parties. An example for a scope can be a common business context - like a Business Center, where all participating parties cooperate in.
 
 #### Sections
-Typical examples for Sections are lists and properties in Data Contracts. Each participant gets an entry in the Sharings with the section names that are shared with him or her.
+Typical examples for Sections are lists and properties in DataContracts. Each participant gets an entry in the Sharings with the section names that are shared with him or her.
 Other contracts like Asset Contracts or Service Contracts hold data in applicable properties, to which can be referred in the same manner.
 
 If all contents of a contract are encrypted with the same key, this key can be shared for the section '*', which means all sections. Key retrievals get the section names as an argument and for keys in this manner:
