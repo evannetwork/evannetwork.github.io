@@ -12,10 +12,10 @@ You will still have to do some setup though.
 ## Prerequisites
 
 - you have started the [evan.network parity node](/dev/setting-up)
-- you have installed and started a redis server on your system
+- you have installed and started a REDIS server on your system
 
 ### [Edge Server)(/dev/smart-agents#edge-server)
-In the evan.network the established way to write web services is to use the [`edge-server`](https://github.com/evannetwork/edge-server-seed), which is just an [ActionHero](https://www.actionherojs.com/) with some added infrastructure, in particular [REDIS](https://redis.io/), [blockchain-core](https://github.com/evannetwork/blockchain-core) and [IPFS](/dev/ipfs). It also uses the version "^18.0", so asynchronous programming with callbacks is discouraged now.
+In the evan.network, the established way to write web services is to use the [`Edge Server`](https://github.com/evannetwork/edge-server-seed), which is just an [ActionHero](https://www.actionherojs.com/) with some added infrastructure, in particular [REDIS](https://redis.io/), [blockchain-core](https://github.com/evannetwork/blockchain-core) and [IPFS](/dev/ipfs). It also uses the version "^18.0", so asynchronous programming with callbacks is discouraged now.
 
 Installation is straight forward.
 
@@ -27,13 +27,13 @@ $ npm i
 
 This also installs the blockchain-core libraries and all other dependencies in `node_modules/` automatically, which can take a while.
 
-If everything is done, test edge server and start it with 
+If everything is done, test Edge Server and start it with 
 
 ```sh
 $ npm start
 ```
 
-You should be able now to see the edge server greeting page on `https://localhost:8080`.
+You should be able now to see the Edge Server greeting page on `https://localhost:8080`.
 
 ## Getting the API
 Contracts are just bytecode blobs with no real meta-information attached to them. So without
@@ -42,7 +42,7 @@ methods are in a contract and what parameters they need.
 
 In evan.network, the encouraged way to take care of this is [DBCP](/dev/dbcp).
 But this is not always available and a little too complex for a quick tutorial.
-So we just deployed our `Hello World` contract via truffle, and to use those contracts
+So we just deployed our `Hello World` contract via 'truffle', and to use those contracts
 in an evan.network application, we need to import the API of the contract separately.
 
 Which means we first have to export it:
@@ -52,7 +52,7 @@ $ cd hello-world/contracts
 $ solc --abi hello.sol
 ```
 
-Depending on what version of the solidity compiler you have, you get either a file or stdout output.
+Depending on what version of the Solidity compiler you have, you get either a file or `stdout output`.
 
 Either way, you will find an array with the interface definition in the output.
 
@@ -61,7 +61,7 @@ Copy it somewhere for storing.
 
 ## Setting up the Project
 
-It is possible to create a project directory and develop a Smart Agent, which is an ActionHero-Plugin, directly in the `node_modules/` of the edge server. However, the better option is to have a separate directory that can be source controlled separately and just link it into the edge server with a symbolic link.
+It is possible to create a project directory and develop a Smart Agent, which is an ActionHero-Plugin, directly in the `node_modules/` of the Edge Server. However, the better option is to have a separate directory that can be source controlled separately and just link it into the Edge Server with a symbolic link.
 
 ```sh
 $ mkdir ../smart-agent-hello
@@ -77,7 +77,7 @@ $ mkdir actions              # we also need this
 $ edit package.json
 ```
 
-This can be very small for simple agents. Since we access the blockchain-core libraries via edge server, most of the things we need are already available.
+This can be very small for simple agents. Since we access the blockchain-core libraries via Edge Server, most of the things we need are already available.
 
 ```json
 {
@@ -117,15 +117,15 @@ You need the account ID, because you want to be able to change the contract data
 
 Here is also the place where we store the generated API object from earlier, in the `helloAPI` property.
 
-A thing to remember: ActionHero, and thus edge server, doesn't read the plugin configs from the plugin directories, it needs the config to be in its own config directory. The simplest way to do this is this:
+A thing to remember: ActionHero, and thus Edge Server, doesn't read the plugin configs from the plugin directories, it needs the config to be in its own config directory. The simplest way to do this is this:
 
 ```sh
 $ ln config/smart-agent-hello.js ../edge-server/config/smart-agent-hello.js
 ```
 
-You can copy it of course, too. The config that is used is the one in the edge server config directory, though.
+You can copy it of course, too. The config that is used is the one in the Edge Server config directory, though.
 
-You still have to tell edge server that there is a plugin.
+You still have to tell Edge Server that there is a plugin.
 
 ```sh
 $ edit ../edge-server/config/plugins.js
