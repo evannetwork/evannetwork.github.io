@@ -15,7 +15,7 @@ This happens unsurprisingly with the conract loader. Open `bccc.js`
 > var hello = bcc.contractLoader.loadContract('HelloWorld', '0xACC07...1D')
 ```
 
-Now you have a usable web3 contract instance object to work with. You do always need the interface, but of course you don't need to compile the source code every time you get to the interface. You only need to do this once and then save the string and reuse it. Or even better, put it into the [DBCP](/dev/dbcp) and let this take care of everything.
+Now you have a usable Web3 contract instance object to work with. You do always need the interface, but of course you don't need to compile the source code every time you get to the interface. You only need to do this once and then save the string and reuse it. Or even better, put it into the [DBCP](/dev/dbcp) and let this take care of everything.
 
 Of course, you also have to say which instance of this contract on the blockchain you want to interact with, that's why you need to know the account ID and pass it to `loadContract`.
 
@@ -36,12 +36,12 @@ The downside is you have to write callbacks, if you want to get to the values.
 
 # Deploy Public Documents
 
-Public documents are just Documents stored in the distributed file system, accessible by anyone,
-and the hashes of those Documents are used in a DBCP file or a contract somewhere.
+Public documents are just documents stored in the distributed file system, accessible by anyone,
+and the hashes of those documents are used in a DBCP file or a contract somewhere.
 
 # Deploy Private Documents: Envelopes
 
-Since the data in distributed file systems is accessible to anyone, the only way to have private data is to encrypt the data. In the standard evan.network data contracts, the links/ hashes to the documents that are stored in them are also encrypted, to prevent external data miners from connecting specific datasets with specific contracts.
+Since the data in distributed file systems is accessible to anyone, the only way to have private data is to encrypt the data. In the standard evan.network DataContracts, the links/ hashes to the documents that are stored in them are also encrypted, to prevent external data miners from connecting specific datasets with specific contracts.
 
 All this is handled automatically by the blockchain core library with envelopes.
 
