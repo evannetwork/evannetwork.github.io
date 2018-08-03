@@ -16,5 +16,5 @@ A blockchain by its very nature isn't made for storing complex or unstructured d
 On top of the blockchain- and the storage engine we built services and APIs to create secure, fast and robust applications.
 + content and contract encryption
 + contact management with integrated on-chain key management and key exchange through the mailbox system to offer offline invitation and contact possibilities
-+ data contracts with security and role management and the ability to add encrypted content and a highly flexible [DBCP](/dev/dbcp) description language to build unstoppable ÐAPPs and Smart Agents
++ DataContracts with security and role management and the ability to add encrypted content and a highly flexible [DBCP](/dev/dbcp) description language to build unstoppable ÐAPPs and Smart Agents
 + [ENS](/dev/ens) and [ENS2DNS](/dev/ens2dns) to make the user's life easier
