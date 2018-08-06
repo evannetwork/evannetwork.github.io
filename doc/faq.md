@@ -38,7 +38,7 @@ The benefits are:
 The main idea of evan.network is to build a stable, predictable and cost efficient enterprise blockchain.
 The evan.network token used in the platform is called [EVE](https://evannetwork.github.io/doc/eve). It can be used to pay for transactions on the evan.network.
 
-The token is sold via WebShop and partners. There is no public token sale planned for EVE Token. So the EVE Token is not speculative but stable and predictable. The revenue from EVE Token sales is the income of the network governance organization. The income minus investments and operation costs is payed as a dividend to network affiliates (especially [MasterNode operators](https://evannetwork.github.io/doc/masternode).)
+The token is sold via WebShop and partners. There is no public token sale planned for EVE Token. So the EVE Token is not speculative but stable and predictable. The revenue from EVE Token sales is the income of the network governance organization. 
 With the evan.network, manual processes are replaced by digital transactions, regardless of the technological maturity of the partners involved. The cooperation in evan.network enables companies to retain their existing partner and to attract new, previously unknown partner. This would make communication, data exchange and partner orchestration more cost efficient by reducing manual processes.
 
 #### Q.
