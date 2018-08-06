@@ -98,16 +98,22 @@ All options are executed in the specific order in which they appear in the help 
 
 ## Hashing Lookup Keys
 
-A task that can be quite annoying when setting up new applications that don't run in the browser and that need to be run under specific accounts and have to commununicate with other users, profiles and contracts is the configuration of the encryption and communication keys needed to do this. You need to make `sha3` hashes of account IDs and you need to make combined hashes of account IDs as lookup key for the edge keys of two partners to access each others data.
+A task that can be quite complicated, when setting up new applications is the configuration of the encryption and communication keys. Accounts that have to exchange information with other users, profiles and contracts, need those keys and the key creation itself is pretty simple when done with the browser. To add those keys to your config file, you need to hash the ids of the account, that want to communicate. One of the hashes, that has to be stored, is the `sha3` hash of the own account.
 
 ```js
 // normal sha3 hashes to look up your private profile access key / identity key
 > sha3('0x20a6E2feD0e1243895761Badfebce9D064aB1777')
 '0xd4c0f23fa26fb73f41a10e5824f894841354fdaf1de360303e2c8237a35e896e'
+```
 
-// the lookup key to get the shared porfile encryption key of two users (or for reading your own encrypted data)
-// is generated with the 'special' sha9 function
+To allow two accounts to communicate with each other
+- both account keys are hashed (`sha3)`)
+- the resulting keys are sorted
+- the sorted keys are hashed again (`sha3`)
 
+This can be done with the `sha9` helper function.
+
+```js
 // two accounts can read each others data with the key saved under this lookup key
 > sha9('0x20a6E2feD0e1243895761Badfebce9D064aB1777','0x20a6E2feD0e1243895761Badfebce9D064aB1111')
 '0x19cd2bd638f8f9e1148bf2539a5bbc7dd3e52ed2f440ee9f30f83815982a4ab2'
