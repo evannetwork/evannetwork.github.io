@@ -80,7 +80,7 @@ In the Smart [Contract templates](https://evannetwork.github.io/dev/data-contrac
 
 The solution also offers Smart Contract hardforks, to remove users from the Smart Contract or from a specific role. So a removed user can read the past where he or she was a permissioned member but can’t read the future data where he or she isn’t a member anymore.
 
-To join the network as a [MasterNode](https://evannetwork.github.io/doc/masternode), you have to become an Affiliate (platform affiliate), which comes along with an active participation in the evan.network organization, and you have to sign a MasterNode Operations Agreement.
+To join the network as a [MasterNode](https://evannetwork.github.io/doc/masternode), you have to become an Affiliate, which comes along with an active participation in the evan.network organization, and you have to sign a MasterNode Operations Agreement.
 
 ______________________________________________________
 
