@@ -15,5 +15,5 @@ With the DAO, evan.network has two big benefits:
 1. To ensure the highest possible trust, the responsibility for extending and managing the network shall be with the network stakeholders.
 2. To ensure the highest possible growth, the network shall be open for all businesses and developers to realize their own decentralized business model.
 
-To make this possible, the legal, technical and organizational evan.network DAO structure will be established step by step by evan GmbH, using the [token](/dev/blockchain#eve---token) sale funding.
+To make this possible, the legal, technical and organizational evan.network DAO structure will be established step by step by evan GmbH.
 
