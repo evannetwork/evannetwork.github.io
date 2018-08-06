@@ -75,7 +75,7 @@ Across all target groups there are significant advantages of the evan.network:
 
 - **Openness.** evan.network can be used for collaboration by any user, since it is publicly available and usable.
 - **Performance.** Fast block times of approx. 4 seconds and more than one hundred transactions per second can be implemented within the network.
-- **Full independence.** MasterNode operators come from different industries and have no influence on the cooperation of users within the Business Centers. The sovereignty over data and applications always lies with the users or the Business Center owners. The MasterNode provider is an infrastructure node that guarantees the decentralization, independence and scaling of the network through its operation.
+- **Full independence.** MasterNode operators come from different industries and have no influence on the cooperation of users within the Business Centers. The sovereignty over data and applications always lies with the users or the data owners. The MasterNode provider is an infrastructure node that guarantees the decentralization, independence and scaling of the network through its operation.
 - **High security and trust.** The network is operated decentrally, whereby it is known who is allowed to sign blocks in the network. In case of violations MasterNode operators can be excluded.
 - **Energy-efficient operation.** No energy-wasting mining is used (only the known MasterNode operators sign blocks by Proof of Authority, no Proof of Work).
 - **Transparency.** Changes to the blockchain, e.g. hardforks, can only be made by coordination between the MasterNode operators, so that the trust is not tied to a single organization. 
