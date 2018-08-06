@@ -27,7 +27,7 @@ This is what we call the Smart Contract. Why smart? Because although it is store
 ## [Let's have a Look at your Profile and Data](/tutorial/dashboard)
 You are logged in already, aren't you?
 
-Have you added the Taskboard Bookmark? It is a Smart Contract, a data contract of its own btw.
+Have you added the Taskboard Bookmark? It is a Smart Contract, a data contract of its own.
 
 Unlike the bookmark links you store in the browser, this isn't stored just on your single browser installation. And unlike the synced bookmarks in your Apple account for example, this isn't stored in a data center controlled by Apple, in which they can mine data or that even might go down or expire when you stop paying your fees. Those are stored in the blockchain. Available from anywhere, as long as the network exists.
 
