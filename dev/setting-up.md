@@ -81,13 +81,3 @@ We will be using the defacto-standard blockchain development framework [truffle]
 The agent you will be writing will use the [blockchain-core](https://github.com/evannetwork/blockchain-core) library, which bundles and encapsulates a lot of specialized functionalities for evan.network, but also provides a lot of standard blockchain functionalities.
 
 [Hello Agent](/dev/hello-agent)
-
-# Your first Ðapp
-
-A [Ðapp](/dev/dapps) is an application that utilizes the blockchain and has a distributed logic as a result. This is in most cases just a web application accessible via browser. But it is also possible to write Ðapps in any runtime environment, even native applications, as long as there is access to a blockchain, which usually means access to the network, at least at some of the time.
-
-Evan.network Ðapps utilize the evan.network framework. This makes a lot of things easier.
-
-Your first Ðapp will be a simple web application that connects to the previous Smart Agent and directly to the blockchain itself.
-
-[Hello Ðapp](/dev/hello-dapp)
