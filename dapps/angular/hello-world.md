@@ -40,7 +40,7 @@ When you are opening `http://localhost:3000` for the first time, you will be nav
 
 `http://localhost:3000/#/dashboard.evan/favorites.evan`
 
-Replace `dashboard.evan/favorites.evan` with `dashboard.evan/helloworld.evan` or `helloworld.evan` to open your test application. You will see a simple application with two pages. At the end of this tutorial, we explain how you can deploy your application and add it to your dashboard via the favorites or also access it via `https://dashboard.evan.network`.
+Replace `dashboard.evan/favorites.evan` with `dashboard.evan/helloworld.evan` or `helloworld.evan` to open your test application. You will see a simple application with two pages. In [this section](/dev/deploy), we explain how you can deploy your application and add it to your dashboard via the favorites or also access it via `https://dashboard.evan.network`.
 
 ## 3. The ÐApp structure
 In the ƉApp folder of each Lerna project are the individual ƉApps. You will find different projects for the different stages of the tutorial. In the first step, we will focus on the 'Hello World' project to explain the basics.
@@ -467,7 +467,7 @@ You will get a console output similar to the following. Behind the log parameter
 [![dapps-tutorial - directory](/public/dapps/deploy-to-contract.png){:width="50%"}](/public/dapps/deploy-to-contract.png)
 
 ### 5.2 Deploy ƉApp to ENS
-Have a look at [ƉApp deployment](https://github.com/evannetwork/dapp-browser#ens-deployment).
+Have a look at [ƉApp deployment](https://evannetwork.github.io/dev/deployment).
 
 ### 5.3 View it in the Real World
 After you deployed the application within a contract or using an ENS address, the ƉApp is available from everywhere, **globally**. To test this, you can use the evan.network dashboard. Open the following URL [https://dashboard.evan.network/index.html](https://dashboard.evan.network/index.html) and navigate to the `favorites ƉApp`. Before you can access your favorites, it is nessecary to create an evan.network identity. If you haven't created an identity before, have a look [here](/tutorial/first-steps).

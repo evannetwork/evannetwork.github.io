@@ -42,3 +42,4 @@
   - [Hello World - JS](/dapps/js/hello-world)
   - [Angular 5 Tutorials](/dapps/angular/choose)
   - [Best practices](/dapps/best-practices)
+- [Deploy your DApps & Contracts](/dev/deployment)
