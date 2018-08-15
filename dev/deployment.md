@@ -36,7 +36,22 @@ To register a ENS address, contact the evan.network team [here](https://gitter.i
 send us your desired ens subdomain and your accountId. (**No one of the evan.network team will ask
 you for your data or private key! Never send your private data to others!**). Mostly, the
 evan.network team will reserve you a sub domain, so you can manage your addresses behind, by
-yourself. Don't forget to prefix the name of your DApp with the subdomain that were assigned to you (e.g. myapp.mysubdomain).
+yourself. Don't forget to prefix the name of your DApp with the subdomain that were assigned to you
+(e.g. myapp.mysubdomain). When you changed the name within the dbcp.json, don't forget to update the
+index.ts file of your DApp, else your application can cause an endless loop. Their you will find the
+following code:
+
+```
+return buildModuleRoutes(
+  `myapp.${ getDomainName() }`,
+```
+
+Change it to: 
+
+```
+return buildModuleRoutes(
+  `myapp.mysubdomain.${ getDomainName() }`,
+```
 
 You can run the following script to choose wich projects you want to deploy.
 
