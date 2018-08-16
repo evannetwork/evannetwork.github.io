@@ -81,7 +81,7 @@ Depending on the setup of the Business Center, users may
 - be invited to join
 - be added by anyone that is already a member
 
-Users may join as many Business Centers they like. They are all are independent working spaces with their own scope and data. Their [ÐAPPs](/dev/dapps) are similar to dashboards and members can start working on contracts in the current Business Center or create new contracts in it.
+Users may join as many Business Centers they like. They are all are independent working spaces with their own scope and data. Their [ÐAPPs](/dapps/basics) are similar to dashboards and members can start working on contracts in the current Business Center or create new contracts in it.
 
 Accounts can create a Business Center scoped profile, which is similar to a business card for that context. In it users may provide data for other members to find them and start working together or share their qualifications or certificates with the Business Center community.
 
