@@ -17,13 +17,10 @@ You will be guided through the following steps:
 - [ÐApp basics](/dapps/basics)
 - [Hello World - standalone](/dapps/standalone/standalone)
 - [Hello World - JS](/dapps/js/hello-world)
-- [Angular 5 + evan.network framework](/dapps/angular/hello-world)
+- [Angular 5 Tutorials](/dapps/angular/choose)
   - [Basics: Hello World](/dapps/angular/hello-world)
   - [Task DApp setup](/dapps/angular/task)
   - [Task DApp Data-Contract](/dapps/angular/task-data-contract)
   - [Task Task Custom Contract](/dapps/angular/task-custom-contract)
-- [Ticks and Tricks](/dapps/tips/planning)
-  - [Planning the ÐApp structure](/dapps/tips/planning)
-  - [Best practices](/dapps/tips/advanced)
 
 Well, good luck and get started [here](/dapps/basics).

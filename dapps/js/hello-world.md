@@ -163,7 +163,7 @@ You will get a console output similar to the following. Behind the log parameter
 [![dapps-tutorial - directory](/public/dapps/deploy-to-contract.png){:width="50%"}](/public/dapps/deploy-to-contract.png)
 
 ### 3.2 Deploy ƉApp to ENS
-Have a look [dapp deployment](https://github.com/evannetwork/dapp-browser#ens-deployment).
+Have a look [ƉApp deployment](https://evannetwork.github.io/dev/deployment).
 
 ### 3.3 View it in the Real World
 After you deployed the application within a contract or by using a ENS address, the ƉApp is available from everywhere, **globally**. To test this, you can use the evan.network dashboard. Open the following URL [https://dashboard.evan.network/index.html](https://dashboard.evan.network/index.html) and navigate to the `favorites ƉApp`. Before you can access your favorites, it is nessecary to create an evan.network identity. If you haven't created an identity before, have a look [here](/tutorial/first-steps).

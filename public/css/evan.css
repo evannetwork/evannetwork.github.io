@@ -31,6 +31,7 @@ nav.sidebar-nav {
 
 nav.sidebar-nav h2, nav.sidebar-nav h3 {
   color: white;
+  margin-top: 15px;
 }
 
 html {
@@ -107,4 +108,8 @@ ul {
 
 ul ul {
   -webkit-padding-start: 25px;
+}
+
+p {
+  text-align: justify;
 }

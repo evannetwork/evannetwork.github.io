@@ -29,7 +29,7 @@ see that it is in progress, and you can add comments or even new members.
 A task manager just for yourself is all nice and well, but that is something that can be done in a text file. The point of a real task management application is to coordinate with others.
 
 And here comes the advantage of the blockchain into the game: you can add anyone who joined evan.network.
-Even if they didn't open the Taskboard or even know of its existence. They may have joined evan.network for completely different reasons and use completely different [Ðapps](/dev/dapps), but if you have established a contact with them, you can reference them in your applications and work. It is all interconnected through the common dataset of the blockchain.
+Even if they didn't open the Taskboard or even know of its existence. They may have joined evan.network for completely different reasons and use completely different [Ðapps](/dapps/basics), but if you have established a contact with them, you can reference them in your applications and work. It is all interconnected through the common dataset of the blockchain.
 
 You can add new members by clicking on the people icon.
 

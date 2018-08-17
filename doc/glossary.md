@@ -53,7 +53,7 @@ title: "Glossary"
 <a id="d"></a>
 <dl>
 <dt><a href="/doc/dao">DAO</a></dt><dd>Decentralized Autonomous Organization</dd>
-<dt><a href="/dev/dapps">ÐAPP</a></dt><dd>a Distributed Application utilizing blockchain contracts</dd>
+<dt><a href="/dapps/basics">ÐAPP</a></dt><dd>a Distributed Application utilizing blockchain contracts</dd>
 </dl>
 <a id="e"></a>
 <dl>
