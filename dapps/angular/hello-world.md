@@ -78,7 +78,7 @@ It looks like as follows.
 ```json
 {
   "public": {
-    "author": "evan",
+    "author": "evan GmbH",
     "dapp": {
       "dependencies": {
         "angular-core": "^1.0.0",
