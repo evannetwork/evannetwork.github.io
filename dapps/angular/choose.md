@@ -13,5 +13,3 @@ Please choose one of the following Angular 5 evan.network tutorials.
 - [Task DApp setup](/dapps/angular/task)
 - [Task DApp Data-Contract](/dapps/angular/task-data-contract)
 - [Task Task Custom Contract](/dapps/angular/task-custom-contract)
-
-[![evan-vs-angular](/dapps/angular/evan-vs-angular.png){:width="50%"}](/dapps/angular/evan-vs-angular.png)

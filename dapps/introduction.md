@@ -23,4 +23,6 @@ You will be guided through the following steps:
   - [Task DApp Data-Contract](/dapps/angular/task-data-contract)
   - [Task Task Custom Contract](/dapps/angular/task-custom-contract)
 
+If you want to create your own projects, have a look at the [evan.network project generator](/dev/generator-evan).
+
 Well, good luck and get started [here](/dapps/basics).
