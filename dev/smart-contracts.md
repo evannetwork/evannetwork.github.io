@@ -35,8 +35,6 @@ The recommendation in these samples is to use the Ethereum wallet for deploying 
 
 # Smart Contracts in evan.network
 
-## Base Contract
-
 ## DataContract
 The DataContract is a secured data storage contract for single properties and lists.
 
@@ -66,12 +64,6 @@ Functions are secured in the following manner:
   + the current state
   + the target state
 - this means that for example a contract member may set the state from the current state `active` to the state `PendingApproval`, and only the owner may set it from `PendingApproval` to `Terminated`.
-
-## Profile
-
-## Mailbox
-
-## Rights and Roles
 
 ## Business Center
 Business Centers are communities for working together on specific topics. They group accounts and contracts together and set a context for the work on the contracts. These contexts may be companies, projects or common interests.
