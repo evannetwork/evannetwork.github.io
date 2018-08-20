@@ -208,16 +208,15 @@ title: "evan.network Technical Overview"
 
 The evan.network builds on existing technology like a programmable blockchain with [Ethereum](https://ethereum.org), and a distributed file storage with [IPFS](https://ipfs.io).
 
-It combines those two technologies, and provides the storage and computing power and bandwidth to run distributed
-applications with the [Master Nodes](/doc/masternode).
+It combines those two technologies and provides the storage and computing power and bandwidth to run distributed
+applications with the [MasterNodes](/doc/masternode).
 
-All this infrastructure is exposed and made usable by fairly ordinary Web-Applications via the [Blockchain Core Library](/dev/blockchain-core).
+All this infrastructure is exposed and made usable by fairly ordinary web-applications via the [Blockchain Core Library](/dev/blockchain-core).
 
-Since this means, that all data in the blockchain, and all data in the IPFS are completely open to everyone to read,
-unless encrypted, and all application code would run in the browser and is fully readable and modifiable, there
-exists a need for a third class of code, that isn't as cryptographically secured as blockchain code, but also not as
-exposed as Javascript in your browser. Maybe something with exclusive access rights to certain contracts in the blockchain and other limited resources. For this reason [Smart Agents](/dev/smart-agents) exist.
-They are just small webservices, that run on controlled servers, that provide controlled access to resources and contracts that others might need access too, but can't be given full rights.
+This means that all data in the blockchain and all data in the IPFS are completely open to everyone to read,
+unless encrypted, and the entire application code would run in the browser and is fully readable and modifiable. Accordingly, there exists a need for a third class of code, which isn't as cryptographically secured as blockchain code, but also not as
+exposed as Javascript in your browser. This could be something with exclusive access rights to certain contracts in the blockchain and other limited resources. For this reason, [Smart Agents](/dev/smart-agents) exist.
+They are just small webservices, that run on controlled servers providing controlled access to resources and contracts that others might need access too, but can't be given full rights.
 
 <svg id="blockchain-core" version="1.1" width="100%" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
@@ -273,13 +272,13 @@ They are just small webservices, that run on controlled servers, that provide co
 
   </style>
 
-  <a xlink:href="https://github.com/evannetwork/blockchain-core">
+  <a xlink:href="https://github.com/evannetwork/api-blockchain-core">
    <text x="240" y="20" style="font-size: 20pt;">Blockchain Core Library</text>
   </a>
   <g transform="translate(0,80)">
     <title>Blockchain Core Library</title>
     <rect class="bw dotted" width="800" height="320"/>
-    <a xlink:href="https://github.com/evannetwork/blockchain-core">
+    <a xlink:href="https://github.com/evannetwork/api-blockchain-core">
       <text x="350" y="20">blockchain-core</text>
     </a>
     <text class="grey small" x="76" y="230"></text>
@@ -374,7 +373,7 @@ They are just small webservices, that run on controlled servers, that provide co
   
 </svg>
 
-The Blockchain Core Library is the central tool used in all development with evan.network. It is actually a collection of own functionality, and wrappers around 3rd party core functionality like blockchain transactions and distributed file system operations.
+The Blockchain Core Library is the central tool used in all development with evan.network. It is actually a collection of own functionalities and wrappers around third party core functionalities like blockchain transactions and distributed file system operations.
 
-[The full API documentation](https://github.com/evannetwork/blockchain-core) shows the actual exposed sub-namespaces in the blockchain core module are a little more fine-grained.
+[The full API documentation](https://github.com/evannetwork/api-blockchain-core) shows the actual exposed sub-namespaces in the blockchain core module are slightly more fine-grained.
 

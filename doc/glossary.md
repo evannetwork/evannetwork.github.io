@@ -33,7 +33,7 @@ title: "Glossary"
 
 <a id="0"></a>
 <dl>
-<dt><a href="/doc/account">Account</a></dt><dd>an agent/actor within the ethereum blockchain, identified with a 20 digit hex key, has a currency balance, can be an externally controlled account or a contract account</dd>
+<dt><a href="/doc/account">Account</a></dt><dd>an agent/ actor within the Ethereum blockchain, identified with a 20 digit hex key, has a currency balance, can be an externally controlled account or a contract account</dd>
 </dl>
 <a id="a"></a>
 <dl>
@@ -41,7 +41,7 @@ title: "Glossary"
 </dl>
 <a id="b"></a>
 <dl>
-<dt><a href="/tutorial/Mailbox/">BMail</a></dt><dd>a message enxchanged via the blockchain</dd>
+<dt><a href="/tutorial/Mailbox/">BMail</a></dt><dd>a message exchanged via the blockchain</dd>
 <dt><a href="https://en.wikipedia.org/wiki/Blockchain/">Blockchain</a><sup>[+]</sup></dt><dd>a cryptographically verified distributed global single consensus data record store</dd>
 <dt></dt><dd></dd>
 </dl>
@@ -53,14 +53,14 @@ title: "Glossary"
 <a id="d"></a>
 <dl>
 <dt><a href="/doc/dao">DAO</a></dt><dd>Decentralized Autonomous Organization</dd>
-<dt><a href="/dev/dapps">ÐAPP</a></dt><dd>a Distributed Application utilizing blockchain contracts</dd>
+<dt><a href="/dapps/basics">ÐAPP</a></dt><dd>a Distributed Application utilizing blockchain contracts</dd>
 </dl>
 <a id="e"></a>
 <dl>
 <dt><a href="https://ens.domains/">ENS</a><sup>[+]</sup></dt><dd>Ethereum Name Service</dd>
 <dt><a href="/doc/account#eoa">EOA</a></dt><dd>Externally Owned Account, usually controlled by a person, has no EVM code associated with it</dd>
 <dt><a href="https://www.ethereum.org/">Ethereum</a><sup>[+]</sup></dt><dd>a fully programmable blockchain</dd>
-<dt><a href="/doc/network">EVAN Network</a></dt><dd>European Verfied Application Node Network</dd>
+<dt><a href="/doc/network">EVAN Network</a></dt><dd>European Verified Application Node Network</dd>
 <dt><a href="http://www.ethdocs.org/en/latest/introduction/what-is-ethereum.html#ethereum-virtual-machine">EVM</a><sup>[+]</sup></dt><dd>Ethereum Virtual Machine, the execution environment for <a href="doc/smartcontracts">SmartContracts</a></dd>
 </dl>
 <a id="f"></a>
@@ -77,7 +77,7 @@ title: "Glossary"
 </dl>
 <a id="i"></a>
 <dl>
-<dt><a href="https://ipfs.io">IPFS</a><sup>[+]</sup></dt><dd>the Interplanetatary File System, a distributed file system, evan.network uses its own private instance</dd>
+<dt><a href="https://ipfs.io">IPFS</a><sup>[+]</sup></dt><dd>the Interplanetary File System, a distributed file system, evan.network uses its own private instance</dd>
 </dl>
 <a id="j"></a>
 <dl>
@@ -118,13 +118,13 @@ title: "Glossary"
 <a id="s"></a>
 <dl>
 <dt><a href="/dev/smart-agents">SmartAgent</a></dt><dd>just a fancy name for a webservice without UI that connects to the blockchain in some way</dd>
-<dt><a href="/dev/smart-contracts">SmartContract</a></dt><dd>a program that runs cryptographically secure on the ethereum virtual machine</dd>
-<dt><a href="https://solidity.readthedocs.io/en/v0.4.23/">Solidity</a><sup>[+]</sup></dt><dd>A high level language to write ethereum programs, often called SmartContracts</dd>
+<dt><a href="/dev/smart-contracts">Smart Contract</a></dt><dd>a program that runs cryptographically secure on the Ethereum virtual machine</dd>
+<dt><a href="https://solidity.readthedocs.io/en/v0.4.23/">Solidity</a><sup>[+]</sup></dt><dd>A high level language to write Ethereum programs, often called Smart Contracts</dd>
 </dl>
 <a id="t"></a>
 <dl>
-<dt><a href="/doc/transaction">Transaction</a></dt><dd>any write or change to the global blockchain records, can be a simple transfer of funds, or an executed smart contract</dd>
-<dt><a href="http://truffleframework.com/">Truffle</a><sup>[+]</sup></dt><dd>the de-facto standard ethereum application framework</dd>
+<dt><a href="/doc/transaction">Transaction</a></dt><dd>any write or change to the global blockchain records, can be a simple transfer of funds, or an executed Smart Contract</dd>
+<dt><a href="http://truffleframework.com/">Truffle</a><sup>[+]</sup></dt><dd>the de-facto standard Ethereum application framework</dd>
 </dl>
 <a id="u"></a>
 <dl>
@@ -136,7 +136,7 @@ title: "Glossary"
 </dl>
 <a id="w"></a>
 <dl>
-<dt><a href="https://github.com/ethereum/wiki/wiki/JavaScript-API">web3</a><sup>[+]</sup></dt><dd>an API collection to work with ethereum contracts</dd>
+<dt><a href="https://github.com/ethereum/wiki/wiki/JavaScript-API">web3</a><sup>[+]</sup></dt><dd>an API collection to work with Ethereum contracts</dd>
 </dl>
 <a id="x"></a>
 <dl>

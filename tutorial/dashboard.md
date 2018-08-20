@@ -2,7 +2,7 @@
 title: "Dashboard"
 ---
 # Dashboard
-The dashboard ÐAPP is your main entry point when logging in into evan.network.
+The dashboard ÐAPP is your main entry point when logging in to evan.network.
 
 When this is your first login, there isn't much to see yet. The most interesting part should be the "My Profile" section.
 
@@ -10,11 +10,11 @@ When this is your first login, there isn't much to see yet. The most interesting
 
 Depending on how you were invited, you will have different starting balances.
 
-But your profile name and accountID are there to check and copy.
+But your profile name and account ID are there to check and copy.
 
-As is the private key, in case you ever have to import it somewhere, to a different workstation for example.
+The same goes for the private key, in case you ever have to import it somewhere, to a different workstation for example.
 
-The profile encryption key isn't immediately obvious probably, but it is the key used to encrypt all the important data in your blockchain profile. It really shouldn't be the same as your private key.
+The profile encryption key might not be obvious immediately, but it is the key used to encrypt all the important data in your blockchain profile. It really shouldn't be the same as your private key.
 
 
 [![dashboard](/public/tutorial/dashboard.png){:width="50%"}](/public/tutorial/dashboard.png)

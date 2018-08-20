@@ -55,13 +55,13 @@ title: "Blockchain Core"
 
   </style>
 
-  <a xlink:href="https://github.com/evannetwork/blockchain-core">
+  <a xlink:href="https://github.com/evannetwork/api-blockchain-core">
    <text x="240" y="20" style="font-size: 20pt;">Blockchain Core Library</text>
   </a>
   <g transform="translate(0,80)">
     <title>Blockchain Core Library</title>
     <rect class="bw dotted" width="800" height="320"/>
-    <a xlink:href="https://github.com/evannetwork/blockchain-core">
+    <a xlink:href="https://github.com/evannetwork/api-blockchain-core">
       <text x="350" y="20">blockchain-core</text>
     </a>
     <text class="grey small" x="76" y="230"></text>
@@ -153,4 +153,4 @@ title: "Blockchain Core"
 
 The Blockchain Core Library is the central tool used in all development with evan.network. It is actually a collection of own functionality, and wrappers around 3rd party core functionality like blockchain transactions and distributed file system operations.
 
-[The full API documentation](https://github.com/evannetwork/blockchain-core) shows the actual exposed sub-namespaces in the blockchain core module are a little more fine-grained.
+[The full API documentation](https://github.com/evannetwork/api-blockchain-core) shows the actual exposed sub-namespaces in the blockchain core module are a little more fine-grained.

@@ -1,23 +1,24 @@
 ---
-title: "Angular - Task DApp setup"
+title: "Angular - Task ƉApp setup"
 ---
-# Angular - Task DApp setup
-**Before performing this example, please go through the [Angular - Hello World](/dapps/angular/hello-world) tutorial, as this tutorial is based on the Hello World example.**
+# Angular - Task ƉApp setup
+**Before performing this example, please go through the [Angular - Hello World](/dapps/angular/hello-world) tutorial, as this tutorial is based on the 'Hello World' example.**
 
-This example shows how an evan.network featured DApp behaves and how it can interact with contracts. With the help of a Task DApp it is easy to show how a contract can be created, read out, adapted and how different data sets can be saved.
+This example shows how an evan.network featured ƉApp behaves and how it can interact with contracts. With the help of a task ƉApp it is easy to show how a contract can be created, read out, adapted and how different data sets can be saved.
 
-This case is explained using [TodoMVC Angular](http://todomvc.com/examples/angular2).
+This case is explained using [`TodoMVC` Angular](http://todomvc.com/examples/angular2).
 
-The Project Setup will explain how to integrate an existing Angular application into the existing evan.network structure.
+The project setup will explain how to integrate an existing Angular application into the existing evan.network structure.
 
-If you focus on functional implementations of blockchain interactions and less on angular, you can skip the first chapter by copying the src folder from [dapps/task-todomvc-integrated/src](https://github.com/evannetwork/dapps-tutorial-angular/tree/master/dapps/task-todomvc-integrated) to the [dapps/task/src](https://github.com/evannetwork/dapps-tutorial-angular/tree/master/dapps/task) folder.
+If you focus on functional implementations of blockchain interactions and less on Angular, you can skip the first chapter by copying the src folder from [dapps/task-todomvc-integrated/src](https://github.com/evannetwork/dapps-tutorial-angular/tree/master/dapps/task-todomvc-integrated) to the [dapps/task/src](https://github.com/evannetwork/dapps-tutorial-angular/tree/master/dapps/task) folder.
 
 # 1. Seed project
 So, where do we start?
 
-In the [Angular - Hello World](/dapps/angular/hello-world) it was already shown how evan.network apps are structured and how they are built and deployed. We will now integrate the TodoMVC example into this project structure.
+In the [Angular - 'Hello World'](/dapps/angular/hello-world), it was already shown how evan.network apps are structured and how they are built and deployed. We will now integrate the `TodoMVC` example into this project structure.
 
-To handle a smarter startup for you, a seed project already exists within the dapps folder. By having a look into the "dapps/task" folder, you will find a clear project with all configurations you will need. Its nearly the same as the Hello World sample, but without any components or services. This application is ready to use and you can already start it. Open two command lines and start the development environment:
+To provide a smarter inital point for you, a seed project already exists within the ƉApps folder. By having a look into the 
+`dapps/task` folder, you will find a clear project with all configurations you will need. It is nearly the same as the 'Hello World' sample, but without any components or services. This application is ready to use and you can already start it. Open two command lines and start the development environment:
 
 ```sh
 npm run serve
@@ -28,13 +29,13 @@ npm run dapps-build
 npm run dapps-serve
 ```
 
-Before you have look into the application, add a cool img into public.imgSquare (use [https://www.base64-image.de/](https://www.base64-image.de) to format your img into a base64).
+Before you take a look into the application, add a cool img into `public.imgSquare` (use [https://www.base64-image.de/](https://www.base64-image.de) to format your img into a base64).
 
-Now you can navigate to [http://localhost:3000/dev.html#/dashboard.evan/favorites](http://localhost:3000/dev.html#/dashboard.evan/favorites) to add your application as a new favorite. Click on "Add bookmark" and insert the name of your DApp, that is specified within the dbcp.json file (in this case "tutorialtask") and open it. There you will find an empty DApp that displays nothing more than an empty application. At this point we can start developing.
+Now you can navigate to [http://localhost:3000/dev.html#/dashboard.evan/favorites](`http://localhost:3000/dev.html#/dashboard.evan/favorites`) to add your application as a new favorite. Click on `add bookmark` and insert the name of your ƉApp that is specified within the `dbcp.json` file (in this case `tutorialtask`) and open it. There you will find an empty ƉApp that displays nothing more than an empty application. At this point we can start developing.
 
 
 # 2. Insert TodoMVC
-Download the [TodoMVC app](https://github.com/tastejs/todomvc/tree/master/examples/angular2) and have a look into the "examples/angular2" folder.
+Download the [`TodoMVC` app](https://github.com/tastejs/todomvc/tree/master/examples/angular2) and have a look into the `examples/angular2` folder.
 - services
   - store.js
   - store.ts
@@ -44,10 +45,10 @@ Download the [TodoMVC app](https://github.com/tastejs/todomvc/tree/master/exampl
 - bootstrap.js
 - bootstrap.ts
 
-At first, we see that the application is represented by one component and one service. We can ignore the js files, because the development environment build them for us together into one file. To migrate the componentent into our task, create a new folder "app" within the "task/src/components" folder and copy the "app.ts" and "app.html" into this folder. Also, copy the "services/store.ts" file into "task/src/services" folder.
+At first, we see that the application is represented by one component and one service. We can ignore the js-files, because the development environment built them for us together into one file. To migrate the componentent into our task, create a new folder 'app' within the `task/src/components` folder and copy the `app.ts` and `app.html` into this folder. Also, copy the `services/store.ts` file into `task/src/services` folder.
 
-# 3. Correct requirement loading and Angular 5
-To load angular over the evan.network core libraries from IPFS you need to adjust the import command within the app component. Also, the path to our Todo service has changed. Take the following adjustments
+# 3. Correct Requirement loading and Angular 5
+To load Angular over the evan.network core libraries from IPFS, you need to adjust the import command within the app component. Also, the path to our todo service has changed. Undertake the following adjustments
 
 ```js
 import {Component} from 'angular2/core';
@@ -67,7 +68,7 @@ import {
 } from '../../services/store';
 ```
 
-The angular-libs are existing within the node_modules of the task or rather within the lerna root node_modules. This folder is mapped within the tsconfig.json. Within the evan.network framework, the dapp-browser has the possibility during runtime to load the "angular-libs" from the ens path "angularlibs.evan". As a result of this, the libraries will not be build into your application to reduce redundant source code loading. The library will loaded from IPFS.
+The Angular-libs exist within the `node_modules` of the task or within the Lerna `root node_modules`. This folder is mapped within the `tsconfig.json`. Within the evan.network framework, the ƉApp-browser has the possibility during Runtime to load the Angular-libs from the ENS path `angularlibs.evan`. As a result of this the libraries will not be built into your application to reduce redundant source code loading. The library will be loaded from IPFS.
 
 ```json
 {
@@ -84,9 +85,9 @@ The angular-libs are existing within the node_modules of the task or rather with
 }
 ```
 
-To update the service for Angular 5 with more usage comfort, we will add the "@Injectable()" decorator to the service, change the "export default class TodoApp" of the TodoApp to "export class TodoApp" and also add the correct templateUrl. The headers of the two files will look like the following:
+To update the service for Angular 5 with more usage comfort, we will add the `@Injectable()` decorator to the service, change the `export default class TodoApp` of the TodoApp to `export class TodoApp` and also add the correct `templateUrl`. The headers of the two files will look like the following:
 
-store.ts
+`store.ts
 ```ts
 import {
 	Injectable						  // @angular/core
@@ -101,7 +102,7 @@ export class TodoStore {
   ....
 ```
 
-app.ts
+`app.ts`
 ```ts
 @Component({
 	selector: 'todo-app',
@@ -116,7 +117,7 @@ export class TodoApp {
 ...
 ```
 
-A difference between Angular 2 and Angular 5 is the *ngFor statement. We need to change the *ngFor statement from
+A difference between Angular 2 and Angular 5 is the *`ngFor` statement. We need to change the *`ngFor` statement from
 
 ```html
 *ngFor="#todo of todoStore.todos"
@@ -128,8 +129,8 @@ to
 *ngFor="let todo of todoStore.todos"
 ```
 
-# 4. Add component and service to task module
-Your console will log tons of errors. This is because the component and service are not registered in the Task Module. Open the "task/src/index.ts" file and add the imports.
+# 4. Add Component and Service to Task Module
+Your console will log tons of errors. This is because the component and service are not registered in the task module. Open the `task/src/index.ts` file and add the imports.
 
 index.ts
 ```ts
@@ -182,14 +183,14 @@ function getConfig(isDispatcher?: boolean) {
 ...
 ```
 
-# 5. Fix styling
-After you applied this changes, the TodoMVC should run. Have a look at [tutorialtask](http://localhost:3000/dev.html#/dashboard.evan/tutorialtask).
+# 5. Fix Styling
+After you applied this changes, the `TodoMVC` should run. Have a look at [`tutorialtask`](http://localhost:3000/dev.html#/dashboard.evan/tutorialtask).
 
 [![TodoMVC first](/public/dapps/angular/task/todo_mvc_first.png){:width="200px"}](/public/dapps/angular/task/todo_mvc_first.png)
 
-But wait, it looks like shit and its not working? Correct! We forgot to add the TodoMVC styling. Within the node_modules folder of the original TodoMVC folder, you will find a file "todomvc-app-css/index.css". Copy this file into the "task/src/scss" folder and rename it to "index.scss", so the build job will recognize it and will build it into the combined css file.
+But wait, it does not look nice, neither is it working? Correct! We forgot to add the `TodoMVC` styling. Within the `node_modules` folder of the original `TodoMVC` folder, you will find a file `todomvc-app-css/index.css`. Copy this file into the `task/src/scss` folder and rename it to `index.scss`, so the building job will recognize and build it into the combined css-file.
 
-**Please keep in mind: This application runs integrated within the evan.network dashboard without any iframe. So global styles, will be realy global! So remove html, body styles and wrap the whole index.scss file within an selector that only select the TodoApp component. Its selector is ".todoapp", so wrap the whole scss into this selector, so its only effective within your component. Don't forget to replace all ".todoapp" selectors within the ".todoapp" wrapper class with "&"**
+**Please keep in mind: This application runs integrated within the evan.network dashboard without any frame. So global styles will be really global! So remove HTML, body styles and wrap the whole `index.scss`-file within a selector that only selects the TodoApp component. Its selector is`.todoapp`, so wrap the whole scss into this selector, so it is only effective within your component. Don't forget to replace all `.todoapp` selectors within the `.todoapp` wrapper class with `&`**
 
 remove:
 ```scss
@@ -227,7 +228,7 @@ add:
 }
 ```
 
-Add the following style at the start of the scss file for more evan.network compatibility:
+Add the following style at the start of the scss-file for more evan.network compatibility:
 ```scss
 @import '@evan.network/angular-sass/src/variables/colors';
 
@@ -299,22 +300,22 @@ Add the following style at the start of the scss file for more evan.network comp
 }
 ```
 
-# 6. Fix functionality
-After you applied the correct styling, the application looks very good. But when you try to use it nothing will happen? This is correct! Try to add a new Todo and reload the browser and the new todos will be appear.
+# 6. Fix Functionality
+After you applied the correct styling, the application looks neat. But when you try to use it, nothing will happen. This is correct, too! Try to add a new todo and reload the browser, then the new todos will be appear.
 
-What is that? The evan.network Angular has a large list of dependencies and the browser must perform a lot of heavy operations. To reduce performance issues, especially on mobile devices, the automatic change detection is disabled. As a result of this, you can also dynamic applications without any restrictions of AOT compiling. You can run any component directly, the evan.network Angular framework will create ng.factories during runtime and it will cache them for you for late usage, to speed up anything.
+What is that? The evan.network Angular has a large list of dependencies and the browser must perform a lot of heavy operations. To reduce performance issues, especially on mobile devices, the automatic change detection is disabled. As a result of this, you can also run dynamic applications without any restrictions of AOT compiling. You can run any component directly, the evan.network Angular framework will create `ng.factories` during runtime and it will cache them for you for later usage, to speed up everything.
 
-To keep the application running, you need to apply the Angular ChangeDetectorRef Service and enable the whole change detection for your application or you take the performance friendly way and implements manually change detection.
+To keep the application running, you need to apply the Angular `ChangeDetectorRef` service and enable the entire change detection for your application, or you take the performance-friendly way and implement manual change detection.
 
-## 6.1. Enable automatic change detection
-Open the "task/src/components/root/root.ts" and remove the following line:
+## 6.1. Enable automatic Change Detection
+Open the `task/src/components/root/root.ts` and remove the following line:
 
 ```ts
 this.ref.detach();
 ```
 
-## 6.2 Enable performance optimizations
-Require the "ChangeDetectorRef" service from the angular-libs and implement the "this.ref.changeDetection()" call to any function that changes something within the ui.
+## 6.2 Enable Performance Optimizations
+Require the `ChangeDetectorRef` service from the Angular-libs and implement the `this.ref.changeDetection()` call to any function that changes something within the UI.
 
 ```ts
 import {
@@ -407,7 +408,7 @@ Now the application is finally integrated and you can watch the result on the fo
 (http://localhost:3000/dev.html#/dashboard.evan/tutorialtask)
 
 After this, you can continue with one of the following tutorials:
-- [Task DApp DataContract](/dapps/angular/task-data-contract)
+- [Task ƉApp DataContract](/dapps/angular/task-data-contract)
 - [Task Task Custom Contract](/dapps/angular/task-custom-contract)
 
 [![TodoMVC integrated](/public/dapps/angular/task/todo_mvc_integrated.png){:width="200px"}](/public/dapps/angular/task/todo_mvc_integrated.png)
