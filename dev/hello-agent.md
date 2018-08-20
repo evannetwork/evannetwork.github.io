@@ -15,7 +15,7 @@ You will still have to do some setup though.
 - you have installed and started a REDIS server on your system
 
 ### [Edge Server)(/dev/smart-agents#edge-server)
-In the evan.network, the established way to write web services is to use the [`Edge Server`](https://github.com/evannetwork/edge-server-seed), which is just an [ActionHero](https://www.actionherojs.com/) with some added infrastructure, in particular [REDIS](https://redis.io/), [blockchain-core](https://github.com/evannetwork/blockchain-core) and [IPFS](/dev/ipfs). It also uses the version "^18.0", so asynchronous programming with callbacks is discouraged now.
+In the evan.network, the established way to write web services is to use the [`Edge Server`](https://github.com/evannetwork/edge-server-seed), which is just an [ActionHero](https://www.actionherojs.com/) with some added infrastructure, in particular [REDIS](https://redis.io/), [blockchain-core](https://github.com/evannetwork/api-blockchain-core) and [IPFS](/dev/ipfs). It also uses the version "^18.0", so asynchronous programming with callbacks is discouraged now.
 
 Installation is straight forward.
 

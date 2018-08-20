@@ -13,7 +13,7 @@ If you don't want to code by yourself, you can simply read the docs and copy the
 # 1. Contract Implementation
 Before your start your implementation, it is important to decide what functionalities you will need. You need to think about data parameters, user roles including security restrictions and so on...
 
-For this example, we need a contract that handles some contract metadata and a list of todos. This is the perfect case for the [evan.network DataContract](https://evannetwork.github.io/dev/data-contract) / [DataContract wiki](https://github.com/evannetwork/blockchain-core/blob/feature/readthedocs-test/docs/data-contract.rst).
+For this example, we need a contract that handles some contract metadata and a list of todos. This is the perfect case for the [evan.network DataContract](https://evannetwork.github.io/dev/data-contract) / [DataContract wiki](https://github.com/evannetwork/api-blockchain-core/blob/feature/readthedocs-test/docs/data-contract.rst).
 
 When you use a self-implemented contract, it is important to add the contract implementation ABI to our `dbcp.json` definition file. In this case, we can simply use the blockchain-core DataContract wrapper implementation to handle our contract calls. For documentation reasons, you should still put the ABI definition of the DataContract into the DBCP definition. So other people that read the DBCP definition of the created contract automaticaly receive your contract definition and functions. So you can program the contract from anywhere, also outside of your application.
 

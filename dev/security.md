@@ -18,7 +18,7 @@ To establish communication, accounts/ contracts need to exchange keys. This is o
 
 As a developer, you usually have to keep track of this yourself, unless you use one of the helper functions from [Factories](/dev/smart-contract#contract-factories) or [Business Centers](/dev/smart-contract#business-cener).
 
-The key exchange module is made available through the [blockchain core](https://github.com/evannetwork/blockchain-core) library.
+The key exchange module is made available through the [blockchain core](https://github.com/evannetwork/api-blockchain-core) library.
 
 
 ## Permissions in Smart Contracts

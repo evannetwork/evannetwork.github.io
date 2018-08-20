@@ -5,7 +5,7 @@ title: "evan.prompt"
 
 The simplest way to just start playing with evan network is to install the `evan.prompt`.
 
-It connects you to evan.network and allows you to interact with the [programmers API](https://github.com/evannetwork/blockchain-core)
+It connects you to evan.network and allows you to interact with the [programmers API](https://github.com/evannetwork/api-blockchain-core)
 
 Don't let the name fool you, this is not just for working with blockchain contracts, the `evan` command line tool can be used to interact with all components of `evan.network`, i.e. also the [IPFS](/dev/ipfs) file stores, the [ENS](/dev/ens) etc.
 
@@ -82,7 +82,7 @@ It provides an easy command line interface to a lot of tasks developers will hav
 
 Or just start an interactive `prompt` and start exploring.
 
-It starts  a `nodejs` REPL with a configured [blockchain-core](https://github.com/evannetwork/blockchain-core) library under bcc, also an IPFS and Web3 object and some more, which can be explored with tab completion.
+It starts  a `nodejs` REPL with a configured [blockchain-core](https://github.com/evannetwork/api-blockchain-core) library under bcc, also an IPFS and Web3 object and some more, which can be explored with tab completion.
 
 You can also directly pass code on the command line to `eval`, although with a slightly less defined environement.
 
