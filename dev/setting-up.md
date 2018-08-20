@@ -59,7 +59,7 @@ All the basic prerequisites for this, like `git`, need to be installed too, but 
 
 ## Installation the Support Libraries
 
-So far, this seems easy enough. The primary thing to install is the [blockchain-core libs](https://github.com/evannetwork/blockchain-core). They are written in `typescript` and implemented as a `npm` package, so the installation should be straight forward, too.
+So far, this seems easy enough. The primary thing to install is the [blockchain-core libs](https://github.com/evannetwork/api-blockchain-core). They are written in `typescript` and implemented as a `npm` package, so the installation should be straight forward, too.
 
 Since the node ecosystem and especially the Ethereum APIs are pretty fast moving environments, it is not unlikely to encounter dependency and version problems though, at least for the time being.
 
@@ -78,6 +78,6 @@ We will be using the defacto-standard blockchain development framework [truffle]
 
 [Smart Agent](/doc/smart-agents) is just a fancy name for a web service that provides blockchain access but has no own user interface. Usually it has some kind of RPC API, in REST format or otherwise, or it connects to some other service and listens for events.
 
-The agent you will be writing will use the [blockchain-core](https://github.com/evannetwork/blockchain-core) library, which bundles and encapsulates a lot of specialized functionalities for evan.network, but also provides a lot of standard blockchain functionalities.
+The agent you will be writing will use the [blockchain-core](https://github.com/evannetwork/api-blockchain-core) library, which bundles and encapsulates a lot of specialized functionalities for evan.network, but also provides a lot of standard blockchain functionalities.
 
 [Hello Agent](/dev/hello-agent)
