@@ -159,13 +159,19 @@ This is already done with distributed web applications.
     <text class="big grey" transform="rotate(90)" x="20">Core API</text>
     <use xlink:href="#triangle" x="180" y="-15" />
     
-    <a xlink:href="/dev/blockchain-core" transform="translate(100,20)">
+    <a xlink:href="/dev/security#key-exchange" transform="translate(20,20)">
+      <rect class="library" width="160" height="80" rx="2"/>
+      <text class="white" x="40" y="42">Key Exchange</text>
+      <title>Establishes Account Communication Channels</title>
+    </a>
+
+    <a xlink:href="/dev/blockchain-core" transform="translate(200,20)">
       <rect class="library" width="160" height="80" rx="2"/>
       <text class="white" x="32" y="42">Blockchain Core</text>
       <title>ECMAScript Library to work with Ethereum Contracts and IPFS</title>
     </a>
 
-    <a xlink:href="/dev/dbcp" transform="translate(300,20)">
+    <a xlink:href="/dev/dbcp" transform="translate(380,20)">
       <rect class="library" width="160" height="80" rx="2"/>
       <text class="white" x="64" y="42">DBCP</text>
       <title>A Description Language for Decentralized Business Applications</title>
@@ -179,7 +185,7 @@ This is already done with distributed web applications.
     <use xlink:href="#triangle" x="180" y="-15" />
     
     <g transform="translate(0,20)">
-      <g transform="translate(160,0)">
+      <g transform="translate(70,0)">
         <a xlink:href="https://github.com/evannetwork/smart-contracts-admin">
           <text class="small grey" transform="rotate(90)" x="20" y="-36">admin</text>
           <title>Private Repository</title>
@@ -263,13 +269,6 @@ This is already done with distributed web applications.
           <text class="small grey" x="24" y="30">DBCP Reference</text>
           <text class="small grey" x="24" y="46">Sharing</text>
           <title>Ethereum Contract</title>
-        </a>
-      </g>
-      <g transform="translate(50,70)">
-        <a xlink:href="/dev/security#key-exchange" transform="translate(0,20)">
-          <rect class="library" width="120" height="80" rx="2"/>
-          <text class="white" x="20" y="42">Key Exchange</text>
-          <title>Establishes Account Communication Channels</title>
         </a>
       </g>
     </g>

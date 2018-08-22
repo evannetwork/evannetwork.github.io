@@ -4,20 +4,18 @@ title: "Deployment"
 # Deployment
 
 Deploying DApps and smart-contract means publishing the various components using a valid ENS path.
-This instruction assumes, that you are used the [evan.network project
-generator](https://github.com/evannetwork/generator-evan) for generating your project. This project
+These instructions assume you have used the [evan.network project
+generator](https://github.com/evannetwork/generator-evan) to set up your project. This project
 structure supports all nesecarry scripts and commands to deploy your projects.
 
 ## Build and deploy smart-contracts
 
-After your smart-contracts were build and published within the evan.network blockchain, a compiled
-json abi file was generated. This can be referenced within your DBCP description files and acts as a
-self described contract.
+When your smart-contracts are comiled within the evan.network blockchain, json abi file was generated and can be used. To make these descriptions available in published ÐApps, you have to upload the ABI file and reference it within the DBCP. This can be referenced within your DBCP description files and acts as a self described contract.
 
 ## ENS DApp deployment
 
-Each DApp can be deployed to the evan.network, so it can be accessed from anywhere, not only from a
-localhost server. This is handle by an wrapped library, to handle the deployment as simple as
+Each ÐApp can be deployed to the evan.network, so it can be accessed from anywhere, not only from a
+localhost server. This is handled by a wrapper library, to make the deployment as simple as
 possible. To deploy DApps to ens paths, you need one configuration file, that specifies which
 accounts and which configurations should be used for the deployment. This file must be js / json
 files that exports specific values [deployment config](https://github.com/evannetwork/generator-
@@ -61,7 +59,7 @@ npm run deploy pathToConfig
 
 **Be sure that "pathToConfig" is the absolute path to your deployment configuration (e.g. /path-to-my-project/config/deployment.js)!**
 
-Each DApp that were successfully build by "npm run dapps-build", is available by to your deploy
+Each ÐApp that were successfully build by "npm run dapps-build", is available by to your deploy
 scope.
 
 [![Finished](/public/dev/deploy.png){:width="50%"}](/public/dev/deploy.png)
@@ -77,5 +75,5 @@ Now, you can open the ens address to your application on https://dashboard.evan.
 
 ## IPFS Deployment
 
-If you want to deploy your application without any ENS address by using an contract, you can have a
+If you want to deploy your application without any ENS address by using a contract, you can have a
 look at the [standalone DApp tutorial](/dapps/standalone/standalone) in the section "3.1 Deploy ƉApp within an Contract".
