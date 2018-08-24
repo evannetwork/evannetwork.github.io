@@ -57,6 +57,8 @@ You will also need [`npm`](https://www.npmjs.com/), almost certainly `npx` and [
 
 All the basic prerequisites for this, like `git`, need to be installed too, but usually the package manager of your OS takes care of this.
 
+At the time `nodejs v10.*` is not supported yet though.
+
 ## Installation the Support Libraries
 
 So far, this seems easy enough. The primary thing to install is the [blockchain-core libs](https://github.com/evannetwork/api-blockchain-core). They are written in `typescript` and implemented as a `npm` package, so the installation should be straight forward, too.
