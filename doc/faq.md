@@ -65,7 +65,7 @@ Due to the technical architecture of evan.network, it provides a high transactio
 ***Who is in charge of the governance of the ecosystem, what is the organizational structure of this party? How is the governing party incentivized?***
 
 #### A.
-contractus GmbH acts as legal body of a [Decentralized Autonomous Organization (DAO)](https://evannetwork.github.io/doc/dao), consisting of all [MasterNode](https://evannetwork.github.io/doc/masternode) operators (Affiliates). All essential participation rights for shaping and developing the network itself are transferred from the contractus GmbH into the DAO, where every Affiliate has voting rights for making decisions. Affiliates are active participants of the network and vote for organizational, operational and product-roadmap related issues.
+evan GmbH acts as legal body of a [Decentralized Autonomous Organization (DAO)](https://evannetwork.github.io/doc/dao), consisting of all [MasterNode](https://evannetwork.github.io/doc/masternode) operators (Affiliates). All essential participation rights for shaping and developing the network itself are transferred from the evan GmbH into the DAO, where every Affiliate has voting rights for making decisions. Affiliates are active participants of the network and vote for organizational, operational and product-roadmap related issues.
 
 #### Q.
 ***Are there any restrictions to the access of the ecosystem? Are there different roles? What are those roles and who can fulfill them?***
@@ -153,7 +153,7 @@ Features:
 
 #### A.
 Chain specifications, operation configurations, chain management Smart Contracts and Smart Contract templates will be made available under open source at GitHub.
-Contractus also releases [DBCP](https://evannetwork.github.io/dev/dbcp) (distributed business communication protocol), a toolchain for [Smart Contract](https://evannetwork.github.io/dev/smart-contracts) and [ÐApp](https://evannetwork.github.io/dapps/introduction) specifications under open source. With these library developers can describe in a manifest a ÐApp and how it works together with security, role models, name service.
+evan also releases [DBCP](https://evannetwork.github.io/dev/dbcp) (distributed business communication protocol), a toolchain for [Smart Contract](https://evannetwork.github.io/dev/smart-contracts) and [ÐApp](https://evannetwork.github.io/dapps/introduction) specifications under open source. With these library developers can describe in a manifest a ÐApp and how it works together with security, role models, name service.
 
 
 #### Q.
