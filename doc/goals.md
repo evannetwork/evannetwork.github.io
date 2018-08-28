@@ -26,7 +26,7 @@ The goals of evan.network are:
 - To provide a blockchain technology based on German or European law, respectively.
 - To establish decentralized governance structures that control the development of the network independently of a central organization.
 
-The evan.network is initiated by [contractus GmbH](http://www.contractus.com) and gradually transferred to a decentralized autonomous organization (DAO) by the admission of partners into the evan.network, in which the control of the network is carried out by the involved partners themselves.
+The evan.network is initiated by [evan GmbH](http://www.evan.network) and gradually transferred to a decentralized autonomous organization (DAO) by the admission of partners into the evan.network, in which the control of the network is carried out by the involved partners themselves.
 
 
   
