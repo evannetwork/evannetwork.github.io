@@ -3,9 +3,8 @@ title: "evan.network libraries"
 ---
 # evan.network libraries
 
-The evan.network DApps uses several libraries to handle a powerfull and (mostly) simple DApp
-development. Have a short look over all libraries that you will use by developing featured Angular
-DApps.
+evan.network DApps use several libraries to handle a powerful and (mostly) simple DApp
+development. Here is a short overview over the libraries that you will use while developing featured Angular DApps.
 
 | name / ens-address | sources                                                       | version | docs                                                                                                                                                                                                      |
 |:-------------------|:--------------------------------------------------------------|:--------|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
