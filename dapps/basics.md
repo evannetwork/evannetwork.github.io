@@ -7,12 +7,12 @@ contracts and interacting with them.
 
 Frontend ÐApps are mostly implemented using Typescript, Angular 5 and Ionic 3. The general ÐApp is developed as a web application. The idea that differentiates these decentralized applications from standard web applications is that they do not get their files directly from a web server, but from the IPFS. Via IPFS, the various files are distributed among all nodes and made decentrally available. With the help of Web3, the application can be connected to the evan.network blockchain to interact with contracts. This mechanism for interaction with contracts is generalized and simplified by different frameworks, like the DBCP and the blockchain-core. This makes it possible to write efficient, reusable and decentralized applications. For efficient development of a resource-saving application, the various library projects are available via IPFS and can therefore be easily integrated into the project. Each ÐApp library and project is defined using the DBCP protocol and is bundled including its necessary files and its DBCP configuration.
 
-# Featured ÐApps VS. standalone ÐApps
+# Packaged ÐApps VS. standalone ÐApps
 By using the evan.network framework to create featured ÐApps, the initialization of DBCP or the blockchain-core is completely replaced and existing, already initialized and configured instances can be loaded. This has the advantage that accounts, encryptions and similar complex configurations are executed dynamically by the user when the application is started.
 
 To do this, however, all ÐApps must be started via the evan.network ÐApp-browser application, since this provides the complete function stack and the various UIs. **As long as the provided functions are used, the application can only be started in environments that have the corresponding structures.** Alternatively, the blockchain-core can be initialized, configured and used as in the [standalone example](/dapps/standalone/standalone).
 
-# Featured ÐApp loading
+# Packaged ÐApp loading
 The evan.network ÐApp-browser is the entry point for featured ÐApps. It will handle dynamic URL routing, so ÐApp ENS addresses or contract addresses using an underlying DBCP description. If the URL changes, the ÐApp-browser will check for the new ÐApp that should be loaded.
 
 [![Finished](/public/dapps/dapp-browser.png){:width="50%"}](/public/dapps/dapp-browser.png)
