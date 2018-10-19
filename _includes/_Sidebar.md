@@ -3,7 +3,6 @@
 - [evan.network](/doc/network)
 - [DAO](/doc/dao)
 - [Architecture](/doc/architecture)
-   - [Business Centers](/doc/architecture)
 - [MasterNode](/doc/masternode)
 - [FAQ](/doc/faq)
 - [Glossary](/doc/glossary)
