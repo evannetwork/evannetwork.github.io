@@ -1,23 +1,32 @@
 # Demo-Management
 
-Mit Hilfe der „Demo Management“ Anwendung lassen sich verschiedene Demo Anwendungen verwalten und mit speziell für den Anwendungsfall erstellten Nutzern starten.
+With the help of the "Demo Management" application different demo applications can be administered and started with users created especially for the use case. After you have logged into the evan.network add the Demo Management DApp to your favorites via the following ENS entry: **demomanagement.evan**.
 
-Nachdem Sie sich im evan.network angemeldet haben fügen Sie die Demo-management DApp über den folgenden ENS Eintrag zu Ihren Favoriten hinzu: „demomanagement.evan“.
+[![Finished](/dapps/dapps/demo-management/1.ens-address.png){:width="50%"}](/dapps/dapps/demo-management/1.ens-address.png)
+[![Finished](/dapps/dapps/demo-management/2.favorites.png){:width="50%"}](/dapps/dapps/demo-management/2.favorites.png)
 
-Wenn die DApp nun geöffnet wird, finden wir einen leeren Demo bereich vor. Klicken Sie auf „Demo erstellen“, um eine neue Demo hinzuzufügen. Dort können Sie der Demo einen Namen zuweisen und den Typ der Demo auswählen.
 
-Nachdem die Demo erstellt wurde, können die Details der Demo angezeigt werden.
+If the DApp is opened now, we will find an empty demo area. Click on "Create Demo" to add a new demo. There you can assign a name to the demo and select the type of demo.
+
+[![Finished](/dapps/dapps/demo-management/3.empty.png){:width="50%"}](/dapps/dapps/demo-management/3.empty.png)
+[![Finished](/dapps/dapps/demo-management/4.create-demo.png){:width="50%"}](/dapps/dapps/demo-management/4.create-demo.png)
+
+After the demo is created, you can view the details of the demo.
+
+[![Finished](/dapps/dapps/demo-management/5.overview.png){:width="50%"}](/dapps/dapps/demo-management/5.overview.png)
 
 ## Rental-Demo
 
-Im oberen Bereich der Details, wird nochmals der Name und der Typ der Demo angezeigt. Um die Demo zu starten, müssen zuerst zwei verschiedene Nutzer (ein Disponent und ein Lieferant) erzeugt werden. Mnemonics, Passwörter und Namen werden automatisch generiert, können aber auch bis zu Ihrer entgültigen Erstellung angepasst werden. Benutzen Sie hierzu die „Passwörter anzeigen“ Checkbox um Mnemonic Passwort sichtbar zu machen.
+In the upper area of the details, the name and type of the demo is displayed again. To start the demo, two different users (a dispatcher and a supplier) have to be created first. Mnemonics, passwords and names will be generated automatically, but can also be adjusted until the profile creation. Use the "Show passwords" checkbox to make mnemonics and passwords visible. Once you have entered your desired user information, verify the captcha and use the "Create Profile" button.
 
-Wenn Sie die von Ihnen gewünschten Nutzerinformationen eingetragen haben, verifizieren Sie die Captcha-Abfrage und benutzen Sie den „Profile erstellen“ Button.
+[![Finished](/dapps/dapps/demo-management/6.rental-users-create.png){:width="50%"}](/dapps/dapps/demo-management/6.rental-users-create.png)
 
-Nachdem die Nutzer erstellt wurden, muss nun der eigentliche Demo Case inklusive der zugehörigen Verträge erstellt werden. Nutzen Sie hierzu den „Vertragsstruktur erstelle
+After the users have been created, the actual demo case including the corresponding contracts must now be created. Use the "Create contract structure" button to do this.
 
-Sobald die Sychronisation abgeschlossen ist, ist der Demo Case fertig erstellt und im oberen Bereich wird nun die zur Demo zugehörige Vertrags-ID angezeigt. Sollte ein neuer Vertrag ohne Demo Einträge benötigt werden, lässt sich ein neuer Vertrag über den „Neuen Vertrag erstellen“ Button erzeugen.
+[![Finished](/dapps/dapps/demo-management/7.rental-create-contracts.png){:width="50%"}](/dapps/dapps/demo-management/7.rental-create-contracts.png)
 
-Im Bereich der Nutzer können Sie, wie bereits beschrieben, über die „Passwörter anzeigen“ Checkbox Mnemonic und Passwort in Klartext anzeigen lassen. Somit können sie sich auf dem normalen Weg in einer anderen Browser Session mit diesem Nutzer anzumelden.
+As soon as the synchronization is finished, the demo case is created and the contract ID is displayed in the upper area. If a new contract without demo entries is required, a new contract can be created using the "Create new contract" button.
 
-Alternativ dazu, können Sie den „Demo starten“ Button, der unter jedem Nutzer dargestellt wird, benutzen, um einen neuen Browser-Tab zu öffnen, in dem der Demo Nutzer automatische angemeldet ist. Beachten Sie dabei, dass die Profilinformationen (Menmonic, Passwort, AccountId) im Klartext in der URL eingefügt werden. Benutzen Sie diese Mechanik nur für Demo Nutzer!
+In the user area you can, as already described, use the "Show passwords" checkbox to display Mnemonic and password in plain text. Thus you can log in the normal way in another browser session with this user. Alternatively, you can use the "Start Demo" button, which is displayed under each user, to open a new browser tab in which the demo user is automatically logged in. **Please note that the profile information (Menmonic, Password, AccountId) will be inserted in plain text in the URL. Use this mechanism only for demo users!**
+
+[![Finished](/dapps/dapps/demo-management/8.rental-finished.png){:width="50%"}](/dapps/dapps/demo-management/8.rental-finished.png)
