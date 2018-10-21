@@ -18,7 +18,6 @@
 - [evan.network Blockchain](/dev/blockchain)
 - [distributed file storage](/dev/ipfs)
 - [DBCP](/dev/dbcp)
-- [Identity Management](doc/Identity)
 - [Smart Contract Architecture](/dev/overview)
   - [Smart Contracts](/dev/smart-contracts)
   - [Services](/dev/services)
