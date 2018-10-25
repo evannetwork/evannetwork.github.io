@@ -1,7 +1,7 @@
 ---
-title: "Identity Register"
+title: "Decentralized Identities"
 ---
-# Identity Register
+# Decentralized Identities
 
 In evan.network everything, no matter if human, machine or organization has a decentralized, self-sovereign identity which enables them to interact with each other in a trustful way.
 
