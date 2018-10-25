@@ -3,7 +3,7 @@ title: "Decentralized Identities"
 ---
 # Decentralized Identities
 
-In evan.network everything, no matter if human, machine or organization has a decentralized, self-sovereign identity which enables them to interact with each other in a trustful way.
+In evan.network everything, no matter if human, machine or organization has a decentralized, self-sovereign identity which enables them to interact with each other in a swift and trusted way.
 
 Identities are stored securely on the blockchain, ensuring that each identity is tamper-proof and can’t be impersonated by for example providing fraudulent documentation. Decentralized identities are a critical feature to evan.network, as they constitute a pivotal point for safe business conduct on the platform. 
 
