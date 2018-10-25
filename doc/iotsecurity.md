@@ -22,7 +22,7 @@ To verify that the response is valid, the device has to examine three factors:
 *	The current blockheader
 *	A signed blockhash from the same blockheader from multiple incubed nodes 
 
-Incubed nodes themselves are discouraged from turning malicious by a deposit each node operator has to consign. If one of those nodes were to sign a wrong or fraudulent RPC request(blockhash), the deposit of that node is consumed as a penalty. 
+Incubed(Slock.it) nodes themselves are discouraged from becoming malicious by a deposit each node operator has to consign. If one of those nodes were to sign a wrong or fraudulent request, the deposit of that node is consumed as a penalty. 
 The IoT device can publish the information to put it up for verification by the network, in which case the deposit would be transferred to the watchdog that caught the error.
 However, since the IoT device asks multiple nodes to sign the blockhash, it is possible for the device to verify the response and even claim the deposit in case a blockhash was falsely signed.
 
