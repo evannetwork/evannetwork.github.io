@@ -11,7 +11,7 @@ As an example of how this is done, let’s take a look at how on a technical lev
 
 When you hit the unlock button on your remote, the signal is processed by a masternode. The masternode is the endpoint receiving the request to unlock your car. Once the masternode verifies that it is you, it will allow for the vehicle to be opened.
 
-However, it could be the case that someone might attempt to compromise a masternode they have control over and tries to open your car without your consent. 
+However, it could be the case that someone might attempt to compromise a masternode they have control over and try to open your car without your consent. 
 
 To prevent manipulation on IoT devices connected to the evan.network, the Incubed protocol is employed. IoT devices are fitted with the Slock.it client. Incubed itself is a network of nodes which function as servers for the respective devices. 
 
