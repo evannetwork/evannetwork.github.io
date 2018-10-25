@@ -13,16 +13,20 @@ When you hit the unlock button on your remote, the signal is processed by a mast
 
 However, it could be the case that someone might attempt to compromise a masternode they have control over and try to open your car without your consent. 
 
-To prevent manipulation on IoT devices connected to the evan.network, the Incubed protocol is employed. IoT devices are fitted with the Slock.it client. Incubed itself is a network of nodes which function as servers for the respective devices. 
+To prevent manipulation on IoT devices connected to the evan.network, the Incubed protocol is employed. IoT devices are fitted with the [Slock.it](https://slock.it/) client. Incubed itself is a network of nodes which function as servers for the respective devices. 
 
-The IoT device, in our case a car remote control, sends an RPC request to an incubed node. 
+IoT devices, in our case a car remote control, send an RPC request to an incubed node. 
+Due to the stateless incubed client, there is no need to synchronize with the network. The device is instanly ready to use.
+
 To verify that the response is valid, the device has to examine three factors:
 
 *	[The merkle proof](https://medium.com/byzantine-studio/blockchain-fundamentals-what-is-a-merkle-tree-d44c529391d7)
 *	The current blockheader
 *	A signed blockhash from the same blockheader from multiple incubed nodes 
 
-Incubed(Slock.it) nodes themselves are discouraged from becoming malicious by a deposit each node operator has to consign. If one of those nodes were to sign a wrong or fraudulent request, the deposit of that node is consumed as a penalty. 
+Incubed nodes themselves are discouraged from becoming malicious by a deposit each node operator has to consign. If one of those nodes were to sign a wrong or fraudulent request, the deposit of that node is consumed as a penalty. 
 The IoT device can publish the information to put it up for verification by the network, in which case the deposit would be transferred to the watchdog that caught the error.
 However, since the IoT device asks multiple nodes to sign the blockhash, it is possible for the device to verify the response and even claim the deposit in case a blockhash was falsely signed.
+
+
 
