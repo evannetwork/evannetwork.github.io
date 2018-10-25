@@ -3,6 +3,26 @@ title: "IoT Security"
 ---
 # IoT Security 
 
+In the age of interconnectivity in which not only people but thousands of devices, small to large, are always connected and communicate with each other, security becomes ever more critical. 
+To avoid coming up with or implementing secure measures on your own, you can rely on the secure IoT connectivity aspect of evan.network. 
+Built-in IoT security is a crucial feature of the platform's holistic approach.
 
-Making use of the incubed protocol your IoT devices are always safe. 
-redundancy with masternodes when unlocking your car, ensuring that a compromised masternode can’t be used for carjacking.
+As an example of how this is done, let’s take a look at how on a technical level, you would unlock your car that is part of the evan.network:
+
+When you hit the unlock button on your remote, the signal is processed by a masternode. The masternode is the endpoint receiving the request to unlock your car. Once the masternode verifies that it is you, it will allow for the vehicle to be opened.
+
+However, it could be the case that someone is misusing a masternode they have control over and tries to unlock your car illegally. 
+
+To prevent manipulation on IoT devices connected to the evan.network, the Incubed protocol is employed. IoT devices are fitted with the Slock.it client. Incubed itself is a network of nodes which function as servers for the respective devices. 
+
+The IoT device, in our case a car remote control, sends an RPC request to an incubed node. 
+To verify that the response is valid, the device has to examine three factors:
+
+*	[The merkle proof](https://medium.com/byzantine-studio/blockchain-fundamentals-what-is-a-merkle-tree-d44c529391d7)
+*	The current blockheader
+*	A signed blockhash from the same blockheader from multiple incubed nodes 
+
+Incubed nodes themselves are discouraged from turning malicious by a deposit each node operator has to consign. If one of those nodes were to sign a wrong or fraudulent RPC request(blockhash), the deposit of that node is consumed as a penalty. 
+The IoT device can publish the information to put it up for verification by the network, in which case the deposit would be transferred to the watchdog that caught the error.
+However, since the IoT device asks multiple nodes to sign the blockhash, it is possible for the device to verify the response and even claim the deposit in case a blockhash was falsely signed.
+
