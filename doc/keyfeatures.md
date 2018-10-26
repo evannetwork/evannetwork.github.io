@@ -22,7 +22,7 @@ By knowing whom you are dealing with, you are saving time and resources on other
 
 ### On Chain Messaging
 
-Secure, swift and reliable communication with business partners or customers is essential in today’s business world. 
+Secure, swift and reliable communication with business partners or customers is always critical. 
 
 On evan.network, the platform provides you with the necessary tools in the form of an on-chain AddressBook and a mailbox, adding an extra layer of security by blockchain’s built-in encryption. 
 
@@ -53,12 +53,10 @@ Making use of the unique packaged DApps service, Distributed Applications will b
 
 Users of your DApp will automatically have the appropriate UI loaded, and your developers can access APIs and data descriptions in one go.  Practically this means you can start your work on all things DApp within a heartbeat!
 
-
 On a technical level, this is done by having DApps on the evan.network stored directly on a distributed file system. All DApps are therefore natively hosted from the get-go, eliminating the additional cost for external servers to host your application. 
 
-Using the evan.network framework, Packaged DApps don't have to initialize either the blockchain-core nor any other dependencies, you are saving time by not having to do the footwork on your own.
+Using the evan.network framework, Packaged DApps don't have to initialize either the blockchain-core nor any other dependencies, you are saving time and resources by not having to do the footwork on your own.
 
-Launching your packaged DApps through evan.network loads the complete function stack as well as various user interfaces.
 
 #### [Learn More](https://evannetwork.github.io/dapps/basics)
 
