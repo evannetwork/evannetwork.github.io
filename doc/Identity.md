@@ -7,10 +7,13 @@ In evan.network everything, no matter if human, machine or organization has a de
 
 Identities are stored securely on the blockchain, ensuring that each identity is tamper-proof and can’t be impersonated by for example providing fraudulent documentation. Decentralized identities are a critical feature to evan.network, as they constitute a pivotal point for safe business conduct on the platform. 
 
-Identities can be verified using the Identity Verification Service which manages claims provided for every existing identity. With this identities can be checked and gain trust explicitly from trustees or implicit from previous business relations.     
-Explicit trust is established by directly verifying your counterpart's authenticity. 
+Identities can be verified using the Identity Verification Service which manages claims provided for every existing identity. With this identities can be checked and gain trust explicitly from trustees or implicit from previous business relations. 
 
-Implicit trust functions in the way that identities, with which you have not established an explicit trust relationship, can be trusted indirectly.
+Establishing trust can be done in two ways: **Explicitly** or **Implicitly**. 
+* Explicit trust is established by directly verifying your partner's identity. The relationship is established manually.
+* Implicit trust is established automatically. For example, the relationship between Parent and Child domains in Active Directory are an implicit trust relationship.
+
+Implicit trust functions in the way that identities, with which you have not established an explicit trust relationship, can be trusted indirectly or automatically.
 When an existing trusted partner of yours trusts a third-party unknown to you, conducting business from your side with that third party is based on implicit trust. 
 This feature is crucial in supply chain scenarios, where you might not or must not know all members of an n-tier supply chain. Utilizing implicit trust, secure and seamless transactions even with unknown or anonymous partners is a non-issue and requires no further interaction, allowing for the construction of various trust models to address specific concerns, e.g. data privacy within a supply chain.
 
