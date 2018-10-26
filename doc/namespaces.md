@@ -3,7 +3,7 @@ title: "Namespaces"
 ---
 # Namespaces
 
-Evan.network uses a nameservice to provide unique namespaces for DApps and identities. With the help of unique namespaces your blockchain applications,assets and identities receive a human-readable address.
+Evan.network uses a nameservice to provide unique namespaces for DApps and identities. With the help of unique namespaces your blockchain applications and identities receive a human-readable address.
 
 Just as with normal URLs your DApps are reachable from the WWW without any additional tools needed.
 You don’t need to get used to complex new addresses, such as ‘0x2910543' when you want to call an application.
