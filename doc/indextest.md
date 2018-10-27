@@ -3,9 +3,12 @@
 
 The `evan.network` is an open ecosystem for blockchain based business applications. With Ethereum at the root of evan, we are providing a fully independent and enterprise grade platform. Currently being used in productive enterprise environments, we base our improvements on the experience gathered from true business cases.
 
-With itself being a DAO, transparency is at the heart of evan.network. We follow a philosophy of open source and have made our codebase publicly available. The neutrality aspect of the system is safeguarded by an open authority consensus against hostile takeovers.
+Designed as a holistic platform evan constitutes a full suite, offering hosted DApps, on chain messaging service, an identity solution (Decentralized Identities) and a access control for smart contracts.
 
 Integrating the network within your production environment allows you to seamlessly tap into the advantages of Web 3.0 distributed applications (DApps), as applications on the evan chain are reachable via API calls. 
+
+With itself being a DAO, transparency is at the heart of evan.network. We follow a philosophy of open source and have made our codebase publicly available. The neutrality aspect of the system is safeguarded by an open authority consensus against hostile takeovers.
+
 
 <dl>
 <dt><a href="/tutorial/quick-start">Quick Start</a><dt>
