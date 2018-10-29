@@ -24,7 +24,7 @@ Smart Contract Access Delegation (SCAD) enables evan.network users to define per
 
 #### [Packaged DApps](https://evannetwork.github.io/dapps/basics)
 
-Packaged Distributed Applications (DApps) on the evan.network are designed to ease the development process on the blockchain. 
+Packaged Distributed Applications (DApps) on the evan.network are designed to ease the development process on the blockchain by loading all dependencies for you.
 
 #### [Customized Namespaces](https://evannetwork.github.io/doc/namespaces)
 
@@ -36,7 +36,8 @@ In order to adequately cover all security aspects without the need for any extra
 
 #### [Contract Templates](https://evannetwork.github.io/dev/deployment)
 
-Contract templates are a great way to bootstrap smart contract development and instant deployment. 
+Contract templates are a great way to bootstrap smart contract development and adapt contracts to specific business needs.
+
 
 Getting started on evan.network
 ----
