@@ -44,7 +44,7 @@ Getting started
 <dl>
 <dt><a href="/tutorial/quick-start">Quick Start</a><dt>
 <dd> Beginning your journey with evan is easy.<br />
-Starting with a profile that you register through our decentralized service web service is all it takes.</dd>
+Creating a profile that you register through our decentralized web service is all it takes.</dd>
 <dt><a href="/doc/goals">General Overview</a></dt>
 <dd>A deeper look into the concepts of the <a href="/doc/network">network</a> and the <a href="/doc/dao">DAO</a>.</dd>
 <dt><a href="/dev/overview">Technical Details</a></dt>
