@@ -9,6 +9,8 @@ Identities are stored securely on the blockchain, ensuring that each identity is
 
 Identities can be verified using the Identity Verification Service which manages claims provided for every existing identity. With this identities can be checked and gain trust explicitly from trustees or implicit from previous business relations. 
 
+#### Establishing trust 
+
 Establishing trust can be done in two ways: **Explicitly** or **Implicitly**. 
 * Explicit trust is established by directly verifying your partner's identity. The relationship is established manually.
 * Implicit trust is established automatically. For example, the relationship between Parent and Child domains in Active Directory are an implicit trust relationship.
