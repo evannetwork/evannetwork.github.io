@@ -6,7 +6,8 @@ title: "On Chain Messaging"
 Secure, swift and reliable communication with business partners or customers is always critical.
 Evan.network provides you with the necessary tools in the form of an on-chain AddressBook and a Mailbox, adding an extra layer of security due to blockchain’s built-in encryption. 
 
-To facilitate interaction with other users, the on-chain AddressBook presents a comfortable and secure way to establish and manage relationships. Exchanging keys with partners becomes a trivial task by making use of the AddressBook.
+To facilitate secure interaction with other users, the on-chain AddressBook presents a comfortable and secure way to establish and manage trust relationships. The exchange of required cryptographic keys with network partners is conducted through the AddressBook, making this a trivial task.
+
 
 The blockchain based Mailbox facilitates straightforward communication with other Identities, for example sending a contract invitation to a person or a device. 
 
