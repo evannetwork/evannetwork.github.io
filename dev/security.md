@@ -1,7 +1,7 @@
 ---
 title: "Security"
 ---
-# Security
+# Security and Smart Contract Access Delegation (SCAD)
 
 ## About
 To ensure that contents stored can be read by all related parties and cannot be read or even manipulated by unrelated parties, the Smart Contracts of evan.network utilize multiple security approaches.
