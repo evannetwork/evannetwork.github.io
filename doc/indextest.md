@@ -14,7 +14,7 @@ Key Features
 
 #### [Decentralized Identities](https://evannetwork.github.io/doc/Identity)
 
-In evan.network everything, no matter if human, machine or organization has a decentralized, self-sovereign identity which enables them to interact with each other in a trustful way.
+In evan.network everything, no matter if human, machine or organization has a decentralized, self-sovereign identity which enables them to securely and instantaneously interact with each other.
 
 #### [Smart Contract Access Delegation (SCAD)](https://evannetwork.github.io/dev/security)
 
@@ -48,9 +48,9 @@ Starting with a profile that you register through our decentralized service web 
 <dt><a href="/doc/goals">General Overview</a></dt>
 <dd>A deeper look into the concepts of the <a href="/doc/network">network</a> and the <a href="/doc/dao">DAO</a>.</dd>
 <dt><a href="/dev/overview">Technical Details</a></dt>
-<dd>If you wanna know how it works and fits together.</dd>
+<dd> Dive deeper and immerse yourself.</dd>
 <dt><a href="/dev/getting-started">Start Programming</a></dt>
-<dd>Set up the environment and follow the tutorials.</dd>
+<dd>Set up the environment and start building right way, we have handy tutorials ready to help you become familiar with the platform.</dd>
 <dt><a href="/doc/faq">FAQ</a></dt>
 <dd> </dd>
 <dt><a href="/doc/glossary">Glossary</a></dt>
