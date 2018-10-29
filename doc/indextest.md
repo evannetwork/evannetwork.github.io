@@ -63,7 +63,7 @@ Creating a profile that you register through our decentralized web service is al
 
 
 
-<h2><a href="doc/architecture">Architecture</a></h2>
+<h2> <a href="doc/architecture">Architecture</a> </h2>
 
 <svg id="evan.network" version="1.1" width="100%" viewBox="0 0 600 900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
