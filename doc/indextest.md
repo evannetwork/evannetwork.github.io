@@ -36,12 +36,15 @@ In order to adequately cover all security aspects without the need for any extra
 
 Contract templates are a great way to bootstrap smart contract development and instant deployment. 
 
+___
+
+Getting started
+----
 
 <dl>
 <dt><a href="/tutorial/quick-start">Quick Start</a><dt>
-<dd>The easiest way to get started is to register and to create a profile.<br />
-This is already done with distributed web applications.
-</dd>
+<dd> Beginning your journey with evan is easy.<br />
+Starting with a profile that you register through our decentralized service web service is all it takes.</dd>
 <dt><a href="/doc/goals">General Overview</a></dt>
 <dd>A deeper look into the concepts of the <a href="/doc/network">network</a> and the <a href="/doc/dao">DAO</a>.</dd>
 <dt><a href="/dev/overview">Technical Details</a></dt>
