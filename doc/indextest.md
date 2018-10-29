@@ -9,6 +9,9 @@ Integrating the network's capabilities into your productive environment allows y
 
 With it being a DAO itself, transparency is at the heart of evan.network. We follow a philosophy of open source and have made our codebase publicly available. The neutrality aspect of the system is safeguarded by an open authority consensus against hostile network takeovers.
 
+Key Features
+----
+
 
 <dl>
 <dt><a href="/tutorial/quick-start">Quick Start</a><dt>
