@@ -12,27 +12,27 @@ With it being a DAO itself, transparency is at the heart of evan.network. We fol
 Key Features
 ----
 
-#### Decentralized Identities
+#### [Decentralized Identities](https://evannetwork.github.io/dev/deployment)
 
 In evan.network everything, no matter if human, machine or organization has a decentralized, self-sovereign identity which enables them to interact with each other in a trustful way.
 
-#### Smart Contract Access Delegation (SCAD)
+#### [Smart Contract Access Delegation (SCAD)](https://evannetwork.github.io/dev/security)
 
 Smart Contract Access Delegation (SCAD) enables evan.network users to define permissions for smart contracts with granular detail, even allowing for complex trans organizational rights and permission management. 
 
-#### Packaged DApps
+#### [Packaged DApps](https://evannetwork.github.io/dapps/basics)
 
 Packaged Distributed Applications (DApps) on the evan.network are designed to ease the development process on the blockchain. 
 
-#### Customized Namespaces
+#### [Customized Namespaces](https://evannetwork.github.io/doc/namespaces)
 
 Evan.network uses a nameservice to provide unique namespaces for DApps and identities, adding unique names for applications or identities. 
 
-#### Secure IoT connectivity
+#### [Secure IoT connectivity](https://evannetwork.github.io/doc/iotsecurity)
 
 In order to adequately cover all security aspects without the need for any extra service implementation, the secure IoT connectivity feature of evan.network offers a functioning IoT security suite for enterprises. 
 
-#### Contract Templates
+#### [Contract Templates](https://evannetwork.github.io/dev/deployment)
 
 Contract templates are a great way to bootstrap smart contract development and instant deployment. 
 
