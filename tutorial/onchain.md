@@ -3,10 +3,8 @@ title: "On Chain Messaging"
 ---
 # On Chain Messaging 
 
-Secure, swift and reliable communication with business partners or customers is always critical. Consisting of a contact ledger and a mailbox, On Chain Messaging covers all aspects of an enterprise grade communication suite.
-
-On evan.network, the platform provides you with the necessary tools in the form of an on-chain AddressBook and a Mailbox, adding an extra layer of security due to blockchain’s built-in encryption. 
-
+Secure, swift and reliable communication with business partners or customers is always critical.
+Evan.network provides you with the necessary tools in the form of an on-chain AddressBook and a Mailbox, adding an extra layer of security due to blockchain’s built-in encryption. 
 
 To facilitate interaction with other users, the on-chain AddressBook presents a comfortable and secure way to establish and manage relationships, by comfortably exchanging keys with others on the platform. 
 
