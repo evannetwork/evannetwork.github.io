@@ -12,7 +12,7 @@ With it being a DAO itself, transparency is at the heart of evan.network. We fol
 Key Features
 ----
 
-#### [Decentralized Identities](https://evannetwork.github.io/dev/deployment)
+#### [Decentralized Identities](https://evannetwork.github.io/doc/Identity)
 
 In evan.network everything, no matter if human, machine or organization has a decentralized, self-sovereign identity which enables them to interact with each other in a trustful way.
 
