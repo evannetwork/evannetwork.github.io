@@ -29,8 +29,8 @@ Files on the IPFS are encrypted by default at all times, and profit from the dis
 Second, attached to every smart contract is a Rights&Role management smart contract. Rights&Role contracts define what metadata may be stored in a smart contract. 
 There, the access level for respective users is defined in granular detail. 
 
-Whenever a member saves information to the smart contract, the member uses a key to sign and encrypt the changes he made. 
-Keys can be retrieved from the smart contract by users with the proper permissions.
+Whenever a user saves new metadata to the smart contract, the user uses a key to sign and encrypt the changes he made. 
+Keys are retrieved from the smart contract by users with the proper permissions.
 
 ### Details Access Control
 As the main part of data related to contracts is stored in the distributed file system, only references to the DFS are stored in the contract. Contents in the DFS are encrypted with one or more keys specific to the contract instance they belong to.
