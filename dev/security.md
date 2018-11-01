@@ -20,6 +20,85 @@ As a developer, you usually have to keep track of this yourself, unless you use 
 
 The key exchange module is made available through the [blockchain core](https://github.com/evannetwork/api-blockchain-core) library.
 
+## Facilitating Access Control 
+### Introduction Files & Data
+First of all, files are never stored on the smart contract itself. Instead, files are stored on a distributed filesystem (DFS), the IPFS (Interplanetary File System). Smart contracts merely hold a reference to where the file has been stored. 
+
+Files on the IPFS are encrypted by default at all times, and profit from the distributed storage aspect. With distributed storage all files are highly available by default, as no single point of failure exists. 
+
+Second, attached to every smart contract is a Rights&Role management smart contract. Rights&Role contracts define what metadata may be stored in a smart contract. 
+There, the access level for respective users is defined in granular detail. 
+Permissioned users, when they are reading or committing to a smart contract, 
+
+Whenever a member saves information to the smart contract, the member uses a key to sign and encrypt the changes he made. 
+Keys can be retrieved from the smart contract by users with the proper permissions.
+
+
+### About
+As the main part of data related to contracts is stored in the distributed file system, only references to the DFS are stored in the contract. Contents in the DFS are encrypted with one or more keys specific to the contract instance they belong to.
+
+Contract participants, which should be enabled to read and/ or write contract content, need to have access to the keys responsible for the contract data (called 'data keys' in this context). This is done by maintaing a 'sharings' info, which is basically a key store keeping data keys, grouped by the following criteria:
+- **participant** - the contract participant, the key is intended for
+- **section** - the section in the contract, which holds encrypted data
+- **block** - this annotes the _starting_ point, from which on the key is valid
+
+The Sharings of a contract is basically a structured list of encrypted keys.
+In a simple contract, the creator of the contract creates a single data key for this contract and wants to share it with other contract members to enable them to read the data in the contract. Therefore, the creator puts the data key into the Sharings info. To prevent third parties from accessing this data key, it is encrypted with the communication key between the contract owner and the contract participant.
+
+![sharings - schema](/public/dev/sharings_schema.png)
+
+
+### Key Criteria
+#### Data Keys
+The creator of a contract creates a data key on contract creation and adds this to the Sharings as 'shared with herself/ himself'. This key is not stored on the owners side and the owner performs exactly the same steps to retrieve the data key as all contract participants.
+
+#### Participants
+There is no catch-all keyword for sharing encrypted contents with everyone, or a similar mechanic. Sharing happens explicitely and directed from the owner to a participant.
+
+When sharing keys with contract participants, the data key is encrypted with the communication key ('comKey') between the party sharing the key and the party the key is shared with. This means that before sharing encrypted contract contents with another party, usually a key exchange needs to be undertaken beforehand.
+
+To expose encrypted content to a broader scope without performing a key exchange beforehand, keys can be shared via a scope. This scope has to be known by all participating parties and the key that belongs to the scope has to be accessable by all participating parties. An example for a scope can be a common business context - like a Business Center, where all participating parties cooperate in.
+
+#### Sections
+Typical examples for Sections are lists and properties in DataContracts. Each participant gets an entry in the Sharings with the section names that are shared with him or her.
+Other contracts like Asset Contracts or Service Contracts hold data in applicable properties, to which can be referred in the same manner.
+
+If all contents of a contract are encrypted with the same key, this key can be shared for the section '*', which means all sections. Key retrievals get the section names as an argument and for keys in this manner:
+
+1. Check if a section with the same name as requested has been added to the participant's key section - if one exists, use keys from it
+2. If no matching section was found, check if this participant has keys for the all section '*' - if so, use keys from it
+
+#### Blocks
+##### Key Lifetimes 
+Blocks in Sharings signal the starting point, from where on this key is valid. So to be able to read data added at a specific block, a participant requires a key shared before or at the same block.
+Data added **after** this block can be read by the participant the data has been shared with. Data added **before** this block cannot be read by this participant through this key.
+
+![multikeys](/public/dev/multikeys.png)
+
+Keys are valid until they are replaced by a new one, which is then valid until replaced or indefinitely removed.
+
+![multikeys - lifetime](/public/dev/multikeys_lifetime.png)
+
+This principle is for example used for retrieving keys to decrypt data from lists, where keys might have been updated over time. Taking the example from the last picture, an entry added at block 37 has to be encrypted with the block 20 key. Elements added in or after block 40 use the block 40 key for en- and decryption.
+
+This ensures that:
+- keys can be updated
+- old entries stay visible for participants that have been granted access to the old key
+- newer entries can only be read by participants that have the current key
+
+
+##### Zero and Infinity
+**Granting** a key starting from block 0 makes this key ultimatively valid, as any data has been added after block 0. This is used for adding a generic key during contract creation.
+
+**Requesting** a key from block 'infinity' by omitting the block argument returns the latest valid key. This can be used when encrypting new data. The timestamp when retrieving this key has to be added to the `cryptoInfo` to ensure that the data can be decrypted later-on.
+
+
+##### Sharing Keys
+When sharing keys with another user, the same block number should be used as the original key. So if user A has a key that is valid starting from block 30 and shares it with user B, the sharing should be made as 'starting from block 30'. This means that user B can read entries added at or after block 30. 
+If user B gets the key shared as 'starting from 50' for example, this user would not be able to read contents added before this block (even if the key might match the content).
+
+
+
 
 ## Deep Dive Permissions in Smart Contracts
 ### Basic Permissions
@@ -192,71 +271,3 @@ This algorithm is used for encrypting file hashes, which are 32 byte values. 'ec
 
 #### unencrypted
 Like the name suggests, this is not an actual encryption. The envelope is just used as a wrapper for unencrypted data that follow the same guidelines. This is useful when the data scheme requires an envelope but the data should be public.
-
-
-
-## Sharings
-### About
-As the main part of data related to contracts is stored in the distributed file system, only references to the DFS are stored in the contract. Contents in the DFS are encrypted with one or more keys specific to the contract instance they belong to.
-
-Contract participants, which should be enabled to read and/ or write contract content, need to have access to the keys responsible for the contract data (called 'data keys' in this context). This is done by maintaing a 'sharings' info, which is basically a key store keeping data keys, grouped by the following criteria:
-- **participant** - the contract participant, the key is intended for
-- **section** - the section in the contract, which holds encrypted data
-- **block** - this annotes the _starting_ point, from which on the key is valid
-
-The Sharings of a contract is basically a structured list of encrypted keys.
-In a simple contract, the creator of the contract creates a single data key for this contract and wants to share it with other contract members to enable them to read the data in the contract. Therefore, the creator puts the data key into the Sharings info. To prevent third parties from accessing this data key, it is encrypted with the communication key between the contract owner and the contract participant.
-
-![sharings - schema](/public/dev/sharings_schema.png)
-
-
-### Key Criteria
-#### Data Keys
-The creator of a contract creates a data key on contract creation and adds this to the Sharings as 'shared with herself/ himself'. This key is not stored on the owners side and the owner performs exactly the same steps to retrieve the data key as all contract participants.
-
-#### Participants
-There is no catch-all keyword for sharing encrypted contents with everyone, or a similar mechanic. Sharing happens explicitely and directed from the owner to a participant.
-
-When sharing keys with contract participants, the data key is encrypted with the communication key ('comKey') between the party sharing the key and the party the key is shared with. This means that before sharing encrypted contract contents with another party, usually a key exchange needs to be undertaken beforehand.
-
-To expose encrypted content to a broader scope without performing a key exchange beforehand, keys can be shared via a scope. This scope has to be known by all participating parties and the key that belongs to the scope has to be accessable by all participating parties. An example for a scope can be a common business context - like a Business Center, where all participating parties cooperate in.
-
-#### Sections
-Typical examples for Sections are lists and properties in DataContracts. Each participant gets an entry in the Sharings with the section names that are shared with him or her.
-Other contracts like Asset Contracts or Service Contracts hold data in applicable properties, to which can be referred in the same manner.
-
-If all contents of a contract are encrypted with the same key, this key can be shared for the section '*', which means all sections. Key retrievals get the section names as an argument and for keys in this manner:
-
-1. Check if a section with the same name as requested has been added to the participant's key section - if one exists, use keys from it
-2. If no matching section was found, check if this participant has keys for the all section '*' - if so, use keys from it
-
-#### Blocks
-##### Key Lifetimes 
-Blocks in Sharings signal the starting point, from where on this key is valid. So to be able to read data added at a specific block, a participant requires a key shared before or at the same block.
-Data added **after** this block can be read by the participant the data has been shared with. Data added **before** this block cannot be read by this participant through this key.
-
-![multikeys](/public/dev/multikeys.png)
-
-Keys are valid until they are replaced by a new one, which is then valid until replaced or indefinitely removed.
-
-![multikeys - lifetime](/public/dev/multikeys_lifetime.png)
-
-This principle is for example used for retrieving keys to decrypt data from lists, where keys might have been updated over time. Taking the example from the last picture, an entry added at block 37 has to be encrypted with the block 20 key. Elements added in or after block 40 use the block 40 key for en- and decryption.
-
-This ensures that:
-- keys can be updated
-- old entries stay visible for participants that have been granted access to the old key
-- newer entries can only be read by participants that have the current key
-
-
-##### Zero and Infinity
-**Granting** a key starting from block 0 makes this key ultimatively valid, as any data has been added after block 0. This is used for adding a generic key during contract creation.
-
-**Requesting** a key from block 'infinity' by omitting the block argument returns the latest valid key. This can be used when encrypting new data. The timestamp when retrieving this key has to be added to the `cryptoInfo` to ensure that the data can be decrypted later-on.
-
-
-##### Sharing Keys
-When sharing keys with another user, the same block number should be used as the original key. So if user A has a key that is valid starting from block 30 and shares it with user B, the sharing should be made as 'starting from block 30'. This means that user B can read entries added at or after block 30. 
-If user B gets the key shared as 'starting from 50' for example, this user would not be able to read contents added before this block (even if the key might match the content).
-
-
