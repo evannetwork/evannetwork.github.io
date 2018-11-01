@@ -11,19 +11,6 @@ These approaches have the following responsibilities:
 - prevent contract content from being led to third parties
 - enable access to contract content without exchanging keys for every piece of data stored in contracts
 
-## Smart Contract Security Mechanism
-
-Validation of access rights is managed through a Rights&Role management smart contract. There, the access level for respective users is defined in granular detail. 
-
-Whenever a member saves information to the smart contract, the member uses a key to sign and encrypt the changes he made. 
-
-The key used for encryption is saved on the respective smart contract and can only be retrieved by users with the corresponding access rights. 
-
-Through this mechanism it is made possible to use different keys to encrypt various metadata, ensuring that it is only ever seen by those with the correct level of access. 
-
-With this concept of Smart Contract security, dynamic and flexible collaboration even across different entities becomes natural.
-
-
 ## Key Exchange
 By default, any data stored in [Smart Contracts](/dev/smart-contracts) is encrypted. This is also true for [profiles](/tutorial/create-identity), [Digital Twins](/dev/dgitial-twin) and other tools. As a result, it is impossible for others to read data in external contracts. Profiles can't read each others contacts etc. People can't even send each other [BMail](/tutorial/mailbox) messages.
 
