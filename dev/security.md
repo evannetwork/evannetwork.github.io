@@ -4,12 +4,16 @@ title: "Security"
 # Security and Smart Contract Access Delegation (SCAD)
 
 ## About
-To ensure that contents stored can be read by all related parties and cannot be read or even manipulated by unrelated parties, the Smart Contracts of evan.network utilize multiple security approaches.
+To ensure that contents stored can be read by all related parties and cannot be read or even manipulated by unrelated parties, the Smart Contracts of evan.network utilize multiple security approaches. 
 
 These approaches have the following responsibilities:
 - prevent undesired contract manipulation
 - prevent contract content from being led to third parties
 - enable access to contract content without exchanging keys for every piece of data stored in contracts
+
+## Smart Contract Security Mechanism
+
+
 
 ## Key Exchange
 By default, any data stored in [Smart Contracts](/dev/smart-contracts) is encrypted. This is also true for [profiles](/tutorial/create-identity), [Digital Twins](/dev/dgitial-twin) and other tools. As a result, it is impossible for others to read data in external contracts. Profiles can't read each others contacts etc. People can't even send each other [BMail](/tutorial/mailbox) messages.
@@ -21,7 +25,7 @@ As a developer, you usually have to keep track of this yourself, unless you use 
 The key exchange module is made available through the [blockchain core](https://github.com/evannetwork/api-blockchain-core) library.
 
 
-## Permissions in Smart Contracts
+## Deep Dive Permissions in Smart Contracts
 ### Basic Permissions
 Basic permission checks in Smart Contracts verify that the calling user is the owner of the contract. For this approach, the contract inherits from a contract like the owned in ```Core.sol```:
 ```solidity
