@@ -21,20 +21,18 @@ As a developer, you usually have to keep track of this yourself, unless you use 
 The key exchange module is made available through the [blockchain core](https://github.com/evannetwork/api-blockchain-core) library.
 
 ## Facilitating Access Control 
-### Introduction Files & Data
+### Securing Files&Data
 First of all, files are never stored on the smart contract itself. Instead, files are stored on a distributed filesystem (DFS), the IPFS (Interplanetary File System). Smart contracts merely hold a reference to where the file has been stored. 
 
 Files on the IPFS are encrypted by default at all times, and profit from the distributed storage aspect. With distributed storage all files are highly available by default, as no single point of failure exists. 
 
 Second, attached to every smart contract is a Rights&Role management smart contract. Rights&Role contracts define what metadata may be stored in a smart contract. 
 There, the access level for respective users is defined in granular detail. 
-Permissioned users, when they are reading or committing to a smart contract, 
 
 Whenever a member saves information to the smart contract, the member uses a key to sign and encrypt the changes he made. 
 Keys can be retrieved from the smart contract by users with the proper permissions.
 
-
-### About
+### Details Access Control
 As the main part of data related to contracts is stored in the distributed file system, only references to the DFS are stored in the contract. Contents in the DFS are encrypted with one or more keys specific to the contract instance they belong to.
 
 Contract participants, which should be enabled to read and/ or write contract content, need to have access to the keys responsible for the contract data (called 'data keys' in this context). This is done by maintaing a 'sharings' info, which is basically a key store keeping data keys, grouped by the following criteria:
