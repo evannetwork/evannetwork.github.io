@@ -1,15 +1,24 @@
 ---
-title: "Security"
+title: "Permissioning"
 ---
-# Security and Smart Contract Access Delegation (SCAD)
+# Permissioning and Smart Contract Access Delegation (SCAD)
 
 ## About
-To ensure that contents stored can be read by all related parties and cannot be read or even manipulated by unrelated parties, the Smart Contracts of evan.network utilize multiple security approaches. 
+The safety and integrity of your files and information is always paramount. It is furthermore imperative to have a reliable permissioning system in place, in order to facilitate access to crucial content.
 
-These approaches have the following responsibilities:
-- prevent undesired contract manipulation
-- prevent contract content from being led to third parties
-- enable access to contract content without exchanging keys for every piece of data stored in contracts
+Since evan.network is an open ecosystem involving many participants, permissions sometimes have to be given trans organizational (allowing externals to access internal company data), adding another level of complexity. 
+
+With that mind the SCAD (Smart Contract Access Delegation) is built around certain main concepts:
+- prevent malicious contract manipulation 
+- prevent contract content from being illegally accessed by third parties 
+- granularly define access and role definitions 
+
+In terms of usability, this mechanism is also designed to make interaction with smart contracts not only secure, but also as swift as possible.
+
+Usually, parties wishing to engage each other on the evan.network have to exchange their respective keys first, which is a manual process. 
+
+Through the smart contract delegation system different parties can avoid having to go through this tedious process for every shred of data, thereby enabling a dynamic and flexible workflow. 
+
 
 ## Key Exchange
 By default, any data stored in [Smart Contracts](/dev/smart-contracts) is encrypted. This is also true for [profiles](/tutorial/create-identity), [Digital Twins](/dev/dgitial-twin) and other tools. As a result, it is impossible for others to read data in external contracts. Profiles can't read each others contacts etc. People can't even send each other [BMail](/tutorial/mailbox) messages.
@@ -20,17 +29,25 @@ As a developer, you usually have to keep track of this yourself, unless you use 
 
 The key exchange module is made available through the [blockchain core](https://github.com/evannetwork/api-blockchain-core) library.
 
-## Facilitating Access Control 
-### Securing Files&Data
-First of all, files are never stored on the smart contract itself. Instead, files are stored on a distributed filesystem (DFS), the IPFS (Interplanetary File System). Smart contracts merely hold a reference to where the file has been stored. 
+## Introducing Smart Contract Access Delegation (SCAD)
+### Safeguarding Files&Information
+Granular permissioning for smart contracts is facilitated through the Smart Contract Access Delegation or SCAD.
 
-Files on the IPFS are encrypted by default at all times, and profit from the distributed storage aspect. With distributed storage all files are highly available by default, as no single point of failure exists. 
+First of all, it is important to note that files are never stored on the smart contract itself. This being done to avoid scalability issues and uncontrollable costs. 
 
-Second, attached to every smart contract is a Rights&Role management smart contract. Rights&Role contracts define what metadata may be stored in a smart contract. 
-There, the access level for respective users is defined in granular detail. 
+Instead, files are stored on a distributed filesystem (DFS), more specifically the IPFS (Interplanetary File System). 
+Rather than storing content in a datacenter or a few servers, the storage is geographically distributed across thousands of redundant nodes.
+Smart contracts hold a reference to the whereabouts of associated files on the distributed filesystem. 
+Therefore you never directly access files on the contracts themselves, but the files are loaded from the underlying filesystem.
 
-Whenever a user saves new metadata to the smart contract, the user uses a key to sign and encrypt the changes he made. 
-Keys are retrieved from the smart contract by users with the proper permissions.
+A great advantage of distributed storage is that all files are highly available by default. Redundancy ensures that there are always enough nodes online to maintain availability of your files 24/7. 
+
+Second, each smart contract holds the keys for users that are supposed to interact with the contract.
+The access level for each user is defined by the key stored for him.
+As such the contract owner determines which users are entitled to receive access and what level they should have.
+
+Now, if a permissioned user writes changes to the smart contract, he retrieves the key deposited for him from the smart contract. 
+Through this mechanism it is possible to granularly ensure that only intended users gain access to exactly what they are supposed to see and restrict access to content that is off limits.
 
 ### Details Access Control
 As the main part of data related to contracts is stored in the distributed file system, only references to the DFS are stored in the contract. Contents in the DFS are encrypted with one or more keys specific to the contract instance they belong to.
