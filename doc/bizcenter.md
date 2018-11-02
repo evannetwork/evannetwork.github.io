@@ -1,22 +1,9 @@
-Business Center
+Organizations, physical assets and machines receive a digital identity (Digital Twin) on the evan.network blockchain. 
+Digital twins can be addressed through transactions by any identity, human or otherwise, and integrated in complex business logic. 
 
-In Business Centers, organizations, users and machines are interconnected with each other in order to interact as partners in a concrete business environment. Network partners who join a Business Center expand their profile with specific information and features for this business environment. In addition to extended descriptive information, the profile may also contain certificates, competencies and general skills. The Business Center is an Ethereum-based development framework and provides specific Smart Contracts for initiating, entering into and implementing business relationships. The entire cooperation between network partners via Smart Contracts within a Business Center takes place directly, i.e. without a central intermediary, and is encrypted, i.e. secure against access by unauthorized third parties.
+In a Business Center, users can execute transactions and exchange data with each other, with other organizations or with the Digital Twins of real machines. Hence, the evan.network provides the basis for company-wide, efficient and secure Industry 4.0 business models.
 
-Depending on the requirements for business relationships, Business Centers are either public, closed, or restricted.
-
-Public Business Centers are publicly available and can be found by all users. Any user can join a public Business Center.
-
-Private Business Centers, on the other hand, are hidden. Only on explicit invitation of a Business Center administrator, users can join.
-
-Restricted Business Centers are publicly listed. Users can submit a request to participate, but this must be approved by an administrator of the Business Center.
-
-Users of evan.network are not obliged to use the Business Center structure of evan.network. You can create and run your own Ethereum-based Smart Contract developments on evan.network, but using the Business Center structure makes it much easier.
-
-To map different business relationships, evan.network offers different Smart Contract templates, which are enriched in a Business Center with the specific logic required there. Creating concrete Smart Contracts for a business relationship and initializing them with the digital identities of the users involved is a complex process. This is greatly simplified by the use of a Smart Contract factory. The factory manages all Business Center-specific Smart Contract templates, creates a configured instance of the Smart Contract and initializes this with the network partners authorized to the contract. From this point on, a direct business relationship is established between the network partners involved, which is only visible and executable for them.
-
-Smart Contracts were developed with the goal of easy use and expansion. Each Smart Contract can be called directly from a Web3 browser using for example a name server entry. Initially, only the manifest file (DBCP) is referenced and loaded. This file contains a standardized structure with descriptive information to make the service human and machine readable. It also contains references to the actual Smart Contract in the blockchain and the Distributed App (ÐApp), which enables direct user interaction with the service. In order to ensure interoperability of services, the manifest file corresponds to a standardized structure that is currently provided as an open source component (DBCP) as part of a project sponsored by the Thuringian Ministry of Economics, Science and Digital Society. This makes it possible to start an interaction with the services even without the evan.network framework.
-
-This architecture enables the integration of any third-party Smart Contracts into an evan.network environment. Referenced via the manifest file existing Smart Contracts of other providers can be combined with evan.network-ÐApps and thus integrated into a homogeneous user experience. Based on this architectural principle, the entire network was created. Thus, all applications the user communicates with in the evan.network, processes Smart Contracts with and makes transactions with are implemented as ÐApp.
+For the interaction between users, processes and machines, evan.network offers predefined services (Smart Contracts), which can be adapted to specific needs. The interaction with Smart Contracts takes place via ÐApps in web or mobile browsers or via API from existing IT systems, IT tools and/ or machines. For this purpose, Smart Agents communicate with the Smart Contracts. The Smart Contracts represent the professional framework of the respective service and are developed according to the specific needs. For example, a Smart Contract that represents a Digital Twin can include the entire life cycle of the asset and its business processes. In concrete terms, this means that the Smart Contract itself provides a kind of management shell for the various data types and manages access to the data via an encryption management and a rights-and-role model. In the case of master data such as product properties, the actual data is stored as a JSON object encrypted with the Digital Twin keys in the storage service. The address where the data was stored in the storage is saved in the Smart Contract. Other data are handled in a similar way, e.g. service reports. If the service technician creates a report and wants to attach for example an image of the machine, this image is loaded into the storage in encrypted form and the corresponding address is inserted into the corresponding data area of the Digital Twin. The complete control of who may insert or read data is controlled by the owner of the Digital Twin Smart Contract, who has complete data sovereignty.
 
 <svg version="1.1" id="evan.network" width="50%" viewBox="0 0 330 700" style="float: left; margin-right: 1em; "
    xmlns:svg="http://www.w3.org/2000/svg"  xmlns="http://www.w3.org/2000/svg"
@@ -777,3 +764,29 @@ This architecture enables the integration of any third-party Smart Contracts int
      d="M 200 610 l 10 -10"
      id="path4560" />
 </svg>
+
+
+## Business Center
+In Business Centers, organizations, users and machines are interconnected with each other in order to interact as partners in a concrete business environment. Network partners who join a Business Center expand their profile with specific information and features for this business environment. In addition to extended descriptive information, the profile may also contain certificates, competencies and general skills.
+The Business Center is an Ethereum-based development framework and provides specific Smart Contracts for initiating, entering into and implementing business relationships. The entire cooperation between network partners via Smart Contracts within a Business Center takes place directly, i.e. without a central intermediary, and is encrypted, i.e. secure against access by unauthorized third parties.
+
+Depending on the requirements for business relationships, Business Centers are either public, closed, or restricted. 
+
+
+**Public Business Centers** are publicly available and can be found by all users. Any user can join a public Business Center. 
+
+**Private Business Centers**, on the other hand, are hidden. Only on explicit invitation of a Business Center administrator, users can join. 
+
+**Restricted Business Centers** are publicly listed. Users can submit a request to participate, but this must be approved by an administrator of the Business Center.
+
+Users of evan.network are not obliged to use the Business Center structure of evan.network. You can create and run your own Ethereum-based Smart Contract developments on evan.network, but using the Business Center structure makes it much easier.
+
+To map different business relationships, evan.network offers different Smart Contract templates, which are enriched in a Business Center with the specific logic required there. Creating concrete Smart Contracts for a business relationship and initializing them with the digital identities of the users involved is a complex process. 
+This is greatly simplified by the use of a Smart Contract factory. The factory manages all Business Center-specific Smart Contract templates, creates a configured instance of the Smart Contract and initializes this with the network partners authorized to the contract. From this point on, a direct business relationship is established between the network partners involved, which is only visible and executable for them.
+
+
+Smart Contracts were developed with the goal of easy use and expansion. Each Smart Contract can be called directly from a Web3 browser using for example a name server entry. Initially, only the manifest file ([DBCP](/dev/dbcp)) is referenced and loaded. This file contains a standardized structure with descriptive information to make the service human and machine readable. It also contains references to the actual Smart Contract in the blockchain and the Distributed App (ÐApp), which enables direct user interaction with the service. 
+In order to ensure interoperability of services, the manifest file corresponds to a standardized structure that is currently provided as an open source component (DBCP) as part of a project sponsored by the Thuringian Ministry of Economics, Science and Digital Society. This makes it possible to start an interaction with the services even without the evan.network framework.
+
+This architecture enables the integration of any third-party Smart Contracts into an evan.network environment. Referenced via the manifest file existing Smart Contracts of other providers can be combined with evan.network-ÐApps and thus integrated into a homogeneous user experience. 
+Based on this architectural principle, the entire network was created. Thus, all applications the user communicates with in the evan.network, processes Smart Contracts with and makes transactions with are implemented as ÐApp. 
