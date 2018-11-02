@@ -1,7 +1,7 @@
 
 # Welcome to evan.network
 
-The evan.network is an enterprise-ready,  Ethereum based, open ecosystem designed to enable decentralized business applications and solutions in the 4.0 industry. 
+The evan.network is an enterprise-ready, Ethereum based, open ecosystem designed to enable decentralized business applications and solutions in the 4.0 industry.
 
 The evan platform comes with ready-to-use features for enterprise systems:
 providing native DApps, Digital Twins as digital counterparts of real life assets, an on chain messaging service, an identity solution (Decentralized Identities) for accounts, and a role based access control for smart contracts, among others. 
@@ -9,6 +9,9 @@ providing native DApps, Digital Twins as digital counterparts of real life asset
 Integrating the network's capabilities into your productive environment allows you to seamlessly tap into advantages that Web 3.0 distributed applications (DApps) and Decentralized Identities bring with them, as applications and services on the evan chain are reachable via API calls and through a user interface.
 
 With it being a DAO itself, transparency lies at the heart of evan.network. We follow a philosophy of open source and have made our codebase publicly available. The neutrality aspect of the system is safeguarded by an openly available authority consensus against hostile network takeovers.
+
+<a style="float: right" alt="Gitter" title="Gitter" href="https://gitter.im/evannetwork/Lobby"><img src="/public/chat.svg"/></a></p>
+
 
 
 Key Features
@@ -59,7 +62,6 @@ Creating a profile that you register through our decentralized web service is al
 <dd> </dd>
 
 <p>If you want to join <code>evan.network</code> as an integral part of the infrastructure and shape its future, contact us on our <a href="https:///evan.network">WebSite</a>.
-<a style="float: right" alt="Gitter" title="Gitter" href="https://gitter.im/evannetwork/Lobby"><img src="/public/chat.svg"/></a></p>
 
 <br>
 
