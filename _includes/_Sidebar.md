@@ -4,6 +4,7 @@
 - [DAO](/doc/dao)
 - [Architecture](/doc/architecture)
   - [Business Center](/doc/bizcenter)
+  - [Security](/doc/securityaes)
 - [MasterNode](/doc/masternode)
 - [FAQ](/doc/faq)
 - [Glossary](/doc/glossary)
