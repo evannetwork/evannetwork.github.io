@@ -1,3 +1,8 @@
+---
+title: "Business Center"
+---
+# Business Centers
+
 Organizations, physical assets and machines receive a digital identity (Digital Twin) on the evan.network blockchain. 
 Digital twins can be addressed through transactions by any identity, human or otherwise, and integrated in complex business logic. 
 
