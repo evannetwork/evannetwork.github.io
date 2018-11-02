@@ -4,18 +4,18 @@ title: "Permissioning"
 # Permissioning and Smart Contract Access Delegation (SCAD)
 
 ## About
-The safety and integrity of your files and information is always paramount. It is furthermore imperative to have a reliable permissioning system in place, in order to facilitate access to crucial content.
+Smart contracts are pivotal to everything happening on evan. Almost every feature on the platform utilizes smart contracts in one way or the other. Naturally, security surrounding smart contracts is a top priority on the evan.network. 
 
-Since evan.network is an open ecosystem involving many participants, permissions sometimes have to be given trans organizational (allowing externals to access internal company data), adding another level of complexity. 
+Since evan.network is an open ecosystem involving many participants, permissions at times have to be given trans organizational (allowing externals to access internal company data), adding yet another level of complexity. 
 
 With that mind the SCAD (Smart Contract Access Delegation) is built around certain main concepts:
 - prevent malicious contract manipulation 
 - prevent contract content from being illegally accessed by third parties 
 - granularly define access and role definitions 
 
-In terms of usability, this mechanism is also designed to make interaction with smart contracts not only secure, but also as swift as possible.
+In terms of usability, this mechanism is furthermore designed to make interaction with smart contracts not only secure, but also as swift as possible.
 
-Usually, parties wishing to engage each other on the evan.network have to exchange their respective keys first, which is a manual process. 
+Usually, parties wishing to engage each other on the evan.network have to exchange their keys first, which is a manual process. 
 
 Through the smart contract delegation system different parties can avoid having to go through this tedious process for every shred of data, thereby enabling a dynamic and flexible workflow. 
 
@@ -44,7 +44,7 @@ A great advantage of distributed storage is that all files are highly available 
 
 Second, each smart contract holds the keys for users that are supposed to interact with the contract.
 The access level for each user is defined by the key stored for him.
-As such the contract owner determines which users are entitled to receive access and what level they should have.
+As such the contract owner determines which users are entitled to receive access and what operations they are allowed to perform.
 
 Now, if a permissioned user writes changes to the smart contract, he retrieves the key deposited for him from the smart contract. 
 Through this mechanism it is possible to granularly ensure that only intended users gain access to exactly what they are supposed to see and restrict access to content that is off limits.
@@ -203,7 +203,7 @@ Passing ```false``` as the last argument revoking permissions.
 
 Authorities are usually set up to be their own authorities, which means that groups (and their members) can be granted permissions to maintain capabilities in the same way.
 
-See [DSRoles documentation](https://dapp.tools/dappsys/ds-roles.html) for details on how to manage roles and capabilities in Ethereum Smart Contracts.
+See [DSRoles documentation](https://dapp.tools/dappsys/ds-roles.html) for details on how to roles and capabilities in Ethereum Smart Contracts.
 
 
 ### Operations Permissions
