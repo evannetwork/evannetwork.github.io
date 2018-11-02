@@ -795,3 +795,17 @@ In order to ensure interoperability of services, the manifest file corresponds t
 
 This architecture enables the integration of any third-party Smart Contracts into an evan.network environment. Referenced via the manifest file existing Smart Contracts of other providers can be combined with evan.network-ÐApps and thus integrated into a homogeneous user experience. 
 Based on this architectural principle, the entire network was created. Thus, all applications the user communicates with in the evan.network, processes Smart Contracts with and makes transactions with are implemented as ÐApp. 
+
+
+## Interaction with Smart Contracts and Business Centers
+
+The interaction capabilities in a Business Center should enable simple interaction between end users, IT systems and machines. Starting from today's mostly manual forms of communication, an automation of cross-company cooperation can be implemented step by step.
+
+To interact as user or machine in evan.network, a network account is required. An account can be created directly via onboarding (self-service) or via an invitation. An invitation is sent by an existing user or Smart Contract on the network. In the invitation, you can control whether a user is invited directly to a Business Center or to a specific Smart Contract. In addition, EVEs can be sent directly to the invited user as part of the invitation process, so that the new user is immediately ready to work in the network. The invitation is sent either as a technical invitation via an API or by an user using an e-mail address. The invitation email contains an invitation text and a link to the onboarding ÐApp. This ÐApp guides the new user through the registration process, where he or she has to confirm e.g. terms and conditions and data protection and gets an own account with private key and Mnemonic. After successful registration, the user has an evan.network identity with which he or she can now participate in the Business Center and Smart Contract.
+
+Every interaction with Business Centers and Smart Contracts takes place via ÐApps. Users interact with the respective ÐApp via web or mobile browsers. ÐApps are HTML applications loaded from the blockchain and make it easy for the user to work with Smart Contracts and evan.network interactively. 
+
+To communicate with Smart Contracts from your own applications and ÐApps, evan.network provides APIs in form of a JavaScript library and developer documentation. Thus, own applications can be implemented and operated on evan.network.
+
+For an automation of the business relations, evan.network offers APIs to all Smart Contracts. Hence, the evan.network can be connected to own systems and a direct integration of business processes can be carried out. Furthermore, it is possible to add logic and workflow addons in the evan.network with the help of [Smart Agents](/dev/smart-agents). They are operated by the respective Smart Agent provider and can enable workflow-supported communication of the evan.network with existing IT systems and machines. Smart Agents can be invited into a Smart Contract, just like users, and thus receive access to its contents. The Smart Agent constantly checks the contract for changes and can automatically initiate new processes according to predefined rules as soon as it finds one.  
+If the user has the rights, he or she can also add content to the Smart Contract. Via Smart Agents, the invitation via email or the mobile push notifications are solved in the evan.network. They combine the "blockchain world" with other technologies.
