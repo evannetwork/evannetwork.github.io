@@ -3,12 +3,13 @@ title: "Business Center"
 ---
 # Business Centers
 
+## Introduction
+
 Business Centers serve as hubs for businesses and interest groups to share a mutual context.
 Within a mutually shared context, resources can be made available for participants of a center.
+This allows for the implementation of use case specific services (e.g. Smart Contracts and Digital Twins) for the entire Business Center, enabling collaborating entities to fine-tune business processes among themselves.
 
-This allows for the implementation of use case specific services (e.g. Smart Contracts) for the entire Business Center, enabling collaborating entities to fine-tune business processes among themselves.
-
-
+## Details
 In a Business Center, users can execute transactions and exchange data with each other, with other organizations or with the Digital Twins of real machines. Hence, the evan.network provides the basis for company-wide, efficient and secure Industry 4.0 business models.
 
 For the interaction between users, processes and machines, evan.network offers predefined services (Smart Contracts), which can be adapted to specific needs. The interaction with Smart Contracts takes place via ÐApps in web or mobile browsers or via API from existing IT systems, IT tools and/ or machines. 
