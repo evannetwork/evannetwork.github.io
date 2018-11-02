@@ -17,7 +17,7 @@ In terms of usability, this mechanism is furthermore designed to make interactio
 
 Usually, parties wishing to engage each other on the evan.network have to exchange their keys first, which is a manual process. 
 
-Through the smart contract delegation system different parties can avoid having to go through this tedious process for every shred of data, thereby enabling a dynamic and flexible workflow. 
+By delegating permissions no human interaction is required, as users don't have to manually exchange keys with the owner of the respective smart contract to receive access. 
 
 
 ## Key Exchange
