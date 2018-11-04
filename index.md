@@ -15,7 +15,9 @@ High transaction throughput coupled with stable transaction fees model the netwo
 
 Integrating the network's capabilities into your productive environment allows you to seamlessly tap into advantages that Web 3.0 distributed applications (DApps) and Decentralized Identities bring with them, as applications and services on the evan chain are reachable via API calls and through a user interface.
 
-With it being a DAO itself, transparency lies at the heart of evan.network. We follow a philosophy of open source and have made our codebase publicly available. The neutrality aspect of the system is safeguarded by an openly available authority consensus our masternodes use to defend against potential hostile network takeovers.
+Evan adheres to the concept of a Decentralized Autonomous Organization, or DAO. Unique to the DAO is the characteristic of no central point of authority in any shape or form. Naturally, this includes Evan as a company as well.
+Thus transparent and democratic network governance lies at the heart of Evan.network. 
+We follow a philosophy of open source and have made our codebase publicly available. The neutrality aspect of the system is safeguarded by an openly available authority consensus our masternodes use to defend against potential hostile network takeovers.
 
 <p><a style="float: right" alt="Gitter" title="Gitter" href="https://gitter.im/evannetwork/Lobby"><img src="/public/chat.svg"/></a></p>
 
