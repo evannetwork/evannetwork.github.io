@@ -1,13 +1,28 @@
 ---
-title: "ÐApp basics"
+title: "ÐApp Basics"
 ---
-# ÐApp basics
+# ÐApp Definition
+A DApp, short for 'Decentralized Application', is nothing different to a regular application at first. What sets a DApp apart from regular applications however, is the fact it is entirely decentralized and blockchain based.
+
+Instead of relying on 'classical servers' for hosting, DApps are running on masternodes in the evan.network. Due to their decentralized nature the threat of a single point of failure scenario is eliminated entirely.
+
+Additional benefits that come with decentralization are immunity to hacks and DDoS (Distributed Denial of Service) attacks, allowing for consistent uptime of your DApps without the usual security considerations you would be facing in a traditional environment. 
+
+Usually, applications on the Ethereum blockchain can only be interacted with through a DApp browser or extensions such as metamask. 
+DApps on Evan are supported by [namespaces](https://evannetwork.github.io/doc/namespaces), enabling anyone to work with decentralized applications through a regular browser. 
+
+
+# ÐApp Basics
 Each evan.network application consists of different parts and components with the purpose of creating
 contracts and interacting with them.
 
-Frontend ÐApps are mostly implemented using Typescript, Angular 5 and Ionic 3. The general ÐApp is developed as a web application. The idea that differentiates these decentralized applications from standard web applications is that they do not get their files directly from a web server, but from the IPFS. Via IPFS, the various files are distributed among all nodes and made decentrally available. With the help of Web3, the application can be connected to the evan.network blockchain to interact with contracts. This mechanism for interaction with contracts is generalized and simplified by different frameworks, like the DBCP and the blockchain-core. This makes it possible to write efficient, reusable and decentralized applications. For efficient development of a resource-saving application, the various library projects are available via IPFS and can therefore be easily integrated into the project. Each ÐApp library and project is defined using the DBCP protocol and is bundled including its necessary files and its DBCP configuration.
+Frontend ÐApps are mostly implemented using Typescript, Angular 5 and Ionic 3. The general ÐApp is developed as a web application. The idea that differentiates these decentralized applications from standard web applications is that they do not get their files directly from a web server, but from the IPFS. 
 
-# Packaged ÐApps VS. standalone ÐApps
+Via IPFS, the various files are distributed among all nodes and made decentrally available. With the help of Web3, the application can be connected to the evan.network blockchain to interact with contracts. This mechanism for interaction with contracts is generalized and simplified by different frameworks, like the DBCP and the blockchain-core.
+
+This makes it possible to write efficient, reusable and decentralized applications. For efficient development of a resource-saving application, the various library projects are available via IPFS and can therefore be easily integrated into the project. Each ÐApp library and project is defined using the DBCP protocol and is bundled including its necessary files and its DBCP configuration.
+
+# Packaged ÐApps VS. Standalone ÐApps
 By using the evan.network framework to create packaged ÐApps, the initialization of DBCP or the blockchain-core is completely replaced and existing, already initialized and configured instances can be loaded. This has the advantage that accounts, encryptions and similar complex configurations are executed dynamically by the user when the application is started.
 
 To do this, however, all ÐApps must be started via the evan.network ÐApp-browser application, since this provides the complete function stack and the various UIs. **As long as the provided functions are used, the application can only be started in environments that have the corresponding structures.** Alternatively, the blockchain-core can be initialized, configured and used as in the [standalone example](/dapps/standalone/standalone).
