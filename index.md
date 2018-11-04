@@ -1,7 +1,7 @@
 
 # Welcome to evan.network
 Evan.network is an enterprise-ready, Ethereum based, open ecosystem. 
-Designed to enable decentralized business applications and solutions in the 4.0 industry, full governance of your environment is at the helm of priorities. 
+Designed to trustfully enable decentralized business applications and solutions in the 4.0 industry, absolute governance of your data and files is at the helm of priorities. 
 
 In realization of this vision, Evan.network comes with features catered to meet every blockchain business need. 
 With effectiveness and data sovereignty in mind, the platform consists of masternodes hosted by trusted European enterprises and businesses. 
