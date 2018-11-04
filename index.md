@@ -7,8 +7,10 @@ In realization of this vision, Evan.network comes with features catered to meet 
 With effectiveness and data sovereignty in mind, the platform consists of masternodes hosted by trusted European enterprises and businesses. 
 High transaction throughput coupled with stable transaction fees model the network into a cost-effective and decisively more secure alternative to conventional solutions. 
 
+Key functionalities, amongst others, are:
+
 * DApps (decentralized applications) 
-* Digital Twins as virtual counterparts of real-life assets, organizations, projects, and people 
+* Digital Twins as virtual counterparts of real-life assets, organizations, and people 
 * encrypted on chain messaging service
 * an identity solution (Decentralized Identities) for accounts
 * Flexible yet secure delegation of smart contract permissions, including trans organizational 
@@ -17,6 +19,7 @@ Integrating the network's capabilities into your productive environment allows y
 
 Evan adheres to the concept of a Decentralized Autonomous Organization, or DAO. Unique to the DAO is the characteristic of no central point of authority in any shape or form. Naturally, this includes Evan as a company as well.
 Thus transparent and democratic network governance lies at the heart of Evan.network. 
+
 We follow a philosophy of open source and have made our codebase publicly available. The neutrality aspect of the system is safeguarded by an openly available authority consensus our masternodes use to defend against potential hostile network takeovers.
 
 <p><a style="float: right" alt="Gitter" title="Gitter" href="https://gitter.im/evannetwork/Lobby"><img src="/public/chat.svg"/></a></p>
