@@ -26,7 +26,7 @@ We follow a philosophy of open source and have made our codebase publicly availa
 
 
 
-Key Features
+Core features at a glance
 ----
 
 #### [Decentralized Identities](https://evannetwork.github.io/doc/Identity)
