@@ -3,7 +3,7 @@
 
 The evan.network is an enterprise-ready, Ethereum based, open ecosystem designed to enable decentralized business applications and solutions in the 4.0 industry.
 
-The evan platform comes with ready-to-use features for enterprise systems:
+Evan comes with ready-to-use features for enterprise systems:
 providing native DApps, Digital Twins as digital counterparts of real life assets, an on chain messaging service, an identity solution (Decentralized Identities) for accounts, and a role based access control for smart contracts, among others. 
 
 Integrating the network's capabilities into your productive environment allows you to seamlessly tap into advantages that Web 3.0 distributed applications (DApps) and Decentralized Identities bring with them, as applications and services on the evan chain are reachable via API calls and through a user interface.
