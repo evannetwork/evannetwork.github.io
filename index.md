@@ -36,7 +36,7 @@ Packaged Distributed Applications (DApps) on the evan.network are designed to ea
 
 #### [Customized Namespaces](https://evannetwork.github.io/doc/namespaces)
 
-Evan.network uses a nameservice to provide unique namespaces for DApps and identities, adding unique names for applications or identities. 
+Evan.network uses a nameservice to provide namespaces for DApps and identities, adding unique names as identifiers for applications or identities. 
 
 #### [Secure IoT connectivity](https://evannetwork.github.io/doc/iotsecurity)
 
