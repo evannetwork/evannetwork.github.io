@@ -20,34 +20,17 @@ Usually, parties wishing to engage each other on the evan.network have to exchan
 By delegating permissions no human interaction is required, as users don't have to manually exchange keys with the owner of the respective smart contract to receive access. 
 
 
-## Key Exchange
-By default, any data stored in [Smart Contracts](/dev/smart-contracts) is encrypted. This is also true for [profiles](/tutorial/create-identity), [Digital Twins](/dev/dgitial-twin) and other tools. As a result, it is impossible for others to read data in external contracts. Profiles can't read each others contacts etc. People can't even send each other [BMail](/tutorial/mailbox) messages.
-
-To establish communication, accounts/ contracts need to exchange keys. This is one of the most basic operations in `evan.network`, because without exchanging keys, little else can be done. If you are an end user, it is done for you in most cases and you won't even notice. Otherwise, you can use the [contacts](/tutorial/contacts) ÐApp to initiate key exchanges.
-
-As a developer, you usually have to keep track of this yourself, unless you use one of the helper functions from [Factories](/dev/smart-contract#contract-factories) or [Business Centers](/dev/smart-contract#business-cener).
-
-The key exchange module is made available through the [blockchain core](https://github.com/evannetwork/api-blockchain-core) library.
-
 ## Introducing Smart Contract Access Delegation (SCAD)
-### Safeguarding Files&Information
-Granular permissioning for smart contracts is facilitated through the Smart Contract Access Delegation or SCAD.
 
-First of all, it is important to note that files are never stored on the smart contract itself. This being done to avoid scalability issues and uncontrollable costs. 
+### Introduction to Smart Contract Access Control
+Granular permissioning for smart contracts is facilitated through the Smart Contract Access Delegation or 'SCAD'.
 
-Instead, files are stored on a distributed filesystem (DFS), more specifically the IPFS (Interplanetary File System). 
-Rather than storing content in a datacenter or a few servers, the storage is geographically distributed across thousands of redundant nodes.
-Smart contracts hold a reference to the whereabouts of associated files on the distributed filesystem. 
-Therefore you never directly access files on the contracts themselves, but the files are loaded from the underlying filesystem.
+To facilitate access control, each smart contract can be thought of as holding the keys for users that are supposed to interact with the contract. This key store is referred to as the 'sharings' section.
+Authorization and access level for each user is configured by the contract owner and reflected in the participant's key.
 
-A great advantage of distributed storage is that all files are highly available by default. Redundancy ensures that there are always enough nodes online to maintain availability of your files 24/7. 
+Now, if a permissioned user writes changes to the smart contract, a participant authenticates himself to the contract and the key required to perform this operation is retrieved from the sharings section of the contract.
+Through this mechanism it is made possible to ensure at a granular level that only ever intended users gain access to exactly what they are supposed to see and restrict access to content that is off limits.
 
-Second, each smart contract holds the keys for users that are supposed to interact with the contract.
-The access level for each user is defined by the key stored for him.
-As such the contract owner determines which users are entitled to receive access and what operations they are allowed to perform.
-
-Now, if a permissioned user writes changes to the smart contract, he retrieves the key deposited for him from the smart contract. 
-Through this mechanism it is possible to granularly ensure that only intended users gain access to exactly what they are supposed to see and restrict access to content that is off limits.
 
 ### Details Access Control
 As the main part of data related to contracts is stored in the distributed file system, only references to the DFS are stored in the contract. Contents in the DFS are encrypted with one or more keys specific to the contract instance they belong to.
@@ -58,9 +41,20 @@ Contract participants, which should be enabled to read and/ or write contract co
 - **block** - this annotes the _starting_ point, from which on the key is valid
 
 The Sharings of a contract is basically a structured list of encrypted keys.
+
 In a simple contract, the creator of the contract creates a single data key for this contract and wants to share it with other contract members to enable them to read the data in the contract. Therefore, the creator puts the data key into the Sharings info. To prevent third parties from accessing this data key, it is encrypted with the communication key between the contract owner and the contract participant.
 
 ![sharings - schema](/public/dev/sharings_schema.png)
+
+## Establishing trust with Participants
+# Key Exchange
+By default, any data stored in [Smart Contracts](/dev/smart-contracts) is encrypted. This is also true for [profiles](/tutorial/create-identity), [Digital Twins](/dev/dgitial-twin) and other tools. As a result, it is impossible for others to read data in external contracts. Profiles can't read each others contacts etc. People can't even send each other [BMail](/tutorial/mailbox) messages.
+
+To establish communication, accounts/ contracts need to exchange keys. This is one of the most basic operations in `evan.network`, because without exchanging keys, little else can be done. If you are an end user, it is done for you in most cases and you won't even notice. Otherwise, you can use the [contacts](/tutorial/contacts) ÐApp to initiate key exchanges.
+
+As a developer, you usually have to keep track of this yourself, unless you use one of the helper functions from [Factories](/dev/smart-contract#contract-factories) or [Business Centers](/dev/smart-contract#business-cener).
+
+The key exchange module is made available through the [blockchain core](https://github.com/evannetwork/api-blockchain-core) library.
 
 
 ### Key Criteria
