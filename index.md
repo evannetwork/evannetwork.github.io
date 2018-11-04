@@ -1,19 +1,21 @@
 
 # Welcome to evan.network
+Evan.network is an enterprise-ready, Ethereum based, open ecosystem. 
+Designed to enable decentralized business applications and solutions in the 4.0 industry, full governance of your environment is at the helm of priorities. 
 
-The evan.network is an enterprise-ready, Ethereum based, open ecosystem designed to enable decentralized business applications and solutions in the 4.0 industry.
+In realization of this vision, Evan.network comes with features catered to meet every blockchain business need. 
+With effectiveness and data sovereignty in mind, the platform consists of masternodes hosted by trusted European enterprises and businesses. 
+High transaction throughput coupled with stable transaction fees model the network into a cost-effective and decisively more secure alternative to conventional solutions. 
 
-Evan comes with ready-to-use features for enterprise systems, to list a few:
 * DApps (decentralized applications) 
-* Digital Twins as virtual counterparts of real life assets, organizations, projects and people 
+* Digital Twins as virtual counterparts of real-life assets, organizations, projects, and people 
 * encrypted on chain messaging service
 * an identity solution (Decentralized Identities) for accounts
-* Flexbile yet secure delegation of smart contract permissions, including trans organizational 
-
+* Flexible yet secure delegation of smart contract permissions, including trans organizational 
 
 Integrating the network's capabilities into your productive environment allows you to seamlessly tap into advantages that Web 3.0 distributed applications (DApps) and Decentralized Identities bring with them, as applications and services on the evan chain are reachable via API calls and through a user interface.
 
-With it being a DAO itself, transparency lies at the heart of evan.network. We follow a philosophy of open source and have made our codebase publicly available. The neutrality aspect of the system is safeguarded by an openly available authority consensus against hostile network takeovers.
+With it being a DAO itself, transparency lies at the heart of evan.network. We follow a philosophy of open source and have made our codebase publicly available. The neutrality aspect of the system is safeguarded by an openly available authority consensus our masternodes use to defend against potential hostile network takeovers.
 
 <p><a style="float: right" alt="Gitter" title="Gitter" href="https://gitter.im/evannetwork/Lobby"><img src="/public/chat.svg"/></a></p>
 
@@ -28,11 +30,11 @@ In evan.network everything, no matter if human, machine or organization has a de
 
 #### [Smart Contract Access Delegation (SCAD)](https://evannetwork.github.io/dev/security)
 
-Smart Contract Access Delegation (SCAD) enables evan.network users to define permissions for smart contracts with granular detail, even allowing for complex trans organizational rights and permission management. 
+Smart Contract Access Delegation (SCAD) enables evan.network users to define permissions for smart contracts at a granular level, including complex trans organizational rights and permission management. 
 
 #### [Packaged DApps](https://evannetwork.github.io/dapps/basics)
 
-Packaged Distributed Applications (DApps) on the evan.network are designed to ease the development process on the blockchain by loading all dependencies for you.
+Packaged Distributed Applications (DApps) on the evan.network are designed to ease the development process on the blockchain by automically taking care of all necessary backend components.
 
 #### [Customized Namespaces](https://evannetwork.github.io/doc/namespaces)
 
