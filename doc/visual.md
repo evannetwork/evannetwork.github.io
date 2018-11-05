@@ -3,7 +3,6 @@ title: "Evan.network Architectural Overview"
 ---
 # Evan.network Architectural Overview
 
-
 <g
    transform="translate(80,70) scale(0.5)"
    id="g4325">
