@@ -1,3 +1,9 @@
+---
+Visualization Evan.network Architecture
+---
+To help you familiarize yourself with the architectural design of evan.network, all components are visually represented and clickable.
+
+
 <h2><a href="doc/architecture">Architecture</a></h2>
 
 <svg id="evan.network" version="1.1" width="100%" viewBox="0 0 600 900" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
