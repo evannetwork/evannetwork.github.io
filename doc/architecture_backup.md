@@ -3,29 +3,22 @@ title: "Architecture"
 ---
 # Architecture
 
-Organizations, individuals, physical assets and machines receive a digital identity (Digital Twin) on the evan.network blockchain. 
+Organizations, physical assets and machines receive a digital identity (Digital Twin) on the evan.network blockchain. 
 Digital twins can be addressed through transactions by any identity, human or otherwise, and integrated in complex business logic. 
 
-Business Centers serve as hubs for projects. These centers can be thought of as encapsulated clusters, where businesses, persons and machines operate with a specific purpose relevant to the respective projects. 
-Users can execute transactions and exchange data with each other, with other organizations or with the Digital Twins of real machines. Hence, the evan.network provides the basis for company-wide, efficient and secure Industry 4.0 business models.
+In a Business Center, users can execute transactions and exchange data with each other, with other organizations or with the Digital Twins of real machines. Hence, the evan.network provides the basis for company-wide, efficient and secure Industry 4.0 business models.
 
 For the interaction between users, processes and machines, evan.network offers predefined services (Smart Contracts), which can be adapted to specific needs. 
 
-Smart agents serve as the interface between the traditional internet and decentralized solutions on evan. Through them, it is possible to facilitate the information flow and interact with smart contracts from outside and inside the blockchain.
+The interaction with Smart Contracts takes place via ÐApps in web or mobile browsers or via API from existing IT systems, IT tools and/ or machines. 
+For this purpose, Smart Agents communicate with the Smart Contracts. The Smart Contracts represent the professional framework of the respective service and are developed according to the specific needs. 
 
-The Smart Contracts represent the professional framework of the respective service and are developed according to the specific needs. For example, a Smart Contract representing a Digital Twin can include the entire life cycle of the asset and its business processes. 
+For example, a Smart Contract that represents a Digital Twin can include the entire life cycle of the asset and its business processes. 
+In concrete terms, this means that the Smart Contract itself provides a kind of management console for the various data types and manages access to the data via an encryption management and a rights-and-role model. 
+In the case of master data such as product properties, the actual data is stored as a JSON object encrypted with the Digital Twin keys in the storage service. 
 
-In tangible terms, this means that the Smart Contract itself provides a kind of management shell for the various data types and manages access to the data via an encryption management and a rights-and-role model. 
-
-In the case of master data such as product properties, the actual data is stored as a JSON object encrypted with the Digital Twin keys in the storage service. The address (URI) where the data was stored on the storage is saved in the Smart Contract. 
-
-Other data is handled in a similar fashion, e.g. service reports. 
-Assuming a service technician creates a report about a machine. To complete his report, he uploads a picture of the machine in question and attaches it to the report.
-
-The uploaded picture is encrypted and stored. A reference to where exactly the picture is put on storage is passed into the Data Area of the smart contract.
-Right and access management to the contract lies entirely with the owner, who has sovereignty over all data at all times. 
-
-If the service technician creates a report and wants to attach for example an image of the machine, this image is loaded into the storage in encrypted form and the corresponding address is inserted into the corresponding data area of the Digital Twin. The complete control of who may insert or read data is controlled by the owner of the Digital Twin Smart Contract, who has complete data sovereignty.
+The address where the data was stored in the storage is saved in the Smart Contract. Other data are handled in a similar way, e.g. service reports. If the service technician creates a report and wants to attach for example an image of the machine, this image is loaded into the storage in encrypted form and the corresponding address is inserted into the corresponding data area of the Digital Twin. 
+The complete control of who may insert or read data is controlled by the owner of the Digital Twin Smart Contract, who has complete data sovereignty.
 
 <svg version="1.1" id="evan.network" width="50%" viewBox="0 0 330 700" style="float: left; margin-right: 1em; "
    xmlns:svg="http://www.w3.org/2000/svg"  xmlns="http://www.w3.org/2000/svg"
