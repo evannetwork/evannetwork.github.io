@@ -14,7 +14,7 @@ The evan.network consists of various components, which will be briefly introduce
 
 <img alt="evan.network logical view" src="/public/evannetwork_overview.jpg" width="50%" style="float: left; margin-right: 2em" />
 
-### Business Center
+### [Business Center](/doc/business)
 Business Centers are industry-specific subnetworks. The subnetworks work independently of each other in order to offer a certain functionality for the users of the Business Center. Business Centers are used to organize and provide business applications and own security domains.
 
 ### Enterprise Services
@@ -24,7 +24,7 @@ These include services such as advanced identity management to allow companies, 
 
 In addition, Enterprise Services are constantly being expanded to include additional services across Business Centers. Of course, classic Ethereum-based Smart Contracts can also be operated within the evan.network, thus securing existing investments.
 
-### The evan.network Organization (DAO)
+### [The evan.network Organization (DAO)](/doc/dao)
 In contrast to a private blockchain (private chain), the evan.network is operated and further developed by a cross-industry consortium of companies, universities and institutes. 
 
 The consortium partners decide on coordination procedures for important stages of development in the network. This consortium ensures the greatest possible independence with simultaneous operational reliability of the network.
