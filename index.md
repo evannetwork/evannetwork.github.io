@@ -44,7 +44,7 @@ Creating a profile that you register through our decentralized web service is al
 <dt><a href="/dev/getting-started">Start Programming</a></dt>
 <dd>Set up the environment and start building right way, we have handy tutorials ready to help you become familiar with the platform.</dd>
 <dt><a href="/doc/faq">FAQ</a></dt>
-<dd> </dd>
+<dd> Frequently Asked Questions</dd>
 <dt><a href="/doc/glossary">Glossary</a></dt>
 <dd> </dd>
 
