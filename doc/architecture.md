@@ -1,7 +1,19 @@
 ---
-title: "Architecture"
+title: "Infrastructure"
 ---
-# Architecture
+# Infrastructure overview
+
+Infrastructure on evan.network can be seperated into three categories:
+Core API, Core Services and Core Network
+
+**Core API** consists of the [Blockchain Core](https://evannetwork.github.io/dev/blockchain-core) protocol, the [Key Exchange](https://evannetwork.github.io/dev/security#key-exchange) and the [DBCP protocol](https://evannetwork.github.io/dev/dbcp).
+
+**Core Services** contain all services, smart contracts, templates and features on the network.
+
+**Core Network** hosts the built-in [distributed storage service](https://evannetwork.github.io/dev/ipfs), the underlying Blockchain layer and Master(Authority)Nodes.
+
+Component details
+---
 
 Organizations, physical assets and machines receive a digital identity (Digital Twin) on the evan.network blockchain. 
 Digital twins can be addressed through transactions by any identity, human or otherwise, and integrated in complex business logic. 
