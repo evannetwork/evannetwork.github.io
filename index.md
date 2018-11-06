@@ -1,7 +1,6 @@
 
 # Welcome to evan.network
-Evan.network is an enterprise-ready, Ethereum based, open ecosystem. 
-Designed to trustfully enable decentralized business applications and solutions in the 4.0 industry, absolute governance of your data and files is at the helm of priorities. 
+Evan.network is an open ecosystem designed to facilitate popular adoption of the decentralized economy. Equipped with enterprise-ready components and decentralized governance the platform empowers new business models on the basis of innovation through collaboration.
 
 In realization of this vision, Evan.network comes with features catered to meet every blockchain business need. 
 With effectiveness and data sovereignty in mind, the platform consists of masternodes hosted by trusted European enterprises and businesses. 
@@ -25,6 +24,28 @@ We follow a philosophy of open source and have made our codebase publicly availa
 <p><a style="float: right" alt="Gitter" title="Gitter" href="https://gitter.im/evannetwork/Lobby"><img src="/public/chat.svg"/></a></p>
 
 
+Getting started on evan.network
+----
+
+<dl>
+<dt><a href="/tutorial/quick-start">Quick Start</a><dt>
+<dd>Beginning your journey with evan is easy.<br />
+Creating a profile that you register through our decentralized web service is all it takes.
+</dd>
+<dt><a href="/doc/goals">General Overview</a></dt>
+<dd>A deeper look into the concepts of the <a href="/doc/network">network</a> and the <a href="/doc/dao">DAO</a>.</dd>
+<dt><a href="/dev/overview">Technical Details</a></dt>
+<dd>If you wanna know how it works and fits together.</dd>
+<dt><a href="/dev/getting-started">Start Programming</a></dt>
+<dd>Set up the environment and start building right way, we have handy tutorials ready to help you become familiar with the platform.</dd>
+<dt><a href="/doc/faq">FAQ</a></dt>
+<dd> </dd>
+<dt><a href="/doc/glossary">Glossary</a></dt>
+<dd> </dd>
+
+<p>If you want to join <code>evan.network</code> as an integral part of the infrastructure and shape its future, contact us on our <a href="https:///evan.network">WebSite</a>.
+
+<br>
 
 Core features at a glance
 ----
@@ -53,27 +74,6 @@ In order to adequately cover all security aspects without the need for any extra
 
 Contract templates are a great way to bootstrap smart contract development and adapt contracts to specific business needs.
 
-
-Getting started on evan.network
-----
-
-<dl>
-<dt><a href="/tutorial/quick-start">Quick Start</a><dt>
-<dd>Beginning your journey with evan is easy.<br />
-Creating a profile that you register through our decentralized web service is all it takes.
-</dd>
-<dt><a href="/doc/goals">General Overview</a></dt>
-<dd>A deeper look into the concepts of the <a href="/doc/network">network</a> and the <a href="/doc/dao">DAO</a>.</dd>
-<dt><a href="/dev/overview">Technical Details</a></dt>
-<dd>If you wanna know how it works and fits together.</dd>
-<dt><a href="/dev/getting-started">Start Programming</a></dt>
-<dd>Set up the environment and start building right way, we have handy tutorials ready to help you become familiar with the platform.</dd>
-<dt><a href="/doc/faq">FAQ</a></dt>
-<dd> </dd>
-<dt><a href="/doc/glossary">Glossary</a></dt>
-<dd> </dd>
-
-<p>If you want to join <code>evan.network</code> as an integral part of the infrastructure and shape its future, contact us on our <a href="https:///evan.network">WebSite</a>.
 
 <br>
 
