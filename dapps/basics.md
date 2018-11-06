@@ -2,8 +2,8 @@
 title: "ÐApp Basics"
 ---
 # ÐApp Definition
-A DApp, short for 'Decentralized Application', is not much different to a regular web application at first. What sets a DApp apart from regular web-based applications however, is the fact that they are not under control by any third party.
-All interaction with the DApp is securely encrypted from the application's side.
+A DApp, short for 'Decentralized Application', is not much different to a regular web application at first. What sets a DApp apart from regular web-based applications, however stems from the fact that they are not under control by any third party.
+All interaction with the DApp is securely encrypted from the application's side at all times.
 
 DApps on evan.network can be reached with a standard web browser through a [user friendly address](https://evannetwork.github.io/doc/namespaces) such as 'nodeone.evan'. Decentralized Applications succeed in providing a much more trustworthy experience than traditional applications would have been able to.
 
