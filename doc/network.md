@@ -2,7 +2,11 @@
 
 # Overview
 
- **evan.network** is an enterprise blockchain based on the Ethereum technology, which is operated by the consortium of evan.network partners. By extending the standard Ethereum functions with business-relevant interaction mechanisms, evan.network offers a comprehensive basis for business transactions. With evan.network, organizations can take advantage of decentralized collaboration without having to understand the complexity of blockchain technology. The evan.network is the breakthrough for the adaptation of decentralized blockchain solutions in everyday business processes.
+ **evan.network** is an enterprise blockchain based on the Ethereum technology, which is operated by the consortium of evan.network partners. 
+
+By extending the standard Ethereum functions with business-relevant interaction mechanisms, evan.network offers a comprehensive basis for business transactions.
+
+With evan.network, organizations can take advantage of decentralized collaboration without having to understand the complexity of blockchain technology. The evan.network is the breakthrough for the adaptation of decentralized blockchain solutions in everyday business processes.
  
 ## Structure of evan.network
 
@@ -14,18 +18,32 @@ The evan.network consists of various components, which will be briefly introduce
 Business Centers are industry-specific subnetworks. The subnetworks work independently of each other in order to offer a certain functionality for the users of the Business Center. Business Centers are used to organize and provide business applications and own security domains.
 
 ### Enterprise Services
-The functions within the Business Centers are offered in the form of blockchain-based [Smart Contracts](/dev/smart-contracts) and associated [Distributed Apps (ÐApps)](http://localhost:4000/dapps/introduction). Developers can use the Enterprise Services of evan.network to easily create business applications. These include services such as advanced identity management to allow companies, users and machines to interact with each other, a wide range of Smart Contract templates for various business applications, or a comprehensive security framework that can also be used to assign authorizations within Smart Contracts to individual users. In addition, Enterprise Services are constantly being expanded to include additional services across Business Centers. Of course, classic Ethereum-based Smart Contracts can also be operated within the evan.network, thus securing existing investments.
+The functions within the Business Centers are offered in the form of blockchain-based [Smart Contracts](/dev/smart-contracts) and associated [Distributed Apps (ÐApps)](http://localhost:4000/dapps/introduction). Developers can use the Enterprise Services of evan.network to easily create business applications.
+
+These include services such as advanced identity management to allow companies, users and machines to interact with each other, a wide range of Smart Contract templates for various business applications, or a comprehensive security framework that can also be used to assign authorizations within Smart Contracts to individual users.
+
+In addition, Enterprise Services are constantly being expanded to include additional services across Business Centers. Of course, classic Ethereum-based Smart Contracts can also be operated within the evan.network, thus securing existing investments.
 
 ### The evan.network Organization (DAO)
-In contrast to a private blockchain (private chain), the evan.network is operated and further developed by a cross-industry consortium of companies, universities and institutes. The consortium partners decide on coordination procedures for important stages of development in the network. This consortium ensures the greatest possible independence with simultaneous operational reliability of the network.
+In contrast to a private blockchain (private chain), the evan.network is operated and further developed by a cross-industry consortium of companies, universities and institutes. 
 
-### The MasterNodes
-[MasterNodes](/doc/masternode) ensure the operation of the evan.network by signing the blocks (Proof of Authority) and attaching them to the blockchain. In addition to the actual blockchain, the MasterNodes also operate other services such as a decentralized storage service and a WebService node. The MasterNodes are operated by the cross-industry members of the DAO. Each MasterNode operator receives the right to participate in the DAO and thereby actively continue the development. 
+The consortium partners decide on coordination procedures for important stages of development in the network. This consortium ensures the greatest possible independence with simultaneous operational reliability of the network.
+
+### The AuthorityNodes
+[AuthorityNodes](/doc/masternode) ensure the operation of the evan.network by signing the blocks (Proof of Authority) and attaching them to the blockchain. In addition to the actual blockchain, the MasterNodes or AuthorityNodes also operate other services such as a decentralized storage service and a WebService node. 
+
+Nodes are operated by the cross-industry members of the DAO. Each MasterNode operator receives the right to participate in the DAO and thereby actively continue the development. 
 
 ## Cooperation
 Within a Business Center, users can easily interact with network partners via web and mobile apps. Machines and enterprise applications exchange data digitally via [API](https://github.com/evannetwork/api-blockchain-core). With the evan.network, cross-company cooperation between users, machines and IT systems becomes easy, secure and trustworthy.
 
-Based on the Business Centers in evan.network, organizations (companies, foundations, cooperatives, associations etc.) can create blockchain-based applications. The offering organizations or associations then take on the role of a Business Center owner. Basically, this is also an intermediary, but the intermediary has no access to the transaction data. A collection of power through data sovereignty in the form of classical intermediaries is not possible. Data in a business relationship are exchanged directly between the participants via Smart Contracts and written to the blockchain by the decentralized MasterNodes. The Business Center owner therefore merely provides the functional basis for the cooperation, the cooperation then takes place without his intervention.
+Based on the Business Centers in evan.network, organizations (companies, foundations, cooperatives, associations etc.) can create blockchain-based applications. The offering organizations or associations then take on the role of a Business Center owner. 
+
+Basically, this is also an intermediary, but the intermediary has no access to the transaction data. A collection of power through data sovereignty in the form of classical intermediaries is not possible. 
+
+Data in a business relationship are exchanged directly between the participants via Smart Contracts and written to the blockchain by the decentralized MasterNodes.
+
+The Business Center owner therefore merely provides the functional basis for the cooperation, the cooperation then takes place without his intervention.
 
 ## Advantages
 
