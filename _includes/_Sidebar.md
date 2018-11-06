@@ -7,7 +7,6 @@
   - [Security](/doc/securityaes)
   - [Scalability](/doc/scalability)
   - [Account Management](/doc/accmanagement)
-  - [Visualization](/doc/visual)
 - [MasterNode](/doc/masternode)
 - [FAQ](/doc/faq)
 - [Glossary](/doc/glossary)
