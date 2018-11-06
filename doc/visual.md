@@ -1,5 +1,5 @@
 ---
-Visualization Evan.network Architecture
+title: "Visualization Evan.network Architecture"
 ---
 
 To help you familiarize yourself with the architectural design of evan.network, all components are visually represented and clickable.
