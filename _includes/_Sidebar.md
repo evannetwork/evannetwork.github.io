@@ -8,7 +8,7 @@
   - [Scalability](/doc/scalability)
   - [Account Management](/doc/accmanagement)
   - [Architecture Visualized](/doc/visual)
-- [MasterNode](/doc/masternode)
+- [AuthorityNode](/doc/masternode)
 - [FAQ](/doc/faq)
 - [Glossary](/doc/glossary)
   
