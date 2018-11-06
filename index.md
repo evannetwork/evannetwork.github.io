@@ -47,8 +47,8 @@ Creating a profile that you register through our decentralized web service is al
 
 <br>
 
-Core features at a glance
-----
+# Core features at a glance
+
 
 #### [Decentralized Identities](https://evannetwork.github.io/doc/Identity)
 
