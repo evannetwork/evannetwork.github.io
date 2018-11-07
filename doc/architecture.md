@@ -2,13 +2,12 @@
 title: "Infrastructure"
 ---
 # Infrastructure overview
-
 Infrastructure on evan.network can be seperated into three categories:
-Core API, Core Services and Core Network
+Core API, Core Services and the Core Network.
 
 **Core API** consists of the [Blockchain Core](https://evannetwork.github.io/dev/blockchain-core) protocol, the [Key Exchange](https://evannetwork.github.io/dev/security#key-exchange) and the [DBCP protocol](https://evannetwork.github.io/dev/dbcp).
 
-**Core Services** contain all services, smart contracts, templates and features on the network.
+**Core Services** contains user management services, [factories](https://evannetwork.github.io/dev/smart-contracts#contract-factories) for the creation of i.a. digital twins, templates and infrastructure components on the network. 
 
 **Core Network** hosts the built-in [distributed storage service](https://evannetwork.github.io/dev/ipfs), the underlying Blockchain layer and Master(Authority)Nodes.
 
