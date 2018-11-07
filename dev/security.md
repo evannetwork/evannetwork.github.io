@@ -1,9 +1,9 @@
 ---
 title: "Permissioning"
 ---
-# Permissioning and Smart Contract Access Delegation (SCAD)
+# Permissioning with Smart Contract Access Delegation (SCAD)
 
-## About
+## About Smart Contract Security
 Smart contracts are pivotal to everything happening on evan. Almost every feature on the platform utilizes smart contracts in one way or the other. Naturally, security surrounding smart contracts is a top priority on the evan.network. 
 
 Since evan.network is an open ecosystem involving many participants, permissions at times have to be given trans organizational (allowing externals to access internal company data), adding yet another level of complexity. 
