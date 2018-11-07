@@ -5,9 +5,9 @@ title: "Business Center"
 
 ## Introduction
 
-Business Centers serve as hubs for businesses and interest groups to share a mutual context, allowing for the creation of industry specific subnetworks.
+Business Centers serve as hubs for businesses and interest groups to share a mutual context, allowing for the creation of industry specific subnetworks. Business Centers function indepedent of one another. 
 Within this mutually shared context resources can be made available for participants of a center.
-This allows for the implementation of use case specific services (e.g. Smart Contracts and Digital Twins) for the entire Business Center, enabling collaborating entities to fine-tune business processes among themselves.
+This allows for the implementation of use case specific services for the entire Business Center, enabling collaborating entities to fine-tune business processes among themselves.
 
 
 ## Details
