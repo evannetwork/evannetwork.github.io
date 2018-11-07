@@ -3,6 +3,7 @@
 - [Goals](/doc/goals)
 - [FAQ](/doc/faq)
 - [Glossary](/doc/glossary)
+
 ### [Infrastructure](/doc/architecture)
 - [Business Center](/doc/business)
 - [Enterprise Services](/)
