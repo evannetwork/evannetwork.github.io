@@ -6,7 +6,6 @@
 
 ### [Infrastructure](/doc/architecture)
 - [Business Center](/doc/business)
-- [Enterprise Services](/)
 - [Security](/doc/securityaes)
 - [Scalability](/doc/scalability)
 - [Account Management](/doc/accmanagement)
