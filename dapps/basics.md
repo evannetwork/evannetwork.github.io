@@ -2,15 +2,19 @@
 title: "ÐApp Basics"
 ---
 # ÐApp Definition
-A DApp, short for 'Decentralized Application', is not much different to a regular web application at first. What sets a DApp apart from regular web-based applications, however stems from the fact that they are not under control by any third party.
-All interaction with the DApp is securely encrypted from the application's side at all times.
+A DApp, short for 'Decentralized Application', is not much different to a regular web application at first. 
+What sets a DApp apart from regular web-based applications however, is that this new kind of application is not hosted on a traditional server. 
+In lieu of the standard Client-Server structure, DApps serve clients from the blockchain. With applications running on the blockchain new benefits are introduced: 
+
+* All interaction with the DApp is securely encrypted from the application's side at all times
+
+* Critical components are distributed, significantly improving fault tolerance and rendering DDoS(Distributed Denial of Service) attacks practically impossible
+
+* Building on DApps significantly improves security - cross-site scripting, SQL injections and XML attacks are made obsolete
+
+* The increase of data volume that comes with millions of new IoT devices, amongst others, is an aspect that can be handled significantly more efficient and cost effective with blockchain based distributed storage. Data is stored encrypted by default. 
 
 DApps on evan.network can be reached with a standard web browser through a [user friendly address](https://evannetwork.github.io/doc/namespaces) such as 'nodeone.evan'. Decentralized Applications succeed in providing a much more trustworthy experience than traditional applications would have been able to.
-
-Instead of relying on 'classical servers' for hosting, DApps are running on masternodes in the evan.network. Due to their decentralized nature the threat of a single point of failure scenario is eliminated entirely.
-
-Additional benefits that come with decentralization are immunity to hacks and DDoS (Distributed Denial of Service) attacks, allowing for consistent uptime of your DApps without the usual security considerations you would be facing in a traditional environment. 
-
 
 # ÐApp Basics
 Each evan.network application consists of different parts and components with the purpose of creating
