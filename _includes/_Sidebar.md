@@ -5,7 +5,7 @@
 - [Glossary](/doc/glossary)
 
 ### [Core Features](/doc/corefeatures)
-- [Identity Management](/doc/identity)
+- [Decentralized Identities](/doc/Identity)
 - [Permissioning](/dev/security)
 - [Decentralized Applications](/dapps/basics)
 - [Namespaces](/doc/namespaces)
