@@ -4,6 +4,14 @@
 - [FAQ](/doc/faq)
 - [Glossary](/doc/glossary)
 
+### [Core Features](/doc/corefeatures)
+- [Identity Management](/doc/identity)
+- [Permissioning](/dev/security)
+- [Decentralized Applications](/dapps/basics)
+- [Namespaces](/doc/namespaces)
+- [IoT Security](/doc/iotsecurity)
+- [Smart Contract Templates](/dev/deployment)
+
 ### [Infrastructure](/doc/architecture)
 - [Business Center](/doc/business)
 - [Security](/doc/securityaes)
