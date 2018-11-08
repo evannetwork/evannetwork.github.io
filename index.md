@@ -1,13 +1,13 @@
 
 # Welcome to evan.network
-Evan.network is an open ecosystem designed to facilitate popular adoption of the decentralized economy. Equipped with enterprise-ready components and decentralized governance the platform empowers new business models on the basis of innovation through collaboration.
+Evan.network is an open ecosystem designed to facilitate popular adoption of the decentralized economy. Equipped with enterprise-ready components and decentralized governance the platform empowers new business models by innovation through collaboration.
 
 In realization of this vision, Evan.network comes with features catered to meet every blockchain business need. 
 With effectiveness and data sovereignty in mind, the platform consists of AuthorityNodes, also referred to as Masternodes, hosted by trusted European enterprises and businesses. 
 
 High transaction throughput coupled with stable transaction fees model the network into a cost-effective and decisively more secure alternative to conventional solutions. 
 
-Key functionalities, amongst others, are:
+[Key functionalities](/doc/corefeatures), amongst others, are:
 
 * DApps (decentralized applications) 
 * Digital Twins as virtual counterparts of real-life assets, organizations, and people 
@@ -28,7 +28,7 @@ Start building on evan.network
 ----
 
 <dl> 
-  <dt><a href="/doc/visual">Interactive Architecture Overview</a></dt>
+  <dt><a href="/doc/visual">Interactive Infrastructure Overview</a></dt>
   <dd>Make yourself familiar Evan's architecture via our interactive guide.
   </dd>
   <dt><a href="/doc/corefeatures">Core Features</a></dt>
