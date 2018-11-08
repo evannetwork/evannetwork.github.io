@@ -12,9 +12,11 @@ Their authenticity [can be verified without a doubt](/dev/identity-claims), elim
 
 ### Establishing trust relationships
 
-Trust can be established in two ways: **Explicit** or **Implicit**. 
+Establishing trust is necessary to collaborate with others. 
 
-* Explicit trust is established by directly verifying your partner's identity. The relationship is established manually with your contacts through the [AddressBook](/doc/contacts).
+Trust can be given in two ways: **Explicit** or **Implicit**. 
+
+* Explicit trust is established by directly verifying your partner's identity. The relationship is established manually with your contacts through the [AddressBook](/doc/contacts) by exchanging keys.
 
 * Implicit trust is established automatically. 
 Implicit trust functions in the way that identities, with which you have not established an explicit trust relationship, can be trusted indirectly and automatically.
