@@ -3,7 +3,8 @@
 Evan.network is an open ecosystem designed to facilitate popular adoption of the decentralized economy. Equipped with enterprise-ready components and decentralized governance the platform empowers new business models on the basis of innovation through collaboration.
 
 In realization of this vision, Evan.network comes with features catered to meet every blockchain business need. 
-With effectiveness and data sovereignty in mind, the platform consists of masternodes hosted by trusted European enterprises and businesses. 
+With effectiveness and data sovereignty in mind, the platform consists of AuthorityNodes, also referred to as Masternodes, hosted by trusted European enterprises and businesses. 
+
 High transaction throughput coupled with stable transaction fees model the network into a cost-effective and decisively more secure alternative to conventional solutions. 
 
 Key functionalities, amongst others, are:
