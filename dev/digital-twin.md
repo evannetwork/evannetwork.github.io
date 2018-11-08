@@ -1,17 +1,20 @@
 ---
 title: "Digital Twin"
 ---
+# What is a Digital Twin to begin with?
+Machines, cars, products, and people can all be represented with a digital twin.
+
+Digital twins mirror the asset’s or person’s attributes and status on the blockchain. Creating a twin for cars, forklifts, and other assets enables them to report their status to the network in fractions of a second and respond to requests autonomously. 
+
+A Digital Twin therefore is a unique representation of a real world object in the evan.network.
+It can hold attributes and any other data about the real world object, and implement operations and tasks concerning
+the real world object, all cryptographically secured on the blockchain.
+
+The twins can be used in your business logic as you please, allowing for the construction of even the most complex constellations between machines, individuals and organizations alike. 
 
 In this how-to we want to show you, on which way you can create a new Digital Twin contract on the evan.network. First, you will see how the Digital Twin contract is created via our blockchain API. Afterwards, you will see how you can interact with it, like adding specific data and lists of data to it and read the data out of the twin.
 
 You can get the full code of the example [here](https://gist.github.com/S3bb1/70d5fad1afb44f45d79bbb6f70515eff)
-
-
-# Digital Twin
-
-A Digital Twin is a unique representation of a real world object in the evan.network.
-It can hold attributes and any other data about the real world object, and implement operations and tasks concerning
-the real world object, all cryptographically secured on the blockchain.
 
 
 ## 1. Setup
