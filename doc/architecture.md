@@ -14,21 +14,23 @@ Core API, Core Services and the Core Network.
 Component details
 ---
 
-Organizations, physical assets and machines receive a digital identity (Digital Twin) on the evan.network blockchain. 
+[Organizations, physical assets and machines receive a digital identity (Digital Twin)](/dev/digital-twin) on the evan.network blockchain. 
 Digital twins can be addressed through transactions by any identity, human or otherwise, and integrated in complex business logic. 
 
-In a Business Center, users can execute transactions and exchange data with each other, with other organizations or with the Digital Twins of real machines. Hence, the evan.network provides the basis for company-wide, efficient and secure Industry 4.0 business models.
+
+[In a Business Center](/doc/business), users can execute transactions and exchange data with each other, with other organizations or with the Digital Twins of real machines. Hence, the evan.network provides the basis for company-wide, efficient and secure Industry 4.0 business models.
 
 For the interaction between users, processes and machines, evan.network offers predefined services (Smart Contracts), which can be adapted to specific needs. 
 
 The interaction with Smart Contracts takes place via ÐApps in web or mobile browsers or via API from existing IT systems, IT tools and/ or machines. 
-For this purpose, Smart Agents communicate with the Smart Contracts. The Smart Contracts represent the professional framework of the respective service and are developed according to the specific needs. 
+For this purpose, [Smart Agents communicate with the Smart Contracts](/dev/smart-agents). The Smart Contracts represent the professional framework of the respective service and are developed according to the specific needs. 
 
 For example, a Smart Contract that represents a Digital Twin can include the entire life cycle of the asset and its business processes. 
 In concrete terms, this means that the Smart Contract itself provides a kind of management console for the various data types and manages access to the data via an encryption management and a rights-and-role model. 
 In the case of master data such as product properties, the actual data is stored as a JSON object encrypted with the Digital Twin keys in the storage service. 
 
 The address where the data was stored in the storage is saved in the Smart Contract. Other data are handled in a similar way, e.g. service reports. If the service technician creates a report and wants to attach for example an image of the machine, this image is loaded into the storage in encrypted form and the corresponding address is inserted into the corresponding data area of the Digital Twin. 
+
 The complete control of who may insert or read data is controlled by the owner of the Digital Twin Smart Contract, who has complete data sovereignty.
 
 <svg version="1.1" id="evan.network" width="50%" viewBox="0 0 330 700" style="float: left; margin-right: 1em; "
