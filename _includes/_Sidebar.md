@@ -19,7 +19,7 @@
 - [Account Management](/doc/accmanagement)
 - [DAO](/doc/dao)
 - [AuthorityNode](/doc/masternode)
-- [Visualized Infrastructure](/doc/visual)
+- [Visual Overview](/doc/visual)
 
 ### [Quick-start guide](/tutorial/quick-start)
 - [Create Identity](/tutorial/create-identity)
