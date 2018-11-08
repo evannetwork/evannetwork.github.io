@@ -13,6 +13,7 @@
 - [Smart Contract Templates](/dev/deployment)
 
 ### [Infrastructure](/doc/architecture)
+- [Digital Twins](/dev/digital-twin)
 - [Business Center](/doc/business)
 - [Security](/doc/securityaes)
 - [Scalability](/doc/scalability)
