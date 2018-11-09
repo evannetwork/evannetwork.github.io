@@ -24,28 +24,28 @@ We follow a philosophy of open source and have made our codebase publicly availa
 
 <p><a style="float: right" alt="Gitter" title="Gitter" href="https://gitter.im/evannetwork/Lobby"><img src="/public/chat.svg"/></a></p>
 
-Start building on evan.network
+
 ----
 
 <dl> 
   <dt><a href="/doc/visual">Interactive Infrastructure Overview</a></dt>
-  <dd>Make yourself familiar Evan's architecture via our interactive guide.
+  <dd>Let our interactive overview guide .
   </dd>
   <dt><a href="/doc/corefeatures">Core Features</a></dt>
-  <dd>Find out more about our core features in detail</dd>
+  <dd>Find out more about our core features in detail.</dd>
 
 <dt><a href="/tutorial/quick-start">Quick Start</a><dt>
-<dd>Beginning your journey with evan is easy.<br />
+<dd>Beginning your journey with Evan is easy.<br />
 Creating a profile that you register through our decentralized web service is all it takes.
 </dd>
-<dt><a href="/doc/goals">General Overview</a></dt>
+<dt><a href="/doc/goals">General Overview.</a></dt>
 <dd>A deeper look into the concepts of the <a href="/doc/network">network</a> and the <a href="/doc/dao">DAO</a>.</dd>
-<dt><a href="/dev/overview">Technical Details</a></dt>
+<dt><a href="/dev/overview">Technical Details.</a></dt>
 <dd>If you wanna know how it works and fits together.</dd>
 <dt><a href="/dev/getting-started">Start Programming</a></dt>
 <dd>Set up the environment and start building right way, we have handy tutorials ready to help you become familiar with the platform.</dd>
 <dt><a href="/doc/faq">FAQ</a></dt>
-<dd> Frequently Asked Questions</dd>
+<dd> Frequently Asked Questions.</dd>
 <dt><a href="/doc/glossary">Glossary</a></dt>
 <dd> </dd>
 
