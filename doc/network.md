@@ -11,7 +11,7 @@ The network is absolutely agnostic towards all participants, with no central aut
 Enterprise features are provided as [built-in platform features](/doc/corefeatures). Equipped with a powerful Identity and Permissioning solution, critical business needs are addressed.
 To ease your journey into blockchain based development, [Smart Contract templates](/dev/deployment) exist to provide you an entry point. The contracts are ready to use. 
 
-Applications on Evan are running in a [decentralized and highly available fashion](/dapps/basics). Hosted by default on the network, users don't have to take of backup solutions, such as a Failover server instance.
+Applications on Evan are running in a [decentralized and highly available fashion](/dapps/basics). Hosted by default on the network and providing high performance, users don't have to take care of backup solutions, such as a Failover server instance.
 
 When your business grows the Scalability aspect of the network ensures that 
 
