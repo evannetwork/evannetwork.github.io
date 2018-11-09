@@ -18,7 +18,7 @@
 - [Security](/doc/securityaes)
 - [Scalability](/doc/scalability)
 - [Account Management](/doc/accmanagement)
-- [DAO](/doc/dao)
+- [DAO Governance](/doc/dao)
 - [AuthorityNode](/doc/masternode)
 - [Visual Overview](/doc/visual)
 
