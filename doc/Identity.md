@@ -23,7 +23,13 @@ Implicit trust functions in the way that identities, with which you have not est
 
 When a  trusted partner of yours has previously established trust with a third-party unknown to you, conducting business from your side with that third party is based on implicit trust. 
 
-This feature is crucial in supply chain scenarios, where you might not or must not know all members of an n-tier supply chain. With implicit trust, secure and seamless transactions, including unknown or anonymous partners, is a non-issue and requires no further manual action, allowing for the construction of various trust models to address specific concerns. 
+Another example to this is if an indepedent institution has established trust with you and another party.
+For example, the TUV is issuing ISO 9001 certificates. If you and another user have both received the ISO certificates from the TUV, certain trust exists between the other user and yourself, even if you usually don't interact with eachother. 
+
+This feature is crucial in supply chain scenarios, where you might not or must not know all members of an n-tier supply chain.
+In order to facilitate cooperation within a supply chain, all participants in that chain have to be trusted.
+
+With implicit trust, secure and seamless transactions, including unknown or anonymous partners, is a non-issue and requires no further manual action, allowing for the construction of various trust models to address specific concerns. 
 
 
 ### On-Behalf Logic
