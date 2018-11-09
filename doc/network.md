@@ -13,8 +13,6 @@ To ease your journey into blockchain based development, [Smart Contract template
 
 Applications on Evan are running in a [decentralized and highly available fashion](/dapps/basics). Hosted by default on the network and providing high performance, users don't have to take care of backup solutions, such as a Failover server instance.
 
-When your business grows the Scalability aspect of the network ensures that 
-
 With evan.network, organizations can take advantage of decentralized collaboration without having to understand the complexity of blockchain technology. The evan.network is the breakthrough for the adaptation of decentralized blockchain solutions in everyday business processes.
  
 ## Structure of evan.network
