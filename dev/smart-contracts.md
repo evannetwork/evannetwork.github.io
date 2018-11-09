@@ -35,8 +35,25 @@ The recommendation in these samples is to use the Ethereum wallet for deploying 
 
 # Smart Contracts in evan.network
 
-## DataContract
-The DataContract is a secured data storage contract for single properties and lists.
+## Smart Contract Types
+
+- **Capa Contract** - Easy management of requests for available capacities for a specific requirement within the Business Center. Capacity requests are sent to users known by name or all users who meet certain profile criteria and can be answered automatically or via Capa-ÐApp. 
+
+One or more relevant offers can be selected from the answers and an order in the form of a Business Contract can be concluded with the corresponding network partners. 
+Inquiries for services or rentals can also be defined and answered via Capa Contracts.
+
+- **Business Contract** - A Business Contract defines a specific business transaction between two or more network partners and is comparable to a classic contract or order. It does not matter whether the Business Contract is closed directly or as a result of a previous Capa Contract request. 
+
+Business Contracts can describe on-off and recurring orders.
+In addition to the contract conditions, a Business Contract can also contain almost any user data required for contract performance (access data, CAD data, etc.) or arising during contract performance (e.g. log data, production progress, performance reports, etc.).
+
+- **Digital Twin Contract** - The Digital Twin Contract represents a real good in the blockchain, gives it an identity and enables it to securely exchange transactions and data with other users or goods. In a Digital Twin, real goods (e.g. machines, components etc.) but also concrete orders (e.g. logistics) can be provided with a digital identity. 
+
+Via the Digital Twin Contract, data can be securely stored and, if required, specifically released to third parties. The Digital Twin can enter into contractual relationships with other users as well as with other Digital Twins, for example to allocate capacities of service technicians (capa contract).
+
+These are then ordered via the Business Contract. The Digital Twin stores and manages information about the real goods it represents, permanently and tamper-proof.
+
+- **DataContract** - The DataContract is a secured data storage contract for single properties and lists.
 
 It relies on the [Hybrid Storage](/dev/ipfs#hybrid-storage) concept for data storage and secures its data via contract permissions, Sharings and key management described in [Security](/dev/security).
 
