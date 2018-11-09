@@ -25,4 +25,7 @@ In order to adequately cover all security aspects without the need for any extra
 
 #### [Contract Templates](https://evannetwork.github.io/dev/deployment)
 
-Contract templates are a great way to bootstrap smart contract development and adapt contracts to specific busin
+Contract templates are a great way to bootstrap smart contract development and adapt contracts to specific business needs.
+
+#### Stable Transaction Costs
+Transaction costs have been a significant cause for concern in the past. Unforeseeable price changes provide no basis for any business to operate with and have deterred many ventures into blockchain projects.
