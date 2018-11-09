@@ -5,10 +5,23 @@ title: "Business Center"
 
 ## Introduction
 
-Business Centers serve as hubs for businesses and interest groups to share a mutual context, allowing for the creation of industry specific subnetworks. Business Centers function indepedent of one another. 
-Within this mutually shared context resources can be made available for participants of a center.
-This allows for the implementation of use case specific services for the entire Business Center, enabling collaborating entities to fine-tune business processes among themselves.
+Business Centers are communities for working together on specific topics. 
+They group together accounts and contracts and set a context for the work on the contracts. These contexts may be companies, projects or common interests.
 
+Depending on the setup of the business center users may
+
+* Join on their own, when the Business Center is Public
+* Receive an invitation to join, when the Business Center is Private
+* Request to join, if the Business Center is Restricted 
+
+Users may join as many Business Centers they like and they all are independent working spaces with their own scope and data.
+
+The centers can also have scopes, by which users may interact with respective smart contracts without having to receive manual approval from contract owners. 
+
+Their ÐAPPs are similar to dashboards and members can start working on contracts in the current business center or create new contracts in it.
+
+Accounts can create a Business Center scoped profile, which is similar to a business card for that context. 
+In it users may provide data for other members to find them and start working together or share their qualifications or certificates with the Business Center community.
 
 ## Details
 In a Business Center, users can execute transactions and exchange data with each other, with other organizations or with the Digital Twins of real machines. Hence, the evan.network provides the basis for company-wide, efficient and secure Industry 4.0 business models.
