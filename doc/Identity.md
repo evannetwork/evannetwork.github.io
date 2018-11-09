@@ -21,16 +21,11 @@ Trust can be given in two ways: **Explicit** or **Implicit**.
 * Implicit trust is established automatically. 
 Implicit trust functions in the way that identities, with which you have not established an explicit trust relationship, can be trusted indirectly and automatically.
 
-When a  trusted partner of yours has previously established trust with a third-party unknown to you, conducting business from your side with that third party is based on implicit trust. 
-
-Another example to this is if an indepedent institution has established trust with you and another party.
-For example, the TUV is issuing ISO 9001 certificates. If you and another user have both received the ISO certificates from the TUV, certain trust exists between the other user and yourself, even if you usually don't interact with eachother. 
+For example, the TUV is issuing ISO 9001 certificates. If you and another user have both received the ISO certificates from the TUV, certain trust exists between the other user and yourself, even if you didn't explicitly establish trust by means of key exchange first. 
 
 This feature is crucial in supply chain scenarios, where you might not or must not know all members of an n-tier supply chain.
-In order to facilitate cooperation within a supply chain, all participants in that chain have to be trusted.
-
-With implicit trust, secure and seamless transactions, including unknown or anonymous partners, is a non-issue and requires no further manual action, allowing for the construction of various trust models to address specific concerns. 
-
+When you have received a certificate from a trusted third party, like the TUV for example, you can implicitly trust other entities which have received the same certificate. 
+This allows for participants in a supply chain to collaborate with each other, without having to establish explicit trust with each member in the supply chain.
 
 ### On-Behalf Logic
 
