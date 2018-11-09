@@ -30,7 +30,11 @@ For this purpose, Smart Agents communicate with the Smart Contracts. The Smart C
 
 For example, a Smart Contract that represents a Digital Twin can include the entire life cycle of the asset and its business processes. In tangible terms, this means that the Smart Contract itself provides a kind of management shell for the various data types and manages access to the data via an encryption management and a rights-and-role model. 
 
-In the case of master data such as product properties, the actual data is stored as a JSON object encrypted with the Digital Twin keys in the storage service. The address where the data was stored in the storage is saved in the Smart Contract. Other data are handled in a similar way, e.g. service reports. If the service technician creates a report and wants to attach for example an image of the machine, this image is loaded into the storage in encrypted form and the corresponding address is inserted into the corresponding data area of the Digital Twin. The complete control of who may insert or read data is controlled by the owner of the Digital Twin Smart Contract, who has complete data sovereignty.
+In the case of master data such as product properties, the actual data is stored as a JSON object encrypted with the Digital Twin keys in the storage service. 
+
+The address where the data was stored in the storage is saved in the Smart Contract. Other data are handled in a similar way, e.g. service reports.
+
+If the service technician creates a report and wants to attach for example an image of the machine, this image is loaded into the storage in encrypted form and the corresponding address is inserted into the corresponding data area of the Digital Twin. The complete control of who may insert or read data is controlled by the owner of the Digital Twin Smart Contract, who has complete data sovereignty.
 
 <svg version="1.1" id="evan.network" width="50%" viewBox="0 0 330 700" style="float: left; margin-right: 1em; "
    xmlns:svg="http://www.w3.org/2000/svg"  xmlns="http://www.w3.org/2000/svg"
@@ -794,7 +798,10 @@ In the case of master data such as product properties, the actual data is stored
 
 
 ## Business Center
-In Business Centers, organizations, users and machines are interconnected with each other in order to interact as partners in a concrete business environment. Network partners who join a Business Center expand their profile with specific information and features for this business environment. In addition to extended descriptive information, the profile may also contain certificates, competencies and general skills.
+In Business Centers, organizations, users and machines are interconnected with each other in order to interact as partners in a concrete business environment. 
+
+Network partners who join a Business Center expand their profile with specific information and features for this business environment. In addition to extended descriptive information, the profile may also contain certificates, competencies and general skills.
+
 The Business Center is an Ethereum-based development framework and provides specific Smart Contracts for initiating, entering into and implementing business relationships. The entire cooperation between network partners via Smart Contracts within a Business Center takes place directly, i.e. without a central intermediary, and is encrypted, i.e. secure against access by unauthorized third parties.
 
 Depending on the requirements for business relationships, Business Centers are either public, closed, or restricted. 
@@ -812,10 +819,16 @@ To map different business relationships, evan.network offers different Smart Con
 This is greatly simplified by the use of a Smart Contract factory. The factory manages all Business Center-specific Smart Contract templates, creates a configured instance of the Smart Contract and initializes this with the network partners authorized to the contract. From this point on, a direct business relationship is established between the network partners involved, which is only visible and executable for them.
 
 
-Smart Contracts were developed with the goal of easy use and expansion. Each Smart Contract can be called directly from a Web3 browser using for example a name server entry. Initially, only the manifest file ([DBCP](/dev/dbcp)) is referenced and loaded. This file contains a standardized structure with descriptive information to make the service human and machine readable. It also contains references to the actual Smart Contract in the blockchain and the Distributed App (ÐApp), which enables direct user interaction with the service. 
+Smart Contracts were developed with the goal of easy use and expansion. Each Smart Contract can be called directly from a Web3 browser using for example a name server entry. 
+
+Initially, only the manifest file ([DBCP](/dev/dbcp)) is referenced and loaded. This file contains a standardized structure with descriptive information to make the service human and machine readable. 
+
+It also contains references to the actual Smart Contract in the blockchain and the Distributed App (ÐApp), which enables direct user interaction with the service. 
+
 In order to ensure interoperability of services, the manifest file corresponds to a standardized structure that is currently provided as an open source component (DBCP) as part of a project sponsored by the Thuringian Ministry of Economics, Science and Digital Society. This makes it possible to start an interaction with the services even without the evan.network framework.
 
 This architecture enables the integration of any third-party Smart Contracts into an evan.network environment. Referenced via the manifest file existing Smart Contracts of other providers can be combined with evan.network-ÐApps and thus integrated into a homogeneous user experience. 
+
 Based on this architectural principle, the entire network was created. Thus, all applications the user communicates with in the evan.network, processes Smart Contracts with and makes transactions with are implemented as ÐApp. 
 
 
@@ -823,11 +836,24 @@ Based on this architectural principle, the entire network was created. Thus, all
 
 The interaction capabilities in a Business Center should enable simple interaction between end users, IT systems and machines. Starting from today's mostly manual forms of communication, an automation of cross-company cooperation can be implemented step by step.
 
-To interact as user or machine in evan.network, a network account is required. An account can be created directly via onboarding (self-service) or via an invitation. An invitation is sent by an existing user or Smart Contract on the network. In the invitation, you can control whether a user is invited directly to a Business Center or to a specific Smart Contract. In addition, EVEs can be sent directly to the invited user as part of the invitation process, so that the new user is immediately ready to work in the network. The invitation is sent either as a technical invitation via an API or by an user using an e-mail address. The invitation email contains an invitation text and a link to the onboarding ÐApp. This ÐApp guides the new user through the registration process, where he or she has to confirm e.g. terms and conditions and data protection and gets an own account with private key and Mnemonic. After successful registration, the user has an evan.network identity with which he or she can now participate in the Business Center and Smart Contract.
+To interact as user or machine in evan.network, a network account is required. An account can be created directly via onboarding (self-service) or via an invitation. An invitation is sent by an existing user or Smart Contract on the network.
+
+In the invitation, you can control whether a user is invited directly to a Business Center or to a specific Smart Contract. In addition, EVEs can be sent directly to the invited user as part of the invitation process, so that the new user is immediately ready to work in the network. 
+
+The invitation is sent either as a technical invitation via an API or by an user using an e-mail address. The invitation email contains an invitation text and a link to the onboarding ÐApp. 
+This ÐApp guides the new user through the registration process, where he or she has to confirm e.g. terms and conditions and data protection and gets an own account with private key and Mnemonic. 
+
+After successful registration, the user has an evan.network identity with which he or she can now participate in the Business Center and Smart Contract.
 
 Every interaction with Business Centers and Smart Contracts takes place via ÐApps. Users interact with the respective ÐApp via web or mobile browsers. ÐApps are HTML applications loaded from the blockchain and make it easy for the user to work with Smart Contracts and evan.network interactively. 
 
 To communicate with Smart Contracts from your own applications and ÐApps, evan.network provides APIs in form of a JavaScript library and developer documentation. Thus, own applications can be implemented and operated on evan.network.
 
-For an automation of the business relations, evan.network offers APIs to all Smart Contracts. Hence, the evan.network can be connected to own systems and a direct integration of business processes can be carried out. Furthermore, it is possible to add logic and workflow addons in the evan.network with the help of [Smart Agents](/dev/smart-agents). They are operated by the respective Smart Agent provider and can enable workflow-supported communication of the evan.network with existing IT systems and machines. Smart Agents can be invited into a Smart Contract, just like users, and thus receive access to its contents. The Smart Agent constantly checks the contract for changes and can automatically initiate new processes according to predefined rules as soon as it finds one.  
+For an automation of the business relations, evan.network offers APIs to all Smart Contracts. Hence, the evan.network can be connected to own systems and a direct integration of business processes can be carried out. 
+
+Furthermore, it is possible to add logic and workflow addons in the evan.network with the help of [Smart Agents](/dev/smart-agents). They are operated by the respective Smart Agent provider and can enable workflow-supported communication of the evan.network with existing IT systems and machines. 
+
+Smart Agents can be invited into a Smart Contract, just like users, and thus receive access to its contents. The Smart Agent constantly checks the contract for changes and can automatically initiate new processes according to predefined rules as soon as it finds one.  
+
+
 If the user has the rights, he or she can also add content to the Smart Contract. Via Smart Agents, the invitation via email or the mobile push notifications are solved in the evan.network. They combine the "blockchain world" with other technologies.
