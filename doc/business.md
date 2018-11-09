@@ -16,8 +16,6 @@ Depending on the setup of the business center users may
 
 Users may join as many Business Centers they like and they all are independent working spaces with their own scope and data.
 
-The centers can also have scopes, by which users may interact with respective smart contracts without having to receive manual approval from contract owners. 
-
 Their ÐAPPs are similar to dashboards and members can start working on contracts in the current business center or create new contracts in it.
 
 Accounts can create a Business Center scoped profile, which is similar to a business card for that context. 
