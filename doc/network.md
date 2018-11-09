@@ -2,9 +2,13 @@
 
 # Overview
 
- **evan.network** is an enterprise blockchain based on the Ethereum technology, which is operated by the consortium of evan.network partners. 
+ **evan.network** is an enterprise blockchain based on the Ethereum technology, which is operated by the consortium of evan.network partners. Evan constitutes an ecosystem by which organziations, businesses and individuals are concentrated on one platform. 
 
-By extending the standard Ethereum functions with business-relevant interaction mechanisms, evan.network offers a comprehensive basis for business transactions.
+The network is absolutely agnostic towards all participants, with no central authority in place. Instead, active organizations each host an [AuthorityNode](/doc/masternode) and participate in the [democratic and transparent governance model](/doc/dao) on the platform.
+
+Enterprise features are provided as [built-in platform features](/doc/corefeatures). Equipped with a powerful Identity and Permissioning solution, critical business needs are addressed.
+
+Applications on Evan are running in a [decentralized and highly available fashion](/dapps/basics). Hosted by default on the network, users don't have to take of backup solutions, such as a Failover server instance.
 
 With evan.network, organizations can take advantage of decentralized collaboration without having to understand the complexity of blockchain technology. The evan.network is the breakthrough for the adaptation of decentralized blockchain solutions in everyday business processes.
  
