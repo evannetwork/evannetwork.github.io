@@ -1,5 +1,5 @@
 ### [Start](/)
-- [Evan.network Vision](/doc/network)
+- [Evan.network](/doc/network)
 - [Goals](/doc/goals)
 - [FAQ](/doc/faq)
 - [Glossary](/doc/glossary)
