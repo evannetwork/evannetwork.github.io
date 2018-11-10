@@ -48,5 +48,5 @@ Tour Guide
 
 <dt><a href="/doc/glossary">Glossary</a></dt>
 
-<p>If you wish to become <code>evan.network</code>an integral part of the infrastructure and shape its future, contact us on our <a href="https:///evan.network">WebSite</a>.
+<p>If you wish to become an integral part <code>evan.network</code>of the infrastructure and shape its future, contact us on our <a href="https:///evan.network">WebSite</a>.
 
