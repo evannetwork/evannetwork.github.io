@@ -24,30 +24,30 @@ We follow a philosophy of open source and have made our codebase publicly availa
 
 <p><a style="float: right" alt="Gitter" title="Gitter" href="https://gitter.im/evannetwork/Lobby"><img src="/public/chat.svg"/></a></p>
 
-
+Tour Guide
 ----
 
 <dl> 
-  <dt><a href="/doc/visual">Interactive Infrastructure Overview</a></dt>
-  <dd>Let our interactive overview guide .
-  </dd>
-  <dt><a href="/doc/corefeatures">Core Features</a></dt>
-  <dd>Find out more about our core features in detail.</dd>
-
+<dt><a href="/doc/goals">Evan.network Vision</a></dt>
+<dd>Learn what motivates and drives us</dd>
+  
 <dt><a href="/tutorial/quick-start">Quick Start</a><dt>
-<dd>Beginning your journey with Evan is easy.<br />
-Creating a profile that you register through our decentralized web service is all it takes.
-</dd>
-<dt><a href="/doc/goals">General Overview.</a></dt>
-<dd>A deeper look into the concepts of the <a href="/doc/network">network</a> and the <a href="/doc/dao">DAO</a>.</dd>
-<dt><a href="/dev/overview">Technical Details.</a></dt>
-<dd>If you wanna know how it works and fits together.</dd>
-<dt><a href="/dev/getting-started">Start Programming</a></dt>
-<dd>Set up the environment and start building right way, we have handy tutorials ready to help you become familiar with the platform.</dd>
+<dd> Create your personal decentralized identity<br></dd>
+
+<dt><a href="/doc/visual">Interactive Infrastructure Overview</a></dt>
+<dd>High-level Platform overview</dd>
+
+<dt><a href="/dev/overview">Technical Details</a></dt>
+<dd>Deep dive evan.network</dd>
+
+<dt><a href="/dev/getting-started">Start Coding</a></dt>
+<dd>Get your environment DApp ready</dd>
+
 <dt><a href="/doc/faq">FAQ</a></dt>
-<dd> Frequently Asked Questions.</dd>
+<dd> Frequently Asked Questions</dd>
+
 <dt><a href="/doc/glossary">Glossary</a></dt>
-<dd> </dd>
+</dl>
 
 <p>If you want to join <code>evan.network</code> as an integral part of the infrastructure and shape its future, contact us on our <a href="https:///evan.network">WebSite</a>.
 
