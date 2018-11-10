@@ -44,10 +44,9 @@ Tour Guide
 <dd>Get your environment DApp ready</dd>
 
 <dt><a href="/doc/faq">FAQ</a></dt>
-<dd> Frequently Asked Questions</dd>
+<dd>Frequently Asked Questions</dd>
 
 <dt><a href="/doc/glossary">Glossary</a></dt>
-</dl>
 
-<p>If you want to join <code>evan.network</code> as an integral part of the infrastructure and shape its future, contact us on our <a href="https:///evan.network">WebSite</a>.
+<p>If you wish to become <code>evan.network</code>an integral part of the infrastructure and shape its future, contact us on our <a href="https:///evan.network">WebSite</a>.
 
