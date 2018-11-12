@@ -1,7 +1,7 @@
 ---
-title: "Decentralized Identities"
+title: "Verified Identities"
 ---
-# Decentralized Identities
+# Verified Identities
 
 In evan.network everything, no matter if human, machine or organization has a decentralized, self-sovereign identity which enables them to interact with each other in a swift and trusted way.
 
@@ -35,4 +35,4 @@ Through on-behalf logic it is possible to realize complex scenarios. You can cho
 
 Organizational structures, such as teams in which certain members have certain tasks and responsibilities, can be modeled with simplicity on the blockchain.
 
-By knowing whom you are dealing with, you are saving time and resources on otherwise costly due diligence processes. The evan.network decentralized identities feature ensures that fraudulent schemes, such as identity theft and impersonation, are a thing of the past.
+By knowing whom you are dealing with, you are saving time and resources on otherwise costly due diligence processes. The evan.network verified identities feature ensures that fraudulent schemes, such as identity theft and impersonation, are a thing of the past.
