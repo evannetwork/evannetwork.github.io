@@ -8,7 +8,7 @@ Smart contracts are pivotal to everything happening on evan. Almost every featur
 
 Since evan.network is an open ecosystem involving many participants, permissions at times have to be given trans organizational (allowing externals to access internal company data), adding yet another level of complexity. 
 
-With that mind the SCAD (Smart Contract Access Delegation) is built around certain main concepts:
+With that in mind the Smart Contract Permissioning (SCEP) is built around certain main concepts:
 - prevent malicious contract manipulation 
 - prevent contract content from being illegally accessed by third parties 
 - granularly define access and role definitions 
@@ -20,7 +20,7 @@ Usually, parties wishing to engage each other on the evan.network have to exchan
 By delegating permissions no human interaction is required, as users don't have to manually exchange keys with the owner of the respective smart contract to receive access. 
 
 
-## Introducing Smart Contract Permissioming
+## Introducing Smart Contract Permissioning
 
 ### Introduction to Smart Contract Permissioning
 Granular permissioning for smart contracts is facilitated through the Smart Contract Permissioning.
@@ -32,7 +32,7 @@ Now, if a permissioned user writes changes to the smart contract, a participant 
 Through this mechanism it is made possible to ensure at a granular level that only ever intended users gain access to exactly what they are supposed to see and restrict access to content that is off limits.
 
 
-### Details Access Control
+### Details Permissioning
 As the main part of data related to contracts is stored in the distributed file system, only references to the DFS are stored in the contract. Contents in the DFS are encrypted with one or more keys specific to the contract instance they belong to.
 
 Contract participants, which should be enabled to read and/ or write contract content, need to have access to the keys responsible for the contract data (called 'data keys' in this context). This is done by maintaing a 'sharings' info, which is basically a key store keeping data keys, grouped by the following criteria:
