@@ -1,7 +1,7 @@
 ---
 title: "Permissioning"
 ---
-# Permissioning with Smart Contract Access Delegation (SCAD)
+# Smart Contract Security and Permissioning (SCEP)
 
 ## About Smart Contract Security
 Smart contracts are pivotal to everything happening on evan. Almost every feature on the platform utilizes smart contracts in one way or the other. Naturally, security surrounding smart contracts is a top priority on the evan.network. 
@@ -20,10 +20,10 @@ Usually, parties wishing to engage each other on the evan.network have to exchan
 By delegating permissions no human interaction is required, as users don't have to manually exchange keys with the owner of the respective smart contract to receive access. 
 
 
-## Introducing Smart Contract Access Delegation (SCAD)
+## Introducing Smart Contract Permissioming
 
-### Introduction to Smart Contract Access Control
-Granular permissioning for smart contracts is facilitated through the Smart Contract Access Delegation or 'SCAD'.
+### Introduction to Smart Contract Permissioning
+Granular permissioning for smart contracts is facilitated through the Smart Contract Permissioning.
 
 To facilitate access control, each smart contract can be thought of as holding the keys for users that are supposed to interact with the contract. This key store is referred to as the 'sharings' section.
 Authorization and access level for each user is configured by the contract owner and reflected in the participant's key.
@@ -45,6 +45,10 @@ The Sharings of a contract is basically a structured list of encrypted keys.
 In a simple contract, the creator of the contract creates a single data key for this contract and wants to share it with other contract members to enable them to read the data in the contract. Therefore, the creator puts the data key into the Sharings info. To prevent third parties from accessing this data key, it is encrypted with the communication key between the contract owner and the contract participant.
 
 ![sharings - schema](/public/dev/sharings_schema.png)
+
+For **Data Contracts**, the owner creates a data contract and a rights and roles contract. Next, they are linked together.
+The contract owner then defines which groups, or users, are allowed to make edits to fields on the Data Contract. 
+Access can be given granularly to entry,list and mapping contract values.
 
 ## Establishing trust with Participants
 # Key Exchange
