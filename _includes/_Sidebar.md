@@ -12,6 +12,7 @@
 - [IoT Security](/doc/iotsecurity)
 - [Smart Contract Templates](/dev/deployment)
 - [Stable Transaction Fees](/doc/eve)
+- [Enterprise Blockchain](/doc/enterprisechain)
 
 ### [Infrastructure](/doc/architecture)
 - [Digital Twins](/dev/digital-twin)
