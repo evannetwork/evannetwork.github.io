@@ -27,12 +27,3 @@ This feature is crucial in supply chain scenarios, where you might not or must n
 When you have received a certificate from a trusted third party, like the TUV for example, you can implicitly trust other entities which have received the same certificate. 
 This allows for participants in a supply chain to collaborate with each other, without having to establish explicit trust with each member in the supply chain.
 
-### On-Behalf Logic
-
-With on-behalf-of logic, accounts can interact with a smart contract in the name of another account. Business scenarios where employees act in the name of a company can be modeled securely in blockchain.
-
-Through on-behalf logic it is possible to realize complex scenarios. You can choose either individual accounts, or a group of accounts, and delegate authority to act on your behalf.
-
-Organizational structures, such as teams in which certain members have certain tasks and responsibilities, can be modeled with simplicity on the blockchain.
-
-By knowing whom you are dealing with, you are saving time and resources on otherwise costly due diligence processes. The evan.network verified identities feature ensures that fraudulent schemes, such as identity theft and impersonation, are a thing of the past.
