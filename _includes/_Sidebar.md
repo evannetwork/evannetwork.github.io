@@ -6,6 +6,7 @@
 
 ### [Core Features](/doc/corefeatures)
 - [Verified Identities](/doc/Identity)
+  - [On Behalf Logic](/doc/onbehalf.html)
 - [Permissioning](/dev/security)
 - [Decentralized Applications](/dapps/basics)
 - [Namespaces](/doc/namespaces)
