@@ -1,5 +1,5 @@
 ---
-title:"Enterprise Blockchain"
+title: "Enterprise Blockchain"
 ---
 
 # Enterprise Blockchain
