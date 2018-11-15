@@ -13,10 +13,8 @@ When you hit the unlock button on your remote, the signal is processed by a mast
 
 However, it could be the case that someone might attempt to compromise a masternode they have control over and try to open your car without your consent. 
 
-To prevent manipulation on IoT devices connected to the evan.network, the Incubed protocol is employed. IoT devices are fitted with the [Slock.it](https://slock.it/) client. Incubed itself is a network of nodes which function as servers for the respective devices. 
 
-IoT devices, in our case a car remote control, send an RPC request to an incubed node. 
-Due to the stateless incubed client, there is no need to synchronize with the network. The device is instanly ready to use.
+IoT devices, in our case a car remote control, send an RPC request to an AuthorityNode.
 
 To verify that the response is valid, the device has to examine three factors:
 
