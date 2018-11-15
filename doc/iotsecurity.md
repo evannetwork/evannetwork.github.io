@@ -20,9 +20,9 @@ To verify that the response is valid, the device has to examine three factors:
 
 *	[The merkle proof](https://medium.com/byzantine-studio/blockchain-fundamentals-what-is-a-merkle-tree-d44c529391d7)
 *	The current blockheader
-*	A signed blockhash from the same blockheader from multiple incubed nodes 
+*	A signed blockhash from the same blockheader from multiple Authority nodes 
 
-Incubed nodes themselves are discouraged from becoming malicious by a deposit each node operator has to consign. If one of those nodes were to sign a wrong or fraudulent request, the deposit of that node is consumed as a penalty. 
+Authority nodes themselves are discouraged from becoming malicious by a deposit each node operator has to consign. If one of those nodes were to sign a wrong or fraudulent request, the deposit of that node is consumed as a penalty. 
 The IoT device can publish the information to put it up for verification by the network, in which case the deposit would be transferred to the watchdog that caught the error.
 However, since the IoT device asks multiple nodes to sign the blockhash, it is possible for the device to verify the response and even claim the deposit in case a blockhash was falsely signed.
 
