@@ -93,7 +93,7 @@ title: "Glossary"
 </dl>
 <a id="m"></a>
 <dl>
-<dt><a href="/doc/masternode">MasterNode</a></dt><dd>a registered evan.network member, has to provide a number of services and resources to the network, most notably a blockchain client and IPFS storage</dd>
+<dt><a href="/doc/authoritynode">AuthorityNode</a></dt><dd>a registered evan.network member, has to provide a number of services and resources to the network, most notably a blockchain client and IPFS storage</dd>
 </dl>
 <a id="n"></a>
 <dl>

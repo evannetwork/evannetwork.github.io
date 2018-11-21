@@ -84,11 +84,11 @@ Built-in IoT security is a crucial feature of the platform's holistic approach.
 
 As an example of how this is done, let’s take a look at how on a technical level, you would unlock your car that is part of the evan.network:
 
-When you hit the unlock button on your remote, the signal is processed by a masternode. The masternode is the endpoint receiving the request to unlock your car. Once the masternode verifies that it is you, it will allow for the vehicle to be opened.
+When you hit the unlock button on your remote, the signal is processed by a AuthorityNode. The AuthorityNode is the endpoint receiving the request to unlock your car. Once the AuthorityNode verifies that it is you, it will allow for the vehicle to be opened.
 
-However, it could be the case that someone might attempt to compromise a masternode they have control over and tries to open your car without your consent. 
+However, it could be the case that someone might attempt to compromise a AuthorityNode they have control over and tries to open your car without your consent. 
 
-Hence, evan.network has redundancy in the shape of masternodes in place to prevent a takeover or malicious access to your devices at all points. 
+Hence, evan.network has redundancy in the shape of AuthorityNodes in place to prevent a takeover or malicious access to your devices at all points. 
 
 #### [Learn More](https://evannetwork.github.io/doc/iotsecurity)
 

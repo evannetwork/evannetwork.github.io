@@ -5,7 +5,7 @@ title: "IPFS"
 ## Storage Service
 
 To give evan.network applications the possibility to run decentralized applications ([ÐAPPs](/dapps/basics)) and store complex and unstructured content, we provide a distributed file system based on [IPFS](https://ipfs.io)<sup>[+]</sup>.
-The evan.network IPFS service is not connected to the public IPFS network, so that your content isn't spread on other IPFS hosts outside our network. We provide a [private IPFS cluster](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#private-networks)<sup>[+]</sup> where each MasterNode provider spends instances to this IPFS network.
+The evan.network IPFS service is not connected to the public IPFS network, so that your content isn't spread on other IPFS hosts outside our network. We provide a [private IPFS cluster](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#private-networks)<sup>[+]</sup> where each AuthorityNode provider spends instances to this IPFS network.
 
 The storage service keeps care that a content asset is replicated two times in the cluster and that stored data can't be deleted anymore, just as in the blockchain.
 

@@ -6,7 +6,7 @@
  
 The evan.network is open source and has a strong focus on collaborating with development communities. 
 
-The network is absolutely agnostic towards all participants, with no central authority in place. Instead, active organizations each host an [AuthorityNode](/doc/masternode) and participate in the [democratic and transparent governance model](/doc/dao) on the platform. This approach to governance also aligns with contemporary GDPR solutions, as in that all data processors have to be known. 
+The network is absolutely agnostic towards all participants, with no central authority in place. Instead, active organizations each host an [AuthorityNode](/doc/authoritynode) and participate in the [democratic and transparent governance model](/doc/dao) on the platform. This approach to governance also aligns with contemporary GDPR solutions, as in that all data processors have to be known. 
 
 Enterprise features are provided as [built-in platform features](/doc/corefeatures). Equipped with a powerful Identity and Permissioning solution, critical business needs are addressed.
 To ease your journey into blockchain based development, [Smart Contract templates](/dev/deployment) exist to provide you an entry point. The contracts are ready to use. 
@@ -37,9 +37,9 @@ In contrast to a private blockchain (private chain), the evan.network is operate
 The consortium partners decide on coordination procedures for important stages of development in the network. This consortium ensures the greatest possible independence with simultaneous operational reliability of the network.
 
 ### The AuthorityNodes
-[AuthorityNodes](/doc/masternode) ensure the operation of the evan.network by signing the blocks (Proof of Authority) and attaching them to the blockchain. In addition to the actual blockchain, the MasterNodes or AuthorityNodes also operate other services such as a decentralized storage service and a WebService node. 
+[AuthorityNodes](/doc/authoritynode) ensure the operation of the evan.network by signing the blocks (Proof of Authority) and attaching them to the blockchain. In addition to the actual blockchain, the AuthorityNodes or AuthorityNodes also operate other services such as a decentralized storage service and a WebService node. 
 
-Nodes are operated by the cross-industry members of the DAO. Each MasterNode operator receives the right to participate in the DAO and thereby actively continue the development. 
+Nodes are operated by the cross-industry members of the DAO. Each AuthorityNode operator receives the right to participate in the DAO and thereby actively continue the development. 
 
 ## Cooperation
 Within a Business Center, users can easily interact with network partners via web and mobile apps. Machines and enterprise applications exchange data digitally via [API](https://github.com/evannetwork/api-blockchain-core). With the evan.network, cross-company cooperation between users, machines and IT systems becomes easy, secure and trustworthy.
@@ -48,7 +48,7 @@ Based on the Business Centers in evan.network, organizations (companies, foundat
 
 Basically, this is also an intermediary, but the intermediary has no access to the transaction data. A collection of power through data sovereignty in the form of classical intermediaries is not possible. 
 
-Data in a business relationship are exchanged directly between the participants via Smart Contracts and written to the blockchain by the decentralized MasterNodes.
+Data in a business relationship are exchanged directly between the participants via Smart Contracts and written to the blockchain by the decentralized AuthorityNodes.
 
 The Business Center owner therefore merely provides the functional basis for the cooperation, the cooperation then takes place without his intervention.
 
@@ -57,7 +57,7 @@ The Business Center owner therefore merely provides the functional basis for the
 The evan.network addresses different target audiences and offers them advantages over conventional blockchain- and non-blockchain-based cooperation solutions.
 
 <table>
-<tr><th></th><th>Business Center Owner</th><th>MasterNode Operator</th><th>Developer</th></tr>
+<tr><th></th><th>Business Center Owner</th><th>AuthorityNode Operator</th><th>Developer</th></tr>
 <tr><th>Environment</th>
     <td>Companies worldwide, who want to optimize their cooperation in the partner network and/ or offer digital business models in cooperation with partners</td>
     <td>European companies for whom evan.network is of strategic importance and who want to influence its orientation via the DAO </td>
@@ -65,7 +65,7 @@ The evan.network addresses different target audiences and offers them advantages
 </tr>
 <tr><th>Usage</th>
     <td>As a runtime environment for fast development and trustful operation of own applications.</td>
-    <td>Operation of a MasterNode to strengthen the network and co-determination as part of the DAO.</td>
+    <td>Operation of a AuthorityNode to strengthen the network and co-determination as part of the DAO.</td>
     <td>As an immediately usable framework for the fast implementation of enterprise applications on a blockchain basis</td>
 </tr>
 <tr><th>Advantages</th>
@@ -100,8 +100,8 @@ Across all target groups there are significant advantages of the evan.network:
 
 - **Openness.** evan.network can be used for collaboration by any user, since it is publicly available and usable.
 - **Performance.** Fast block times of approx. 4 seconds and more than one hundred transactions per second can be implemented within the network.
-- **Full independence.** MasterNode operators come from different industries and have no influence on the cooperation of users within the Business Centers. The sovereignty over data and applications always lies with the users or the data owners. The MasterNode provider is an infrastructure node that guarantees the decentralization, independence and scaling of the network through its operation.
-- **High security and trust.** The network is operated decentrally, whereby it is known who is allowed to sign blocks in the network. In case of violations MasterNode operators can be excluded.
-- **Energy-efficient operation.** No energy-wasting mining is used (only the known MasterNode operators sign blocks by Proof of Authority, no Proof of Work).
-- **Transparency.** Changes to the blockchain, e.g. hardforks, can only be made by coordination between the MasterNode operators, so that the trust is not tied to a single organization. 
+- **Full independence.** AuthorityNode operators come from different industries and have no influence on the cooperation of users within the Business Centers. The sovereignty over data and applications always lies with the users or the data owners. The AuthorityNode provider is an infrastructure node that guarantees the decentralization, independence and scaling of the network through its operation.
+- **High security and trust.** The network is operated decentrally, whereby it is known who is allowed to sign blocks in the network. In case of violations AuthorityNode operators can be excluded.
+- **Energy-efficient operation.** No energy-wasting mining is used (only the known AuthorityNode operators sign blocks by Proof of Authority, no Proof of Work).
+- **Transparency.** Changes to the blockchain, e.g. hardforks, can only be made by coordination between the AuthorityNode operators, so that the trust is not tied to a single organization. 
 - **Extensibility.** Ethereum-based Smart Contracts can be created and used by users

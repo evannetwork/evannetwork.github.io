@@ -13,7 +13,7 @@ Beginning with the [enterprise-grade blockchain](/doc/enterprisechain) approach,
 
 Subsequently, it is only possible to see that a transaction happened, but no details as to what took place.  
 
-[Authority Nodes](/doc/masternode) on the network are verified and known organizations.
+[Authority Nodes](/doc/authoritynode) on the network are verified and known organizations.
 
 Your data is therefore never processed by anonymous parties but handled by trusted network actors. 
 By means of our privacy mechanisms, we can render data stored on the distributed filesystem as well as smart contracts inaccessible, satisfying the ‘right to erasure’ directive.

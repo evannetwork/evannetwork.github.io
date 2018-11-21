@@ -27,7 +27,7 @@ To help you familiarize yourself with the architectural design of evan.network, 
     <path id="triangle" style="stroke: f7aacf; fill: #f7aacf;" d="M 0 0 h 200 l -100 10 l -100 -10"  />
     <g id="master-node">
       <rect class="bw dotted" x="0" width="68" height="22" />
-      <text class="small thin" x="7" y="14">MasterNode</text>
+      <text class="small thin" x="7" y="14">AuthorityNode</text>
     </g>
   </defs>
   <style type="text/css">
@@ -292,9 +292,9 @@ To help you familiarize yourself with the architectural design of evan.network, 
       <use x="380" y="222" xlink:href="#master-node" />
       
       <rect class="bw dotted" x="30" width="395" height="130" transform="translate(15, 40)"/>
-      <title>MasterNodes provided by DAO members</title>
-      <a xlink:href="/doc/masternode">
-        <text x="210" y="60">Master Node</text>
+      <title>AuthorityNodes provided by DAO members</title>
+      <a xlink:href="/doc/authoritynode">
+        <text x="210" y="60">AuthorityNode</text>
       </a>
 
       <a xlink:href="/dev/blockchain" transform="translate(60,70)">

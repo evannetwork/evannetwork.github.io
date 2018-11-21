@@ -3,7 +3,7 @@ title: "AuthorityNodes"
 ---
 # Proof-of-Authority Consensus & AuthorityNodes
 
-Consensus on the evan.network is established by a [Proof-of-Authority(PoA) algorithm](https://wiki.parity.io/Aura.html), under the custody of AuthorityNodes(also referred to as MasterNodes). 
+Consensus on the evan.network is established by a [Proof-of-Authority(PoA) algorithm](https://wiki.parity.io/Aura.html), under the custody of AuthorityNodes(also referred to as AuthorityNodes). 
 
 Utlizing PoA comes with certain benefits. It allows for network-wide GDPR compliance, as data is handled by known Data Processors. In comparison to e.g. Bitcoin's Proof-of-Work algorithm, PoA is very easy on energy consumption as well.
 

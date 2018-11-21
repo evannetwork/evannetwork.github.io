@@ -3,7 +3,7 @@
 Evan.network is an open ecosystem designed to facilitate popular adoption of the decentralized economy. Equipped with enterprise-ready components and decentralized governance the platform empowers new business models by innovation through collaboration.
 
 In realization of this vision, Evan.network comes with features catered to meet every blockchain business need. 
-With effectiveness and data sovereignty in mind, the platform consists of AuthorityNodes, also referred to as Masternodes, hosted by trusted European enterprises and businesses. 
+With effectiveness and data sovereignty in mind, the platform consists of AuthorityNodes, also referred to as AuthorityNodes, hosted by trusted European enterprises and businesses. 
 
 High transaction throughput coupled with stable transaction fees model the network into a cost-effective and decisively more secure alternative to conventional solutions. 
 
@@ -20,7 +20,7 @@ Integrating the network's capabilities into your productive environment allows y
 Evan adheres to the concept of a Decentralized Autonomous Organization, or DAO. Unique to the DAO is the characteristic of no central point of authority in any shape or form. Naturally, this includes Evan as a company as well.
 Thus transparent and democratic network governance lies at the heart of Evan.network. 
 
-We follow a philosophy of open source and have made our codebase publicly available. The neutrality aspect of the system is safeguarded by an openly available authority consensus our masternodes use to defend against potential hostile network takeovers.
+We follow a philosophy of open source and have made our codebase publicly available. The neutrality aspect of the system is safeguarded by an openly available authority consensus our AuthorityNodes use to defend against potential hostile network takeovers.
 
 <p><a style="float: right" alt="Gitter" title="Gitter" href="https://gitter.im/evannetwork/Lobby"><img src="/public/chat.svg"/></a></p>
 

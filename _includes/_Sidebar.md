@@ -23,7 +23,7 @@
 - [Scalability](/doc/scalability)
 - [Account Management](/doc/accmanagement)
 - [DAO Governance](/doc/dao)
-- [AuthorityNode](/doc/masternode)
+- [AuthorityNode](/doc/authoritynode)
 - [Visual Overview](/doc/visual)
 
 ### [Quick-start guide](/tutorial/quick-start)

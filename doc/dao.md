@@ -9,15 +9,15 @@ Therefore, it is important to establish an organizational structure through whic
 Such decisions include, for example, the implementation of a hardfork, the inclusion of new Master/AuthorityNodes, the use of new technologies or new updates to existing components, or decisions to invest in the expansion of the network. 
 
 ## The Implementation of the DAO
-At the start of the evan.network productive network, it is planned to bind the [MasterNodes](/doc/masternode) to the network via a MastnerNode Operations Aggreement (MNOA). 
+At the start of the evan.network productive network, it is planned to bind the [AuthorityNodes](/doc/authoritynode) to the network via a MastnerNode Operations Aggreement (MNOA). 
 
-The MNOA defines the Service Level Agreements (SLA) that a MasterNode must comply with in order to count as an active MasterNode and thereby to be allowed to exercise its voting rights in the DAO. 
+The MNOA defines the Service Level Agreements (SLA) that a AuthorityNode must comply with in order to count as an active AuthorityNode and thereby to be allowed to exercise its voting rights in the DAO. 
 
-Any organization that provides services according to the MNOA definitions can become a MasterNode and thus DAO member. The goal is that only companies and universities or institutes become DAO members, i.e. not natural persons. 
+Any organization that provides services according to the MNOA definitions can become a AuthorityNode and thus DAO member. The goal is that only companies and universities or institutes become DAO members, i.e. not natural persons. 
 
 In the medium term it is planned to transfer the DAO into an own organization (e.g. cooperative or association), so that commercial decisions can also be made from the DAO (e.g. the investments in new services provided on evan.network). 
 
-In the first phase, the DAO is a loose link to all MasterNodes that can make changes to the network via [Smart Contracts](/dev/smart-contracts).
+In the first phase, the DAO is a loose link to all AuthorityNodes that can make changes to the network via [Smart Contracts](/dev/smart-contracts).
 
 ## Advantages
 With the DAO, evan.network has two big benefits:

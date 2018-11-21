@@ -1,7 +1,7 @@
 ## Scalability
 A big challenge to blockchain technology is the number of possible parallel transactions. 
 
-There is still no final solution for realistically achieving almost infinite scalability within a blockchain. To counter this fact the evan.network is structured in such a way that the organization and technology of the MasterNodes make it possible to launch specialized or use case specific SideChains at any time.
+There is still no final solution for realistically achieving almost infinite scalability within a blockchain. To counter this fact the evan.network is structured in such a way that the organization and technology of the AuthorityNodes make it possible to launch specialized or use case specific SideChains at any time.
 
 These are also subject to DAO governance but, depending on your setup, configuration and rules, allow you to perform specified use cases in much higher volumes.
 

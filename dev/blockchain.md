@@ -3,24 +3,24 @@ title: "Blockchain"
 ---
 # Blockchain
 
-evan.network is a [Proof of Authority (PoA)](https://en.wikipedia.org/wiki/Proof-of-authority)<sup>[+]</sup> publicly accessible blockchain for Ethereum. The evan.network blockchain runs on [Parity](https://parity.io/)<sup>[+]</sup> nodes that use the [Aura](https://wiki.parity.io/Aura.html) consensus to build a trustful, stable and fast network of authorities. The authorities are hosted and operated by evan.network [MasterNodes](/doc/masternode). The blockchain is set up and operated with the goal to be 100% Ethereum compliant. So the network can participate from the improvements and new features that are in development in the Ethereum community e.g [Plasma](https://plasma.io/)<sup>[+]</sup>, Casper, [ParityBridge](https://github.com/paritytech/parity-bridge)<sup>[+]</sup>, to name only a few. In the future we also have plans to launch use case specific optimized subchains that are connected with a bridge to the **core** chain, to meet special application needs. These subchains are operated with the same DAO governance and token structure.
+evan.network is a [Proof of Authority (PoA)](https://en.wikipedia.org/wiki/Proof-of-authority)<sup>[+]</sup> publicly accessible blockchain for Ethereum. The evan.network blockchain runs on [Parity](https://parity.io/)<sup>[+]</sup> nodes that use the [Aura](https://wiki.parity.io/Aura.html) consensus to build a trustful, stable and fast network of authorities. The authorities are hosted and operated by evan.network [AuthorityNodes](/doc/authoritynode). The blockchain is set up and operated with the goal to be 100% Ethereum compliant. So the network can participate from the improvements and new features that are in development in the Ethereum community e.g [Plasma](https://plasma.io/)<sup>[+]</sup>, Casper, [ParityBridge](https://github.com/paritytech/parity-bridge)<sup>[+]</sup>, to name only a few. In the future we also have plans to launch use case specific optimized subchains that are connected with a bridge to the **core** chain, to meet special application needs. These subchains are operated with the same DAO governance and token structure.
 
-The evan.network usage is publicy available. That means every user can send transactions to the evan.network, but only MasterNodes are authorized to sign new blocks. To send transactions the user or application needs [EVE](/doc/eve) tokens to pay the transaction fees.
+The evan.network usage is publicy available. That means every user can send transactions to the evan.network, but only AuthorityNodes are authorized to sign new blocks. To send transactions the user or application needs [EVE](/doc/eve) tokens to pay the transaction fees.
 
 The **benefits** of evan.network toward the Ethereum public chains are:
 * no competitive mining >> so no energy wasting
 * optimized for enterprise business >> high transactions throughput and 3sec block time 
-* new blocks can only be signed by known [MasterNodes](/doc/masternode) >> [51%](https://learncryptography.com/cryptocurrency/51-attack) attacks are not possible
+* new blocks can only be signed by known [AuthorityNodes](/doc/authoritynode) >> [51%](https://learncryptography.com/cryptocurrency/51-attack) attacks are not possible
 
-User and developers can access the evan.network blockchain via our RPC endpoints or can sync the chain with an own Parity. An own Parity node is the best option for developers to connect on-premise applications like DB, ERP, CRMor PPS systems with evan.network. The RPC endpoint is the best option for ÐAPPs and interactive applications. The RPC endpoint is also available decentralized through all MasterNode providers.
+User and developers can access the evan.network blockchain via our RPC endpoints or can sync the chain with an own Parity. An own Parity node is the best option for developers to connect on-premise applications like DB, ERP, CRMor PPS systems with evan.network. The RPC endpoint is the best option for ÐAPPs and interactive applications. The RPC endpoint is also available decentralized through all AuthorityNode providers.
 
 Like in the public Ethrereum chain, all read applications against the chain are free. If you will submit transactions to the chain you need [EVE Tokens](/doc/eve) to pay the gas costs. The amount of the needed gas is dependent on the complexity of the transactions that are submitted and can be calculated in front with the API.
 
-Different from other blockchains the paid gas costs are not transfered to the MasterNode that signed the block with the transaction. All [EVE tokens](/doc/eve) that are paid from users and applications for gas are gathered in a [DAO](/doc/dao) owned Smart Contract. [EVE tokens](/doc/eve) that are transfered to contracts or accounts are not affected, **ONLY** the transaction fees.
+Different from other blockchains the paid gas costs are not transfered to the AuthorityNode that signed the block with the transaction. All [EVE tokens](/doc/eve) that are paid from users and applications for gas are gathered in a [DAO](/doc/dao) owned Smart Contract. [EVE tokens](/doc/eve) that are transfered to contracts or accounts are not affected, **ONLY** the transaction fees.
 
 ## core - Production Chain
 
-The production chain is named [core](/doc/resources) and is the main blockchain from evan.network an provided by the [MasterNodes](/doc/masternode).
+The production chain is named [core](/doc/resources) and is the main blockchain from evan.network an provided by the [AuthorityNodes](/doc/authoritynode).
 
 ### RPC Endpoint
 You can access the endpoint via HTTPS and WebSocket e.g via [Web3](/dev/web3).
