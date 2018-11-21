@@ -9,7 +9,7 @@ Core API, Core Services and the Core Network.
 
 **Core Services** contains user management services, [factories](https://evannetwork.github.io/dev/smart-contracts#contract-factories) for the creation of i.a. digital twins, templates and infrastructure components on the network. 
 
-**Core Network** hosts the built-in [distributed storage service](https://evannetwork.github.io/dev/ipfs), the underlying Blockchain layer and Master(Authority)Nodes.
+**Core Network** hosts the built-in [distributed storage service](https://evannetwork.github.io/dev/ipfs), the underlying Blockchain layer and AuthorityNodes.
 
 Component details
 ---
