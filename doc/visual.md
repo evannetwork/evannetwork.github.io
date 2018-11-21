@@ -26,7 +26,7 @@ To help you familiarize yourself with the architectural design of evan.network, 
           d="M 0 0 l 20 5 h -5 v 10 h 5 l -20 5 l -20 -5 h 5 v -10 h -5 l 20 -5"  />
     <path id="triangle" style="stroke: f7aacf; fill: #f7aacf;" d="M 0 0 h 200 l -100 10 l -100 -10"  />
     <g id="master-node">
-      <rect class="bw dotted" x="0" width="100" height="22" />
+      <rect class="bw dotted" x="0" width="80" height="22" />
       <text class="small thin" x="7" y="14">AuthorityNode</text>
     </g>
   </defs>
