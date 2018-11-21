@@ -19,4 +19,5 @@ more details.
 | [queue.evan](https://dashboard.evan.network/#/dashboard.evan/queue.evan)              | [Github](https://github.com/evannetwork/ui-core-dapps/tree/master/dapps/queue)           | 1.0.2   | [queue DApp](/dapps/dapps/queue/queue)                                |
 | [task.evan](https://dashboard.evan.network/#/dashboard.evan/taskboard.evan/task.evan) | [Github](https://github.com/evannetwork/ui-core-dapps/tree/master/dapps/task)            | 1.0.2   | [task DApp](/tutorial/taskboard)                                      |
 | [taskboard.evan](https://dashboard.evan.network/#/dashboard.evan/taskboard.evan)      | [Github](https://github.com/evannetwork/ui-core-dapps/tree/master/dapps/taskboard)       | 1.0.2   | [taskboard quick-start](/tutorial/taskboard)                          |
-| [demomanagement.evan](https://dashboard.evan.network/#/demomanagement.evan)           | [Github](https://github.com/evannetwork/ui-core-dapps/tree/master/dapps/demo-management) | 1.0.0   | [demo-management](/dapps/dapps/demo-management/demo-management) |
+| [demomanagement.evan](https://dashboard.evan.network/#/demomanagement.evan)           | [Github](https://github.com/evannetwork/ui-core-dapps/tree/master/dapps/demo-management) | 1.0.0   | [taskboard quick-start](/dapps/dapps/demo-management/demo-management) |
+
