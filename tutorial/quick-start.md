@@ -68,7 +68,7 @@ You can add anyone in evan.network to [your contacts](/tutorial/contacts). And y
 with an e-mail address into evan.network to become your contact. They all have or will get a profile
 Smart Contract, just like you.
 
-## [Are my concats good business partners?](/tutorial/contacts)
+## [Are my concats good business partners?](/tutorial/claims)
 
 Using the [claim and identity management](/tutorial/claims), you can check, if an contact have special claims (or "certificates") that are provided by trusted business partners.
 
