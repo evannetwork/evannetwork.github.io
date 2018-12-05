@@ -22,7 +22,7 @@ Thus transparent and democratic network governance lies at the heart of Evan.net
 
 We follow a philosophy of open source and have made our codebase publicly available. The neutrality aspect of the system is safeguarded by an openly available authority consensus our AuthorityNodes use to defend against potential hostile network takeovers.
 
-<p><a style="float: right" alt="Gitter" title="Gitter" href="https://gitter.im/evannetwork/Lobby"><img src="/public/chat.svg"/></a></p>
+<p style="height:25px"><a alt="Gitter" title="Gitter" href="https://gitter.im/evannetwork/Lobby"><img src="/public/chat.svg"/></a></p>
 <p>Browser testing supported by<br><a href="https://www.browserstack.com"><img src="https://camo.githubusercontent.com/8a50997157aa6fe37f4d3526e8c40a4805522902/687474703a2f2f666f756e646174696f6e2e7a7572622e636f6d2f73697465732f646f63732f6173736574732f696d672f6c6f676f732f62726f777365722d737461636b2e737667" width="200" /></a></p>
       
       
