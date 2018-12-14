@@ -31,7 +31,7 @@
 - [Dashboard](/tutorial/dashboard)
 - [Taskboard](/tutorial/taskboard)
 - [Contacts](/tutorial/contacts)
-- [Claims Management](/tutorial/claims)
+- [Verification Management](/tutorial/verification)
 - [Mailbox](/tutorial/mailbox)
 
 ### [Technical Details](/dev/blockchain)
