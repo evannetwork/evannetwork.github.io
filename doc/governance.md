@@ -13,7 +13,7 @@ At the start of the evan.network productive network, it is planned to bind the [
 
 The ANOA defines the Service Level Agreements (SLA) that a AuthorityNode must comply with in order to count as an active AuthorityNode and thereby to be allowed to exercise its voting rights in the evan governance.
 
-Any organization that provides services according to the MNOA definitions can become a AuthorityNode and thus governance member. The goal is that only companies and universities or institutes become governance members, i.e. not natural persons.
+Any organization that provides services according to the ANOA definitions can become a Authority Node and thus governance member. The goal is that only companies and universities or institutes become governance members, i.e. not natural persons.
 
 In the medium term it is planned to transfer the governance into an own organization (e.g. cooperative or association), so that commercial decisions can also be made from the governance (e.g. the investments in new services provided on evan.network).
 
