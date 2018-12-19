@@ -17,7 +17,7 @@ Any organization that provides services according to the MNOA definitions can be
 
 In the medium term it is planned to transfer the governance into an own organization (e.g. cooperative or association), so that commercial decisions can also be made from the governance (e.g. the investments in new services provided on evan.network).
 
-In the first phase, the governance is a loose link to all AuthorityNodes that can make changes to the network via [Smart Contracts](/dev/smart-contracts).
+In the first phase, the governance is a loose link to all Authority Nodes that can propose changes and enhancements to the network via the Governance Smart Contracts.
 
 ## Advantages
 With the evan Governance, evan.network has two big benefits:
