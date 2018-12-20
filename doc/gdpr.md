@@ -1,9 +1,9 @@
 ---
 Title: "GDPR Compliance"
 ---
-# Evan.network GDPR compliance
+# evan.network GDPR compliance
 
-Evan.network successfully provides an answer to the controversial question of how a blockchain solution can remain in compliance with GDPR regulations.
+evan.network successfully provides an answer to the controversial question of how a blockchain solution can remain in compliance with GDPR regulations.
 
 Per blockchains nature, nothing is ever forgotten as transactions are stored indefinitely. 
 
