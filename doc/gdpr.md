@@ -11,6 +11,8 @@ Personal data is encrypted with a key only known to the author of this piece of 
 
 All accounts have a profile in which they store keys they use for communicating and sharing keys for encrypted data with other accounts. This profile itself is encrypted with a key the user holds off-chain and only known to the user. Keys for data in smart contracts are stored at the smart contract and encrypted per party the keys are shared with.
 
+[![profile keys and encryption](/public/profile_keys.png){:class="center"}](/public/profile_keys.png)
+
 This leads to some advantages security wise:
 - only references to encrypted data is stored in the blockchain and not the encrypted data itself
 - additionally, theses references are encrypted as well to prevent hoarding of encrypted data if hoping for later mass decryption
