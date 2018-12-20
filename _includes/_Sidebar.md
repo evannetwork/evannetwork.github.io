@@ -14,7 +14,7 @@
 - [Smart Contract Templates](/dev/deployment)
 - [Stable Transaction Fees](/doc/eve)
 - [Enterprise Blockchain](/doc/enterprisechain)
-- [GDPR Compliance](/doc/gdpr)
+- [Data Security and Privacy](/doc/gdpr)
 
 ### [Infrastructure](/doc/architecture)
 - [Digital Twins](/dev/digital-twin)
