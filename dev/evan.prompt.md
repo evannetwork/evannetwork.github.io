@@ -74,7 +74,9 @@ $ ./evan --help
     -r, --require [name=]<file>                   load module from file into table M
     -e, --eval <script>                           evaluate script, can use await
     -a, --account <int>                           select account to use by index (default: 0)
+    -A, --account-id <mnemonics>                   build accountId from list mnemonics
     -i, --interactive                             start interactive console, cannot use await, default
+    --decodeInput <input>                         decode raw input for a function from a known contract
     -h, --help                                    output usage information
 ```
 
