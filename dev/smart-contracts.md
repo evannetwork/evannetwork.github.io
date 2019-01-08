@@ -31,7 +31,7 @@ This contract definition is like a class or prototype and can be instantiated as
 ## Getting started with creating Smart Contracts
 You can find good examples on how to get started with Smart Contracts and Solidity on the [Ethereum](https://ethereum.org/)<sup>[+]</sup> homepage.
 
-The recommendation in these samples is to use the Ethereum wallet for deploying the sample contracts, but if you want to start right away without synchronizing to the blockchain, you can use [Remix](https://remix.ethereum.org/)<sup>[+]</sup>. There, you can run your code in the JavaScript VM or, in case you want to try interacting with contracts from the evan.network, install [MetaMask](https://metamask.io/)<sup>[+]</sup> and connect it to evan.network as described in [Web3](/dev/web3#with-metamask). Alternatively, use the [](/dev/evan.prompt) to compile and upload your contracts to evan.network.
+The recommendation in these samples is to use the Ethereum wallet for deploying the sample contracts, but if you want to start right away without synchronizing to the blockchain, you can use [Remix](https://remix.ethereum.org/)<sup>[+]</sup>. There, you can run your code in the JavaScript VM or, in case you want to try interacting with contracts from the evan.network, install [MetaMask](https://metamask.io/)<sup>[+]</sup> and connect it to evan.network as described in [Web3](/dev/web3#with-metamask). Alternatively, use the [evan.prompt](/dev/evan.prompt) to compile and upload your contracts to evan.network.
 
 # Smart Contracts in evan.network
 
@@ -63,6 +63,7 @@ The DataContract allows to:
 - set or update properties
 - add or remove list entries
 - move entries between lists
+- set entries in inner mappings (which work similar to dictionaries/maps)
 - update the contract state (set it to draft, active, etc.) that follows a preconfigured workflow
 - update consumer states (set it to draft, active, etc.) that follows a preconfigured workflow
 
@@ -110,8 +111,8 @@ Some contracts, like the [DataContract](/dev/data-contract) require a few more s
 
 These contracts are created by using contract Factories, which offers a few enhancements to the process:
 - the overall process is faster - instead of n single transactions only one transaction is performed
-- creating contracts becomes cheaper -  overhead is reduced when performed in a single transaction
-- it can become safer - if one of the setup steps that follow the contract creation fails, the entire creation process is rolled back and ,if executed via the evan API, this transaction will not be started (gas is estimated before each transaction and a failing transaction would be detected and prevented)
+- creating contracts becomes cheaper - overhead is reduced when performed in a single transaction
+- it can become safer - if one of the setup steps that follow the contract creation fails, the entire creation process is rolled back and, if executed via the evan API, this transaction will not be started (gas is estimated before each transaction and a failing transaction would be detected and prevented)
 - Factories are deployed to [ENS](/dev/ens) addresses and can be updated without delivering code to each client application
 
 

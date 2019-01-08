@@ -10,6 +10,22 @@ A Digital Twin therefore is a unique representation of a real world object in th
 It can hold attributes and any other data about the real world object, and implement operations and tasks concerning
 the real world object, all cryptographically secured on the blockchain.
 
+Digital twins are implemented as DataContracts (see DataContract in [Smart Contracts](/dev/smart-contracts#smart-contract-types)) and share their features like different field types and field security.
+
+The field security allows to use different sharing scopes and keys for its field:
+
+[![DataContract](/public/dev/data_contract.png){:max-width="50%"}](/public/dev/data_contract.png)
+
+Allowed field types are
+
+- entries
+- lists 
+- mappings (similar to dictionaries/maps)
+
+So a Digital Twin may have a data layout like:
+
+[![DataContract](/public/dev/digital-twin-example.png){:max-width="50%"}](/public/dev/digital-twin-example.png)
+
 The twins can be used in your business logic as you please, allowing for the construction of even the most complex constellations between machines, individuals and organizations alike. 
 
 In this how-to we want to show you, on which way you can create a new Digital Twin contract on the evan.network. First, you will see how the Digital Twin contract is created via our blockchain API. Afterwards, you will see how you can interact with it, like adding specific data and lists of data to it and read the data out of the twin.
@@ -20,7 +36,7 @@ You can get the full code of the example [here](https://gist.github.com/S3bb1/70
 ## 1. Setup
 At first you must have a configured Runtime in your Javascript code available to create a new Digital Twin.
 
-To create a runtime, you must fulfil the following steps:
+To create a runtime, you must fulfill the following steps:
 ```js
 // require blockchain-core dependencies
 const IpfsApi = require('ipfs-api');
@@ -56,7 +72,7 @@ Please set your `ACCOUNTID` and your `PRIVATEKEY` from your evan.network profile
 Now you have a configured Runtime and all the following code examples are based on the Runtime variable in the code above.
 
 
-## 1. Creating a new Digital Twin
+## 2. Creating a new Digital Twin
 
 Digital Twins are created via Factories deployed on the evan.network. Factories are useful to generate pre-configured contracts like Digital Twins. They create pre-configured rights and roles on the twin and they set also the rights for specific roles to add or remove parameters on the twin.
 
@@ -82,7 +98,7 @@ console.log(digitalTwin.options.address) // print the newly created address of t
 
 Simply change the second parameter of the `create` function to your configured account ID in step one. Now you have an empty Digital Twin with your account ID as 'owner' of this Digital Twin.
 
-## 2. Set and Get your Digital Twin DBCP description
+## 3. Set and Get your Digital Twin DBCP description
 
 As mentioned, every Digital Twin has a [DBCP](https://github.com/evannetwork/dbcp) description that describes its API, general information, related resources and a lot more. To know what you can do with a contract, in our case a Digital Twin, you usually need to load this description and take a look at it.
 
@@ -116,10 +132,10 @@ await runtime.description.setDescriptionToContract(reloadedDigitalTwin.options.a
 ```
 
 Set the account ID-property to your current configured account ID.
-This is the a basic desciption, it just fills the required fields and additionally sets its own ABI.
+This is the a basic description, it just fills the required fields and additionally sets its own ABI.
 
 
-## 3. Loading a Digital Twin
+## 4. Loading a Digital Twin
 
 
 Once you have set the description, it becomes possible to load contracts into a variable with the easier description API:
@@ -135,8 +151,8 @@ console.log(reloadedDigitalTwin.options.address == digitalTwin.options.address)
 ```
 
 
-## 4. Create your first property within your Digital Twin
-As mentioned in part one, your created twin has no settable properties at the moment. This is because of the rights-and-roles architecture. You can enable properties on the Digital Twin by setting the new property as 'writeable' by specific roles to the contract. 
+## 5. Create your first property within your Digital Twin
+As mentioned in part one, your created twin has no settable properties at the moment. This is because of the rights-and-roles architecture. You can enable properties on the Digital Twin by setting the new property as 'writable' by specific roles to the contract. 
 
 Now we're using the `rightsAndRoles` module from our runtime to allow the 'owner' role to set a new property called `testEntry` in the Digital Twin:
 
@@ -159,7 +175,7 @@ await rightsAndRoles.setOperationPermission(
 With this function, we grant the owner role to set the entry called `testEntry`. By default read operations are always possible.
 
 
-## 5. Set and Get the Property back from your Digital Twin
+## 6. Set and Get the Property back from your Digital Twin
 After we granted the permissions for the owner role (where your account is already in) to set a property, we now can add simple JSON files or text to the Digital Twin property:
 
 ```js
@@ -189,7 +205,7 @@ console.dir(valueEntry);
 
 
 
-## 6. Create a list of values on your Digital Twin
+## 7. Create a list of values on your Digital Twin
 You are not only able to create key value pairs in your Digital Twin to manage data. You can also create lists of data and add and remove new entries. First of all, you must set the rights to add entries to a list in your rights and roles of the contract:
 
  ```js
@@ -267,9 +283,9 @@ await runtime.dataContract.inviteToContract(
 
 In the first parameter, we're using null when working without Business Centers. When working in a Business Center scope, you must use the ENS domain name of the Business Center the contract was created in.
 
-With this code line you add the `targetAccount` to your Digital Twin contract. This is required when the account should also be able to add new entries or to set entries in the future. At the moment, it can read all the data of the Digital Twin, but it can't decrpyt the data because it has no key to decrypt it.
+With this code line you add the `targetAccount` to your Digital Twin contract. This is required when the account should also be able to add new entries or to set entries in the future. At the moment, it can read all the data of the Digital Twin, but it can't decrypt the data because it has no key to decrypt it.
 
-When you want to share the key to decrpyt the data, you have to extend the Sharing of the Digital Twin contract.
+When you want to share the key to decrypt the data, you have to extend the Sharing of the Digital Twin contract.
 
 ```js
 const accountId = '0xb00fbeef5a926fa150baeaf04bfd673b056ba83d';
