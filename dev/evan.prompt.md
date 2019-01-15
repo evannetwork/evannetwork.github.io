@@ -14,9 +14,7 @@ Don't let the name fool you, this is not just for working with blockchain contra
 Installing the `evan.prompt` is as simple as 
 
 ```sh
-$ npm i evan.prompt
-$ cd evan.prompt
-$ chmod a+x evan
+$ npm i -g evan.prompt
 ```
 
 # Configuration
