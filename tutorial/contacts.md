@@ -20,7 +20,7 @@ When you add new contacts, you can choose whether you want to add the contact vi
 
 If adding accounts via account ID, a key exchange with this person will be triggered and the invitee will receive a Bmail with your contact request.
 
-If adding accounts via Email, you are required to provide a small amount of onboarding EVEs for the invitee. The invitee will receive an Email with your onboarding invitation and a link to create or import a profile and then claim the provided onboarding EVEs.
+If adding accounts via Email, you are required to provide a small amount of onboarding EVEs for the invitee. The invitee will receive an Email with your onboarding invitation and a link to create or import a profile and then verification the provided onboarding EVEs.
 
 Inviting users via Email requires you to have added the onboarding [Smart Agent](/dev/smart-agents) to your contacts. If you haven't already added the agent to your contacts, a request for this is displayed when clicking on the "Using an Email" button.
 
