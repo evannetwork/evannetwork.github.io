@@ -26,6 +26,7 @@
 - [AuthorityNode](/doc/authoritynode)
 - [Visual Overview](/doc/visual)
 
+
 ### [Quick-start guide](/tutorial/quick-start)
 - [Create Identity](/tutorial/create-identity)
 - [Dashboard](/tutorial/dashboard)
@@ -36,6 +37,7 @@
 
 ### [Technical Details](/dev/blockchain)
 - [evan.network Blockchain](/dev/blockchain)
+  - [Changelog](/doc/changelog_chain)
 - [distributed file storage](/dev/ipfs)
 - [DBCP](/dev/dbcp)
 - [Smart Contract Architecture](/dev/overview)
