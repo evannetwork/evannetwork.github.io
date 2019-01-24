@@ -15,7 +15,7 @@ With that in mind the Smart Contract Permissioning (SCEP) is built around certai
 
 In terms of usability, this mechanism is furthermore designed to make interaction with smart contracts not only secure, but also as swift as possible.
 
-Usually, parties wishing to engage each other on the evan.network have to exchange their keys first, which is a manual process. 
+Usually, parties wishing to engage each other on the evan.network have to exchange their keys first, which is a manual process. This is done via Diffie-Hellman and the purpose of these exchanged keys is the communication between both parties. The keys exchanged this way are then used for communication between them and for sharing additional encryption keys for smart contracts.
 
 By delegating permissions no human interaction is required, as users don't have to manually exchange keys with the owner of the respective smart contract to receive access. 
 
