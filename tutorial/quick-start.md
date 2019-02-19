@@ -18,7 +18,7 @@ through the different points you are qualified
 - to use the Taskboard example DApp
 
 The first thing you need is, of course, a user account. So let's start on
-[https://dashboard.evan.network](https://dashboard.evan.network).
+[https://dashboard.test.evan.network](https://dashboard.test.evan.network).
 
 ## [Create an Identity](/tutorial/create-identity)
 

@@ -35,13 +35,13 @@ This sample shows how to load the DBCP using IPFS.
 
 ```html
 <!-- Loading DBCP -->
-<script src="http://ipfs.evan.network/ipfs/QmPCNLE794BCwsriAg9gYjCha3EPZHDxefB5GNwugoUgfh"></script>
+<script src="http://ipfs.test.evan.network/ipfs/QmPCNLE794BCwsriAg9gYjCha3EPZHDxefB5GNwugoUgfh"></script>
 
 <!-- Loading Web3 -->
-<script src="http://ipfs.evan.network/ipfs/QmXVX173ygohnfg8rxzhynrNFHLTLKUqcBEKAFrEZGA9JN"></script>
+<script src="http://ipfs.test.evan.network/ipfs/QmXVX173ygohnfg8rxzhynrNFHLTLKUqcBEKAFrEZGA9JN"></script>
 
 <!-- Loading ipfs-api -->
-<script src="http://ipfs.evan.network/ipfs/QmczFSf23jB7RhT5ptnkycCf57hTGdfUE1Pa2qbZe4pmEN"></script>
+<script src="http://ipfs.test.evan.network/ipfs/QmczFSf23jB7RhT5ptnkycCf57hTGdfUE1Pa2qbZe4pmEN"></script>
 ```
 
 ### 2.3 index.js DBCP
@@ -55,7 +55,7 @@ async function createRuntime() {
       '0x001De828935e8c7e4cb56Fe610495cAe63fb2612':
         '01734663843202e2245e5796cb120510506343c67915eb4f9348ac0d8c2cf22a',
     },
-    ipfs: { host: 'ipfs.evan.network', port: '443', protocol: 'https' },
+    ipfs: { host: 'ipfs.test.evan.network', port: '443', protocol: 'https' },
     web3Provider: 'wss://testcore.evan.network/ws',
   };
 
@@ -182,7 +182,7 @@ const runtimeConfig = {
     '0x001De828935e8c7e4cb56Fe610495cAe63fb2612':
       '01734663843202e2245e5796cb120510506343c67915eb4f9348ac0d8c2cf22a',
   },
-  ipfs: { host: 'ipfs.evan.network', port: '443', protocol: 'https' },
+  ipfs: { host: 'ipfs.test.evan.network', port: '443', protocol: 'https' },
   web3Provider: 'wss://testcore.evan.network/ws',
 };
 
@@ -213,7 +213,7 @@ async function createRuntime() {
   web3.setProvider(new web3.providers.WebsocketProvider(runtimeConfig.web3Provider));
 
   // load SmartContracts from ipfs externally
-  const SmartContracts = await SystemJS.import('https://ipfs.evan.network/ipfs/QmdB15Kqy4Gwe1aSSS6grj5ftSaFbUktqVdB1G4wkBYP1G/compiled.js');
+  const SmartContracts = await SystemJS.import('https://ipfs.test.evan.network/ipfs/QmdB15Kqy4Gwe1aSSS6grj5ftSaFbUktqVdB1G4wkBYP1G/compiled.js');
   const keyProvider = new bcc.KeyProvider(runtimeConfig.accountMap);
   keyProvider.origin = keyProvider;
 
@@ -266,7 +266,7 @@ You will get a console output similar to the following. Behind the log parameter
 Have a look [ƉApp deployment](https://evannetwork.github.io/dev/deployment).
 
 ### 3.3 View it in the Real World
-After you deployed the application within a contract or by using an ENS address, the ƉApp is available from everywhere, **globally**. To test this, you can use the evan.network dashboard. Open the following URL [https://dashboard.evan.network/index.html](https://dashboard.evan.network/index.html) and navigate to the `favorites ƉApp` tab. Before you can access your favorites, it is necessary to create an evan.network identity. If you haven't created an identity before, have a look [here](/tutorial/first-steps).
+After you deployed the application within a contract or by using an ENS address, the ƉApp is available from everywhere, **globally**. To test this, you can use the evan.network dashboard. Open the following URL [https://dashboard.test.evan.network/index.html](https://dashboard.test.evan.network/index.html) and navigate to the `favorites ƉApp` tab. Before you can access your favorites, it is necessary to create an evan.network identity. If you haven't created an identity before, have a look [here](/tutorial/first-steps).
 
 Add the favorite using the following steps:
 1. Open Dashboard:
@@ -279,7 +279,7 @@ Add the favorite using the following steps:
 [![dapps-tutorial - directory](/public/dapps/favorites-3.png){:width="50%"}](/public/dapps/favorites-3.png)
 
 4. Result:
-<iframe width="100%" height="500px" src="https://ipfs.evan.network/ipfs/QmfZLwBPUT1n3DoJqpqnLCTcUKABLgUsgfE4KetkXdq8XK/index.html?contractid=0xcf38aA22Dd231b1E1e4661a1EcD5f6E1D2732A70">
+<iframe width="100%" height="500px" src="https://ipfs.test.evan.network/ipfs/QmfZLwBPUT1n3DoJqpqnLCTcUKABLgUsgfE4KetkXdq8XK/index.html?contractid=0xcf38aA22Dd231b1E1e4661a1EcD5f6E1D2732A70">
 </iframe>
 
 By having a look into the browser network tab you will see that your data is loaded from the IPFS server:

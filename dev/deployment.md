@@ -72,7 +72,7 @@ So, when you deploy anything, it will be available under the following ENS domai
 dappname.subdomain.evan
 ```
 
-Now, you can open the ens address to your application on https://dashboard.evan.network#/my-ens-address.evan. (my-ens-address = dbcp.name)
+Now, you can open the ens address to your application on https://dashboard.test.evan.network#/my-ens-address.evan. (my-ens-address = dbcp.name)
 ([3.3 View it in the Real World](/dapps/standalone/standalone))
 
 ## IPFS Deployment

@@ -166,7 +166,7 @@ You will get a console output similar to the following. Behind the log parameter
 Have a look [ƉApp deployment](https://evannetwork.github.io/dev/deployment).
 
 ### 3.3 View it in the Real World
-After you deployed the application within a contract or by using a ENS address, the ƉApp is available from everywhere, **globally**. To test this, you can use the evan.network dashboard. Open the following URL [https://dashboard.evan.network/index.html](https://dashboard.evan.network/index.html) and navigate to the `favorites ƉApp`. Before you can access your favorites, it is nessecary to create an evan.network identity. If you haven't created an identity before, have a look [here](/tutorial/first-steps).
+After you deployed the application within a contract or by using a ENS address, the ƉApp is available from everywhere, **globally**. To test this, you can use the evan.network dashboard. Open the following URL [https://dashboard.test.evan.network/index.html](https://dashboard.test.evan.network/index.html) and navigate to the `favorites ƉApp`. Before you can access your favorites, it is nessecary to create an evan.network identity. If you haven't created an identity before, have a look [here](/tutorial/first-steps).
 
 Add the favorite using the following steps:
 1. Open Dashboard:
