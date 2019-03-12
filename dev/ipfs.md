@@ -9,7 +9,7 @@ The evan.network IPFS service is not connected to the public IPFS network, so th
 
 The storage service keeps care that a content asset is replicated two times in the cluster and that stored data can't be deleted anymore, just as in the blockchain.
 
-You can reach the IPFS service at `https://ipfs.evan.network`. The service is shared between the **testcore** and **core** blockchain. There are several different APIs available to interact with IPFS, for JavaScript/NodeJS you can use [https://github.com/ipfs/js-ipfs-api](https://github.com/ipfs/js-ipfs-api)
+You can reach the IPFS service at `https://ipfs.test.evan.network`. The service is shared between the **testcore** and **core** blockchain. There are several different APIs available to interact with IPFS, for JavaScript/NodeJS you can use [https://github.com/ipfs/js-ipfs-api](https://github.com/ipfs/js-ipfs-api)
 
 If you store data to the evan.network IPFS storage, **you must** take care that you encrypt these data in a proper way, so that third parties can't read your data. To encrypt your data, you can use the evan.network [security APIs](/dev/security) or implement a custom way.
 

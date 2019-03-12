@@ -45,10 +45,10 @@ Tour Guide
 <dt><a href="/dev/getting-started">Start Coding</a></dt>
 <dd>Get your environment DApp ready</dd>
 
-<dt><a href="https://ipfs.evan.network/ipns/QmReXE5YkiXviaHNG1ASfY6fFhEoiDKuSkgY4hxgZD9Gm8/bcc/bcc-bundle.html">UI Docs</a></dt>
+<dt><a href="https://ipfs.test.evan.network/ipns/QmReXE5YkiXviaHNG1ASfY6fFhEoiDKuSkgY4hxgZD9Gm8/bcc/bcc-bundle.html">UI Docs</a></dt>
 <dd>Documentation for front-end components</dd>
 
-<dt><a href="https://ipfs.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6">API Docs</a></dt>
+<dt><a href="https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6">API Docs</a></dt>
 <dd>Documentation for API</dd>
 
 <dt><a href="/doc/faq">FAQ</a></dt>
