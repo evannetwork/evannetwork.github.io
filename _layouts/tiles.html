@@ -42,26 +42,39 @@
             <div class="dapp-wrapper-content">
                 <!---->
                 <!---->
-                <div>
+                <div style="overflow-y: auto;height: calc(100vh - 63px);">
                     <div class="d-flex">
-                      {% include sidebar.html %}
+                      {% if page.hide_menu %} {% else %} {% include sidebar.html %} {% endif %}
                     </div>
-                    <div style="overflow-y: auto;height: calc(100vh - 121px);">
-                        <!---->
-                        <!---->
-                      <div class="container position-relative" id="content">
-                          <div class="row h-100 py-3">
-                              <main class="col p-3 mr-3 bg-level-1 border">
-                                {{ content }} {% if page.hide_footer %} {% else %} {% include footer.html %} {% endif %}
-                              </main>
-                              <aside class="col-md-3 bg-level-1 border" id="left">
-                                  <div class="my-1 sticky-top" id="side">
-                                      {% include sidebar_level_2.html %}
-                                  </div>
-                              </aside>
-                          </div>
-                      </div>
+                    {% if page.hide_content %}
+
+                    {% else %}
+                    <div class="container position-relative" id="content">
+                        <div class="row h-100 py-3">
+                            <main class="col p-3 mr-3 bg-level-1 border">
+                               {{ content }}
+                            </main>
+                        </div>
                     </div>
+                    {% endif %}
+                    <div class="d-md-flex container flex-wrap justify-content-center">
+                        {% for tile in page.tiles %}
+
+                        <a class="
+                                                p-3 col-md-5 col-lg-4 col-xl-3
+                                                m-md-3 mb-3 p-4
+                                                text-center
+                                                bg-level-1 bg-text-light border evan-highlight" href="{{ tile.link }}">
+                        <i class="highlight fas fa-{{ tile.icon }} p-4 xxxl"></i>
+                            <h3 class="highlight">
+                                {{ tile.title }}
+                            </h3> <span class="text-muted highlight">
+                               {{ tile.description }}
+                            </span>
+                        </a>
+                        {% endfor %}
+                    </div>
+
                 </div>
             </div>
         </div>

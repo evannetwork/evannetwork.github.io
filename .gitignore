@@ -5,3 +5,4 @@ _site
 # Ruby-related stuff, to allow you run Jekyll locally
 .bundle
 vendor
+.DS_Store
