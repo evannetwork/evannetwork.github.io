@@ -1,10 +1,10 @@
 .theme-evan {
-    --evan-h1-font-size: 2.25em;
-    --evan-h2-font-size: 1.75em;
-    --evan-h3-font-size: 1.313em;
-    --evan-h4-font-size: 1.125em;
-    --evan-h5-font-size: 1em;
-    --evan-h6-font-size: 0.938em;
+    --evan-h1-font-size: 1.75em;
+    --evan-h2-font-size: 1.3em;
+    --evan-h3-font-size: 1.125em;
+    --evan-h4-font-size: 1em;
+    --evan-h5-font-size: 0.938em;
+    --evan-h6-font-size: 0.875em;
     --evan-text-font-size: 0.875em;
     --evan-dapp-wrapper-sidepanel-icon-color: var(--evan-text-color);
     --evan-dapp-wrapper-sidepanel-list-hover: var(--evan-gray-200);

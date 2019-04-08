@@ -46,13 +46,13 @@
                     <div class="d-flex">
                       {% include sidebar.html %}
                     </div>
-                    <div style="overflow-y: auto;height: calc(100vh - 121px);">
+                    <div class="mb-2" style="overflow-y: auto;height: calc(100vh - 129px);">
                         <!---->
                         <!---->
                       <div class="container position-relative" id="content">
                           <div class="row h-100 py-3">
                               <main class="col p-3 mr-3 bg-level-1 border">
-                                {{ content }} {% if page.hide_footer %} {% else %} {% include footer.html %} {% endif %}
+                                {{ content }}
                               </main>
                               <aside class="col-md-3 bg-level-1 border" id="left">
                                   <div class="my-1 sticky-top" id="side">
@@ -61,6 +61,7 @@
                               </aside>
                           </div>
                       </div>
+                      {% include footer.html %}
                     </div>
                 </div>
             </div>
