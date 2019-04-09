@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<svg id="evan.network" version="1.1" width="1280" height="1280" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <radialGradient id="service-fill" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color: #fff;stop-opacity: 1;"/>
+      <stop offset="100%" style="stop-color: #ccf;stop-opacity: 1;"/>
+    </radialGradient>
+    <radialGradient id="library-fill" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color: #fff;stop-opacity: 1;"/>
+      <stop offset="100%" style="stop-color: #ffc;stop-opacity: 1;"/>
+    </radialGradient>
+    <radialGradient id="module-fill" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color: #fff;stop-opacity: 1;"/>
+      <stop offset="100%" style="stop-color: #cfc;stop-opacity: 1;"/>
+    </radialGradient>
+    <radialGradient id="server-fill" cx="50%" cy="50%" r="50%" fx="50%" fy="50%">
+      <stop offset="0%" style="stop-color: #fff;stop-opacity: 1;"/>
+      <stop offset="100%" style="stop-color: #fdd;stop-opacity: 1;"/>
+    </radialGradient>
+    <marker id="start-data" style="stroke: #000; fill: #000;" viewBox="0 0 10 10" refX="10" refY="5" markerUnits="strokeWidth" markerWidth="4" markerHeight="3" orient="auto">
+      <path d="M 0 5 L 10 10 L 10 0 z"/>
+    </marker>
+    <marker id="end-data" style="stroke: #000; fill: #000;" viewBox="0 0 10 10" refX="0" refY="5" markerUnits="strokeWidth" markerWidth="4" markerHeight="3" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z"/>
+    </marker>
+    <marker id="start-lookup" style="stroke: #bbb; fill: #bbb;" viewBox="0 0 10 10" refX="10" refY="5" markerUnits="strokeWidth" markerWidth="4" markerHeight="3" orient="auto">
+      <path d="M 0 5 L 10 10 L 10 0 z"/>
+    </marker>
+    <marker id="end-lookup" style="stroke: #bbb; fill: #bbb;" viewBox="0 0 10 10" refX="0" refY="5" markerUnits="strokeWidth" markerWidth="4" markerHeight="3" orient="auto">
+      <path d="M 0 0 L 10 5 L 0 10 z"/>
+    </marker>
+  </defs>
+  <style type="text/css">
+    a#belt rect { fill: url(#slot-fill); stroke: #000; }
+    text        { font: 10pt "Verdana", sans-serif; }
+    text.big    { font-size: 12pt; font-weight: bold; }
+    text.small  { font-size: 9pt; }
+    text.bold   { font-weight: bold; }
+
+    
+    .grey       { stroke: #888; stroke-width: 1; fill: #888; fill-opacity: 0.5; opacity: 0.5; }
+    .black      { stroke: #000; stroke-width: 3; fill: #000; fill-opacity: 1; }
+    .bw         { stroke: #000; fill-opacity: 1; fill: #fff; }
+    .slot       { fill: url(#slot-fill); stroke: #000; }
+    .region     { stroke: #aaa; stroke-dasharray: 2 1; fill-opacity: 0; }
+
+    .dram       { fill: #bdd; stroke: none; }
+    .dotted     { stroke-dasharray: 1 1; }
+    .data-flow  { stroke: #000; stroke-width: 3; fill-opacity: 0; marker-end: url(#end-data); }
+    .bidirectional-data
+    {
+      stroke: #000; stroke-width: 3; fill-opacity: 0;
+      marker-start: url(#start-data); marker-end: url(#end-data);
+    }
+    .lookup     { stroke: #bbb; stroke-width: 3; fill-opacity: 0; marker-end: url(#end-lookup); }
+    .bidirectional-lookup
+    {
+      stroke: #bbb; stroke-width: 3; fill-opacity: 0;
+      marker-start: url(#start-lookup); marker-end: url(#end-lookup);
+    }
+    .library    { fill: url(#library-fill); stroke: #888; }
+    .module     { fill: url(#module-fill); stroke: #888; }
+    .server     { fill: url(#server-fill); stroke: #000; stroke-width: 2; }
+    .service    { fill: url(#service-fill); stroke: #000; stroke-width: 2; }
+
+  </style>
+
+  <text x="350" y="20" style="font-size: 20pt;">Evan Network Infrastructure</text>
+  <g transform="translate(0,80)">
+    <rect class="bw dotted" width="410" height="240" transform="translate(10,10)"/>
+    <rect class="bw dotted" width="410" height="240"/>
+    <rect class="bw dotted" width="410" height="240"/>
+    <a xlink:href="/doc/authoritynode">
+      <text class="grey" x="160" y="20">AuthorityNode</text>
+      <title>evan.network AuthorityNode</title>
+    </a>
+    <a xlink:href="/doc/parity" transform="translate(20,30)">
+      <rect class="server" width="160" height="80" rx="8"/>
+      <text class="big" x="48" y="38">
+        <tspan>Master</tspan>
+        <tspan x="48" dx="-0.75em" dy="1em">Ethereum</tspan>
+      </text>
+      <title>Redundant AuthorityNode Parity</title>
+    </a>
+    <a xlink:href="/doc/parity" transform="translate(220,130)">
+      <rect class="server" width="160" height="80" rx="8"/>
+      <text class="big" x="48" y="38">
+        <tspan>Master</tspan>
+        <tspan x="48" dx="-0.75em" dy="1em">Ethereum</tspan>
+      </text>
+      <title>Redundant AuthorityNode Parity</title>
+    </a>
+    <a xlink:href="/dev/ipfs" transform="translate(20,130)">
+      <rect class="server" width="160" height="80" rx="8"/>
+      <text class="big" x="64" y="45">IPFS</text>
+      <title>Redundant Interplanetary File System AuthorityNode</title>
+    </a>
+    <a xlink:href="/dev/ipfs" transform="translate(220,30)">
+      <rect class="server" width="160" height="80" rx="8"/>
+      <text class="big" x="64" y="45">IPFS</text>
+      <title>Redundant Interplanetary File System AuthorityNode</title>
+    </a>
+    <path class="bidirectional-lookup" d="M 190 110 l 20 20"/>
+    <path class="bidirectional-lookup" d="M 190 130 l 20 -20"/>
+  </g>
+
+  <g transform="translate(0,360)">
+    <rect class="bw dotted" width="410" height="240"/>
+    <a  xlink:href="/dapps/introduction">
+      <text class="grey" x="140" y="20">Ðapp (in Browser)</text>
+      <title>evan.network Distributed Application</title>
+    </a>
+
+    <a xlink:href="/dev/blockchaincore" transform="translate(20,30)">
+      <rect class="library" width="360" height="80" rx="8"/>
+      <text class="big" x="110" y="45">Blockchain Core</text>
+      <title>Blockchain Core Library</title>
+    </a>
+
+    <a xlink:href="/dev/" transform="translate(20,130)">
+      <rect class="library" width="360" height="80" rx="8"/>
+      <text class="big" x="110" y="40">Web Framework</text>
+      <text class="grey" x="106" y="60">(angular, vue, jquery ...)</text>
+      <title>Any Web Framework or Library is Usable</title>
+    </a>
+  </g>
+
+  <g transform="translate(540,80)">
+    <rect class="bw dotted" width="410" height="240"/>
+    <a xlink:href="/dev/smart-agents">
+      <text class="grey" x="160" y="20">Smart Agent</text>
+      <title>evan.network Web Service</title>
+    </a>
+
+    <a xlink:href="/dev/blockchaincore" transform="translate(20,30)">
+      <rect class="library" width="360" height="80" rx="8"/>
+      <text class="big" x="110" y="45">Blockchain Core</text>
+      <title>Blockchain Core Library</title>
+    </a>
+
+    <a xlink:href="/dev/" transform="translate(20,130)">
+      <rect class="library" width="360" height="80" rx="8"/>
+      <text class="big" x="110" y="45">node.js Libraries</text>
+      <title>Any node.js Library is Usable</title>
+    </a>
+  </g>
+
+  <g transform="translate(540,360)">
+    <rect class="bw dotted" width="410" height="240"/>
+    <a xlink:href="/dev/smart-agents">
+      <text class="grey" x="160" y="20">Web Services</text>
+      <title>Any Normal Webservice</title>
+    </a>
+
+    <g transform="translate(78,50)">
+      <g transform="translate(20,30)">
+        <ellipse class="service" rx="80" ry="40" />
+        <text class="big" x="-50" y="0.25em">google.com</text>
+        <title>Blockchain Core Library</title>
+      </g>
+    
+      <g transform="translate(50,130)">
+        <ellipse class="service" rx="80" ry="40" />
+        <text class="big" x="-55" y="0.25em">amazon.com</text>
+        <title>Any node.js Library is Usable</title>
+      </g>
+      
+      <g transform="translate(220,70)">
+        <ellipse class="service" rx="80" ry="40" />
+        <text class="big" x="-45" y="0.25em">wetter.de</text>
+        <title>Any node.js Library is Usable</title>
+      </g>
+    </g>
+  </g>
+
+  <g transform="translate(60, 300)">
+    <path class="bidirectional-data" d="M 0 0 v 80"/>
+    <text x="10" y="45">https</text>
+  </g>
+
+  <g transform="translate(320, 300)">
+    <path class="bidirectional-data" d="M 0 0 v 80"/>
+    <text x="10" y="45">websocket</text>
+  </g>
+
+  <g transform="translate(420, 530)">
+    <path class="bidirectional-data" d="M 0 0 h 110"/>
+    <text x="42" y="-15">https</text>
+  </g>
+
+  <g transform="translate(390, 130)">
+    <path class="bidirectional-data" d="M 0 0 h 160"/>
+    <text x="72" y="-15">https</text>
+  </g>
+  
+  <g transform="translate(760, 328)">
+    <path class="bidirectional-data" d="M 0 0 v 25"/>
+    <text x="10" y="18">https</text>
+  </g>
+
+  <g transform="translate(390, 430)">
+    <path class="bidirectional-data" d="M 0 0 h 120 v -150 h 40"/>
+    <text x="72" y="-15">https</text>
+  </g>
+
+  <g transform="translate(390, 240)">
+    <path class="bidirectional-data" d="M 0 0 h 120 v -70 h 40"/>
+    <text x="34" y="-15">websocket</text>
+  </g>
+
+  
+  <g id="legend" transform="translate(20, 40)">
+    <rect class="server" width="20" height="20" rx="4"/>
+    <text class="small" x="30" y="15">server</text>
+    <circle class="service" cy="10" cx="120" r="10"/>
+    <text class="small" x="140" y="15">service</text>
+    <rect class="library" x="230" width="20" height="20"/>
+    <text class="small" x="260" y="15">library</text>
+
+    <path class="data-flow" d="M 340 10 h 20"/>
+    <text class="small" x="380" y="15">network requests</text>
+    <path class="lookup" d="M 510 10 h 20"/>
+    <text class="small" x="550" y="15">synchronizes</text>
+    
+  </g>
+  
+
+</svg>
