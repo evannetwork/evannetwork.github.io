@@ -2,9 +2,9 @@
 title: How it works
 parent: How it works
 nav_order: 2
+permalink: /docs/02_how_it_works
 layout: tiles
 has_children: true
-permalink: /docs/02_how_it_works
 hide_content: true
 tiles:
   - title: Architecture

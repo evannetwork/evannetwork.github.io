@@ -2,9 +2,9 @@
 title: First Steps
 parent: First Steps
 nav_order: 3
+permalink: /docs/03_first_steps
 layout: tiles
 has_children: true
-permalink: /docs/first_steps
 hide_content: true
 tiles:
   - title: Onbarding
@@ -38,5 +38,4 @@ tiles:
     description: Example Dapp - Taskboard
     icon: dragon
     link: /docs/03_first_steps/taskboard.html
-
 ---
