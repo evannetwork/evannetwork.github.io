@@ -11,10 +11,12 @@ tiles:
     description: How is evan.network organized
     icon: address-card
     link: /docs/01_whats_evan/network.html
+
   - title: Core features
     description: Which core features offers evan.network
     icon: radiation
     link: /docs/01_whats_evan/corefeatures.html
+
   - title: Enterprise Chain
     description: What makes evan.network an enterprise blockchain
     icon: teeth
