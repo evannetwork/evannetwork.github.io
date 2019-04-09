@@ -1,8 +1,8 @@
 ---
 title: "Why evan.network"
 parent: What's evan?
-nav_order: 5
-permalink: /docs/01_whats_evan/why
+nav_order: 4
+permalink: /docs/01_whats_evan/why.html
 ---
 
 # Why evan.network?

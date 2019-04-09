@@ -1,8 +1,8 @@
 ---
 title: "Goals"
 parent: What's evan?
-nav_order: 6
-permalink: /docs/01_whats_evan/goals
+nav_order: 5
+permalink: /docs/01_whats_evan/goals.html
 ---
 
 # evan.network Goals
