@@ -2,7 +2,7 @@
 title: "Taskboard"
 parent: First Steps
 nav_order: 60
-permalink: /docs/03_first_steps/taskboard
+permalink: /docs/03_first_steps/taskboard.html
 ---
 
 # Taskboard

@@ -2,7 +2,7 @@
 title: "Business Center"
 parent: How it works
 nav_order: 26
-permalink: /docs/02_how_it_works/business
+permalink: /docs/02_how_it_works/business.html
 ---
 
 # Business Centers

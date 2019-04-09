@@ -2,7 +2,7 @@
 title: "evan governance"
 parent: How it works
 nav_order: 44
-permalink: /docs/02_how_it_works/governance
+permalink: /docs/02_how_it_works/governance.html
 ---
 
 # evan governance

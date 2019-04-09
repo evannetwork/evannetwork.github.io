@@ -2,18 +2,18 @@
 title: First Steps
 parent: First Steps
 nav_order: 3
-permalink: /docs/03_first_steps
+permalink: /docs/03_first_steps.html
 layout: tiles
 has_children: true
 hide_content: true
 tiles:
-  - title: Onbarding
-    description: Onbarding
+  - title: Onboarding
+    description: Onboarding
     icon: cat
     link: /docs/03_first_steps/quick-start.html
 
-  - title: Dasboard
-    description: Dasboard
+  - title: Dashboard
+    description: Dashboard
     # description: einstiegsseite, favorites, dappstore (Prosa)
     icon: crow
     link: /docs/03_first_steps/dashboard.html

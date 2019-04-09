@@ -2,7 +2,7 @@
 title: "Dashboard"
 parent: First Steps
 nav_order: 20
-permalink: /docs/03_first_steps/dashboard
+permalink: /docs/03_first_steps/dashboard.html
 ---
 
 # Dashboard

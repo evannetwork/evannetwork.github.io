@@ -2,7 +2,7 @@
 title: Other
 parent: Other
 nav_order: 7
-permalink: /docs/07_other
+permalink: /docs/07_other.html
 layout: tiles
 has_children: true
 hide_content: true

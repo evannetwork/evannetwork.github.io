@@ -2,7 +2,7 @@
 title: "Create Identity"
 parent: First Steps
 nav_order: 12
-permalink: /docs/03_first_steps/create-identity
+permalink: /docs/03_first_steps/create-identity.html
 ---
 
 # Create Identity

@@ -2,7 +2,7 @@
 title: FAQ
 parent: Other
 nav_order: 10
-permalink: /docs/07_other/faq
+permalink: /docs/07_other/faq.html
 ---
 
 # FAQ

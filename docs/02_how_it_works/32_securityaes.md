@@ -2,7 +2,7 @@
 title: "Security"
 parent: How it works
 nav_order: 32
-permalink: /docs/02_how_it_works/securityaes
+permalink: /docs/02_how_it_works/securityaes.html
 ---
 
 ## Security

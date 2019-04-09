@@ -2,7 +2,7 @@
 title: "Infrastructure"
 parent: How it works
 nav_order: 10
-permalink: /docs/02_how_it_works/architecture
+permalink: /docs/02_how_it_works/architecture.html
 ---
 
 # Infrastructure overview

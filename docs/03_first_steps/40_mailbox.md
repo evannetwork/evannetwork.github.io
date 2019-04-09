@@ -2,7 +2,7 @@
 title: "Mailbox"
 parent: First Steps
 nav_order: 40
-permalink: /docs/03_first_steps/mailbox
+permalink: /docs/03_first_steps/mailbox.html
 ---
 
 # Mailbox

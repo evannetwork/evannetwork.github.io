@@ -2,7 +2,7 @@
 title: Glossary
 parent: Other
 nav_order: 20
-permalink: /docs/07_other/glossary
+permalink: /docs/07_other/glossary.html
 ---
 
 # Glossary

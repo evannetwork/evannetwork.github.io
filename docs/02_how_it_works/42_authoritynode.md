@@ -2,7 +2,7 @@
 title: "AuthorityNodes"
 parent: How it works
 nav_order: 42
-permalink: /docs/02_how_it_works/authoritynode
+permalink: /docs/02_how_it_works/authoritynode.html
 ---
 
 # Proof-of-Authority Consensus & AuthorityNodes

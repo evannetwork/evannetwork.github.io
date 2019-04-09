@@ -2,7 +2,7 @@
 title: "Verified Identities"
 parent: How it works
 nav_order: 27
-permalink: /docs/02_how_it_works/identity
+permalink: /docs/02_how_it_works/identity.html
 ---
 
 # Verified Identities

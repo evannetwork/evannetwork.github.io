@@ -2,7 +2,7 @@
 title: How it works
 parent: How it works
 nav_order: 2
-permalink: /docs/02_how_it_works
+permalink: /docs/02_how_it_works.html
 layout: tiles
 has_children: true
 hide_content: true

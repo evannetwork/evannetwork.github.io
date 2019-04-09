@@ -2,7 +2,7 @@
 title: "Quick-start guide"
 parent: First Steps
 nav_order: 10
-permalink: /docs/03_first_steps/quick-start
+permalink: /docs/03_first_steps/quick-start.html
 ---
 
 # Quick-start guide

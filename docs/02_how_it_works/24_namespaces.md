@@ -2,7 +2,7 @@
 title: "Namespaces"
 parent: How it works
 nav_order: 24
-permalink: /docs/02_how_it_works/namespaces
+permalink: /docs/02_how_it_works/namespaces.html
 ---
 
 # Namespaces

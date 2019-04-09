@@ -2,7 +2,7 @@
 title: Scalability
 parent: How it works
 nav_order: 46
-permalink: /docs/02_how_it_works/scalability
+permalink: /docs/02_how_it_works/scalability.html
 ---
 
 ## Scalability

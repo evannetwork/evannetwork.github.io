@@ -2,7 +2,7 @@
 title: "Contacts"
 parent: First Steps
 nav_order: 30
-permalink: /docs/03_first_steps/contacts
+permalink: /docs/03_first_steps/contacts.html
 ---
 
 # Contacts

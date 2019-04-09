@@ -2,7 +2,7 @@
 title: "Smart Agents"
 parent: How it works
 nav_order: 18
-permalink: /docs/02_how_it_works/smart-agents
+permalink: /docs/02_how_it_works/smart-agents.html
 ---
 
 

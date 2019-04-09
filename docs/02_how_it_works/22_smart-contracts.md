@@ -2,7 +2,7 @@
 title: "Smart-Contracts"
 parent: How it works
 nav_order: 22
-permalink: /docs/02_how_it_works/smart-contracts
+permalink: /docs/02_how_it_works/smart-contracts.html
 ---
 
 # Smart Contracts

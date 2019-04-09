@@ -2,7 +2,7 @@
 title: "Verification"
 parent: First Steps
 nav_order: 50
-permalink: /docs/03_first_steps/verification
+permalink: /docs/03_first_steps/verification.html
 ---
 
 # Verification

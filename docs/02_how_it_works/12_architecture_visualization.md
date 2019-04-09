@@ -2,7 +2,7 @@
 title: "Visualization Evan.network Architecture"
 parent: How it works
 nav_order: 12
-permalink: /docs/02_how_it_works/architecture_visualization
+permalink: /docs/02_how_it_works/architecture_visualization.html
 ---
 
 # Interactive Overview

@@ -2,7 +2,7 @@
 Title: "On Behalf Logic"
 parent: How it works
 nav_order: 28
-permalink: /docs/02_how_it_works/onbehalf
+permalink: /docs/02_how_it_works/onbehalf.html
 ---
 
 # Extending autonomy with On Behalf Logic

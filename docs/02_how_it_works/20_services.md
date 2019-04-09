@@ -2,7 +2,7 @@
 title: "Services"
 parent: How it works
 nav_order: 20
-permalink: /docs/02_how_it_works/services
+permalink: /docs/02_how_it_works/services.html
 ---
 
 # Services

@@ -2,7 +2,7 @@
 title: What's evan?
 parent: What's evan?
 nav_order: 1
-permalink: /docs/01_whats_evan
+permalink: /docs/01_whats_evan.html
 layout: tiles
 has_children: true
 hide_content: true
