@@ -8,16 +8,16 @@ permalink: /docs/04_developers/ipfs.html
 # IPFS
 ## Storage Service
 
-To give evan.network applications the possibility to run decentralized applications ([ÐAPPs](/dapps/basics)) and store complex and unstructured content, we provide a distributed file system based on [IPFS](https://ipfs.io)<sup>[+]</sup>.
+To give evan.network applications the possibility to run decentralized applications ([ÐAPPs](/docs/04_developers/basics.html)) and store complex and unstructured content, we provide a distributed file system based on [IPFS](https://ipfs.io)<sup>[+]</sup>.
 The evan.network IPFS service is not connected to the public IPFS network, so that your content isn't spread on other IPFS hosts outside our network. We provide a [private IPFS cluster](https://github.com/ipfs/go-ipfs/blob/master/docs/experimental-features.md#private-networks)<sup>[+]</sup> where each AuthorityNode provider spends instances to this IPFS network.
 
 The storage service keeps care that a content asset is replicated two times in the cluster and that stored data can't be deleted anymore, just as in the blockchain.
 
 You can reach the IPFS service at `https://ipfs.test.evan.network`. The service is shared between the **testcore** and **core** blockchain. There are several different APIs available to interact with IPFS, for JavaScript/NodeJS you can use [https://github.com/ipfs/js-ipfs-api](https://github.com/ipfs/js-ipfs-api)
 
-If you store data to the evan.network IPFS storage, **you must** take care that you encrypt these data in a proper way, so that third parties can't read your data. To encrypt your data, you can use the evan.network [security APIs](/dev/security) or implement a custom way.
+If you store data to the evan.network IPFS storage, **you must** take care that you encrypt these data in a proper way, so that third parties can't read your data. To encrypt your data, you can use the evan.network [security APIs](/docs/04_developers/permissioning.html) or implement a custom way.
 
-You can also use a custom IPFS or other datastore to persist your data. In the [DBCP](/dev/dbcp) guide is the possibility to specify alternative storage providers or you can write custom storage handlers in your ÐAPPs.
+You can also use a custom IPFS or other datastore to persist your data. In the [DBCP](/docs/04_developers/dbcp.html) guide is the possibility to specify alternative storage providers or you can write custom storage handlers in your ÐAPPs.
 
 
 ## Hybrid Storage
@@ -25,6 +25,6 @@ Storing large amount of data becomes rather expensive and difficult to execute d
 
 This keeps the amount of data quite small, but allows adding arbitrary large files to contracts without exceeding blockchain limitations or making the transactions too expensive.
 
-ENS addresses can point to a description as well, they keep a reference to a [DBCP](/dev/dbcp) description, which may point to [ÐAPPs](/dapps/basics) and contract data, assets, etc. related to the contract.
+ENS addresses can point to a description as well, they keep a reference to a [DBCP](/docs/04_developers/dbcp.html) description, which may point to [ÐAPPs](/docs/04_developers/basics.html) and contract data, assets, etc. related to the contract.
 
 The _DBCP descriptions_ are hosted to evan.network IPFS storage, _assets_ can be stored in a custom IPFS or datastore. _ÐAPPs_ may be hosted in a custom location as well, but it is recommended to host these in the evan.network IPFS storage to keep the user experience fluent without having the user switch servers during navigation.

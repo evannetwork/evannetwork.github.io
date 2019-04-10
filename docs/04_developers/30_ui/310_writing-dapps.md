@@ -18,7 +18,7 @@ By creating a simple application to create, view and share tasks, you will learn
     - Angular-core, Angular-bc, Angular-libs, Angular-sass
 
 You will be guided through the following steps:
-- [ÐApp basics](/dapps/basics)
+- [ÐApp basics](/docs/04_developers/basics.html)
 - [Hello World - standalone](/dapps/standalone/standalone)
 - [Hello World - JS](/dapps/js/hello-world)
 - [Angular 5 Tutorials](/dapps/angular/choose)
@@ -29,4 +29,4 @@ You will be guided through the following steps:
 
 If you want to create your own projects, have a look at the [evan.network project generator](/dev/generator-evan).
 
-Well, good luck and get started [here](/dapps/basics).
+Well, good luck and get started [here](/docs/04_developers/basics.html).

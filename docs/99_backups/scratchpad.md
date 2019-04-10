@@ -168,17 +168,17 @@
         </a>
 
         <text class="small grey" x="50" y="12">user management</text>
-        <a xlink:href="/dev/smart-contracts#rights-and-roles" transform="translate(50,20)">
+        <a xlink:href="/docs/02_how_it_works/smart-contracts.html#rights-and-roles" transform="translate(50,20)">
           <rect class="contract" width="130" height="60" rx="2"/>
           <text class="code" x="2" y="12">RightsAndRoles</text>
           <title>Ethereum Contract</title>
         </a>
-        <a xlink:href="/dev/smart-contracts#mailbox" transform="translate(60,36)">
+        <a xlink:href="/docs/02_how_it_works/smart-contracts.html#mailbox" transform="translate(60,36)">
           <rect class="contract" width="130" height="60" rx="2"/>
           <text class="code" x="2" y="12">Mailbox</text>
           <title>Ethereum Contract</title>
         </a>
-        <a xlink:href="/dev/smart-contracts#profile" transform="translate(70,52)">
+        <a xlink:href="/docs/02_how_it_works/smart-contracts.html#profile" transform="translate(70,52)">
           <rect class="contract" width="130" height="60" rx="2"/>
           <text class="code" x="2" y="12">Profile</text>
           <text class="small grey" x="24" y="30">Roles</text>
@@ -187,17 +187,17 @@
         </a>
 
         <text class="small grey" x="220" y="12">factories</text>
-        <a xlink:href="/dev/smart-contracts#contract-factories" transform="translate(220,20)">
+        <a xlink:href="/docs/02_how_it_works/smart-contracts.html#contract-factories" transform="translate(220,20)">
           <rect class="contract" width="130" height="60" rx="2"/>
           <text class="code" x="2" y="12">ProfileFactory</text>
           <title>Ethereum Contract</title>
         </a>
-        <a xlink:href="/dev/smart-contracts#contract-factories" transform="translate(230,36)">
+        <a xlink:href="/docs/02_how_it_works/smart-contracts.html#contract-factories" transform="translate(230,36)">
           <rect class="contract" width="130" height="60" rx="2"/>
           <text class="code" x="2" y="12">DigitalTwinFactory</text>
           <title>Ethereum Contract</title>
         </a>
-        <a xlink:href="/dev/smart-contracts#contract-factories" transform="translate(240,52)">
+        <a xlink:href="/docs/02_how_it_works/smart-contracts.html#contract-factories" transform="translate(240,52)">
           <rect class="contract" width="130" height="60" rx="2"/>
           <text class="code" x="2" y="12">TaskFactory</text>
           <text class="small grey" x="24" y="30">DataContracts</text>
@@ -206,17 +206,17 @@
         </a>
 
         <text class="small grey" x="220" y="142">templates</text>
-        <a xlink:href="/dev/smart-contracts#service-contract" transform="translate(220,150)">
+        <a xlink:href="/docs/02_how_it_works/smart-contracts.html#service-contract" transform="translate(220,150)">
           <rect class="contract" width="130" height="60" rx="2"/>
           <text class="code" x="4" y="12">ServiceContract</text>
           <title>Ethereum Contract</title>
         </a>
-        <a xlink:href="/dev/smart-contracts#business-center" transform="translate(230,166)">
+        <a xlink:href="/docs/02_how_it_works/smart-contracts.html#business-center" transform="translate(230,166)">
           <rect class="contract" width="130" height="60" rx="2"/>
           <text class="code" x="2" y="12">BusinessCenter</text>
           <title>Ethereum Contract</title>
         </a>
-        <a xlink:href="/dev/smart-contracts#data-contract" transform="translate(240,182)">
+        <a xlink:href="/docs/02_how_it_works/smart-contracts.html#data-contract" transform="translate(240,182)">
           <rect class="contract" width="130" height="60" rx="2"/>
           <text class="code" x="2" y="12">DataContract</text>
           <text class="small grey" x="24" y="30">Entries</text>
@@ -225,17 +225,17 @@
         </a>
 
         <text class="small grey" x="50" y="142">infrastructure</text>
-        <a xlink:href="/dev/smart-contracts#ens" transform="translate(50,150)">
+        <a xlink:href="/docs/02_how_it_works/smart-contracts.html#ens" transform="translate(50,150)">
           <rect class="contract" width="130" height="60" rx="2"/>
           <text class="code" x="2" y="12">ENS</text>
           <title>Ethereum Contract</title>
         </a>
-        <a xlink:href="/dev/smart-contracts#event-hub" transform="translate(60,166)">
+        <a xlink:href="/docs/02_how_it_works/smart-contracts.html#event-hub" transform="translate(60,166)">
           <rect class="contract" width="130" height="60" rx="2"/>
           <text class="code" x="2" y="12">EventHub</text>
           <title>Ethereum Contract</title>
         </a>
-        <a xlink:href="/dev/smart-contracts#base-contract" transform="translate(70,182)">
+        <a xlink:href="/docs/02_how_it_works/smart-contracts.html#base-contract" transform="translate(70,182)">
           <rect class="contract" width="130" height="60" rx="2"/>
           <text class="code" x="2" y="12">BaseContract</text>
           <text class="small grey" x="24" y="30">DBCP Reference</text>
@@ -285,7 +285,7 @@
       
       <rect class="bw dotted" x="30" width="395" height="130" transform="translate(15, 40)"/>
       <title>AuthorityNodes provided by DAO members</title>
-      <a xlink:href="/doc/authoritynode">
+      <a xlink:href="/docs/02_how_it_works/authoritynode.html">
         <text x="210" y="60">AuthorityNode</text>
       </a>
 

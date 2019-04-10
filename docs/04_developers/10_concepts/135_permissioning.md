@@ -2,17 +2,17 @@
 title: "Permissioning"
 parent: Developers
 nav_order: 135
-permalink: /docs/04_developers/security.html
+permalink: /docs/04_developers/permissioning.html
 ---
 
-# Smart Contract Security and Permissioning (SCEP)
+# Smart Contract Security and Permissioning 
 
 ## About Smart Contract Security
 Smart contracts are pivotal to everything happening on evan. Almost every feature on the platform utilizes smart contracts in one way or the other. Naturally, security surrounding smart contracts is a top priority on the evan.network.
 
 Since evan.network is an open ecosystem involving many participants, permissions at times have to be given trans organizational (allowing externals to access internal company data), adding yet another level of complexity.
 
-With that in mind the Smart Contract Permissioning (SCEP) is built around certain main concepts:
+With that in mind the Smart Contract Permissioning is built around certain main concepts:
 - prevent malicious contract manipulation
 - prevent contract content from being illegally accessed by third parties
 - granularly define access and role definitions
@@ -33,68 +33,70 @@ To facilitate access control, each smart contract can be thought of as holding t
 Authorization and access level for each user is configured by the contract owner and reflected in the participant's key.
 
 Now, if a permissioned user writes changes to the smart contract, a participant authenticates himself to the contract and the key required to perform this operation is retrieved from the sharings section of the contract.
-Through this mechanism it is made possible to ensure at a granular level that only ever intended users gain access to exactly what they are supposed to see and restrict access to content that is off limits.
+Through this mechanism it is made possible to ensure at a granular level that only intended users gain access to exactly what they are supposed to see and restrict access to content that is off limits.
 
 
 ### Details Permissioning
 As the main part of data related to contracts is stored in the distributed file system, only references to the DFS are stored in the contract. Contents in the DFS are encrypted with one or more keys specific to the contract instance they belong to.
 
-Contract participants, which should be enabled to read and/ or write contract content, need to have access to the keys responsible for the contract data (called 'data keys' in this context). This is done by maintaing a 'sharings' info, which is basically a key store keeping data keys, grouped by the following criteria:
+Contract participants, which should be enabled to read and/or write contract content, need to have access to the keys responsible for the contract data (called 'data keys' in this context). This is done by maintaining a 'sharings' info, which is basically a key store keeping data keys, grouped by the following criteria:
 - **participant** - the contract participant, the key is intended for
 - **section** - the section in the contract, which holds encrypted data
-- **block** - this annotes the _starting_ point, from which on the key is valid
+- **block** - this annotates the _starting_ point, from which on the key is valid
 
 The Sharings of a contract is basically a structured list of encrypted keys.
 
 In a simple contract, the creator of the contract creates a single data key for this contract and wants to share it with other contract members to enable them to read the data in the contract. Therefore, the creator puts the data key into the Sharings info. To prevent third parties from accessing this data key, it is encrypted with the communication key between the contract owner and the contract participant.
 
-![sharings - schema](/public/dev/sharings_schema.png)
+![sharings - schema](./img/sharings_schema.png)
 
 For **Data Contracts**, the owner creates a data contract and a rights and roles contract. Next, they are linked together.
 The contract owner then defines which groups, or users, are allowed to make edits to fields on the Data Contract.
 Access can be given granularly to entry,list and mapping contract values.
 
+
 ## Establishing trust with Participants
-# Key Exchange
-By default, any data stored in [Smart Contracts](/dev/smart-contracts) is encrypted. This is also true for [profiles](/tutorial/create-identity), [Digital Twins](/dev/dgitial-twin) and other tools. As a result, it is impossible for others to read data in external contracts. Profiles can't read each others contacts etc. People can't even send each other [BMail](/tutorial/mailbox) messages.
+### Key Exchange
+By default, any data stored in [Smart Contracts](/docs/02_how_it_works/smart-contracts.html) is encrypted. This is also true for [profiles](/docs/03_first_steps/create-identity.html), Digital Twins and other tools. As a result, it is impossible for others to read data in external contracts. Profiles can't read each others contacts etc. People can't even send each other [BMail](/docs/03_first_steps/onchain.html) messages.
 
-To establish communication, accounts/ contracts need to exchange keys. This is one of the most basic operations in `evan.network`, because without exchanging keys, little else can be done. If you are an end user, it is done for you in most cases and you won't even notice. Otherwise, you can use the [contacts](/tutorial/contacts) ÐApp to initiate key exchanges.
+To establish communication, accounts/contracts need to exchange keys. This is one of the most basic operations in `evan.network`, because without exchanging keys, little else can be done. If you are an end user, it is done for you in most cases and you won't even notice. Otherwise, you can use the [contacts](/docs/03_first_steps/contacts.html) ÐApp to initiate key exchanges.
 
-As a developer, you usually have to keep track of this yourself, unless you use one of the helper functions from [Factories](/dev/smart-contract#contract-factories) or [Business Centers](/dev/smart-contract#business-cener).
+As a developer, you usually have to keep track of this yourself, unless you use one of the helper functions from [Factories](/docs/04_developers/contract-factories.html) or [Business Centers](/docs/04_developers/business-center.html).
 
 The key exchange module is made available through the [blockchain core](https://github.com/evannetwork/api-blockchain-core) library.
 
 
 ### Key Criteria
 #### Data Keys
-The creator of a contract creates a data key on contract creation and adds this to the Sharings as 'shared with herself/ himself'. This key is not stored on the owners side and the owner performs exactly the same steps to retrieve the data key as all contract participants.
+The creator of a contract creates a data key on contract creation and adds this to the Sharings as 'shared with herself/himself'. This key is not stored on the owners side and the owner performs exactly the same steps to retrieve the data key as all contract participants.
 
 #### Participants
-There is no catch-all keyword for sharing encrypted contents with everyone, or a similar mechanic. Sharing happens explicitely and directed from the owner to a participant.
+There is no catch-all keyword for sharing encrypted contents with everyone, or a similar mechanic. Sharing happens explicitly and directed from the owner to a participant.
 
 When sharing keys with contract participants, the data key is encrypted with the communication key ('comKey') between the party sharing the key and the party the key is shared with. This means that before sharing encrypted contract contents with another party, usually a key exchange needs to be undertaken beforehand.
 
-To expose encrypted content to a broader scope without performing a key exchange beforehand, keys can be shared via a scope. This scope has to be known by all participating parties and the key that belongs to the scope has to be accessable by all participating parties. An example for a scope can be a common business context - like a Business Center, where all participating parties cooperate in.
+To expose encrypted content to a broader scope without performing a key exchange beforehand, keys can be shared via a scope. This scope has to be known by all participating parties and the key that belongs to the scope has to be accessible by all participating parties. An example for a scope can be a common business context - like a Business Center, where all participating parties cooperate in.
 
 #### Sections
 Typical examples for Sections are lists and properties in DataContracts. Each participant gets an entry in the Sharings with the section names that are shared with him or her.
-Other contracts like Asset Contracts or Service Contracts hold data in applicable properties, to which can be referred in the same manner.
+Other contracts like Service Contracts hold data in applicable properties, to which can be referred in the same manner.
 
-If all contents of a contract are encrypted with the same key, this key can be shared for the section '*', which means all sections. Key retrievals get the section names as an argument and for keys in this manner:
+If all contents of a contract are encrypted with the same key, this key can be shared for the section '*', which means 'all' section. Key retrievals get the section names as an argument and for keys in this manner:
 
 1. Check if a section with the same name as requested has been added to the participant's key section - if one exists, use keys from it
 2. If no matching section was found, check if this participant has keys for the all section '*' - if so, use keys from it
+
 
 #### Blocks
 ##### Key Lifetimes
 Blocks in Sharings signal the starting point, from where on this key is valid. So to be able to read data added at a specific block, a participant requires a key shared before or at the same block.
 Data added **after** this block can be read by the participant the data has been shared with. Data added **before** this block cannot be read by this participant through this key.
 
-![multikeys](/public/dev/multikeys.png)
+![multikeys](./img/multikeys.png)
 
 Keys are valid until they are replaced by a new one, which is then valid until replaced or indefinitely removed.
 
-![multikeys - lifetime](/public/dev/multikeys_lifetime.png)
+![multikeys - lifetime](./img/multikeys_lifetime.png)
 
 This principle is for example used for retrieving keys to decrypt data from lists, where keys might have been updated over time. Taking the example from the last picture, an entry added at block 37 has to be encrypted with the block 20 key. Elements added in or after block 40 use the block 40 key for en- and decryption.
 
@@ -105,7 +107,7 @@ This ensures that:
 
 
 ##### Zero and Infinity
-**Granting** a key starting from block 0 makes this key ultimatively valid, as any data has been added after block 0. This is used for adding a generic key during contract creation.
+**Granting** a key starting from block 0 makes this key ultimately valid, as any data has been added after block 0. This is used for adding a generic key during contract creation.
 
 **Requesting** a key from block 'infinity' by omitting the block argument returns the latest valid key. This can be used when encrypting new data. The timestamp when retrieving this key has to be added to the `cryptoInfo` to ensure that the data can be decrypted later-on.
 

@@ -41,7 +41,7 @@ And you have guessed it, this key exchange is a contract on the blockchain again
 
 
 ## Adding new Contacts
-Adding new contacts initiates a key exchange process with the person you want to add, which will, if completed, allow you to exchange blockchain mails or "Bmails" (see [Mailbox](/tutorial/mailbox)) with this person.
+Adding new contacts initiates a key exchange process with the person you want to add, which will, if completed, allow you to exchange blockchain mails or "Bmails" (see [Mailbox](/docs/03_first_steps/onchain.html)) with this person.
 
 [![contact add type select](./img/contacts_add_type_select.png){:width="50%"}](./img/contacts_add_type_select.png)
 

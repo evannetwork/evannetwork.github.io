@@ -62,7 +62,7 @@ permalink: /docs/02_how_it_works/technical_overview.html
     <rect class="bw dotted" width="410" height="240" transform="translate(5,-5)"/>
     <rect class="bw dotted" width="410" height="240"/>
     <rect class="bw dotted" width="410" height="240"/>
-    <a xlink:href="/doc/authoritynode">
+    <a xlink:href="/docs/02_how_it_works/authoritynode.html">
       <text x="160" y="20">AuthorityNode</text>
     </a>
     <text class="grey small" x="70" y="230">every DAO member runs a AuthorityNode</text>
@@ -212,7 +212,7 @@ permalink: /docs/02_how_it_works/technical_overview.html
 The evan.network builds on existing technology like a programmable blockchain with [Ethereum](https://ethereum.org), and a distributed file storage with [IPFS](https://ipfs.io).
 
 It combines those two technologies and provides the storage and computing power and bandwidth to run distributed
-applications with the [AuthorityNodes](/doc/authoritynode).
+applications with the [AuthorityNodes](/docs/02_how_it_works/authoritynode.html).
 
 All this infrastructure is exposed and made usable by fairly ordinary web-applications via the [Blockchain Core Library](/dev/blockchain-core).
 
@@ -306,7 +306,7 @@ They are just small webservices, that run on controlled servers providing contro
 
     </a>
 
-    <a xlink:href="/dev/web3" transform="translate(220,30)">
+    <a xlink:href="https://github.com/ethereum/web3.js" transform="translate(220,30)">
       <rect class="module" width="160" height="80" rx="3"/>
       <text class="big" x="60" y="45">web3</text>
       <title>Blockchain Interactions</title>
@@ -341,7 +341,7 @@ They are just small webservices, that run on controlled servers providing contro
       </text>
     </a>
 
-    <a xlink:href="/dev/smart-contracts#smart-contracts-in-evannetwork" transform="translate(620,30)">
+    <a xlink:href="/docs/02_how_it_works/smart-contracts.html#smart-contracts-in-evannetwork" transform="translate(620,30)">
       <rect class="module" width="160" height="80" rx="3"/>
       <text class="big" x="22" y="45">Smart Contracts</text>
       <title>Basic Functionality Contracts</title>

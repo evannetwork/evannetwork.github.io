@@ -14,7 +14,7 @@ This happens unsurprisingly with the conract loader. Open `bccc.js`
 > var hello = bcc.contractLoader.loadContract('HelloWorld', '0xACC07...1D')
 ```
 
-Now you have a usable Web3 contract instance object to work with. You do always need the interface, but of course you don't need to compile the source code every time you get to the interface. You only need to do this once and then save the string and reuse it. Or even better, put it into the [DBCP](/dev/dbcp) and let this take care of everything.
+Now you have a usable Web3 contract instance object to work with. You do always need the interface, but of course you don't need to compile the source code every time you get to the interface. You only need to do this once and then save the string and reuse it. Or even better, put it into the [DBCP](/docs/04_developers/dbcp.html) and let this take care of everything.
 
 Of course, you also have to say which instance of this contract on the blockchain you want to interact with, that's why you need to know the account ID and pass it to `loadContract`.
 

@@ -35,7 +35,7 @@ Work through the following checklist to be sure that you won't miss anything.
 The heart of the evan.network are the contracts on the blockchain. For this reason, you should think
 about the following points before starting a project:
 
-- Read about [Smart Contracts](/dev/smart-contracts)
+- Read about [Smart Contracts](/docs/02_how_it_works/smart-contracts.html)
 - What types of contracts are required?
 - Which data and fields are required?
 - What types of users are involved and what permissions are required?
@@ -47,12 +47,12 @@ about the following points before starting a project:
 - test contract structure directly
 
 ### 3. Setup your connection to the world
-- read about [DBCP](/dev/dbcp)
+- read about [DBCP](/docs/04_developers/dbcp.html)
 - name and identify your ÐApp: name, description, logos, translations, ...
 - insert your contracts ABI and data schemes to your project (have a look at [Contract Implementation & Data Scheme](http://localhost:4000/dapps/angular/task-data-contract))
 
 ### 4. Concept Frontend Application
-- read about angular ÐApps ([frontend documentation](/dapps/basics))
+- read about angular ÐApps ([frontend documentation](/docs/04_developers/basics.html))
 - Which frameworks are needed?
 - Draw wireframes for your application.
 - Divide the frontend into components that are as reusable and separate as possible.

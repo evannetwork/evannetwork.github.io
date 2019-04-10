@@ -825,7 +825,7 @@ This is greatly simplified by the use of a Smart Contract factory. The factory m
 
 Smart Contracts were developed with the goal of easy use and expansion. Each Smart Contract can be called directly from a Web3 browser using for example a name server entry.
 
-Initially, only the manifest file ([DBCP](/dev/dbcp)) is referenced and loaded. This file contains a standardized structure with descriptive information to make the service human and machine readable.
+Initially, only the manifest file ([DBCP](/docs/04_developers/dbcp.html)) is referenced and loaded. This file contains a standardized structure with descriptive information to make the service human and machine readable.
 
 It also contains references to the actual Smart Contract in the blockchain and the Distributed App (ÐApp), which enables direct user interaction with the service.
 

@@ -46,7 +46,7 @@ permalink: /docs/07_other/glossary.html
 </dl>
 <a id="b"></a>
 <dl>
-    <dt><a href="/tutorial/Mailbox/">BMail</a></dt>
+    <dt><a href="/docs/03_first_steps/onchain.html/">BMail</a></dt>
     <dd>a message exchanged via the blockchain</dd>
     <dt><a href="https://en.wikipedia.org/wiki/Blockchain/">Blockchain</a><sup>[+]</sup></dt>
     <dd>a cryptographically verified distributed global single consensus data record store</dd>
@@ -128,7 +128,7 @@ permalink: /docs/07_other/glossary.html
 </dl>
 <a id="m"></a>
 <dl>
-    <dt><a href="/doc/authoritynode">AuthorityNode</a></dt>
+    <dt><a href="/docs/02_how_it_works/authoritynode.html">AuthorityNode</a></dt>
     <dd>a registered evan.network member, has to provide a number of services and resources to the network, most notably a blockchain client and IPFS storage</dd>
 </dl>
 <a id="n"></a>
@@ -160,7 +160,7 @@ permalink: /docs/07_other/glossary.html
 <dl>
     <dt><a href="/dev/smart-agents">SmartAgent</a></dt>
     <dd>just a fancy name for a webservice without UI that connects to the blockchain in some way</dd>
-    <dt><a href="/dev/smart-contracts">Smart Contract</a></dt>
+    <dt><a href="/docs/02_how_it_works/smart-contracts.html">Smart Contract</a></dt>
     <dd>a program that runs cryptographically secure on the Ethereum virtual machine</dd>
     <dt><a href="https://solidity.readthedocs.io/en/v0.4.23/">Solidity</a><sup>[+]</sup></dt>
     <dd>A high level language to write Ethereum programs, often called Smart Contracts</dd>

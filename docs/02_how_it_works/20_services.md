@@ -10,7 +10,7 @@ permalink: /docs/02_how_it_works/services.html
 evan.network services offer users and developers features to work with the blockchain, Smart Contracts and ÐAPPs in a familiar and accessible way.
 
 To learn more about these services you should read the following guides:
-  * [ENS](/dev/ens) - evan.network names services
+  * [ENS](/docs/04_developers/ens.html) - evan.network names services
   * [ENS2DNS](/dev/ens2dns) - service to map ENS names to DNS names
   * [Identity Claim](/dev/identity-claims) - service to create trust claims at blockchain accounts
 
@@ -30,7 +30,7 @@ You can register custom ENS domainnames for your company or application and can 
 
 This gives you the possibility to reach every ENS name through a normal [DNS](https://en.wikipedia.org/wiki/Domain_Name_System)<sup>[+]</sup> resolution e.g. from the browser.
 
-If you have registered an ENS name, e.g. `4711.digitaltwin.mydomain.evan`, and you have provided a [DBCP](/dev/dbcp) spec with a working ÐAPP, then you can access this ÐAPP in the browser via `https://4711.digitaltwin.mydomain.evan`
+If you have registered an ENS name, e.g. `4711.digitaltwin.mydomain.evan`, and you have provided a [DBCP](/docs/04_developers/dbcp.html) spec with a working ÐAPP, then you can access this ÐAPP in the browser via `https://4711.digitaltwin.mydomain.evan`
 
 The ENS2DNS service is in testing currently.
 

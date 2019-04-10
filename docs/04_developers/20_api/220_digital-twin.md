@@ -14,7 +14,7 @@ A Digital Twin therefore is a unique representation of a real world object in th
 It can hold attributes and any other data about the real world object, and implement operations and tasks concerning
 the real world object, all cryptographically secured on the blockchain.
 
-Digital twins are implemented as DataContracts (see DataContract in [Smart Contracts](/dev/smart-contracts#smart-contract-types)) and share their features like different field types and field security.
+Digital twins are implemented as DataContracts (see DataContract in [Smart Contracts](/docs/02_how_it_works/smart-contracts.html#smart-contract-types)) and share their features like different field types and field security.
 
 The field security allows to use different sharing scopes and keys for its field:
 

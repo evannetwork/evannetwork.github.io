@@ -43,7 +43,7 @@ Contracts are just bytecode blobs with no real meta-information attached to them
 a defined protocol, things can get really messy really fast when people don't know what
 methods are in a contract and what parameters they need.
 
-In evan.network, the encouraged way to take care of this is [DBCP](/dev/dbcp).
+In evan.network, the encouraged way to take care of this is [DBCP](/docs/04_developers/dbcp.html).
 But this is not always available and a little too complex for a quick tutorial.
 So we just deployed our `Hello World` contract via 'truffle', and to use those contracts
 in an evan.network application, we need to import the API of the contract separately.

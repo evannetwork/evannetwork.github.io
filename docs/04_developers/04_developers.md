@@ -20,7 +20,7 @@ tiles:
   - title: UI
     description: UI
     icon: window-maximize
-    link: /docs/04_developers/developers.html
+    link: /docs/04_developers/writing-dapps.html
 
   - title: HOWTOS
     description: HOWTOS

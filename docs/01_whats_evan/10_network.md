@@ -11,12 +11,12 @@ permalink: /docs/01_whats_evan/network.html
 
 The evan.network is open source and has a strong focus on collaborating with development communities.
 
-The network is absolutely agnostic towards all participants, with no central authority in place. Instead, active organizations each host an [AuthorityNode](/doc/authoritynode) and participate in the [democratic and transparent governance model](/doc/governance) on the platform. This approach to governance also aligns with contemporary GDPR solutions, as in that all data processors have to be known.
+The network is absolutely agnostic towards all participants, with no central authority in place. Instead, active organizations each host an [AuthorityNode](/docs/02_how_it_works/authoritynode.html) and participate in the [democratic and transparent governance model](/doc/governance) on the platform. This approach to governance also aligns with contemporary GDPR solutions, as in that all data processors have to be known.
 
 Enterprise features are provided as [built-in platform features](/doc/corefeatures). Equipped with a powerful Identity and Permissioning solution, critical business needs are addressed.
 To ease your journey into blockchain based development, [Smart Contract templates](/dev/deployment) exist to provide you an entry point. The contracts are ready to use.
 
-Applications on Evan are running in a [decentralized and highly available fashion](/dapps/basics). Hosted by default on the network and providing high performance, users don't have to take care of backup solutions, such as a Failover server instance.
+Applications on Evan are running in a [decentralized and highly available fashion](/docs/04_developers/basics.html). Hosted by default on the network and providing high performance, users don't have to take care of backup solutions, such as a Failover server instance.
 
 With evan.network, organizations can take advantage of decentralized collaboration without having to understand the complexity of blockchain technology. The evan.network is the breakthrough for the adaptation of decentralized blockchain solutions in everyday business processes.
 

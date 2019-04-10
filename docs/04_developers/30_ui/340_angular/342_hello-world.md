@@ -40,7 +40,7 @@ npm run serve
 ```
 
 ### 2.3 Open the ƉApp
-When you are opening `http://localhost:3000` for the first time, you will be navigated to the [onboarding page](/tutorial/create-identity). After having imported or created an identity and logged in, you will find yourself on the favorites page.
+When you are opening `http://localhost:3000` for the first time, you will be navigated to the [onboarding page](/docs/03_first_steps/create-identity.html). After having imported or created an identity and logged in, you will find yourself on the favorites page.
 
 `http://localhost:3000/#/dashboard.evan/favorites.evan`
 

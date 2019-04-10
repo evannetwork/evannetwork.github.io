@@ -83,7 +83,7 @@ permalink: /docs/04_developers/20_api/blockchain-core.html
 
     </a>
 
-    <a xlink:href="/dev/web3" transform="translate(220,30)">
+    <a xlink:href="https://github.com/ethereum/web3.js" transform="translate(220,30)">
       <rect class="module" width="160" height="80" rx="3"/>
       <text class="big" x="60" y="45">web3</text>
       <title>Blockchain Interactions</title>

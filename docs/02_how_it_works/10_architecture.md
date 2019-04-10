@@ -11,7 +11,7 @@ Core API, Core Services and the Core Network.
 
 **Core API** consists of the [Blockchain Core](https://evannetwork.github.io/dev/blockchain-core) protocol, the [Key Exchange](https://evannetwork.github.io/dev/security#key-exchange) and the [DBCP protocol](https://evannetwork.github.io/dev/dbcp).
 
-**Core Services** contains user management services, [factories](https://evannetwork.github.io/dev/smart-contracts#contract-factories) for the creation of i.a. digital twins, templates and infrastructure components on the network.
+**Core Services** contains user management services, [factories](https://evannetwork.github.io/docs/02_how_it_works/smart-contracts.html#contract-factories) for the creation of i.a. digital twins, templates and infrastructure components on the network.
 
 **Core Network** hosts the built-in [distributed storage service](https://evannetwork.github.io/dev/ipfs), the underlying Blockchain layer and AuthorityNodes.
 
@@ -817,7 +817,7 @@ To map different business relationships, evan.network offers different Smart Con
 This is greatly simplified by the use of a Smart Contract factory. The factory manages all Business Center-specific Smart Contract templates, creates a configured instance of the Smart Contract and initializes this with the network partners authorized to the contract. From this point on, a direct business relationship is established between the network partners involved, which is only visible and executable for them.
 
 
-Smart Contracts were developed with the goal of easy use and expansion. Each Smart Contract can be called directly from a Web3 browser using for example a name server entry. Initially, only the manifest file ([DBCP](/dev/dbcp)) is referenced and loaded. This file contains a standardized structure with descriptive information to make the service human and machine readable. It also contains references to the actual Smart Contract in the blockchain and the Distributed App (ÐApp), which enables direct user interaction with the service.
+Smart Contracts were developed with the goal of easy use and expansion. Each Smart Contract can be called directly from a Web3 browser using for example a name server entry. Initially, only the manifest file ([DBCP](/docs/04_developers/dbcp.html)) is referenced and loaded. This file contains a standardized structure with descriptive information to make the service human and machine readable. It also contains references to the actual Smart Contract in the blockchain and the Distributed App (ÐApp), which enables direct user interaction with the service.
 In order to ensure interoperability of services, the manifest file corresponds to a standardized structure that is currently provided as an open source component (DBCP) as part of a project sponsored by the Thuringian Ministry of Economics, Science and Digital Society. This makes it possible to start an interaction with the services even without the evan.network framework.
 
 This architecture enables the integration of any third-party Smart Contracts into an evan.network environment. Referenced via the manifest file existing Smart Contracts of other providers can be combined with evan.network-ÐApps and thus integrated into a homogeneous user experience.

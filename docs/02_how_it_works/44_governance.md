@@ -13,7 +13,7 @@ Therefore, it is important to establish an organizational structure through whic
 Such decisions include, for example, the implementation of a hardfork, the inclusion of new AuthorityNodes, the use of new technologies or new updates to existing components, or decisions to invest in the expansion of the network.
 
 ## The Implementation of the evan governance
-At the start of the evan.network productive network, it is planned to bind the [AuthorityNodes](/doc/authoritynode) to the network via a Authority Node Operations Aggreement (ANOA).
+At the start of the evan.network productive network, it is planned to bind the [AuthorityNodes](/docs/02_how_it_works/authoritynode.html) to the network via a Authority Node Operations Aggreement (ANOA).
 
 The ANOA defines the Service Level Agreements (SLA) that a AuthorityNode must comply with in order to count as an active AuthorityNode and thereby to be allowed to exercise its voting rights in the evan governance.
 

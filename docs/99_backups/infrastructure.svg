@@ -70,7 +70,7 @@
     <rect class="bw dotted" width="410" height="240" transform="translate(10,10)"/>
     <rect class="bw dotted" width="410" height="240"/>
     <rect class="bw dotted" width="410" height="240"/>
-    <a xlink:href="/doc/authoritynode">
+    <a xlink:href="/docs/02_how_it_works/authoritynode.html">
       <text class="grey" x="160" y="20">AuthorityNode</text>
       <title>evan.network AuthorityNode</title>
     </a>
