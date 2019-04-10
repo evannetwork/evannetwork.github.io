@@ -8,34 +8,32 @@ has_children: true
 hide_content: true
 tiles:
   - title: Onboarding
-    description: Onboarding
-    icon: cat
+    description: getting started with evan.network
+    icon: snowboarding
     link: /docs/03_first_steps/quick-start.html
 
   - title: Dashboard
-    description: Dashboard
-    # description: einstiegsseite, favorites, dappstore (Prosa)
-    icon: crow
+    description: evan.network landing page
+    icon: tachometer-alt
     link: /docs/03_first_steps/dashboard.html
 
   - title: Profile
-    description: Profile
-    # description: profile, eve kaufen, storage payments, contacts
-    icon: dog
+    description: view and manage your personal settings
+    icon: id-card
     link: /docs/03_first_steps/contacts.html
 
   - title: Mailbox
-    description: Mailbox
-    icon: dove
+    description: communicate with business business partners
+    icon: inbox
     link: /docs/03_first_steps/mailbox.html
 
   - title: Verification
-    description: Verification
-    icon: feather
+    description: check and issue trusts for accounts
+    icon: certificate
     link: /docs/03_first_steps/verification.html
 
   - title: Example Dapp - Taskboard
-    description: Example Dapp - Taskboard
-    icon: dragon
+    description: evan.network example Dapp
+    icon: tasks
     link: /docs/03_first_steps/taskboard.html
 ---

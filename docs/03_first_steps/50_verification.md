@@ -11,8 +11,8 @@ The general Verification DApp allows you, to check the validity of verification 
 
 Insert a claim path and an user for that you want to check the claim. If the claim isn't issued yet, you can issue the claim to the selected account.
 
-[![onboarding start screen](/public/tutorial/verification.png){:width="50%"}](/public/tutorial/verification.png)
+[![onboarding start screen](./img/verification.png){:width="50%"}](./img/verification.png)
 
 If you have purchased the root domain of a specific verficiation domain, you will be able to set the title and the preview image of verifications with a specific type. Simply use the edit button in the top right corner of the verification detail.
 
-[![onboarding start screen](/public/tutorial/verification-edit.png){:width="50%"}](/public/tutorial/verification-edit.png)
+[![onboarding start screen](./img/verification-edit.png){:width="50%"}](./img/verification-edit.png)

@@ -11,7 +11,7 @@ The evan.network provides a large area of functionalities. To get an initial ove
 different basic components and possibilities, an application to create tasks and assign them to
 other people, is perfect.
 
-[![Taskboard](/public/tutorial/taskboard_example.png){:width="50%"}](/public/tutorial/taskboard_example.png)
+[![Taskboard](./img/taskboard_example.png){:width="50%"}](./img/taskboard_example.png)
 
 The following instructions will guide you through the basic applications of the evan.network and
 explain them in detail, so you can use the evan.network taskboard DApp easily. After you have gone
@@ -24,16 +24,17 @@ through the different points you are qualified
 The first thing you need is, of course, a user account. So let's start on
 [https://dashboard.evan.network](https://dashboard.evan.network).
 
-## [Create an Identity](/tutorial/create-identity)
+
+## [Create an Identity](/docs/03_first_steps/create-identity.html)
 
 Here we have the first big difference to any classical multi-user system: there is no central place
-where user credentials are stored. A account is just a private key, and each user has full control
+where user credentials are stored. An account is just a private key, and each user has full control
 over where it is stored. It usually never leaves the computer you are sitting in front of. As does
 the password, it's never transmitted over the network. If you do want to use your account from a
 different machine, you have to explicitely ex- and import it.
 
-So, while your credentials are private, local and under your full control, the profile data
-associated with it are global, equally accessible from anywhere, stored on potentially every machine
+So, while your credentials are private, local and under your control, the profile data
+associated with it is global, equally accessible from anywhere, stored on potentially every machine
 participating in the evan.network and impossible to delete as long as there is at least one client
 left.
 
@@ -42,12 +43,13 @@ can only do everything with it in case you have the credentials. The access happ
 strictly defined interface. If you don't want anyone else to read your data, you store it encrypted.
 If you want to freely share it, you store it plain. Either way, only yourself and the people you
 have authorized to do so can implement changes. No one holds and controls the data exclusively, no
-one can read it, unless you allow him to.
+one can read it, unless you allow someone to.
 
 For detailed instructions, including pictures of the various steps to create a new identity, open
-the "[Create an Identity](/tutorial/create-identity)" chapter.
+the "[Create an Identity](/docs/03_first_steps/create-identity.html)" chapter.
 
-## [Let's have a Look at your Profile and Data](/tutorial/dashboard)
+
+## [Let's have a Look at your Profile and Data](/docs/03_first_steps/dashboard.html)
 
 You are logged in already, aren't you?
 
@@ -60,26 +62,29 @@ expire when you stop paying your fees. Those are stored in the blockchain. Avail
 as long as the network exists.
 
 For detailed instructions, including pictures of the various steps to add favorites to your
-evan.network dashboard, open the [Dashboard](/tutorial/dashboard)" chapter.
+evan.network dashboard, open the [Dashboard](/docs/03_first_steps/dashboard.html) chapter.
 
-## [Finally the Taskboard](/tutorial/taskboard)
 
-After the taskboard was added, you will be able to [create tasks](/tutorial/taskboard) within the taskboard. While working with tasks you will come accross the requirement of coordinating with others.
+## [Finally the Taskboard](/docs/03_first_steps/taskboard.html)
 
-## [Who do I work with? The Contacts](/tutorial/contacts)
+After the taskboard was added, you will be able to [create tasks](/docs/03_first_steps/taskboard) within the taskboard. While working with tasks you will come accross the requirement of coordinating with others.
 
-You can add anyone in evan.network to [your contacts](/tutorial/contacts). And you can invite anyone
+
+## [Who do I work with? The Contacts](/docs/03_first_steps/contacts.html)
+
+You can add anyone in evan.network to [your contacts](/docs/03_first_steps/contacts.html). And you can invite anyone
 with an e-mail address into evan.network to become your contact. They all have or will get a profile
 Smart Contract, just like you.
 
-## [Are my concats good business partners?](/tutorial/claims)
 
-Using the [claim and identity management](/tutorial/claims), you can check, if an contact have special claims (or "certificates") that are provided by trusted business partners.
+## [Are my contacts good business partners?](/docs/03_first_steps/verifications.html)
+
+Using the [verification and identity management](/docs/03_first_steps/verifications.html), you can check, if a contact has special verifications (or "certificates") that are provided by trusted business partners.
 
 
-## [Talking to Each Other: The Mailbox](/tutorial/mailbox)
+## [Talking to Each Other: The Mailbox](/docs/03_first_steps/mailbox.html)
 
-We call the messages sent and stored in [evan.network Bmails](/tutorial/mailbox), equivalent to
+We call the messages sent and stored in [evan.network Bmails](/docs/03_first_steps/mail.html), equivalent to
 E-mails. And the communication style is similar to E-mails, because it doesn't really lend itself to
 instant messaging and chatting due to the blockchain transaction delays.
 
