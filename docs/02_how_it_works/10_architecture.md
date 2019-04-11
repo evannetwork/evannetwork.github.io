@@ -9,25 +9,25 @@ permalink: /docs/02_how_it_works/architecture.html
 Infrastructure on evan.network can be seperated into three categories:
 Core API, Core Services and the Core Network.
 
-**Core API** consists of the [Blockchain Core](https://evannetwork.github.io/dev/blockchain-core) protocol, the [Key Exchange](https://evannetwork.github.io/dev/security#key-exchange) and the [DBCP protocol](https://evannetwork.github.io/dev/dbcp).
+**Core API** consists of the [Blockchain Core](/docs/04_developers/20_api/blockchain-core.html) protocol, the [Key Exchange](/docs/04_developers/permissioning.html#key-exchange) and the [DBCP protocol](/docs/04_developers/dbcp.html).
 
-**Core Services** contains user management services, [factories](https://evannetwork.github.io/docs/02_how_it_works/smart-contracts.html#contract-factories) for the creation of i.a. digital twins, templates and infrastructure components on the network.
+**Core Services** contains user management services, [factories](/docs/02_how_it_works/smart-contracts.html#contract-factories) for the creation of i.a. digital twins, templates and infrastructure components on the network.
 
-**Core Network** hosts the built-in [distributed storage service](https://evannetwork.github.io/dev/ipfs), the underlying Blockchain layer and AuthorityNodes.
+**Core Network** hosts the built-in [distributed storage service](/docs/04_developers/ipfs.html), the underlying Blockchain layer and AuthorityNodes.
 
 Component details
 ---
 
-[Organizations, physical assets and machines receive a digital identity (Digital Twin)](/dev/digital-twin) on the evan.network blockchain.
+[Organizations, physical assets and machines receive a digital identity (Digital Twin)](/docs/04_developers/20_api/digital-twin.html) on the evan.network blockchain.
 Digital twins can be addressed through transactions by any identity, human or otherwise, and integrated in complex business logic.
 
 
-[In a Business Center](/doc/business), users can execute transactions and exchange data with each other, with other organizations or with the Digital Twins of real machines. Hence, the evan.network provides the basis for company-wide, efficient and secure Industry 4.0 business models.
+[In a Business Center](/docs/02_how_it_works/business.html), users can execute transactions and exchange data with each other, with other organizations or with the Digital Twins of real machines. Hence, the evan.network provides the basis for company-wide, efficient and secure Industry 4.0 business models.
 
 For the interaction between users, processes and machines, evan.network offers predefined services (Smart Contracts), which can be adapted to specific needs.
 
 The interaction with Smart Contracts takes place via ÐApps in web or mobile browsers or via API from existing IT systems, IT tools and/ or machines.
-For this purpose, [Smart Agents communicate with the Smart Contracts](/dev/smart-agents). The Smart Contracts represent the professional framework of the respective service and are developed according to the specific needs.
+For this purpose, [Smart Agents communicate with the Smart Contracts](/docs/02_how_it_works/smart-agents.html). The Smart Contracts represent the professional framework of the respective service and are developed according to the specific needs.
 
 For example, a Smart Contract that represents a Digital Twin can include the entire life cycle of the asset and its business processes.
 In concrete terms, this means that the Smart Contract itself provides a kind of management console for the various data types and manages access to the data via an encryption management and a rights-and-role model.
@@ -168,7 +168,7 @@ The complete control of who may insert or read data is controlled by the owner o
        d="M 240 125 l -10 10"
        id="path4315" />
     <image
-       xlink:href="/public/person.png"
+       xlink:href="./img/person.png"
        height="50"
        width="50"
        y="50"
@@ -638,7 +638,7 @@ The complete control of who may insert or read data is controlled by the owner o
       <title
          id="title4484">Smart Agents</title>
       <a
-         xlink:href="/dev/smart-agents"
+         xlink:href="/docs/02_how_it_works/smart-agents.html"
          id="a4512">
         <rect
            class="bw dotted"
@@ -735,7 +735,7 @@ The complete control of who may insert or read data is controlled by the owner o
     </g>
   </g>
   <image
-     xlink:href="/public/machine.png"
+     xlink:href="./img/machine.png"
      height="50"
      width="50"
      y="550"
@@ -868,7 +868,7 @@ Every interaction with Business Centers and Smart Contracts takes place via ÐAp
 
 To communicate with Smart Contracts from your own applications and ÐApps, evan.network provides APIs in form of a JavaScript library and developer documentation. Thus, own applications can be implemented and operated on evan.network.
 
-For an automation of the business relations, evan.network offers APIs to all Smart Contracts. Hence, the evan.network can be connected to own systems and a direct integration of business processes can be carried out. Furthermore, it is possible to add logic and workflow addons in the evan.network with the help of [Smart Agents](/dev/smart-agents). They are operated by the respective Smart Agent provider and can enable workflow-supported communication of the evan.network with existing IT systems and machines. Smart Agents can be invited into a Smart Contract, just like users, and thus receive access to its contents. The Smart Agent constantly checks the contract for changes and can automatically initiate new processes according to predefined rules as soon as it finds one.
+For an automation of the business relations, evan.network offers APIs to all Smart Contracts. Hence, the evan.network can be connected to own systems and a direct integration of business processes can be carried out. Furthermore, it is possible to add logic and workflow addons in the evan.network with the help of [Smart Agents](/docs/02_how_it_works/smart-agents.html). They are operated by the respective Smart Agent provider and can enable workflow-supported communication of the evan.network with existing IT systems and machines. Smart Agents can be invited into a Smart Contract, just like users, and thus receive access to its contents. The Smart Agent constantly checks the contract for changes and can automatically initiate new processes according to predefined rules as soon as it finds one.
 If the user has the rights, he or she can also add content to the Smart Contract. Via Smart Agents, the invitation via email or the mobile push notifications are solved in the evan.network. They combine the "blockchain world" with other technologies.
 
 ## Scalability

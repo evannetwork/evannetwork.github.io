@@ -13,7 +13,7 @@ links between the components and libraries.
 
 Please choose one of the following Angular 5 evan.network tutorials.
 
-- [Basics: Hello World](/dapps/angular/hello-world)
-- [Task DApp setup](/dapps/angular/task)
-- [Task DApp Data-Contract](/dapps/angular/task-data-contract)
-- [Task Task Custom Contract](/dapps/angular/task-custom-contract)
+- [Basics: Hello World](/docs/04_developers/angular-hello-world.html)
+- [Task DApp setup](/docs/04_developers/angular-task.html)
+- [Task DApp Data-Contract](/docs/04_developers/angular-task-data-contract.html)
+- [Task Task Custom Contract](/docs/04_developers/angular-task-custom-contract.html)

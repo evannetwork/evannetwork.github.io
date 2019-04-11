@@ -16,9 +16,9 @@ The benefit of DLT is that every participant can proof transactions, which repre
 
 At evan.network, we have built an integrated data security and privacy layer. Every identity at evan has an on-chain key store to encrypt and decrypt transactions on identity and smart contract level. So transactions that are processed in the chain at the nodes are fully encrypted and can only be decrypted from invited participants. The whole key management and key exchange is on-chain, so a manual key exchange is not needed anymore to communicate with business partners.
 
-[![profile keys and encryption](/public/profile_keys.png){:class="center"}](/public/profile_keys.png)
+[![profile keys and encryption](./img/profile_keys.png){:class="center"}](./img/profile_keys.png)
 
-Personal data is encrypted with a key only known to the author of this piece of information. The encrypted data is then stored in a [distributed file system](/dev/ipfs) and the author can decide to delete it at any time. Only a reference to the data in the encrypted file system is stored in the blockchain and neither transactions nor the smart contracts themselves contain personal data. This could be done via a custom solution, but such and approach is not part of the provided API and of course it is not advised to do so for obvious reasons.
+Personal data is encrypted with a key only known to the author of this piece of information. The encrypted data is then stored in a [distributed file system](/docs/04_developers/ipfs.html) and the author can decide to delete it at any time. Only a reference to the data in the encrypted file system is stored in the blockchain and neither transactions nor the smart contracts themselves contain personal data. This could be done via a custom solution, but such and approach is not part of the provided API and of course it is not advised to do so for obvious reasons.
 
 All accounts have a profile in which they store keys they use for communicating and sharing keys for encrypted data with other accounts. This profile itself is encrypted with a key the user holds off-chain and only known to the user. Keys for data in smart contracts are stored at the smart contract and encrypted per party the keys are shared with.
 
@@ -50,7 +50,7 @@ This approach is adapted and used on evan.network in this way:
 
 The following illustration shows the entire key exchange process:
 
-[![key exchange flow](/public/key_exchange.png){:class="center"}](/public/key_exchange.png)
+[![key exchange flow](./img/key_exchange.png){:class="center"}](./img/key_exchange.png)
 
 
 ## What can be deduced from the transactions

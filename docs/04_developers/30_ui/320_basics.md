@@ -18,7 +18,7 @@ In lieu of the standard Client-Server structure, DApps serve clients from the bl
 
 * The increase of data volume that comes with millions of new IoT devices, amongst others, is an aspect that can be handled significantly more efficient and cost effective with blockchain based distributed storage. Data is stored encrypted by default. 
 
-DApps on evan.network can be reached with a standard web browser through a [user friendly address](https://evannetwork.github.io/doc/namespaces) such as 'nodeone.evan'. Decentralized Applications succeed in providing a much more trustworthy experience than traditional applications would have been able to.
+DApps on evan.network can be reached with a standard web browser through a [user friendly address](/docs/02_how_it_works/namespaces.html) such as 'nodeone.evan'. Decentralized Applications succeed in providing a much more trustworthy experience than traditional applications would have been able to.
 
 # ÐApp Basics
 Each evan.network application consists of different parts and components with the purpose of creating
@@ -33,12 +33,12 @@ This makes it possible to write efficient, reusable and decentralized applicatio
 # Packaged ÐApps VS. Standalone ÐApps
 By using the evan.network framework to create packaged ÐApps, the initialization of DBCP or the blockchain-core is completely replaced and existing, already initialized and configured instances can be loaded. This has the advantage that accounts, encryptions and similar complex configurations are executed dynamically by the user when the application is started.
 
-To do this, however, all ÐApps must be started via the evan.network ÐApp-browser application, since this provides the complete function stack and the various UIs. **As long as the provided functions are used, the application can only be started in environments that have the corresponding structures.** Alternatively, the blockchain-core can be initialized, configured and used as in the [standalone example](/dapps/standalone/standalone).
+To do this, however, all ÐApps must be started via the evan.network ÐApp-browser application, since this provides the complete function stack and the various UIs. **As long as the provided functions are used, the application can only be started in environments that have the corresponding structures.** Alternatively, the blockchain-core can be initialized, configured and used as in the [standalone example](/docs/04_developers/standalone.html).
 
 # Packaged ÐApp loading
 The evan.network ÐApp-browser is the entry point for packaged ÐApps. It will handle dynamic URL routing, so ÐApp ENS addresses or contract addresses using an underlying DBCP description. If the URL changes, the ÐApp-browser will check for the new ÐApp that should be loaded.
 
-[![Finished](/public/dapps/dapp-browser.png){:width="50%"}](/public/dapps/dapp-browser.png)
+[![Finished](./30_ui/img/dapp-browser.png){:width="50%"}](./30_ui/img/dapp-browser.png)
 
 # Prerequisits
 Before start developing, be sure to set up the following programs on your system:
@@ -50,6 +50,6 @@ Before start developing, be sure to set up the following programs on your system
 # ÐApp structure
 Each ÐApp looks like this on the top level.
 
-[![ÐApps-tutorial - directory](/public/dapps/hello-world/dapps-tutorial-dir-structure.png){:width="150px"}](/public/dapps/hello-world/dapps-tutorial-dir-structure.png)
+[![ÐApps-tutorial - directory](./30_ui/img/dapps-tutorial-dir-structure.png){:width="150px"}](./30_ui/img/dapps-tutorial-dir-structure.png)
 
 In order to be able to work in ordered and staked projects, it is necessary to split the project into several sub-projects (e.g. `dashboard-ÐApp`, `list-ÐApp`, `contract1-ÐApp`, `contract2-ÐApp`) after a short time. To anticipate this problem and differentiate building jobs, each project uses a [Lerna](https://github.com/lerna/lerna) project structure to handle multiple repositories as easily as possible. The Lerna project only includes the basic requirements and building jobs for the sub-projects. In case of large projects that use Angular or similar tools, building jobs are definied within seperated projects like the [evan.network Angular-Gulp project](https://github.com/evannetwork/angular-gulp).

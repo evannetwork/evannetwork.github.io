@@ -1,7 +1,7 @@
 title: "HowTos"
 
 
-If you just want to do quick tests, it is best to just use the [blockchain core console](/dev/bccc). You will also find a small example of how to compile and deploy contracts to evan.network there.
+If you just want to do quick tests, it is best to just use the [evan.prompt](/docs/04_developers/evan.prompt.html). You will also find a small example of how to compile and deploy contracts to evan.network there.
 
 
 # Load and Connect to a Contract Instance

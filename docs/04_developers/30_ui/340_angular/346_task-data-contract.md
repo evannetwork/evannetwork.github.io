@@ -6,18 +6,18 @@ permalink: /docs/04_developers/angular-task-data-contract.html
 ---
 
 # Angular - Task ƉApp Data-Contract
-**Before performing this example, please go through the [Task ƉApp setup](/dapps/angular/task) tutorial, as this tutorial is based on this example.**
+**Before performing this example, please go through the [Task ƉApp setup](/docs/04_developers/angular-task.html) tutorial, as this tutorial is based on this example.**
 
 In this section you will create contracts, read from them and handle several data interactions with the contracts by using the evan.network DataContract and the blockchain-core. So each data that is currently cached within the local storage will be moved into a contract. All needed I18N values and keys are predefined within the I18N folder and not noticed during the example.
 
-For how to write the task ƉApp using your own contract implementation, have a look at this: [Angular - Task ƉApp Custom Contract](/dapps/angular/task-custom).
+For how to write the task ƉApp using your own contract implementation, have a look at this: [Angular - Task ƉApp Custom Contract](/docs/04_developers/angular-task.html-custom).
 
 If you don't want to code by yourself, you can simply read the docs and copy the final resulting src folder from [dapps/task-data-contract/src](https://github.com/evannetwork/dapps-tutorial-angular/tree/master/dapps/task-data-contract) to the [dapps/task/src](https://github.com/evannetwork/dapps-tutorial-angular/tree/master/dapps/task) folder.
 
 # 1. Contract Implementation
 Before your start your implementation, it is important to decide what functionalities you will need. You need to think about data parameters, user roles including security restrictions and so on...
 
-For this example, we need a contract that handles some contract metadata and a list of todos. This is the perfect case for the [evan.network DataContract](https://evannetwork.github.io/dev/data-contract) / [DataContract wiki](https://github.com/evannetwork/api-blockchain-core/blob/feature/readthedocs-test/docs/data-contract.rst).
+For this example, we need a contract that handles some contract metadata and a list of todos. This is the perfect case for the [evan.network DataContract](/docs/04_developers/data-contract.html) / [DataContract wiki](https://github.com/evannetwork/api-blockchain-core/blob/feature/readthedocs-test/docs/data-contract.rst).
 
 When you use a self-implemented contract, it is important to add the contract implementation ABI to our `dbcp.json` definition file. In this case, we can simply use the blockchain-core DataContract wrapper implementation to handle our contract calls. For documentation reasons, you should still put the ABI definition of the DataContract into the DBCP definition. So other people that read the DBCP definition of the created contract automaticaly receive your contract definition and functions. So you can program the contract from anywhere, also outside of your application.
 
@@ -845,4 +845,4 @@ The HTML file hasn't changed significantly. Some change and delete functions wer
 # 5. Finished
 Now you can enjoy your task application.
 
-[![Finished](/public/dapps/angular/task/todo_finished.png){:width="100%"}](/public/dapps/angular/task/todo_finished.png)
+[![Finished](./30_ui/340_angular/img/todo_finished.png){:width="100%"}](./30_ui/340_angular/img/todo_finished.png)

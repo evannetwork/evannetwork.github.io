@@ -62,7 +62,7 @@ title: "evan.network Technical Overview"
       <text x="160" y="20">AuthorityNode</text>
     </a>
     <text class="grey small" x="70" y="230">every DAO member runs a AuthorityNode</text>
-    <a xlink:href="/dev/blockchain" transform="translate(20,30)">
+    <a xlink:href="/docs/04_developers/blockchain.html" transform="translate(20,30)">
       <rect class="server" width="160" height="80" rx="3"/>
       <text class="big" x="50" y="38">
         <tspan>Signing</tspan>
@@ -70,7 +70,7 @@ title: "evan.network Technical Overview"
       </text>
       <title>AuthorityNode Ethereum Client</title>
     </a>
-    <a xlink:href="/dev/blockchain" transform="translate(220,130)">
+    <a xlink:href="/docs/04_developers/blockchain.html" transform="translate(220,130)">
       <rect class="server" width="160" height="80" rx="3"/>
       <text class="big" x="52" y="38">
         <tspan x="35">Transaction</tspan>
@@ -78,12 +78,12 @@ title: "evan.network Technical Overview"
       </text>
       <title>AuthorityNode Ethereum Client</title>
     </a>
-    <a xlink:href="/dev/ipfs" transform="translate(20,130)">
+    <a xlink:href="/docs/04_developers/ipfs.html" transform="translate(20,130)">
       <rect class="server" width="160" height="80" rx="3"/>
       <text class="big" x="62" y="45">IPFS</text>
       <title>Redundant Interplanetary File System AuthorityNode</title>
     </a>
-    <a xlink:href="/dev/ipfs" transform="translate(220,30)">
+    <a xlink:href="/docs/04_developers/ipfs.html" transform="translate(220,30)">
       <rect class="server" width="160" height="80" rx="3"/>
       <text class="big" x="62" y="45">IPFS</text>
       <title>Redundant Interplanetary File System AuthorityNode</title>
@@ -95,17 +95,17 @@ title: "evan.network Technical Overview"
   <g transform="translate(0,360)">
     <rect class="bw dotted" width="410" height="240"/>
       <title>evan.network Distributed Application</title>
-    <a  xlink:href="/dapps/introduction">
+    <a  xlink:href="/docs/04_developers/writing-dapps.html">
       <text x="140" y="20">Ðapp (in Browser)</text>
     </a>
 
-    <a xlink:href="/dev/blockchain-core" transform="translate(20,30)">
+    <a xlink:href="/docs/04_developers/20_api/blockchain-core.html" transform="translate(20,30)">
       <rect class="library" width="360" height="80" rx="3"/>
       <text class="big white" x="115" y="45">Blockchain Core</text>
       <title>Blockchain Core Library</title>
     </a>
 
-    <a xlink:href="/dapps/angular/hello-world" transform="translate(20,130)">
+    <a xlink:href="/docs/04_developers/angular-hello-world.html" transform="translate(20,130)">
       <rect class="library" width="360" height="80" rx="3"/>
       <text class="big white" x="115" y="40">Web Framework</text>
       <text class="white" x="110" y="60">(angular, vue, jquery ...)</text>
@@ -116,18 +116,18 @@ title: "evan.network Technical Overview"
   <g transform="translate(540,80)">
     <rect class="bw dotted" width="410" height="240"/>
     <title>evan.network Web Service</title>
-    <a xlink:href="/dev/smart-agents">
+    <a xlink:href="/docs/02_how_it_works/smart-agents.html">
       <text x="160" y="20">Edge Server</text>
     </a>
     <text class="grey small" x="45" y="230">primarily used for services with special access rights</text>
 
-    <a xlink:href="/dev/blockchain-core" transform="translate(20,30)">
+    <a xlink:href="/docs/04_developers/20_api/blockchain-core.html" transform="translate(20,30)">
       <rect class="library" width="360" height="80" rx="3"/>
       <text class="big white" x="115" y="45">Blockchain Core</text>
       <title>Blockchain Core Library</title>
     </a>
 
-    <a xlink:href="/dev/smart-agents" transform="translate(20,130)">
+    <a xlink:href="/docs/02_how_it_works/smart-agents.html" transform="translate(20,130)">
       <rect class="library" width="360" height="80" rx="3"/>
       <text class="big white" x="127" y="45">Smart Agent</text>
       <title>an ActionHero</title>
@@ -137,7 +137,7 @@ title: "evan.network Technical Overview"
   <g transform="translate(540,360)">
     <rect class="bw dotted" width="410" height="240"/>
       <title>Any Normal Webservice</title>
-    <a xlink:href="/dev/smart-agents">
+    <a xlink:href="/docs/02_how_it_works/smart-agents.html">
       <text x="180" y="20">Services</text>
     </a>
 
@@ -210,11 +210,11 @@ The evan.network builds on existing technology like a programmable blockchain wi
 It combines those two technologies and provides the storage and computing power and bandwidth to run distributed
 applications with the [AuthorityNodes](/docs/02_how_it_works/authoritynode.html).
 
-All this infrastructure is exposed and made usable by fairly ordinary web-applications via the [Blockchain Core Library](/dev/blockchain-core).
+All this infrastructure is exposed and made usable by fairly ordinary web-applications via the [Blockchain Core Library](/docs/04_developers/20_api/blockchain-core.html).
 
 This means that all data in the blockchain and all data in the IPFS are completely open to everyone to read,
 unless encrypted, and the entire application code would run in the browser and is fully readable and modifiable. Accordingly, there exists a need for a third class of code, which isn't as cryptographically secured as blockchain code, but also not as
-exposed as Javascript in your browser. This could be something with exclusive access rights to certain contracts in the blockchain and other limited resources. For this reason, [Smart Agents](/dev/smart-agents) exist.
+exposed as Javascript in your browser. This could be something with exclusive access rights to certain contracts in the blockchain and other limited resources. For this reason, [Smart Agents](/docs/02_how_it_works/smart-agents.html) exist.
 They are just small webservices, that run on controlled servers providing controlled access to resources and contracts that others might need access too, but can't be given full rights.
 
 <svg id="blockchain-core" version="1.1" width="100%" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -282,7 +282,7 @@ They are just small webservices, that run on controlled servers providing contro
     </a>
     <text class="grey small" x="76" y="230"></text>
 
-    <a xlink:href="/dev/dbcp" transform="translate(20,30)">
+    <a xlink:href="/docs/04_developers/dbcp.html" transform="translate(20,30)">
       <rect class="module" width="160" height="80" rx="3"/>
       <text class="big" x="60" y="45">DBCP</text>
       <title>Distributed Blockchain Contract Protocol</title>
@@ -315,7 +315,7 @@ They are just small webservices, that run on controlled servers providing contro
       </text>
     </a>
 
-    <a xlink:href="/dev/IPFS" transform="translate(420,30)">
+    <a xlink:href="/docs/04_developers/ipfs.html" transform="translate(420,30)">
       <rect class="module" width="160" height="80" rx="3"/>
       <text class="big" x="68" y="45">dfs</text>
       <title>Distributed File System (IPFS)</title>

@@ -64,7 +64,7 @@
   <g transform="translate(-20, -40)">
     <g id="edge-server" transform="translate(20, 50)">
       <title>Smart Agents</title>
-      <a xlink:href="/dev/smart-agents">
+      <a xlink:href="/docs/02_how_it_works/smart-agents.html">
         <rect class="bw dotted" x="30" width="160" height="140" />
         <text x="70" y="15">Edge Server</text>
         <g transform="translate(0,10)">
@@ -84,7 +84,7 @@
     </g>
     <g id="core-dapps" transform="translate(200, 50)">
       <title>ÐApps</title>
-      <a xlink:href="/dapps/introduction">
+      <a xlink:href="/docs/04_developers/writing-dapps.html">
         <rect class="bw dotted" x="30" width="160" height="140" />
         <text x="70" y="15">Core ÐApps</text>
         <g transform="translate(0,10)">
@@ -106,7 +106,7 @@
 
     <g id="applications" transform="translate(380, 50)">
       <title>Get Started with Programming</title>
-      <a xlink:href="/dev/getting-started">
+      <a xlink:href="/docs/04_developers.html">
         <rect class="bw dotted" x="30" width="160" height="140" />
         <text x="70" y="15">Applications</text>
         <g transform="translate(70,45)">
@@ -131,19 +131,19 @@
     <text class="big grey" transform="rotate(90)" x="20">Core API</text>
     <use xlink:href="#triangle" x="180" y="-15" />
     
-    <a xlink:href="/dev/security#key-exchange" transform="translate(20,20)">
+    <a xlink:href="/docs/04_developers/permissioning.html#key-exchange" transform="translate(20,20)">
       <rect class="library" width="160" height="80" rx="2"/>
       <text class="white" x="40" y="42">Key Exchange</text>
       <title>Establishes Account Communication Channels</title>
     </a>
 
-    <a xlink:href="/dev/blockchain-core" transform="translate(200,20)">
+    <a xlink:href="/docs/04_developers/20_api/blockchain-core.html" transform="translate(200,20)">
       <rect class="library" width="160" height="80" rx="2"/>
       <text class="white" x="32" y="42">Blockchain Core</text>
       <title>ECMAScript Library to work with Ethereum Contracts and IPFS</title>
     </a>
 
-    <a xlink:href="/dev/dbcp" transform="translate(380,20)">
+    <a xlink:href="/docs/04_developers/dbcp.html" transform="translate(380,20)">
       <rect class="library" width="160" height="80" rx="2"/>
       <text class="white" x="64" y="42">DBCP</text>
       <title>A Description Language for Decentralized Business Applications</title>
@@ -289,14 +289,14 @@
         <text x="210" y="60">AuthorityNode</text>
       </a>
 
-      <a xlink:href="/dev/blockchain" transform="translate(60,70)">
+      <a xlink:href="/docs/04_developers/blockchain.html" transform="translate(60,70)">
         <rect class="server" width="175" height="80" rx="3"/>
         <text class="big" x="48" y="40">Blockchain</text>
         <text  x="58" y="55">(ethereum)</text>
         <title>Blockchain Client Parity</title>
       </a>
       
-      <a xlink:href="/dev/ipfs" transform="translate(250,70)">
+      <a xlink:href="/docs/04_developers/ipfs.html" transform="translate(250,70)">
         <rect class="server" width="175" height="80" rx="3"/>
         <text class="big" x="17" y="40">Distributed Storage</text>
         <text  x="70" y="55">(ipfs)</text>

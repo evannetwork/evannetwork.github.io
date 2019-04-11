@@ -11,7 +11,7 @@ The simplest way to just start playing with evan network is to install the `evan
 
 It connects you to evan.network and allows you to interact with the [programmers API](https://github.com/evannetwork/api-blockchain-core)
 
-Don't let the name fool you, this is not just for working with blockchain contracts, the `evan` command line tool can be used to interact with all components of `evan.network`, i.e. also the [IPFS](/dev/ipfs) file stores, the [ENS](/docs/04_developers/ens.html) etc.
+Don't let the name fool you, this is not just for working with blockchain contracts, the `evan` command line tool can be used to interact with all components of `evan.network`, i.e. also the [IPFS](/docs/04_developers/ipfs.html) file stores, the [ENS](/docs/04_developers/ens.html) etc.
 
 # Installing
 
@@ -24,7 +24,7 @@ $ npm i -g evan.prompt
 # Configuration
 
 You will have to configure `evan` at least with your evan.network account information.
-So once you have [created a profile](/docs/03_first_steps/create-identity.html), you will need to copy your account ID, your private key and profile encryption key from the [dashboard](/tutorial/dashboard), and put them into your `$HOME/.evan.json`.
+So once you have [created a profile](/docs/03_first_steps/create-identity.html), you will need to copy your account ID, your private key and profile encryption key from the [dashboard](/docs/03_first_steps/dashboard.html), and put them into your `$HOME/.evan.json`.
 
 ```json
 {
@@ -139,7 +139,7 @@ It is also a common use case to have rarely changing group peers that need to co
 
 # Compiling and Creating Contracts
 
-Now that everything is installed and configured, let's take our ['Hello World' contract](/dev/hello-world) and deploy it with the evan.network toolchain instead of `truffle`.
+Now that everything is installed and configured, let's take our ['Hello World' contract](/docs/04_developers/hello-world.html) and deploy it with the evan.network toolchain instead of `truffle`.
 
 The option to compile solidity files is `-c`. It will search your included paths and compile all the files it finds.
 

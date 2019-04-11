@@ -70,7 +70,7 @@ permalink: /docs/04_developers/20_api/blockchain-core.html
     </a>
     <text class="grey small" x="76" y="230"></text>
 
-    <a xlink:href="/dev/dbcp" transform="translate(20,30)">
+    <a xlink:href="/docs/04_developers/dbcp.html" transform="translate(20,30)">
       <rect class="module" width="160" height="80" rx="3"/>
       <text class="big" x="56" y="45">DBCP</text>
       <title>Distributed Blockchain Contract Protocol</title>
@@ -99,7 +99,7 @@ permalink: /docs/04_developers/20_api/blockchain-core.html
       </text>
     </a>
 
-    <a xlink:href="/dev/IPFS" transform="translate(420,30)">
+    <a xlink:href="/docs/04_developers/ipfs.html" transform="translate(420,30)">
       <rect class="module" width="160" height="80" rx="3"/>
       <text class="big" x="64" y="45">dfs</text>
       <title>Distributed File System (IPFS)</title>
@@ -117,7 +117,7 @@ permalink: /docs/04_developers/20_api/blockchain-core.html
       </text>
     </a>
 
-    <a xlink:href="/dev/IPFS" transform="translate(620,30)">
+    <a xlink:href="/docs/04_developers/ipfs.html" transform="translate(620,30)">
       <rect class="module" width="160" height="80" rx="3"/>
       <text class="big" x="7" y="45">Smart Contracts</text>
       <title>Basic Functionality Contracts</title>

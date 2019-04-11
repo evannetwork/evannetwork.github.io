@@ -10,7 +10,7 @@ The goal of this tutorial is to interact with different functionalities of the e
 
 After creating the ÐApp functionalities, you can use a 'greeter contract' sample to create a contract instance. The DBCP description attached to the 'greeter contract' will use your ƉApp as display possiblity.
 
-[![js tutorial preview](/public/dapps/js/hello-world-preview.png){:width="50%"}](/public/dapps/js/hello-world-preview.png)
+[![js tutorial preview](/public/docs/04_developers/js-hello-world.html-preview.png){:width="50%"}](/public/docs/04_developers/js-hello-world.html-preview.png)
 
 ## 1. Get Tutorial Application
 - [Download Tutorial Application](https://github.com/evannetwork/dapps-tutorial-js)
@@ -35,7 +35,7 @@ To build and watch the ƉApps and copy them into the development runtime:
 npm run dapps-serve
 ```
 
-When you started both scripts, your ƉApp files were copied into your local runtime and you can open the following URL: "http://localhost:3000/dev.html#/dashboard.evan/helloworldjs.evan". There, you will find the current representation of your ƉApp. You can also add your ƉApp to your [favorites](/tutorial/dashboard).
+When you started both scripts, your ƉApp files were copied into your local runtime and you can open the following URL: "http://localhost:3000/dev.html#/dashboard.evan/helloworldjs.evan". There, you will find the current representation of your ƉApp. You can also add your ƉApp to your [favorites](/docs/03_first_steps/dashboard.html).
 
 ## 2.2 index.js
 The `index.js` file is the main point of entry for the application, which is configured by the `dbcp.json` in the `dapps/hello-world` folder. This file needs a `startDApp`-function, so the evan.network wrapper application can run the `point of entry`-function for the ƉApp.
@@ -152,10 +152,10 @@ Each application can be deployed together with a contract. This allows the contr
 ```sh
 ipfs add -r dapps/hello-world/src
 ```
-[![dapps-tutorial - directory](/public/dapps/deploy-to-ipfs.png){:width="50%"}](/public/dapps/deploy-to-ipfs.png)
+[![dapps-tutorial - directory](./30_ui/img/deploy-to-ipfs.png){:width="50%"}](./30_ui/img/deploy-to-ipfs.png)
 
 3. Insert the deployed folder hash (e.g. "QmfZLwBPUT1n3DoJqpqnLCTcUKABLgUsgfE4KetkXdq8XK") to the correct origin to `dbcp.json` file.
-[![dapps-tutorial - directory](/public/dapps/add-to-dbcp.png){:width="50%"}](/public/dapps/add-to-dbcp.png)
+[![dapps-tutorial - directory](./30_ui/img/add-to-dbcp.png){:width="50%"}](./30_ui/img/add-to-dbcp.png)
 
 4. Deploy it to the contract
 ```sh
@@ -164,27 +164,27 @@ npm run deploy-to-contract hello-world
 
 You will get a console output similar to the following. Behind the log parameter `created contract`, you will find the newly created contract ID.
 
-[![dapps-tutorial - directory](/public/dapps/deploy-to-contract.png){:width="50%"}](/public/dapps/deploy-to-contract.png)
+[![dapps-tutorial - directory](./30_ui/img/deploy-to-contract.png){:width="50%"}](./30_ui/img/deploy-to-contract.png)
 
 ### 3.2 Deploy ƉApp to ENS
-Have a look [ƉApp deployment](https://evannetwork.github.io/dev/deployment).
+Have a look [ƉApp deployment](/docs/04_developers/deployment.html).
 
 ### 3.3 View it in the Real World
-After you deployed the application within a contract or by using a ENS address, the ƉApp is available from everywhere, **globally**. To test this, you can use the evan.network dashboard. Open the following URL [https://dashboard.evan.network/index.html](https://dashboard.evan.network/index.html) and navigate to the `favorites ƉApp`. Before you can access your favorites, it is nessecary to create an evan.network identity. If you haven't created an identity before, have a look [here](/tutorial/first-steps).
+After you deployed the application within a contract or by using a ENS address, the ƉApp is available from everywhere, **globally**. To test this, you can use the evan.network dashboard. Open the following URL [https://dashboard.evan.network/index.html](https://dashboard.evan.network/index.html) and navigate to the `favorites ƉApp`. Before you can access your favorites, it is nessecary to create an evan.network identity. If you haven't created an identity before, have a look [here](/docs/03_first_steps.html).
 
 Add the favorite using the following steps:
 1. Open Dashboard:
-[![dapps-tutorial - directory](/public/dapps/favorites-1.png){:width="50%"}](/public/dapps/favorites-1.png)
+[![dapps-tutorial - directory](./30_ui/img/favorites-1.png){:width="50%"}](./30_ui/img/favorites-1.png)
 
 2. Add the favorite:
-[![dapps-tutorial - directory](/public/dapps/favorites-2.png){:width="50%"}](/public/dapps/favorites-2.png)
+[![dapps-tutorial - directory](./30_ui/img/favorites-2.png){:width="50%"}](./30_ui/img/favorites-2.png)
 
 3. Open the ƉApp:
-[![dapps-tutorial - directory](/public/dapps/favorites-3.png){:width="50%"}](/public/dapps/favorites-3.png)
+[![dapps-tutorial - directory](./30_ui/img/favorites-3.png){:width="50%"}](./30_ui/img/favorites-3.png)
 
 4. Result:
-[![js tutorial preview](/public/dapps/js/hello-world-preview.png){:width="50%"}](/public/dapps/js/hello-world-preview.png)
+[![js tutorial preview](./30_ui/img/hello-world-preview.png){:width="50%"}](./30_ui/img/04_developers/js-hello-world.html-preview.png)
 
 By having a look into the browser network tab, you will see that you data is loaded from the IPFS server:
 
-[![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="400px"}](/public/dapps/hello-world/dapp-from-contract.png)
+[![dapps-tutorial - directory](./30_ui/img/dapp-from-contract.png){:width="400px"}](./30_ui/img/dapp-from-contract.png)

@@ -11,8 +11,7 @@ evan.network services offer users and developers features to work with the block
 
 To learn more about these services you should read the following guides:
   * [ENS](/docs/04_developers/ens.html) - evan.network names services
-  * [ENS2DNS](/dev/ens2dns) - service to map ENS names to DNS names
-  * [Identity Claim](/dev/identity-claims) - service to create trust claims at blockchain accounts
+  * [Identity Verification](/docs/04_developers/identity-verification.html) - service to create trust claims at blockchain accounts
 
 ## ENS
 

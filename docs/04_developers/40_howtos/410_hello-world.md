@@ -13,7 +13,7 @@ Write your first blockchain contract and access it.
 
 We work on an unix command line.
 
-You have installed all the blockchain utilities needed to connect to and develop with evan.network, like Parity, Solidity and `nodejs` as described [here](/dev/setting-up).
+You have installed all the blockchain utilities needed to connect to and develop with evan.network, like Parity, Solidity and `nodejs` as described [here](/docs/04_developers/setting-up.html).
 
 You have installed `truffle`, as described [here](http://truffleframework.com/docs/getting_started/installation)<sup>[+]</sup>.
 
@@ -271,7 +271,7 @@ Now the `prompt` has been set and the `hello` call has something to append: so w
 
 You can access the source code for the project on https://github.com/evannetwork/hello-world-contract.
 
-Before moving on to the [Hello Agent](/dev/hello-agent) tutorial, make sure you have deployed the
+Before moving on to the [Hello Agent](/docs/04_developers/hello-agent.html) tutorial, make sure you have deployed the
 'Hello World' Smart Contract on the `dev` network (i.e. evan.network testcore).
 If unsure run the command
 

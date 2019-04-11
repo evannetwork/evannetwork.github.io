@@ -48,7 +48,7 @@ The Sharings of a contract is basically a structured list of encrypted keys.
 
 In a simple contract, the creator of the contract creates a single data key for this contract and wants to share it with other contract members to enable them to read the data in the contract. Therefore, the creator puts the data key into the Sharings info. To prevent third parties from accessing this data key, it is encrypted with the communication key between the contract owner and the contract participant.
 
-![sharings - schema](./img/sharings_schema.png)
+![sharings - schema](./10_concepts/img/sharings_schema.png)
 
 For **Data Contracts**, the owner creates a data contract and a rights and roles contract. Next, they are linked together.
 The contract owner then defines which groups, or users, are allowed to make edits to fields on the Data Contract.
@@ -92,11 +92,11 @@ If all contents of a contract are encrypted with the same key, this key can be s
 Blocks in Sharings signal the starting point, from where on this key is valid. So to be able to read data added at a specific block, a participant requires a key shared before or at the same block.
 Data added **after** this block can be read by the participant the data has been shared with. Data added **before** this block cannot be read by this participant through this key.
 
-![multikeys](./img/multikeys.png)
+![multikeys](./10_concepts/img/multikeys.png)
 
 Keys are valid until they are replaced by a new one, which is then valid until replaced or indefinitely removed.
 
-![multikeys - lifetime](./img/multikeys_lifetime.png)
+![multikeys - lifetime](./10_concepts/img/multikeys_lifetime.png)
 
 This principle is for example used for retrieving keys to decrypt data from lists, where keys might have been updated over time. Taking the example from the last picture, an entry added at block 37 has to be encrypted with the block 20 key. Elements added in or after block 40 use the block 40 key for en- and decryption.
 
@@ -153,7 +153,7 @@ contract OwnedStorage is Owned {
 ```
 can have its storage only be set by the owner.
 
-The ```Owned``` contract provides sufficiant permissions for easy contracts or contracts with only one contributor and many consumers, but fails to support different contract structures with different roles.
+The ```Owned``` contract provides sufficient permissions for easy contracts or contracts with only one contributor and many consumers, but fails to support different contract structures with different roles.
 
 
 ### Function Permissions
@@ -175,7 +175,7 @@ contract OwnedStorage is DSAuth {
 
 The `auth` modifier is used on functions that should be restricted to specific roles and forbids access to them, if the calling account does not meet the permission requirements.
 
-[![Smart Contract authority](/public/dev/smart_contract_authority.png){:max-width="50%"}](/public/dev/smart_contract_authority.png)
+[![Smart Contract authority](./10_concepts/img/smart_contract_authority.png){:max-width="50%"}](./10_concepts/img/smart_contract_authority.png)
 
 This basically forbids almost everyone from using the ```setData``` function, except:
 - the contract itself
@@ -186,7 +186,7 @@ This basically forbids almost everyone from using the ```setData``` function, ex
 Permissions can be granted by:
 1. creating a roles contract for the contract and assign it as the authority
 2. assigning an account ID to a role
-3. granting this role permission (capabilitiy) to a function
+3. granting this role permission (capability) to a function
 
 ```solidity
 // sample contract
@@ -199,7 +199,7 @@ storage.setAuthority(roles);
 // assign an account id to a role (role 0 is an owner like role in this example)
 roles.setUserRole(msg.sender, 0, true);
 
-// grant this role permission (capabilitiy) to a function
+// grant this role permission (capability) to a function
 roles.setRoleCapability(0, storage, bytes4(keccak256("setData(string)")), true);
 ```
 
@@ -253,7 +253,7 @@ See section 'DataContract' for more example of configurable operations.
 ### Envelopes
 As basically all data, which can be described as 'content', are stored via the hybrid storage approach, the main part of data are stored in the distributed file system. These data are encrypted and stored in so called 'envelopes', which are a container for the data itself and contain enough information for the API to determine which key to use for decryption and where to retrieve the key from.
 
-[![envelope](/public/dev/envelope.png){:max-width="50%"}](/public/dev/envelope.png)
+[![envelope](./10_concepts/img/envelope.png){:max-width="50%"}](./10_concepts/img/envelope.png)
 
 This is an example envelope:
 ```json
@@ -271,7 +271,7 @@ This is an example envelope:
 }
 ```
 
-The 'public' section contains data that are visible without being invited or related to the contract. The 'private' section can only be decrypted, if the user trying to read the data has been added to the sharings of the contract. The ```cryptoInfo``` part is used to determine, which decryption algorithm to use and where to look for it.
+The 'public' section contains data that is visible without being invited to it or related to the contract. The 'private' section can only be decrypted, if the user tries to read the data has been added to the sharings of the contract. The ```cryptoInfo``` part is used to determine, which decryption algorithm to use and where to look for it.
 
 When decrypted, the ```private``` section takes precedence over the ```public``` section. This can lead to the private section overwriting sections of the ```public``` part. For example, a public title may be replaced with a 'true' title (only visible for members) from the private section.
 

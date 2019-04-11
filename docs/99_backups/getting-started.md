@@ -8,7 +8,7 @@ The evan.network is an [Ethereum](https://ethereum.org/)<sup>[+]</sup> based blo
 
 [![evan.network](/public/network_architecture.png){:class="center"}](/public/network_architecture.png)
 
-A blockchain by its very nature isn't made for storing complex or unstructured data like documents, data and applications. For that reason, we offer an integrated IPFS storage that is used to store non-blockchain data and to deliver ÐAPPs. You can read more about our [IPFS](/dev/ipfs) to get a better understanding why it is so important and how you can use it in your applications.
+A blockchain by its very nature isn't made for storing complex or unstructured data like documents, data and applications. For that reason, we offer an integrated IPFS storage that is used to store non-blockchain data and to deliver ÐAPPs. You can read more about our [IPFS](/docs/04_developers/ipfs.html) to get a better understanding why it is so important and how you can use it in your applications.
 
 ## Tons of Cool Features
 
@@ -16,4 +16,4 @@ On top of the blockchain- and the storage engine we built services and APIs to c
 + content and contract encryption
 + contact management with integrated on-chain key management and key exchange through the mailbox system to offer offline invitation and contact possibilities
 + DataContracts with security and role management and the ability to add encrypted content and a highly flexible [DBCP](/docs/04_developers/dbcp.html) description language to build unstoppable ÐAPPs and Smart Agents
-+ [ENS](/docs/04_developers/ens.html) and [ENS2DNS](/dev/ens2dns) to make the user's life easier
++ [ENS](/docs/04_developers/ens.html) to make the user's life easier

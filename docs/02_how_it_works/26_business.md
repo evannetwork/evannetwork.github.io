@@ -171,7 +171,7 @@ If the service technician creates a report and wants to attach for example an im
        d="M 240 125 l -10 10"
        id="path4315" />
     <image
-       xlink:href="/public/person.png"
+       xlink:href="./img/person.png"
        height="50"
        width="50"
        y="50"
@@ -641,7 +641,7 @@ If the service technician creates a report and wants to attach for example an im
       <title
          id="title4484">Smart Agents</title>
       <a
-         xlink:href="/dev/smart-agents"
+         xlink:href="/docs/02_how_it_works/smart-agents.html"
          id="a4512">
         <rect
            class="bw dotted"
@@ -738,7 +738,7 @@ If the service technician creates a report and wants to attach for example an im
     </g>
   </g>
   <image
-     xlink:href="/public/machine.png"
+     xlink:href="./img/machine.png"
      height="50"
      width="50"
      y="550"
@@ -855,7 +855,7 @@ To communicate with Smart Contracts from your own applications and ÐApps, evan.
 
 For an automation of the business relations, evan.network offers APIs to all Smart Contracts. Hence, the evan.network can be connected to own systems and a direct integration of business processes can be carried out.
 
-Furthermore, it is possible to add logic and workflow addons in the evan.network with the help of [Smart Agents](/dev/smart-agents). They are operated by the respective Smart Agent provider and can enable workflow-supported communication of the evan.network with existing IT systems and machines.
+Furthermore, it is possible to add logic and workflow addons in the evan.network with the help of [Smart Agents](/docs/02_how_it_works/smart-agents.html). They are operated by the respective Smart Agent provider and can enable workflow-supported communication of the evan.network with existing IT systems and machines.
 
 Smart Agents can be invited into a Smart Contract, just like users, and thus receive access to its contents. The Smart Agent constantly checks the contract for changes and can automatically initiate new processes according to predefined rules as soon as it finds one.
 

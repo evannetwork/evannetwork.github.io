@@ -19,14 +19,14 @@ By creating a simple application to create, view and share tasks, you will learn
 
 You will be guided through the following steps:
 - [ÐApp basics](/docs/04_developers/basics.html)
-- [Hello World - standalone](/dapps/standalone/standalone)
-- [Hello World - JS](/dapps/js/hello-world)
-- [Angular 5 Tutorials](/dapps/angular/choose)
-  - [Basics: Hello World](/dapps/angular/hello-world)
-  - [Task DApp setup](/dapps/angular/task)
-  - [Task DApp Data-Contract](/dapps/angular/task-data-contract)
-  - [Task Task Custom Contract](/dapps/angular/task-custom-contract)
+- [Hello World - standalone](/docs/04_developers/standalone.html)
+- [Hello World - JS](/docs/04_developers/js-hello-world.html)
+- [Angular 5 Tutorials](/docs/04_developers/angular-choose.html)
+  - [Basics: Hello World](/docs/04_developers/angular-hello-world.html)
+  - [Task DApp setup](/docs/04_developers/angular-task.html)
+  - [Task DApp Data-Contract](/docs/04_developers/angular-task-data-contract.html)
+  - [Task Task Custom Contract](/docs/04_developers/angular-task-custom-contract.html)
 
-If you want to create your own projects, have a look at the [evan.network project generator](/dev/generator-evan).
+If you want to create your own projects, have a look at the [evan.network project generator](/docs/04_developers/generator-evan.html).
 
 Well, good luck and get started [here](/docs/04_developers/basics.html).

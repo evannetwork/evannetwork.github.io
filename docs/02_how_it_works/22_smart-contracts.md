@@ -34,7 +34,7 @@ This contract definition is like a class or prototype and can be instantiated as
 ## Getting started with creating Smart Contracts
 You can find good examples on how to get started with Smart Contracts and Solidity on the [Ethereum](https://ethereum.org/)<sup>[+]</sup> homepage.
 
-The recommendation in these samples is to use the Ethereum wallet for deploying the sample contracts, but if you want to start right away without synchronizing to the blockchain, you can use [Remix](https://remix.ethereum.org/)<sup>[+]</sup>. There, you can run your code in the JavaScript VM or, in case you want to try interacting with contracts from the evan.network, install [MetaMask](https://metamask.io/)<sup>[+]</sup> and connect it to evan.network as described in [Web3](https://github.com/ethereum/web3.js). Alternatively, use the [evan.prompt](/dev/evan.prompt) to compile and upload your contracts to evan.network.
+The recommendation in these samples is to use the Ethereum wallet for deploying the sample contracts, but if you want to start right away without synchronizing to the blockchain, you can use [Remix](https://remix.ethereum.org/)<sup>[+]</sup>. There, you can run your code in the JavaScript VM or, in case you want to try interacting with contracts from the evan.network, install [MetaMask](https://metamask.io/)<sup>[+]</sup> and connect it to evan.network as described in [Web3](https://github.com/ethereum/web3.js). Alternatively, use the [evan.prompt](/docs/04_developers/evan.prompt.html) to compile and upload your contracts to evan.network.
 
 # Smart Contracts in evan.network
 
@@ -58,9 +58,9 @@ These are then ordered via the Business Contract. The Digital Twin stores and ma
 
 - **DataContract** - The DataContract is a secured data storage contract for single properties and lists.
 
-It relies on the [Hybrid Storage](/dev/ipfs#hybrid-storage) concept for data storage and secures its data via contract permissions, Sharings and key management described in [Security](/docs/04_developers/permissioning.html).
+It relies on the [Hybrid Storage](/docs/04_developers/ipfs.html#hybrid-storage) concept for data storage and secures its data via contract permissions, Sharings and key management described in [Security](/docs/04_developers/permissioning.html).
 
-[![DataContract](/public/dev/data_contract.png){:max-width="50%"}](/public/dev/data_contract.png)
+[![DataContract](./img/data_contract.png){:max-width="50%"}](./img/data_contract.png)
 
 The DataContract allows to:
 - set or update properties
@@ -106,11 +106,11 @@ The `EventHub` is a Smart Contract deployed at `events.evan`, which is used by m
 
 It is a central contract, which other contracts locate via ENS lookup. The `EventHub` contract inherits from multiple base contracts, which add events and event trigger functions to its functionality. Every contract that uses the `EventHub` knows only a limited scope of its functions, due to only knowing the `EventHub` base class related to itself - e.g. the `MailBox` contract only knows the base class `EventHubMailBox` and can only trigger events for those.
 
-![Event Hub inheritance](/public/dev/eventhub_inheritance.png)
+![Event Hub inheritance](./img/eventhub_inheritance.png)
 
 ## Contract Factories
 ### About
-Some contracts, like the [DataContract](/dev/data-contract) require a few more steps to be set up during their creation. These steps may depend on each other, so a user creating these contracts would have to wait for the single steps to be completed before being able to work with the contract.
+Some contracts, like the [DataContract](/docs/04_developers/data-contract.html) require a few more steps to be set up during their creation. These steps may depend on each other, so a user creating these contracts would have to wait for the single steps to be completed before being able to work with the contract.
 
 These contracts are created by using contract Factories, which offers a few enhancements to the process:
 - the overall process is faster - instead of n single transactions only one transaction is performed

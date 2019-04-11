@@ -26,7 +26,7 @@ If adding accounts via account ID, a key exchange with this person will be trigg
 
 If adding accounts via Email, you are required to provide a small amount of onboarding EVEs for the invitee. The invitee will receive an Email with your onboarding invitation and a link to create or import a profile and then claim the provided onboarding EVEs.
 
-Inviting users via Email requires you to have added the onboarding [Smart Agent](/dev/smart-agents) to your contacts. If you haven't already added the agent to your contacts, a request for this is displayed when clicking on the "Using an Email" button.
+Inviting users via Email requires you to have added the onboarding [Smart Agent](/docs/02_how_it_works/smart-agents.html) to your contacts. If you haven't already added the agent to your contacts, a request for this is displayed when clicking on the "Using an Email" button.
 
 [![add smart agent to contacts](./img/contacts_add_smart_agent.png){:width="50%"}](./img/contacts_add_smart_agent.png)
 

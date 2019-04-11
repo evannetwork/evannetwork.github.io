@@ -10,7 +10,7 @@ The goal of this tutorial is to interact with different functionalities of the e
 
 After creating the ÐApp functionalities, you can use a 'greeter contract' sample to create a contract instance. The DBCP description attached to the 'greeter contract' will use your ƉApp as display possiblity.
 
-[![standalone tutorial preview](/public/dapps/hello-world/standalone_preview.png){:width="50%"}](/public/dapps/hello-world/standalone_preview.png)
+[![standalone tutorial preview](./30_ui/img/standalone_preview.png){:width="50%"}](./30_ui/img/standalone_preview.png)
 
 ## 1. Get Tutorial Application
 - [Download Tutorial Application](https://github.com/evannetwork/dapps-tutorial-standalone)
@@ -252,10 +252,12 @@ Each application can be deployed together with a contract. This allows the contr
 ```sh
 ipfs add -r dapps/hello-world-dbcp/src
 ```
-[![dapps-tutorial - directory](/public/dapps/deploy-to-ipfs.png){:width="50%"}](/public/dapps/deploy-to-ipfs.png)
+
+[![dapps-tutorial - directory](./30_ui/img/deploy-to-ipfs.png){:width="50%"}](./30_ui/img/deploy-to-ipfs.png)
 
 3. Insert the deployed folder hash (e.g. 'QmfZLwBPUT1n3DoJqpqnLCTcUKABLgUsgfE4KetkXdq8XK') to the correct origin to `dbcp.json` file.
-[![dapps-tutorial - directory](/public/dapps/add-to-dbcp.png){:width="50%"}](/public/dapps/add-to-dbcp.png)
+4. 
+[![dapps-tutorial - directory](./30_ui/img/add-to-dbcp.png){:width="50%"}](./30_ui/img/add-to-dbcp.png)
 
 4. Deploy it to the contract
 ```sh
@@ -264,23 +266,24 @@ npm run deploy-to-contract hello-world-dbcp
 
 You will get a console output similar to the following. Behind the log parameter `created contract`, you will find the newly created contract ID.
 
-[![dapps-tutorial - directory](/public/dapps/deploy-to-contract.png){:width="50%"}](/public/dapps/deploy-to-contract.png)
+[![dapps-tutorial - directory](./30_ui/img/deploy-to-contract.png){:width="50%"}](./30_ui/img/deploy-to-contract.png)
 
 ### 3.2 Deploy ƉApp to ENS
-Have a look [ƉApp deployment](https://evannetwork.github.io/dev/deployment).
+Have a look [ƉApp deployment](/docs/04_developers/deployment.html).
 
 ### 3.3 View it in the Real World
-After you deployed the application within a contract or by using an ENS address, the ƉApp is available from everywhere, **globally**. To test this, you can use the evan.network dashboard. Open the following URL [https://dashboard.evan.network/index.html](https://dashboard.evan.network/index.html) and navigate to the `favorites ƉApp` tab. Before you can access your favorites, it is necessary to create an evan.network identity. If you haven't created an identity before, have a look [here](/tutorial/first-steps).
+After you deployed the application within a contract or by using an ENS address, the ƉApp is available from everywhere, **globally**. To test this, you can use the evan.network dashboard. Open the following URL [https://dashboard.evan.network/index.html](https://dashboard.evan.network/index.html) and navigate to the `favorites ƉApp` tab. Before you can access your favorites, it is necessary to create an evan.network identity. If you haven't created an identity before, have a look [here](/docs/03_first_steps.html).
 
 Add the favorite using the following steps:
+
 1. Open Dashboard:
-[![dapps-tutorial - directory](/public/dapps/favorites-1.png){:width="50%"}](/public/dapps/favorites-1.png)
+[![dapps-tutorial - directory](./30_ui/img/favorites-1.png){:width="50%"}](./30_ui/img/favorites-1.png)
 
 2. Add the favorite:
-[![dapps-tutorial - directory](/public/dapps/favorites-2.png){:width="50%"}](/public/dapps/favorites-2.png)
+[![dapps-tutorial - directory](./30_ui/img/favorites-2.png){:width="50%"}](./30_ui/img/favorites-2.png)
 
 3. Open the DApp:
-[![dapps-tutorial - directory](/public/dapps/favorites-3.png){:width="50%"}](/public/dapps/favorites-3.png)
+[![dapps-tutorial - directory](./30_ui/img/favorites-3.png){:width="50%"}](./30_ui/img/favorites-3.png)
 
 4. Result:
 <iframe width="100%" height="500px" src="https://ipfs.test.evan.network/ipfs/QmfZLwBPUT1n3DoJqpqnLCTcUKABLgUsgfE4KetkXdq8XK/index.html?contractid=0xcf38aA22Dd231b1E1e4661a1EcD5f6E1D2732A70">
@@ -288,4 +291,4 @@ Add the favorite using the following steps:
 
 By having a look into the browser network tab you will see that your data is loaded from the IPFS server:
 
-[![dapps-tutorial - directory](/public/dapps/hello-world/dapp-from-contract.png){:width="400px"}](/public/dapps/hello-world/dapp-from-contract.png)
+[![dapps-tutorial - directory](./30_ui/img/dapp-from-contract.png){:width="400px"}](./30_ui/img/dapp-from-contract.png)

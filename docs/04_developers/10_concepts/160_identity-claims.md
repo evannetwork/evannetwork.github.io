@@ -1,11 +1,11 @@
 ---
-title: "Identity Claim"
+title: "Identity Verification"
 parent: Developers
 nav_order: 160
-permalink: /docs/04_developers/identity-claims.html
+permalink: /docs/04_developers/identity-verification.html
 ---
 
-# Identity Claim
+# Identity Verification
 
 Trust in the integrity and identity of a business partner is one of the most important factors in digital communication.
 

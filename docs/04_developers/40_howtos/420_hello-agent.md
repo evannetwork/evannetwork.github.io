@@ -14,11 +14,11 @@ You will still have to do some setup though.
 
 ## Prerequisites
 
-- you have started the [evan.network parity node](/dev/setting-up)
+- you have started the [evan.network parity node](/docs/04_developers/setting-up.html)
 - you have installed and started a REDIS server on your system
 
-### [Edge Server)(/dev/smart-agents#edge-server)
-In the evan.network, the established way to write web services is to use the [`Edge Server`](https://github.com/evannetwork/edge-server-seed), which is just an [ActionHero](https://www.actionherojs.com/) with some added infrastructure, in particular [REDIS](https://redis.io/), [blockchain-core](https://github.com/evannetwork/api-blockchain-core) and [IPFS](/dev/ipfs). It also uses the version "^18.0", so asynchronous programming with callbacks is discouraged now.
+### [Edge Server)(/docs/02_how_it_works/smart-agents.html#edge-server)
+In the evan.network, the established way to write web services is to use the [`Edge Server`](https://github.com/evannetwork/edge-server-seed), which is just an [ActionHero](https://www.actionherojs.com/) with some added infrastructure, in particular [REDIS](https://redis.io/), [blockchain-core](https://github.com/evannetwork/api-blockchain-core) and [IPFS](/docs/04_developers/ipfs.html). It also uses the version "^18.0", so asynchronous programming with callbacks is discouraged now.
 
 Installation is straight forward.
 

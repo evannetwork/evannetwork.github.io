@@ -29,7 +29,7 @@ Simply open your evan-network base project. Within your config folder, a deploym
 included, that contains all the important configurations for your deployment. Here you must insert
 your accountID and your private key, so the script can handle ENS description deployments for you.
 
-[![Finished](/public/dev/deploy-config.png){:width="50%"}](/public/dev/deploy-config.png)
+[![Finished](./50_tooling/img/deploy-config.png){:width="50%"}](./50_tooling/img/deploy-config.png)
 
 **Currently: For security reasons, the ownership of the ENS addresses are reserved for the members
 of the evan GmbH.**
@@ -66,7 +66,7 @@ npm run deploy pathToConfig
 Each ÐApp that were successfully build by "npm run dapps-build", is available by to your deploy
 scope.
 
-[![Finished](/public/dev/deploy.png){:width="50%"}](/public/dev/deploy.png)
+[![Finished](./50_tooling/img/deploy.png){:width="50%"}](./50_tooling/img/deploy.png)
 
 So, when you deploy anything, it will be available under the following ENS domain:
 
@@ -75,9 +75,9 @@ dappname.subdomain.evan
 ```
 
 Now, you can open the ens address to your application on https://dashboard.evan.network#/my-ens-address.evan. (my-ens-address = dbcp.name)
-([3.3 View it in the Real World](/dapps/standalone/standalone))
+([3.3 View it in the Real World](/docs/04_developers/standalone.html))
 
 ## IPFS Deployment
 
 If you want to deploy your application without any ENS address by using a contract, you can have a
-look at the [standalone DApp tutorial](/dapps/standalone/standalone) in the section "3.1 Deploy ƉApp within an Contract".
+look at the [standalone DApp tutorial](/docs/04_developers/standalone.html) in the section "3.1 Deploy ƉApp within an Contract".

@@ -36,7 +36,7 @@ permalink: /docs/07_other/glossary.html
 <a href="#z">z</a>
 <a id="0"></a>
 <dl>
-    <dt><a href="/doc/account">Account</a></dt>
+    <dt>Account</dt>
     <dd>an agent/ actor within the Ethereum blockchain, identified with a 20 digit hex key, has a currency balance, can be an externally controlled account or a contract account</dd>
 </dl>
 <a id="a"></a>
@@ -55,27 +55,27 @@ permalink: /docs/07_other/glossary.html
 </dl>
 <a id="c"></a>
 <dl>
-    <dt><a href="/doc/account#contract-account">Contract Account</a></dt>
+    <dt>Contract Account</dt>
     <dd>an account that has its behavior and actions controlled by a contract, i.e. an EVN program</dd>
     <dt></dt>
     <dd></dd>
 </dl>
 <a id="d"></a>
 <dl>
-    <dt><a href="/doc/dao">DAO</a></dt>
+    <dt>DAO</dt>
     <dd>Decentralized Autonomous Organization</dd>
-    <dt><a href="/dapps/basics">ÐAPP</a></dt>
+    <dt><a href="/docs/04_developers/basics.html">ÐAPP</a></dt>
     <dd>a Distributed Application utilizing blockchain contracts</dd>
 </dl>
 <a id="e"></a>
 <dl>
     <dt><a href="https://ens.domains/">ENS</a><sup>[+]</sup></dt>
     <dd>Ethereum Name Service</dd>
-    <dt><a href="/doc/account#eoa">EOA</a></dt>
+    <dt>EOA</dt>
     <dd>Externally Owned Account, usually controlled by a person, has no EVM code associated with it</dd>
     <dt><a href="https://www.ethereum.org/">Ethereum</a><sup>[+]</sup></dt>
     <dd>a fully programmable blockchain</dd>
-    <dt><a href="/doc/network">EVAN Network</a></dt>
+    <dt><a href="/docs/01_whats_evan/network.html">EVAN Network</a></dt>
     <dd>European Verified Application Node Network</dd>
     <dt>EVE</dt>
     <dd>
@@ -158,7 +158,7 @@ permalink: /docs/07_other/glossary.html
 </dl>
 <a id="s"></a>
 <dl>
-    <dt><a href="/dev/smart-agents">SmartAgent</a></dt>
+    <dt><a href="/docs/02_how_it_works/smart-agents.html">SmartAgent</a></dt>
     <dd>just a fancy name for a webservice without UI that connects to the blockchain in some way</dd>
     <dt><a href="/docs/02_how_it_works/smart-contracts.html">Smart Contract</a></dt>
     <dd>a program that runs cryptographically secure on the Ethereum virtual machine</dd>
@@ -167,7 +167,7 @@ permalink: /docs/07_other/glossary.html
 </dl>
 <a id="t"></a>
 <dl>
-    <dt><a href="/doc/transaction">Transaction</a></dt>
+    <dt>Transaction</dt>
     <dd>any write or change to the global blockchain records, can be a simple transfer of funds, or an executed Smart Contract</dd>
     <dt><a href="http://truffleframework.com/">Truffle</a><sup>[+]</sup></dt>
     <dd>the de-facto standard Ethereum application framework</dd>

@@ -12,27 +12,27 @@ With it being a DAO itself, transparency is at the heart of evan.network. We fol
 Key Features
 ----
 
-#### [Decentralized Identities](https://evannetwork.github.io/doc/Identity)
+#### [Decentralized Identities](/docs/02_how_it_works/identity.html)
 
 In evan.network everything, no matter if human, machine or organization has a decentralized, self-sovereign identity which enables them to securely and instantaneously interact with each other.
 
-#### [Smart Contract Access Delegation (SCAD)](https://evannetwork.github.io/dev/security)
+#### [Smart Contract Access Delegation (SCAD)](/docs/04_developers/permissioning.html)
 
 Smart Contract Access Delegation (SCAD) enables evan.network users to define permissions for smart contracts with granular detail, even allowing for complex trans organizational rights and permission management. 
 
-#### [Packaged DApps](https://evannetwork.github.io/dapps/basics)
+#### [Packaged DApps](/docs/04_developers/basics.html)
 
 Packaged Distributed Applications (DApps) on the evan.network are designed to ease the development process on the blockchain. 
 
-#### [Customized Namespaces](https://evannetwork.github.io/doc/namespaces)
+#### [Customized Namespaces](/docs/02_how_it_works/namespaces.html)
 
 Evan.network uses a nameservice to provide unique namespaces for DApps and identities, adding unique names for applications or identities. 
 
-#### [Secure IoT connectivity](https://evannetwork.github.io/doc/iotsecurity)
+#### Secure IoT connectivity
 
 In order to adequately cover all security aspects without the need for any extra service implementation, the secure IoT connectivity feature of evan.network offers a functioning IoT security suite for enterprises. 
 
-#### [Contract Templates](https://evannetwork.github.io/dev/deployment)
+#### [Contract Templates](/docs/04_developers/deployment.html)
 
 Contract templates are a great way to bootstrap smart contract development and instant deployment. 
 
@@ -42,18 +42,18 @@ Getting started
 ----
 
 <dl>
-<dt><a href="/tutorial/quick-start">Quick Start</a><dt>
+<dt><a href="/docs/03_first_steps/quick-start.html">Quick Start</a><dt>
 <dd> Beginning your journey with evan is easy.<br />
 Creating a profile that you register through our decentralized web service is all it takes.</dd>
-<dt><a href="/doc/goals">General Overview</a></dt>
-<dd>A deeper look into the concepts of the <a href="/doc/network">network</a> and the <a href="/doc/dao">DAO</a>.</dd>
-<dt><a href="/dev/overview">Technical Details</a></dt>
+<dt><a href="/docs/01_whats_evan/goals.html">General Overview</a></dt>
+<dd>A deeper look into the concepts of the <a href="/docs/01_whats_evan/network.html">network</a> and the DAO.</dd>
+<dt><a href="/docs/02_how_it_works/technical_overview.html">Technical Details</a></dt>
 <dd> Dive deeper and immerse yourself.</dd>
-<dt><a href="/dev/getting-started">Start Programming</a></dt>
+<dt><a href="/docs/04_developers.html">Start Programming</a></dt>
 <dd>Set up the environment and start building right way, we have handy tutorials ready to help you become familiar with the platform.</dd>
-<dt><a href="/doc/faq">FAQ</a></dt>
+<dt><a href="/docs/07_other/faq.html">FAQ</a></dt>
 <dd> </dd>
-<dt><a href="/doc/glossary">Glossary</a></dt>
+<dt><a href="/docs/07_other/glossary.html">Glossary</a></dt>
 <dd> </dd>
 
 <p>If you want to join <code>evan.network</code> as an integral part of the infrastructure and shape its future, contact us on our <a href="https:///evan.network">WebSite</a>.
@@ -129,7 +129,7 @@ Creating a profile that you register through our decentralized web service is al
   <g transform="translate(-20, -40)">
     <g id="edge-server" transform="translate(20, 50)">
       <title>Smart Agents</title>
-      <a xlink:href="/dev/smart-agents">
+      <a xlink:href="/docs/02_how_it_works/smart-agents.html">
         <rect class="bw dotted" x="30" width="160" height="140" />
         <text x="70" y="15">Edge Server</text>
         <g transform="translate(0,10)">
@@ -149,7 +149,7 @@ Creating a profile that you register through our decentralized web service is al
     </g>
     <g id="core-dapps" transform="translate(200, 50)">
       <title>ÐApps</title>
-      <a xlink:href="/dapps/introduction">
+      <a xlink:href="/docs/04_developers/writing-dapps.html">
         <rect class="bw dotted" x="30" width="160" height="140" />
         <text x="70" y="15">Core ÐApps</text>
         <g transform="translate(0,10)">
@@ -171,7 +171,7 @@ Creating a profile that you register through our decentralized web service is al
 
     <g id="applications" transform="translate(380, 50)">
       <title>Get Started with Programming</title>
-      <a xlink:href="/dev/getting-started">
+      <a xlink:href="/docs/04_developers.html">
         <rect class="bw dotted" x="30" width="160" height="140" />
         <text x="70" y="15">Applications</text>
         <g transform="translate(70,45)">
@@ -196,19 +196,19 @@ Creating a profile that you register through our decentralized web service is al
     <text class="big grey" transform="rotate(90)" x="20">Core API</text>
     <use xlink:href="#triangle" x="180" y="-15" />
     
-    <a xlink:href="/dev/security#key-exchange" transform="translate(20,20)">
+    <a xlink:href="/docs/04_developers/permissioning.html#key-exchange" transform="translate(20,20)">
       <rect class="library" width="160" height="80" rx="2"/>
       <text class="white" x="40" y="42">Key Exchange</text>
       <title>Establishes Account Communication Channels</title>
     </a>
 
-    <a xlink:href="/dev/blockchain-core" transform="translate(200,20)">
+    <a xlink:href="/docs/04_developers/20_api/blockchain-core.html" transform="translate(200,20)">
       <rect class="library" width="160" height="80" rx="2"/>
       <text class="white" x="32" y="42">Blockchain Core</text>
       <title>ECMAScript Library to work with Ethereum Contracts and IPFS</title>
     </a>
 
-    <a xlink:href="/dev/dbcp" transform="translate(380,20)">
+    <a xlink:href="/docs/04_developers/dbcp.html" transform="translate(380,20)">
       <rect class="library" width="160" height="80" rx="2"/>
       <text class="white" x="64" y="42">DBCP</text>
       <title>A Description Language for Decentralized Business Applications</title>
@@ -354,14 +354,14 @@ Creating a profile that you register through our decentralized web service is al
         <text x="210" y="60">AuthorityNode</text>
       </a>
 
-      <a xlink:href="/dev/blockchain" transform="translate(60,70)">
+      <a xlink:href="/docs/04_developers/blockchain.html" transform="translate(60,70)">
         <rect class="server" width="175" height="80" rx="3"/>
         <text class="big" x="48" y="40">Blockchain</text>
         <text  x="58" y="55">(ethereum)</text>
         <title>Blockchain Client Parity</title>
       </a>
       
-      <a xlink:href="/dev/ipfs" transform="translate(250,70)">
+      <a xlink:href="/docs/04_developers/ipfs.html" transform="translate(250,70)">
         <rect class="server" width="175" height="80" rx="3"/>
         <text class="big" x="17" y="40">Distributed Storage</text>
         <text  x="70" y="55">(ipfs)</text>

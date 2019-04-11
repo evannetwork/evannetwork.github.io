@@ -49,7 +49,7 @@ about the following points before starting a project:
 ### 3. Setup your connection to the world
 - read about [DBCP](/docs/04_developers/dbcp.html)
 - name and identify your ÐApp: name, description, logos, translations, ...
-- insert your contracts ABI and data schemes to your project (have a look at [Contract Implementation & Data Scheme](http://localhost:4000/dapps/angular/task-data-contract))
+- insert your contracts ABI and data schemes to your project (have a look at [Contract Implementation & Data Scheme](http://localhost:4000/docs/04_developers/angular-task-data-contract.html))
 
 ### 4. Concept Frontend Application
 - read about angular ÐApps ([frontend documentation](/docs/04_developers/basics.html))
@@ -58,9 +58,9 @@ about the following points before starting a project:
 - Divide the frontend into components that are as reusable and separate as possible.
 
 ### 5. Implement your project
-- read tutorials about [DApps](/dapps/introduction)
+- read tutorials about [DApps](/docs/04_developers/writing-dapps.html)
 - add your Dapps by using the [evan.network DApp generator](https://github.com/evannetwork/generator-evan/tree/develop#generate-dapp)
 - implement your contract interactions and DApps structure
 
 ### 6. Deployment
-- [deploy your application](/dev/deployment)
+- [deploy your application](/docs/04_developers/deployment.html)

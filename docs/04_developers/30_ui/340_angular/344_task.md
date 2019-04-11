@@ -6,7 +6,7 @@ permalink: /docs/04_developers/angular-task.html
 ---
 
 # Angular - Task ƉApp setup
-**Before performing this example, please go through the [Angular - Hello World](/dapps/angular/hello-world) tutorial, as this tutorial is based on the 'Hello World' example.**
+**Before performing this example, please go through the [Angular - Hello World](/docs/04_developers/angular-hello-world.html) tutorial, as this tutorial is based on the 'Hello World' example.**
 
 This example shows how an evan.network featured ƉApp behaves and how it can interact with contracts. With the help of a task ƉApp it is easy to show how a contract can be created, read out, adapted and how different data sets can be saved.
 
@@ -19,7 +19,7 @@ If you focus on functional implementations of blockchain interactions and less o
 # 1. Seed project
 So, where do we start?
 
-In the [Angular - 'Hello World'](/dapps/angular/hello-world), it was already shown how evan.network apps are structured and how they are built and deployed. We will now integrate the `TodoMVC` example into this project structure.
+In the [Angular - 'Hello World'](/docs/04_developers/angular-hello-world.html), it was already shown how evan.network apps are structured and how they are built and deployed. We will now integrate the `TodoMVC` example into this project structure.
 
 To provide a smarter inital point for you, a seed project already exists within the ƉApps folder. By having a look into the
 `dapps/task` folder, you will find a clear project with all configurations you will need. It is nearly the same as the 'Hello World' sample, but without any components or services. This application is ready to use and you can already start it. Open two command lines and start the development environment:
@@ -190,7 +190,7 @@ function getConfig(isDispatcher?: boolean) {
 # 5. Fix Styling
 After you applied this changes, the `TodoMVC` should run. Have a look at [`tutorialtask`](http://localhost:3000/dev.html#/dashboard.evan/tutorialtask).
 
-[![TodoMVC first](/public/dapps/angular/task/todo_mvc_first.png){:width="200px"}](/public/dapps/angular/task/todo_mvc_first.png)
+[![TodoMVC first](./30_ui/340_angular/img/todo_mvc_first.png){:width="200px"}](./30_ui/340_angular/img/todo_mvc_first.png)
 
 But wait, it does not look nice, neither is it working? Correct! We forgot to add the `TodoMVC` styling. Within the `node_modules` folder of the original `TodoMVC` folder, you will find a file `todomvc-app-css/index.css`. Copy this file into the `task/src/scss` folder and rename it to `index.scss`, so the building job will recognize and build it into the combined css-file.
 
@@ -412,7 +412,7 @@ Now the application is finally integrated and you can watch the result on the fo
 (http://localhost:3000/dev.html#/dashboard.evan/tutorialtask)
 
 After this, you can continue with one of the following tutorials:
-- [Task ƉApp DataContract](/dapps/angular/task-data-contract)
-- [Task Task Custom Contract](/dapps/angular/task-custom-contract)
+- [Task ƉApp DataContract](/docs/04_developers/angular-task-data-contract.html)
+- [Task Task Custom Contract](/docs/04_developers/angular-task-custom-contract.html)
 
-[![TodoMVC integrated](/public/dapps/angular/task/todo_mvc_integrated.png){:width="200px"}](/public/dapps/angular/task/todo_mvc_integrated.png)
+[![TodoMVC integrated](./30_ui/340_angular/img/todo_mvc_integrated.png){:width="200px"}](./30_ui/340_angular/img/todo_mvc_integrated.png)

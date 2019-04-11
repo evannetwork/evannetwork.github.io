@@ -2,7 +2,7 @@
 title: "Digital Twin"
 parent: Developers
 nav_order: 220
-permalink: /docs/04_developers/20_api/blockchain-core.html
+permalink: /docs/04_developers/20_api/digital-twin.html
 ---
 
 # What is a Digital Twin to begin with?
@@ -18,7 +18,7 @@ Digital twins are implemented as DataContracts (see DataContract in [Smart Contr
 
 The field security allows to use different sharing scopes and keys for its field:
 
-[![DataContract](/public/dev/data_contract.png){:max-width="50%"}](/public/dev/data_contract.png)
+[![DataContract](./20_api/img/data_contract.png){:max-width="50%"}](./20_api/img/data_contract.png)
 
 Allowed field types are
 
@@ -28,7 +28,7 @@ Allowed field types are
 
 So a Digital Twin may have a data layout like:
 
-[![DataContract](/public/dev/digital-twin-example.png){:max-width="50%"}](/public/dev/digital-twin-example.png)
+[![DataContract](./20_api/img/digital-twin-example.png){:max-width="50%"}](./20_api/img/digital-twin-example.png)
 
 The twins can be used in your business logic as you please, allowing for the construction of even the most complex constellations between machines, individuals and organizations alike.
 
@@ -82,8 +82,7 @@ Digital Twins are created via Factories deployed on the evan.network. Factories 
 
 Currently, there is a Factory deployed on the evan.network to create an 'empty' Digital Twin contract. This factory creates a Digital Twin contract with no settable properties and two roles, owner and member. The account, which creates this contract, will automatically be added to the 'owner' role.
 
-
-[![Digital Twin factory](/public/dev/twin_factory.png){:max-width="50%"}](/public/dev/twin1.png)
+[![Digital Twin factory](./20_api/img/twin_factory.png){:max-width="50%"}](./20_api/img/twin-factory.png)
 
 Now we create a new Digital Twin contract via the Runtime API from the blockchain-core. We use the DataContract API from our runtime module to create a new Digital Twin contract from the general deployed Digital Twin Factory:
 
@@ -106,7 +105,7 @@ Simply change the second parameter of the `create` function to your configured a
 
 As mentioned, every Digital Twin has a [DBCP](https://github.com/evannetwork/dbcp) description that describes its API, general information, related resources and a lot more. To know what you can do with a contract, in our case a Digital Twin, you usually need to load this description and take a look at it.
 
-[![Digital Twin set DBCP](/public/dev/twin_dbcp.png){:max-width="50%"}](/public/dev/twin_dbcp.png)
+[![Digital Twin set DBCP](./20_api/img/twin_dbcp.png){:max-width="50%"}](./20_api/img/twin_dbcp.png)
 
 
 ```js
@@ -193,7 +192,7 @@ await runtime.dataContract.setEntry(reloadedDigitalTwin, 'testEntry', sampleData
 
 Now the JSON will be stored on the IPFS servers of the evan.network and the reference from this IPFS file will be stored in the Digital Twin Smart Contract
 
-[![Digital Twin add IPFS property](/public/dev/twin_ipfs.png){:max-width="50%"}](/public/dev/twin_ipfs.png)
+[![Digital Twin add IPFS property](./20_api/img/twin_ipfs.png){:max-width="50%"}](./20_api/img/twin_ipfs.png)
 
 When you now want to get the value of the property in your Digital Twin, you can run the following code:
 
@@ -230,7 +229,7 @@ await rightsAndRoles.setOperationPermission(
 
 Replace also the `accountId`-fields with your account ID. Now you can also add new entries to the list on the Digital Twin called `testList`.
 
-[![Digital Twin add IPFS property](/public/dev/twin_ipfs_list.png){:max-width="50%"}](/public/dev/twin_ipfs_list.png)
+[![Digital Twin add IPFS property](./20_api/img/twin_ipfs_list.png){:max-width="50%"}](./20_api/img/twin_ipfs_list.png)
 
 ## 7. Add and Get entries from a list
 List entries are also stored on the IPFS servers of the evan.network and will be added to an array of elements on the Digital Twin property
@@ -283,7 +282,7 @@ await runtime.dataContract.inviteToContract(
 );
 ```
 
-[![Digital Twin add IPFS property](/public/dev/twin_invite.png){:max-width="50%"}](/public/dev/twin_invite.png)
+[![Digital Twin add IPFS property](./20_api/img/twin_invite.png){:max-width="50%"}](./20_api/img/twin_invite.png)
 
 In the first parameter, we're using null when working without Business Centers. When working in a Business Center scope, you must use the ENS domain name of the Business Center the contract was created in.
 
@@ -311,7 +310,7 @@ const hashKey = await runtime.dataContract.options.sharing.getHashKey(reloadedDi
 await runtime.dataContract.options.sharing.ensureHashKey(reloadedDigitalTwin.options.address, accountId, targetAccount, hashKey);
 ```
 
-[![Digital Twin add IPFS property](/public/dev/twin_sharing.png){:max-width="50%"}](/public/dev/twin_sharing.png)
+[![Digital Twin add IPFS property](./20_api/img/twin_sharing.png){:max-width="50%"}](./20_api/img/twin_sharing.png)
 
 This code snippet first gets the `contentKey` of the Digital Twin. The `contentKey` is the key which is used to encrypt all the data stored in the Digital Twin. This key is normally encrypted with the contract creator's private key.
 

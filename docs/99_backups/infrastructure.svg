@@ -74,7 +74,7 @@
       <text class="grey" x="160" y="20">AuthorityNode</text>
       <title>evan.network AuthorityNode</title>
     </a>
-    <a xlink:href="/doc/parity" transform="translate(20,30)">
+    <a xlink:href="https://www.parity.io/" transform="translate(20,30)">
       <rect class="server" width="160" height="80" rx="8"/>
       <text class="big" x="48" y="38">
         <tspan>Master</tspan>
@@ -82,7 +82,7 @@
       </text>
       <title>Redundant AuthorityNode Parity</title>
     </a>
-    <a xlink:href="/doc/parity" transform="translate(220,130)">
+    <a xlink:href="https://www.parity.io/" transform="translate(220,130)">
       <rect class="server" width="160" height="80" rx="8"/>
       <text class="big" x="48" y="38">
         <tspan>Master</tspan>
@@ -90,12 +90,12 @@
       </text>
       <title>Redundant AuthorityNode Parity</title>
     </a>
-    <a xlink:href="/dev/ipfs" transform="translate(20,130)">
+    <a xlink:href="/docs/04_developers/ipfs.html" transform="translate(20,130)">
       <rect class="server" width="160" height="80" rx="8"/>
       <text class="big" x="64" y="45">IPFS</text>
       <title>Redundant Interplanetary File System AuthorityNode</title>
     </a>
-    <a xlink:href="/dev/ipfs" transform="translate(220,30)">
+    <a xlink:href="/docs/04_developers/ipfs.html" transform="translate(220,30)">
       <rect class="server" width="160" height="80" rx="8"/>
       <text class="big" x="64" y="45">IPFS</text>
       <title>Redundant Interplanetary File System AuthorityNode</title>
@@ -106,18 +106,18 @@
 
   <g transform="translate(0,360)">
     <rect class="bw dotted" width="410" height="240"/>
-    <a  xlink:href="/dapps/introduction">
+    <a  xlink:href="/docs/04_developers/writing-dapps.html">
       <text class="grey" x="140" y="20">Ðapp (in Browser)</text>
       <title>evan.network Distributed Application</title>
     </a>
 
-    <a xlink:href="/dev/blockchaincore" transform="translate(20,30)">
+    <a xlink:href="/docs/04_developers/blockchain.htmlcore" transform="translate(20,30)">
       <rect class="library" width="360" height="80" rx="8"/>
       <text class="big" x="110" y="45">Blockchain Core</text>
       <title>Blockchain Core Library</title>
     </a>
 
-    <a xlink:href="/dev/" transform="translate(20,130)">
+    <a xlink:href="/docs/04_developers/writing-dapps.html" transform="translate(20,130)">
       <rect class="library" width="360" height="80" rx="8"/>
       <text class="big" x="110" y="40">Web Framework</text>
       <text class="grey" x="106" y="60">(angular, vue, jquery ...)</text>
@@ -127,18 +127,18 @@
 
   <g transform="translate(540,80)">
     <rect class="bw dotted" width="410" height="240"/>
-    <a xlink:href="/dev/smart-agents">
+    <a xlink:href="/docs/02_how_it_works/smart-agents.html">
       <text class="grey" x="160" y="20">Smart Agent</text>
       <title>evan.network Web Service</title>
     </a>
 
-    <a xlink:href="/dev/blockchaincore" transform="translate(20,30)">
+    <a xlink:href="/docs/04_developers/blockchain.htmlcore" transform="translate(20,30)">
       <rect class="library" width="360" height="80" rx="8"/>
       <text class="big" x="110" y="45">Blockchain Core</text>
       <title>Blockchain Core Library</title>
     </a>
 
-    <a xlink:href="/dev/" transform="translate(20,130)">
+    <a xlink:href="/docs/04_developers/writing-dapps.html" transform="translate(20,130)">
       <rect class="library" width="360" height="80" rx="8"/>
       <text class="big" x="110" y="45">node.js Libraries</text>
       <title>Any node.js Library is Usable</title>
@@ -147,7 +147,7 @@
 
   <g transform="translate(540,360)">
     <rect class="bw dotted" width="410" height="240"/>
-    <a xlink:href="/dev/smart-agents">
+    <a xlink:href="/docs/02_how_it_works/smart-agents.html">
       <text class="grey" x="160" y="20">Web Services</text>
       <title>Any Normal Webservice</title>
     </a>

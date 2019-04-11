@@ -76,13 +76,13 @@ The big difference is of course that each contract is a global singleton and all
 It will be a simple 'Hello World', where the string comes from the blockchain.
 We will be using the defacto-standard blockchain development framework [truffle](http://truffleframework.com), simply because it is so easy to set up and use and a lot of resources exist online.
 
-[Hello World](/dev/hello-world)
+[Hello World](/docs/04_developers/hello-world.html)
 
 
 # Your first Smart Agent
 
-[Smart Agent](/doc/smart-agents) is just a fancy name for a web service that provides blockchain access but has no own user interface. Usually it has some kind of RPC API, in REST format or otherwise, or it connects to some other service and listens for events.
+[Smart Agent](/docs/02_how_it_works/smart-agents.html) is just a fancy name for a web service that provides blockchain access but has no own user interface. Usually it has some kind of RPC API, in REST format or otherwise, or it connects to some other service and listens for events.
 
 The agent you will be writing will use the [blockchain-core](https://github.com/evannetwork/api-blockchain-core) library, which bundles and encapsulates a lot of specialized functionalities for evan.network, but also provides a lot of standard blockchain functionalities.
 
-[Hello Agent](/dev/hello-agent)
+[Hello Agent](/docs/04_developers/hello-agent.html)

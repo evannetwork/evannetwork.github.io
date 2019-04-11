@@ -12,7 +12,7 @@ In evan.network everything, no matter if human, machine or organization has a ve
 Identities are stored securely on the blockchain, ensuring that each identity is tamper-proof and can’t be impersonated by, for example, providing fraudulent documentation. Decentralized Identities are a critical feature to evan.network, as they constitute a pivotal point for safe business conduct on the platform.
 
 Similar to a fingerprint, an identity serves as a unique identifier.
-Their authenticity [can be verified without a doubt](/dev/identity-claims), eliminating the risk of impersonation attacks.
+Their authenticity [can be verified without a doubt](/docs/04_developers/identity-verification.html), eliminating the risk of impersonation attacks.
 
 ### Establishing trust relationships
 
@@ -20,7 +20,7 @@ Establishing trust is necessary to collaborate with others.
 
 Trust can be given in two ways: **Explicit** or **Implicit**.
 
-* Explicit trust is established by directly verifying your partner's identity. The relationship is established manually with your contacts through the [AddressBook](/doc/contacts) by exchanging keys.
+* Explicit trust is established by directly verifying your partner's identity. The relationship is established manually with your contacts through the [AddressBook](/docs/03_first_steps/contacts.html) by exchanging keys.
 
 * Implicit trust is established automatically.
 Implicit trust functions in the way that identities, with which you have not established an explicit trust relationship, can be trusted indirectly and automatically.

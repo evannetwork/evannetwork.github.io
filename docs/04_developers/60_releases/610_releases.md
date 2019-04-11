@@ -4,6 +4,7 @@ parent: Developers
 nav_order: 610
 permalink: /docs/04_developers/releases.html
 ---
+
 # Releases
 
 ## Latest Versions
