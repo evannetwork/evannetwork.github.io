@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+{% include head.html %}
+
+<body class="sidebar-overlay">
+
+
+  <div class="evan theme-evan" id="bmvi.evan">
+    <div class="evan-dapp-wrapper">
+        <div>
+            <div>
+                <!---->
+            </div>
+            <!---->
+        </div>
+
+        <!-- REMOVE ON INTEGRATION -->
+            <nav class="navbar">
+                <div class="navbar-brand clickable"><a href="/"><img src="/public/evan-logo-dark-half.svg" class="brand-large"></a></div>
+                <div class="nav">
+                    <div class="ml-3 bg-text-secondary">evan.network Wiki</div>
+                </div>
+            </nav>
+        <!-- /REMOVE ON INTEGRATION -->
+
+        <div class="dapp-wrapper-body show-sidebar-2">
+          <!-- /REMOVE ON INTEGRATION -->
+                <div class="dapp-wrapper-sidebar">
+                    <div class="sidebar-header">
+                        <div class="clickable">
+                            <!---->
+                        </div>
+                        <h3 class="mr-2"><i class="fas fa-times close"></i></h3>
+                    </div>
+                    <div class="d-flex flex-column h-100">
+                        <!---->
+                    </div>
+                </div>
+                <!-- /REMOVE ON INTEGRATION -->
+                <div class="dapp-wrapper-sidebar-background"></div>
+            <div class="dapp-wrapper-content">
+                <!---->
+                <!---->
+                <div style="overflow-y: auto;height: calc(100vh - 152px);">
+                    <div class="d-flex">
+                      {% if page.hide_menu %} {% else %} {% include sidebar.html %} {% endif %}
+                    </div>
+                    {% if page.hide_content %}
+
+                    {% else %}
+                    <div class="container position-relative" id="content">
+                        <div class="row h-100 py-3">
+                            <main class="col p-3 mr-3 bg-level-1 border">
+                               {{ content }}
+                            </main>
+                        </div>
+                    </div>
+                    {% endif %}
+                    <div class="d-md-flex container flex-wrap justify-content-center">
+                        {% for tile in page.tiles %}
+
+                        <a class="
+                                                p-3 col-md-5 col-lg-4 col-xl-3
+                                                m-md-3 mb-3 p-4
+                                                text-center
+                                                bg-level-1 bg-text-light border evan-highlight" href="{{ tile.link }}">
+                        <i class="highlight fas fa-{{ tile.icon }} p-4 xxxl"></i>
+                            <h3 class="highlight">
+                                {{ tile.title }}
+                            </h3> <span class="text-muted highlight">
+                               {{ tile.description }}
+                            </span>
+                        </a>
+                        {% endfor %}
+                    </div>
+
+                </div>
+                {% include footer.html %}
+            </div>
+        </div>
+    </div>
+  </div>
+</body>
+
+</html>

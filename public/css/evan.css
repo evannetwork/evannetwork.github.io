@@ -1,122 +1,38 @@
-body.animation-disabled * {
-  -webkit-transition: none;
-  transition: none;
+.nav-item:first-child {
+    border-top: 1px #e5e5e5 solid;
 }
 
-img.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.nav-item {
+    border-bottom: 1px #e5e5e5 solid;
 }
 
-img.license {
-  margin-left: auto;
-  margin-right: auto;
+.evan.theme-evan .nav-item a {
+    font-size: var(--evan-text-font-size);
+    color: var(--evan-dark);
 }
 
-.sidebar {
-  width: 17rem;
-  z-index: 10;
+.evan.theme-evan .nav-item.active{
+    border-left-color: var(--evan-primary);
 }
 
-.sidebar-toggle {
-  left: 2rem;
-  position: fixed;
+.evan.theme-evan .nav-item{
+    border-left: 4px solid;
+    border-left-color: transparent;
 }
 
-nav.sidebar-nav {
-  padding-left: 30px;
-  padding-right: 30px;
+.evan.theme-evan .nav-item:hover{
+    border-left: 4px solid;
+    border-left-color: var(--evan-primary);
 }
 
-nav.sidebar-nav h2, nav.sidebar-nav h3 {
-  color: white;
-  margin-top: 15px;
+.evan.theme-evan .nav-item:hover a {
+    color: var(--evan-primary);
 }
 
-html {
-  line-height: 1.5em !important;
-  font-size: 16px !important;
+.evan.theme-evan .nav-item.active a {
+    color: var(--evan-primary);
 }
 
-.highlight {
-  overflow-x: auto;
+.evan.theme-evan img {
+    max-width: 100%;
 }
-
-pre {
-    white-space: pre !important;
-    border: #555 solid 1px;
-}
-
-div.language-sh > div > pre {
-    background-color: #c2cdd0;
-}
-
-code {
-
-  font-size: 0.85em !important;
-  word-wrap: break-word;
-}
-
-.masthead{
-  margin-bottom:0 !important;
-}
-
-#sidebar-checkbox:checked ~ .sidebar-toggle {
-  left: 4em;
-}
-
-.footer {
-  margin-top : 3rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  border-top: 1px solid #eee;
-  text-align: center;
-}
-
-@media (min-width: 30em) {
-  .sidebar {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 48em){
-  .sidebar-item {
-    padding: 1rem !important;
-  }
-  .sidebar {
-    width: 20rem;
-  }
-  #sidebar-checkbox:checked ~ .sidebar-toggle {
-    left: 8em;
-  }
-}
-
-@media (min-width: 70em){
-  .container {
-    max-width: 48rem;
-  }
-}
-
-@media (min-width: 100em){
-  .container {
-    max-width: 60rem;
-  }
-}
-
-ul {
-  -webkit-margin-before: 0em;
-  -webkit-margin-after: 0em;
-  -webkit-margin-start: 0px;
-  -webkit-margin-end: 0px;
-  -webkit-padding-start: 20px;
-}
-
-ul ul {
-  -webkit-padding-start: 25px;
-}
-
-p {
-  text-align: justify;
-}
-

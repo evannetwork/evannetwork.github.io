@@ -5,45 +5,69 @@
 
 <body class="sidebar-overlay">
 
-  {% include sidebar.html %}
 
-  <!-- Wrap is the content to shift when toggling the sidebar. We wrap the
-         content to avoid any CSS collisions with our real content. -->
-  <div class="wrap">
-    <div class="masthead">
-      <div class="container">
-        <h3 class="masthead-title">
-          <a href="{{ site.baseurl }}/" title="Home">{{ site.title }}</a>
-          <small>{{ site.description }}</small>
-        </h3>
-      </div>
-    </div>
+  <div class="evan theme-evan" id="bmvi.evan">
+    <div class="evan-dapp-wrapper">
+        <div>
+            <div>
+                <!---->
+            </div>
+            <!---->
+        </div>
 
-    <div class="container content">
-      <div id="tipue_search_content"></div>
-      {{ content }} {% if page.hide_footer %} {% else %} {% include footer.html %} {% endif %}
+        <!-- REMOVE ON INTEGRATION -->
+            <nav class="navbar">
+                <div class="navbar-brand clickable"><a href="/"><img src="/public/evan-logo-dark-half.svg" class="brand-large"></a></div>
+                <div class="nav">
+                    <div class="ml-3 bg-text-secondary">evan.network Wiki</div>
+                </div>
+            </nav>
+        <!-- /REMOVE ON INTEGRATION -->
+
+        <div class="dapp-wrapper-body show-sidebar-2">
+          <!-- /REMOVE ON INTEGRATION -->
+                <div class="dapp-wrapper-sidebar">
+                    <div class="sidebar-header">
+                        <div class="clickable">
+                            <!---->
+                        </div>
+                        <h3 class="mr-2"><i class="fas fa-times close"></i></h3>
+                    </div>
+                    <div class="d-flex flex-column h-100">
+                        <!---->
+                    </div>
+                </div>
+                <!-- /REMOVE ON INTEGRATION -->
+                <div class="dapp-wrapper-sidebar-background"></div>
+            <div class="dapp-wrapper-content">
+                <!---->
+                <!---->
+                <div>
+                    <div class="d-flex">
+                      {% include sidebar.html %}
+                    </div>
+                    <div class="mb-2" style="overflow-y: auto;height: calc(100vh - 129px);">
+                        <!---->
+                        <!---->
+                      <div class="container position-relative" id="content">
+                          <div class="row h-100 py-3">
+                              <main class="col p-3 mr-3 bg-level-1 border">
+                                {{ content }}
+                              </main>
+                              <aside class="col-md-3 bg-level-1 border" id="left">
+                                  <div class="my-1 sticky-top" id="side">
+                                      {% include sidebar_level_2.html %}
+                                  </div>
+                              </aside>
+                          </div>
+                      </div>
+                      {% include footer.html %}
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
   </div>
-
-  <label for="sidebar-checkbox" class="sidebar-toggle"></label>
-
-  <script>
-    $(document).ready(function () {
-      // Open the sidebar on load on bigger screens
-      if ($(window).width() > 1540) {
-        // add animation disabled class to show sidebar initially immediately
-        $('body').addClass('animation-disabled');
-
-        $('#sidebar-checkbox').prop('checked', true);
-
-        setTimeout(function() {
-          $('body').removeClass('animation-disabled');
-        });
-      }
-      // Hook up search
-      $('#tipue_search_input').tipuesearch({ 'show': 99 });
-    });
-  </script>
 </body>
 
 </html>

@@ -1,0 +1,1203 @@
+.theme-evan {
+    --evan-h1-font-size: 1.75em;
+    --evan-h2-font-size: 1.3em;
+    --evan-h3-font-size: 1.125em;
+    --evan-h4-font-size: 1em;
+    --evan-h5-font-size: 0.938em;
+    --evan-h6-font-size: 0.875em;
+    --evan-text-font-size: 0.875em;
+    --evan-dapp-wrapper-sidepanel-icon-color: var(--evan-text-color);
+    --evan-dapp-wrapper-sidepanel-list-hover: var(--evan-gray-200);
+    --evan-dapp-wrapper-sidepanel-shadow: 1px 0px 20px rgba(0, 0, 0, 0.15);
+    --evan-bg-text-danger: var(--evan-white);
+    --evan-bg-text-dark: var(--evan-white);
+    --evan-bg-text-info: var(--evan-white);
+    --evan-bg-text-light: var(--evan-dark);
+    --evan-bg-text-primary: var(--evan-white);
+    --evan-bg-text-secondary: var(--evan-white);
+    --evan-bg-text-success: var(--evan-white);
+    --evan-bg-text-warning: var(--evan-white);
+    --evan-text-color-inverted: var(--evan-white);
+    --evan-text-color: var(--evan-dark);
+    --evan-text-muted: var(--evan-gray-500);
+    --evan-yiq-text-dark: var(--evan-text-color);
+    --evan-yiq-text-light: var(--evan-text-color-inverted);
+    --evan-body-bg: var(--evan-bg-level-1);
+    --evan-body-color: var(--evan-bg-inverted);
+    --evan-border-color: var(--evan-gray-300);
+    --evan-btn-primary-hover: var(--evan-primary);
+    --evan-btn-secondary-hover: #2cabe3;
+    --evan-font-family-sans-serif: Open Sans, sans-serif;
+    --evan-table-hover: var(--evan-gray-200);
+    --evan-bg-level-1: var(--evan-white);
+    --evan-bg-level-2: var(--evan-gray-150);
+    --evan-bg-level-3: var(--evan-gray-200);
+    --evan-bg-inverted: var(--evan-dark);
+    --evan-danger-darken: var(--evan-red-darken);
+    --evan-danger-lighten: var(--evan-red-lighten);
+    --evan-dark-darken: #011013;
+    --evan-dark-lighten: #036077;
+    --evan-info-darken: var(--evan-blue-darken);
+    --evan-info-lighten: var(--evan-blue-lighten);
+    --evan-light-darken: var(--evan-gray-200-darken);
+    --evan-light-lighten: var(--evan-gray-200-lighten);
+    --evan-primary-darken: var(--evan-pink-darken);
+    --evan-primary-lighten: var(--evan-pink-lighten);
+    --evan-secondary-darken: var(--evan-cyan-darken);
+    --evan-secondary-lighten: var(--evan-cyan-lighten);
+    --evan-success-darken: var(--evan-green-darken);
+    --evan-success-lighten: var(--evan-green-lighten);
+    --evan-warning-darken: var(--evan-yellow-darken);
+    --evan-warning-lighten: var(--evan-yellow-lighten);
+    --evan-black-lighten: #595959;
+    --evan-blue-lighten: #8ed0ff;
+    --evan-cyan-lighten: #e7f6f5;
+    --evan-gray-100-lighten: white;
+    --evan-gray-150-lighten: white;
+    --evan-gray-200-lighten: white;
+    --evan-gray-300-lighten: white;
+    --evan-gray-400-lighten: white;
+    --evan-gray-500-lighten: white;
+    --evan-gray-600-lighten: #caced1;
+    --evan-gray-700-lighten: #a2a9b1;
+    --evan-gray-800-lighten: #88939e;
+    --evan-gray-900-lighten: #717e8c;
+    --evan-green-lighten: #9be7ac;
+    --evan-indigo-lighten: #d2b9fb;
+    --evan-orange-lighten: #ffdfc5;
+    --evan-pink-lighten: #fab0de;
+    --evan-purple-lighten: #d5c8ed;
+    --evan-red-lighten: #f6cdd1;
+    --evan-teal-lighten: #aaf1dc;
+    --evan-white-lighten: white;
+    --evan-yellow-lighten: #ffeeba;
+    --evan-black-darken-darken: black;
+    --evan-blue-darken: #0062a7;
+    --evan-cyan-darken: #42b5af;
+    --evan-gray-100-darken: #dae0e5;
+    --evan-gray-150-darken: #d3d7e9;
+    --evan-gray-200-darken: #cbd3da;
+    --evan-gray-300-darken: #c1c9d0;
+    --evan-gray-400-darken: #b1bbc4;
+    --evan-gray-500-darken: #919ca6;
+    --evan-gray-600-darken: #545b62;
+    --evan-gray-700-darken: #32373b;
+    --evan-gray-800-darken: #1d2124;
+    --evan-gray-900-darken: #0a0c0d;
+    --evan-green-darken: #1e7e34;
+    --evan-indigo-darken: #510bc4;
+    --evan-orange-darken: #dc6502;
+    --evan-pink-darken: #b70d77;
+    --evan-purple-darken: #59339d;
+    --evan-red-darken: #bd2130;
+    --evan-teal-darken: #199d76;
+    --evan-white-darken: #e6e6e6;
+    --evan-yellow-darken: #d39e00;
+    --evan-blue: #0080da;
+    --evan-cyan: #64c6c1;
+    --evan-green: #28a745;
+    --evan-indigo: #6610f2;
+    --evan-orange: #fd7e14;
+    --evan-pink: #e71096;
+    --evan-purple: #6f42c1;
+    --evan-red: #dc3545;
+    --evan-teal: #20c997;
+    --evan-white: #ffffff;
+    --evan-yellow: #ffc107;
+    --evan-black: #000000;
+    --evan-gray-100: #f8f9fa;
+    --evan-gray-150: #f5f6fa;
+    --evan-gray-200: #e9ecef;
+    --evan-gray-300: #dee2e6;
+    --evan-gray-400: #ced4da;
+    --evan-gray-500: #adb5bd;
+    --evan-gray-600: #6c757d;
+    --evan-gray-700: #495057;
+    --evan-gray-800: #343a40;
+    --evan-gray-900: #212529;
+    --evan-danger: var(--evan-red);
+    --evan-dark: #000000;
+    --evan-info: var(--evan-blue);
+    --evan-light: var(--evan-gray-200);
+    --evan-primary: var(--evan-pink);
+    --evan-secondary: var(--evan-cyan);
+    --evan-success: var(--evan-green);
+    --evan-warning: var(--evan-yellow)
+}
+
+.evan {
+    font-family: 'Open Sans', sans-serif;
+    display: initial
+}
+
+.evan .clickable {
+    cursor: pointer
+}
+
+.evan .border-bottom.border-sm,
+.evan .border-left.border-sm,
+.evan .border-right .border.border-sm,
+.evan .border-top.border-sm {
+    border-width: 1px
+}
+
+.evan .opacity-0 {
+    opacity: 0
+}
+
+.evan .opacity-5 {
+    font-size: .05
+}
+
+.evan .opacity-10 {
+    opacity: .1
+}
+
+.evan .opacity-15 {
+    font-size: .15
+}
+
+.evan .opacity-20 {
+    opacity: .2
+}
+
+.evan .opacity-25 {
+    font-size: .25
+}
+
+.evan .opacity-30 {
+    opacity: .3
+}
+
+.evan .opacity-35 {
+    font-size: .35
+}
+
+.evan .opacity-40 {
+    opacity: .4
+}
+
+.evan .opacity-45 {
+    font-size: .45
+}
+
+.evan .opacity-50 {
+    opacity: .5
+}
+
+.evan .opacity-55 {
+    font-size: .55
+}
+
+.evan .opacity-60 {
+    opacity: .6
+}
+
+.evan .opacity-65 {
+    font-size: .65
+}
+
+.evan .opacity-70 {
+    opacity: .7
+}
+
+.evan .opacity-75 {
+    font-size: .75
+}
+
+.evan .opacity-80 {
+    opacity: .8
+}
+
+.evan .opacity-85 {
+    font-size: .85
+}
+
+.evan .opacity-90 {
+    opacity: .9
+}
+
+.evan .opacity-95 {
+    font-size: .95
+}
+
+.evan .opacity-100 {
+    opacity: 1
+}
+
+.evan .opacity-105 {
+    font-size: 1.05
+}
+
+.evan .force-oneline {
+    display: block;
+    overflow: hidden;
+    height: 1.6em;
+    white-space: nowrap;
+    text-overflow: ellipsis
+}
+
+.evan .force-oneline br {
+    display: none
+}
+
+.evan .force-oneline * {
+    display: inline-block
+}
+
+.evan .overflow-x-auto {
+    overflow-x: auto
+}
+
+.evan .overflow-y-auto {
+    overflow-x: auto
+}
+
+.evan .overflow-x-none {
+    overflow-x: none
+}
+
+.evan .overflowy-none {
+    overflow-x: none
+}
+
+.evan .bottom-left,
+.evan .bottom-right,
+.evan .top-left,
+.evan .top-right {
+    position: absolute
+}
+
+.evan .top-right {
+    top: 0;
+    right: 0
+}
+
+.evan .top-left {
+    top: 0;
+    left: 0
+}
+
+.evan .bottom-right {
+    right: 0;
+    bottom: 0
+}
+
+.evan .bottom-left {
+    bottom: 0;
+    left: 0
+}
+
+.evan .evan-breadcrumbs {
+    min-height: 63px
+}
+
+.evan .evan-breadcrumbs a.evan-breadcrumb,
+.evan .evan-breadcrumbs span {
+    color: var(--evan-gray-600)
+}
+
+.evan .evan-breadcrumbs .evan-breadcrumb {
+    cursor: pointer;
+    color: var(--evan-gray-600)
+}
+
+.evan .evan-breadcrumbs .evan-breadcrumb.active,
+.evan .evan-breadcrumbs .evan-breadcrumb:hover {
+    cursor: default;
+    color: var(--evan-secondary)
+}
+
+.evan .btn.btn-danger * {
+    color: var(--evan-bg-text-danger)
+}
+
+.evan .btn.btn-outline-danger * {
+    color: var(--evan-red)
+}
+
+.evan .btn.btn-outline-danger:hover * {
+    color: var(--evan-bg-text-danger)
+}
+
+.evan .btn.btn-dark * {
+    color: var(--evan-bg-text-dark)
+}
+
+.evan .btn.btn-outline-dark * {
+    color: #023845
+}
+
+.evan .btn.btn-outline-dark:hover * {
+    color: var(--evan-bg-text-dark)
+}
+
+.evan .btn.btn-info * {
+    color: var(--evan-bg-text-info)
+}
+
+.evan .btn.btn-outline-info * {
+    color: var(--evan-blue)
+}
+
+.evan .btn.btn-outline-info:hover * {
+    color: var(--evan-bg-text-info)
+}
+
+.evan .btn.btn-light * {
+    color: var(--evan-bg-text-light)
+}
+
+.evan .btn.btn-outline-light * {
+    color: var(--evan-gray-200)
+}
+
+.evan .btn.btn-outline-light:hover * {
+    color: var(--evan-bg-text-light)
+}
+
+.evan .btn.btn-primary * {
+    color: var(--evan-bg-text-primary)
+}
+
+.evan .btn.btn-outline-primary * {
+    color: var(--evan-pink)
+}
+
+.evan .btn.btn-outline-primary:hover * {
+    color: var(--evan-bg-text-primary)
+}
+
+.evan .btn.btn-secondary * {
+    color: var(--evan-bg-text-secondary)
+}
+
+.evan .btn.btn-outline-secondary * {
+    color: var(--evan-cyan)
+}
+
+.evan .btn.btn-outline-secondary:hover * {
+    color: var(--evan-bg-text-secondary)
+}
+
+.evan .btn.btn-success * {
+    color: var(--evan-bg-text-success)
+}
+
+.evan .btn.btn-outline-success * {
+    color: var(--evan-green)
+}
+
+.evan .btn.btn-outline-success:hover * {
+    color: var(--evan-bg-text-success)
+}
+
+.evan .btn.btn-warning * {
+    color: var(--evan-bg-text-warning)
+}
+
+.evan .btn.btn-outline-warning * {
+    color: var(--evan-yellow)
+}
+
+.evan .btn.btn-outline-warning:hover * {
+    color: var(--evan-bg-text-warning)
+}
+
+.evan .btn.btn-rounded {
+    border-radius: 60px
+}
+
+.evan .btn.btn-circle {
+    width: 45px;
+    height: 45px;
+    padding: 6px 0;
+    text-align: center;
+    border-radius: 25px
+}
+
+.evan .btn.btn-primary {
+    transition: .3s ease-out transform;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, .1)
+}
+
+.evan .btn.btn-primary.focus,
+.evan .btn.btn-primary:focus,
+.evan .btn.btn-primary:hover {
+    -webkit-transform: translateY(-3px);
+    transform: translateY(-3px);
+    border-color: var(--evan-primary);
+    background: var(--evan-primary)
+}
+
+.evan .btn.btn-secondary.focus,
+.evan .btn.btn-secondary:focus,
+.evan .btn.btn-secondary:hover {
+    opacity: .8;
+    background: var(--evan-btn-secondary-hover)
+}
+
+.evan .btn.icon-only {
+    width: 46px;
+    height: 46px;
+    padding: 0;
+    text-align: center
+}
+
+.evan .btn .label {
+    font-size: 12px;
+    line-height: 2;
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    margin-right: -.625rem;
+    margin-left: 8px;
+    padding: 0;
+    vertical-align: middle;
+    border-radius: 60px;
+    background: rgba(0, 0, 0, .2)
+}
+
+.evan .btn img {
+    height: 35px;
+    border-radius: 50%
+}
+
+.evan .bg-level-1 {
+    background-color: var(--evan-bg-level-1) !important
+}
+
+.evan .bg-level-2 {
+    background-color: var(--evan-bg-level-2) !important
+}
+
+.evan .bg-level-3 {
+    background-color: var(--evan-bg-level-3) !important
+}
+
+.evan .bg-inverted {
+    background-color: var(--evan-bg-inverted) !important
+}
+
+.evan .evan-highlight {
+    cursor: pointer;
+    transition: .3s ease-out border
+}
+
+.evan .evan-highlight .highlight,
+.evan .evan-highlight .highlight * {
+    transition: .8s ease-out color
+}
+
+.evan .evan-highlight:hover.border {
+    border: 2px solid var(--evan-primary) !important
+}
+
+.evan .evan-highlight:hover .highlight,
+.evan .evan-highlight:hover .highlight * {
+    color: var(--evan-primary) !important
+}
+
+.evan .fullscreen {
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto
+}
+
+.evan .evan-dapp-wrapper {
+    display: flex;
+    flex-direction: column;
+    height: 100%
+}
+
+.evan .evan-dapp-wrapper .navbar {
+    z-index: 50;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    padding: 0 !important;
+    background-color: var(--evan-bg-inverted)
+}
+
+.evan .evan-dapp-wrapper .navbar,
+.evan .evan-dapp-wrapper .navbar>* {
+    height: 63px
+}
+
+.evan .evan-dapp-wrapper .navbar .navbar-brand {
+    width: 240px;
+    min-width: 240px;
+    margin-right: 0;
+    padding: 10px 20px;
+    background-color: var(--evan-bg-level-1)
+}
+
+.evan .evan-dapp-wrapper .navbar .navbar-brand img {
+    height: 45px
+}
+
+.evan .evan-dapp-wrapper .navbar .navbar-brand .brand-small {
+    display: none
+}
+
+.evan .evan-dapp-wrapper .navbar .nav {
+    line-height: 63px;
+    justify-content: space-between;
+    width: 100%
+}
+
+.evan .evan-dapp-wrapper .navbar .nav button {
+    font-weight: 200;
+    height: 100%;
+    margin: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    vertical-align: top;
+    color: var(--evan-text-color-inverted);
+    border: 0;
+    outline: 0;
+    box-shadow: none
+}
+
+.evan .evan-dapp-wrapper .navbar .nav button.btn-sm {
+    padding: 0 14px
+}
+
+.evan .evan-dapp-wrapper .navbar .nav button.active {
+    background-color: rgba(255, 255, 255, .2)
+}
+
+.evan .evan-dapp-wrapper .navbar .nav button:hover {
+    background-color: rgba(0, 0, 0, .2)
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body {
+    display: flex;
+    flex-direction: row;
+    height: 100%
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar {
+    z-index: 25;
+    width: 240px;
+    min-width: 240px;
+    padding-top: 60px;
+    box-shadow: var(--evan-dapp-wrapper-sidepanel-shadow)
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar .sidebar-header {
+    display: none
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar ul.nav>li {
+    width: 100%
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar ul.nav>li a {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 70px;
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 70px;
+    padding: 0 5px 0 20px;
+    cursor: pointer;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color: var(--evan-body-color);
+    border-left: 4px solid transparent
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar ul.nav>li a p,
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar ul.nav>li a span {
+    font-size: 15px;
+    font-weight: 600
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar ul.nav>li a>i {
+    font-size: 21px;
+    font-style: normal;
+    display: inline-block;
+    width: 20px;
+    margin-right: 12px;
+    text-align: center;
+    vertical-align: middle;
+    color: var(--evan-dapp-wrapper-sidepanel-icon-color)
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar ul.nav>li a.active,
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar ul.nav>li a.active * {
+    color: var(--evan-primary)
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar ul.nav>li a:hover {
+    background-color: var(--evan-dapp-wrapper-sidepanel-list-hover)
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar ul.nav>li a.active,
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar ul.nav>li a:hover {
+    border-left: 4px solid var(--evan-primary)
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar ul.nav.small li a {
+    font-weight: 400;
+    line-height: 50px;
+    height: 50px
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar-background {
+    display: none
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar-2 {
+    border-right: 1px solid var(--evan-border-color);
+    background-color: var(--evan-bg-level-2)
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar-2>* {
+    overflow-y: auto;
+    width: 360px;
+    min-width: 360px;
+    height: 100%
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar-2>.w150 {
+    width: 150px;
+    min-width: 150px
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar-2>.w200 {
+    width: 200px;
+    min-width: 200px
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar-2>.w250 {
+    width: 250px;
+    min-width: 250px
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar-2>.w300 {
+    width: 300px;
+    min-width: 300px
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-content {
+    position: relative;
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    height: 100%;
+    background-color: var(--evan-bg-level-3)
+}
+
+@media (min-width:992px) {
+    .evan .evan-dapp-wrapper.small-toolbar .navbar .navbar-brand {
+        width: 63px;
+        min-width: 63px;
+        padding: 9px
+    }
+
+    .evan .evan-dapp-wrapper.small-toolbar .navbar .navbar-brand img.brand-large {
+        display: none
+    }
+
+    .evan .evan-dapp-wrapper.small-toolbar .navbar .navbar-brand img.brand-small {
+        display: block
+    }
+
+    .evan .evan-dapp-wrapper.small-toolbar .dapp-wrapper-sidebar {
+        width: 63px;
+        min-width: 63px
+    }
+
+    .evan .evan-dapp-wrapper.small-toolbar .dapp-wrapper-sidebar ul.nav>li a {
+        padding: 0;
+        text-align: center
+    }
+
+    .evan .evan-dapp-wrapper.small-toolbar .dapp-wrapper-sidebar ul.nav>li a i {
+        width: auto;
+        margin-right: 0
+    }
+
+    .evan .evan-dapp-wrapper.small-toolbar .dapp-wrapper-sidebar ul.nav>li a span {
+        display: none
+    }
+}
+
+@media (max-width:992px) {
+    .evan .evan-dapp-wrapper .navbar .navbar-brand {
+        width: 63px;
+        min-width: 63px;
+        padding: 9px
+    }
+
+    .evan .evan-dapp-wrapper .navbar .navbar-brand img.brand-large {
+        display: none
+    }
+
+    .evan .evan-dapp-wrapper .navbar .navbar-brand img.brand-small {
+        display: block
+    }
+
+    .evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar {
+        position: fixed;
+        left: -240px;
+        height: 100%;
+        transition: .2s ease-out left;
+        background-color: var(--evan-body-bg)
+    }
+
+    .evan .evan-dapp-wrapper .dapp-wrapper-body.show-sidebar .dapp-wrapper-sidebar {
+        left: 0
+    }
+
+    .evan .evan-dapp-wrapper .dapp-wrapper-body.show-sidebar .dapp-wrapper-sidebar-background {
+        position: fixed;
+        z-index: 20;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        display: block;
+        margin: auto
+    }
+}
+
+@media (max-width:768px) {
+    .evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar {
+        left: -100%;
+        width: 100%;
+        padding-top: 20px
+    }
+
+    .evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar .sidebar-header {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 50px;
+        padding: 0 10px 10px 26px
+    }
+
+    .evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar ul.nav.small {
+        padding-bottom: 120px
+    }
+
+    .evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar-2 {
+        position: fixed;
+        z-index: 40;
+        top: 130px;
+        left: -100%;
+        width: 100%;
+        height: calc(100% - 134px);
+        transition: 1s ease-out width;
+        transition: .2s ease-out left
+    }
+
+    .evan .evan-dapp-wrapper .dapp-wrapper-body.show-sidebar.show-sidebar-2 .dapp-wrapper-sidebar-2 {
+        left: 0
+    }
+}
+
+.dapp-wrapper-sidebar-2 ul.nav>li {
+    border-left: 4px solid transparent
+}
+
+.dapp-wrapper-sidebar-2 ul.nav>li.active,
+.dapp-wrapper-sidebar-2 ul.nav>li:hover {
+    border-left: 4px solid var(--evan-secondary);
+    background-color: var(--evan-bg-level-1)
+}
+
+.dapp-wrapper-sidebar-2 ul.nav>li ul.sub-nav {
+    margin-left: 0;
+    padding-left: 0;
+    list-style: none
+}
+
+.dapp-wrapper-sidebar-2 ul.nav>li ul.sub-nav li a {
+    color: var(--evan-text-color)
+}
+
+.dapp-wrapper-sidebar-2 ul.nav>li ul.sub-nav li a.active,
+.dapp-wrapper-sidebar-2 ul.nav>li ul.sub-nav li a:hover {
+    color: var(--evan-secondary)
+}
+
+.evan .notification-dot {
+    position: absolute;
+    top: -3px;
+    right: -3px;
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--evan-primary)
+}
+
+.evan .notification-dot:before {
+    position: absolute;
+    top: -8px;
+    left: -8px;
+    width: 25px;
+    height: 25px;
+    content: ' ';
+    animation: evanHeartbeat 1s ease-out;
+    animation-iteration-count: infinite;
+    opacity: .6;
+    border-radius: 50%;
+    background-color: var(--evan-primary)
+}
+
+.evan .dropdown-menu.show {
+    display: block !important;
+    margin-top: 0;
+    border: 1px solid var(--evan-border-color);
+    border-top: 0;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, .15)
+}
+
+.evan .dropdown-menu.show * {
+    min-width: 0
+}
+
+.evan .dropdown-menu.show .dropdown-item {
+    font-weight: 300
+}
+
+.evan .form-control.is-invalid,
+.evan .form-control.is-valid,
+.evan .was-validated .form-control:invalid {
+    background-image: none !important
+}
+
+.evan .form-check {
+    min-height: 15px
+}
+
+.evan i.large {
+    font-size: 2em
+}
+
+.evan i.xl {
+    font-size: 3em
+}
+
+.evan i.xxl {
+    font-size: 4em
+}
+
+.evan i.xxxl {
+    font-size: 5em
+}
+
+.evan .modal {
+    display: block !important
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local("Open Sans Light"), local("OpenSans-Light"), url(assets/open-sans-v15-vietnamese_latin_latin-ext_greek_cyrillic-ext_greek-ext_cyrillic-300.woff2?691f774319fda1ccf9ea172ffaee815e) format("woff2"), url(assets/open-sans-v15-vietnamese_latin_latin-ext_greek_cyrillic-ext_greek-ext_cyrillic-300.woff?4314758f10fe8f7a1fe709df5c000129) format("woff")
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local("Open Sans Regular"), local("OpenSans-Regular"), url(assets/open-sans-v15-vietnamese_latin_latin-ext_greek_cyrillic-ext_greek-ext_cyrillic-regular.woff2?e78dce533ecee30c5efd812bb23c248d) format("woff2"), url(assets/open-sans-v15-vietnamese_latin_latin-ext_greek_cyrillic-ext_greek-ext_cyrillic-regular.woff?86f83cc557017c273dd44fa39d78a341) format("woff")
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    src: local("Open Sans SemiBold"), local("OpenSans-SemiBold"), url(assets/open-sans-v15-vietnamese_latin_latin-ext_greek_cyrillic-ext_greek-ext_cyrillic-600.woff2?e9681ca3d29d814a5621d4764dd1a11e) format("woff2"), url(assets/open-sans-v15-vietnamese_latin_latin-ext_greek_cyrillic-ext_greek-ext_cyrillic-600.woff?b4f76501db86eb7c731e0437151d304f) format("woff")
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local("Open Sans Bold"), local("OpenSans-Bold"), url(assets/open-sans-v15-vietnamese_latin_latin-ext_greek_cyrillic-ext_greek-ext_cyrillic-700.woff2?96f3835aa784a280a0e1e7fa64b97b60) format("woff2"), url(assets/open-sans-v15-vietnamese_latin_latin-ext_greek_cyrillic-ext_greek-ext_cyrillic-700.woff?dd482b790e27ef56d5bb00a5d1fcdd6d) format("woff")
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 800;
+    src: local("Open Sans ExtraBold"), local("OpenSans-ExtraBold"), url(assets/open-sans-v15-vietnamese_latin_latin-ext_greek_cyrillic-ext_greek-ext_cyrillic-800.woff2?f12f942e33271945bc4689c8a40c53f0) format("woff2"), url(assets/open-sans-v15-vietnamese_latin_latin-ext_greek_cyrillic-ext_greek-ext_cyrillic-800.woff?a466cad217882f3a29d6031a40c2588d) format("woff")
+}
+
+.evan .evan-steps .evan-step-header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px
+}
+
+.evan .evan-steps .evan-step-header button {
+    z-index: 1;
+    background-color: var(--evan-bg-level-1)
+}
+
+.evan .evan-steps .evan-step-header button:disabled {
+    opacity: 1
+}
+
+.evan .evan-steps .evan-step-header button:disabled * {
+    opacity: .65
+}
+
+.evan .evan-steps .evan-step-header button span:first-child {
+    line-height: 30px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    color: #fff;
+    border-radius: 50%
+}
+
+.evan .evan-steps .evan-step-header:before {
+    position: absolute;
+    z-index: 0;
+    top: 50%;
+    right: 0;
+    left: 0;
+    height: 2px;
+    margin: auto;
+    content: ' ';
+    background-color: var(--evan-border-color)
+}
+
+.evan table.layout-fixed {
+    table-layout: fixed
+}
+
+.evan .evan-table {
+    overflow-x: auto;
+    padding: 1.25em;
+    border-top: 1px solid var(--evan-border-color);
+    border-bottom: 1px solid var(--evan-border-color)
+}
+
+.evan .evan-table table {
+    width: 100%
+}
+
+.evan .evan-table table thead th {
+    font-weight: 400;
+    padding: 1.5em;
+    color: var(--evan-gray-600)
+}
+
+.evan .evan-table table tbody tr:nth-child(odd) {
+    white-space: nowrap;
+    border: none;
+    background-color: var(--evan-bg-level-1);
+    box-shadow: 0 1px 8px 0 rgba(0, 0, 0, .1)
+}
+
+.evan .evan-table table tbody tr:nth-child(odd) td {
+    padding: 1.5em
+}
+
+.evan .evan-table table tbody tr:nth-child(odd):hover td,
+.evan .evan-table table tbody tr:nth-child(odd):hover td span {
+    color: var(--evan-primary)
+}
+
+.evan .evan-table table tbody tr:nth-child(even) td {
+    padding: .5em
+}
+
+.evan .bg-text-danger {
+    color: var(--evan-bg-text-danger) !important
+}
+
+.evan .bg-text-dark {
+    color: var(--evan-bg-text-dark) !important
+}
+
+.evan .bg-text-info {
+    color: var(--evan-bg-text-info) !important
+}
+
+.evan .bg-text-light {
+    color: var(--evan-bg-text-light) !important
+}
+
+.evan .bg-text-primary {
+    color: var(--evan-bg-text-primary) !important
+}
+
+.evan .bg-text-secondary {
+    color: var(--evan-bg-text-secondary) !important
+}
+
+.evan .bg-text-success {
+    color: var(--evan-bg-text-v) !important
+}
+
+.evan .bg-text-warning {
+    color: var(--evan-bg-text-warning) !important
+}
+
+.evan .bg-text-inverted {
+    color: var(--evan-text-color-inverted) !important
+}
+
+.evan h1,
+.evan h2,
+.evan h3,
+.evan h4,
+.evan h5,
+.evan p,
+.evan span {
+    color: var(--evan-text-color)
+}
+
+.evan a,
+.evan a:hover {
+    text-decoration: none !important
+}
+
+.evan p,
+.evan span {
+    font-size: var(--evan-text-font-size);
+    font-weight: 400
+}
+
+.evan .font-size-20 {
+    font-size: 90%
+}
+
+.evan .font-size-25 {
+    font-size: 90%
+}
+
+.evan .font-size-30 {
+    font-size: 90%
+}
+
+.evan .font-size-35 {
+    font-size: 90%
+}
+
+.evan .font-size-40 {
+    font-size: 90%
+}
+
+.evan .font-size-45 {
+    font-size: 90%
+}
+
+.evan .font-size-50 {
+    font-size: 90%
+}
+
+.evan .font-size-55 {
+    font-size: 90%
+}
+
+.evan .font-size-60 {
+    font-size: 90%
+}
+
+.evan .font-size-65 {
+    font-size: 90%
+}
+
+.evan .font-size-70 {
+    font-size: 90%
+}
+
+.evan .font-size-75 {
+    font-size: 90%
+}
+
+.evan .font-size-80 {
+    font-size: 90%
+}
+
+.evan .font-size-85 {
+    font-size: 90%
+}
+
+.evan .font-size-90 {
+    font-size: 90%
+}
+
+.evan .font-size-95 {
+    font-size: 90%
+}
+
+.evan .overflow-multiline {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    max-height: 4.3em;
+    margin-right: -1em;
+    padding-right: 1em;
+    text-align: justify
+}
+
+.evan .overflow-multiline:before {
+    position: absolute;
+    right: 0;
+    bottom: -5px;
+    content: '...'
+}
+
+.evan .overflow-multiline:after {
+    position: absolute;
+    right: 0;
+    width: 1em;
+    height: 1em;
+    margin-top: .2em;
+    content: '';
+    background: #fff
+}
+
+.evan .bg-transition {
+    transition: .3s ease-out background-color
+}
+
+.evan .all-transition {
+    transition: .3s ease-out all
+}
+
+@keyframes evanHeartbeat {
+    0% {
+        -webkit-transform: scale(0);
+        opacity: 0
+    }
+
+    25% {
+        -webkit-transform: scale(.1);
+        opacity: .1
+    }
+
+    50% {
+        -webkit-transform: scale(.5);
+        opacity: .3
+    }
+
+    75% {
+        -webkit-transform: scale(.8);
+        opacity: .5
+    }
+
+    100% {
+        -webkit-transform: scale(1);
+        opacity: 0
+    }
+}
