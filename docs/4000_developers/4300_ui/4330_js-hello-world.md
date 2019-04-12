@@ -1,6 +1,7 @@
 ---
 title: "evan.network framework Hello World"
 parent: Developers
+grand_parent: UI
 nav_order: 4330
 permalink: /docs/developers/ui/js-hello-world.html
 ---

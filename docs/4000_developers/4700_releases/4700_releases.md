@@ -1,8 +1,9 @@
 ---
 title: "Releases"
 parent: Developers
-nav_order: 4610
+nav_order: 4700
 permalink: /docs/developers/releases/releases.html
+has_grand_children: true
 ---
 
 # Releases

@@ -1,6 +1,7 @@
 ---
 title: "Digital Twin"
 parent: Developers
+grand_parent: API
 nav_order: 4220
 permalink: /docs/developers/api/digital-twin.html
 ---

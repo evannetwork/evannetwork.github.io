@@ -1,7 +1,8 @@
 ---
 title: "Developer Cheat Sheet"
 parent: Developers
-nav_order: 4550
+grand_parent: Tooling
+nav_order: 4650
 permalink: /docs/developers/tooling/cheatsheet.html
 ---
 

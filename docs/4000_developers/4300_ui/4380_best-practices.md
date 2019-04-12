@@ -1,6 +1,7 @@
 ---
 title: "Best Practices"
 parent: Developers
+grand_parent: UI
 nav_order: 4380
 permalink: /docs/developers/ui/best-practices.html
 ---

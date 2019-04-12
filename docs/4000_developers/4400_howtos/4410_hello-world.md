@@ -1,6 +1,7 @@
 ---
 title: "Hello World"
 parent: Developers
+grand_parent: HOWTO
 nav_order: 4410
 permalink: /docs/developers/hello-world.html
 ---

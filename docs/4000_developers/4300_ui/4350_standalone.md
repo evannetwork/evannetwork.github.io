@@ -1,6 +1,7 @@
 ---
 title: "standalone Hello World"
 parent: Developers
+grand_parent: UI
 nav_order: 4350
 permalink: /docs/developers/ui/standalone.html
 ---

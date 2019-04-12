@@ -1,6 +1,7 @@
 ---
 title: "Business Center"
 parent: Developers
+grand_parent: Concepts
 nav_order: 4145
 permalink: /docs/developers/concepts/business-center.html
 ---

@@ -1,7 +1,8 @@
 ---
 title: "project generator"
 parent: Developers
-nav_order: 4520
+grand_parent: Tooling
+nav_order: 4620
 permalink: /docs/developers/tooling/generator-evan.html
 ---
 

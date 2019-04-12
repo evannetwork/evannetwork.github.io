@@ -1,6 +1,7 @@
 ---
 title: "Blockchain"
 parent: Developers
+grand_parent: Concepts
 nav_order: 4110
 permalink: /docs/developers/concepts/blockchain.html
 ---

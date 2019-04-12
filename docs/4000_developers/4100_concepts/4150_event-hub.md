@@ -1,6 +1,7 @@
 ---
 title: "Event Hub"
 parent: Developers
+grand_parent: Concepts
 nav_order: 4150
 permalink: /docs/developers/concepts/event-hub.html
 ---

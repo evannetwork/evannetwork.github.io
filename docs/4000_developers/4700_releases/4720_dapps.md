@@ -1,7 +1,8 @@
 ---
 title: "evan.network ÐApps"
 parent: Developers
-nav_order: 4630
+grand_parent: Releases
+nav_order: 4720
 permalink: /docs/developers/releases/dapps.html
 ---
 

@@ -1,6 +1,7 @@
 ---
 title: "Angular - Task ƉApp Custom Contract"
 parent: Developers
+grand_parent: UI
 nav_order: 4348
 permalink: /docs/developers/ui/angular/task-custom-contract.html
 ---

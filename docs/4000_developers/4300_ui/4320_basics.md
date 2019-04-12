@@ -1,6 +1,7 @@
 ---
 title: "ÐApp Basics"
 parent: Developers
+grand_parent: UI
 nav_order: 4320
 permalink: /docs/developers/ui/basics.html
 ---

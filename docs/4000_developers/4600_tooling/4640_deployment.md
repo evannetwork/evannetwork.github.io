@@ -1,7 +1,8 @@
 ---
 title: "Deployment"
 parent: Developers
-nav_order: 4540
+grand_parent: Tooling
+nav_order: 4640
 permalink: /docs/developers/tooling/deployment.html
 ---
 
@@ -29,7 +30,7 @@ Simply open your evan-network base project. Within your config folder, a deploym
 included, that contains all the important configurations for your deployment. Here you must insert
 your accountID and your private key, so the script can handle ENS description deployments for you.
 
-[![Finished](/docs/4000_developers/4500_tooling/img/deploy-config.png){:width="50%"}](/docs/4000_developers/4500_tooling/img/deploy-config.png)
+[![Finished](/docs/4000_developers/4600_tooling/img/deploy-config.png){:width="50%"}](/docs/4000_developers/4600_tooling/img/deploy-config.png)
 
 **Currently: For security reasons, the ownership of the ENS addresses are reserved for the members
 of the evan GmbH.**
@@ -66,7 +67,7 @@ npm run deploy pathToConfig
 Each ÐApp that were successfully build by "npm run dapps-build", is available by to your deploy
 scope.
 
-[![Finished](/docs/4000_developers/4500_tooling/img/deploy.png){:width="50%"}](/docs/4000_developers/4500_tooling/img/deploy.png)
+[![Finished](/docs/4000_developers/4600_tooling/img/deploy.png){:width="50%"}](/docs/4000_developers/4600_tooling/img/deploy.png)
 
 So, when you deploy anything, it will be available under the following ENS domain:
 

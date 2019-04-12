@@ -1,7 +1,8 @@
 ---
 title: "Setting Up"
 parent: Developers
-nav_order: 4510
+grand_parent: Tooling
+nav_order: 4610
 permalink: /docs/developers/tooling/setting-up.html
 ---
 

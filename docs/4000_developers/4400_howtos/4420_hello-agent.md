@@ -1,6 +1,7 @@
 ---
 title: "Hello Agent"
 parent: Developers
+grand_parent: HOWTO
 nav_order: 4420
 permalink: /docs/developers/hello-agent.html
 ---

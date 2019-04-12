@@ -1,8 +1,9 @@
 ---
 title: "Angular 5 Tutorial"
 parent: Developers
+grand_parent: UI
 nav_order: 4340
-permalink: /docs/developers/ui/angular/angular.html
+permalink: /docs/developers/ui/angular/hello-world.html
 ---
 
 # Angular 5 Tutorial

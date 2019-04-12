@@ -1,6 +1,7 @@
 ---
 title: "Permissioning"
 parent: Developers
+grand_parent: Concepts
 nav_order: 4135
 permalink: /docs/developers/concepts/permissioning.html
 ---

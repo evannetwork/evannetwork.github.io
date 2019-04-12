@@ -1,6 +1,7 @@
 ---
 title: "Contract Factories"
 parent: Developers
+grand_parent: Concepts
 nav_order: 4120
 permalink: /docs/developers/concepts/contract-factories.html
 ---
