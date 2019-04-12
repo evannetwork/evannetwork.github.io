@@ -1,7 +1,7 @@
 ---
 title: "Profile DApp"
 parent: Developers
-nav_order: 382
+nav_order: 4392
 permalink: /docs/developers/ui/dapps/profile.html
 ---
 

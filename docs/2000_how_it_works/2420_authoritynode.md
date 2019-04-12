@@ -1,7 +1,7 @@
 ---
 title: "AuthorityNodes"
 parent: How it works
-nav_order: 42
+nav_order: 2420
 permalink: /docs/how_it_works/authoritynode.html
 ---
 

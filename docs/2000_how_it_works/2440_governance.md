@@ -1,7 +1,7 @@
 ---
 title: "evan governance"
 parent: How it works
-nav_order: 44
+nav_order: 2440
 permalink: /docs/how_it_works/governance.html
 ---
 

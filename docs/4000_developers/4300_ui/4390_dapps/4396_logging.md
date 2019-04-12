@@ -1,7 +1,7 @@
 ---
 title: "Logging DApp"
 parent: Developers
-nav_order: 386
+nav_order: 4396
 permalink: /docs/developers/ui/dapps/logging.html
 ---
 

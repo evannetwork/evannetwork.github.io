@@ -1,7 +1,7 @@
 ---
 title: "Goals"
 parent: What's evan?
-nav_order: 5
+nav_order: 1500
 permalink: /docs/whats_evan/goals.html
 ---
 

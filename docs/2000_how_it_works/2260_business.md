@@ -1,7 +1,7 @@
 ---
 title: "Business Center"
 parent: How it works
-nav_order: 26
+nav_order: 2260
 permalink: /docs/how_it_works/business.html
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: "Angular - Task ƉApp DataContract"
 parent: Developers
-nav_order: 346
+nav_order: 4346
 permalink: /docs/developers/ui/angular/task-data-contract.html
 ---
 

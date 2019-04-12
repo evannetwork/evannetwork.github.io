@@ -1,7 +1,7 @@
 ---
 title: "Namespaces"
 parent: How it works
-nav_order: 24
+nav_order: 2240
 permalink: /docs/how_it_works/namespaces.html
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: First Steps
 parent: First Steps
-nav_order: 3
+nav_order: 3000
 permalink: /docs/first_steps.html
 layout: tiles
 has_children: true

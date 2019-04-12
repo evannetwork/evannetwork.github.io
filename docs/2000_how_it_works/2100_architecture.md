@@ -1,7 +1,7 @@
 ---
 title: "Infrastructure"
 parent: How it works
-nav_order: 10
+nav_order: 2100
 permalink: /docs/how_it_works/architecture.html
 ---
 

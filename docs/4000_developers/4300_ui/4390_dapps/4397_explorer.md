@@ -1,7 +1,7 @@
 ---
 title: "Explorer DApp"
 parent: Developers
-nav_order: 387
+nav_order: 4397
 permalink: /docs/developers/ui/dapps/explorer.html
 ---
 

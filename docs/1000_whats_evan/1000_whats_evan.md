@@ -1,7 +1,7 @@
 ---
 title: What's evan?
 parent: What's evan?
-nav_order: 1
+nav_order: 1000
 permalink: /docs/whats_evan.html
 layout: tiles
 has_children: true

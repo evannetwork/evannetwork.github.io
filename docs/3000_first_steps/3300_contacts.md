@@ -1,7 +1,7 @@
 ---
 title: "Contacts"
 parent: First Steps
-nav_order: 30
+nav_order: 3300
 permalink: /docs/first_steps/contacts.html
 ---
 

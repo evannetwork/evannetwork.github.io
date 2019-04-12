@@ -1,7 +1,7 @@
 ---
 title: "Visualization Evan.network Architecture"
 parent: How it works
-nav_order: 12
+nav_order: 2120
 permalink: /docs/how_it_works/architecture_visualization.html
 ---
 

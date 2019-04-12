@@ -1,7 +1,7 @@
 ---
 title: "Queue DApp"
 parent: Developers
-nav_order: 384
+nav_order: 4394
 permalink: /docs/developers/ui/dapps/queue.html
 ---
 

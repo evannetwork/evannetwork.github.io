@@ -1,7 +1,7 @@
 ---
 title: "Quick-start guide"
 parent: First Steps
-nav_order: 10
+nav_order: 3100
 permalink: /docs/first_steps/quick-start.html
 ---
 

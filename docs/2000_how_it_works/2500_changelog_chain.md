@@ -1,7 +1,7 @@
 ---
 title: "Changelog"
 parent: How it works
-nav_order: 50
+nav_order: 2500
 permalink: /docs/how_it_works/changelog_chain.html
 ---
 

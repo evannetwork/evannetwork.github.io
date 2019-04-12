@@ -1,7 +1,7 @@
 ---
 title: "Dashboard"
 parent: First Steps
-nav_order: 20
+nav_order: 3200
 permalink: /docs/first_steps/dashboard.html
 ---
 

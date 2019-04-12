@@ -1,7 +1,7 @@
 ---
 title: "Demo Management 2"
 parent: Developers
-nav_order: 389
+nav_order: 4399
 permalink: /docs/developers/ui/dapps/demo-management-2.html
 ---
 

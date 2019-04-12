@@ -1,7 +1,7 @@
 ---
 title: "Smart Agents"
 parent: How it works
-nav_order: 18
+nav_order: 2180
 permalink: /docs/how_it_works/smart-agents.html
 ---
 

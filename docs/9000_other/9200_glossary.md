@@ -1,7 +1,7 @@
 ---
 title: Glossary
 parent: Other
-nav_order: 20
+nav_order: 9200
 permalink: /docs/other/glossary.html
 ---
 

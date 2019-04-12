@@ -1,7 +1,7 @@
 ---
 title: Smart Contract Types
 parent: Developers
-nav_order: 130
+nav_order: 4130
 permalink: /docs/developers/concepts/contracttypes.html
 ---
 

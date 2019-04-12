@@ -1,7 +1,7 @@
 ---
 title: "evan.network Technical Overview"
 parent: How it works
-nav_order: 14
+nav_order: 2140
 permalink: /docs/how_it_works/technical_overview.html
 ---
 

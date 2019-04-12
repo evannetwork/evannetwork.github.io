@@ -1,7 +1,7 @@
 ---
 title: "Angular 5 Tutorial"
 parent: Developers
-nav_order: 340
+nav_order: 4340
 permalink: /docs/developers/ui/angular/angular.html
 ---
 

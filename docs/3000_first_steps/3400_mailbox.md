@@ -1,7 +1,7 @@
 ---
 title: "On Chain Messaging"
 parent: First Steps
-nav_order: 41
+nav_order: 3400
 permalink: /docs/first_steps/onchain.html
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Other
 parent: Other
-nav_order: 9
+nav_order: 9000
 permalink: /docs/other.html
 layout: tiles
 has_children: true

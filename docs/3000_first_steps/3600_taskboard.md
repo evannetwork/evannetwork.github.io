@@ -1,7 +1,7 @@
 ---
 title: "Taskboard"
 parent: First Steps
-nav_order: 60
+nav_order: 3600
 permalink: /docs/first_steps/taskboard.html
 ---
 

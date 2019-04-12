@@ -1,7 +1,7 @@
 ---
 title: "Core features"
 parent: What's evan?
-nav_order: 2
+nav_order: 1200
 permalink: /docs/whats_evan/corefeatures.html
 ---
 

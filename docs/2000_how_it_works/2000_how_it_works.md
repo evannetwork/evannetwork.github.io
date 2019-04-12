@@ -1,7 +1,7 @@
 ---
 title: How it works
 parent: How it works
-nav_order: 2
+nav_order: 2000
 permalink: /docs/how_it_works.html
 layout: tiles
 has_children: true

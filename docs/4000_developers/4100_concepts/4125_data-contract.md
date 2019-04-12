@@ -1,7 +1,7 @@
 ---
 title: Data Contract
 parent: Developers
-nav_order: 125
+nav_order: 4125
 permalink: /docs/developers/concepts/data-contract.html
 ---
 

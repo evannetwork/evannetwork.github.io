@@ -1,7 +1,7 @@
 ---
 title: "Verification"
 parent: First Steps
-nav_order: 50
+nav_order: 3500
 permalink: /docs/first_steps/verification.html
 ---
 

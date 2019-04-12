@@ -1,7 +1,7 @@
 ---
 title: "Identity Verification"
 parent: Developers
-nav_order: 160
+nav_order: 4160
 permalink: /docs/developers/concepts/identity-verification.html
 ---
 

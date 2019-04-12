@@ -1,7 +1,7 @@
 ---
 title: "Enterprise Blockchain"
 parent: What's evan?
-nav_order: 3
+nav_order: 1300
 permalink: /docs/whats_evan/enterprisechain.html
 ---
 

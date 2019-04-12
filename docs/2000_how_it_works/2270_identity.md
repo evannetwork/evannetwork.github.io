@@ -1,7 +1,7 @@
 ---
 title: "Verified Identities"
 parent: How it works
-nav_order: 27
+nav_order: 2270
 permalink: /docs/how_it_works/identity.html
 ---
 
