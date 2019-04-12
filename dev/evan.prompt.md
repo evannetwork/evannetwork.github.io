@@ -14,9 +14,7 @@ Don't let the name fool you, this is not just for working with blockchain contra
 Installing the `evan.prompt` is as simple as 
 
 ```sh
-$ npm i evan.prompt
-$ cd evan.prompt
-$ chmod a+x evan
+$ npm i -g evan.prompt
 ```
 
 # Configuration
@@ -55,7 +53,7 @@ You will need to have configured your accounts and you will need to have conncec
 A quick look at the options:
 
 ```sh
-$ ./evan --help
+$ evan --help
 
   Usage: evan [options]
 
@@ -89,7 +87,7 @@ It starts  a `nodejs` REPL with a configured [blockchain-core](https://github.co
 You can also directly pass code on the command line to `eval`, although with a slightly less defined environement.
 
 ```sh
-$ ./evan -e 'bcc.accounts'
+$ evan -e 'bcc.accounts'
 ['0xDE56...235aC' ...]
 
 ```
@@ -143,7 +141,7 @@ The option to compile solidity files is `-c`. It will search your included paths
 
 
 ```sh
-$ .evan -c hello.sol,hola.sol -c hello.sol
+$ evan -c hello.sol,hola.sol -c hello.sol
 ```
 
 All files that are given at the command line, either from a compile or any other option that can have Solidity files, will only be compiled once at initial start and then cached, even if they are given multiple times.
@@ -167,7 +165,7 @@ What the other tools can't do is to directly pass the compiled bytecode and inte
 The simplest example for this is to compile a contract and create a new instance of it on the evan.network blockchain.
 
 ```sh
-$ ./evan -n hello.sol -n another_contract.sol
+$ evan -n hello.sol -n another_contract.sol
 Found  /home/myusername/contracts/hello.sol
 Found  /home/myusername/contracts/another_contract.sol
 Created new instance of HelloWorld: 0xad344e3454b23...4229
@@ -178,7 +176,7 @@ No matter by which option you create or load a contract, it will be put into the
 Some contracts may require additional arguments or more gas to deploy than is given by default. These additional parameters are appended after semicolons, which means you have to enclose the whole parameter's string in quotes. Since contract arguments are given as JSON objects, this is necessary anyway.
 
 ```sh
-$ ./evan -n 'some_contract.sol;{ "value": "0" };200000'
+$ evan -n 'some_contract.sol;{ "value": "0" };200000'
 Found  /home/myusername/contracts/some_contract.sol
 Created new instance of Something: 0xad37774e3454b23...4229
 ```
@@ -193,7 +191,7 @@ Whenever possible you should use and load contracts that have DBCP descriptions.
 a DBCP description, then all you need to do is pass its address/ ID or if it has, its ENS address.
 
 ```sh
-$ ./evan -l 0x54abc....324514af23
+$ evan -l 0x54abc....324514af23
 
 ```
 
@@ -203,7 +201,7 @@ You can also load contracts without DBCP description. But to do so and have them
 by other means. For default contracts and contracts you have compiled previously this is already the case.
 
 ```sh
-$ ./evan -L 0x579492375bc...947ae=DataContract
+$ evan -L 0x579492375bc...947ae=DataContract
 
 ```
 
@@ -212,14 +210,14 @@ Here only the contract is loaded into `C['0x579492375bc...947ae']`. The `-C` opt
 If you don't have this you can pass a Solidity filename, which will be compiled normally (unless it has been compiled in an earlier command option already), and then the ABI is extracted from the compile result and used.
 
 ```sh
-$ ./evan -L 0x5794fff75bc...947ae=mycontract.sol
+$ evan -L 0x5794fff75bc...947ae=mycontract.sol
 ```
 
 # File Upload and Download
 IPFS is heavily used in evan.network. Not just to store data too big to be stored directly in contracts, the ÐApps themselves or the descriptions. So the necessity to quickly upload files arises only occasionally.
 
 ```sh
-$ ./evan -U file0.txt,file1.png -U directory/file2.json
+$ evan -U file0.txt,file1.png -U directory/file2.json
 ```
 The files are searched for in the configured included paths in the same way as in Solidity files for compilation.
 The returned hashes are not the normal IPFS hashes, but the ones used internally in contracts.

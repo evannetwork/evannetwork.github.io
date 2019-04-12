@@ -1,11 +1,37 @@
 ---
-title: "Architecture"
+title: "Infrastructure"
 ---
-# Architecture
+# Infrastructure overview
+Infrastructure on evan.network can be seperated into three categories:
+Core API, Core Services and the Core Network.
 
-Real goods and machines receive a digital identity (Digital Twin) in the evan.network blockchain and can participate with it directly in digital transactions. In a Business Center, users can execute transactions and exchange data with each other, with other organizations or with the Digital Twins of real machines. Hence, the evan.network provides the basis for company-wide, efficient and secure Industry 4.0 business models.
+**Core API** consists of the [Blockchain Core](https://evannetwork.github.io/dev/blockchain-core) protocol, the [Key Exchange](https://evannetwork.github.io/dev/security#key-exchange) and the [DBCP protocol](https://evannetwork.github.io/dev/dbcp).
 
-For the interaction between users, processes and machines, evan.network offers predefined services (Smart Contracts), which can be adapted to specific needs. The interaction with Smart Contracts takes place via ÐApps in web or mobile browsers or via API from existing IT systems, IT tools and/ or machines. For this purpose, Smart Agents communicate with the Smart Contracts. The Smart Contracts represent the professional framework of the respective service and are developed according to the specific needs. For example, a Smart Contract that represents a Digital Twin can include the entire life cycle of the asset and its business processes. In concrete terms, this means that the Smart Contract itself provides a kind of management shell for the various data types and manages access to the data via an encryption management and a rights-and-role model. In the case of master data such as product properties, the actual data is stored as a JSON object encrypted with the Digital Twin keys in the storage service. The address where the data was stored in the storage is saved in the Smart Contract. Other data are handled in a similar way, e.g. service reports. If the service technician creates a report and wants to attach for example an image of the machine, this image is loaded into the storage in encrypted form and the corresponding address is inserted into the corresponding data area of the Digital Twin. The complete control of who may insert or read data is controlled by the owner of the Digital Twin Smart Contract, who has complete data sovereignty.
+**Core Services** contains user management services, [factories](https://evannetwork.github.io/dev/smart-contracts#contract-factories) for the creation of i.a. digital twins, templates and infrastructure components on the network. 
+
+**Core Network** hosts the built-in [distributed storage service](https://evannetwork.github.io/dev/ipfs), the underlying Blockchain layer and AuthorityNodes.
+
+Component details
+---
+
+[Organizations, physical assets and machines receive a digital identity (Digital Twin)](/dev/digital-twin) on the evan.network blockchain. 
+Digital twins can be addressed through transactions by any identity, human or otherwise, and integrated in complex business logic. 
+
+
+[In a Business Center](/doc/business), users can execute transactions and exchange data with each other, with other organizations or with the Digital Twins of real machines. Hence, the evan.network provides the basis for company-wide, efficient and secure Industry 4.0 business models.
+
+For the interaction between users, processes and machines, evan.network offers predefined services (Smart Contracts), which can be adapted to specific needs. 
+
+The interaction with Smart Contracts takes place via ÐApps in web or mobile browsers or via API from existing IT systems, IT tools and/ or machines. 
+For this purpose, [Smart Agents communicate with the Smart Contracts](/dev/smart-agents). The Smart Contracts represent the professional framework of the respective service and are developed according to the specific needs. 
+
+For example, a Smart Contract that represents a Digital Twin can include the entire life cycle of the asset and its business processes. 
+In concrete terms, this means that the Smart Contract itself provides a kind of management console for the various data types and manages access to the data via an encryption management and a rights-and-role model. 
+In the case of master data such as product properties, the actual data is stored as a JSON object encrypted with the Digital Twin keys in the storage service. 
+
+The address where the data was stored in the storage is saved in the Smart Contract. Other data are handled in a similar way, e.g. service reports. If the service technician creates a report and wants to attach for example an image of the machine, this image is loaded into the storage in encrypted form and the corresponding address is inserted into the corresponding data area of the Digital Twin. 
+
+The complete control of who may insert or read data is controlled by the owner of the Digital Twin Smart Contract, who has complete data sovereignty.
 
 <svg version="1.1" id="evan.network" width="50%" viewBox="0 0 330 700" style="float: left; margin-right: 1em; "
    xmlns:svg="http://www.w3.org/2000/svg"  xmlns="http://www.w3.org/2000/svg"
@@ -794,7 +820,7 @@ This architecture enables the integration of any third-party Smart Contracts int
 Based on this architectural principle, the entire network was created. Thus, all applications the user communicates with in the evan.network, processes Smart Contracts with and makes transactions with are implemented as ÐApp. 
 
 ## Security
-The core technology of the evan.network is based on the Ethereum blockchain technology. The protection of transactions against manipulation is an essential element of this technology. This requires that the contents of the Smart Contracts can be read, interpreted and verified by all network partners (e.g. MasterNodes) in the blockchain, which represents a significant hurdle in the B2B adaptation of blockchain technology.
+The core technology of the evan.network is based on the Ethereum blockchain technology. The protection of transactions against manipulation is an essential element of this technology. This requires that the contents of the Smart Contracts can be read, interpreted and verified by all network partners (e.g. AuthorityNodes) in the blockchain, which represents a significant hurdle in the B2B adaptation of blockchain technology.
 
 The evan.network therefore implements a hybrid storage concept that offers transaction and data security at the same time. All user data are encrypted (AES 256bit/CBC), stored in a distributed file system (IPFS) belonging to the network and referenced from the Smart Contract. This ensures that the actual content is only visible and usable for third parties, if they are invited into a contract and thus have an authorization for the respective data.
 
@@ -842,4 +868,4 @@ For an automation of the business relations, evan.network offers APIs to all Sma
 If the user has the rights, he or she can also add content to the Smart Contract. Via Smart Agents, the invitation via email or the mobile push notifications are solved in the evan.network. They combine the "blockchain world" with other technologies.
 
 ## Scalability
-A big challenge to blockchain technology is the number of possible parallel transactions. There is still no final solution for realistically achieving almost infinite scalability within a blockchain. To counter this fact the evan.network is structured in such a way that the organization and technology of the MasterNodes make it possible to launch specialized or use case specific SideChains at any time. These are also subject to DAO governance but, depending on your setup, configuration and rules, allow you to perform specified use cases in much higher volumes. The technologies and services used in evan.network such as the name service or DBCP descriptions make it easier for users and developers to interact seamlessly with their contracts and ÐApps regardless of this technical separation.
+A big challenge to blockchain technology is the number of possible parallel transactions. There is still no final solution for realistically achieving almost infinite scalability within a blockchain. To counter this fact the evan.network is structured in such a way that the organization and technology of the AuthorityNodes make it possible to launch specialized or use case specific SideChains at any time. These are also subject to DAO governance but, depending on your setup, configuration and rules, allow you to perform specified use cases in much higher volumes. The technologies and services used in evan.network such as the name service or DBCP descriptions make it easier for users and developers to interact seamlessly with their contracts and ÐApps regardless of this technical separation.

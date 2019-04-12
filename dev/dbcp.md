@@ -4,7 +4,7 @@ title: "DBCP"
 # DBCP
 
 ## About the Protocol
-DBCP is a formalized description of how to interact with (Ethereum) Smart Contracts. This makes a Smart Contract almost a single point of contact for interacting with Ethereum based blockchains.
+DBCP is a formalized description of how to interact with (Ethereum) Smart Contracts. This makes a Smart Contract almost a single point of contact for interacting with Ethereum based blockchains. By doing so, running updates and therefore downtime cease to be a reason for concern. 
 
 Developers, who write applications for Smart Contracts need at least the contract address and the ABI for writing code that interacts with the contract. Some details about the Smart Contract and contact addresses can be helpful as well.
 

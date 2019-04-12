@@ -53,23 +53,23 @@ title: "evan.network Technical Overview"
 
   <text x="350" y="20" style="font-size: 20pt;">Evan Network Infrastructure</text>
   <g transform="translate(0,80)">
-    <title>evan.network Master Nodes</title>
+    <title>evan.network AuthorityNodes</title>
     <rect class="bw dotted" width="410" height="240" transform="translate(15,-15)"/>        
     <rect class="bw dotted" width="410" height="240" transform="translate(10,-10)"/>
     <rect class="bw dotted" width="410" height="240" transform="translate(5,-5)"/>
     <rect class="bw dotted" width="410" height="240"/>
     <rect class="bw dotted" width="410" height="240"/>
-    <a xlink:href="/doc/masternode">
-      <text x="160" y="20">Master Node</text>
+    <a xlink:href="/doc/authoritynode">
+      <text x="160" y="20">AuthorityNode</text>
     </a>
-    <text class="grey small" x="70" y="230">every DAO member runs a MasterNode</text>
+    <text class="grey small" x="70" y="230">every DAO member runs a AuthorityNode</text>
     <a xlink:href="/dev/blockchain" transform="translate(20,30)">
       <rect class="server" width="160" height="80" rx="3"/>
       <text class="big" x="50" y="38">
         <tspan>Signing</tspan>
         <tspan x="70" dx="-0.75em" dy="1em">Parity</tspan>
       </text>
-      <title>MasterNode Ethereum Client</title>
+      <title>AuthorityNode Ethereum Client</title>
     </a>
     <a xlink:href="/dev/blockchain" transform="translate(220,130)">
       <rect class="server" width="160" height="80" rx="3"/>
@@ -77,17 +77,17 @@ title: "evan.network Technical Overview"
         <tspan x="35">Transaction</tspan>
         <tspan x="70" dx="-0.75em" dy="1em">Parity</tspan>
       </text>
-      <title>MasterNode Ethereum Client</title>
+      <title>AuthorityNode Ethereum Client</title>
     </a>
     <a xlink:href="/dev/ipfs" transform="translate(20,130)">
       <rect class="server" width="160" height="80" rx="3"/>
       <text class="big" x="62" y="45">IPFS</text>
-      <title>Redundant Interplanetary File System MasterNode</title>
+      <title>Redundant Interplanetary File System AuthorityNode</title>
     </a>
     <a xlink:href="/dev/ipfs" transform="translate(220,30)">
       <rect class="server" width="160" height="80" rx="3"/>
       <text class="big" x="62" y="45">IPFS</text>
-      <title>Redundant Interplanetary File System MasterNode</title>
+      <title>Redundant Interplanetary File System AuthorityNode</title>
     </a>
     <path class="bidirectional-lookup" d="M 190 110 l 20 20"/>
     <path class="bidirectional-lookup" d="M 190 130 l 20 -20"/>
@@ -209,7 +209,7 @@ title: "evan.network Technical Overview"
 The evan.network builds on existing technology like a programmable blockchain with [Ethereum](https://ethereum.org), and a distributed file storage with [IPFS](https://ipfs.io).
 
 It combines those two technologies and provides the storage and computing power and bandwidth to run distributed
-applications with the [MasterNodes](/doc/masternode).
+applications with the [AuthorityNodes](/doc/authoritynode).
 
 All this infrastructure is exposed and made usable by fairly ordinary web-applications via the [Blockchain Core Library](/dev/blockchain-core).
 

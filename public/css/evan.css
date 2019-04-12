@@ -44,11 +44,17 @@ html {
 }
 
 pre {
-  white-space: pre !important;
+    white-space: pre !important;
+    border: #555 solid 1px;
+}
+
+div.language-sh > div > pre {
+    background-color: #c2cdd0;
 }
 
 code {
-  font-size: 1em !important;
+
+  font-size: 0.85em !important;
   word-wrap: break-word;
 }
 
@@ -113,3 +119,4 @@ ul ul {
 p {
   text-align: justify;
 }
+

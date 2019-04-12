@@ -70,9 +70,9 @@
     <rect class="bw dotted" width="410" height="240" transform="translate(10,10)"/>
     <rect class="bw dotted" width="410" height="240"/>
     <rect class="bw dotted" width="410" height="240"/>
-    <a xlink:href="/doc/masternode">
-      <text class="grey" x="160" y="20">MasterNode</text>
-      <title>evan.network MasterNode</title>
+    <a xlink:href="/doc/authoritynode">
+      <text class="grey" x="160" y="20">AuthorityNode</text>
+      <title>evan.network AuthorityNode</title>
     </a>
     <a xlink:href="/doc/parity" transform="translate(20,30)">
       <rect class="server" width="160" height="80" rx="8"/>
@@ -80,7 +80,7 @@
         <tspan>Master</tspan>
         <tspan x="48" dx="-0.75em" dy="1em">Ethereum</tspan>
       </text>
-      <title>Redundant MasterNode Parity</title>
+      <title>Redundant AuthorityNode Parity</title>
     </a>
     <a xlink:href="/doc/parity" transform="translate(220,130)">
       <rect class="server" width="160" height="80" rx="8"/>
@@ -88,17 +88,17 @@
         <tspan>Master</tspan>
         <tspan x="48" dx="-0.75em" dy="1em">Ethereum</tspan>
       </text>
-      <title>Redundant MasterNode Parity</title>
+      <title>Redundant AuthorityNode Parity</title>
     </a>
     <a xlink:href="/dev/ipfs" transform="translate(20,130)">
       <rect class="server" width="160" height="80" rx="8"/>
       <text class="big" x="64" y="45">IPFS</text>
-      <title>Redundant Interplanetary File System MasterNode</title>
+      <title>Redundant Interplanetary File System AuthorityNode</title>
     </a>
     <a xlink:href="/dev/ipfs" transform="translate(220,30)">
       <rect class="server" width="160" height="80" rx="8"/>
       <text class="big" x="64" y="45">IPFS</text>
-      <title>Redundant Interplanetary File System MasterNode</title>
+      <title>Redundant Interplanetary File System AuthorityNode</title>
     </a>
     <path class="bidirectional-lookup" d="M 190 110 l 20 20"/>
     <path class="bidirectional-lookup" d="M 190 130 l 20 -20"/>

@@ -68,6 +68,11 @@ You can add anyone in evan.network to [your contacts](/tutorial/contacts). And y
 with an e-mail address into evan.network to become your contact. They all have or will get a profile
 Smart Contract, just like you.
 
+## [Are my concats good business partners?](/tutorial/claims)
+
+Using the [claim and identity management](/tutorial/claims), you can check, if an contact have special claims (or "certificates") that are provided by trusted business partners.
+
+
 ## [Talking to Each Other: The Mailbox](/tutorial/mailbox)
 
 We call the messages sent and stored in [evan.network Bmails](/tutorial/mailbox), equivalent to
@@ -77,6 +82,5 @@ instant messaging and chatting due to the blockchain transaction delays.
 There is one major difference to E-mails though: you always have a sender, the sender can't be
 forged and every BMail costs EVEs. So spam cannot really exist. Whenever anyone sends spam, it will
 cost him a lot and he or she is instantly identfied and can be blocked permanently.
-
 
 

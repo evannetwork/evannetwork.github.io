@@ -42,7 +42,7 @@ module.exports = {
       host: "127.0.0.1",
       port: 8545,        // parity rpc port
       network_id: "evan.network testcore",
-      from: "your accountID from from creating an identity earlier"
+      from: "your accountID from from creating an identity earlier",
       gas: 3000000,
       gasPrice: 20000000000,
     }

@@ -16,9 +16,9 @@ Assuming you already know what a blockchain is and some basics about how it and 
 [evan.network](https://evan.network/) needs a blockchain client and uses [Parity](https://www.parity.io/) for this.
 The reason to prefer it over [Geth](https://geth.ethereum.org/) is the more extensive toolchain and functionality. Geth and others cannot be used in evan.network, because there are required configurations that are not supported by Geth.
 
-This becomes only relevant in case you want to install the blockchain client on your own machine. Most of the time it is sufficient to configure your applications to connect to one of the evan.network [MasterNodes](/doc/masternodes).
+This becomes only relevant in case you want to install the blockchain client on your own machine. Most of the time it is sufficient to configure your applications to connect to one of the evan.network [AuthorityNodes](/doc/authoritynodes).
 
-However, if you do install your own MasterNode, you need to use the evan.network testcore blockchain for development. The Parity configuration for this is available [here](https://github.com/evannetwork/testcore-config).
+However, if you do install your own AuthorityNode, you need to use the evan.network testcore blockchain for development. The Parity configuration for this is available [here](https://github.com/evannetwork/testcore-config).
 
 The exact configuration of which blockchain client to connect to depends on the application you use, but if you don't set up your own you can always use `wss://testcore.evan.network/ws` for the development blockchain.
 
@@ -56,6 +56,8 @@ Setting up [`nodejs`](https://nodejs.org/en/) is pretty straight forward on most
 You will also need [`npm`](https://www.npmjs.com/), almost certainly `npx` and [`nvm`](https://github.com/creationix/nvm/blob/master/README.md), too.
 
 All the basic prerequisites for this, like `git`, need to be installed too, but usually the package manager of your OS takes care of this.
+
+At the time `nodejs v10.*` is not supported yet though.
 
 ## Installation the Support Libraries
 

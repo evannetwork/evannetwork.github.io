@@ -4,13 +4,12 @@ title: "Taskboard"
 
 # Taskboard
 
-Of course there is nothing in there when you just logged in. So no point searching for anything.
+The taskboard helps you to create tasks that need to be worked on. You can either use it to organize yourself, or create and assign tasks to others.
 
-You need someone to plan tasks with and for. Well, not really, you can create tasks just for yourself.
 
 ## A Subtask
 
-You need to add a subtask though. Even if there is only one point to do for your whole task.
+You have to add a subtask, even if there is only one point to do for your whole task.
 
 [![create task](/public/tutorial/create_task.png){:width="50%"}](/public/tutorial/create_task.png)
 

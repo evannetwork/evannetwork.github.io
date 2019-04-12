@@ -1,0 +1,7 @@
+## Account Management
+
+To interact in evan.network, users, organizations or machines need an account. The account for real users is created during onboarding at the first login. A user profile is created with his public and private key, as well as an address book and a mailbox. The relationships of an user with other users are stored in the address book by storing the public keys of the accounts of the respective network partners required to decrypt the communication. In the mailbox of an account, notifications of invitations to this account are stored in contracts of other accounts. 
+
+Real users can be grouped into organizations to appear under their identity. This is used to map the relationship of users in a real organization. This allows contracts to be concluded between organizations, which then have to be served or signed by one or more real users. 
+
+Within a Business Center, the information in the profiles of the user and organization accounts is extended by subject-specific data. This makes it easy to find users and organizations within the Business Center and to initiate business. This specific profile information can be entered directly when a user or organization is admitted to the Business Center or collected automatically while working in the Business Center. An example of an automated date is the calculated delivery on time (key figure: delivery reliability) based on the completed business relationships.

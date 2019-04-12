@@ -4,18 +4,18 @@ title: "Dashboard"
 # Dashboard
 The dashboard ÐAPP is your main entry point when logging in to evan.network.
 
-When this is your first login, there isn't much to see yet. The most interesting part should be the "My Profile" section.
+Upon your first login, there isn't much to see just yet. 
+
+Clicking on "Profiles&Configuration" will provide you with an overview about your current EVE balance and allow you to copy your private and your profile encryption key. 
+
 
 [![profile](/public/tutorial/profile.png){:width="50%"}](/public/tutorial/profile.png)
 
 Depending on how you were invited, you will have different starting balances.
 
-But your profile name and account ID are there to check and copy.
+The private key is used to secure access to your blockchain identity. This key can be thought of as your 'blockchain fingerprint'.
 
-The same goes for the private key, in case you ever have to import it somewhere, to a different workstation for example.
-
-The profile encryption key might not be obvious immediately, but it is the key used to encrypt all the important data in your blockchain profile. It really shouldn't be the same as your private key.
-
+With the profile encryption key, all your profile data is encrypted. Mails, smart contracts and communication with your contacts are encrypted with your profile encryption key.
 
 [![dashboard](/public/tutorial/dashboard.png){:width="50%"}](/public/tutorial/dashboard.png)
 
@@ -23,5 +23,4 @@ Here you can use or manage your bookmarked ÐAPPs. When adding bookmarks, you ca
 
 [![dashboard_add_bookmark](/public/tutorial/dashboard_add_bookmark.png){:width="50%"}](/public/tutorial/dashboard_add_bookmark.png)
 
-Can you see the featured Taskboard bookmark in the "+ Add Bookmark" section? Add it to your personal bookmarks for easier access.
-
+Personal bookmarks can be created with "Add Bookmark". This allows easier access to tools like the Evan.network explorer and ENS or smart contracts. 
