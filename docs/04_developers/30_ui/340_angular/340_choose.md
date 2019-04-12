@@ -2,7 +2,8 @@
 title: "Angular 5 Tutorial"
 parent: Developers
 nav_order: 340
-permalink: /docs/04_developers/angular-choose.html
+has_grand_children: true
+permalink: /docs/04_developers/angular
 ---
 
 # Angular 5 Tutorial

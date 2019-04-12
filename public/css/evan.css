@@ -15,9 +15,22 @@
     border-left-color: var(--evan-primary);
 }
 
-.evan.theme-evan .nav-item{
+.evan.theme-evan .nav-item {
     border-left: 4px solid;
     border-left-color: transparent;
+}
+
+.evan.theme-evan .nav-item > ul > .nav-item{
+    border-left: 0px solid;
+}
+
+.evan.theme-evan .nav-item ul {
+    display:none;
+}
+
+.evan.theme-evan .nav-item.active ul {
+    margin-left: 20px;
+    display: block;
 }
 
 .evan.theme-evan .nav-item:hover{
@@ -25,11 +38,15 @@
     border-left-color: var(--evan-primary);
 }
 
-.evan.theme-evan .nav-item:hover a {
+.evan.theme-evan .nav-item > ul > .nav-item:hover{
+    border-left: 0px solid;
+}
+
+.evan.theme-evan .nav-item:hover > a {
     color: var(--evan-primary);
 }
 
-.evan.theme-evan .nav-item.active a {
+.evan.theme-evan .nav-item.active > a {
     color: var(--evan-primary);
 }
 
