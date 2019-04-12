@@ -61,16 +61,20 @@
                         {% for tile in page.tiles %}
 
                         <a class="
-                                                p-3 col-md-5 col-lg-4 col-xl-3
-                                                m-md-3 mb-3 p-4
+                                                p-3 {% if tile.description %} col-md-5 col-lg-4 col-xl-3
+                                                m-md-3 mb-3 p-4 {% else %} col-md-5 col-lg-4 col-xl-2
+                                                m-md-2 mb-3 {% endif %}
                                                 text-center
                                                 bg-level-1 bg-text-light border evan-highlight" href="{{ tile.link }}">
                         <i class="highlight fas fa-{{ tile.icon }} p-4 xxxl"></i>
                             <h3 class="highlight">
                                 {{ tile.title }}
-                            </h3> <span class="text-muted highlight">
+                            </h3>
+                            {% if tile.description %}
+                            <span class="text-muted highlight">
                                {{ tile.description }}
                             </span>
+                            {% endif %}
                         </a>
                         {% endfor %}
                     </div>

@@ -5,22 +5,18 @@ hide_menu: true
 permalink: /
 tiles:
   - title: What's evan?
-    description: Key facts about evan.network
     icon: question
     link: /docs/01_whats_evan.html
 
   - title: How it works
-    description: Technical details about evan.network
     icon: info
     link: /docs/02_how_it_works.html
 
   - title: First Steps
-    description: Starting with evan.network
     icon: walking
     link: /docs/03_first_steps.html
 
   - title: Developers
-    description: Start developing on evan.network
     icon: layer-group
     link: /docs/04_developers.html
 ---
