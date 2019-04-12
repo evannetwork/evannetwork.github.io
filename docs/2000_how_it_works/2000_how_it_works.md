@@ -8,30 +8,27 @@ has_children: true
 hide_content: true
 tiles:
   - title: Architecture
-    description: Architecture
-    # description: both 20s restructures in multiple pages + DFS (currently no page), smart agents 
+    description: 　
     icon: fish
     link: /docs/how_it_works/architecture.html
 
   - title: Services
-    description: Services
-    # description: smart contracts, Mailbox, ENS, Profile, BusinessCenter, Verifications (identity), on behalf
+    description: 　
     icon: cookie
     link: /docs/how_it_works/services.html
 
   - title: Security
-    description: Security
+    description: 　
     icon: eye
     link: /docs/how_it_works/securityaes.html
 
   - title: Authority Nodes
-    description: Authority Nodes
-    # description: governance, scalability, auth node
+    description: 　
     icon: compass
     link: /docs/how_it_works/authoritynode.html
 
   - title: Changelog
-    description: Changelog
+    description: 　
     icon: ghost
     link: /docs/how_it_works/changelog_chain.html
 ---

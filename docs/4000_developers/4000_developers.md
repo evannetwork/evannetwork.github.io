@@ -8,32 +8,32 @@ has_children: true
 hide_content: true
 tiles:
   - title: Concepts
-    description: Concepts
+    description: 　
     icon: pastafarianism
     link: /docs/developers/concepts/blockchain.html
 
   - title: API
-    description: API
+    description: 　
     icon: bezier-curve
     link: /docs/developers/api/blockchain-core.html
 
   - title: UI
-    description: UI
+    description: 　
     icon: window-maximize
     link: /docs/developers/ui/writing-dapps.html
 
   - title: HOWTOS
-    description: HOWTOS
+    description: 　
     icon: child
     link: /docs/developers/hello-world.html
 
   - title: Tooling
-    description: Tooling
+    description: 　
     icon: tools
     link: /docs/developers/tooling/setting-up.html
 
   - title: Releases
-    description: Releases
+    description: 　
     icon: bullhorn
     link: /docs/developers/releases/releases.html
 ---
