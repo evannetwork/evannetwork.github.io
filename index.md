@@ -7,19 +7,22 @@ tiles:
   - title: What's evan?
     description: Key facts about evan.network
     icon: question
-    link: /docs/whats_evan
+    link: /docs/01_whats_evan.html
+
   - title: How it works
     description: Technical details about evan.network
     icon: info
-    link: /docs/how_it_works
+    link: /docs/02_how_it_works.html
+
   - title: First Steps
     description: Starting with evan.network
     icon: walking
-    link: /docs/first_steps
+    link: /docs/03_first_steps.html
+
   - title: Developers
     description: Start developing on evan.network
     icon: layer-group
-    link: /docs/developers
+    link: /docs/04_developers.html
 ---
 
 
