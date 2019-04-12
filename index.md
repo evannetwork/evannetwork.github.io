@@ -6,19 +6,19 @@ permalink: /
 tiles:
   - title: What's evan?
     icon: question
-    link: /docs/01_whats_evan.html
+    link: /docs/whats_evan.html
 
   - title: How it works
     icon: info
-    link: /docs/02_how_it_works.html
+    link: /docs/how_it_works.html
 
   - title: First Steps
     icon: walking
-    link: /docs/03_first_steps.html
+    link: /docs/first_steps.html
 
   - title: Developers
     icon: layer-group
-    link: /docs/04_developers.html
+    link: /docs/developers.html
 ---
 
 
