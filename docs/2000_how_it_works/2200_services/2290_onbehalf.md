@@ -2,8 +2,8 @@
 Title: "On Behalf Logic"
 parent: How it works
 grand_parent: Services
-nav_order: 2280
-permalink: /docs/how_it_works/onbehalf.html
+nav_order: 2290
+permalink: /docs/how_it_works/services/onbehalf.html
 ---
 
 # Extending autonomy with On Behalf Logic
