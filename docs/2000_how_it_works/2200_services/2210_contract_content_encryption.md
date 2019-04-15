@@ -3,7 +3,7 @@ Title: "Contract & Content encryptions"
 parent: How it works
 grand_parent: Services
 nav_order: 2210
-permalink: /docs/how_it_works/services/contractcontentencryption.html
+permalink: /docs/how_it_works/services.html
 ---
 
 # Contract & Content encryption
