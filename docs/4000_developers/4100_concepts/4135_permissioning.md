@@ -25,7 +25,7 @@ Usually, parties wishing to engage each other on the evan.network have to exchan
 By delegating permissions no human interaction is required, as users don't have to manually exchange keys with the owner of the respective smart contract to receive access.
 
 
-## Introducing Smart Contract Permissioning
+## Smart Contract Permissioning
 
 ### Introduction to Smart Contract Permissioning
 Granular permissioning for smart contracts is facilitated through the Smart Contract Permissioning.
@@ -51,16 +51,16 @@ In a simple contract, the creator of the contract creates a single data key for 
 
 ![sharings - schema](/docs/4000_developers/4100_concepts/img/sharings_schema.png)
 
-For **Data Contracts**, the owner creates a data contract and a rights and roles contract. Next, they are linked together.
-The contract owner then defines which groups, or users, are allowed to make edits to fields on the Data Contract.
-Access can be given granularly to entry,list and mapping contract values.
+For **Data Contracts**, the owner creates a data contract and a rights and roles contract. Next, these two contracts are linked together.
+The contract owner then defines which groups are allowed to make edits to fields on the Data Contract. Users are assigned to the groups and permissions can only be granted to them via groups and not directly to a single user.
+Access can be given granularly to entry, list and mapping contract values.
 
 
 ## Establishing trust with Participants
 ### Key Exchange
-By default, any data stored in [Smart Contracts](/docs/how_it_works/smart-contracts.html) is encrypted. This is also true for [profiles](/docs/first_steps/create-identity.html), Digital Twins and other tools. As a result, it is impossible for others to read data in external contracts. Profiles can't read each others contacts etc. People can't even send each other [BMail](/docs/first_steps/onchain.html) messages.
+By default, any data stored in [Smart Contracts](/docs/how_it_works/smart-contracts.html) is encrypted. This is also true for [profiles](/docs/first_steps/create-identity.html), Digital Twins and other tools. As a result, it is impossible for others to read data in external contracts. Users can't read each others contacts etc. and sending [BMail](/docs/first_steps/onchain.html) to each other requires a proper key exchange to have occurred beforehand.
 
-To establish communication, accounts/contracts need to exchange keys. This is one of the most basic operations in `evan.network`, because without exchanging keys, little else can be done. If you are an end user, it is done for you in most cases and you won't even notice. Otherwise, you can use the [contacts](/docs/first_steps/contacts.html) ÐApp to initiate key exchanges.
+To establish communication, accounts need to exchange keys. This is one of the most basic operations in `evan.network`, because without exchanging keys, little else can be done. If you are an end user, it is done for you in most cases and you won't even notice. Otherwise, you can use the [contacts](/docs/first_steps/contacts.html) ÐApp to initiate key exchanges.
 
 As a developer, you usually have to keep track of this yourself, unless you use one of the helper functions from [Factories](/docs/developers/concepts/contract-factories.html) or [Business Centers](/docs/developers/concepts/business-center.html).
 
@@ -108,9 +108,9 @@ This ensures that:
 
 
 ##### Zero and Infinity
-**Granting** a key starting from block 0 makes this key ultimately valid, as any data has been added after block 0. This is used for adding a generic key during contract creation.
+**Granting** a key starting from block 0 makes this key ultimately valid, as any data has been added after block 0. This is used for adding a generic key during contract creation. Replacing this key with a key starting at a later block, will of course replace it starting from that block. 
 
-**Requesting** a key from block 'infinity' by omitting the block argument returns the latest valid key. This can be used when encrypting new data. The timestamp when retrieving this key has to be added to the `cryptoInfo` to ensure that the data can be decrypted later-on.
+**Requesting** a key from block 'infinity' by omitting the block argument returns the latest valid key. This can be used when encrypting new data. The timestamp when retrieving this key has to be added to the `cryptoInfo` to ensure that the data can be decrypted later-on, as the key may have been replaced at a later point of time.
 
 
 ##### Sharing Keys
@@ -252,7 +252,7 @@ See section 'DataContract' for more example of configurable operations.
 
 ## Distributed File System Encryption
 ### Envelopes
-As basically all data, which can be described as 'content', are stored via the hybrid storage approach, the main part of data are stored in the distributed file system. These data are encrypted and stored in so called 'envelopes', which are a container for the data itself and contain enough information for the API to determine which key to use for decryption and where to retrieve the key from.
+As basically all data, which can be described as 'content', is stored via the hybrid storage approach, the main part of data are stored in the distributed file system. This data is encrypted and stored in so called 'envelopes', which are a containers for the data itself and contain enough information for the API to determine which key to use for decryption and where to retrieve the key from.
 
 [![envelope](/docs/4000_developers/4100_concepts/img/envelope.png){:max-width="50%"}](/docs/4000_developers/4100_concepts/img/envelope.png)
 
@@ -277,7 +277,7 @@ The 'public' section contains data that is visible without being invited to it o
 When decrypted, the ```private``` section takes precedence over the ```public``` section. This can lead to the private section overwriting sections of the ```public``` part. For example, a public title may be replaced with a 'true' title (only visible for members) from the private section.
 
 ### Hash Encryption
-When envelopes are stored in the distributed file system, they can be retrieved via a hash. It is similar to an address of these data. This hash is then stored in the Smart Contract and contract participants can get the hash from the contract, retrieve the data from the DFS and decrypt it. To prevent data hoarders from pulling hashes from Smart Contracts, storing the DFS files for them and brute forcing them later on, hashes are encrypted before storing them in the Smart Contract as well.
+When envelopes are stored in the distributed file system, they can be retrieved via a hash. It is similar to an address of the data. This hash is then stored in the Smart Contract and contract participants can get the hash from the contract, retrieve the data from the DFS and decrypt it. To prevent data hoarders from pulling hashes from Smart Contracts, storing the DFS files for them and brute forcing them later on, hashes are encrypted before storing them in the Smart Contract as well.
 
 ### Crypto Algorithms
 #### aes-256-cbc

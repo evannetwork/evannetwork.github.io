@@ -1,5 +1,5 @@
 ---
-title: "Blockchain Core"
+title: "Blockchain Core API"
 parent: Developers
 grand_parent: API
 nav_order: 4210

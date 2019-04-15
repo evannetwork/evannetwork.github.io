@@ -6,51 +6,34 @@ nav_order: 4125
 permalink: /docs/developers/concepts/data-contract.html
 ---
 
-At the center of the evan network blockchain infrastructure is a small number of predefined contracts and contract
-types. Those are created with special Factory Contracts, which set them up with their respective
-default permissions and parameters like ENS names.
-
+<!--
+  TODO:
+    - update encryption links
+    - update sharing links
+-->
 
 # The DataContract
+## The "Data" part of "DataContract"
+The [`DataContract`](https://github.com/evannetwork/smart-contracts-core/blob/master/contracts/DataContract.sol)<sup>[+]</sup> combined with its [API](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/data-contract.html)<sup>[+]</sup> is a container, that is used to hold various types of data and therefore the default data storage for various ÐApps like the [Taskboard](/docs/first_steps/taskboard.html) and even a [user profile](/docs/first_steps/create-identity.html) is based upon it.
 
-The DataContract implements the basic functionality used by all data storing elements in the blockchain.
-Lets say you want to write a Ðapp that manages heavy machines, where there are many different independent parties and hands heavy machine may be rented to.
+Data can be stored under properties - similar to class instance members in object oriented programming, whereby the following property types are supported:
 
-The basic usage pattern is the same in all use cases though:
+- [**entries**](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/data-contract.html#entries)<sup>[+]</sup>: Basically a single property of the data contract, that holds a value. Entries are used for properties, that are only manipulated by few accounts and that can be overwritten by all parties that have write access.
+- [**list entry**](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/data-contract.html#list-entries)<sup>[+]</sup>: List entries are stored - you already guessed it - in lists. Adding list entries and removing are different permissions and a common use case scenario is assigning "add" permissions to different account and keeping remove permissions to few accounts or omitting it entirely. This allows to create an append only list, that can be used as a log. Note, that lists are not necessarily sorted by date. When an entry is removed, the freed up slot is filled with the last element, so delete operations will break the temporal order of the entries. To maintain a list order by date, do not grant the "remove" permission to any role
+- [**mapping**](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/data-contract.html#mappings)<sup>[+]</sup>: Similar to an **entry**, as it requires only one permission to be set, but can store values for a key range of 32Bytes. Note that permissions are granted for the entire mapping property and write access for an account means, that this account is able to set values fro the complete 32Bytes key range.
 
+Values are technically stored as 32Bytes values and therefore can store anything, that takes up to these 32Bytes of storage, like Ethereum addresses (20Bytes) or numbers with up to 32Bytes precisions. But in most cases, the 32Bytes are used to store file hashes, which point to a file in a [distributed file system](/docs/how_it_works/ipfs.html). These files are usually [encrypted](/docs/developers/concepts/permissioning.html) and the resulting [file hashes are encrypted](/docs/developers/concepts/permissioning.html) themselves as well.
 
-1\. **Get a DataContract Blockchain Core API Object**
+Keys for the files in a data contract are stored in so called ["sharings"](/docs/developers/concepts/permissioning.html). With the "sharings" keys for reading and writing data can be provided to other accounts. Usually a contract owner creates one or more keys for a DataContract and [shared](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/sharing.html#addsharing)<sup>[+]</sup> (or via [extend](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/sharing.html#extendsharing)<sup>[+]</sup>) those to other participants. When creating a data contract with different keys per section, take care that your **first** [add](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/sharing.html#addsharing)<sup>[+]</sup> (or via [extend](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/sharing.html#extendsharing)<sup>[+]</sup>) those keys to the sharing and **then** save data to it. Otherwise the fallback key `*` may be used for encryption and the other participants will try decrypt the data with the specific key, which would lead to errors during decryption.
 
-Usually you can just take the one from the initialized Blockchain Core runtime or from the
-BusinessCenter defined in your application. Or you just create one for yourself with different configuration options.
-
-Lets assume you just take the default API object.
-
-
-2\. **Create with proper Factory**
-
-Creating a new DataContract is a simple call of the create method in your `dataContract` API
-
-```js
-const newContract = await runtime.dataContract.create(
-    // this is the ENS of the contract factory that creates new heavy machine contract instances for your application
-    'factory.heavy-machines.evan',
-
-    // the owner account of the heavy machine
-    '0xb00fbeef5a926fa150baeaf04bfd673b056ba83d'
-    )
-```
-
-There are more parameters, but this is the simples case, and for more look into the [blockchain core](https://github.com/evannetwork/api-blockchain-core) documentation.
+If an account has access to a key for a property, this account is able to decrypt data written to that property, but is not necessarily able to write data to, because it may still be missing the proper permissions to write data to it. See next section for info about permissions in data contracts.
 
 
-3\. **Load a Contract**
+## The "Contract" part of "DataContract"
+An account, that creates a data contract holds the role "owner" (role id 0) and the member role (role id 1). This account is able to update contract [sharings](/docs/developers/concepts/permissioning.html), update the [dbcp description](/docs/how_it_workds/dbcp.html) and to [invite](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/base-contract.html#invitetocontract)<sup>[+]</sup> new accounts to the contract.
 
-Loading happens also just like a normal data contract, that have their own [DBCP](/docs/developers/concepts/dbcp.html) description, all you need is the accountID of your deployed contract:
+To "add" entries to a data contract, a group is [granted](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/rights-and-roles.html#setoperationpermission)<sup>[+]</sup> the permission to write to that property. This means a property (entry, list or mapping) cannot be added to a data contract without granting a group the permission to write to it.
 
-```js
-const loadedContract = await runtime.description.loadContract(newContract.options.address);
+Invited accounts have have the role "member" (role id 1) and can usually [update their own status](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/base-contract.html#changeconsumerstate)<sup>[+]</sup> in the contract. If the member role has been [granted](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/rights-and-roles.html#setoperationpermission)<sup>[+]</sup> write permissions to a property or if a member has been [added](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/rights-and-roles.html#addaccounttorole)<sup>[+]</sup> to another group with adequate permissions, this member is able to write to that property.
 
-// should be the same, and both are usable the same
-console.log(newContract.options.address == loadedContract.options.address)
-```
+
