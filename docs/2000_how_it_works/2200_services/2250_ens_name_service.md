@@ -1,13 +1,18 @@
 ---
-title: "Namespaces"
+title: "ENS name service"
 parent: How it works
-nav_order: 2240
-permalink: /docs/how_it_works/namespaces.html
+grand_parent: Services
+nav_order: 2250
+permalink: /docs/how_it_works/services/ensnameservice.html
 ---
 
 # Namespaces
 
-Evan.network employs its own registrar of the Ethereum Name Service (ENS) to provide unique namespaces for DApps and identities on the platform. With the help of unique namespaces your blockchain applications and identities receive a human-readable address.
+The blockchain consists of a large amount of hashes ... of profiles ... smart contracts ... or DApps. When someone deploys a smart contract on evan.network, the contract gets a unique hash/id where the new contract can be called.
+
+On the internet we have the same scheme with ip addresses. When you call www.google.de the browser calls the DNS server for the ip address of the url. and you browser calls the ip of the dns entry
+
+On evan.network we have deployed the derivat of the DNS ... the Ethereum Name Service (ENS). With this service we can provide unique namespaces for DApps and identities on the platform. With the help of unique namespaces your blockchain applications and identities receive a human-readable address.
 
 Just as with normal URLs this makes it possible for your DApps to be reachable from the WWW without any additional tools needed.
 

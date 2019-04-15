@@ -1,6 +1,7 @@
 ---
 Title: "On Behalf Logic"
 parent: How it works
+grand_parent: Services
 nav_order: 2280
 permalink: /docs/how_it_works/onbehalf.html
 ---

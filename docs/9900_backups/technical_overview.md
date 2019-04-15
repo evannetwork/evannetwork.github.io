@@ -1,8 +1,5 @@
 ---
 title: "evan.network Technical Overview"
-parent: How it works
-nav_order: 2140
-permalink: /docs/how_it_works/technical_overview.html
 ---
 
 <svg id="evan.network" version="1.1" width="100%" viewBox="0 0 1000 620" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
@@ -223,7 +220,7 @@ They are just small webservices, that run on controlled servers providing contro
 
 <!-- moved to plunder -->
 
-<!-- 
+<!--
 <svg id="blockchain-core" version="1.1" width="100%" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <marker id="start-data" style="stroke: #003946; fill: #003946;" viewBox="0 0 10 10" refX="10" refY="5" markerUnits="strokeWidth" markerWidth="4" markerHeight="3" orient="auto">
@@ -378,7 +375,7 @@ They are just small webservices, that run on controlled servers providing contro
   </g>
 
 </svg> -->
-<!-- 
+<!--
 The Blockchain Core Library is the central tool used in all development with evan.network. It is actually a collection of own functionalities and wrappers around third party core functionalities like blockchain transactions and distributed file system operations.
 
 [The full API documentation](https://github.com/evannetwork/api-blockchain-core) shows the actual exposed sub-namespaces in the blockchain core module are slightly more fine-grained.

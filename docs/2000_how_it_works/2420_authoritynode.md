@@ -1,5 +1,5 @@
 ---
-title: "AuthorityNodes"
+title: "Authority Nodes"
 parent: How it works
 nav_order: 2420
 permalink: /docs/how_it_works/authoritynode.html

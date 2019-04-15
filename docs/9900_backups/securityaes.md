@@ -1,8 +1,5 @@
 ---
 title: "Security"
-parent: How it works
-nav_order: 2320
-permalink: /docs/how_it_works/securityaes.html
 ---
 
 ## Security
