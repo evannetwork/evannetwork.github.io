@@ -1,8 +1,5 @@
 ---
 Title: "Data Security and Privacy"
-parent: How it works
-nav_order: 2360
-permalink: /docs/how_it_works/datasecurityprivacy.html
 ---
 
 # evan.network Data Security and Privacy

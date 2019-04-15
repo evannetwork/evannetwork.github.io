@@ -1,8 +1,9 @@
 ---
 title: "Smart Agents"
 parent: How it works
-nav_order: 2180
-permalink: /docs/how_it_works/smart-agents.html
+grand_parent: Services
+nav_order: 2291
+permalink: /docs/how_it_works/services/smart-agents.html
 ---
 
 

@@ -17,15 +17,15 @@ tiles:
     icon: cookie
     link: /docs/how_it_works/services.html
 
-  - title: Security
-    description: 　
-    icon: eye
-    link: /docs/how_it_works/securityaes.html
-
   - title: Authority Nodes
     description: 　
     icon: compass
     link: /docs/how_it_works/authoritynode.html
+
+  - title: Governance
+    description: 　
+    icon: users
+    link: /docs/how_it_works/governance.html
 
   - title: Changelog
     description: 　

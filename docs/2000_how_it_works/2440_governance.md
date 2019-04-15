@@ -1,11 +1,11 @@
 ---
-title: "evan governance"
+title: "Governance"
 parent: How it works
 nav_order: 2440
 permalink: /docs/how_it_works/governance.html
 ---
 
-# evan governance
+# Governance
 [evan.network](https://evan.network/) enables trustful business relationships while maintaining the data sovereignty of the interacting network partners. This trust is based on the decentralized nature of the network, in which no central intermediary has control over data and processes. Decentralization does not mean, however, that the network is without control and supervision.
 
 Therefore, it is important to establish an organizational structure through which the network is managed efficiently and in partnership. For this reason, it is planned to take control over technological decisions that affect the core of the network in a governance structure.
