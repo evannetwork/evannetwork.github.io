@@ -10,7 +10,7 @@ tiles:
   - title: Concepts
     description: 　
     icon: pastafarianism
-    link: /docs/developers/concepts/blockchain.html
+    link: /docs/developers/concepts.html
 
   - title: API
     description: 　
@@ -20,7 +20,7 @@ tiles:
   - title: UI
     description: 　
     icon: window-maximize
-    link: /docs/developers/ui/writing-dapps.html
+    link: /docs/developers/ui.html
 
   - title: HOWTOS
     description: 　

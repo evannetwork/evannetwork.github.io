@@ -8,7 +8,9 @@ permalink: /docs/developers/concepts/contracttypes.html
 
 ## Smart Contracts Types
 
+<!--
 developer oriented and more focused on what they are and how they work (solidity level, api connection)
+-->
 
 <!-- evan.network supports Smart Contracts that are compatible with Ethereum technology (EVM). For the simple creation of specific business relationships, evan.network offers various basic Smart Contracts that make it easier for developers to implement business applications. These Smart Contracts offer functionalities such as rights and role management at business logic and data level, upgradeability, versioning and data encryption.
 Business Center or application-specific characteristics can be derived from these basis Smart Contracts, for example:

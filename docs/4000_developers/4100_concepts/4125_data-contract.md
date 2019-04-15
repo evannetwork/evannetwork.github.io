@@ -28,6 +28,8 @@ Keys for the files in a data contract are stored in so called ["sharings"](/docs
 
 If an account has access to a key for a property, this account is able to decrypt data written to that property, but is not necessarily able to write data to, because it may still be missing the proper permissions to write data to it. See next section for info about permissions in data contracts.
 
+[![DataContract](/docs/4000_developers/4100_concepts/img/data_contract.png){:max-width="50%"}](/docs/4000_developers/4100_concepts/img/data_contract.png)
+
 
 ## The "Contract" part of "DataContract"
 An account, that creates a data contract holds the role "owner" (role id 0) and the member role (role id 1). This account is able to update contract [sharings](/docs/developers/concepts/permissioning.html), update the [dbcp description](/docs/how_it_workds/dbcp.html) and to [invite](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/base-contract.html#invitetocontract)<sup>[+]</sup> new accounts to the contract.
@@ -35,5 +37,3 @@ An account, that creates a data contract holds the role "owner" (role id 0) and 
 To "add" entries to a data contract, a group is [granted](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/rights-and-roles.html#setoperationpermission)<sup>[+]</sup> the permission to write to that property. This means a property (entry, list or mapping) cannot be added to a data contract without granting a group the permission to write to it.
 
 Invited accounts have have the role "member" (role id 1) and can usually [update their own status](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/base-contract.html#changeconsumerstate)<sup>[+]</sup> in the contract. If the member role has been [granted](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/rights-and-roles.html#setoperationpermission)<sup>[+]</sup> write permissions to a property or if a member has been [added](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/rights-and-roles.html#addaccounttorole)<sup>[+]</sup> to another group with adequate permissions, this member is able to write to that property.
-
-

@@ -3,7 +3,7 @@ title: "Writing ÐApps"
 parent: Developers
 grand_parent: UI
 nav_order: 4310
-permalink: /docs/developers/ui
+permalink: /docs/developers/ui.html
 ---
 
 # Writing ÐApps
