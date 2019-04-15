@@ -1,7 +1,7 @@
 ---
 title: "Blockchain"
 parent: How it works
-nav_order: 2600
+nav_order: 2150
 permalink: /docs/developers/concepts/blockchain.html
 ---
 
