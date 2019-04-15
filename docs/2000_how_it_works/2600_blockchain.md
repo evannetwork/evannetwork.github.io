@@ -5,6 +5,12 @@ nav_order: 2600
 permalink: /docs/developers/concepts/blockchain.html
 ---
 
+<!--
+  TODO:
+    - move EVE info into own section
+    - links to explorer / status page?
+-->
+
 # Blockchain
 
 evan.network is a [Proof of Authority (PoA)](https://en.wikipedia.org/wiki/Proof-of-authority)<sup>[+]</sup> publicly accessible blockchain for Ethereum. The evan.network blockchain runs on [Parity](https://parity.io/)<sup>[+]</sup> nodes that use the [Aura](https://wiki.parity.io/Aura.html) consensus to build a trustful, stable and fast network of authorities. The authorities are hosted and operated by evan.network [AuthorityNodes](/docs/how_it_works/authoritynode.html). The blockchain is set up and operated with the goal to be 100% Ethereum compliant. So the network can participate from the improvements and new features that are in development in the Ethereum community e.g [Plasma](https://plasma.io/)<sup>[+]</sup>, Casper, [ParityBridge](https://github.com/paritytech/parity-bridge)<sup>[+]</sup>, to name only a few. In the future we also have plans to launch use case specific optimized subchains that are connected with a bridge to the **core** chain, to meet special application needs. These subchains are operated with the same DAO governance and token structure.
