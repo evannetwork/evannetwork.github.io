@@ -1,9 +1,8 @@
 ---
 title: "Identity Verification"
-parent: Developers
-grand_parent: Concepts
-nav_order: 4160
-permalink: /docs/developers/concepts/identity-verification.html
+parent: How it works
+nav_order: 2271
+permalink: /docs/how_it_works/identity-verification.html
 ---
 
 # Identity Verification
