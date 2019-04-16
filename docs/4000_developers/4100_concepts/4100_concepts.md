@@ -11,7 +11,7 @@ section header page
 
 general:
 - header style
-- workshop link anywhere?
+- workshop link anywhere -> howtos
 - syntax highlighting (sol)
 - ORDER -> find a proper/new start for this section 
 
@@ -49,6 +49,8 @@ event-hub
 - update links (bc)
 - add link to contract
 - add events and event trigger functions to its functionality - 2x fun
+
+
 
 
 

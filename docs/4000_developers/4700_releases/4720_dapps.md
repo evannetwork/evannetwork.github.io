@@ -26,4 +26,5 @@ more details.
 | [queue.evan](https://dashboard.evan.network/#/dashboard.evan/queue.evan)              | [Github](https://github.com/evannetwork/ui-core-dapps/tree/master/dapps/queue)           | [queue DApp](/docs/developers/ui/dapps/queue.html)                             |
 | [task.evan](https://dashboard.evan.network/#/dashboard.evan/taskboard.evan/task.evan) | [Github](https://github.com/evannetwork/ui-core-dapps/tree/master/dapps/task)            | [task DApp](/docs/first_steps/taskboard.html)                         |
 | [taskboard.evan](https://dashboard.evan.network/#/dashboard.evan/taskboard.evan)      | [Github](https://github.com/evannetwork/ui-core-dapps/tree/master/dapps/taskboard)       | [taskboard quick-start](/docs/first_steps/taskboard.html)             |
+{: .evan-table }
 
