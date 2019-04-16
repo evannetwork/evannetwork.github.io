@@ -19,7 +19,7 @@ In lieu of the standard Client-Server structure, DApps serve clients from the bl
 
 * The increase of data volume that comes with millions of new IoT devices, amongst others, is an aspect that can be handled significantly more efficient and cost effective with blockchain based distributed storage. Data is stored encrypted by default. 
 
-DApps on evan.network can be reached with a standard web browser through a [user friendly address](/docs/how_it_works/namespaces.html) such as 'nodeone.evan'. Decentralized Applications succeed in providing a much more trustworthy experience than traditional applications would have been able to.
+DApps on evan.network can be reached with a standard web browser through a [user friendly address](/docs/how_it_works/services/ensnameservice.html) such as 'nodeone.evan'. Decentralized Applications succeed in providing a much more trustworthy experience than traditional applications would have been able to.
 
 # ÐApp Basics
 Each evan.network application consists of different parts and components with the purpose of creating

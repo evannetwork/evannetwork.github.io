@@ -32,7 +32,7 @@ If an account has access to a key for a property, this account is able to decryp
 
 
 ## The "Contract" part of "DataContract"
-An account, that creates a data contract holds the role "owner" (role id 0) and the member role (role id 1). This account is able to update contract [sharings](/docs/developers/concepts/permissioning.html), update the [dbcp description](/docs/how_it_works/services/dbcp.html) and to [invite](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/base-contract.html#invitetocontract) new accounts to the contract.
+An account, that creates a data contract holds the role "owner" (role id 0) and the member role (role id 1). This account is able to update contract [sharings](/docs/developers/concepts/sharings.html), update the [dbcp description](/docs/how_it_works/services/dbcp.html) and to [invite](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/base-contract.html#invitetocontract) new accounts to the contract.
 
 To "add" entries to a data contract, a group is [granted](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/rights-and-roles.html#setoperationpermission) the permission to write to that property. This means a property (entry, list or mapping) cannot be added to a data contract without granting a group the permission to write to it.
 

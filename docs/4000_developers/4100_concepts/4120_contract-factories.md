@@ -14,15 +14,15 @@ These contracts are usually created by using contract factories, which offers a 
 - it is faster - instead of n single transactions only one transaction is performed
 - creating contracts becomes cheaper -  overhead is reduced when performed in a single transaction
 - it can become safer - if one of the setup steps that follow the contract creation fails, the entire creation process is rolled back and if executed via the evan API, this transaction will not be started (if executed with the [Blockchain Core API](/docs/developers/api/api-blockchain-core.html), gas is estimated before each transaction and a failing transaction would be detected and prevented)
-- factories are deployed to [ENS](/docs/developers/how_it_works/ens.html) addresses and can be updated without delivering code to each client application
+- factories are deployed to [ENS](/docs/how_it_works/services/ensnameservice.html) addresses and can be updated without delivering code to each client application
 
 
 ## Usage
 ### ENS Address
-Contract factories that belong to a [Business Center](/docs/developers/concepts/business.html) are usually deployed at `${FACTORY_NAME}.factory.${BUSINESS_CENTER_ADDRESS}`, so a factory for tasks in the business center "sample.evan" would be deployed at "tasks.factory.sample.evan".
+Contract factories that belong to a Business Center are usually deployed at `${FACTORY_NAME}.factory.${BUSINESS_CENTER_ADDRESS}`, so a factory for tasks in the business center "sample.evan" would be deployed at "tasks.factory.sample.evan".
 
 ### Factories and BusinessCenters
-If a factory creates contracts for a [Business Center](/docs/developers/concepts/business-center.html), it has to be registered as a valid factory in that Business Center. Factories register all new contracts they create in the Business Center they belong to, and to be able to do so, they need to be registered at the Business Center as a valid factory.
+If a factory creates contracts for a Business Center, it has to be registered as a valid factory in that Business Center. Factories register all new contracts they create in the Business Center they belong to, and to be able to do so, they need to be registered at the Business Center as a valid factory.
 
 For this purpose the owner of a business center can call the function [`registerFactory`](https://github.com/evannetwork/smart-contracts-core/blob/0cff8bf94bb1ce578c702764483a0a33450236c6/contracts/BusinessCenter.sol#L179) at a BusinessCenter, e.g. with: 
 
