@@ -107,10 +107,10 @@
 .theme-evan {
   --evan-h1-font-size: 2.25em;
   --evan-h2-font-size: 1.75em;
-  --evan-h3-font-size: 1.313em;
-  --evan-h4-font-size: 1.125em;
-  --evan-h5-font-size: 1em;
-  --evan-h6-font-size: 0.938em;
+  --evan-h3-font-size: 21px;
+  --evan-h4-font-size: 18px;
+  --evan-h5-font-size: 16px;
+  --evan-h6-font-size: 15px;
   --evan-text-font-size: 14px;
   --evan-small-font-size: 12px;
   --evan-dapp-wrapper-sidepanel-icon-color: var(--evan-gray-500);
@@ -1473,7 +1473,7 @@
 */
 .evan table.evan-flex-table {
   display: flex;
-  overflow: hidden;
+  overflow-x: auto;
   flex-flow: column nowrap;
   justify-content: space-between;
   margin-bottom: 0;
@@ -1650,7 +1650,7 @@
     color: var(--evan-text-color); }
   .evan a, .evan a:hover {
     text-decoration: none !important; }
-  .evan span, .evan p, .evan a, .evan th, .evan td, .evan label {
+  .evan span, .evan p, .evan a, .evan th, .evan td, .evan label, .evan li {
     font-size: var(--evan-text-font-size);
     font-weight: 400; }
   .evan .font-size-20 {
