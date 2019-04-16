@@ -9,22 +9,22 @@ hide_content: true
 tiles:
   - title: Network
     description: How is evan.network organized
-    icon: address-card
+    icon: network-wired
     link: /docs/whats_evan/network.html
 
   - title: Core features
     description: Which core features offers evan.network
-    icon: radiation
+    icon: cogs
     link: /docs/whats_evan/corefeatures.html
 
   - title: Enterprise Chain
     description: What makes evan.network an enterprise blockchain
-    icon: teeth
+    icon: landmark
     link: /docs/whats_evan/enterprisechain.html
 
   - title: Why
     description: Why implement usecases on evan.network
-    icon: truck-monster
+    icon: question
     link: /docs/whats_evan/why.html
 
   - title: Goals

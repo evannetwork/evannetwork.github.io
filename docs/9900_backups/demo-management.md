@@ -1,9 +1,8 @@
----
 title: "Demo Management"
 parent: Developers
 grand_parent: Management Tools
 nav_order: 4550
-permalink: /docs/developers/ui/dapps/demo-management.html
+permalink: /docs/developers/management-tools/demo-management.html
 ---
 
 # Demo-Management

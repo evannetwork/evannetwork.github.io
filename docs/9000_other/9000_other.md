@@ -8,12 +8,17 @@ has_children: true
 hide_content: true
 tiles:
   - title: FAQ
-    description: FAQ
-    icon: question
+    description: 　
+    icon: question-circle
     link: /docs/other/faq.html
 
   - title: Glossary
-    description: Glossary
+    description: 　
     icon: book
     link: /docs/other/glossary.html
+
+  - title: Releases
+    description: 　
+    icon: bullhorn
+    link: /docs/other/releases.html
 ---

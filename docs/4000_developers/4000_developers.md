@@ -22,18 +22,18 @@ tiles:
     icon: window-maximize
     link: /docs/developers/ui.html
 
-  - title: HOWTOS
+  - title: How-tos
     description: 　
     icon: child
-    link: /docs/developers/hello-world.html
+    link: /docs/developers/how-tos.html
+
+  - title: Management-Tools
+    description: 　
+    icon: drafting-compass
+    link: /docs/developers/management-tools.html
 
   - title: Tooling
     description: 　
     icon: tools
     link: /docs/developers/tooling/setting-up.html
-
-  - title: Releases
-    description: 　
-    icon: bullhorn
-    link: /docs/developers/releases/releases.html
 ---

@@ -3,7 +3,7 @@ title: "Queue DApp"
 parent: Developers
 grand_parent: Management Tools
 nav_order: 4520
-permalink: /docs/developers/ui/dapps/queue.html
+permalink: /docs/developers/management-tools/queue.html
 ---
 
 # Queue DApp

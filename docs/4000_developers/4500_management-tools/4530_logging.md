@@ -3,7 +3,7 @@ title: "Logging DApp"
 parent: Developers
 grand_parent: Management Tools
 nav_order: 4530
-permalink: /docs/developers/ui/dapps/logging.html
+permalink: /docs/developers/management-tools/logging.html
 ---
 
 # Logging DApp

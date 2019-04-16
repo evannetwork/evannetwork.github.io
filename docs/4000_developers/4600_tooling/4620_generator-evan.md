@@ -1,12 +1,12 @@
 ---
-title: "project generator"
+title: "Project Generator"
 parent: Developers
 grand_parent: Tooling
 nav_order: 4620
 permalink: /docs/developers/tooling/generator-evan.html
 ---
 
-# project generator
+# Project Generator
 
 The [evan.network project generator](https://github.com/evannetwork/generator-evan) is a [yeoman generator](http://yeoman.io/) for the whole evan.network project
 stack. This generator will create a basic project with a lots of scripts to handle smart-contracts,
