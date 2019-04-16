@@ -6,6 +6,11 @@ nav_order: 4210
 permalink: /docs/developers/api/blockchain-core.html
 ---
 
+<!--
+  TODO:
+    - refactor overview image
+-->
+
 <svg id="blockchain-core" version="1.1" width="100%" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
     <marker id="start-data" style="stroke: #003946; fill: #003946;" viewBox="0 0 10 10" refX="10" refY="5" markerUnits="strokeWidth" markerWidth="4" markerHeight="3" orient="auto">
@@ -109,7 +114,6 @@ permalink: /docs/developers/api/blockchain-core.html
         <tspan x="3" dy="1.3em">provides access to IPFS:</tspan>
         <tspan x="12" dy="1.3em" class="code">get</tspan>
         <tspan x="12" dy="1.3em" class="code">add</tspan>
-        <tspan x="12" dy="1.3em" class="code">pin add</tspan>
         <tspan x="3" dy="2em">also Provides</tspan>
         <tspan x="12" dy="1.3em" >a local memcache</tspan>
         <tspan x="12" dy="1.3em" >an IPLD interface</tspan>
@@ -156,6 +160,6 @@ permalink: /docs/developers/api/blockchain-core.html
 
 </svg>
 
-The Blockchain Core Library is the central tool used in all development with evan.network. It is actually a collection of own functionality, and wrappers around 3rd party core functionality like blockchain transactions and distributed file system operations.
+The [Blockchain Core Library](https://github.com/evannetwork/api-blockchain-core) is the central tool used in all development with evan.network. It is actually a collection of own functionality, and wrappers around 3rd party core functionality like blockchain transactions and distributed file system operations.
 
-[The full API documentation](https://github.com/evannetwork/api-blockchain-core) shows the actual exposed sub-namespaces in the blockchain core module are a little more fine-grained.
+The full [API documentation](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6) shows the actual exposed sub-namespaces in the blockchain core module are a little more fine-grained.
