@@ -11,7 +11,7 @@ permalink: /docs/how_it_works/services/smart-agents.html
 
 ![Smart Agent](/docs/2000_how_it_works/img/smart_agent.png){:width="100px"}
 
-Smart Agents are services that are connected to the blockchain and support on-chain actions with off-chain data and functionalities. This allows integrating external system into the blockchain. These Smart Agents can also act as an [Oracle](https://cointelegraph.com/explained/blockchain-oracles-explained)<sup>[+]</sup>, to add complex decision logics to your Smart Contracts.
+Smart Agents are services that are connected to the blockchain and support on-chain actions with off-chain data and functionalities. This allows integrating external system into the blockchain. These Smart Agents can also act as an [Oracle](https://cointelegraph.com/explained/blockchain-oracles-explained), to add complex decision logics to your Smart Contracts.
 
 Examples for Smart Agents are:
 - **onboarding** Smart Agent<br>

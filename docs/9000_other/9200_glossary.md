@@ -48,7 +48,7 @@ permalink: /docs/other/glossary.html
 <dl>
     <dt><a href="/docs/first_steps/onchain.html/">BMail</a></dt>
     <dd>a message exchanged via the blockchain</dd>
-    <dt><a href="https://en.wikipedia.org/wiki/Blockchain/">Blockchain</a><sup>[+]</sup></dt>
+    <dt><a href="https://en.wikipedia.org/wiki/Blockchain/">Blockchain</a></dt>
     <dd>a cryptographically verified distributed global single consensus data record store</dd>
     <dt></dt>
     <dd></dd>
@@ -69,11 +69,11 @@ permalink: /docs/other/glossary.html
 </dl>
 <a id="e"></a>
 <dl>
-    <dt><a href="https://ens.domains/">ENS</a><sup>[+]</sup></dt>
+    <dt><a href="https://ens.domains/">ENS</a></dt>
     <dd>Ethereum Name Service</dd>
     <dt>EOA</dt>
     <dd>Externally Owned Account, usually controlled by a person, has no EVM code associated with it</dd>
-    <dt><a href="https://www.ethereum.org/">Ethereum</a><sup>[+]</sup></dt>
+    <dt><a href="https://www.ethereum.org/">Ethereum</a></dt>
     <dd>a fully programmable blockchain</dd>
     <dt><a href="/docs/whats_evan/network.html">EVAN Network</a></dt>
     <dd>European Verified Application Node Network</dd>
@@ -88,7 +88,7 @@ permalink: /docs/other/glossary.html
             Fetching data does not consume any tokens, merely the creation of new assets and uploads to the network consume tokens.
         </p>
     </dd>
-    <dt><a href="http://www.ethdocs.org/en/latest/introduction/what-is-ethereum.html#ethereum-virtual-machine">EVM</a><sup>[+]</sup></dt>
+    <dt><a href="http://www.ethdocs.org/en/latest/introduction/what-is-ethereum.html#ethereum-virtual-machine">EVM</a></dt>
     <dd>Ethereum Virtual Machine, the execution environment for <a href="doc/smartcontracts">SmartContracts</a></dd>
 </dl>
 <a id="f"></a>
@@ -98,7 +98,7 @@ permalink: /docs/other/glossary.html
 </dl>
 <a id="g"></a>
 <dl>
-    <dt><a href="http://ethdocs.org/en/latest/ether.html#gas-and-ether">Gas</a><sup>[+]</sup></dt>
+    <dt><a href="http://ethdocs.org/en/latest/ether.html#gas-and-ether">Gas</a></dt>
     <dd>the cost of doing transactions in the blockchain, generally deducted from the balance of the account that initiates the transaction</dd>
 </dl>
 <a id="h"></a>
@@ -108,7 +108,7 @@ permalink: /docs/other/glossary.html
 </dl>
 <a id="i"></a>
 <dl>
-    <dt><a href="https://ipfs.io">IPFS</a><sup>[+]</sup></dt>
+    <dt><a href="https://ipfs.io">IPFS</a></dt>
     <dd>the Interplanetary File System, a distributed file system, evan.network uses its own private instance</dd>
 </dl>
 <a id="j"></a>
@@ -162,14 +162,14 @@ permalink: /docs/other/glossary.html
     <dd>just a fancy name for a webservice without UI that connects to the blockchain in some way</dd>
     <dt><a href="/docs/how_it_works/smart-contracts.html">Smart Contract</a></dt>
     <dd>a program that runs cryptographically secure on the Ethereum virtual machine</dd>
-    <dt><a href="https://solidity.readthedocs.io/en/v0.4.23/">Solidity</a><sup>[+]</sup></dt>
+    <dt><a href="https://solidity.readthedocs.io/en/v0.4.23/">Solidity</a></dt>
     <dd>A high level language to write Ethereum programs, often called Smart Contracts</dd>
 </dl>
 <a id="t"></a>
 <dl>
     <dt>Transaction</dt>
     <dd>any write or change to the global blockchain records, can be a simple transfer of funds, or an executed Smart Contract</dd>
-    <dt><a href="http://truffleframework.com/">Truffle</a><sup>[+]</sup></dt>
+    <dt><a href="http://truffleframework.com/">Truffle</a></dt>
     <dd>the de-facto standard Ethereum application framework</dd>
 </dl>
 <a id="u"></a>
@@ -184,7 +184,7 @@ permalink: /docs/other/glossary.html
 </dl>
 <a id="w"></a>
 <dl>
-    <dt><a href="https://github.com/ethereum/wiki/wiki/JavaScript-API">web3</a><sup>[+]</sup></dt>
+    <dt><a href="https://github.com/ethereum/wiki/wiki/JavaScript-API">web3</a></dt>
     <dd>an API collection to work with Ethereum contracts</dd>
 </dl>
 <a id="x"></a>
