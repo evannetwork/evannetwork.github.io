@@ -20,7 +20,7 @@ Assuming you already know what a blockchain is and some basics about how it and 
 [evan.network](https://evan.network/) needs a blockchain client and uses [Parity](https://www.parity.io/) for this.
 The reason to prefer it over [Geth](https://geth.ethereum.org/) is the more extensive toolchain and functionality. Geth and others cannot be used in evan.network, because there are required configurations that are not supported by Geth.
 
-This becomes only relevant in case you want to install the blockchain client on your own machine. Most of the time it is sufficient to configure your applications to connect to one of the evan.network [AuthorityNodes](/docs/how_it_works/authoritynode.htmls).
+This becomes only relevant in case you want to install the blockchain client on your own machine. Most of the time it is sufficient to configure your applications to connect to one of the evan.network [AuthorityNodes](/docs/how_it_works/authoritynode.html).
 
 However, if you do install your own AuthorityNode, you need to use the evan.network testcore blockchain for development. The Parity configuration for this is available [here](https://github.com/evannetwork/testcore-config).
 
@@ -68,22 +68,3 @@ At the time `nodejs v10.*` is not supported yet though.
 So far, this seems easy enough. The primary thing to install is the [blockchain-core libs](https://github.com/evannetwork/api-blockchain-core). They are written in `typescript` and implemented as a `npm` package, so the installation should be straight forward, too.
 
 Since the node ecosystem and especially the Ethereum APIs are pretty fast moving environments, it is not unlikely to encounter dependency and version problems though, at least for the time being.
-
-# Your first evan.network Contract
-
-Don't let yourself be intimidated by the word 'contract'. A contract in the Ethereum context is not too different from a class like in Java in the way it is written and used: it contains data fields, methods/ functions that work with those data fields and some permission facilities to access those.
-The big difference is of course that each contract is a global singleton and all data changes are cryptographically verfied and agreed upon by the blockchain users.
-
-It will be a simple 'Hello World', where the string comes from the blockchain.
-We will be using the defacto-standard blockchain development framework [truffle](http://truffleframework.com), simply because it is so easy to set up and use and a lot of resources exist online.
-
-[Hello World](/docs/developers/hello-world.html)
-
-
-# Your first Smart Agent
-
-[Smart Agent](/docs/how_it_works/smart-agents.html) is just a fancy name for a web service that provides blockchain access but has no own user interface. Usually it has some kind of RPC API, in REST format or otherwise, or it connects to some other service and listens for events.
-
-The agent you will be writing will use the [blockchain-core](https://github.com/evannetwork/api-blockchain-core) library, which bundles and encapsulates a lot of specialized functionalities for evan.network, but also provides a lot of standard blockchain functionalities.
-
-[Hello Agent](/docs/developers/hello-agent.html)

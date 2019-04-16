@@ -41,7 +41,7 @@ This will allow the given factory to call the function [`registerContract`](http
 ### Getting Addresses of new Contracts
 When creating a contract via factory the address is returned via the [`ContractCreated`](https://github.com/evannetwork/smart-contracts-core/blob/0cff8bf94bb1ce578c702764483a0a33450236c6/contracts/BaseContractFactory.sol#L29) event from the factory, so an event listener, that watches for those events has to be created beforehand.
 
-When using the [Blockchain Core API](/docs/developers/api/api-blockchain-core.html), the events for retrieving the contract address can be given to a contract function execution as well, as used in [`base-contract.ts`](https://github.com/evannetwork/api-blockchain-core/blob/88105e2ec6eca0ff571019c5e79b57e5bc006b7f/src/contracts/base-contract/base-contract.ts#L127) for example:
+When using the [Blockchain Core API](/docs/developers/api/blockchain-core.html), the events for retrieving the contract address can be given to a contract function execution as well, as used in [`base-contract.ts`](https://github.com/evannetwork/api-blockchain-core/blob/88105e2ec6eca0ff571019c5e79b57e5bc006b7f/src/contracts/base-contract/base-contract.ts#L127) for example:
 
 ```typescript
 const contractId = await this.options.executor.executeContractTransaction(

@@ -3,12 +3,12 @@ title: "Smart Contract Permissioning"
 parent: Developers
 grand_parent: Concepts
 nav_order: 4132
-permalink: /docs/developers/concepts/contract_permissioning.html
+permalink: /docs/developers/concepts/smart-contract_permissioning.html
 ---
 
 # Smart Contract Permissioning 
 
-Smart contract permissions mostly cover *write* operations against smart contracts. *Read* operations are usually covered with encryption and [Sharings](docs/developers/concepts/sharings). If you're unsure which of those to use to secure your applications data, have a look at [Smart Contract Security](/docs/developers/concepts/contract_security.html).
+Smart contract permissions mostly cover *write* operations against smart contracts. *Read* operations are usually covered with encryption and [Sharings](/docs/developers/concepts/sharings). If you're unsure which of those to use to secure your applications data, have a look at [Smart Contract Security](/docs/developers/concepts/contract_security.html).
 
 
 ## Basic Permissions

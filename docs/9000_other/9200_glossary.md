@@ -41,8 +41,8 @@ permalink: /docs/other/glossary.html
 </dl>
 <a id="a"></a>
 <dl>
-    <dt></dt>
-    <dd></dd>
+    <dt><a href="/docs/how_it_works/authoritynode.html">AuthorityNode</a></dt>
+    <dd>a registered evan.network member, has to provide a number of services and resources to the network, most notably a blockchain client and IPFS storage</dd>
 </dl>
 <a id="b"></a>
 <dl>
@@ -89,7 +89,7 @@ permalink: /docs/other/glossary.html
         </p>
     </dd>
     <dt><a href="http://www.ethdocs.org/en/latest/introduction/what-is-ethereum.html#ethereum-virtual-machine">EVM</a></dt>
-    <dd>Ethereum Virtual Machine, the execution environment for <a href="doc/smartcontracts">SmartContracts</a></dd>
+    <dd>Ethereum Virtual Machine, the execution environment for <a href="/docs/developers/smart-contracts.html">SmartContracts</a></dd>
 </dl>
 <a id="f"></a>
 <dl>
@@ -128,8 +128,8 @@ permalink: /docs/other/glossary.html
 </dl>
 <a id="m"></a>
 <dl>
-    <dt><a href="/docs/how_it_works/authoritynode.html">AuthorityNode</a></dt>
-    <dd>a registered evan.network member, has to provide a number of services and resources to the network, most notably a blockchain client and IPFS storage</dd>
+    <dt></dt>
+    <dd></dd>
 </dl>
 <a id="n"></a>
 <dl>
@@ -158,7 +158,7 @@ permalink: /docs/other/glossary.html
 </dl>
 <a id="s"></a>
 <dl>
-    <dt><a href="/docs/how_it_works/smart-agents.html">SmartAgent</a></dt>
+    <dt><a href="/docs/how_it_works/services/smart-agents.html">SmartAgent</a></dt>
     <dd>just a fancy name for a webservice without UI that connects to the blockchain in some way</dd>
     <dt><a href="/docs/developers/smart-contracts.html">Smart Contract</a></dt>
     <dd>a program that runs cryptographically secure on the Ethereum virtual machine</dd>
