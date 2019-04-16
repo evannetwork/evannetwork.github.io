@@ -8,7 +8,7 @@ permalink: /docs/developers/ui/angular/hello-world.html
 
 # Hello World ÐApp
 ## 1. Get Tutorial Application
-- [Download Tutorial Application](https://github.com/evannetwork/dapps-tutorial-angular)
+- [Download Tutorial Application](https://github.com/evannetwork/sample-dapps-angular)
 
 ## 2. Build, serve and start the Application
 Navigate into the Lerna project and run the following commands. The same documentation is also included in the Lerna projects readme itself.

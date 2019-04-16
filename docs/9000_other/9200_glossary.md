@@ -160,7 +160,7 @@ permalink: /docs/other/glossary.html
 <dl>
     <dt><a href="/docs/how_it_works/smart-agents.html">SmartAgent</a></dt>
     <dd>just a fancy name for a webservice without UI that connects to the blockchain in some way</dd>
-    <dt><a href="/docs/how_it_works/smart-contracts.html">Smart Contract</a></dt>
+    <dt><a href="/docs/developers/smart-contracts.html">Smart Contract</a></dt>
     <dd>a program that runs cryptographically secure on the Ethereum virtual machine</dd>
     <dt><a href="https://solidity.readthedocs.io/en/v0.4.23/">Solidity</a></dt>
     <dd>A high level language to write Ethereum programs, often called Smart Contracts</dd>

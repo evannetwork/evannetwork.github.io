@@ -14,7 +14,7 @@ After creating the ÐApp functionalities, you can use a 'greeter contract' sampl
 [![standalone tutorial preview](./30_ui/img/standalone_preview.png){:width="50%"}](./30_ui/img/standalone_preview.png)
 
 ## 1. Get Tutorial Application
-- [Download Tutorial Application](https://github.com/evannetwork/dapps-tutorial-standalone)
+- [Download Tutorial Application](https://github.com/evannetwork/sample-dapps-standalone)
 
 ## 2. Tutorial applications
 Within the ƉApps folder, you will find frontend 'Hello World' applications for DBCP and blockchain-core (in short bcc). These projects have the minimal setup for interacting with the evan.network framework. The DBCP / bcc libraries are bundled using Browserify and published to the IPFS. So the application can attain the dependencies directly from IPFS.

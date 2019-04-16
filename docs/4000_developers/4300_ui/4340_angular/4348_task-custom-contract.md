@@ -13,6 +13,6 @@ In this section, you will create contracts, read from them and handle several da
 
 For how to write the task ƉApp much easier using the evan.network DataContract and the blockchain-core, have a look here : [Angular - Task ƉApp Data Contract](/docs/developers/ui/angular/task.html-custom).
 
-If you don't want to code by yourself, you can simply read the docs and copy the final resulting src folder from [dapps/task-custom-contract/src](https://github.com/evannetwork/dapps-tutorial-angular/tree/master/dapps/task-data-contract) to the [dapps/task/src](https://github.com/evannetwork/dapps-tutorial-angular/tree/master/dapps/task) folder.
+If you don't want to code by yourself, you can simply read the docs and copy the final resulting src folder from [dapps/task-custom-contract/src](https://github.com/evannetwork/sample-dapps-angular/tree/master/dapps/task-data-contract) to the [dapps/task/src](https://github.com/evannetwork/sample-dapps-angular/tree/master/dapps/task) folder.
 
 # Coming soon...
