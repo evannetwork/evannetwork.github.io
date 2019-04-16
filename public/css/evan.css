@@ -1,55 +1,81 @@
+/************************************ theming *****************************************************/ 
+.theme-wiki {
+  --evan-h1-font-size: 1.7em;
+  --evan-h2-font-size: 1.375em;
+}
+
+.theme-wiki h1 {
+  margin-top: 1.5em !important;
+}
+
+.theme-wiki h2 {
+  margin-top: 2em !important;
+}
+
+.theme-wiki h1:first-child, .theme-wiki h2:first-child {
+  margin-top: 0 !important;
+}
+
+.theme-wiki p, span, li, a {
+  text-align: justify;
+}
+
+/************************************ side panel ***************************************************/ 
+
 .nav-item:first-child {
-    border-top: 1px #e5e5e5 solid;
+  border-top: 1px #e5e5e5 solid;
 }
 
 .nav-item {
-    border-bottom: 1px #e5e5e5 solid;
+  border-bottom: 1px #e5e5e5 solid;
 }
 
 .evan.theme-evan .nav-item a {
-    font-size: var(--evan-text-font-size);
-    color: var(--evan-dark);
+  font-size: var(--evan-text-font-size);
+
+  color: var(--evan-dark);
 }
 
-.evan.theme-evan .nav-item.active{
-    border-left-color: var(--evan-primary);
+.evan.theme-evan .nav-item.active {
+  border-left-color: var(--evan-primary);
 }
 
 .evan.theme-evan .nav-item {
-    border-left: 4px solid;
-    border-left-color: transparent;
+  border-left: 4px solid;
+  border-left-color: transparent;
 }
 
-.evan.theme-evan .nav-item > ul > .nav-item{
-    border-left: 0px solid;
+.evan.theme-evan .nav-item > ul > .nav-item {
+  border-left: 0 solid;
 }
 
 .evan.theme-evan .nav-item ul {
-    display:none;
+  display: none;
 }
 
 .evan.theme-evan .nav-item.active ul {
-    margin-left: 20px;
-    display: block;
+  display: block;
+
+  margin-left: 20px;
 }
 
-.evan.theme-evan .nav-item:hover{
-    border-left: 4px solid;
-    border-left-color: var(--evan-primary);
+.evan.theme-evan .nav-item:hover {
+  border-left: 4px solid;
+  border-left-color: var(--evan-primary);
 }
 
-.evan.theme-evan .nav-item > ul > .nav-item:hover{
-    border-left: 0px solid;
+.evan.theme-evan .nav-item > ul > .nav-item:hover {
+  border-left: 0 solid;
 }
 
 .evan.theme-evan .nav-item:hover > a {
-    color: var(--evan-primary);
+  color: var(--evan-primary);
 }
 
 .evan.theme-evan .nav-item.active > a {
-    color: var(--evan-primary);
+  color: var(--evan-primary);
 }
 
 .evan.theme-evan img {
-    max-width: 100%;
+  max-width: 100%;
 }

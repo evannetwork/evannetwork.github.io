@@ -1423,7 +1423,7 @@
     background-color: rgba(var(--evan-black), 0.05); }
   .evan.theme-evan .table-hover tbody tr:hover {
     color: var(--evan-body-color);
-    background-color: var(--evan-flex-table mt-4-hover); }
+    background-color: var(--evan-table-hover); }
   .evan.theme-evan .table-danger,
   .evan.theme-evan .table-danger > th,
   .evan.theme-evan .table-danger > td {

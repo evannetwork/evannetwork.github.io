@@ -1646,7 +1646,7 @@
 */
 .evan {
   /* http://hackingui.com/front-end/a-pure-css-solution-for-multiline-text-truncation/ */ }
-  .evan h1, .evan h2, .evan h3, .evan h4, .evan h5, .evan span, .evan p {
+  .evan h1, .evan h2, .evan h3, .evan h4, .evan h5, .evan span, .evan p, .evan li {
     color: var(--evan-text-color); }
   .evan a, .evan a:hover {
     text-decoration: none !important; }
