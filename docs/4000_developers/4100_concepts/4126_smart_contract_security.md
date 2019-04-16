@@ -36,4 +36,4 @@ The following sections will handle the different aspects of security, but to giv
 | send a BMail             |  x  |     |     |
 | share data via contract  |  x  |  x  |     |
 | write data to a contract |  x  |  x  |  x  |
-{: .evan-table }
+{: .evan-flex-table mt-4 }
