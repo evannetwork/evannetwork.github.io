@@ -23,8 +23,7 @@ Each ÐApp can be deployed to the evan.network, so it can be accessed from anywh
 localhost server. This is handled by a wrapper library, to make the deployment as simple as
 possible. To deploy DApps to ens paths, you need one configuration file, that specifies which
 accounts and which configurations should be used for the deployment. This file must be js / json
-files that exports specific values [deployment config](https://github.com/evannetwork/generator-
-evan/blob/develop/generators/app/templates/config/deployment.js).
+files that exports specific values [deployment config](https://github.com/evannetwork/generator-evan/blob/develop/generators/app/templates/scripts/config/deployment.js).
 
 Simply open your evan-network base project. Within your config folder, a deployment.js file is
 included, that contains all the important configurations for your deployment. Here you must insert

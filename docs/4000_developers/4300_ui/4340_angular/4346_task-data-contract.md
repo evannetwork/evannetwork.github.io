@@ -18,11 +18,11 @@ If you don't want to code by yourself, you can simply read the docs and copy the
 # 1. Contract Implementation
 Before your start your implementation, it is important to decide what functionalities you will need. You need to think about data parameters, user roles including security restrictions and so on...
 
-For this example, we need a contract that handles some contract metadata and a list of todos. This is the perfect case for the [evan.network DataContract](/docs/developers/concepts/data-contract.html) / [DataContract wiki](https://github.com/evannetwork/api-blockchain-core/blob/feature/readthedocs-test/docs/data-contract.rst).
+For this example, we need a contract that handles some contract metadata and a list of todos. This is the perfect case for the [evan.network DataContract](/docs/developers/concepts/data-contract.html) / [DataContract API doc](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/contracts/data-contract.html).
 
 When you use a self-implemented contract, it is important to add the contract implementation ABI to our `dbcp.json` definition file. In this case, we can simply use the blockchain-core DataContract wrapper implementation to handle our contract calls. For documentation reasons, you should still put the ABI definition of the DataContract into the DBCP definition. So other people that read the DBCP definition of the created contract automaticaly receive your contract definition and functions. So you can program the contract from anywhere, also outside of your application.
 
-Insert the ABI definition into your `dbcp.json` file from the following [dbcp.json](https://github.com/evannetwork/dapps-tutorial-angular/blob/master/dapps/task-complete/dbcp.json) (it is a bit large to insert the full ABI here in the documentation).
+Insert the ABI definition into your `dbcp.json` file from the following [dbcp.json](https://github.com/evannetwork/sample-dapps-angular/blob/master/dapps/task/dbcp.json) (it is a bit large to insert the full ABI here in the documentation).
 
 ```json
 {
@@ -550,11 +550,11 @@ For development purposes it is time consuming to publish your sources to the IPF
 ```
 
 Do the following things to develop the details page using your local changes:
-1. If you created a contract ID and navigated to it by submitting the alert, the contract ID will appear within the URL (e.g. "http://localhost:3000/dev.html#/dashboard.evan/0x08a76987Ac24750287Fcbf51378525aA62499228").
+1. If you created a contract ID and navigated to it by submitting the alert, the contract ID will appear within the URL (e.g. `http://localhost:3000/dev.html#/dashboard.evan/0x08a76987Ac24750287Fcbf51378525aA62499228z).
 
-2. Copy the contract ID and open you task creation ƉApp again on the following URL : [http://localhost:3000/dev.html#/dashboard.test/tutorialtask.test](http://localhost:3000/dev.html#/dashboard.test/tutorialtask.test).
+2. Copy the contract ID and open you task creation ƉApp again on the following URL : `http://localhost:3000/dev.html#/dashboard.test/tutorialtask.test`.
 
-3. Append the contract ID to your creation URL and the contract will be loaded with your local changes. [http://localhost:3000/dev.html#/dashboard.test/tutorialtask.test](http://localhost:3000/dev.html#/dashboard.test/tutorialtask.test) =>  [http://localhost:3000/dev.html#/dashboard.test/tutorialtask.test/0x08a76987Ac24750287Fcbf51378525aA62499228](http://localhost:3000/dev.html#/dashboard.test/tutorialtask.test/0x08a76987Ac24750287Fcbf51378525aA62499228)
+3. Append the contract ID to your creation URL and the contract will be loaded with your local changes. `http://localhost:3000/dev.html#/dashboard.test/tutorialtask.test` =>  `http://localhost:3000/dev.html#/dashboard.test/tutorialtask.test/0x08a76987Ac24750287Fcbf51378525aA62499228`
 
 
 # 4. Task Detail
