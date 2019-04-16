@@ -77,14 +77,14 @@ with an e-mail address into evan.network to become your contact. They all have o
 Smart Contract, just like you.
 
 
-## [Are my contacts good business partners?](/docs/first_steps/verifications.html)
+## [Are my contacts good business partners?](/docs/first_steps/verification.html)
 
-Using the [verification and identity management](/docs/first_steps/verifications.html), you can check, if a contact has special verifications (or "certificates") that are provided by trusted business partners.
+Using the [verification and identity management](/docs/first_steps/verification.html), you can check, if a contact has special verifications (or "certificates") that are provided by trusted business partners.
 
 
 ## [Talking to Each Other: The Mailbox](/docs/first_steps/mailbox.html)
 
-We call the messages sent and stored in [evan.network Bmails](/docs/first_steps/mail.html), equivalent to
+We call the messages sent and stored in [evan.network Bmails](/docs/first_steps/mailbox.html), equivalent to
 E-mails. And the communication style is similar to E-mails, because it doesn't really lend itself to
 instant messaging and chatting due to the blockchain transaction delays.
 
