@@ -1,12 +1,12 @@
 ---
-title: "project generator"
+title: "Project Generator"
 parent: Developers
 grand_parent: Tooling
 nav_order: 4620
 permalink: /docs/developers/tooling/generator-evan.html
 ---
 
-# project generator
+# Project Generator
 
 The [evan.network project generator](https://github.com/evannetwork/generator-evan) is a [yeoman generator](http://yeoman.io/) for the whole evan.network project
 stack. This generator will create a basic project with a lots of scripts to handle smart-contracts,
@@ -48,7 +48,7 @@ about the following points before starting a project:
 - test contract structure directly
 
 ### 3. Setup your connection to the world
-- read about [DBCP](/docs/developers/concepts/dbcp.html)
+- read about [DBCP](/docs/how_it_works/services/dbcp.html)
 - name and identify your ÐApp: name, description, logos, translations, ...
 - insert your contracts ABI and data schemes to your project (have a look at [Contract Implementation & Data Scheme](http://localhost:4000/docs/developers/ui/angular/task-data-contract.html))
 

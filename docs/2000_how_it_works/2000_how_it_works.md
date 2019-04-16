@@ -9,12 +9,12 @@ hide_content: true
 tiles:
   - title: Architecture
     description: 　
-    icon: fish
+    icon: sitemap
     link: /docs/how_it_works/architecture.html
 
   - title: Services
     description: 　
-    icon: cookie
+    icon: map-signs
     link: /docs/how_it_works/services.html
 
   - title: Authority Nodes
@@ -29,6 +29,6 @@ tiles:
 
   - title: Changelog
     description: 　
-    icon: ghost
+    icon: scroll
     link: /docs/how_it_works/changelog_chain.html
 ---

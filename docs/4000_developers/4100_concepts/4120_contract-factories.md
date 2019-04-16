@@ -19,12 +19,12 @@ These contracts are usually created by using contract factories, which offers a 
 
 ## Usage
 ### ENS Address
-Contract factories that belong to a [Business Center](/docs/developers/concepts/business.html)<sup>[+]</sup> are usually deployed at `${FACTORY_NAME}.factory.${BUSINESS_CENTER_ADDRESS}`, so a factory for tasks in the business center "sample.evan" would be deployed at "tasks.factory.sample.evan".
+Contract factories that belong to a [Business Center](/docs/developers/concepts/business.html) are usually deployed at `${FACTORY_NAME}.factory.${BUSINESS_CENTER_ADDRESS}`, so a factory for tasks in the business center "sample.evan" would be deployed at "tasks.factory.sample.evan".
 
 ### Factories and BusinessCenters
-If a factory creates contracts for a [Business Center](/docs/developers/concepts/business-center.html)<sup>[+]</sup>, it has to be registered as a valid factory in that Business Center. Factories register all new contracts they create in the Business Center they belong to, and to be able to do so, they need to be registered at the Business Center as a valid factory.
+If a factory creates contracts for a [Business Center](/docs/developers/concepts/business-center.html), it has to be registered as a valid factory in that Business Center. Factories register all new contracts they create in the Business Center they belong to, and to be able to do so, they need to be registered at the Business Center as a valid factory.
 
-For this purpose the owner of a business center can call the function [`registerFactory`](https://github.com/evannetwork/smart-contracts-core/blob/0cff8bf94bb1ce578c702764483a0a33450236c6/contracts/BusinessCenter.sol#L179)<sup>[+]</sup> at a BusinessCenter, e.g. with: 
+For this purpose the owner of a business center can call the function [`registerFactory`](https://github.com/evannetwork/smart-contracts-core/blob/0cff8bf94bb1ce578c702764483a0a33450236c6/contracts/BusinessCenter.sol#L179) at a BusinessCenter, e.g. with: 
 
 ```typescript
 await runtime.executor.executeContractTransaction(
@@ -35,13 +35,13 @@ await runtime.executor.executeContractTransaction(
 );
 ```
 
-This will allow the given factory to call the function [`registerContract`](https://github.com/evannetwork/smart-contracts-core/blob/0cff8bf94bb1ce578c702764483a0a33450236c6/contracts/BusinessCenter.sol#L125)<sup>[+]</sup> at the BusinessCenter and therefore allow it to automatically add new contracts, the factory created, to the business center.
+This will allow the given factory to call the function [`registerContract`](https://github.com/evannetwork/smart-contracts-core/blob/0cff8bf94bb1ce578c702764483a0a33450236c6/contracts/BusinessCenter.sol#L125) at the BusinessCenter and therefore allow it to automatically add new contracts, the factory created, to the business center.
 
 
 ### Getting Addresses of new Contracts
-When creating a contract via factory the address is returned via the [`ContractCreated`](https://github.com/evannetwork/smart-contracts-core/blob/0cff8bf94bb1ce578c702764483a0a33450236c6/contracts/BaseContractFactory.sol#L29)<sup>[+]</sup> event from the factory, so an event listener, that watches for those events has to be created beforehand.
+When creating a contract via factory the address is returned via the [`ContractCreated`](https://github.com/evannetwork/smart-contracts-core/blob/0cff8bf94bb1ce578c702764483a0a33450236c6/contracts/BaseContractFactory.sol#L29) event from the factory, so an event listener, that watches for those events has to be created beforehand.
 
-When using the [Blockchain Core API](/docs/developers/api/api-blockchain-core.html), the events for retrieving the contract address can be given to a contract function execution as well, as used in [`base-contract.ts`](https://github.com/evannetwork/api-blockchain-core/blob/88105e2ec6eca0ff571019c5e79b57e5bc006b7f/src/contracts/base-contract/base-contract.ts#L127)<sup>[+]</sup> for example:
+When using the [Blockchain Core API](/docs/developers/api/api-blockchain-core.html), the events for retrieving the contract address can be given to a contract function execution as well, as used in [`base-contract.ts`](https://github.com/evannetwork/api-blockchain-core/blob/88105e2ec6eca0ff571019c5e79b57e5bc006b7f/src/contracts/base-contract/base-contract.ts#L127) for example:
 
 ```typescript
 const contractId = await this.options.executor.executeContractTransaction(

@@ -3,7 +3,7 @@ title: "Profile DApp"
 parent: Developers
 grand_parent: Management Tools
 nav_order: 4510
-permalink: /docs/developers/ui/dapps/profile.html
+permalink: /docs/developers/management-tools.html
 ---
 
 # Profile DApp

@@ -3,7 +3,7 @@ title: "Explorer DApp"
 parent: Developers
 grand_parent: Management Tools
 nav_order: 4540
-permalink: /docs/developers/ui/dapps/explorer.html
+permalink: /docs/developers/management-tools/explorer.html
 ---
 
 # Explorer DApp
