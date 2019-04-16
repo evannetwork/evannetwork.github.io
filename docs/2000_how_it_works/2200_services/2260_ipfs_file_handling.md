@@ -19,7 +19,7 @@ You can reach the IPFS service for the **testcore** at `https://ipfs.test.evan.n
 
 If you store data to the evan.network IPFS storage, **you must** take care that you encrypt these data in a proper way, so that third parties can't read your data. To encrypt your data, you can use the evan.network [security APIs](/docs/developers/concepts/permissioning.html) or implement a custom way.
 
-You can also use a custom IPFS or other datastore to persist your data. In the [DBCP](/docs/developers/concepts/dbcp.html) guide is the possibility to specify alternative storage providers or you can write custom storage handlers in your ÐAPPs.
+You can also use a custom IPFS or other datastore to persist your data. In the [DBCP](/docs/how_it_works/services/dbcp.html) guide is the possibility to specify alternative storage providers or you can write custom storage handlers in your ÐAPPs.
 
 
 ## Hybrid Storage
@@ -27,6 +27,6 @@ Storing large amount of data becomes rather expensive and difficult to execute d
 
 This keeps the amount of data quite small, but allows adding arbitrary large files to contracts without exceeding blockchain limitations or making the transactions too expensive.
 
-ENS addresses can point to a description as well, they keep a reference to a d[DBCP](/docs/developers/concepts/dbcp.html) description, which may point to [ÐAPPs](/docs/developers/ui/basics.html) and contract data, assets, etc. related to the contract.
+ENS addresses can point to a description as well, they keep a reference to a d[DBCP](/docs/how_it_works/services/dbcp.html) description, which may point to [ÐAPPs](/docs/developers/ui/basics.html) and contract data, assets, etc. related to the contract.
 
 The _DBCP descriptions_ are hosted to evan.network IPFS storage, _assets_ can be stored in a custom IPFS or datastore. _ÐAPPs_ may be hosted in a custom location as well, but it is recommended to host these in the evan.network IPFS storage to keep the user experience fluent without having the user switch servers during navigation.

@@ -76,7 +76,7 @@ permalink: /docs/developers/api.html
     </a>
     <text class="grey small" x="76" y="230"></text>
 
-    <a xlink:href="/docs/developers/concepts/dbcp.html" transform="translate(20,30)">
+    <a xlink:href="/docs/how_it_works/services/dbcp.html" transform="translate(20,30)">
       <rect class="module" width="160" height="80" rx="3"/>
       <text class="big" x="56" y="45">DBCP</text>
       <title>Distributed Blockchain Contract Protocol</title>

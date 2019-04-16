@@ -48,7 +48,7 @@ about the following points before starting a project:
 - test contract structure directly
 
 ### 3. Setup your connection to the world
-- read about [DBCP](/docs/developers/concepts/dbcp.html)
+- read about [DBCP](/docs/how_it_works/services/dbcp.html)
 - name and identify your ÐApp: name, description, logos, translations, ...
 - insert your contracts ABI and data schemes to your project (have a look at [Contract Implementation & Data Scheme](http://localhost:4000/docs/developers/ui/angular/task-data-contract.html))
 
