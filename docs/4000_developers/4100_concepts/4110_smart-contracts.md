@@ -3,7 +3,7 @@ title: "Smart-Contracts"
 parent: Developers
 grand_parent: Concepts
 nav_order: 4110
-permalink: /docs/developers/concepts.html
+permalink: /docs/developers/smart-contracts.html
 ---
 
 # Smart Contracts

@@ -10,7 +10,7 @@ tiles:
   - title: Concepts
     description: 　
     icon: pastafarianism
-    link: /docs/developers/concepts.html
+    link: /docs/developers/smart-contracts.html
 
   - title: API
     description: 　

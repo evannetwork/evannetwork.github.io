@@ -13,7 +13,7 @@ In this section you will create contracts, read from them and handle several dat
 
 For how to write the task ƉApp using your own contract implementation, have a look at this: [Angular - Task ƉApp Custom Contract](/docs/developers/ui/angular/task.html-custom).
 
-If you don't want to code by yourself, you can simply read the docs and copy the final resulting src folder from [dapps/task-data-contract/src](https://github.com/evannetwork/dapps-tutorial-angular/tree/master/dapps/task-data-contract) to the [dapps/task/src](https://github.com/evannetwork/dapps-tutorial-angular/tree/master/dapps/task) folder.
+If you don't want to code by yourself, you can simply read the docs and copy the final resulting src folder from [dapps/task-data-contract/src](https://github.com/evannetwork/dapps-tutorial-angular/tree/master/dapps/task-data-contract) to the [dapps/task/src](https://github.com/evannetwork/sample-dapps-angular/tree/master/dapps/task) folder.
 
 # 1. Contract Implementation
 Before your start your implementation, it is important to decide what functionalities you will need. You need to think about data parameters, user roles including security restrictions and so on...
