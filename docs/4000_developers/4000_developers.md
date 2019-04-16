@@ -15,7 +15,7 @@ tiles:
   - title: API
     description: 　
     icon: bezier-curve
-    link: /docs/developers/api/blockchain-core.html
+    link: /docs/developers/api.html
 
   - title: UI
     description: 　
