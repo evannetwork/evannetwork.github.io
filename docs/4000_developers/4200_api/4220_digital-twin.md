@@ -6,6 +6,12 @@ nav_order: 4220
 permalink: /docs/developers/api/digital-twin.html
 ---
 
+<!--
+  TODO:
+    - update references here with updated digital twin api, as soon, as it has "settled"
+    - replace images with images, that do not have spell checker hints...
+-->
+
 # What is a Digital Twin to begin with?
 Machines, cars, products, and people can all be represented with a digital twin.
 
