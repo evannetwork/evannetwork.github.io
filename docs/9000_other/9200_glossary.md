@@ -48,7 +48,7 @@ permalink: /docs/other/glossary.html
 <dl>
     <dt><a href="/docs/first_steps/onchain.html/">BMail</a></dt>
     <dd>a message exchanged via the blockchain</dd>
-    <dt><a href="https://en.wikipedia.org/wiki/Blockchain/">Blockchain</a></dt>
+    <dt><a href="https://en.wikipedia.org/wiki/Blockchain">Blockchain</a></dt>
     <dd>a cryptographically verified distributed global single consensus data record store</dd>
     <dt></dt>
     <dd></dd>

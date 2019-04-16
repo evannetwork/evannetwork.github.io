@@ -14,7 +14,7 @@ After creating the ÐApp functionalities, you can use a 'greeter contract' sampl
 [![js tutorial preview](/public/docs/developers/ui/js-hello-world.html-preview.png){:width="50%"}](/public/docs/developers/ui/js-hello-world.html-preview.png)
 
 ## 1. Get Tutorial Application
-- [Download Tutorial Application](https://github.com/evannetwork/dapps-tutorial-js)
+- [Download Tutorial Application](https://github.com/evannetwork/sample-dapps-js)
 
 ## 2. Tutorial applications
 Within the ƉApps folder, you will find the 'Hello World' application. Compared to the standalone example, you will realize quickly that the initialization of a runtime environment is omitted and the existing bcc instance can be used. This instance is enriched with all necessary configurations and information about the logged-in user. This makes it possible to load and write data in the user's context.
@@ -22,7 +22,7 @@ Within the ƉApps folder, you will find the 'Hello World' application. Compared 
 ## 2.1 Build Jobs
 Due to the development for the evan.network framework, it becomes necessary to use an existing development runtime, which brings with it all different prerequisites. It is installed via Lerna. To be able to open this application in the framework, the `index.js` file is made AMD-enabled via a `rollup.js` construction job and copied into the development runtime. This means that the applications can also be tested locally on your own computer.
 
-The build job is defined here: [daps-tutorial-js/scripts/dapps-serve.js](https://github.com/evannetwork/dapps-tutorial-js/blob/master/scripts/dapps-serve.js).
+The build job is defined here: [daps-tutorial-js/scripts/dapps-serve.js](https://github.com/evannetwork/sample-dapps-js/blob/master/scripts/dapps-serve.js).
 
 To start your application, open two command lines and run the following two commands:
 
