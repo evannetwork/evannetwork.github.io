@@ -1498,13 +1498,10 @@
     .evan table.evan-flex-table tr td, .evan table.evan-flex-table tr th {
       font-size: var(--evan-text-font-size);
       font-weight: 400;
-      display: flex;
-      align-items: center;
       flex-basis: 0;
       flex-grow: 1;
       padding: 1em 1.5em;
       word-wrap: break-word;
-      word-break: break-all;
       word-break: break-word;
       overflow-wrap: break-word; }
       .evan table.evan-flex-table tr td:first-child, .evan table.evan-flex-table tr th:first-child {
