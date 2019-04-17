@@ -11,7 +11,7 @@ The goal of this tutorial is to interact with different functionalities of the e
 
 After creating the ÐApp functionalities, you can use a 'greeter contract' sample to create a contract instance. The DBCP description attached to the 'greeter contract' will use your ƉApp as display possiblity.
 
-[![js tutorial preview](/public/docs/developers/ui/js-hello-world.html-preview.png){:width="50%"}](/public/docs/developers/ui/js-hello-world.html-preview.png)
+[![js tutorial preview](/docs/4000_developers/4300_ui/img/hello-world-preview.png){:width="50%"}](/docs/4000_developers/4300_ui/img/hello-world-preview.png)
 
 ## 1. Get Tutorial Application
 - [Download Tutorial Application](https://github.com/evannetwork/sample-dapps-js)
