@@ -22,12 +22,12 @@ The mailbox ÐAPP allows you to view your latest blockchain mails (in short "Bma
 - contract invitations
 - business center invitation
 
-[![mailbox - inbox](/docs/3000_first_steps/img/mailbox_inbox.png){:width="50%"}](https://github.com/evannetwork/evannetwork.github.io/raw/master/docs/3000_first_steps/img/mailbox_inbox.png)
+[![mailbox - inbox](/docs/3000_first_steps/img/mailbox_inbox.png){:width="50%"}](/docs/3000_first_steps/img/mailbox_inbox.png)
 
 Bmails can have attachments, that let you perform actions based on their type. Attachments are shown below the Bmail content.
 Task invitations for example allow you to navigate to the contract you received an invitation for.
 
-[![mailbox - detail](/docs/3000_first_steps/img/mailbox_detail.png){:width="50%"}](https://github.com/evannetwork/evannetwork.github.io/raw/master/docs/3000_first_steps/img/mailbox_detail.png)
+[![mailbox - detail](/docs/3000_first_steps/img/mailbox_detail.png){:width="50%"}](/docs/3000_first_steps/img/mailbox_detail.png)
 
 There is no mail provider that can lock your account and prevent you from accessing it. As long as you have your credentials, you have access to your profile and all your messages. Even if you have no balance on your account left and can't send any new Bmails or do any changes, you can still read everything.
 
@@ -41,7 +41,7 @@ And you have guessed it, this key exchange is a contract on the blockchain again
 
 
 ## Adding new Contacts
-Adding new contacts initiates a key exchange process with the person you want to add, which will, if completed, allow you to exchange blockchain mails or "Bmails" (see [Mailbox](/docs/first_steps/onchain.html)) with this person.
+Adding new contacts initiates a key exchange process with the person you want to add, which will, if completed, allow you to exchange blockchain mails or "Bmails" (see [Mailbox](/docs/first_steps/mailbox.html)) with this person.
 
 [![contact add type select](/docs/3000_first_steps/img/contacts_add_type_select.png){:width="50%"}](/docs/3000_first_steps/img/contacts_add_type_select.png)
 
@@ -51,7 +51,7 @@ If adding accounts via account ID, a key exchange with this person will be trigg
 
 If adding accounts via Email, you are required to provide a small amount of onboarding EVEs for the invitee. The invitee will receive an Email with your onboarding invitation and a link to create or import a profile and then claim the provided onboarding EVEs.
 
-Inviting users via Email requires you to have added the onboarding [Smart Agent](/docs/how_it_works/smart-agents.html) to your contacts. If you haven't already added the agent to your contacts, a request for this is displayed when clicking on the "Using an Email" button.
+Inviting users via Email requires you to have added the onboarding [Smart Agent](/docs/how_it_works/services/smart-agents.html) to your contacts. If you haven't already added the agent to your contacts, a request for this is displayed when clicking on the "Using an Email" button.
 
 [![add smart agent to contacts](/docs/3000_first_steps/img/contacts_add_smart_agent.png){:width="50%"}](/docs/3000_first_steps/img/contacts_add_smart_agent.png)
 

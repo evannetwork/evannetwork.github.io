@@ -13,7 +13,7 @@ Some contracts, like the [DataContract](/docs/developers/concepts/data-contract.
 These contracts are usually created by using contract factories, which offers a few enhancements to the process:
 - it is faster - instead of n single transactions only one transaction is performed
 - creating contracts becomes cheaper -  overhead is reduced when performed in a single transaction
-- it can become safer - if one of the setup steps that follow the contract creation fails, the entire creation process is rolled back and if executed via the evan API, this transaction will not be started (if executed with the [Blockchain Core API](/docs/developers/api/api-blockchain-core.html), gas is estimated before each transaction and a failing transaction would be detected and prevented)
+- it can become safer - if one of the setup steps that follow the contract creation fails, the entire creation process is rolled back and if executed via the evan API, this transaction will not be started (if executed with the [Blockchain Core API](/docs/developers/api/blockchain-core.html), gas is estimated before each transaction and a failing transaction would be detected and prevented)
 - factories are deployed to [ENS](/docs/how_it_works/services/ensnameservice.html) addresses and can be updated without delivering code to each client application
 
 

@@ -17,7 +17,7 @@ The storage service keeps care that a content asset is replicated up to five tim
 
 You can reach the IPFS service for the **testcore** at `https://ipfs.test.evan.network` and if you want to reach the public IPFS service for the **core** blockchain, please got to `https://ipfs.evan.network`. There are several different APIs available to interact with IPFS, for JavaScript/NodeJS you can use [https://github.com/ipfs/js-ipfs-api](https://github.com/ipfs/js-ipfs-api)
 
-If you store data to the evan.network IPFS storage, **you must** take care that you encrypt these data in a proper way, so that third parties can't read your data. To encrypt your data, you can use the evan.network [security APIs](/docs/developers/concepts/permissioning.html) or implement a custom way.
+If you store data to the evan.network IPFS storage, **you must** take care that you encrypt these data in a proper way, so that third parties can't read your data. To encrypt your data, you can use the evan.network [security APIs](/docs/developers/concepts/smart-contract-permissioning.html) or implement a custom way.
 
 You can also use a custom IPFS or other datastore to persist your data. In the [DBCP](/docs/how_it_works/services/dbcp.html) guide is the possibility to specify alternative storage providers or you can write custom storage handlers in your ÐAPPs.
 

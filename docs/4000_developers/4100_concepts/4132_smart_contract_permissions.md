@@ -3,7 +3,7 @@ title: "Smart Contract Permissioning"
 parent: Developers
 grand_parent: Concepts
 nav_order: 4132
-permalink: /docs/developers/concepts/smart-contract_permissioning.html
+permalink: /docs/developers/concepts/smart-contract-permissioning.html
 ---
 
 # Smart Contract Permissioning 

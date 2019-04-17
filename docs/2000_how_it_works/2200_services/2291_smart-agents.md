@@ -23,9 +23,8 @@ Examples for Smart Agents are:
 - **oracle** Smart Agents<br>
   These agents enrich blockchain data with off-chain data. An example is the "weather agent" that can be invited into a task contract. If this agent has been invited and a ToDo requesting weather information is added, it responds with the current weather at the requested location.
 
-To learn how to create Smart Agents, take a look at our [tutorial example](/docs/developers/hello-agent.html).
 
 ## Edge Server
-Smart Agents are implemented as plugins for the Edge Server, a `node.js` web application platform based on [ActionHero](http://actionherojs.com) that includes the [blockchain-core](/docs/developers/api.html) library to connect to `evan.network`.
+Smart Agents are implemented as plugins for the Edge Server, a `node.js` web application platform based on [ActionHero](http://actionherojs.com) that includes the [blockchain-core](/docs/developers/api/blockchain-core.html) library to connect to `evan.network`.
 
 A [public repository](https://github.com/evannetwork/edge-server-seed) exists for Edge Server as a seed for developers to implement their own Smart Agents on top of.

@@ -89,7 +89,7 @@ Digital Twins are created via Factories deployed on the evan.network. Factories 
 
 Currently, there is a Factory deployed on the evan.network to create an 'empty' Digital Twin contract. This factory creates a Digital Twin contract with no settable properties and two roles, owner and member. The account, which creates this contract, will automatically be added to the 'owner' role.
 
-[![Digital Twin factory](/docs/4000_developers/4200_api/img/twin_factory.png){:max-width="50%"}](/docs/4000_developers/4200_api/img/twin-factory.png)
+[![Digital Twin factory](/docs/4000_developers/4200_api/img/twin_factory.png){:max-width="50%"}](/docs/4000_developers/4200_api/img/twin_factory.png)
 
 Now we create a new Digital Twin contract via the Runtime API from the blockchain-core. We use the DataContract API from our runtime module to create a new Digital Twin contract from the general deployed Digital Twin Factory:
 

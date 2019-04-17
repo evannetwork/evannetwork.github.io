@@ -11,7 +11,7 @@ permalink: /docs/developers/ui/angular/task-data-contract.html
 
 In this section you will create contracts, read from them and handle several data interactions with the contracts by using the evan.network DataContract and the blockchain-core. So each data that is currently cached within the local storage will be moved into a contract. All needed I18N values and keys are predefined within the I18N folder and not noticed during the example.
 
-For how to write the task ƉApp using your own contract implementation, have a look at this: [Angular - Task ƉApp Custom Contract](/docs/developers/ui/angular/task.html-custom).
+For how to write the task ƉApp using your own contract implementation, have a look at this: [Angular - Task ƉApp Custom Contract](/docs/developers/ui/angular/task-custom-contract.html).
 
 If you don't want to code by yourself, you can simply read the docs and copy the final resulting src folder from [dapps/task-data-contract/src](https://github.com/evannetwork/sample-dapps-angular/tree/master/dapps/task-data-contract) to the [dapps/task/src](https://github.com/evannetwork/sample-dapps-angular/tree/master/dapps/task) folder.
 

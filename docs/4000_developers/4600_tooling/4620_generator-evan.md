@@ -43,8 +43,8 @@ about the following points before starting a project:
 
 ### 2. Setup smart-contract structure
 - use the [evan.network project generator](https://github.com/evannetwork/generator-evan) for project setup
-- [implement your smart-contracts](dev/hello-world)
-- [implement your smart-contract security](dev/security)
+- implement your smart-contracts
+- [implement your smart-contract security](/docs/developers/concepts/smart_contract_security.html)
 - test contract structure directly
 
 ### 3. Setup your connection to the world
