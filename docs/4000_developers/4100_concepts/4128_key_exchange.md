@@ -9,7 +9,7 @@ permalink: /docs/developers/concepts/key_exchange.html
 # Key Exchange 
 
 ## Establishing trust with Participants
-By default, any data stored in [Smart Contracts](/docs/developers/smart-contracts.html) is encrypted. This is also true for [profiles](/docs/first_steps/create-identity.html), Digital Twins and other tools. As a result, it is impossible for others to read data in external contracts. Users can't read each others contacts etc. and sending [BMail](/docs/first_steps/onchain.html) to each other requires a proper key exchange to have occurred beforehand.
+By default, any data stored in [Smart Contracts](/docs/developers/smart-contracts.html) is encrypted. This is also true for [profiles](/docs/first_steps/create-identity.html), Digital Twins and other tools. As a result, it is impossible for others to read data in external contracts. Users can't read each others contacts etc. and sending [BMail](/docs/first_steps/mailbox.html) to each other requires a proper key exchange to have occurred beforehand.
 
 To establish communication, accounts need to exchange keys. This is one of the most basic operations in `evan.network`, because without exchanging keys, little else can be done. If you are an end user, it is done for you in most cases and you won't even notice. Otherwise, you can use the [contacts](/docs/first_steps/contacts.html) ÐApp to initiate key exchanges.
 
@@ -34,6 +34,6 @@ This approach is adapted and used on evan.network in this way:
 
 The following illustration shows the entire key exchange process:
 
-[![key exchange flow](/docs/4000_developers/4100_concepts/img/key_exchange.png){:class="center"}](/docs/4000_developers/concepts/img/key_exchange.png)
+[![key exchange flow](/docs/4000_developers/4100_concepts/img/key_exchange.png){:class="center"}](/docs/4000_developers/4100_concepts/img/key_exchange.png)
 
 The key exchange is available as a module in the [blockchain core API](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/profile/key-exchange.html) library and usage examples can be found in it [Basic Usage](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/profile/key-exchange.html#basic-usage) section.

@@ -184,7 +184,7 @@ Add the favorite using the following steps:
 [![dapps-tutorial - directory](/docs/4000_developers/4300_ui/img/favorites-3.png){:width="50%"}](/docs/4000_developers/4300_ui/img/favorites-3.png)
 
 4. Result:
-[![js tutorial preview](/docs/4000_developers/4300_ui/img/hello-world-preview.png){:width="50%"}](/docs/4000_developers/4300_ui/img/04_developers/js-hello-world.html-preview.png)
+[![js tutorial preview](/docs/4000_developers/4300_ui/img/hello-world-preview.png){:width="50%"}](/docs/4000_developers/4300_ui/img/04_developers/hello-world-preview.png)
 
 By having a look into the browser network tab, you will see that you data is loaded from the IPFS server:
 

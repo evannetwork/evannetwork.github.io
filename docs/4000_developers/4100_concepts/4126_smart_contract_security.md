@@ -30,7 +30,7 @@ The following sections will handle the different aspects of security, but to giv
 - If an account, that is not the owner of a contract, whats to **read or write** data related to a contract with encrypted data, the owner and this account  need to exchange dedicated keys for that purpose. This is usually done via the [Sharings](/docs/developers/concepts/sharings) approach. This is often performed during a contracts lifetime, e.g. directly after its creation (if participants are known beforehand) or when a new account needs access to the contract data.
 - If an account needs to **modify a smart contract**, this accounts needs [smart contract permissions](/docs/developers/concepts/smart-contract-permissioning). The most common cases include granting accounts permissions to write to properties of a [Data Contract](/docs/developers/concepts/data-contract.html).
 
-| action                   | [Key Exchange](/docs/developers/concepts/key_exchange) | [Sharings](/docs/developers/concepts/sharings) | [contract permissions](/docs/developers/concepts/smart-contract_permissioning) |
+| action                   | [Key Exchange](/docs/developers/concepts/key_exchange) | [Sharings](/docs/developers/concepts/sharings) | [contract permissions](/docs/developers/concepts/smart-contract-permissioning) |
 | ---                      | :-: | :-: | :-: |
 | read unencrypted data    |     |     |     |
 | send a BMail             |  x  |     |     |

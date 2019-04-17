@@ -39,7 +39,7 @@ When continuing you will be prompted to verify the recovery phrase by showing th
 
 [![onboarding quiz](/docs/3000_first_steps/img/onboarding_quiz.png){:width="50%"}](/docs/3000_first_steps/img/onboarding_quiz.png)
 
-After this the terms of use are shown. Read these carefully and if you consent to the conditions, confirm that you aren't are robot and click on "Agree". Of course robots are welcome on evan.network, but we recommend them to use [Smart Agents](/docs/how_it_works/smart-agents.html). ;)
+After this the terms of use are shown. Read these carefully and if you consent to the conditions, confirm that you aren't are robot and click on "Agree". Of course robots are welcome on evan.network, but we recommend them to use [Smart Agents](/docs/how_it_works/services/smart-agents.html). ;)
 
 [![onboarding quiz](/docs/3000_first_steps/img/onboarding_termsofuse.png){:width="50%"}](/docs/3000_first_steps/img/onboarding_termsofuse.png)
 
