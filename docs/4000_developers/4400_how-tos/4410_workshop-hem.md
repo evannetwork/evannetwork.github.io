@@ -3,7 +3,7 @@ title: "Workshop - HEM"
 parent: Developers
 grand_parent: HOWTOS
 nav_order: 4400
-permalink: /docs/developers/how-tos.html
+permalink: /docs/developers/workshop-hem.html
 ---
 
 # Workshop - HEM
