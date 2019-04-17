@@ -13,7 +13,7 @@ In evan.network everything, no matter if human, machine or organization has a ve
 Identities are stored securely on the blockchain, ensuring that each identity is tamper-proof and can’t be impersonated by, for example, providing fraudulent documentation. Decentralized Identities are a critical feature to evan.network, as they constitute a pivotal point for safe business conduct on the platform.
 
 Similar to a fingerprint, an identity serves as a unique identifier.
-Their authenticity [can be verified without a doubt](/docs/developers/concepts/identity-verification.html), eliminating the risk of impersonation attacks.
+Their authenticity [can be verified without a doubt](/docs/first_steps/verification.html), eliminating the risk of impersonation attacks.
 
 Today we trust that, for example, the e-mail address of a recipient also belongs to the employee of a certain company, but this cannot be verified.
 

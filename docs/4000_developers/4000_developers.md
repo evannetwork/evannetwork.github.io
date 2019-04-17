@@ -10,17 +10,17 @@ tiles:
   - title: Concepts
     description: 　
     icon: pastafarianism
-    link: /docs/developers/concepts.html
+    link: /docs/developers/smart-contracts.html
 
   - title: API
     description: 　
     icon: bezier-curve
-    link: /docs/developers/api.html
+    link: /docs/developers/api/blockchain-core.html
 
   - title: UI
     description: 　
     icon: window-maximize
-    link: /docs/developers/ui.html
+    link: /docs/developers/ui/writing-dapps.html
 
   - title: How-tos
     description: 　
@@ -30,7 +30,7 @@ tiles:
   - title: Management-Tools
     description: 　
     icon: drafting-compass
-    link: /docs/developers/management-tools.html
+    link: /docs/developers/management-tools/profile.html
 
   - title: Tooling
     description: 　

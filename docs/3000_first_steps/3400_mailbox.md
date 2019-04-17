@@ -2,7 +2,7 @@
 title: "On Chain Messaging"
 parent: First Steps
 nav_order: 3400
-permalink: /docs/first_steps/onchain.html
+permalink: /docs/first_steps/mailbox.html
 ---
 
 # On Chain Messaging 

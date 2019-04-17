@@ -2,7 +2,7 @@
 title: "Concepts"
 parent: Developers
 nav_order: 4100
-permalink: /docs/developers/concepts.html
+permalink: /docs/developers/smart-contracts.html
 has_grand_children: true
 ---
 

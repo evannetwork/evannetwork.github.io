@@ -3,7 +3,7 @@ title: "Blockchain Core API"
 parent: Developers
 grand_parent: API
 nav_order: 4210
-permalink: /docs/developers/api.html
+permalink: /docs/developers/api/blockchain-core.html
 ---
 
 <!--

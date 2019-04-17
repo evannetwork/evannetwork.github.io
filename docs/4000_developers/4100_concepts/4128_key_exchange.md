@@ -9,7 +9,7 @@ permalink: /docs/developers/concepts/key_exchange.html
 # Key Exchange 
 
 ## Establishing trust with Participants
-By default, any data stored in [Smart Contracts](/docs/how_it_works/smart-contracts.html) is encrypted. This is also true for [profiles](/docs/first_steps/create-identity.html), Digital Twins and other tools. As a result, it is impossible for others to read data in external contracts. Users can't read each others contacts etc. and sending [BMail](/docs/first_steps/onchain.html) to each other requires a proper key exchange to have occurred beforehand.
+By default, any data stored in [Smart Contracts](/docs/developers/smart-contracts.html) is encrypted. This is also true for [profiles](/docs/first_steps/create-identity.html), Digital Twins and other tools. As a result, it is impossible for others to read data in external contracts. Users can't read each others contacts etc. and sending [BMail](/docs/first_steps/onchain.html) to each other requires a proper key exchange to have occurred beforehand.
 
 To establish communication, accounts need to exchange keys. This is one of the most basic operations in `evan.network`, because without exchanging keys, little else can be done. If you are an end user, it is done for you in most cases and you won't even notice. Otherwise, you can use the [contacts](/docs/first_steps/contacts.html) ÐApp to initiate key exchanges.
 

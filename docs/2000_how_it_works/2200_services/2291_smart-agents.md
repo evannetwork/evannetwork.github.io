@@ -16,7 +16,7 @@ Smart Agents are services that are connected to the blockchain and support on-ch
 Examples for Smart Agents are:
 - **onboarding** Smart Agent<br>
 
-  The onboarding Smart Agent acts as the entity that brings new users into evan.network. It takes care of creating the user profile and infrastructure. It also handles invitations from users already in evan.network and a bridge between users, who already have an evan.network account and people they wish to invite. The agent takes care of sending them notifications and transferring starting-[EVE](/docs/developers/concepts/blockchain.html#eve---token)s to allow the new users to start working.<br>
+  The onboarding Smart Agent acts as the entity that brings new users into evan.network. It takes care of creating the user profile and infrastructure. It also handles invitations from users already in evan.network and a bridge between users, who already have an evan.network account and people they wish to invite. The agent takes care of sending them notifications and transferring starting-EVEs to allow the new users to start working.<br>
 
 - **notification** Smart Agent<br>
   This agent watches for updates on the blockchain and sends users, who are subscribed for, notifications.
@@ -26,6 +26,6 @@ Examples for Smart Agents are:
 To learn how to create Smart Agents, take a look at our [tutorial example](/docs/developers/hello-agent.html).
 
 ## Edge Server
-Smart Agents are implemented as plugins for the Edge Server, a `node.js` web application platform based on [ActionHero](http://actionherojs.com) that includes the [blockchain-core](blockchain-core-link) library to connect to `evan.network`.
+Smart Agents are implemented as plugins for the Edge Server, a `node.js` web application platform based on [ActionHero](http://actionherojs.com) that includes the [blockchain-core](/docs/developers/api.html) library to connect to `evan.network`.
 
 A [public repository](https://github.com/evannetwork/edge-server-seed) exists for Edge Server as a seed for developers to implement their own Smart Agents on top of.

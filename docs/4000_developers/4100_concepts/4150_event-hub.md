@@ -8,7 +8,7 @@ permalink: /docs/developers/concepts/event-hub.html
 
 # Event Hub
 The event hub is a smart contract deployed at `events.evan`, which is used by many contracts in the evan.network ecosystem for announcing status updates. Contracts that use the event hub include but are not limited to:
-- [Business Center](/docs/developers/concepts/business-center.html)
+- Business Center
 - [Mailbox](/docs/first_steps/onchain.html)
 - [Data Contract](/docs/developers/concepts/data-contract.html)
 

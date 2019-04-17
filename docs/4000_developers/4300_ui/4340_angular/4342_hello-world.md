@@ -8,7 +8,7 @@ permalink: /docs/developers/ui/angular/hello-world.html
 
 # Hello World ÐApp
 ## 1. Get Tutorial Application
-- [Download Tutorial Application](https://github.com/evannetwork/dapps-tutorial-angular)
+- [Download Tutorial Application](https://github.com/evannetwork/sample-dapps-angular)
 
 ## 2. Build, serve and start the Application
 Navigate into the Lerna project and run the following commands. The same documentation is also included in the Lerna projects readme itself.
@@ -132,7 +132,7 @@ In the next sections, it is advantageous to have a certain basic knowledge of An
 ### 4.1 index.ts
 The index file, as you might have expected, describes the point of entry into the application. In this case, the routes and module definitions, including the services and components created, are defined and referenced here. At the end of the file you will find the `startDApp` function, which is used to start the application from outside. Since this is a simple function, only one container is given by rendering the application. It is also possible to start applications completely without Angular. For more information on how ƉApps can be developed with other frameworks, see [here](/docs/developers/ui/writing-dapps.html).
 
-The head of the index file, starting with the library, includes functions, services, components and more. The normal Angular application requires its dependencies from `@angular/core` or `@angular/common`, and so on. To reduce and optimize loaded files during the application runtime, the libraries are already bundled within the [libraries](/docs/developers/releases/libs.html) for you. If you want to include libraries that are not included yet, you can load them like a normal application.
+The head of the index file, starting with the library, includes functions, services, components and more. The normal Angular application requires its dependencies from `@angular/core` or `@angular/common`, and so on. To reduce and optimize loaded files during the application runtime, the libraries are already bundled within the [libraries](/docs/other/releases.html) for you. If you want to include libraries that are not included yet, you can load them like a normal application.
 
 The `dapp-wrapper` represents the stable point of entry to the evan.network application. In short, it loads DBCP definitions and applications.
 
