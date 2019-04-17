@@ -39,7 +39,7 @@ To do this, however, all ÐApps must be started via the evan.network ÐApp-brows
 # Packaged ÐApp loading
 The evan.network ÐApp-browser is the entry point for packaged ÐApps. It will handle dynamic URL routing, so ÐApp ENS addresses or contract addresses using an underlying DBCP description. If the URL changes, the ÐApp-browser will check for the new ÐApp that should be loaded.
 
-[![Finished](/docs/4000_developers/4300_ui/imgdapp-browser.png){:width="50%"}](/docs/4000_developers/4300_ui/imgdapp-browser.png)
+[![Finished](/docs/4000_developers/4300_ui/img/dapp-browser.png){:width="50%"}](/docs/4000_developers/4300_ui/img/dapp-browser.png)
 
 # Prerequisits
 Before start developing, be sure to set up the following programs on your system:
@@ -51,6 +51,6 @@ Before start developing, be sure to set up the following programs on your system
 # ÐApp structure
 Each ÐApp looks like this on the top level.
 
-[![ÐApps-tutorial - directory](/docs/4000_developers/4300_ui/imgdapps-tutorial-dir-structure.png){:width="150px"}](/docs/4000_developers/4300_ui/imgdapps-tutorial-dir-structure.png)
+[![ÐApps-tutorial - directory](/docs/4000_developers/4300_ui/img/dapps-tutorial-dir-structure.png){:width="150px"}](/docs/4000_developers/4300_ui/img/dapps-tutorial-dir-structure.png)
 
 In order to be able to work in ordered and staked projects, it is necessary to split the project into several sub-projects (e.g. `dashboard-ÐApp`, `list-ÐApp`, `contract1-ÐApp`, `contract2-ÐApp`) after a short time. To anticipate this problem and differentiate building jobs, each project uses a [Lerna](https://github.com/lerna/lerna) project structure to handle multiple repositories as easily as possible. The Lerna project only includes the basic requirements and building jobs for the sub-projects. In case of large projects that use Angular or similar tools, building jobs are definied within seperated projects like the [evan.network Angular-Gulp project](https://github.com/evannetwork/angular-gulp).

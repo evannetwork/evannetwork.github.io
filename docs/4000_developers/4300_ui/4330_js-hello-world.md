@@ -153,10 +153,10 @@ Each application can be deployed together with a contract. This allows the contr
 ```sh
 ipfs add -r dapps/hello-world/src
 ```
-[![dapps-tutorial - directory](/docs/4000_developers/4300_ui/imgdeploy-to-ipfs.png){:width="50%"}](/docs/4000_developers/4300_ui/imgdeploy-to-ipfs.png)
+[![dapps-tutorial - directory](/docs/4000_developers/4300_ui/img/deploy-to-ipfs.png){:width="50%"}](/docs/4000_developers/4300_ui/img/deploy-to-ipfs.png)
 
 3. Insert the deployed folder hash (e.g. "QmfZLwBPUT1n3DoJqpqnLCTcUKABLgUsgfE4KetkXdq8XK") to the correct origin to `dbcp.json` file.
-[![dapps-tutorial - directory](/docs/4000_developers/4300_ui/imgadd-to-dbcp.png){:width="50%"}](/docs/4000_developers/4300_ui/imgadd-to-dbcp.png)
+[![dapps-tutorial - directory](/docs/4000_developers/4300_ui/img/add-to-dbcp.png){:width="50%"}](/docs/4000_developers/4300_ui/img/add-to-dbcp.png)
 
 4. Deploy it to the contract
 ```sh
@@ -165,7 +165,7 @@ npm run deploy-to-contract hello-world
 
 You will get a console output similar to the following. Behind the log parameter `created contract`, you will find the newly created contract ID.
 
-[![dapps-tutorial - directory](/docs/4000_developers/4300_ui/imgdeploy-to-contract.png){:width="50%"}](/docs/4000_developers/4300_ui/imgdeploy-to-contract.png)
+[![dapps-tutorial - directory](/docs/4000_developers/4300_ui/img/deploy-to-contract.png){:width="50%"}](/docs/4000_developers/4300_ui/img/deploy-to-contract.png)
 
 ### 3.2 Deploy ƉApp to ENS
 Have a look [ƉApp deployment](/docs/developers/tooling/deployment.html).
@@ -175,17 +175,17 @@ After you deployed the application within a contract or by using a ENS address, 
 
 Add the favorite using the following steps:
 1. Open Dashboard:
-[![dapps-tutorial - directory](/docs/4000_developers/4300_ui/imgfavorites-1.png){:width="50%"}](/docs/4000_developers/4300_ui/imgfavorites-1.png)
+[![dapps-tutorial - directory](/docs/4000_developers/4300_ui/img/favorites-1.png){:width="50%"}](/docs/4000_developers/4300_ui/img/favorites-1.png)
 
 2. Add the favorite:
-[![dapps-tutorial - directory](/docs/4000_developers/4300_ui/imgfavorites-2.png){:width="50%"}](/docs/4000_developers/4300_ui/imgfavorites-2.png)
+[![dapps-tutorial - directory](/docs/4000_developers/4300_ui/img/favorites-2.png){:width="50%"}](/docs/4000_developers/4300_ui/img/favorites-2.png)
 
 3. Open the ƉApp:
-[![dapps-tutorial - directory](/docs/4000_developers/4300_ui/imgfavorites-3.png){:width="50%"}](/docs/4000_developers/4300_ui/imgfavorites-3.png)
+[![dapps-tutorial - directory](/docs/4000_developers/4300_ui/img/favorites-3.png){:width="50%"}](/docs/4000_developers/4300_ui/img/favorites-3.png)
 
 4. Result:
-[![js tutorial preview](/docs/4000_developers/4300_ui/imghello-world-preview.png){:width="50%"}](/docs/4000_developers/4300_ui/img04_developers/js-hello-world.html-preview.png)
+[![js tutorial preview](/docs/4000_developers/4300_ui/img/hello-world-preview.png){:width="50%"}](/docs/4000_developers/4300_ui/img/04_developers/js-hello-world.html-preview.png)
 
 By having a look into the browser network tab, you will see that you data is loaded from the IPFS server:
 
-[![dapps-tutorial - directory](/docs/4000_developers/4300_ui/imgdapp-from-contract.png){:width="400px"}](/docs/4000_developers/4300_ui/imgdapp-from-contract.png)
+[![dapps-tutorial - directory](/docs/4000_developers/4300_ui/img/dapp-from-contract.png){:width="400px"}](/docs/4000_developers/4300_ui/img/dapp-from-contract.png)
