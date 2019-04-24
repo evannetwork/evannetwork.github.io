@@ -34,24 +34,10 @@
         <!-- /REMOVE ON INTEGRATION -->
 
         <div class="dapp-wrapper-body show-sidebar-2">
-          <!-- /REMOVE ON INTEGRATION -->
-                <div class="dapp-wrapper-sidebar">
-                    <div class="sidebar-header">
-                        <div class="clickable">
-                            <!---->
-                        </div>
-                        <h3 class="mr-2"><i class="fas fa-times close"></i></h3>
-                    </div>
-                    <div class="d-flex flex-column h-100">
-                        <!---->
-                    </div>
-                </div>
-                <!-- /REMOVE ON INTEGRATION -->
-                <div class="dapp-wrapper-sidebar-background"></div>
             <div class="dapp-wrapper-content">
                 <!---->
                 <!---->
-                <div style="overflow-y: auto;height: calc(100vh - 152px);">
+                <div style="overflow-y: auto;height: calc(100vh - 63px);">
                     <div class="d-flex">
                       {% if page.hide_menu %} {% else %} {% include sidebar.html %} {% endif %}
                     </div>
@@ -86,10 +72,12 @@
                             {% endif %}
                         </a>
                         {% endfor %}
+
+                        {% include footer.html %}
                     </div>
 
                 </div>
-                {% include footer.html %}
+
             </div>
         </div>
     </div>
