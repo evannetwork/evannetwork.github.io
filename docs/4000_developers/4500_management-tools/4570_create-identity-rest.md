@@ -41,12 +41,12 @@ This request done with curl may look like:
 
 ```bash
 curl https://agents.test.evan.network/api/smart-agents/faucet/identity/create\?\
-accountIdParent\=0xbdD69b1957C1cF89C93d3e009f64682681511B1F\&\
-accountIdChild\=0x29f192097B6884c29D6113D9FD93eaeB1C86707C \
+accountIdParent\=0xA1cFB71f0207B0da24bB00dF306D06EF721dB482\&\
+accountIdChild\=0xbdd69b1957c1cf89c93d3e009f64682681511baf \
 -H "Authorization: \
-EvanAuth 0xbdD69b1957C1cF89C93d3e009f64682681511B1F,\
-EvanMessage 1557394510685,\
-EvanSignedMessage 0xd96a963646c04098cf2d2c9aafa6d4fd8b7724f79780050ab3f761e9f4fd25f6561af611baac327286795c0b1427bd48302560e01eeb8d32bbb09e724af05e991c"
+EvanAuth 0xA1cFB71f0207B0da24bB00dF306D06EF721dB482,\
+EvanMessage 1557479808692,\
+EvanSignedMessage 0x8e5289cbf79f7c1ea9b871d0180d512ec1e317b3194604d15e009fb71b97e64e2be2e9f7eef4f4f7ea0382cf696690896704e8046781d8bda441f5a91baa96781c"
 ```
 
 Be careful not to let too much time pass by between creating the message and submitting it to the server as the message is not allowed to be older than five minutes.
