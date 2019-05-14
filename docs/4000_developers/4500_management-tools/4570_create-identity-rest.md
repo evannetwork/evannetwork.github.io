@@ -24,7 +24,7 @@ Accounts, that do not need profiles can be created with a REST endpoint. This en
 For this the REST endpoint needs the account, that acts as the representative and the account, that receives an identity. For security purposes this endpoint also needs a message with a timestamp, that has been signed by the representative. This message is the current timestamp in milliseconds and has to be signed by the representative account, for example with web3:
 
 ```javascript
-web3.eth.accounts.sign(`${accountId}|${Date.now()}`, `0x${privateKey}`)
+web3.eth.accounts.sign(`${Date.now()}`, `0x${privateKey}`)
 ```
 
 This yields a signed message, that has to be added to the request headers. The endpoint needs the following inputs:
