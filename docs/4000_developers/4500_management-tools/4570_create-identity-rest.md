@@ -64,7 +64,7 @@ This error means, that the signed message you provided does not match the define
 
 You can verify the signed message with web3 the following way:
 
-```javascriot
+```javascript
 const now = Date.now()
 const signedMessage = web3.eth.accounts.sign(`${accountId}|${now}`, `0x${privateKey}`)
 const accountId = web3.eth.accounts.recover(
