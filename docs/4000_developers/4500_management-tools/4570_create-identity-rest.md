@@ -50,3 +50,42 @@ EvanSignedMessage 0x8e5289cbf79f7c1ea9b871d0180d512ec1e317b3194604d15e009fb71b97
 ```
 
 Be careful not to let too much time pass by between creating the message and submitting it to the server as the message is not allowed to be older than five minutes.
+
+## Troubleshooting
+
+The rest service can return the following error messagen when receiving requests:
+
+```
+"error": "No verified Account.",
+```
+This error means, that the signed message you provided does not match the defined account in the "EvanAuth" section in the authorization parameter.
+
+You can verify the signed message with web3 the following way:
+
+```javascriot
+const now = Date.now()
+const signedMessage = web3.eth.accounts.sign(`${accountId}|${now}`, `0x${privateKey}`)
+const accountId = web3.eth.accounts.recover(
+  `${accountId}|${now}`,
+  signedMessage.signature
+)
+```
+
+the `accountId` variable must match the defined accountId in the "EvanAuth" section. **The Accountid must be written in checksum case**
+
+-------
+
+```
+"error": "no authorization headers provided",
+```
+
+The sent request has no attached `Authorization` header. Please add a `Authorization` header with the markup above.
+
+
+-------
+
+```
+"error": "signed message has expired",
+```
+
+The signed timestamp has expired. When you sign a timestamp it is valid for 5 minutes. Otherwise the REST endpoint will return this message and you have to provide a new signed timestamp.
