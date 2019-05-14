@@ -55,6 +55,8 @@ Be careful not to let too much time pass by between creating the message and sub
 
 The rest service can return the following error messagen when receiving requests:
 
+-------
+
 ```
 "error": "No verified Account.",
 ```

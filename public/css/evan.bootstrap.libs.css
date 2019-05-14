@@ -377,7 +377,6 @@
   .evan.theme-evan hr {
     margin-top: 1rem;
     margin-bottom: 1rem;
-    border: 0;
     border-top: 2px solid rgba(var(--evan-black), 0.1); }
   .evan.theme-evan small {
     font-size: var(--evan-small-font-size);
