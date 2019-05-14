@@ -824,7 +824,7 @@
     font-size: 90%;
     color: var(--evan-gray-600); }
   .evan.theme-evan code {
-    font-size: 87.5%;
+    font-size: 12px;
     color: var(--evan-pink);
     word-break: break-word; }
     a > .evan.theme-evan code {
@@ -844,7 +844,7 @@
     font-size: 87.5%;
     color: var(--evan-gray-900); }
     .evan.theme-evan pre code {
-      font-size: inherit;
+      font-size: 12px;
       color: inherit;
       word-break: normal; }
   .evan.theme-evan .pre-scrollable {
