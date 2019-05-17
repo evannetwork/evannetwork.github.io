@@ -36,4 +36,4 @@ The following illustration shows the entire key exchange process:
 
 [![key exchange flow](/docs/4000_developers/4100_concepts/img/key_exchange.png){:class="center"}](/docs/4000_developers/4100_concepts/img/key_exchange.png)
 
-The key exchange is available as a module in the [blockchain core API](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/profile/key-exchange.html) library and usage examples can be found in it [Basic Usage](https://ipfs.test.evan.network/ipns/QmYmsPTdPPDLig6gKB1wu1De4KJtTqAXFLF1498umYs4M6/profile/key-exchange.html#basic-usage) section.
+The key exchange is available as a module in the [blockchain core API](https://api-blockchain-core.readthedocs.io/en/latest/profile/key-exchange.html) library and usage examples can be found in it [Basic Usage](https://api-blockchain-core.readthedocs.io/en/latest/profile/key-exchange.html#basic-usage) section.

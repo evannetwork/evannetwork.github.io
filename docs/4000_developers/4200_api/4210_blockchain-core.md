@@ -162,4 +162,4 @@ permalink: /docs/developers/api/blockchain-core.html
 
 The [Blockchain Core Library](https://github.com/evannetwork/api-blockchain-core) is the central tool used in all development with evan.network. It is actually a collection of own functionality, and wrappers around 3rd party core functionality like blockchain transactions and distributed file system operations.
 
-The full [API documentation](https://ui-docs.readthedocs.io/en/latest/) shows the actual exposed sub-namespaces in the blockchain core module are a little more fine-grained.
+The full [API documentation](https://api-blockchain-core.readthedocs.io) shows the actual exposed sub-namespaces in the blockchain core module are a little more fine-grained.

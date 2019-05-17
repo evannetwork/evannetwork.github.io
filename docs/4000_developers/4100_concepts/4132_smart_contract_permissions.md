@@ -101,7 +101,7 @@ Authorities are usually set up to be their own authorities, which means that gro
 See [DSRoles documentation](https://dapp.tools/dappsys/ds-roles.html) for details on how to roles and capabilities in Ethereum Smart Contracts.
 
 
-## Operations Permissions
+## Operation Permissions
 Function permissions are granted to function signatures and are ```bytes4``` based, note the signature creation from the sample above:
 ```javascript
 bytes4(keccak256("setData(string)"))
