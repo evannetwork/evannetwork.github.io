@@ -25,7 +25,7 @@ tiles:
   - title: How-tos
     description: 　
     icon: child
-    link: /docs/developers/how-tos.html
+    link: /docs/developers/workshop-hem.html
 
   - title: Management-Tools
     description: 　
