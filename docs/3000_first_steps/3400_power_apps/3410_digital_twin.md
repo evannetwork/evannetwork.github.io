@@ -21,7 +21,7 @@ The application is based on a new faster and optimized evan.network user interfa
 
 1. Open the basic evan.network [dashboard application](https://dashboard.test.evan.network/#/dashboard.evan)
 2. Click the [add Favorite button](http://localhost:4000/docs/first_steps/core_apps/dashboard.html) in the top right corner of the screen
-3. Add the new <b>evan Dashbard</b> and <b>evan Dashbard - new Design</b> application to your favorites. Using this applications, you can switch between the old and the new UI using the favorites application.<br><br>
+3. Add the new <b>evan Dashbard</b> and <b>evan Dashbard - new Design</b> application to your favorites. Using these applications, you can switch between the old and the new UI using the favorites application.<br><br>
   [![new dashboard](/docs/3000_first_steps/img/digitaltwin_new_dashboard.png){:width="50%"}](/docs/3000_first_steps/img/digitaltwin_new_dashboard.png)
   <br>
 4. open the new dashboard
@@ -91,5 +91,5 @@ By clicking on a Data Set within a Plugin Instance, the values that are stored w
 [![Data Set values](/docs/3000_first_steps/img/digitaltwin_container_set.png){:width="50%"}](/docs/3000_first_steps/img/digitaltwin_container_set.png)
 [![Data Set schema](/docs/3000_first_steps/img/digitaltwin_container_schema.png){:width="50%"}](/docs/3000_first_steps/img/digitaltwin_container_schema.png)
 
-Is the Data Set type of list, also new list entries can be added.
+Is the Data Set type of list, also new list entries can be added.<br>
 [![Data Set list](/docs/3000_first_steps/img/digitaltwin_container_list.png){:width="50%"}](/docs/3000_first_steps/img/digitaltwin_container_list.png)
