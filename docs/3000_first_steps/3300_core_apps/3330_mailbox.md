@@ -1,8 +1,9 @@
 ---
-title: "On Chain Messaging"
-parent: First Steps
-nav_order: 3400
-permalink: /docs/first_steps/mailbox.html
+title: "Mailbox"
+parent: "First Steps"
+nav_order: 3330
+grand_parent: "Core Applications"
+permalink: /docs/first_steps/core_apps/mailbox.html
 ---
 
 # On Chain Messaging 

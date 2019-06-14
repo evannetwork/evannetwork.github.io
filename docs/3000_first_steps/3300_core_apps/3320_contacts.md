@@ -1,8 +1,9 @@
 ---
 title: "Contacts"
-parent: First Steps
-nav_order: 3300
-permalink: /docs/first_steps/contacts.html
+parent: "First Steps"
+nav_order: 3320
+grand_parent: "Core Applications"
+permalink: /docs/first_steps/core_apps/contacts.html
 ---
 
 # Contacts

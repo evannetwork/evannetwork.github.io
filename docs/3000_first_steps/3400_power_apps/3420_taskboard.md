@@ -1,8 +1,9 @@
 ---
 title: "Taskboard"
 parent: First Steps
-nav_order: 3600
-permalink: /docs/first_steps/taskboard.html
+nav_order: 3420
+grand_parent: "Power Applications"
+permalink: /docs/first_steps/power_apps/taskboard.html
 ---
 
 # Taskboard

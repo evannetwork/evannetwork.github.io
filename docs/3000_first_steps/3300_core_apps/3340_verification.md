@@ -1,8 +1,9 @@
 ---
 title: "Verification"
-parent: First Steps
-nav_order: 3500
-permalink: /docs/first_steps/verification.html
+parent: "First Steps"
+nav_order: 3340
+grand_parent: "Core Applications"
+permalink: /docs/first_steps/core_apps/verification.html
 ---
 
 # Verification
