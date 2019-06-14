@@ -1,8 +1,9 @@
 ---
 title: "Dashboard"
-parent: First Steps
-nav_order: 3200
-permalink: /docs/first_steps/dashboard.html
+parent: "First Steps"
+nav_order: 3310
+grand_parent: "Core Applications"
+permalink: /docs/first_steps/core_apps/dashboard.html
 ---
 
 # Dashboard
