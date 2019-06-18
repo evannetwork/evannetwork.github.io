@@ -16,51 +16,43 @@
         </div>
 
         <!-- REMOVE ON INTEGRATION -->
-            <nav class="navbar">
-                <div class="navbar-brand clickable"><a href="/"><img src="/public/evan-logo-dark-half.svg" class="brand-large"></a></div>
-                <div class="nav">
-                    <div class="ml-3 bg-text-secondary">evan.network Wiki</div>
-                    <form action="/search.html">
-                      <div class="tipue_search_left">
-                        <img src="{{ site.base_url }}/public/tipuesearch/search.png" class="tipue_search_icon">
-                      </div>
-                      <div class="tipue_search_right">
-                        <input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required>
-                      </div>
-                      <div style="clear: both;"></div>
-                    </form>
-                </div>
-            </nav>
+          <nav class="navbar">
+            <div class="navbar-brand clickable"><a href="/"><img src="/public/evan-logo-dark-half.svg" class="brand-large"></a></div>
+            <div class="nav">
+                <div class="ml-3 bg-text-secondary">evan.network Wiki</div>
+                <form action="/search.html">
+                  <div class="tipue_search_left">
+                    <img src="{{ site.base_url }}/public/tipuesearch/search.png" class="tipue_search_icon">
+                  </div>
+                  <div class="tipue_search_right">
+                    <input type="text" name="q" id="tipue_search_input" pattern=".{3,}" title="At least 3 characters" required>
+                  </div>
+                  <div style="clear: both;"></div>
+                </form>
+            </div>
+        </nav>
         <!-- /REMOVE ON INTEGRATION -->
 
         <div class="dapp-wrapper-body show-sidebar-2">
-            <div class="dapp-wrapper-content">
-                <!---->
-                <!---->
-                <div>
-                    <div class="d-flex">
-                      {% include sidebar.html %}
-                    </div>
-                    <div style="overflow-y: auto;height: calc(100vh - 133px);">
-                        <!---->
-                        <!---->
-                      <div class="container position-relative" id="content">
-                          <div class="row h-100 py-3">
-                              <main class="col-md-9 pr-3">
-                                <div class="p-5 bg-level-1 border inner-content">
-                                  {{ content }}
-                                </div>
-                              </main>
-                              <aside class="col-md-3 bg-level-1 border" id="left">
-                                  <div class="my-1 sticky-top" id="side">
-                                      {% include sidebar_level_2.html %}
-                                  </div>
-                              </aside>
-                          </div>
-                          {% include footer.html %}
-                      </div>
-                    </div>
+            <div class="dapp-wrapper-main">
+              <div class="dapp-wrapper-content-header bg-level-2">
+                {% include sidebar.html %}
+              </div>
+              <div class="dapp-wrapper-content-wrapper flex-row">
+                <div class="dapp-wrapper-sidebar-2">
+                  {% include sidebar_level_2.html %}
                 </div>
+                <div class="dapp-wrapper-content">
+                  <div style="overflow-y: auto;height: calc(100vh - 133px);">
+                    <div class="container position-relative py-5" id="content">
+                      <main class="p-5 bg-level-1 border inner-content">
+                        {{ content }}
+                      </main>
+                      {% include footer.html %}
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
         </div>
     </div>

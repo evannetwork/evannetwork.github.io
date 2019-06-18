@@ -108,4 +108,11 @@
 .evan.theme-evan img {
   max-width: 100%;
 }
-  
+
+.dapp-wrapper-sidebar-2 {
+  margin-top: -10px;
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar-2 > * {
+  height: auto;
+}
