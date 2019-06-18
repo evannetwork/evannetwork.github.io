@@ -46,7 +46,7 @@
                     {% else %}
                     <div class="container position-relative" id="content">
                         <div class="row h-100 py-3">
-                            <main class="col p-3 mr-3 bg-level-1 border">
+                            <main class="col p-5 mr-3 bg-level-1 border">
                                {{ content }}
                             </main>
                         </div>
@@ -54,13 +54,13 @@
                     {% endif %}
                     <div class="d-md-flex container flex-wrap justify-content-center">
                         {% for tile in page.tiles %}
-
                         <a class="
-                                                p-3 {% if tile.description %} col-md-5 col-lg-4 col-xl-3
-                                                m-md-3 mb-3 p-4 {% else %} col-md-5 col-lg-4 col-xl-2
-                                                m-md-2 mb-3 {% endif %}
-                                                text-center
-                                                bg-level-1 bg-text-light border evan-highlight" href="{{ tile.link }}">
+                            d-block
+                            p-3 {% if tile.description %} col-md-5 col-lg-4 col-xl-3
+                            m-md-3 mb-3 p-4 {% else %} col-md-5 col-lg-4 col-xl-2
+                            m-md-2 mb-3 {% endif %}
+                            text-center
+                            bg-level-1 bg-text-light border evan-highlight" href="{{ tile.link }}">
                         <i class="highlight fas fa-{{ tile.icon }} p-4 xxxl"></i>
                             <h3 class="highlight">
                                 {{ tile.title }}
