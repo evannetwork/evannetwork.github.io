@@ -67,7 +67,7 @@ evan.network dashboard, open the [Dashboard](/docs/first_steps/core_apps/dashboa
 
 ## [Finally the Taskboard](/docs/first_steps/power_apps/taskboard.html)
 
-After the taskboard was added, you will be able to [create tasks](/docs/first_steps/core_apps/taskboard.html) within the taskboard. While working with tasks you will come accross the requirement of coordinating with others.
+After the taskboard was added, you will be able to [create tasks](/docs/first_steps/power_apps/taskboard.html) within the taskboard. While working with tasks you will come accross the requirement of coordinating with others.
 
 
 ## [Who do I work with? The Contacts](/docs/first_steps/core_apps/contacts.html)
