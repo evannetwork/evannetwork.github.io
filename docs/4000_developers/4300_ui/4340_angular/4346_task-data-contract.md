@@ -349,7 +349,7 @@ create-task.html
 ```html
 <section class="todoapp">
   <header class="header">
-    <h1>{{ '_tutorialtask.header-task-create' | translate }}</h1>
+    <h1>{% raw  %}{{{% endraw %} '_tutorialtask.header-task-create' | translate {% raw  %}}}{% endraw %}</h1>
 
     <div text-center>
       <input class="new-todo"
@@ -362,7 +362,7 @@ create-task.html
         (click)="createNewContract()"
         [disabled]="!taskName || loading">
         <ion-spinner *ngIf="loading" color="light"></ion-spinner>
-        {{ '_tutorialtask.task-create' | translate }}
+        {% raw  %}{{{% endraw %} '_tutorialtask.task-create' | translate {% raw  %}}}{% endraw %}
       </button>
     </div>
   </header>
@@ -813,12 +813,12 @@ The HTML file hasn't changed significantly. Some change and delete functions wer
 <section class="todoapp" *ngIf="!loading">
 	<ng-container *ngIf="invalid">
 		<header class="header">
-			<h1>{{ '_tutorialtask.invalid-contract-address' | translate }}</h1>
+			<h1>{% raw  %}{{{% endraw %} '_tutorialtask.invalid-contract-address' | translate {% raw  %}}}{% endraw %}</h1>
 		</header>
 	</ng-container>
 	<ng-container *ngIf="!invalid">
 		<header class="header">
-			<h1>{{ description.name }}</h1>
+			<h1>{% raw  %}{{{% endraw %} description.name {% raw  %}}}{% endraw %}</h1>
 			<input class="new-todo" placeholder="What needs to be done?" autofocus="" [(ngModel)]="newTodoText" (keyup.enter)="addTodo()">
 		</header>
 		<section class="main" *ngIf="todos.length > 0">
@@ -830,14 +830,14 @@ The HTML file hasn't changed significantly. Some change and delete functions wer
 							(click)="solveTodo(todo)"
 							[readonly]="todo.completed"
 							[checked]="todo.completed">
-						<label>{{todo.title}}</label>
+						<label>{% raw  %}{{{% endraw %}todo.title{% raw  %}}}{% endraw %}</label>
 						<ion-spinner class="todo-loading" color="light" *ngIf="todo.loading"></ion-spinner>
 					</div>
 				</li>
 			</ul>
 		</section>
 		<footer class="footer" *ngIf="todos.length > 0">
-			<span class="todo-count"><strong>{{ getRemaining().length }}</strong> {{ getRemaining().length == 1 ? 'item' : 'items' }} left</span>
+			<span class="todo-count"><strong>{% raw  %}{{{% endraw %} getRemaining().length {% raw  %}}}{% endraw %}</strong> {% raw  %}{{{% endraw %} getRemaining().length == 1 ? 'item' : 'items' {% raw  %}}}{% endraw %} left</span>
 		</footer>
 	</ng-container>
 </section>
