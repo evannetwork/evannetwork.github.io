@@ -49,7 +49,7 @@ For detailed instructions, including pictures of the various steps to create a n
 the "[Create an Identity](/docs/first_steps/create-identity.html)" chapter.
 
 
-## [Let's have a Look at your Profile and Data](/docs/first_steps/dashboard.html)
+## [Let's have a Look at your Profile and Data](/docs/first_steps/core_apps/dashboard.html)
 
 You are logged in already, aren't you?
 
@@ -62,29 +62,29 @@ expire when you stop paying your fees. Those are stored in the blockchain. Avail
 as long as the network exists.
 
 For detailed instructions, including pictures of the various steps to add favorites to your
-evan.network dashboard, open the [Dashboard](/docs/first_steps/dashboard.html) chapter.
+evan.network dashboard, open the [Dashboard](/docs/first_steps/core_apps/dashboard.html) chapter.
 
 
-## [Finally the Taskboard](/docs/first_steps/taskboard.html)
+## [Finally the Taskboard](/docs/first_steps/power_apps/taskboard.html)
 
-After the taskboard was added, you will be able to [create tasks](/docs/first_steps/taskboard) within the taskboard. While working with tasks you will come accross the requirement of coordinating with others.
+After the taskboard was added, you will be able to [create tasks](/docs/first_steps/core_apps/taskboard.html) within the taskboard. While working with tasks you will come accross the requirement of coordinating with others.
 
 
-## [Who do I work with? The Contacts](/docs/first_steps/contacts.html)
+## [Who do I work with? The Contacts](/docs/first_steps/core_apps/contacts.html)
 
-You can add anyone in evan.network to [your contacts](/docs/first_steps/contacts.html). And you can invite anyone
+You can add anyone in evan.network to [your contacts](/docs/first_steps/core_apps/contacts.html). And you can invite anyone
 with an e-mail address into evan.network to become your contact. They all have or will get a profile
 Smart Contract, just like you.
 
 
-## [Are my contacts good business partners?](/docs/first_steps/verification.html)
+## [Are my contacts good business partners?](/docs/first_steps/core_apps/verification.html)
 
-Using the [verification and identity management](/docs/first_steps/verification.html), you can check, if a contact has special verifications (or "certificates") that are provided by trusted business partners.
+Using the [verification and identity management](/docs/first_steps/core_apps/verification.html), you can check, if a contact has special verifications (or "certificates") that are provided by trusted business partners.
 
 
-## [Talking to Each Other: The Mailbox](/docs/first_steps/mailbox.html)
+## [Talking to Each Other: The Mailbox](/docs/first_steps/core_apps/mailbox.html)
 
-We call the messages sent and stored in [evan.network Bmails](/docs/first_steps/mailbox.html), equivalent to
+We call the messages sent and stored in [evan.network Bmails](/docs/first_steps/core_apps/mailbox.html), equivalent to
 E-mails. And the communication style is similar to E-mails, because it doesn't really lend itself to
 instant messaging and chatting due to the blockchain transaction delays.
 

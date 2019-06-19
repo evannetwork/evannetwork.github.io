@@ -26,7 +26,7 @@ Click on your newly created task and start it to begin working. Once you have st
 see that it is in progress, and you can add comments or even new members.
 
 
-## [You need Contacts](/docs/first_steps/contacts)
+## [You need Contacts](/docs/first_steps/core_apps/contacts.html)
 
 A task manager just for yourself is all nice and well, but that is something that can be done in a text file. The point of a real task management application is to coordinate with others.
 
