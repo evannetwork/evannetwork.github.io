@@ -1,39 +1,24 @@
 ---
-title: First Steps
-parent: First Steps
+title: "First Steps"
+parent: "First Steps"
 nav_order: 3000
 permalink: /docs/first_steps.html
 layout: tiles
 has_children: true
 hide_content: true
 tiles:
-  - title: Onboarding
-    description: getting started with evan.network
+  - title: Quick-start guide
+    description: first steps within the evan.network
     icon: snowboarding
     link: /docs/first_steps/quick-start.html
 
-  - title: Dashboard
-    description: evan.network landing page
+  - title: Core Applications
+    description: onboarding, addressbook, mailbox, ...
     icon: tachometer-alt
-    link: /docs/first_steps/dashboard.html
+    link: /docs/first_steps/core_apps/dashboard.html
 
-  - title: Profile
-    description: view and manage your personal settings
-    icon: id-card
-    link: /docs/first_steps/contacts.html
-
-  - title: Mailbox
-    description: communicate with business business partners
-    icon: inbox
-    link: /docs/first_steps/mailbox.html
-
-  - title: Verification
-    description: check and issue trusts for accounts
-    icon: certificate
-    link: /docs/first_steps/verification.html
-
-  - title: Example Dapp - Taskboard
-    description: evan.network example Dapp
-    icon: tasks
-    link: /docs/first_steps/taskboard.html
+  - title: Power Applications
+    description: Digital-Twins, taskboard, ...
+    icon: tachometer-alt
+    link: /docs/first_steps/power_apps/digital-twin.html
 ---
