@@ -19,7 +19,7 @@ Today we trust that, for example, the e-mail address of a recipient also belongs
 
 In the evan.network users should be able to ensure that the account with which they conclude a smart contract, for example, also belongs to the respective network partner with whom they want to do business.
 
-This function is provided by the Verification Service. In general, different proofs of identity, so-called verification s, can be assigned to an account.
+This function is provided by the Verification Service. In general, different proofs of identity, so-called verifications, can be assigned to an account.
 
 
 ## Establishing trust relationships
