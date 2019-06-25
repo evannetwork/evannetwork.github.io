@@ -11,12 +11,21 @@ This tutorial will show how to setup an application using the evan.network block
 By creating a simple application to create, view and share tasks, you will learn to handle full blown
 ÐApps including the decentralized backend and frontend. You will use the following technologies.
   - Ethereum blockchain, Solidity
-  - DBCP
-  - SystemJS, Angular 5 & Ionic 3, SASS, Browserify
+  - [DBCP](https://github.com/evannetwork/dbcp)
+  - [SystemJS](https://github.com/systemjs/systemjs/tree/0.21)
   - JS, Typescript
   - evan.network framework
-    - blockchain-core
-    - Angular-core, Angular-bc, Angular-libs, Angular-sass
+    - [api-blockchain-core](https://github.com/evannetwork/api-blockchain-core)
+    - [smart-contracts-core](https://github.com/evannetwork/smart-contracts-core)
+  - Angular
+    - [Angular 5](https://angular.io/), [Ionic 3](https://ionicframework.com/docs/v3/), [sass](https://sass-lang.com/), [browserify](http://browserify.org/)
+    - [angular-core](https://github.com/evannetwork/ui-angular-core)
+    - [angular-libs](https://github.com/evannetwork/ui-angular-libs)
+    - [angular-sass](https://github.com/evannetwork/ui-angular-sass)
+  - Vue.js
+    - [Vue.js](https://vuejs.org), [bootstrap](https://vuejs.org), [webpack](https://webpack.js.org), [sass](https://sass-lang.com/)
+    - [ui-core](https://github.com/evannetwork/ui-core)
+    - [ui-vue](https://github.com/evannetwork/ui-vue)
 
 You will be guided through the following steps:
 - [ÐApp basics](/docs/developers/ui/basics.html)
@@ -27,6 +36,7 @@ You will be guided through the following steps:
   - [Task DApp setup](/docs/developers/ui/angular/task.html)
   - [Task DApp Data-Contract](/docs/developers/ui/angular/task-data-contract.html)
   - [Task Task Custom Contract](/docs/developers/ui/angular/task-custom-contract.html)
+- [Vue.js](/docs/developers/ui/vue.html)
 
 If you want to create your own projects, have a look at the [evan.network project generator](/docs/developers/tooling/generator-evan.html).
 
