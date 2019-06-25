@@ -1,12 +1,12 @@
 ---
-title: "evan.network framework Hello World"
+title: "Plain JS - Hello World"
 parent: Developers
 grand_parent: UI
 nav_order: 4330
 permalink: /docs/developers/ui/js-hello-world.html
 ---
 
-# evan.network framework Hello World
+# Plain JS - Hello World
 The goal of this tutorial is to interact with different functionalities of the evan.network blockchain with the help of DBCP or the evan.network blockchain-core (bcc). Only simple Javascript is used to create an evan.network ƉApp-browser embedded application.
 
 After creating the ÐApp functionalities, you can use a 'greeter contract' sample to create a contract instance. The DBCP description attached to the 'greeter contract' will use your ƉApp as display possiblity.

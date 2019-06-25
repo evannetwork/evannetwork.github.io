@@ -1,12 +1,12 @@
 ---
-title: "Hello World ÐApp"
+title: "Angular - Hello World ÐApp"
 parent: Developers
 grand_parent: UI
-nav_order: 4342
+nav_order: 4350
 permalink: /docs/developers/ui/angular/hello-world.html
 ---
 
-# Hello World ÐApp
+# Angular - Hello World ÐApp
 ## 1. Get Tutorial Application
 - [Download Tutorial Application](https://github.com/evannetwork/sample-dapps-angular)
 

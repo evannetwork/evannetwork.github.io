@@ -1,12 +1,12 @@
 ---
-title: "standalone Hello World"
+title: "Standalone - Hello World"
 parent: Developers
 grand_parent: UI
-nav_order: 4350
+nav_order: 4340
 permalink: /docs/developers/ui/standalone.html
 ---
 
-# standalone Hello World
+# Standalone - Hello World
 The goal of this tutorial is to interact with different functionalities of the evan.network blockchain, by the help of DBCP or the evan.network blockchain-core. A simple HTML file is being produced, which is able to use all functionalities without any runtime environment. With the help of this small example, you can develop applications on the evan.network blockchain that run completely independently.
 
 After creating the ÐApp functionalities, you can use a 'greeter contract' sample to create a contract instance. The DBCP description attached to the 'greeter contract' will use your ƉApp as display possiblity.
