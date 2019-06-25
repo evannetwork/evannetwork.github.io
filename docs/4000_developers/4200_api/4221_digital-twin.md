@@ -1,9 +1,9 @@
 ---
-title: "Digital Twin"
+title: "Digital Twins"
 parent: Developers
 grand_parent: API
-nav_order: 4220
-permalink: /docs/developers/api/digital-twin.html
+nav_order: 4221
+permalink: /docs/developers/api/digital-twin-custom.html
 ---
 
 <!--

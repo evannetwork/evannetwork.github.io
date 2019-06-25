@@ -1,12 +1,12 @@
 ---
-title: "evan.network framework Hello World"
+title: "Plain JS - Hello World"
 parent: Developers
 grand_parent: UI
 nav_order: 4330
 permalink: /docs/developers/ui/js-hello-world.html
 ---
 
-# evan.network framework Hello World
+# Plain JS - Hello World
 The goal of this tutorial is to interact with different functionalities of the evan.network blockchain with the help of DBCP or the evan.network blockchain-core (bcc). Only simple Javascript is used to create an evan.network ƉApp-browser embedded application.
 
 After creating the ÐApp functionalities, you can use a 'greeter contract' sample to create a contract instance. The DBCP description attached to the 'greeter contract' will use your ƉApp as display possiblity.
@@ -36,7 +36,7 @@ To build and watch the ƉApps and copy them into the development runtime:
 npm run dapps-serve
 ```
 
-When you started both scripts, your ƉApp files were copied into your local runtime and you can open the following URL: "http://localhost:3000/dev.html#/dashboard.evan/helloworldjs.evan". There, you will find the current representation of your ƉApp. You can also add your ƉApp to your [favorites](/docs/first_steps/dashboard.html).
+When you started both scripts, your ƉApp files were copied into your local runtime and you can open the following URL: "http://localhost:3000/dev.html#/dashboard.evan/helloworldjs.evan". There, you will find the current representation of your ƉApp. You can also add your ƉApp to your [favorites](/docs/first_steps/core_apps/dashboard.html).
 
 ## 2.2 index.js
 The `index.js` file is the main point of entry for the application, which is configured by the `dbcp.json` in the `dapps/hello-world` folder. This file needs a `startDApp`-function, so the evan.network wrapper application can run the `point of entry`-function for the ƉApp.

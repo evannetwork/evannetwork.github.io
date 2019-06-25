@@ -14,7 +14,7 @@ permalink: /docs/developers/concepts/data-contract.html
 
 # The DataContract
 ## The "Data" part of "DataContract"
-The [`DataContract`](https://github.com/evannetwork/smart-contracts-core/blob/master/contracts/DataContract.sol) combined with its [API](https://api-blockchain-core.readthedocs.io/en/latest/contracts/data-contract.html) is a container, that is used to hold various types of data and therefore the default data storage for various ÐApps like the [Taskboard](/docs/first_steps/taskboard.html) and even a [user profile](/docs/first_steps/create-identity.html) is based upon it.
+The [`DataContract`](https://github.com/evannetwork/smart-contracts-core/blob/master/contracts/DataContract.sol) combined with its [API](https://api-blockchain-core.readthedocs.io/en/latest/contracts/data-contract.html) is a container, that is used to hold various types of data and therefore the default data storage for various ÐApps like the [Taskboard](/docs/first_steps/power_apps/taskboard.html) and even a [user profile](/docs/first_steps/create-identity.html) is based upon it.
 
 Data can be stored under properties - similar to class instance members in object oriented programming, whereby the following property types are supported:
 

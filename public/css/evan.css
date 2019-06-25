@@ -5,24 +5,48 @@
   --evan-h3-font-size: 1.2em;
 }
 
-.theme-wiki h1 {
-  margin-top: 1.5em !important;
-}
-
-.theme-wiki h1:first-child {
-  margin-top: 0 !important;
-}
-
-.theme-wiki h2 {
-  margin-top: 2em !important;
-}
-
-.theme-wiki h3 {
-  margin-top: 1.5em !important;
-}
-
 .theme-wiki p, span, li, a {
   text-align: justify;
+}
+
+.evan.theme-evan p {
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: 1.5rem;
+}
+
+.evan.theme-evan h1, .evan.theme-evan .h1,
+.evan.theme-evan h2, .evan.theme-evan .h2,
+.evan.theme-evan h3, .evan.theme-evan .h3,
+.evan.theme-evan h4, .evan.theme-evan .h4,
+.evan.theme-evan h5, .evan.theme-evan .h5,
+.evan.theme-evan h6, .evan.theme-evan .h6 {
+  margin-top: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+.evan.theme-evan h1:first-child {
+  margin-top: 0;
+}
+
+.evan.theme-evan .container .inner-content svg,
+.evan.theme-evan .container .inner-content img {
+  padding: 1rem;
+  border: 1px solid var(--evan-border-color);
+  margin: 2rem 0;
+  box-shadow: 0 0 3px 0px var(--evan-border-color);
+}
+
+.evan.theme-evan ol, .evan.theme-evan ul, .evan.theme-evan dl {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.evan.theme-evan ol ol, .evan.theme-evan ul ul, .evan.theme-evan ol ul, .evan.theme-evan ul ol {
+  margin-bottom: 0.5rem;
 }
 
 /************************************ side panel ***************************************************/ 
@@ -83,4 +107,12 @@
 
 .evan.theme-evan img {
   max-width: 100%;
+}
+
+.dapp-wrapper-sidebar-2 {
+  margin-top: -10px;
+}
+
+.evan .evan-dapp-wrapper .dapp-wrapper-body .dapp-wrapper-sidebar-2 > * {
+  height: auto;
 }

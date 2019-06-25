@@ -46,7 +46,7 @@ permalink: /docs/other/glossary.html
 </dl>
 <a id="b"></a>
 <dl>
-    <dt><a href="/docs/first_steps/mailbox.html>BMail</a></dt>
+    <dt><a href="/docs/first_steps/core_apps/mailbox.html">BMail</a></dt>
     <dd>a message exchanged via the blockchain</dd>
     <dt><a href="https://en.wikipedia.org/wiki/Blockchain">Blockchain</a></dt>
     <dd>a cryptographically verified distributed global single consensus data record store</dd>

@@ -53,7 +53,7 @@ To get EVEs in the testcore chain, use the faucet described [here](/docs/develop
 
 [![onboarding accountid an balance](/docs/3000_first_steps/img/onboarding_final2.png){:width="50%"}](/docs/3000_first_steps/img/onboarding_final2.png)
 
-Once your balance is sufficient, you can continue by creating and storing your profile in the blockchain. When this is done, you are finally onboarded and will be able to see the [dashboard](/docs/first_steps/dashboard.html).
+Once your balance is sufficient, you can continue by creating and storing your profile in the blockchain. When this is done, you are finally onboarded and will be able to see the [dashboard](/docs/first_steps/core_apps/dashboard.html).
 
 # Import Identity
 When you already have an account and want to import it on a device, use "An Existing Identity".

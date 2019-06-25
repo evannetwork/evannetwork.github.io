@@ -1,8 +1,9 @@
 ---
 title: "Contacts"
-parent: First Steps
-nav_order: 3300
-permalink: /docs/first_steps/contacts.html
+parent: "First Steps"
+nav_order: 3320
+grand_parent: "Core Applications"
+permalink: /docs/first_steps/core_apps/contacts.html
 ---
 
 # Contacts
@@ -16,7 +17,7 @@ And you have guessed it, this key exchange is a contract on the blockchain again
 
 
 ## Adding new Contacts
-Adding new contacts initiates a key exchange process with the person you want to add, which will, if completed, allow you to exchange blockchain mails or "Bmails" (see [Mailbox](/docs/first_steps/mailbox.html)) with this person.
+Adding new contacts initiates a key exchange process with the person you want to add, which will, if completed, allow you to exchange blockchain mails or "Bmails" (see [Mailbox](/docs/first_steps/core_apps/mailbox.html)) with this person.
 
 [![contact add type select](/docs/3000_first_steps/img/contacts_add_type_select.png){:width="50%"}](/docs/3000_first_steps/img/contacts_add_type_select.png)
 
