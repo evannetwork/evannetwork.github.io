@@ -19,6 +19,6 @@ tiles:
 
   - title: Power Applications
     description: Digital-Twins, taskboard, ...
-    icon: tachometer-alt
+    icon: chart-bar
     link: /docs/first_steps/power_apps/digital-twin.html
 ---
