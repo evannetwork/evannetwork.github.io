@@ -29,6 +29,7 @@ By creating a simple application to create, view and share tasks, you will learn
 
 You will be guided through the following steps:
 - [ÐApp basics](/docs/developers/ui/basics.html)
+- [Vue.js](/docs/developers/ui/vue.html)
 - [Hello World - standalone](/docs/developers/ui/standalone.html)
 - [Hello World - JS](/docs/developers/ui/js-hello-world.html)
 - [Angular 5 Tutorials](/docs/developers/ui/angular/angular.html)
@@ -36,7 +37,7 @@ You will be guided through the following steps:
   - [Task DApp setup](/docs/developers/ui/angular/task.html)
   - [Task DApp Data-Contract](/docs/developers/ui/angular/task-data-contract.html)
   - [Task Task Custom Contract](/docs/developers/ui/angular/task-custom-contract.html)
-- [Vue.js](/docs/developers/ui/vue.html)
+- [Standalone Angular & Ionic](https://github.com/w11k/angular7-evan-network)
 
 If you want to create your own projects, have a look at the [evan.network project generator](/docs/developers/tooling/generator-evan.html).
 
