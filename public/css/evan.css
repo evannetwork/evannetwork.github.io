@@ -49,6 +49,10 @@
   margin-bottom: 0.5rem;
 }
 
+.highlight {
+  margin: 1rem 0;
+}
+
 /************************************ side panel ***************************************************/ 
 
 .nav-item:first-child {
