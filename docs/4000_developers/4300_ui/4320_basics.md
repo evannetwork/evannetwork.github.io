@@ -94,7 +94,7 @@ The ENS name of this application is `angularcore`. Within other DBCP files, the 
 
 - System map
 
-```ts
+```
 import { System } from '@evan.network/ui-dapp-browser';
 
 System.map['@evan.network/ui-angular-core'] = 'angularcore.evan!dapp-content';

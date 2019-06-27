@@ -51,14 +51,14 @@
 
 div.highlighter-rouge {
   background-color: var(--evan-bg-level-2);
-  padding: 0 1rem;
+  padding: 1rem 1rem 0 1rem;
   margin: 1rem 0;
   border: 1px solid var(--evan-border-color);
 }
 
 div.highlighter-rouge pre {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 body.sidebar-overlay {
