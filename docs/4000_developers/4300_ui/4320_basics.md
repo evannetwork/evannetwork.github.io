@@ -102,16 +102,3 @@ System.map['@evan.network/ui-angular-core'] = 'angularcore.evan!dapp-content';
 Here an example how nested ÐApp loading works:
 
 [![sample loading structure](/docs/4000_developers/4300_ui/img/dapp-browser.png){:width="50%"}](/docs/4000_developers/4300_ui/img/dapp-browser.png)
-
-# Prerequisits
-Before start developing, be sure to set up the following programs on your system:
-  - [`node.js` (8+) + `npm` (5+)](https://nodejs.org/en)
-  - [Gulp](https://github.com/gulpjs/gulp)
-  - [yarn](https://yarnpkg.com/en/)
-
-# ÐApp structure
-Each ÐApp looks like this on the top level.
-
-[![ÐApps-tutorial - directory](/docs/4000_developers/4300_ui/img/dapps-tutorial-dir-structure.png){:width="150px"}](/docs/4000_developers/4300_ui/img/dapps-tutorial-dir-structure.png)
-
-In order to be able to work in ordered and staked projects, it is necessary to split the project into several sub-projects (e.g. `dashboard-ÐApp`, `list-ÐApp`, `contract1-ÐApp`, `contract2-ÐApp`) after a short time. To anticipate this problem and differentiate building jobs, each project uses a [Lerna](https://github.com/lerna/lerna) project structure to handle multiple repositories as easily as possible. The Lerna project only includes the basic requirements and building jobs for the sub-projects. In case of large projects that use Angular or similar tools, building jobs are definied within seperated projects like the [evan.network Angular-Gulp project](https://github.com/evannetwork/angular-gulp) or directly in the generated project, like in vue application containers.
