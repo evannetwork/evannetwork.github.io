@@ -8,12 +8,8 @@ permalink: /docs/developers/ui/writing-dapps.html
 
 # Writing ÐApps
 This tutorial will show how to setup an application using the evan.network blockchain and ÐApp framework.
-By creating a simple application to create, view and share tasks, you will learn to handle full blown
-ÐApps including the decentralized backend and frontend. You will use the following technologies.
-  - Ethereum blockchain, Solidity
-  - [DBCP](https://github.com/evannetwork/dbcp)
-  - [SystemJS](https://github.com/systemjs/systemjs/tree/0.21)
-  - JS, Typescript
+
+Resources:
   - evan.network framework
     - [api-blockchain-core](https://github.com/evannetwork/api-blockchain-core)
     - [smart-contracts-core](https://github.com/evannetwork/smart-contracts-core)
@@ -26,19 +22,18 @@ By creating a simple application to create, view and share tasks, you will learn
     - [Vue.js](https://vuejs.org), [bootstrap](https://vuejs.org), [webpack](https://webpack.js.org), [sass](https://sass-lang.com/)
     - [ui-core](https://github.com/evannetwork/ui-core)
     - [ui-vue](https://github.com/evannetwork/ui-vue)
+  - [evan.network project generator](/docs/developers/tooling/generator-evan.html)
 
 You will be guided through the following steps:
 - [ÐApp basics](/docs/developers/ui/basics.html)
 - [Vue.js](/docs/developers/ui/vue.html)
 - [Hello World - standalone](/docs/developers/ui/standalone.html)
 - [Hello World - JS](/docs/developers/ui/js-hello-world.html)
+- [Standalone Angular & Ionic](https://github.com/w11k/angular7-evan-network)
 - [Angular 5 Tutorials](/docs/developers/ui/angular/angular.html)
   - [Basics: Hello World](/docs/developers/ui/angular/hello-world.html)
   - [Task DApp setup](/docs/developers/ui/angular/task.html)
   - [Task DApp Data-Contract](/docs/developers/ui/angular/task-data-contract.html)
   - [Task Task Custom Contract](/docs/developers/ui/angular/task-custom-contract.html)
-- [Standalone Angular & Ionic](https://github.com/w11k/angular7-evan-network)
-
-If you want to create your own projects, have a look at the [evan.network project generator](/docs/developers/tooling/generator-evan.html).
 
 Well, good luck and get started [here](/docs/developers/ui/basics.html).

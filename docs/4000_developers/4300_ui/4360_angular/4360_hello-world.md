@@ -2,7 +2,7 @@
 title: "Angular - Hello World ÐApp"
 parent: Developers
 grand_parent: UI
-nav_order: 4350
+nav_order: 4360
 permalink: /docs/developers/ui/angular/hello-world.html
 ---
 

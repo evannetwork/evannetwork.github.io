@@ -49,11 +49,20 @@
   margin-bottom: 0.5rem;
 }
 
-.highlighter-rouge {
+div.highlighter-rouge {
   background-color: var(--evan-bg-level-2);
-  padding: 1rem;
+  padding: 0 1rem;
   margin: 1rem 0;
   border: 1px solid var(--evan-border-color);
+}
+
+div.highlighter-rouge pre {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+body.sidebar-overlay {
+  overflow: hidden;
 }
 
 /************************************ side panel ***************************************************/ 

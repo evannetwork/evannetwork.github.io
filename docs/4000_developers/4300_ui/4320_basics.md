@@ -79,20 +79,21 @@ The evan.network ÐApp-browser is the entry point for featured ÐApps. It will h
 The ENS name of this application is `angularcore`. Within other DBCP files, the `angularcore` can  be simply marked as dependency and it will loaded by the SystemJS ENS loader. But the project itself is defined as `@evan.network/ui-angular-core` within it's package.json. If we would try to load the `angularcore` via DBCP-ENS and want to require the `@evan.network/ui-angular-core`, we would receive an error, that the `@evan.network/ui-angular-core` is not defined. SystemJS maps the loaded address for the loaded ÐApp, so we would have to load `angularcore` directly. But in a world of using typescript, the ÐApp compiler would also throw errors, that `angularcore` is not defined... We can solve this in 2 ways. Defining an alias map within the `tsconfig.json` file of the requiring ÐApp or by using SystemJS custom map structure within the original library DApp (we would recommend the second way).
 
 - tsconfig map
+
 ```json
 {
   "compilerOptions": {
     "paths": {
       "angular-core": [
         "../../../node_modules/@evan.network/ui-angular-core/dist/angularcore.js"
-      ],
-
+      ]
     }
   }
 }
 ```
 
 - System map
+
 ```ts
 import { System } from '@evan.network/ui-dapp-browser';
 
