@@ -20,7 +20,7 @@ The Digital Twin management is a generalized application for handling digital re
 The application is based on a new faster and optimized evan.network user interface. As a result of this, a new optimized dashboard, favorites, contacts, ... application is built. To start using it, the new Dashboard application must be opened.
 
 1. Open the basic evan.network [dashboard application](https://dashboard.test.evan.network/#/dashboard.evan)
-2. Click the [add Favorite button](http://localhost:4000/docs/first_steps/core_apps/dashboard.html) in the top right corner of the screen
+2. Click the [add Favorite button](/docs/3000_first_steps/img/dashboard.png) in the top right corner of the screen
 3. Add the new <b>evan Dashboard</b> and <b>evan Dashboard - new Design</b> application to your favorites. Using these applications, you can switch between the old and the new UI using the favorites application.<br><br>
   [![new dashboard](/docs/3000_first_steps/img/digitaltwin_new_dashboard.png){:width="80%"}](/docs/3000_first_steps/img/digitaltwin_new_dashboard.png)
   <br>
