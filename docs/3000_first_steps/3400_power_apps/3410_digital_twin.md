@@ -1,13 +1,13 @@
 ---
-title: "Digital Twin"
+title: "Digital Twin Management"
 parent: "First Steps"
 nav_order: 3410
 grand_parent: "Power Applications"
 permalink: /docs/first_steps/power_apps/digital-twin.html
 ---
 
-# Digital Twin
-The Digital Twin management is a generalized application for handling digital representations of real world assets.
+# Digital Twin Management
+The Digital Twin Management is a generalized application for handling digital representations of real world assets.
 
 - For a detailed overview of <b>what a Digital Twin</b> is and how it works <b>functionally</b>, have a look at:
   - [Functional Overview](/docs/how_it_works/services/digitaltwins.html)
@@ -89,6 +89,9 @@ By sharing a Plugin Instance, a contact can be seletected and each Data Set can 
 By clicking on a Data Set within a Plugin Instance, the values that are stored within the blockchain will be displayed and can be adjusted, when the user has write permissions.
 
 [![Data Set values](/docs/3000_first_steps/img/digitaltwin_container_set.png){:width="80%"}](/docs/3000_first_steps/img/digitaltwin_container_set.png)
+
+Clicking on "Schema" in the twins header bar opens the data schema of currently selected field in current container.
+
 [![Data Set schema](/docs/3000_first_steps/img/digitaltwin_container_schema.png){:width="80%"}](/docs/3000_first_steps/img/digitaltwin_container_schema.png)
 
 Is the Data Set type of list, also new list entries can be added.<br>
