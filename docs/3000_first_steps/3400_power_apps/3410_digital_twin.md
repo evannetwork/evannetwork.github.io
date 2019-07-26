@@ -17,7 +17,7 @@ The Digital Twin Management is a generalized application for handling digital re
   - [Usage Examples](https://api-blockchain-core.readthedocs.io/en/latest/contracts/digital-twin-usage-examples.html)
 
 ## Start using
-The application is based on a new faster and optimized evan.network user interface. As a result of this, a new optimized dashboard, favorites, contacts, ... application is built. To start using it, the new Dashboard application must be opened.
+The application is based on a new faster and optimized evan.network user interface. This interface will replace the current one but can already be used by explicitly switching to it. To do so, the new Dashboard application must be opened by following the next steps.
 
 1. Open the basic evan.network [dashboard application](https://dashboard.test.evan.network/#/dashboard.evan)
 2. Click the [add Favorite button](/docs/3000_first_steps/img/dashboard.png) in the top right corner of the screen
@@ -56,14 +56,26 @@ In each Digital Twin different Plugins can be installed for different topics lik
 
 [![my Plugins](/docs/3000_first_steps/img/digitaltwin_myplugins.png){:width="80%"}](/docs/3000_first_steps/img/digitaltwin_myplugins.png)
 
-With the button in the top right corner, you can create new Plugins or import existing ones. After a Plugin was selected, Data Sets can be configured and added. If you want to test with existing templates, simply download one of the following templates and drag them into the dropzone within the Plugin create modal dialog. Each Plugin includes several Data Sets, scoped by categories. So a metadata Plugin can be seperated in multiple Data Sets like "owner", "wheels", ...
+With the "Create Plugin" in the top right corner, you can create new Plugins or import existing ones. 
+
+[![create Plugin](/docs/3000_first_steps/img/digitaltwin_plugin_create.png){:width="80%"}](/docs/3000_first_steps/img/digitaltwin_plugin_create.png)
+
+Selecting "Base Plugin" starts the creation of a new Plugin, which initially only has the fields "Name" and "Description".
+
+When you have entered values for those, click on the "+" symbol on the top right corner to add more fields to your plugin.
+
+[![add Data Set](/docs/3000_first_steps/img/digitaltwin_plugin_create_add_set.png){:width="80%"}](/docs/3000_first_steps/img/digitaltwin_plugin_create_add_set.png)
+
+This opens a dialog where you can specify name of type your new field.
+
+[![add Data Set modal](/docs/3000_first_steps/img/digitaltwin_plugin_create_add_set2.png){:width="80%"}](/docs/3000_first_steps/img/digitaltwin_plugin_create_add_set2.png)
+
+Complete Plugin creation by adding as many fields as you need, then click on "Finish configuration" to save it.
+
+If you want to test with existing templates, simply download one of the following templates and drag them into the dropzone within the Plugin create modal dialog:
 
 - [Forklift Metadata](/docs/3000_first_steps/3400_power_apps/3410_digital_twin_plugins/Forklift Metadata.json)
 - [Aerial Work Platform Metadata](/docs/3000_first_steps/3400_power_apps/3410_digital_twin_plugins/Aerial Work Platform Metadata.json)
-
-[![create Plugin](/docs/3000_first_steps/img/digitaltwin_plugin_create.png){:width="80%"}](/docs/3000_first_steps/img/digitaltwin_plugin_create.png)
-[![add Data Set](/docs/3000_first_steps/img/digitaltwin_plugin_create_add_set.png){:width="80%"}](/docs/3000_first_steps/img/digitaltwin_plugin_create_add_set.png)
-[![add Data Set modal](/docs/3000_first_steps/img/digitaltwin_plugin_create_add_set2.png){:width="80%"}](/docs/3000_first_steps/img/digitaltwin_plugin_create_add_set2.png)
 
 <b>
   Please note: Schema edition is only allowed in Plugins template. Once a Plugin was initialized within a Digital Twin, the data schema cannot be adjusted.
@@ -76,13 +88,13 @@ Using the Plugin detail, new Data Sets can be added and existing ones can be add
 [![Data Set detail](/docs/3000_first_steps/img/digitaltwin_plugin_set.png){:width="80%"}](/docs/3000_first_steps/img/digitaltwin_plugin_set.png)
 
 ## Digital Twin Detail
-Within the Digital Twin detail, new Plugins can be added or imported. Also the twin can be renamed or mapped to ens addresses. The <b>Add Plugin</b> dialog is build analogous to the <b>New Plugin</b> dialog, but without specifing the data schema. The data schema is loaded from the plugin, so the user must only fill in the data. After all data was entered and the Plugin was instantiated, it is linked into the Digital Twin.
+Within the Digital Twin detail, new Plugins can be added or imported. Also the twin can be renamed or mapped to ens addresses. The <b>Add Plugin</b> dialog is build analogous to the <b>New Plugin</b> dialog, but without specifying the data schema. The data schema is loaded from the plugin, so the user must only fill in the data. After all data was entered and the Plugin was instantiated, it is linked into the Digital Twin.
 
 [![create container](/docs/3000_first_steps/img/digitaltwin_container_create.png){:width="80%"}](/docs/3000_first_steps/img/digitaltwin_container_create.png)
 
 The content of the Plugin Instance looks similar to the original plugin template user interface. The Plugin Instance can be edited, shared with contacts or linked into other Digital Twins.
 
-By sharing a Plugin Instance, a contact can be seletected and each Data Set can be shared seperated by selecting the desired permissions.
+By sharing a Plugin Instance, a contact can be selected and each Data Set can be shared separated by selecting the desired permissions.
 
 [![plugin instance share](/docs/3000_first_steps/img/digitaltwin_container_share.png){:width="30%"}](/docs/3000_first_steps/img/digitaltwin_container_share.png) 
 
