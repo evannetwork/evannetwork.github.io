@@ -76,6 +76,8 @@ If you want to test with existing templates, simply download one of the followin
 
 - [Forklift Metadata](/docs/3000_first_steps/3400_power_apps/3410_digital_twin_plugins/Forklift Metadata.json)
 - [Aerial Work Platform Metadata](/docs/3000_first_steps/3400_power_apps/3410_digital_twin_plugins/Aerial Work Platform Metadata.json)
+- [RentalCalendar](/docs/3000_first_steps/3400_power_apps/3410_digital_twin_plugins/RentalCalendar.json)
+- [TransportOrders](/docs/3000_first_steps/3400_power_apps/3410_digital_twin_plugins/TransportOrders.json)
 
 <b>
   Please note: Schema edition is only allowed in Plugins template. Once a Plugin was initialized within a Digital Twin, the data schema cannot be adjusted.
