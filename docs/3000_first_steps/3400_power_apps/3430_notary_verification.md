@@ -43,13 +43,16 @@ Request the notary verification, in your [userprofile](https://dashboard.evan.ne
 [![initiate verification](../img/notary_verification_step2.png){:width="33%"}](../img/notary_verification_step2.png)
 [![initiate verification](../img/notary_verification_step3.png){:width="33%"}](../img/notary_verification_step3.png)
 [![initiate verification](../img/notary_verification_step4.png){:width="33%"}](../img/notary_verification_step4.png)
+
 - 2nd Step: Authenticate
   - You will receive a PIN by letter, which will be sent as a personal letter to the named contact person.
   - Use the six digit PIN to generate the confirmation document in your evan account.
-  - Print and sign the gernated document and sent it back to the inquiring notary.
+  - Print and sign the generated document and sent it back to the inquiring notary.
+
 [![initiate verification](../img/notary_verification_step6.png){:width="33%"}](../img/notary_verification_step5.png)
 [![initiate verification](../img/notary_verification_step5.png){:width="33%"}](../img/notary_verification_step6.png)
 [![initiate verification](../img/notary_verification_step7.png){:width="33%"}](../img/notary_verification_ste7.png)
+
 - 3rd Step: Accept
   - As soon as the verification is successful, you will be notified via b-Mail in your evan account.
   - Accept the verification as the last step.
