@@ -27,6 +27,6 @@ Storing large amount of data becomes rather expensive and difficult to execute d
 
 This keeps the amount of data quite small, but allows adding arbitrary large files to contracts without exceeding blockchain limitations or making the transactions too expensive.
 
-ENS addresses can point to a description as well, they keep a reference to a d[DBCP](/docs/how_it_works/services/dbcp.html) description, which may point to [ÐAPPs](/docs/developers/ui/basics.html) and contract data, assets, etc. related to the contract.
+ENS addresses can point to a description as well, they keep a reference to a [DBCP](/docs/how_it_works/services/dbcp.html) description, which may point to [ÐAPPs](/docs/developers/ui/basics.html) and contract data, assets, etc. related to the contract.
 
 The _DBCP descriptions_ are hosted to evan.network IPFS storage, _assets_ can be stored in a custom IPFS or datastore. _ÐAPPs_ may be hosted in a custom location as well, but it is recommended to host these in the evan.network IPFS storage to keep the user experience fluent without having the user switch servers during navigation.
