@@ -24,7 +24,7 @@ Contract factories that belong to a Business Center are usually deployed at `${F
 ### Factories and BusinessCenters
 If a factory creates contracts for a Business Center, it has to be registered as a valid factory in that Business Center. Factories register all new contracts they create in the Business Center they belong to, and to be able to do so, they need to be registered at the Business Center as a valid factory.
 
-For this purpose the owner of a business center call the function [`registerFactory`](https://github.com/evannetwork/smart-contracts-core/blob/0cff8bf94bb1ce578c702764483a0a33450236c6/contracts/BusinessCenter.sol#L179) at a BusinessCenter, e.g. with:
+For this purpose the owner of a business center can call the function [`registerFactory`](https://github.com/evannetwork/smart-contracts-core/blob/0cff8bf94bb1ce578c702764483a0a33450236c6/contracts/BusinessCenter.sol#L179) at a BusinessCenter, e.g. with:
 
 ```typescript
 await runtime.executor.executeContractTransaction(
