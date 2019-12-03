@@ -92,7 +92,7 @@ It's not only possible but very welcomed and intended. The evan.network is an op
 The bit44 keys can be accessed using the Keystore library in the [Blockchain Core API](/docs/developers/api/blockchain-core.html) via the hdpathstring `m/45'/62'/13'/7`. The hdpathstring is deconstructed as 'm / purpose' / coinType' / Account' / Chain / addressIndex.
 
 #### Q.
-***What are the endpoints in Evan network?***
+***What are the endpoints in evan.network?***
 
 #### A.
-The Evan network currently consist of two [endpoints](/docs/developers/api/endpoints.html) `core-Production Chain` and `testcore-Development Chain`. The RPC endpoint in both cores can be accessed via HTTPs and WebSocket.
+The evan.network currently consist of two [endpoints](/docs/developers/api/endpoints.html) `core-Production Chain` and `testcore-Development Chain`. The RPC endpoint in both cores can be accessed via HTTPs and WebSocket.
