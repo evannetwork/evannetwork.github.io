@@ -70,7 +70,7 @@ body.sidebar-overlay {
   overflow: hidden;
 }
 
-.evan.theme-evan code {
+.evan.theme-evan code.highlighter-rouge {
   background-color: var(--evan-bg-level-2);
   padding: 0.2em;
   color: black;
