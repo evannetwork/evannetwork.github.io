@@ -20,8 +20,7 @@ This tutorial will show how to setup an application using the evan.network block
     - [angular-sass](https://github.com/evannetwork/ui-angular-sass)
   - Vue.js
     - [Vue.js](https://vuejs.org), [bootstrap](https://vuejs.org), [webpack](https://webpack.js.org), [sass](https://sass-lang.com/)
-    - [ui-core](https://github.com/evannetwork/ui-core)
-    - [ui-vue](https://github.com/evannetwork/ui-vue)
+    - [ui-dapps](https://github.com/evannetwork/ui-dapps)
   - [evan.network project generator](/docs/developers/tooling/generator-evan.html)
 
 <br>You will be guided through the following steps:
