@@ -70,6 +70,13 @@ body.sidebar-overlay {
   overflow: hidden;
 }
 
+.evan.theme-evan code {
+  background-color: var(--evan-bg-level-2);
+  padding: 0.2em;
+  color: black;
+  border: 1px solid var(--evan-border-color);
+}
+
 /************************************ side panel ***************************************************/ 
 
 .nav-item:first-child {
