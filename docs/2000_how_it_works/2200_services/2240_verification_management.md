@@ -44,7 +44,7 @@ This allows for participants in a supply chain to collaborate with each other, w
 
 ## Verify the trust chain
 
-to be safe that the issued verifications are completely valid, the root verification called /evan is issued by an account which is anchored in the chain spec of evan.network.
+To be safe that the issued verifications are completely valid, the root verification called /evan is issued by an account which is anchored in the chain spec of evan.network.
 
 
 This means, if you want to verify the whole chain for a given verification you take the current verification path and check every portion of the path if the account that received the portion has a proper verification from another account.
@@ -75,7 +75,6 @@ The following table visualizes the identities which can issue the /evan verifica
 | evan.network testcore  | 0x8C073227ba523Ad2546c29F43071Ea3584C66D85 | 0x00a71373dA6e26F134B87faD634AbBB154C8778d |
 | evan.network core       |  TBD | TBD |
 {: .evan-flex-table }
-
 
 
 
