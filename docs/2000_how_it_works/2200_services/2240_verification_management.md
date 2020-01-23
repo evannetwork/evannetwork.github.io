@@ -39,7 +39,7 @@ This enables a user to see who confirmed the verification and whether it is trus
 
 This feature is crucial in supply chain scenarios, where you might not or must not know all members of an n-tier supply chain.
 When you have received a certificate from a trusted third party, like the TUV for example, you can implicitly trust other entities which have received the same certificate.
-This allows for participants in a supply chain to collaborate with each other, without having to establish explicit trust with each member in the supply chain.
+This allows participants in a supply chain to collaborate with each other, without having to establish explicit trust with each member in the supply chain.
 
 
 ## Verify the trust chain
@@ -75,6 +75,5 @@ The following table visualizes the identities which can issue the /evan verifica
 | evan.network testcore  | 0x8C073227ba523Ad2546c29F43071Ea3584C66D85 | 0x00a71373dA6e26F134B87faD634AbBB154C8778d |
 | evan.network core       |  TBD | TBD |
 {: .evan-flex-table }
-
 
 
