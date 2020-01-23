@@ -66,7 +66,7 @@ When we arrive at the `/evan` verification we now have the root verification on 
 
 -------
 
-The following table visualizes the identities which can issue the `/evan` verifications and to which account is the owner of these identities.
+The following table visualizes the identities which can issue the `/evan` verifications and which account is the owner of these identities.
 
 | Network | Verification Identity | Verification Account |
 | :-: | :-: | :-: |
