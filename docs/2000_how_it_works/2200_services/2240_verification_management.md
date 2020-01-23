@@ -44,31 +44,29 @@ This allows participants in a supply chain to collaborate with each other, witho
 
 ## Verify the trust chain
 
-To be safe that the issued verifications are completely valid, the root verification called /evan is issued by an account which is anchored in the chain spec of evan.network.
+To be safe that the issued verifications are completely valid, the root verification called `/evan` is issued by an account which is anchored in the chain spec of evan.network.
 
 
-This means, if you want to verify the whole chain for a given verification you take the current verification path and check every portion of the path if the account that received the portion has a proper verification from another account.
+This means, if you want to verify the whole chain for a given verification you take the current verification path and check every section of the path if the account that received the portion has a proper verification from another account.
 
 
-For example we take a verification with the path /evan/company/employee.
+For example we take a verification with the path `/evan/company/employee`.
 
 ![ENO verification](/docs/2000_how_it_works/img/eno_verification.png)
 
-The verification with the path /evan/company/employee was given to the identity `0xc2300E1bAC9d3f164F65c9c29f11f8F34Bf83Db4` and the api now tries to verify the validity of the verfication with the trust chain.
+The verification with the path `/evan/company/employee` was given to the identity `0xc2300E1bAC9d3f164F65c9c29f11f8F34Bf83Db4` and the API now tries to verify the validity of the verfication with the trust chain.
 
-To verify this we must get the issued identity which has issued the /evan/company/employee verification for the target identity. This information is provided by the API response from the `runtime.verifications.getVerifications`function. The result of this function returns that the issuer of the verification has the identity`0x4628Cd53af50192784Fb81470688575d4DD0BB82`
+To verify this we must get the issued identity which has issued the /evan/company/employee verification for the target identity. This information is provided by the API response from the `runtime.verifications.getVerifications`function. The result of this function returns that the issuer of the verification has the identity `0x4628Cd53af50192784Fb81470688575d4DD0BB82`
 
-With this information we can check if the identity  `0x4628Cd53af50192784Fb81470688575d4DD0BB82` now has a valid verification with the path "/evan/company" given from another identity. We use the same function as above and get back another identity and doing the same until we arrive at the path "/evan".
+With this information we can check if the identity `0x4628Cd53af50192784Fb81470688575d4DD0BB82` now has a valid verification with the path `/evan/company` given from another identity. We use the same function as above and get back another identity and doing the same until we arrive at the path `/evan`.
 
+In this example, verifications with the path `/evan/company` can only be issued by ENO verified notaries. The company verification is issued to companies which are verified by a [service based on evan.network](/docs/first_steps/power_apps/notary-verification.html).
 
-In this example verifications with the path "/evan/company" can only be issued by ENO verified notaries. The company verification is issued to companies which are verified by a [notary service based on evan.network](/docs/first_steps/power_apps/notary-verification.html).
-
-
-When we arrive at the /evan verification we now have the root verification on evan.network. To have a root trust anchor which issues the /evan verification, the ENO created identities (which issue verifications) on the testcore and the core network which are owned by accounts defined in the chain specification of the respective networks. The chain specification defines the genesis block for the blockchain network. This specifications can not be edited after the network was started. The specifications are public visible in the evan.network github space and the whole network relies on this.
+When we arrive at the `/evan` verification we now have the root verification on evan.network. To have a root trust anchor that issues the `/evan` verification, the ENO created identities (which issue verifications) on the testcore and the core network. Those are owned by accounts defined in the chain specification of the respective networks. The chain specification defines the genesis block for the blockchain network and can not be edited after the network has been started. The specifications are publicly visible in the evan.network github space and the whole network relies on this.
 
 -------
 
-The following table visualizes the identities which can issue the /evan verifications and to which account is the owner of these identities.
+The following table visualizes the identities which can issue the `/evan` verifications and to which account is the owner of these identities.
 
 | Network | Verification Identity | Verification Account |
 | :-: | :-: | :-: |
