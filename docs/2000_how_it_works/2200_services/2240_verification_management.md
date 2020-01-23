@@ -56,7 +56,7 @@ For example we take a verification with the path `/evan/company/employee`.
 
 The verification with the path `/evan/company/employee` was given to the identity `0xc2300E1bAC9d3f164F65c9c29f11f8F34Bf83Db4` and the API now tries to verify the validity of the verfication with the trust chain.
 
-To verify this we must get the issued identity which has issued the /evan/company/employee verification for the target identity. This information is provided by the API response from the `runtime.verifications.getVerifications`function. The result of this function returns that the issuer of the verification has the identity `0x4628Cd53af50192784Fb81470688575d4DD0BB82`
+To verify this we must get the issued identity which has issued the `/evan/company/employee` verification for the target identity. This information is provided by the API response from the `runtime.verifications.getVerifications`function. The result of this function returns that the issuer of the verification has the identity `0x4628Cd53af50192784Fb81470688575d4DD0BB82`
 
 With this information we can check if the identity `0x4628Cd53af50192784Fb81470688575d4DD0BB82` now has a valid verification with the path `/evan/company` given from another identity. We use the same function as above and get back another identity and doing the same until we arrive at the path `/evan`.
 
@@ -73,5 +73,4 @@ The following table visualizes the identities which can issue the `/evan` verifi
 | evan.network testcore  | 0x8C073227ba523Ad2546c29F43071Ea3584C66D85 | 0x00a71373dA6e26F134B87faD634AbBB154C8778d |
 | evan.network core       |  TBD | TBD |
 {: .evan-flex-table }
-
 
