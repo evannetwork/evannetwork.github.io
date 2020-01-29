@@ -1,0 +1,569 @@
+---
+title: "Smart Agents"
+parent: Developers
+grand_parent: Concepts
+nav_order: 4180
+permalink: /docs/developers/concepts/smart-agents.html
+---
+
+# Smart Agents
+
+Blockchain are great for smart contracts and decentralization. This gives you the ability to have cryptocally proofed transactions and you can verfiy the source and target account. This is for the starting point a great achievement, but when you have done the first steps you want to connect external systems to your smart contract or your blockchain application, or you want to do timed tasks on your smart contract.
+
+For this problem the concept of the "oracle" exists. The oracle is a small component which can then make transactions to your smart contract based on different triggers, maybe timed, maybe depending on another external system.
+
+evan.network provides javascript api which connects to the evan.network blockchain and gives you functionalities to create verifications/vcs/dids/digital twins and many other more features.
+
+When you now want to connect the evan.network api to your third party system, we provide a node.js framework called "smart-agents" where you can define business logic mapped to REST APIs.
+
+Every "smart-agent" is a full functional component which can consist of one or more rest apis, its own configuration and its own identity on evan network.
+
+## Architecture of smart agents
+
+Lets start with the architecture of the smart agent. The base framework we're using is ActionHero.js. When you want to get detailed information of it, actionhero has a great documentation. But lets start with the main components a smart-agent consists of:
+
+[![Actionhero overview](/docs/4000_developers/4100_concepts/img/actionhero_overview.png){:class="center"}](/docs/4000_developers/4100_concepts/img/actionhero_overview.png)
+
+### actions (rest apis)
+Actions are bascially rest apis, a smart agent can consist of unlimited rest apis. Actionhero can communicate with these actions over different commuication methods, like normal REST, websockets or also TCP sockets. A action consists of a constructor where you define the following parameters
+
+  - `name` - the name of a action also represents the url of the action afterwards (e.g. http://localhost:8080/api/${name})
+  - `description` - a short description what the endpoint does
+  - `outputExample` - a object which shows how the response of the action look like (not necessary)
+  - `inputs` - in this object you define the parameters which can be passed to the action and if they are required or not
+
+```javascript
+// A simple Action
+
+const { Action, api } = require("actionhero");
+
+class RandomNumber extends Action {
+  constructor() {
+    super();
+    this.name = "randomNumber";
+    this.description = "I am an API method which will generate a random number";
+    this.outputExample = { randomNumber: 0.1234 };
+    this.inputs = {
+      hello: {
+        required: true
+      }
+    };
+  }
+
+  async run({ response, params, connection }) {
+    response.randomNumber = Math.random();
+    response.hello = params.hello;
+  }
+}
+```
+
+the `run` function is executed when someone calls the REST endpoint for your action. The function gets the following deconstructed parameters as the first parameter:
+
+   - `params` - in this object you get all the defined parameters for the action
+   - `response` - this object is the response object which will be sent back to the client
+   - `connection` - the plain connection object where you can check also which type of connection called the endpoint
+
+**If you want to know more about the other specific options a action can have please look at the [actionhero documentation](https://www.actionherojs.com/tutorials/actions)**
+
+
+### configs
+Each smart agent gets a predefined configuration where you can put in your respective account for the smart agent. The configuration is located in the `configs` folder of the smart agent. In one configuration file you can define multiple environment dependent config sets. a example configuration looks like the following:
+
+```javascript
+exports['default'] = {
+  ethAccounts: {
+    'ETH_ACCOUNTID': 'ETH_PRIVATEKEY'
+  },
+  encryptionKeys: {
+    'ETH_ACCOUNTID': 'PROFILE_PASSWORD'
+  },
+  smartAgent: (api) => {
+    return {
+      disabled: false,
+      name: 'smartAgent',
+      ethAccount: 'ETH_ACCOUNTID'
+    }
+  }
+}
+
+exports['customENV'] = {
+  ethAccounts: {
+    'ETH_ACCOUNTID2': 'ETH_PRIVATEKEY2'
+  },
+  encryptionKeys: {
+    'ETH_ACCOUNTID2': 'PROFILE_PASSWORD'
+  },
+  smartAgent: (api) => {
+    return {
+      ethAccount: 'ETH_ACCOUNTID2'
+    }
+  }
+}
+
+```
+
+This javascript file exports a `default` and a `customENV` object. Actionhero merges these configs based on the given NODE_ENV together. When setting no NODE_ENV when starting the smart-agent, actionhero only uses the `default` section of the config file. When the NODE_ENV now is set to `customENV`, actionhero uses the settings in `default` first and then deep merges (and also overwrites) the values with the values set in the `exports['customENV']`.
+
+
+- initializers
+
+Initializers have the main role in the smart agent to setup the business logic and make them available to be called from actions. Mainly you will setup your needed functions for your smart-agent in an initalizer and then call the function from the action.
+
+Actionhero provides an global `api` object there where you can attach new functions to it and you can use these in actions, other initializers or tasks for example.
+
+All intializers for your smart agent are located in the `initializers` folder in your smart-agent. A example initializer looks like the following:
+
+```javascript
+
+const {
+  api,
+  Initializer
+} = require('actionhero')
+
+module.exports = class myInitializer extends Initializer {
+  constructor() {
+    super();
+    this.name = "myInitializer";
+    this.loadPriority = 1000;
+    this.startPriority = 1000;
+    this.stopPriority = 1000;
+  }
+
+  async initialize() {
+    api.StuffInit = {
+      doAThing: async () => {},
+      stopStuff: async () => {}
+    };
+
+    api.log("I initialized", "debug", this.name);
+  }
+
+  async start() {
+    await api.StuffInit.startStuff();
+    api.log("I started", "debug", this.name);
+  }
+
+  async stop() {
+    await api.StuffInit.stopStuff();
+    api.log("I stopped", "debug", this.name);
+  }
+}
+
+```
+
+Each initializer has a constructor where you define the following values:
+- `name` - the name of the initializer
+- `loadPriority` - the order in which the `initialize` function will be called
+- `startPriority` - the order in which the `start` function will be called
+- `stopPriority` - the order in which the `stop` function will be called
+
+If you have multiple intializers for different tasks which also depend on each other you can define the load, start and stop priorities for the initializers. The actionhero internal initializers have a priority below 1000 so it is useful to set the own initializer priorities above 1000. Actionhero will execute first execute the functions in the following order:
+
+1. `initialize`
+2. `start`
+3. `stop` - only when the process will be stopped
+
+
+In this functions you can access the `api` object and extend it with your own custom logic. You can then use the functions everywhere in the sourcecode where the `api` object is imported.
+
+
+## Special Addons for smart-agents
+To get the dynamic blockchain functionality with the blockchain-core api from evan.network into the smart-agent we developed a class where you get setup the whole functionality from the blockchain-core api in your custom smart-agent project.
+
+To get the functionalitiy in your initializer working, you must create a class which extends the `api.smartAgents.SmartAgent` class.
+
+```javascript
+ async initialize () {
+    // specialize from blockchain smart agent library
+    class SmartAgent extends api.smartAgents.SmartAgent {
+      async initialize () {
+        await super.initialize()
+
+        console.dir(this.runtime)
+      }
+    }
+
+    // start the initialization code
+    const smartAgent = new SmartAgent(api.config.smartAgent)
+    await smartAgent.initialize()
+
+    // objects and values used outside initializer
+    api.smartAgent = smartAgent
+  }
+```
+
+As you can see in the code above you create a custom class within the `initialize` function which extends the `api.smartAgents.SmartAgent` class. At the bottom of the function a new instance of the class is created. The parameter for this class is a configuration object which we defined above in the `config` example. All configs are available under the `api.config` context. The object which should be given in the constructor should have the following structure:
+
+```json
+{
+  name: 'smartAgent',
+  ethAccount: 'ETH_ACCOUNTID'
+}
+```
+it should have a `name` and a `ethAccount` property. The SmartAgent base class will use this informations to create a custom runtime with the given ethAccount for the initialized instance. The creation of the runtime object will start when you call the `initialize` function of your extended class.
+
+after you called the function the `this` context in your class instance will have the following properties
+
+```javascript
+{
+  config: -> your given config as constructor param
+  runtime: -> intialized runtime with ethAccount as active account
+  dfs: -> custom initialized ipfs with ethAccount as paying account
+}
+```
+in the `initialize` function of your custom smart-agent class you see a log message which then prints out `this.runtime`. This shows that the creation of the runtime was successful and you can use all blockchain-core functionalities from now.
+
+
+## How to create a smart-agent
+
+All the basics are now clarified and the last point is to show how a smart-agent is setup and can be used.
+
+We provide a yeoman generator for evan.network related development tasks. So the first thing we have to do is installing the yeoman and the generator-evan package from npm. Run the following commands:
+
+```bash
+npm i -g yo generator-evan
+```
+
+### Create the project structure
+
+First we have to create a basic project structure setup for the smart agent. Create an empty folder on your file system. Now open a command line and navigate to your created folder and run the command
+```
+yo evan
+```
+in the console. You now should be asked a few questions from the generator:
+```
+? Your project name (YOUR_FOLDER_NAME)
+```
+here yo can give your project a custom name or you can use the folder name as default (simply click enter)
+```
+? Your projects description
+```
+Here you can type a description for your project
+```
+? Should a sub ENS address on the evan.network be claimed for you? (mnemonic required) (Y/n)
+```
+Now you can claim a custom ENS address on evan network for your project. Type "Y" and click enter. You now must type in the mnemonic of your first generated account.
+```
+? Use which mnemonic?
+```
+After entering your mnemonic and clicked enter, you can choose which subdomain should be claimed for your project. Please use a unique domain name since they can only registered once for an account
+```
+? Claim which subdomain? (YOUR_FOLDER_NAME) .fifs.registrar.test.evan
+```
+After clicking enter, the domain will be claimed for your account. There will appear some messages which you can ignore. When the domain is already registered you will receive an error message like:
+```
+Error: cannot claim address "workshop-hem.fifs.registrar.test.evan", it's' already claimed by "0xf638C091a1a45AEDfAFC921f27E8d65AeA8C18c4"
+```
+and you have to choose another one. When the registering process was successful you will be asked if you want to create a BusinessCenter on the domain.
+```
+? Should a business center be created at the given address? (Y/n)
+```
+Answer the question with "n", because for the workshop we don't need a BusinessCenter. When you clicked enter a list of files will be printed on the console and your initial project setup is done:
+
+```
+   create package.json
+   create gulpfile.js
+   create lerna.json
+   create LICENSE.txt
+   create README.md
+   create scripts\bc-helper.js
+   create scripts\config\deployment.js
+   create scripts\config\externalAccounts.js
+   create scripts\config\managedAccounts.js
+   create scripts\domain-helper.js
+   create scripts\evan.access.js
+   create scripts\profiles-helper.js
+   create VERSIONS.md
+```
+
+### Create the smart agent
+Now we create the boilerplate logic for the smart agent which should create. Use the previous opened console in the current project folder and run the command:
+
+```
+yo evan:agent
+```
+You will also be asked a few questions about your smart agent. The first one is the name of the smart agent. You can choose a custom name or simply use the predefined name written in braces
+```
+? Name the agent: smart-agent-* (...)
+```
+After that you have to describe the smart agent what should he do.
+```
+? What does the agent do? Describe it. Smart agent which creates and manages digital twins
+```
+Now you have to configure which features you want to use within your smart agent. Please check the boxes config, initializers and actions/web requests with the space bar
+
+```
+?
+        Choose which functionalities you will need in your agent.
+        config and initializers are practically always required.
+         (Press <space> to select, <a> to toggle all, <i> to invert selection)
+>(*) config
+ (*) initializers
+ (*) actions/web requests
+ ( ) commands/command line tools
+```
+After pressing enter, you will be asked what accounts you want to add to the smart agent. You should now see your previous configured account with the key "deploymentAccount" in the list. Check the account with the space bar and click enter:
+```
+? Add accounts to smart agent configuration:
+>(*) deploymentAccount, 0x0630EE563cdf67a2DdE9161405B722f5AEfee18A,
+```
+Now the generator copies the needed files for the smart agent in your project workspace and runs a "npm install" in the folder.
+
+In case yeoman complains about a "conflict" in the `package.json` choose 'y' to overwrite it.
+
+```
+      Created 'smart-agent-your-name'.
+
+      Run 'gulp link-agents' to link it into edge-server.
+      Run 'npm start' to start edge-server.
+```
+
+It finishes with the above message. Now you have to run
+
+```
+npx gulp link-agents
+```
+
+to symlink everything up.
+
+The smart agent uses a open source key value database called REDIS to add caching abilities. You have to install and start REDIS on your host machine.
+Where and how you get REDIS for your OS is described here:
+
+```
+# On docker
+docker run --name redis -p "6379:6379" -d redis
+
+# On OSX With Homebrew:
+
+brew install node
+brew install redis
+brew services start redis # this will keep redis running in the background forever
+
+# On Ubuntu:
+
+(sudo) apt-get install node
+(sudo) apt-get install redis-server
+redis-server --daemonize yes # this will keep redis running in the background for this session
+
+# On Windows:
+
+[download nodeJS](https://nodejs.org/en/download)
+[download redis](https://github.com/MSOpenTech/redis)
+run redis.exe in a bcackground window
+```
+
+After installing and starting REDIS you can run "npm start" to start your smart agent.
+
+
+## Packaging with Docker
+
+When you finished your development of the smart-agent you can create a docker container for it that you can run it on every docker environment. The sample dockerfile is below:
+
+```dockerfile
+FROM node:12 as install
+
+# Make ssh dir
+RUN mkdir /root/.ssh/
+
+RUN ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
+
+ADD . /edge-server
+
+WORKDIR /edge-server
+
+RUN rm -rf node_modules && \
+  npm install && \
+  cd smart-agent-YOUR_NAME && \
+  npm install
+
+RUN npx gulp link-agents
+
+CMD ["npm", "start"]
+EXPOSE 8080
+
+```
+
+after the build has finished you can run your smart agent with the following docker-compose.yml
+
+```yaml
+version: '2'
+services:
+  redis:
+    image: redis
+  smart-agent:
+    restart: always
+    image: YOUR_TAG_NAME
+    ports:
+     - "8080:8080"
+    depends_on:
+      - redis
+    links:
+      - redis
+    environment:
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+      REDIS_DB: 0
+      ETH_WS_ADDRESS: 'wss://testcore.evan.network/ws'
+      NODE_ENV: 'testcore'
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+
+```
+
+## Switching to evan mainnet (core)
+
+When you successfully tested your smart agent on the testnet and you now want to use it in production, you have to adjust your configuration of the agent.
+
+As you can see in the docker-compose above we defined the environment variables `ETH_WS_ADDRESS` and `NODE_ENV`. This two variables are currently pointing to the testnet environment. When you want to switch to the mainnet you must adjust the environment variables to the following
+
+```
+      ETH_WS_ADDRESS: 'wss://core.evan.network/ws'
+      NODE_ENV: 'core'
+```
+
+Also in your configuration file you have to create an export for the `core` environment if you have different accounts on the core network.
+
+```
+exports['core'] = {
+  ethAccounts: {
+    'ETH_ACCOUNTID_MAINNET': 'ETH_PRIVATEKEY_MAINNET'
+  },
+  encryptionKeys: {
+    'ETH_ACCOUNTID_MAINNET': 'PROFILE_PASSWORD_MAINNET'
+  },
+  smartAgent: (api) => {
+    return {
+      ethAccount: 'ETH_ACCOUNTID_MAINNET'
+    }
+  }
+}
+
+```
+
+
+## Additional built in smart-agent features
+
+when you are using the smart-agent we have enhanced the `api` object of the actionhero with a few additional features which can help you building your blockchain application faster.
+
+
+### Block watcher
+When you want to iterate over all upcoming transactions and blocks we provide a block event emitter where you get all new blocks with all transactions in this block.
+
+you can use the functionality the following way:
+
+```javascript
+api.eth.blockEmitter.on('data', async (block) => {
+  const filteredTransaction = block.transactions
+  console.dir(block)
+  console.dir(block.transactions)
+})
+```
+
+the blockEmitter emits every new block in the blockchain with all included transactions.
+
+
+### Authenticated request
+
+The smart-agent can be used to providing a REST API which can execute blockchain transactions. Now you want a access layer that only particiular accounts can use the action on the smart-agent
+
+In Actionhero you can attach so called "middlewares" to actions which can prevent the execution or also enrich or format parameters bevore the `run` function gets executed.
+
+We built a middleware for actions which ensures a authentication header from the calling browser/mobile device. This is done with a ethereum signed message from a given private key.
+
+To add the middleware to your action include it the following way:
+
+```javascript
+
+
+const { Action } = require('actionhero')
+
+class Authenticated extends Action {
+  constructor () {
+    super()
+    this.name = 'authenticated'
+    this.description = 'Will check if message is signed properly, will throw error if not.'
+    this.outputExample = {
+      isAuthenticated: true
+    }
+
+    this.middleware = ['ensureEvanAuth']
+  }
+
+  async run ({ response }) {
+    response.isAuthenticated = true
+  }
+}
+
+module.exports = Authenticated
+
+````
+
+in the contstructor of the action you add the `middleware` array with the entry `ensureEvanAuth`. This now checks the request for an `Authorization` Header with the following markup:
+
+```
+Authorization: \
+EvanAuth 0xA1cFB71f0207B0da24bB00dF306D06EF721dB482,\
+EvanMessage 1557479808692,\
+EvanSignedMessage 0x8e5289cbf79f7c1ea9b871d0180d512ec1e317b3194604d15e009fb71b97e64e2be2e9f7eef4f4f7ea0382cf696690896704e8046781d8bda441f5a91baa96781c
+```
+
+The three values in the header have the following meanings:
+
+- `EvanAuth`: accountId of signing user
+- `EvanMessage`: current UNIX timestamp in milliseconds, **timestamp may not be older than 5 minutes**
+- `EvanSignedMessage`: cryptographically signed EvanMessage (signed with private key of the account set in EvanAuth)
+
+
+You can generate the Authentication Header with web3:
+
+```javascript
+
+const now = Date.now()
+const signedMessage = web3.eth.accounts.sign(now, `0x${privateKey}`)
+const header = `EvanAuth ${accountId} EvanMessage ${now} EvanSignedMessage ${signedMessage.signature}`
+
+```
+
+Be careful not to let too much time pass by between creating the message and submitting it to the action as the message is not allowed to be older than five minutes.
+
+
+When all checks are fine, your `run` function will start, otherwise the action will return an error with the following responses
+
+-------
+
+```
+"error": "No verified Account.",
+```
+This error means, that the signed message you provided does not match the defined account in the "EvanAuth" section in the authorization parameter.
+
+You can verify the signed message with web3 the following way:
+
+```javascript
+const now = Date.now()
+const signedMessage = web3.eth.accounts.sign(`${accountId}|${now}`, `0x${privateKey}`)
+const accountId = web3.eth.accounts.recover(
+  `${accountId}|${now}`,
+  signedMessage.signature
+)
+```
+
+the `accountId` variable must match the defined accountId in the "EvanAuth" section. **The Accountid must be written in checksum case**
+
+-------
+
+```
+"error": "no authorization headers provided",
+```
+
+The sent request has no attached `Authorization` header. Please add a `Authorization` header with the markup above.
+
+
+-------
+
+```
+"error": "signed message has expired",
+```
+
+The signed timestamp has expired. When you sign a timestamp it is valid for 5 minutes. Otherwise the REST endpoint will return this message and you have to provide a new signed timestamp.
