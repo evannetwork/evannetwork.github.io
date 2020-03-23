@@ -1,0 +1,26 @@
+---
+title: "Contract Factories"
+parent: Developers
+grand_parent: Concepts
+nav_order: 4190
+permalink: /docs/developers/concepts/Identities.html
+---
+
+#Identities
+
+Identities can be considered as virtual account for a user. Identities are basically contracts which are bounded to a profile and is controlled by an externally owned account. An account can have multiple identities and a single identity can also be controlled via multiple accounts.
+
+## Create Identities
+
+A user requests for an identity from the evan network. The evan network server fetches two contracts. One being an empty profile contract which is sent to the user to fill data while the second contract is an identity contract. Once the profile contract has been filled by the user and returned to the server, the server binds the profile contract with the identity contract. After the binding process the server removes itself from the owner and member role of the identity and the ownership is transfered to the user.
+![Creating Identity](./img/Identity_creation_flow.png) 
+
+## Relation between Account and Identities
+
+The following figure represents the relationship between a user and the identities. A user has his private keys off-chain which he uses to access his account on chain. The on-chain account owns multiple identities which have been created via the identity creation flow described in the previous section. As mentioned before multiple accounts can also control a single identity. This is done by giving other accounts [permissions](/docs/developers/concepts/smart-contract-permissioning.html) to the identity. These identities are used on the evan.network as the actors for performing transactions.
+![Identity Account Relationship](./img/Relation_bw_Identity_and_Accounts.png)  
+
+## Transactions using Identities
+
+Recall that the identity contract is linked with the profile contract. As depicted in the figure the verification holder manages a single identity for an account. The identity holder is the entity responsible for linking the identity contract with the profile contract and mapping the ownership of the profile to the account. Finally the identity registry maps the identity with its respective owner. When performing a transaction using an identitiy the transaction is created and signed by the identity itself but the transaction is executed using the underlying account that owns the identity. Using this approach the transaction is performed via the identity on the chain.
+![Identity Transaction](./img/Identity_transaction_flow.png)
