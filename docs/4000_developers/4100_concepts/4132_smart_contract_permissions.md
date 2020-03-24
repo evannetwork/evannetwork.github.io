@@ -64,7 +64,7 @@ contract OwnedStorage is DSAuth {
 }
 ```
 
-The `auth` modifier is used on functions that should be restricted to specific roles and forbids access to them, if the calling account does not meet the permission requirements.
+The `auth` modifier is used on functions that should be restricted to specific roles and forbids access to them, if the calling identity does not meet the permission requirements.
 
 [![Smart Contract authority](/docs/4000_developers/4100_concepts/img/smart_contract_authority.png){:max-width="50%"}](/docs/4000_developers/4100_concepts/img/smart_contract_authority.png)
 
@@ -76,7 +76,7 @@ This basically forbids almost everyone from using the ```setData``` function, ex
 
 Permissions can be granted by:
 1. creating a roles contract for the contract and assign it as the authority
-2. assigning an account ID to a role
+2. assigning an identitiy to a role
 3. granting this role permission (capability) to a function
 
 ```javascript
@@ -87,7 +87,7 @@ DSAuth storage = new OwnedStorage();
 DSRoles roles = new DSRoles();
 storage.setAuthority(roles);
 
-// assign an account id to a role (role 0 is an owner like role in this example)
+// assign an identitiy to a role (role 0 is an owner like role in this example)
 roles.setUserRole(msg.sender, 0, true);
 
 // grant this role permission (capability) to a function
