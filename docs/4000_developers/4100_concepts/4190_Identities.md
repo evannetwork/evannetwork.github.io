@@ -8,11 +8,11 @@ permalink: /docs/developers/concepts/Identities.html
 
 # Identities
 
-Identities can be considered as virtual account for a user. Identities are basically contracts which are bounded to a profile and is controlled by an externally owned account. An account can have multiple identities and a single identity can also be controlled via multiple accounts.
+Identities can be considered as virtual accounts for a user. Identities are basically contracts which are bound to a profile and controlled by an externally owned account. An account can have multiple identities and a single identity can also be controlled via multiple accounts.
 
 ## Create Identities
 
-A user requests for an identity from the evan network. The evan network server fetches two contracts. One being an empty profile contract which is sent to the user to fill data while the second contract is an identity contract. Once the profile contract has been filled by the user and returned to the server, the server binds the profile contract with the identity contract. After the binding process the server removes itself from the owner and member role of the identity and the ownership is transfered to the user.
+A user requests for an identity from the evan.network. The evan.network server prepares two contracts. One being an empty profile contract which is sent to the user to fill data while the second contract is an identity contract. Once the user has prepared the profile data and sent it to the server, the server writes the data to the profile contract and binds this to the identity contract. After the binding process the server removes itself from the owner and member role of the identity and the ownership is transferred to the user.
 
 ![Creating Identity](./img/Identity_creation_flow.png) 
 
