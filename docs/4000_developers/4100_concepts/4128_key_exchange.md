@@ -11,7 +11,7 @@ permalink: /docs/developers/concepts/key_exchange.html
 ## Establishing trust with Participants
 By default, any data stored in [Smart Contracts](/docs/developers/smart-contracts.html) is encrypted. This is also true for [profiles](/docs/first_steps/create-identity.html), Digital Twins and other tools. As a result, it is impossible for others to read data in external contracts. Users can't read each others contacts etc. and sending [BMail](/docs/first_steps/core_apps/mailbox.html) to each other requires a proper key exchange to have occurred beforehand.
 
-To establish communication, accounts need to exchange keys. This is one of the most basic operations in `evan.network`, because without exchanging keys, little else can be done. If you are an end user, it is done for you in most cases and you won't even notice. Otherwise, you can use the [contacts](/docs/first_steps/core_apps/contacts.html) ÐApp to initiate key exchanges.
+To establish communication, identities need to exchange keys. This is one of the most basic operations in `evan.network`, because without exchanging keys, little else can be done. If you are an end user, it is done for you in most cases and you won't even notice. Otherwise, you can use the [contacts](/docs/first_steps/core_apps/contacts.html) ÐApp to initiate key exchanges.
 
 
 ## How keys are exchanged
@@ -25,8 +25,8 @@ Communication keys are exchanged via Diffie-Hellman key exchange, which is usual
 
 This approach is adapted and used on evan.network in this way:
 - common part is publicly known and known to the API
-- both parties create private and public key at account creation
-- public key is stored a the profile of each account and can be accessed by everyone, so no extra communication is required to get another parties public key
+- both parties create private and public key at identity creation
+- public key is stored a the profile of each identity and can be accessed by everyone, so no extra communication is required to get another parties public key
 - Diffie-Hellman key can be creating by combining own private key and public key from other parties profile (called "exchange key")
 - exchange key is used to encrypt and share the "communication key" with the other party, this is done via the mailbox
 - as public key can be retrieved from profile and the encrypted communication key can be send to mailbox, this process can be initiated by one side, if a confirmation is not required, the process is completed at the initiators end
