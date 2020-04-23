@@ -17,11 +17,6 @@ tiles:
     icon: bezier-curve
     link: /docs/developers/api/blockchain-core.html
 
-  - title: UI
-    description: 　
-    icon: window-maximize
-    link: /docs/developers/ui/writing-dapps.html
-
   - title: How-tos
     description: 　
     icon: child

@@ -1,1 +1,0 @@
-{"description":{"description":"Plugin for handling sub transport orders.\n\n","imgSquare":"","name":"Transportorders"},"template":{"type":"metadata","properties":{"transportorders":{"permissions":{"0":["set"]},"type":"list","dataSchema":{"type":"array","items":{"type":"string","default":"","minLength":1}}}}}}

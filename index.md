@@ -12,10 +12,6 @@ tiles:
     icon: info
     link: /docs/how_it_works.html
 
-  - title: First Steps
-    icon: walking
-    link: /docs/first_steps.html
-
   - title: Developers
     icon: layer-group
     link: /docs/developers.html
