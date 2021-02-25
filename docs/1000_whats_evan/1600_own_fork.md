@@ -9,7 +9,7 @@ permalink: /docs/whats_evan/fork_evan_network.html
 
 ## Hard Forks
 
-When Partners want to cancel the membership of the ENO but has an existing use case deployed and working on evan.network where the partner wants to take the existing data to his own blockchain network. 
+When Partners want to cancel the membership of the ENO but has an existing use case deployed and working on evan.network where the partner wants to take the existing data to his own blockchain network.
 
 It is possible to create a hard fork of the network at a given block by creating a "own" blockchain.
 
@@ -39,7 +39,7 @@ When executing this command you will be prompted to enter a password for the new
 
 ```
 Please note that password is NOT RECOVERABLE.
-Type password: 
+Type password:
 Repeat password:
 ```
 
@@ -50,6 +50,7 @@ When you entered a password for the new account, your new signer address shows u
 With this new account you can adjust the signing settings for your own fork of the evan.network. Go to your cloned spec.json and edit it with your favorite editor.
 
 from line 7-12 you have the configuration of the AuRa mechanism:
+
 ```json
 "validators": {
   "multi": {
@@ -58,9 +59,9 @@ from line 7-12 you have the configuration of the AuRa mechanism:
 },
 ```
 
-In this object you can configure the authorities (value of the "multi" object) in the chain at a specific block (key of the "multi" object). 
+In this object you can configure the authorities (value of the "multi" object) in the chain at a specific block (key of the "multi" object).
 
-The default chain specification of evan.network includes a smart contract which manages the authorities on the network. 
+The default chain specification of evan.network includes a smart contract which manages the authorities on the network.
 
 To add a single account as authority add a new entry in the object and set the key to the block number where the client consensus stopped syncing and as value an object with the key "list" and the value to an array with the accounts which should be the new authorities of the network:
 
@@ -71,7 +72,7 @@ To add a single account as authority add a new entry in the object and set the k
     "20000000": { "list": ["0x66a4b6f39b4c3e7203ab9caeecbad58d8f29b046"] },
   }
 },
-``` 
+```
 
 This config tells the client that from block 20.000.000 the authorities change from the initial smart contract to a fixed list of accounts.
 
@@ -104,11 +105,9 @@ change the networkID to something different and add a "chainID" parameter with t
 
 Because you want your own fork of evan.network your node is not able to sync to the original evan.network bootnodes anymore. You can remove them in the array of `nodes` and you can also add your own nodes (when available) to the array in the spec
 
-
 #### Adding new authorities
 
 When you want to add new authorities (one or more) to your specification you have to add a new section in your validators list:
-
 
 ```json
 "validators": {
@@ -122,7 +121,7 @@ When you want to add new authorities (one or more) to your specification you hav
     ] },
   }
 },
-``` 
+```
 
 Then you have to provide the adjusted chainspec.json to all existing and new authorities who are running the OpenEthereum client.
 
@@ -131,8 +130,6 @@ Then you have to provide the adjusted chainspec.json to all existing and new aut
 With these settings you can start your own fork of evan.network. When you start the OpenEthereum client make sure that you pass your new chain spec:
 
 `openethereum --chain /YOUR/PATH/TO/CHAINSPEC --engine-signer=[NEW SIGNER ADDRESS]`
-
-
 
 ----
 
@@ -148,13 +145,13 @@ This contract can be deployed on the network and then defined in the chainspec.j
 
 ### How it works
 
-On common Proof of Work chains, every client which solves the "calculation puzzle" is able to add a new block to the blockchain. In consortial chains which use the Proof of Authority consensus, only defined clients/accounts are able to add new blocks to the chain. The Authoritynode contract is called whenever a new block arrives at the client. The contact verifies if the issuer of the block is included in the contracts authorities list. If the account is not available in the list, the block will be refused by the client. 
+On common Proof of Work chains, every client which solves the "calculation puzzle" is able to add a new block to the blockchain. In consortial chains which use the Proof of Authority consensus, only defined clients/accounts are able to add new blocks to the chain. The Authoritynode contract is called whenever a new block arrives at the client. The contact verifies if the issuer of the block is included in the contracts authorities list. If the account is not available in the list, the block will be refused by the client.
 
 This mechanism is called "AuthorityRound". Every authority gets a slot in which he can propose a new block. For example your chain specification defines that every 3 seconds a new block should be created and you have 3 authorities in your spec. The AuRa consensus now allows the following order of block creations:
 
 - Authority 1
 - ... 3 Sec
-- Authority 2 
+- Authority 2
 - ... 3 Sec
 - Authority 3
 - ... 3 Sec
@@ -176,8 +173,7 @@ To add a new authority you have to execute the smart contract function `addValid
 
 To remove an existing authority you have to execute the smart contract function `removeValidator` on the authority contract. The function takes also 1 address as parameter. The address in the parameter should be removed from the `validators` address array. The procedure is the same like in the `addValidator` function. Every authority must signal the removal of the account to finalize the change of the `validators` array.
 
-If you want to know more about the AuthorityRound contract and the consensus mechanism, visit the OpenEthereum Wiki https://openethereum.github.io/Validator-Set
-
+If you want to know more about the AuthorityRound contract and the consensus mechanism, visit the OpenEthereum Wiki <https://openethereum.github.io/Validator-Set>
 
 ---
 
@@ -249,7 +245,7 @@ The [`BlockReward.sol`](https://github.com/evannetwork/smart-contracts-admin/blo
     }
 ```
 
-With the parameter `blockRewardContractAddress` you can define the address where the blockreward contract is deployed. 
+With the parameter `blockRewardContractAddress` you can define the address where the blockreward contract is deployed.
 
 With the parameter `blockRewardContractTransition` you define the blocknumber (as hex value) from which block number on the contract should be responsible for the payouts/minting of the coins.
 
@@ -262,7 +258,7 @@ The main function is called `addExtraReceiver` which takes two arguments
 - `_amount` - a uint256 which defines the to be generated coin amount
 - `_receiver` -  a address of an account which should receive the amount of coins
 
-The amount is defined in WEI (the smallest amount of Ethereum). As a example 1 EVE is equivalent to 1000000000000000000 Wei so if the contract should generate 101 EVE for account `0xB88E14514C8b5983EDBAB3c33534b75911eae302` you have to pass `101000000000000000000` as `_amount` parameter and `0xB88E14514C8b5983EDBAB3c33534b75911eae302` as `_receiver` parameter. 
+The amount is defined in WEI (the smallest amount of Ethereum). As a example 1 EVE is equivalent to 1000000000000000000 Wei so if the contract should generate 101 EVE for account `0xB88E14514C8b5983EDBAB3c33534b75911eae302` you have to pass `101000000000000000000` as `_amount` parameter and `0xB88E14514C8b5983EDBAB3c33534b75911eae302` as `_receiver` parameter.
 
 The minting is then done in the next block which is included in the blockchain.
 
@@ -274,7 +270,6 @@ The BlockReward contract provides also several getters which give you more infor
 - `mintedForAccountInBlock(address _account, uint256 _blockNumber)`- gives you the amount minted for a specific address in a specific block number
 - `mintedInBlock(uint256 _blockNumber)` - gives the whole amount minted in a specific block number
 - `mintedTotally()` - gives you the whole amount minted from this contract
-
 
 ---
 
@@ -437,7 +432,7 @@ Even if not used broadly, the `execute` function can be used to prepare transact
 
 ### Onboarding of new Users
 
-The [onboarding agent](https://github.com/evannetwork/smart-agent-fauce) is primarily used to help new users get started on evan.network. This includes
+The onboarding agent is primarily used to help new users get started on evan.network. This includes
 
 - creating a profile and an identity on evan.network for the new user
 - storing that the terms of use have been accepted
@@ -484,13 +479,13 @@ The user can then accept it and call the `smart-agents/faucet/terms-of-use/accep
 
 ## IPNS Key Management
 
-The evan.network dashboard and APIs are written in JavaScript to be displayed in the browser. To use the full power of decentralization, the JavaScript APIs and the dashboard UIs are hosted on a private IPFS network. 
+The evan.network dashboard and APIs are written in JavaScript to be displayed in the browser. To use the full power of decentralization, the JavaScript APIs and the dashboard UIs are hosted on a private IPFS network.
 
 The nature of IPFS is that when you upload a file to IPFS you receive a unique Hash of the file as result. Now if you change a single character in the file and upload it again you receive a new unique hash of the file.
 
-This turns out negative when you have a static website which should load always the latest JavaScript API in the browser. 
+This turns out negative when you have a static website which should load always the latest JavaScript API in the browser.
 
-IPFS provides a feature called IPNS (Interplanetary Name Service) where you can register fixed Hashes and map them to an existing IPFS Hash. 
+IPFS provides a feature called IPNS (Interplanetary Name Service) where you can register fixed Hashes and map them to an existing IPFS Hash.
 
 Every IPNS resolvable hash is controlled by a key. You can generate a new key on the IPFS node with the command:
 
