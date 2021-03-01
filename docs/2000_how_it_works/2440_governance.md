@@ -1,6 +1,7 @@
 ---
 title: "Governance"
 parent: How it works
+has_grand_children: true
 nav_order: 2440
 permalink: /docs/how_it_works/governance.html
 ---
